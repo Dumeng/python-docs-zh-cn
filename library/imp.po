@@ -8,6 +8,7 @@
 # leollon <mssm.good@outlook.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -215,7 +216,7 @@ msgstr ""
 msgid ""
 "Return a new empty module object called *name*.  This object is *not* "
 "inserted in ``sys.modules``."
-msgstr "返回一个新的名为 *name* 的空模块对象。 此对象 *不会* 被插入到 ``sys.modules`` 中。 "
+msgstr "返回一个新的名为 *name* 的空模块对象。 此对象 *不会* 被插入到 ``sys.modules`` 中。"
 
 #: ../../library/imp.rst:129
 msgid "Use :func:`importlib.util.module_from_spec` instead."

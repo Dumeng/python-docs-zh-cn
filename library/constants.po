@@ -6,6 +6,7 @@
 # Translators:
 # Alpha Du <alphanow@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2021
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:57+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,9 +77,9 @@ msgid ""
 "Incorrectly returning ``NotImplemented`` will result in a misleading error "
 "message or the ``NotImplemented`` value being returned to Python code."
 msgstr ""
-"当二进制（或就地）方法返回``NotImplemented``时，解释器将尝试对另一种类型（或其他一些回滚操作，取决于运算符）的反射操作。 "
-"如果所有尝试都返回``NotImplemented``，则解释器将引发适当的异常。 "
-"错误返回的``NotImplemented``将导致误导性错误消息或返回到Python代码中的``NotImplemented``值。"
+"当二进制（或就地）方法返回 ``NotImplemented`` 时，解释器将尝试对另一种类型（或其他一些回滚操作，取决于运算符）的反射操作。 "
+"如果所有尝试都返回 ``NotImplemented`` ，则解释器将引发适当的异常。 错误返回的 ``NotImplemented`` "
+"将导致误导性错误消息或返回到Python代码中的 ``NotImplemented`` 值。"
 
 #: ../../library/constants.rst:47
 msgid "See :ref:`implementing-the-arithmetic-operations` for examples."

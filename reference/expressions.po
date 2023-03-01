@@ -13,6 +13,7 @@
 # jaystone776 <1732865113@qq.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1919,8 +1920,8 @@ msgid ""
 "shorter collection is ordered first (for example, ``[1,2] < [1,2,3]`` is "
 "true)."
 msgstr ""
-"对于支持次序比较的多项集，排序与其第一个不相等元素的排序相同（例如 ``[1,2,x] <= [1,2,y]`` 的值与``x <= y`` 相同）。 "
-"如果对应元素不存在，较短的多项集排序在前（例如 ``[1,2] < [1,2,3]`` 为真值）。"
+"对于支持次序比较的多项集，排序与其第一个不相等元素的排序相同（例如 ``[1,2,x] <= [1,2,y]`` 的值与 ``x <= y`` 相同）。"
+" 如果对应元素不存在，较短的多项集排序在前（例如 ``[1,2] < [1,2,3]`` 为真值）。"
 
 #: ../../reference/expressions.rst:1555
 msgid ""

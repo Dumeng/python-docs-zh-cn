@@ -10,6 +10,7 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,7 +68,7 @@ msgid ""
 "attributes correspond to the members of the ``spwd`` structure (Attribute "
 "field below, see ``<shadow.h>``):"
 msgstr ""
-"shadow 密码库中的每条记录均表示为一个类似元组的对象，其属性对应着``spwd`` 结构的成员（下面列出了各属性字段，参见 ` "
+"shadow 密码库中的每条记录均表示为一个类似元组的对象，其属性对应着 ``spwd`` 结构的成员（下面列出了各属性字段，参见 ` "
 "``<shadow.h>``）。"
 
 #: ../../library/spwd.rst:28

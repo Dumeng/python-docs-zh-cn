@@ -10,6 +10,7 @@
 # Alpha Du <alphanow@gmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -313,7 +314,7 @@ msgid ""
 "doesn't care what the actual value of an enumeration is.  But if the value "
 "*is* important, enumerations can have arbitrary values."
 msgstr ""
-"以上大多数示例都用了整数作枚举值。使用整数确实简短方便（并且由`Functional API`_ "
+"以上大多数示例都用了整数作枚举值。使用整数确实简短方便（并且由 `Functional API`_ "
 "默认提供），但并非必须如此。绝大多数情况下，人们并不关心枚举的实际值是什么。但如果确实有用，枚举可以是任意的值。"
 
 #: ../../howto/enum.rst:384
@@ -894,13 +895,13 @@ msgstr ""
 msgid ""
 "For standard :class:`Enum` classes the next value chosen is the last value "
 "seen incremented by one."
-msgstr "对于标准的:class:`Enum`类，选择的下一个值是最后所见值加1。"
+msgstr "对于标准的 :class:`Enum` 类，选择的下一个值是最后所见值加1。"
 
 #: ../../howto/enum.rst:917
 msgid ""
 "For :class:`Flag` classes the next value chosen will be the next highest "
 "power-of-two, regardless of the last value seen."
-msgstr "对于:class:`Flag`类，下一个选择的值将是下一个最高的2次幂数，与最后所见值无关。"
+msgstr "对于 :class:`Flag` 类，下一个选择的值将是下一个最高的2次幂数，与最后所见值无关。"
 
 #: ../../howto/enum.rst:920
 msgid "``_missing_``, ``_order_``, ``_generate_next_value_``"
@@ -980,7 +981,7 @@ msgstr ""
 
 #: ../../howto/enum.rst:1003
 msgid "Plain :class:`Enum` classes always evaluate as :data:`True`."
-msgstr "普通的:class:`Enum`类总是计算为:data:`True`。"
+msgstr "普通的 :class:`Enum` 类总是计算为 :data:`True`。"
 
 #: ../../howto/enum.rst:1007
 msgid "``Enum`` classes with methods"
@@ -1002,7 +1003,7 @@ msgstr "组合 ``Flag`` 的成员"
 msgid ""
 "Iterating over a combination of :class:`Flag` members will only return the "
 "members that are comprised of a single bit::"
-msgstr "遍历:class:`Flag`成员的组合将只返回由一个比特组成的成员::"
+msgstr "遍历 :class:`Flag` 成员的组合将只返回由一个比特组成的成员::"
 
 #: ../../howto/enum.rst:1040
 msgid "``Flag`` and ``IntFlag`` minutia"
@@ -1096,7 +1097,8 @@ msgid ""
 "``EJECT``, and the default for ``_convert_`` is ``KEEP`` (see "
 "``ssl.Options`` for an example of when ``KEEP`` is needed)."
 msgstr ""
-"默认的标志为``STRICT``，``IntFlag``默认为``EJECT``，``_convert_``默认为``KEEP``（需要``KEEP``的例子见``ssl.Options``）。"
+"默认的标志为 "
+"``STRICT``，``IntFlag``默认为``EJECT``，``_convert_``默认为``KEEP``（需要``KEEP``的例子见``ssl.Options``）。"
 
 #: ../../howto/enum.rst:1121
 msgid "How are Enums and Flags different?"
@@ -1106,7 +1108,7 @@ msgstr "枚举和旗标有何差异？"
 msgid ""
 "Enums have a custom metaclass that affects many aspects of both derived "
 ":class:`Enum` classes and their instances (members)."
-msgstr "Enum有一个自定义的元类，它影响到派生的:class:`Enum`类和它们的实例（成员）的许多方面。"
+msgstr "Enum有一个自定义的元类，它影响到派生的 :class:`Enum` 类和它们的实例（成员）的许多方面。"
 
 #: ../../howto/enum.rst:1128
 msgid "Enum Classes"
@@ -1155,8 +1157,8 @@ msgid ""
 "new ones are ever instantiated by returning only the existing member "
 "instances."
 msgstr ""
-":class:`EnumType`在创建枚举类本身的时候，创建了所有的枚举类，然后把一个自定义的 "
-":meth:`__new__`放在那里，通过只返回现有的成员实例来确保没有新的成员被实例化。"
+":class:`EnumType` 在创建枚举类本身的时候，创建了所有的枚举类，然后把一个自定义的 :meth:`__new__` "
+"放在那里，通过只返回现有的成员实例来确保没有新的成员被实例化。"
 
 #: ../../howto/enum.rst:1155
 msgid "Flag Members"
@@ -1352,4 +1354,5 @@ msgid ""
 "either with class decorators or custom functions, :class:`EnumType` can be "
 "subclassed to provide a different Enum experience."
 msgstr ""
-"虽然大多数枚举需求可以通过自定义:class:`Enum`子类来满足，无论是用类装饰器还是自定义函数，:class:`EnumType`可以被子类化以提供不同的枚举体验。"
+"虽然大多数枚举需求可以通过自定义 :class:`Enum` 子类来满足，无论是用类装饰器还是自定义函数，:class:`EnumType` "
+"可以被子类化以提供不同的枚举体验。"

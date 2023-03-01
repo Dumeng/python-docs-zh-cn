@@ -13,6 +13,7 @@
 # Siyuan Xu, 2022
 # WH-2099 <wh2099@outlook.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -172,7 +173,7 @@ msgstr "__code__"
 
 #: ../../library/inspect.rst:78
 msgid "code object containing compiled function :term:`bytecode`"
-msgstr "包含已编译函数的代码对象 :term:`bytecode` "
+msgstr "包含已编译函数的代码对象 :term:`bytecode`"
 
 #: ../../library/inspect.rst:82
 msgid "__defaults__"
@@ -315,7 +316,7 @@ msgstr "f_trace"
 
 #: ../../library/inspect.rst:138
 msgid "tracing function for this frame, or ``None``"
-msgstr "此帧的追踪函数，或``None``"
+msgstr "此帧的追踪函数，或 ``None``"
 
 #: ../../library/inspect.rst:141 ../../library/inspect.rst:210
 #: ../../library/inspect.rst:227
@@ -491,7 +492,7 @@ msgstr "gi_yieldfrom"
 
 #: ../../library/inspect.rst:212
 msgid "object being iterated by ``yield from``, or ``None``"
-msgstr "通过``yield from``迭代的对象，或``None``"
+msgstr "通过 ``yield from``迭代的对象，或``None``"
 
 #: ../../library/inspect.rst:216
 msgid "coroutine"
@@ -503,7 +504,7 @@ msgstr "cr_await"
 
 #: ../../library/inspect.rst:220
 msgid "object being awaited on, or ``None``"
-msgstr "正在等待的对象，或``None``"
+msgstr "正在等待的对象，或 ``None``"
 
 #: ../../library/inspect.rst:223
 msgid "cr_frame"
@@ -527,7 +528,7 @@ msgstr "cr_origin"
 
 #: ../../library/inspect.rst:229
 msgid "where coroutine was created, or ``None``. See |coroutine-origin-link|"
-msgstr "协程被创建的位置，或``None``。参见 |coroutine-origin-link|"
+msgstr "协程被创建的位置，或 ``None``。参见 |coroutine-origin-link|"
 
 #: ../../library/inspect.rst:233
 msgid "builtin"
@@ -539,25 +540,25 @@ msgstr "此函数或方法的原始名称"
 
 #: ../../library/inspect.rst:240
 msgid "instance to which a method is bound, or ``None``"
-msgstr "方法绑定到的实例，或``None``"
+msgstr "方法绑定到的实例，或 ``None``"
 
 #: ../../library/inspect.rst:247
 msgid "Add ``__qualname__`` and ``gi_yieldfrom`` attributes to generators."
-msgstr "为生成器添加``__qualname__``和``gi_yieldfrom``属性。"
+msgstr "为生成器添加 ``__qualname__`` 和 ``gi_yieldfrom`` 属性。"
 
 #: ../../library/inspect.rst:249
 msgid ""
 "The ``__name__`` attribute of generators is now set from the function name, "
 "instead of the code name, and it can now be modified."
-msgstr "生成器的``__name__``属性现在由函数名称设置，而不是代码对象名称，并且现在可以被修改。"
+msgstr "生成器的 ``__name__`` 属性现在由函数名称设置，而不是代码对象名称，并且现在可以被修改。"
 
 #: ../../library/inspect.rst:254
 msgid "Add ``cr_origin`` attribute to coroutines."
-msgstr "为协程添加``cr_origin``属性。"
+msgstr "为协程添加 ``cr_origin`` 属性。"
 
 #: ../../library/inspect.rst:258
 msgid "Add ``__builtins__`` attribute to functions."
-msgstr "为函数添加``__builtins__``属性。"
+msgstr "为函数添加 ``__builtins__`` 属性。"
 
 #: ../../library/inspect.rst:262
 msgid ""
@@ -609,7 +610,7 @@ msgid ""
 msgstr ""
 "返回由文件名 *path* 表示的模块名字，但不包括外层的包名。文件扩展名会检查是否在 "
 ":func:`importlib.machinery.all_suffixes` "
-"列出的条目中。如果符合，则文件路径的最后一个组成部分会去掉后缀名后被返回；否则返回``None``。"
+"列出的条目中。如果符合，则文件路径的最后一个组成部分会去掉后缀名后被返回；否则返回 ``None``。"
 
 #: ../../library/inspect.rst:300
 msgid ""
@@ -617,7 +618,7 @@ msgid ""
 "modules - paths that potentially refer to Python packages will still return "
 "``None``."
 msgstr ""
-"值得注意的是，这个函数 *仅* 返回可以作为 Python 模块的名字，而有可能指向一个 Python 包的路径仍然会返回``None``。"
+"值得注意的是，这个函数 *仅* 返回可以作为 Python 模块的名字，而有可能指向一个 Python 包的路径仍然会返回 ``None``。"
 
 #: ../../library/inspect.rst:304
 msgid "The function is based directly on :mod:`importlib`."
@@ -625,39 +626,39 @@ msgstr "该函数直接基于 :mod:`importlib`。"
 
 #: ../../library/inspect.rst:310
 msgid "Return ``True`` if the object is a module."
-msgstr "当该对象是一个模块时返回``True``。"
+msgstr "当该对象是一个模块时返回 ``True``。"
 
 #: ../../library/inspect.rst:315
 msgid ""
 "Return ``True`` if the object is a class, whether built-in or created in "
 "Python code."
-msgstr "当该对象是一个类时返回``True``，无论是内置类或者 Python 代码中定义的类。"
+msgstr "当该对象是一个类时返回 ``True``，无论是内置类或者 Python 代码中定义的类。"
 
 #: ../../library/inspect.rst:321
 msgid "Return ``True`` if the object is a bound method written in Python."
-msgstr "当该对象是一个 Python 写成的绑定方法时返回``True``。"
+msgstr "当该对象是一个 Python 写成的绑定方法时返回 ``True``。"
 
 #: ../../library/inspect.rst:326
 msgid ""
 "Return ``True`` if the object is a Python function, which includes functions"
 " created by a :term:`lambda` expression."
-msgstr "当该对象是一个 Python 函数时（包括使用 :term:`lambda` 表达式创造的函数），返回``True``。"
+msgstr "当该对象是一个 Python 函数时（包括使用 :term:`lambda` 表达式创造的函数），返回 ``True``。"
 
 #: ../../library/inspect.rst:332
 msgid "Return ``True`` if the object is a Python generator function."
-msgstr "当该对象是一个 Python 生成器函数时返回``True``。"
+msgstr "当该对象是一个 Python 生成器函数时返回 ``True``。"
 
 #: ../../library/inspect.rst:334
 msgid ""
 "Functions wrapped in :func:`functools.partial` now return ``True`` if the "
 "wrapped function is a Python generator function."
 msgstr ""
-"对于使用 :func:`functools.partial` 封装的函数，如果被封装的函数是一个 Python "
-"生成器函数，现在也会返回``True``。"
+"对于使用 :func:`functools.partial` 封装的函数，如果被封装的函数是一个 Python 生成器函数，现在也会返回 "
+"``True``。"
 
 #: ../../library/inspect.rst:341
 msgid "Return ``True`` if the object is a generator."
-msgstr "当该对象是一个生成器时返回``True``。"
+msgstr "当该对象是一个生成器时返回 ``True``。"
 
 #: ../../library/inspect.rst:346
 msgid ""
@@ -665,7 +666,7 @@ msgid ""
 "defined with an :keyword:`async def` syntax)."
 msgstr ""
 "当该对象是一个 :term:`协程函数 <coroutine function>` （通过 :keyword:`async def` "
-"语法定义的函数）时返回``True``。"
+"语法定义的函数）时返回 ``True``。"
 
 #: ../../library/inspect.rst:351
 msgid ""
@@ -673,19 +674,19 @@ msgid ""
 "wrapped function is a :term:`coroutine function`."
 msgstr ""
 "对于使用 :func:`functools.partial` 封装的函数，如果被封装的函数是一个 :term:`协程函数 <coroutine "
-"function>` ，现在也会返回``True``。"
+"function>` ，现在也会返回 ``True``。"
 
 #: ../../library/inspect.rst:358
 msgid ""
 "Return ``True`` if the object is a :term:`coroutine` created by an "
 ":keyword:`async def` function."
 msgstr ""
-"当该对象是一个由 :keyword:`async def` 函数创建的 :term:`协程 <coroutine>` 时返回``True``。"
+"当该对象是一个由 :keyword:`async def` 函数创建的 :term:`协程 <coroutine>` 时返回 ``True``。"
 
 #: ../../library/inspect.rst:366
 msgid ""
 "Return ``True`` if the object can be used in :keyword:`await` expression."
-msgstr "如果该对象可以在 :keyword:`await` 表达式中使用时返回``True``。"
+msgstr "如果该对象可以在 :keyword:`await` 表达式中使用时返回 ``True``。"
 
 #: ../../library/inspect.rst:368
 msgid ""
@@ -697,7 +698,7 @@ msgstr "也可以用于区分基于生成器的协程和常规的生成器："
 msgid ""
 "Return ``True`` if the object is an :term:`asynchronous generator` function,"
 " for example::"
-msgstr "如果该对象是一个 :term:`异步生成器 <asynchronous generator>` 函数则返回``True``，例如："
+msgstr "如果该对象是一个 :term:`异步生成器 <asynchronous generator>` 函数则返回 ``True``，例如："
 
 #: ../../library/inspect.rst:396
 msgid ""
@@ -705,7 +706,7 @@ msgid ""
 "wrapped function is a :term:`asynchronous generator` function."
 msgstr ""
 "对于使用 :func:`functools.partial` 封装的函数，如果被封装的函数是一个 :term:`异步生成器 <asynchronous "
-"generator>` ，现在也会返回``True``。"
+"generator>` ，现在也会返回 ``True``。"
 
 #: ../../library/inspect.rst:403
 msgid ""

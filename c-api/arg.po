@@ -16,6 +16,7 @@
 # Jing Li <tes286.lijing@gmail.com>, 2021
 # 高乐喆 <gaolezhe@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -756,8 +757,8 @@ msgid ""
 " of a C variable (of arbitrary type), converted to :c:expr:`void *`.  The "
 "*converter* function in turn is called as follows::"
 msgstr ""
-"通过*converter*函数将Python对象转换为C变量。这需要两个参数：第一个是函数，第二个是C变量（任意类型）的地址，转换为c:expr:`void"
-" *`。*转换器*函数依次调用如下："
+"通过 *converter* 函数将 Python 对象转换为 C 变量。这需要两个参数：第一个是函数，第二个是 C 变量（任意类型）的地址，转换为 "
+":c:expr:`void *`。*转换器* 函数依次调用如下："
 
 #: ../../c-api/arg.rst:353
 msgid ""
@@ -780,10 +781,10 @@ msgid ""
 "call, the *object* parameter will be ``NULL``; *address* will have the same "
 "value as in the original call."
 msgstr ""
-"如果 *converter* 返回 "
-"``Py_CLEANUP_SUPPORTED``，则如果参数解析最终失败，它可能会再次调用该函数，从而使转换器有机会释放已分配的任何内存。在第二个调用中，*object*"
-" 参数将为 ``NULL``;因此，该参数将为 ``NULL``;因此，该参数将为 ``NULL``，因此，该参数将为 ``NULL``（如果值）为 "
-"``NULL`` *address* 的值与原始呼叫中的值相同。"
+"如果 *converter* 返回 ``Py_CLEANUP_SUPPORTED`` "
+"，则如果参数解析最终失败，它可能会再次调用该函数，从而使转换器有机会释放已分配的任何内存。在第二个调用中，*object* 参数将为 ``NULL`` "
+";因此，该参数将为 ``NULL`` ;因此，该参数将为 ``NULL`` ，因此，该参数将为 ``NULL`` （如果值）为 ``NULL`` "
+"*address* 的值与原始呼叫中的值相同。"
 
 #: ../../c-api/arg.rst:365
 msgid "``Py_CLEANUP_SUPPORTED`` was added."

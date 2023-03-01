@@ -12,10 +12,10 @@
 # xixi zhao <xixizxx@gmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
-# Bryan不可思议, 2022
 # Nyuan Zhang, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
 # 乐成 王, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Last-Translator: 乐成 王, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,9 +82,9 @@ msgid ""
 ":ref:`above <abstract-grammar>`.  They are defined in the :mod:`_ast` C "
 "module and re-exported in :mod:`ast`."
 msgstr ""
-"这是所有 AST 节点类的基类。实际上，这些节点类来源于 :file:`Parser/Python.asdl` "
-"文件，文件内容已被完整展示:ref:`如上 <abstract-grammar>`。它们在 C 模块 :mod:`_ast` 中定义，并在这个 "
-":mod:`ast` 模块中被“再导出”给用户。"
+"这是所有 AST 节点类的基类。实际上，这些节点类来源于 :file:`Parser/Python.asdl` 文件，文件内容已被完整展示 "
+":ref:`如上 <abstract-grammar>`。它们在 C 模块 :mod:`_ast` 中定义，并在这个 :mod:`ast` "
+"模块中被“再导出”给用户。"
 
 #: ../../library/ast.rst:51
 msgid ""
@@ -105,7 +105,7 @@ msgstr ""
 msgid ""
 "Each concrete class has an attribute :attr:`_fields` which gives the names "
 "of all child nodes."
-msgstr "每个具体类都有属性 :attr:`_fields`，用来给出所有子节点的名字。 "
+msgstr "每个具体类都有属性 :attr:`_fields`，用来给出所有子节点的名字。"
 
 #: ../../library/ast.rst:67
 msgid ""
@@ -1268,7 +1268,7 @@ msgstr ""
 
 #: ../../library/ast.rst:2038
 msgid ":class:`AsyncFunctionDef` is now supported."
-msgstr "目前支持 :class:`AsyncFunctionDef` "
+msgstr "目前支持 :class:`AsyncFunctionDef`"
 
 #: ../../library/ast.rst:2044
 msgid ""
@@ -1413,7 +1413,7 @@ msgstr ""
 msgid ""
 "Here is an example transformer that rewrites all occurrences of name lookups"
 " (``foo``) to ``data['foo']``::"
-msgstr "如下是一个转换器示例，它将所有出现的名称 (``foo``) 重写为 ``data['foo']``:: "
+msgstr "如下是一个转换器示例，它将所有出现的名称 (``foo``) 重写为 ``data['foo']``::"
 
 #: ../../library/ast.rst:2154
 msgid ""
@@ -1441,7 +1441,7 @@ msgstr ""
 
 #: ../../library/ast.rst:2170
 msgid "Usually you use the transformer like this::"
-msgstr "通常你可以像这样使用转换器:: "
+msgstr "通常你可以像这样使用转换器::"
 
 #: ../../library/ast.rst:2177
 msgid ""

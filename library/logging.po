@@ -13,6 +13,7 @@
 # Leo Li <foxleoly@hotmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -134,11 +135,11 @@ msgid ""
 "``logging.getLogger(__name__)``.  That's because in a module, ``__name__`` "
 "is the module's name in the Python package namespace."
 msgstr ""
-"``name`` 一般是句点分割的层级值, 像``foo.bar.baz`` (尽管也可以只是普通的 "
+"``name`` 一般是句点分割的层级值, 像 ``foo.bar.baz`` (尽管也可以只是普通的 "
 "``foo``)。层次结构列表中位于下方的记录器是列表中较高位置的记录器的子级。例如，有个名叫 ``foo`` 的记录器，而名字是 "
-"``foo.bar``，``foo.bar.baz``，和 ``foo.bam`` 的记录器都是 ``foo`` 的子级。记录器的名字分级类似 "
+"``foo.bar``， ``foo.bar.baz``，和 ``foo.bam`` 的记录器都是 ``foo`` 的子级。记录器的名字分级类似 "
 "Python 包的层级，如果您使用建议的结构 ``logging.getLogger(__name__)`` "
-"在每个模块的基础上组织记录器，则与之完全相同。这是因为在模块里，``__name__`` 是该模块在 Python 包命名空间中的名字。"
+"在每个模块的基础上组织记录器，则与之完全相同。这是因为在模块里， ``__name__`` 是该模块在 Python 包命名空间中的名字。"
 
 #: ../../library/logging.rst:82
 msgid ""
@@ -818,7 +819,7 @@ msgid ""
 msgstr ""
 ":class:`Formatter` 对象拥有以下的属性和方法。一般情况下，它们负责将 :class:`LogRecord` "
 "转换为可由人或外部系统解释的字符串。基础的 :class:`Formatter` 允许指定格式字符串。如果未提供任何值，则使用默认值 "
-"``'%(message)s'`` ，它仅将消息包括在日志记录调用中。要在格式化输出中包含其他信息（如时间戳），请阅读下文。 "
+"``'%(message)s'`` ，它仅将消息包括在日志记录调用中。要在格式化输出中包含其他信息（如时间戳），请阅读下文。"
 
 #: ../../library/logging.rst:558
 msgid ""

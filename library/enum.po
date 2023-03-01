@@ -10,8 +10,8 @@
 # Shengjing Zhu <zsj950618@gmail.com>, 2022
 # WH-2099 <wh2099@outlook.com>, 2022
 # jaystone776 <1732865113@qq.com>, 2022
-# Alpha Du <alphanow@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:05+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -839,13 +839,13 @@ msgstr ""
 msgid ""
 "For standard :class:`Enum` classes the next value chosen is the last value "
 "seen incremented by one."
-msgstr "对于标准的:class:`Enum`类，选择的下一个值是最后所见值加1。"
+msgstr "对于标准的 :class:`Enum` 类，选择的下一个值是最后所见值加 1。"
 
 #: ../../library/enum.rst:784
 msgid ""
 "For :class:`Flag` classes the next value chosen will be the next highest "
 "power-of-two, regardless of the last value seen."
-msgstr "对于:class:`Flag`类，下一个选择的值将是下一个最高的2次幂数，与最后所见值无关。"
+msgstr "对于 :class:`Flag` 类，下一个选择的值将是下一个最高的 2 次幂数，与最后所见值无关。"
 
 #: ../../library/enum.rst:787
 msgid "``_missing_``, ``_order_``, ``_generate_next_value_``"

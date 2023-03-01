@@ -16,6 +16,7 @@
 # Dai Xu <daixu61@hotmail.com>, 2022
 # Jiuh-star <jiuh.star@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -707,7 +708,7 @@ msgid ""
 "Widgets aren't automatically added to the user interface when they are "
 "created. A *geometry manager* like ``grid`` controls where in the user "
 "interface they are placed."
-msgstr "小部件在创建时不会自动添加到用户界面。一个像``grid``的 *几何管理器* 控制这些小部件在用户界面的位置。"
+msgstr "小部件在创建时不会自动添加到用户界面。一个像 ``grid`` 的 *几何管理器* 控制这些小部件在用户界面的位置。"
 
 #: ../../library/tkinter.rst:348
 msgid "event loop"
@@ -904,7 +905,7 @@ msgid ""
 "functions that take a widget as a parameter often have their own man page "
 "(e.g., `grid <https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_)."
 msgstr ""
-"在 Tcl/Tk 官方参考文档中，你会发现手册页上大多数操作看起来都像是特定控件的的方法调用（例如，你会在`ttk::button "
+"在 Tcl/Tk 官方参考文档中，你会发现手册页上大多数操作看起来都像是特定控件的的方法调用（例如，你会在 `ttk::button "
 "<https://www.tcl.tk/man/tcl8.6/TkCmd/ttk_button.htm>`_ 手册页上找到 :meth:`invoke`"
 " 方法），而以控件作为参数的函数通常有自己的手册页（例如，`grid "
 "<https://www.tcl.tk/man/tcl8.6/TkCmd/grid.htm>`_ ）。"
@@ -1597,7 +1598,7 @@ msgid ""
 "occurs. An Event instance will be passed as the argument. (Functions "
 "deployed this way are commonly known as *callbacks*.)"
 msgstr ""
-"是带有一个参数的 Python 函数，发生事件时将会调用。传入的参数为一个 Event 实例。（以这种方式部署的函数通常称为 *回调函数*。） "
+"是带有一个参数的 Python 函数，发生事件时将会调用。传入的参数为一个 Event 实例。（以这种方式部署的函数通常称为 *回调函数*。）"
 
 #: ../../library/tkinter.rst:893
 msgid "add"
@@ -1611,7 +1612,7 @@ msgid ""
 "list of functions bound to this event type."
 msgstr ""
 "可选项， ``''`` 或 ``'+'`` 。传入空字符串表示本次绑定将替换与此事件关联的其他所有绑定。传递 ``'+'`` "
-"则意味着加入此事件类型已绑定函数的列表中。 "
+"则意味着加入此事件类型已绑定函数的列表中。"
 
 #: ../../library/tkinter.rst:902
 msgid ""
@@ -1622,7 +1623,7 @@ msgid ""
 "man pages."
 msgstr ""
 "请注意，在 ``turn_red()`` 回调函数中如何访问事件的 widget 字段。该字段包含了捕获 X "
-"事件的控件。下表列出了事件可供访问的其他字段，及其在 Tk 中的表示方式，这在查看 Tk 手册时很有用处。 "
+"事件的控件。下表列出了事件可供访问的其他字段，及其在 Tk 中的表示方式，这在查看 Tk 手册时很有用处。"
 
 #: ../../library/tkinter.rst:908 ../../library/tkinter.rst:908
 msgid "Tkinter Event Field"
@@ -1766,7 +1767,7 @@ msgid ""
 "used to point at a specific place in a Text widget, or to particular "
 "characters in an Entry widget, or to particular menu items in a Menu widget."
 msgstr ""
-"很多控件都需要传入 index 参数。该参数用于指明 Text 控件中的位置，或指明 Entry 控件中的字符，或指明 Menu 控件中的菜单项。 "
+"很多控件都需要传入 index 参数。该参数用于指明 Text 控件中的位置，或指明 Entry 控件中的字符，或指明 Menu 控件中的菜单项。"
 
 #: ../../library/tkinter.rst:938
 msgid "Entry widget indexes (index, view index, etc.)"
@@ -1777,7 +1778,7 @@ msgid ""
 "Entry widgets have options that refer to character positions in the text "
 "being displayed.  You can use these :mod:`tkinter` functions to access these"
 " special points in text widgets:"
-msgstr "Entry 控件带有索引属性，指向显示文本中的字符位置。这些 :mod:`tkinter`  函数可用于访问文本控件中的这些特定位置： "
+msgstr "Entry 控件带有索引属性，指向显示文本中的字符位置。这些 :mod:`tkinter`  函数可用于访问文本控件中的这些特定位置："
 
 #: ../../library/tkinter.rst:942
 msgid "Text widget indexes"
@@ -1787,7 +1788,7 @@ msgstr "Text 控件的索引"
 msgid ""
 "The index notation for Text widgets is very rich and is best described in "
 "the Tk man pages."
-msgstr "Text 控件的索引语法非常复杂，最好还是在 Tk 手册中查看。 "
+msgstr "Text 控件的索引语法非常复杂，最好还是在 Tk 手册中查看。"
 
 #: ../../library/tkinter.rst:967
 msgid "Menu indexes (menu.invoke(), menu.entryconfig(), etc.)"
@@ -1797,13 +1798,13 @@ msgstr "Menu 索引（menu.invoke()、menu.entryconfig() 等）"
 msgid ""
 "Some options and methods for menus manipulate specific menu entries. Anytime"
 " a menu index is needed for an option or a parameter, you may pass in:"
-msgstr "菜单的某些属性和方法可以操纵特定的菜单项。只要属性或参数需要用到菜单索引，就可用以下方式传入： "
+msgstr "菜单的某些属性和方法可以操纵特定的菜单项。只要属性或参数需要用到菜单索引，就可用以下方式传入："
 
 #: ../../library/tkinter.rst:948
 msgid ""
 "an integer which refers to the numeric position of the entry in the widget, "
 "counted from the top, starting with 0;"
-msgstr "一个整数，指的是菜单项的数字位置，从顶部开始计数，从 0 开始； "
+msgstr "一个整数，指的是菜单项的数字位置，从顶部开始计数，从 0 开始；"
 
 #: ../../library/tkinter.rst:951
 msgid ""
@@ -1836,7 +1837,7 @@ msgid ""
 "above literals, instead."
 msgstr ""
 "与菜单项的文本标签进行模式匹配的文本串，从菜单顶部扫描到底部。请注意，此索引类型是在其他所有索引类型之后才会考虑的，这意味着文本标签为 "
-"``last``、``active`` 或 ``none``  的菜单项匹配成功后，可能会视为这些单词文字本身。 "
+"``last``、``active`` 或 ``none``  的菜单项匹配成功后，可能会视为这些单词文字本身。"
 
 #: ../../library/tkinter.rst:970
 msgid "Images"
@@ -1846,7 +1847,7 @@ msgstr "图片"
 msgid ""
 "Images of different formats can be created through the corresponding "
 "subclass of :class:`tkinter.Image`:"
-msgstr "通过 :class:`tkinter.Image` 的各种子类可以创建相应格式的图片： "
+msgstr "通过 :class:`tkinter.Image` 的各种子类可以创建相应格式的图片："
 
 #: ../../library/tkinter.rst:975
 msgid ":class:`BitmapImage` for images in XBM format."
@@ -1873,7 +1874,7 @@ msgid ""
 " empty box wherever the image was used."
 msgstr ""
 "然后可在某些支持 ``image`` 属性的控件中（如标签、按钮、菜单）使用图片对象。这时，Tk 不会保留对图片对象的引用。当图片对象的最后一个 "
-"Python 引用被删除时，图片数据也会删除，并且 Tk 会在用到图片对象的地方显示一个空白框。 "
+"Python 引用被删除时，图片数据也会删除，并且 Tk 会在用到图片对象的地方显示一个空白框。"
 
 #: ../../library/tkinter.rst:991
 msgid ""
@@ -1925,7 +1926,7 @@ msgid ""
 "called as follows::"
 msgstr ""
 "注册文件处理程序的回调函数 *func*。 *file* 参数可以是具备 :meth:`~io.IOBase.fileno` "
-"方法的对象（例如文件或套接字对象），也可以是整数文件描述符。 *mask* 参数是下述三个常量的逻辑“或”组合。回调函数将用以下格式调用： "
+"方法的对象（例如文件或套接字对象），也可以是整数文件描述符。 *mask* 参数是下述三个常量的逻辑“或”组合。回调函数将用以下格式调用："
 
 #: ../../library/tkinter.rst:1034
 msgid "Unregisters a file handler."

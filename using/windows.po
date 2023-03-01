@@ -9,9 +9,9 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Zombie110year <zombie110year@gmail.com>, 2022
-# 高乐喆 <gaolezhe@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # Nyuan Zhang, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:51+0000\n"
-"Last-Translator: Nyuan Zhang, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -156,7 +156,7 @@ msgstr "将安装标准库，测试套件，启动器和pip"
 #: ../../using/windows.rst:78
 msgid ""
 "If selected, the install directory will be added to your :envvar:`PATH`"
-msgstr "如果选择将安装目录将添加到 :envvar:`PATH` "
+msgstr "如果选择将安装目录将添加到 :envvar:`PATH`"
 
 #: ../../using/windows.rst:79
 msgid "Shortcuts will only be visible for the current user"
@@ -200,7 +200,7 @@ msgstr "标准库可以预编译为字节码"
 msgid ""
 "If selected, the install directory will be added to the system "
 ":envvar:`PATH`"
-msgstr "如果选中，安装目录将添加到系统 :envvar:`PATH` "
+msgstr "如果选中，安装目录将添加到系统 :envvar:`PATH`"
 
 #: ../../using/windows.rst:94
 msgid "Shortcuts are available for all users"
@@ -448,7 +448,7 @@ msgstr "Include_exe"
 msgid ""
 "Install :file:`python.exe` and related files. Omitting this may lead to an "
 "unusable installation."
-msgstr "安装:file:`python.exe`以及相关文件。忽略此项可能会导致安装不可用。"
+msgstr "安装 :file:`python.exe` 以及相关文件。忽略此项可能会导致安装不可用。"
 
 #: ../../using/windows.rst:194
 msgid "Include_launcher"
@@ -466,7 +466,7 @@ msgstr "InstallLauncherAllUsers"
 msgid ""
 "Installs the launcher for all users. Also requires ``Include_launcher`` to "
 "be set to 1"
-msgstr "为所有用户安装启动器。还需要``Include_launcher`` 被设定为1"
+msgstr "为所有用户安装启动器。还需要 ``Include_launcher`` 被设定为1"
 
 #: ../../using/windows.rst:200
 msgid "Include_lib"
@@ -964,7 +964,7 @@ msgid ""
 " line."
 msgstr ""
 "使用专门的可执行文件作为启动程序需要一些编码，但为用户提供了最透明的体验。使用定制的启动器，没有明显的迹象表明程序是在Python上运行的：图标可以定制，公司和版本信息可以指定，文件关联可以正常运行。在大多数情况下，自定义启动程序应该只需使用硬编码的命令行就能调用"
-" ``Py_Main``  "
+" ``Py_Main``"
 
 #: ../../using/windows.rst:497
 msgid ""
@@ -1447,7 +1447,7 @@ msgstr "从脚本"
 msgid ""
 "Let's create a test Python script - create a file called ``hello.py`` with "
 "the following contents"
-msgstr "让我们创建一个测试Python脚本 - 创建一个名为``hello.py``的文件，其中包含以下内容"
+msgstr "让我们创建一个测试Python脚本 - 创建一个名为 ``hello.py`` 的文件，其中包含以下内容"
 
 #: ../../using/windows.rst:798
 msgid "From the directory in which hello.py lives, execute the command::"
@@ -1767,7 +1767,7 @@ msgstr "命令 ``python3.7`` 根本不会查阅任何选项，因为版本已完
 msgid ""
 "If ``PY_PYTHON=3``, the commands ``python`` and ``python3`` will both use "
 "the latest installed Python 3 version."
-msgstr "如果 ``PY_PYTHON=3`` ，命令``python`` 和 ``python3`` 都将使用最新安装的Python 3版本。"
+msgstr "如果 ``PY_PYTHON=3`` ，命令 ``python`` 和 ``python3`` 都将使用最新安装的Python 3版本。"
 
 #: ../../using/windows.rst:993
 msgid ""
@@ -2121,7 +2121,7 @@ msgid ""
 msgstr ""
 "如果你在自己的可执行文件中加载 :file:`python3.dll` 或 :file:`python37.dll` ，在 "
 ":c:func:`Py_Initialize` 之前，要显式调用 :c:func:`Py_SetPath`  或（至少） "
-":c:func:`Py_SetProgramName` "
+":c:func:`Py_SetProgramName`"
 
 #: ../../using/windows.rst:1162
 msgid ""
@@ -2174,7 +2174,7 @@ msgid ""
 msgstr ""
 "在 ``Modules`` （不是 ``PythonPath`` ）下的注册表中指定的模块可以通过以下方式导入 "
 ":class:`importlib.machinery.WindowsRegistryFinder` "
-"。在Windows上，此查找程序在3.6.0及更早版本的可用，但可能需要在将来显式添加到 :attr:`sys.meta_path` "
+"。在Windows上，此查找程序在3.6.0及更早版本的可用，但可能需要在将来显式添加到 :attr:`sys.meta_path`"
 
 #: ../../using/windows.rst:1194
 msgid "Additional modules"
@@ -2338,7 +2338,7 @@ msgid ""
 "The `Cygwin <https://cygwin.com/>`_ installer offers to install the `Python "
 "interpreter <https://cygwin.com/packages/summary/python3.html>`__ as well"
 msgstr ""
-"Cygwin <https://cygwin.com/>`_安装程序也提供了安装 `Python 解释器 "
+"Cygwin `<https://cygwin.com/>`_安装程序也提供了安装 `Python 解释器 "
 "<https://cygwin.com/packages/summary/python3.html>`__ 的功能。"
 
 #: ../../using/windows.rst:1274
@@ -2347,4 +2347,4 @@ msgid ""
 "detailed information about platforms with pre-compiled installers."
 msgstr ""
 "有关具有预编译安装程序平台的详细信息，请参阅 `Python for Windows "
-"<https://www.python.org/downloads/windows/>`_ "
+"<https://www.python.org/downloads/windows/>`_"

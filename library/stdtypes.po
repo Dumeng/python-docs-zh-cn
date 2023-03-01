@@ -26,6 +26,7 @@
 # Dai Xu <daixu61@hotmail.com>, 2022
 # WH-2099 <wh2099@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -34,7 +35,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -417,7 +418,6 @@ msgid ""
 msgstr ""
 "Python "
 "完全支持混合运算：当一个二元算术运算符的操作数有不同数值类型时，\"较窄\"类型的操作数会拓宽到另一个操作数的类型，其中整数比浮点数窄，浮点数比复数窄。不同类型的数字之间的比较，同比较这些数字的精确值一样。[2]_"
-" "
 
 #: ../../library/stdtypes.rst:268
 msgid ""
@@ -689,7 +689,7 @@ msgstr ":func:`math.floor(\\ x) <math.floor>`"
 
 #: ../../library/stdtypes.rst:373
 msgid "the greatest :class:`~numbers.Integral` <= *x*"
-msgstr "<= *x* 的最大 :class:`~numbers.Integral` "
+msgstr "<= *x* 的最大 :class:`~numbers.Integral`"
 
 #: ../../library/stdtypes.rst:376
 msgid ":func:`math.ceil(x) <math.ceil>`"
@@ -697,7 +697,7 @@ msgstr ":func:`math.ceil(x) <math.ceil>`"
 
 #: ../../library/stdtypes.rst:376
 msgid "the least :class:`~numbers.Integral` >= *x*"
-msgstr ">= *x* 的最小 :class:`~numbers.Integral` "
+msgstr ">= *x* 的最小 :class:`~numbers.Integral`"
 
 #: ../../library/stdtypes.rst:380
 msgid ""
@@ -2413,8 +2413,8 @@ msgid ""
 "unless an encoding error actually occurs, :ref:`devmode` is enabled or a "
 ":ref:`debug build <debug-build>` is used."
 msgstr ""
-"出于性能原因，除非真正发生了编码错误，启用了 :ref:`devmode`或使用了 :ref:`调试编译版 <debug-build>` 否则不会检查 "
-"*errors* 值的有效性。"
+"出于性能原因，除非真正发生了编码错误，启用了 :ref:`devmode` 或使用了 :ref:`调试编译版 <debug-build>` 否则不会检查"
+" *errors* 值的有效性。"
 
 #: ../../library/stdtypes.rst:1643 ../../library/stdtypes.rst:2782
 msgid "Added support for keyword arguments."
@@ -2539,7 +2539,7 @@ msgid ""
 msgstr ""
 "如果字符串中的所有字符都是字母或数字且至少有一个字符，则返回 ``True`` ， 否则返回 ``False`` 。 如果 "
 "``c.isalpha()`` ， ``c.isdecimal()`` ， ``c.isdigit()`` ，或 ``c.isnumeric()`` "
-"之中有一个返回 ``True`` ，则字符``c``是字母或数字。"
+"之中有一个返回 ``True`` ，则字符 ``c`` 是字母或数字。"
 
 #: ../../library/stdtypes.rst:1759
 msgid ""
@@ -5885,7 +5885,7 @@ msgid ""
 "The builtin functions :func:`isinstance` and :func:`issubclass` do not "
 "accept ``GenericAlias`` types for their second argument::"
 msgstr ""
-"内置函数 :func:`isinstance` 和 :func:`issubclass` 不接受第二个参数为``GenericAlias`` 类型："
+"内置函数 :func:`isinstance` 和 :func:`issubclass` 不接受第二个参数为 ``GenericAlias`` 类型："
 
 #: ../../library/stdtypes.rst:4911
 msgid ""
@@ -6249,7 +6249,7 @@ msgid ""
 "example, the following function expects an argument of type :class:`int` or "
 ":class:`float`::"
 msgstr ""
-"定义包含了 *X*、*Y* 等类型的 union 对象。``X | Y`` 表示 X 或 Y。相当于``typing.Union[X, Y]`` "
+"定义包含了 *X*、*Y* 等类型的 union 对象。 ``X | Y`` 表示 X 或 Y。相当于 ``typing.Union[X, Y]`` "
 "。比如以下函数的参数应为类型  :class:`int` 或 :class:`float` ："
 
 #: ../../library/stdtypes.rst:5113

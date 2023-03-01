@@ -11,6 +11,7 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -451,7 +452,7 @@ msgid ""
 "parsing function what the type of the variable is and how to convert it.  "
 "For more on format units please see :ref:`arg-parsing`.)"
 msgstr ""
-"每个参数都要从``PyArg_Parse()`` 格式参数中复制其 “格式单元”，并以带引号字符串的形式指定其转换器。（“格式单元”是 "
+"每个参数都要从 ``PyArg_Parse()`` 格式参数中复制其 “格式单元”，并以带引号字符串的形式指定其转换器。（“格式单元”是 "
 "``format`` 参数的1-3个字符的正式名称，用于让参数解析函数知晓该变量的类型及转换方法。关于格式单位的更多信息，请参阅 :ref:`arg-"
 "parsing` ）。"
 
@@ -749,7 +750,7 @@ msgstr "例如，若对 ``pickle.Pickler.dump`` 生成的 C 函数进行重命�
 msgid ""
 "The base function would now be named ``pickler_dumper()``, and the impl "
 "function would now be named ``pickler_dumper_impl()``."
-msgstr "原函数会被命名为 ``pickler_dumper()``，而实现函数现在被命名为``pickler_dumper_impl()``。"
+msgstr "原函数会被命名为 ``pickler_dumper()``，而实现函数现在被命名为 ``pickler_dumper_impl()``。"
 
 #: ../../howto/clinic.rst:599
 msgid ""
@@ -828,7 +829,7 @@ msgstr ""
 "、可选参数和默认值的方式，但并不是全都可以做到。这些过时函数中， :c:func:`PyArg_ParseTupleAndKeywords` "
 "并不能直接支持某些功能。最明显的例子是内置函数 ``range()``，它的必需参数的 *左* 边存在一个可选参数！另一个例子是 "
 "``curses.window.addch()``，它的两个参数是一组，必须同时指定。（参数名为 ``x`` 和 ``y``；如果调用函数时传入了 "
-"``x``，则必须同时传入``y``；如果未传入 ``x`` ，则也不能传入 ``y``）。"
+"``x``，则必须同时传入 ``y``；如果未传入 ``x`` ，则也不能传入 ``y``）。"
 
 #: ../../howto/clinic.rst:653
 msgid ""
@@ -866,7 +867,7 @@ msgid ""
 "optional groups to make the first two parameters and the last parameter "
 "optional::"
 msgstr ""
-"若要定义可选组，可在要分组的参数前面加上 ``[``，在这些参数后加上``]`` ，要在同一行上。举个例子，下面是 "
+"若要定义可选组，可在要分组的参数前面加上 ``[``，在这些参数后加上 ``]`` ，要在同一行上。举个例子，下面是 "
 "``curses.window.addch`` 采用可选组的用法，前两个参数和最后一个参数可选："
 
 #: ../../howto/clinic.rst:699
@@ -1507,9 +1508,9 @@ msgid ""
 "units that start with ``e``)."
 msgstr ""
 "其实诀窍在于，这些格式单元都需要给出参数——要么是转换函数，要么是类型，要么是指定编码的字符串。（但 "
-"“传统转换器”不支持参数。这就是为什么第一个函数要跳过这些内容）。为格式单元指定的参数于是就成了转换器的参数；参数可以是 "
-"``converter``（对于 ``O&``）、``subclass_of``（对于 ``O!``），或者是 ``encoding`` （对于 "
-"``e`` 开头的格式单元）。"
+"“传统转换器”不支持参数。这就是为什么第一个函数要跳过这些内容）。为格式单元指定的参数于是就成了转换器的参数；参数可以是 ``converter`` "
+"（对于 ``O&`` ）、``subclass_of`` （对于 ``O!`` ），或者是 ``encoding`` （对于 ``e`` "
+"开头的格式单元）。"
 
 #: ../../howto/clinic.rst:915
 msgid ""
@@ -1574,7 +1575,7 @@ msgid ""
 "with ``NULL``."
 msgstr ""
 "对于字符串和对象参数而言，可以设为 ``None``，表示没有默认值。但这意味着会将 C 变量初始化为 "
-"``Py_None``。为了方便起见，提供了一个特殊值``NULL``，目的就是为了让 Python 认为默认值就是 ``None``，而 C "
+"``Py_None``。为了方便起见，提供了一个特殊值 ``NULL``，目的就是为了让 Python 认为默认值就是 ``None``，而 C "
 "变量则会初始化为 ``NULL``。"
 
 #: ../../howto/clinic.rst:968
@@ -1630,8 +1631,8 @@ msgid ""
 "explicitly. When you use an expression, you must also specify the equivalent"
 " expression in C, using the ``c_default`` parameter to the converter:"
 msgstr ""
-"仅当运行时才对缺省值求值，意味着 Argument Clinic 无法计算出正确的 C "
-"缺省值。所以需显式给出。在使用表达式时，必须同时用转换器的``c_default`` 参数指定 C 语言中的等价表达式。"
+"仅当运行时才对缺省值求值，意味着 Argument Clinic 无法计算出正确的 C 缺省值。所以需显式给出。在使用表达式时，必须同时用转换器的 "
+"``c_default`` 参数指定 C 语言中的等价表达式。"
 
 #: ../../howto/clinic.rst:1008
 msgid ""
@@ -1987,7 +1988,7 @@ msgid ""
 "parameter using the ``O&`` format unit—parsing this parameter means calling "
 "a :c:func:`PyArg_ParseTuple` \"converter function\"."
 msgstr ""
-"上一节中已有提及……可以编写自己的转换器！转换器就是一个继承自``CConverter`` 的 Python 类。假如有个参数采用了 ``O&`` "
+"上一节中已有提及……可以编写自己的转换器！转换器就是一个继承自 ``CConverter`` 的 Python 类。假如有个参数采用了 ``O&`` "
 "格式，对此参数进行解析就会去调用某个“转换器函数” :c:func:`PyArg_ParseTuple` ，也就会用到自定义转换器。"
 
 #: ../../howto/clinic.rst:1280
@@ -2145,7 +2146,7 @@ msgid ""
 "``CReturnConverter`` and all its subclasses."
 msgstr ""
 "返回值转换器必须是 ``CReturnConverter`` "
-"的子类。因为自定义的返回值转换器还没有广泛应用，目前还没有示例。若要编写返回值转换器，请阅读``Tools/clinic/clinic.py`` "
+"的子类。因为自定义的返回值转换器还没有广泛应用，目前还没有示例。若要编写返回值转换器，请阅读 ``Tools/clinic/clinic.py`` "
 "，特别是 ``CReturnConverter`` 及其所有子类的实现代码。"
 
 #: ../../howto/clinic.rst:1377
@@ -2209,7 +2210,7 @@ msgid ""
 "support keywords, the parsing function generated will throw an exception if "
 "it receives any.)"
 msgstr ""
-"虽然 ``__new__`` 和 ``__init__`` 函数必须以 ``args``和 ``kwargs`` "
+"虽然 ``__new__`` 和 ``__init__`` 函数必须以 ``args`` 和 ``kwargs`` "
 "对象作为参数，但在转换时可按个人喜好定义函数签名。（如果原函数不支持关键字参数，则生成的解析函数在收到关键字参数时会抛出异常）。"
 
 #: ../../howto/clinic.rst:1420
@@ -2324,7 +2325,7 @@ msgid ""
 "``os.path.splitext()`` run on the current file.  (Example: the ``file`` "
 "destination for ``_pickle.c`` would be written to ``_pickle.clinic.c``.)"
 msgstr ""
-"单独的 “Clinic 文件”，由 Clinic 自动创建。文件名会是``{basename}.clinic{extension}`` ，这里的 "
+"单独的 “Clinic 文件”，由 Clinic 自动创建。文件名会是 ``{basename}.clinic{extension}`` ，这里的 "
 "``basename`` 和 ``extension`` 即为对当前文件运行 ``os.path.splitext()`` "
 "后的结果。（比如：``_pickle.c`` 的 ``file`` 目的地将会是 ``_pickle.clinic.c``)。"
 
@@ -2473,7 +2474,7 @@ msgid ""
 "the ``two-pass`` buffer near the top of your file, and dump the ``buffer`` "
 "near the end just like you would when using the ``buffer`` preset."
 msgstr ""
-"类似于预设的  ``buffer`` 输出，但会把前向声明写入``two-pass`` 缓冲区，将函数定义写入 ``buffer``。这与预设的 "
+"类似于预设的  ``buffer`` 输出，但会把前向声明写入 ``two-pass`` 缓冲区，将函数定义写入 ``buffer``。这与预设的 "
 "``buffer`` 类似，但所需的代码编辑工作可能会减少。将 ``two-pass`` 缓冲区转储到文件的顶部，将 ``buffer`` "
 "转储到文件末尾，就像预设的 ``buffer`` 一样。"
 
@@ -2484,8 +2485,8 @@ msgid ""
 "``parser_prototype`` to ``two-pass``, write everything else to ``buffer``."
 msgstr ""
 "关闭 ``impl_prototype`` ，将 ``impl_definition`` 写入 ``block`` ，将 "
-"``docstring_prototype`` 、``methoddef_define`` 和 ``parser_prototype`` "
-"写入``two-pass``，其他输出都写入 ``buffer`` 。"
+"``docstring_prototype`` 、 ``methoddef_define`` 和 ``parser_prototype`` 写入 "
+"``two-pass``，其他输出都写入 ``buffer`` 。"
 
 #: ../../howto/clinic.rst:1598
 msgid "``partial-buffer``"
@@ -2531,7 +2532,7 @@ msgstr "子命令 ``new`` 工作方式如下："
 #: ../../howto/clinic.rst:1616
 msgid ""
 "This creates a new destination with name ``<name>`` and type ``<type>``."
-msgstr "新建一个目标，名称为 ``<name>``，类型为``<type>`` 。"
+msgstr "新建一个目标，名称为 ``<name>``，类型为 ``<type>`` 。"
 
 #: ../../howto/clinic.rst:1618
 msgid "There are five destination types:"
@@ -2731,7 +2732,8 @@ msgid ""
 "Perhaps you're wondering: what if ``HAVE_FUNCTIONNAME`` isn't defined? The "
 "``MODULE_FUNCTIONNAME_METHODDEF`` macro won't be defined either!"
 msgstr ""
-"如果 ``HAVE_FUNCTIONNAME`` 未定义怎么办？ 那么``MODULE_FUNCTIONNAME_METHODDEF`` 宏也不会定义。"
+"如果 ``HAVE_FUNCTIONNAME`` 未定义怎么办？ 那么 ``MODULE_FUNCTIONNAME_METHODDEF`` "
+"宏也不会定义。"
 
 #: ../../howto/clinic.rst:1754
 msgid ""

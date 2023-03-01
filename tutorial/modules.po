@@ -11,6 +11,7 @@
 # Alpha Du <alphanow@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
 # 乐成 王, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: 乐成 王, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -159,7 +160,7 @@ msgid ""
 "package is frowned upon, since it often causes poorly readable code. "
 "However, it is okay to use it to save typing in interactive sessions."
 msgstr ""
-"注意，一般情况下，不建议从模块或包内导入 ``*``，因为，这项操作经常让代码变得难以理解。不过，为了在交互式编译器中少打几个字，这么用也没问题。 "
+"注意，一般情况下，不建议从模块或包内导入 ``*``，因为，这项操作经常让代码变得难以理解。不过，为了在交互式编译器中少打几个字，这么用也没问题。"
 
 #: ../../tutorial/modules.rst:116
 msgid ""
@@ -270,7 +271,7 @@ msgid ""
 "directory containing the symlink is **not** added to the module search path."
 msgstr ""
 "在支持符号链接的文件系统中，“被命令行直接运行的脚本所在的目录”是符号链接最终指向的目录。换句话说，符号链接所在的目录并 **没有** "
-"被添加至模块搜索路径。 "
+"被添加至模块搜索路径。"
 
 #: ../../tutorial/modules.rst:206
 msgid ""

@@ -10,10 +10,10 @@
 # nick <2330458484@qq.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Hissy <aozora@live.cn>, 2021
-# 之航 P <ppzzhh1186861238@hotmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -86,7 +86,7 @@ msgid ""
 "This section documents the objects and functions in the ``ssl`` module; for "
 "more general information about TLS, SSL, and certificates, the reader is "
 "referred to the documents in the \"See Also\" section at the bottom."
-msgstr "文档本文档记录``ssl`` 模块的对象和函数；更多关于TLS,SSL,和证书的信息，请参阅下方的“详情”选项"
+msgstr "文档本文档记录 ``ssl`` 模块的对象和函数；更多关于TLS,SSL,和证书的信息，请参阅下方的“详情”选项"
 
 #: ../../library/ssl.rst:42
 msgid ""
@@ -928,7 +928,7 @@ msgstr "选择 SSL 版本 2 作为通道加密协议。"
 msgid ""
 "This protocol is not available if OpenSSL is compiled with the ``no-ssl2`` "
 "option."
-msgstr "如果OpenSSL是用``no-ssl2``选项编译的，则该协议不可用。"
+msgstr "如果OpenSSL是用 ``no-ssl2`` 选项编译的，则该协议不可用。"
 
 #: ../../library/ssl.rst:719
 msgid "SSL version 2 is insecure.  Its use is highly discouraged."
@@ -946,7 +946,7 @@ msgstr "选择 SSL 版本 3 作为通道加密协议。"
 msgid ""
 "This protocol is not available if OpenSSL is compiled with the ``no-ssl3`` "
 "option."
-msgstr "如果OpenSSL是用``no-ssl3``选项编译的，则该协议不可用。"
+msgstr "如果OpenSSL是用 ``no-ssl3`` 选项编译的，则该协议不可用。"
 
 #: ../../library/ssl.rst:734
 msgid "SSL version 3 is insecure.  Its use is highly discouraged."

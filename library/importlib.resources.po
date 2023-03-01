@@ -8,6 +8,7 @@
 # WH-2099 <wh2099@outlook.com>, 2022
 # Dai Xu <daixu61@hotmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -183,7 +184,7 @@ msgid ""
 "``typing.BinaryIO`` instance, a binary I/O stream open for reading."
 msgstr ""
 "*package* 是包名或符合 ``Package`` 要求的模块对象。 *resource* 是要在 *package* "
-"内打开的资源名；不能包含路径分隔符，也不能有子资源（即不能为目录）。本函数将返回一个``typing.BinaryIO`` "
+"内打开的资源名；不能包含路径分隔符，也不能有子资源（即不能为目录）。本函数将返回一个 ``typing.BinaryIO`` "
 "实例以供读取，即一个已打开的二进制 I/O 流。"
 
 #: ../../library/importlib.resources.rst:109

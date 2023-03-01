@@ -10,6 +10,7 @@
 # WH-2099 <wh2099@outlook.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -797,7 +798,7 @@ msgid ""
 "and other hash based structures will misbehave."
 msgstr ""
 "此外，必须始终如此，如果 ``o1 == o2`` （即 ``o1.__eq__(o2) is True`` ）则 ``hash(o1) == "
-"hash(o2)``（即 ``o1.__hash__() == o2.__hash__()`` ），无论对象是否在字典中。 "
+"hash(o2)`` （即 ``o1.__hash__() == o2.__hash__()`` ），无论对象是否在字典中。 "
 "如果你不能满足这些限制，字典和其他基于 hash 的结构将会出错。"
 
 #: ../../faq/design.rst:531
@@ -860,7 +861,7 @@ msgstr ""
 "Python 2.6添加了一个 :mod:`abc` 模块，允许定义抽象基类 (ABCs)。然后可以使用 :func:`isinstance` 和 "
 ":func:`issubclass` 来检查实例或类是否实现了特定的ABC。 :mod:`collections.abc` 模块定义了一组有用的ABCs"
 " 例如 :class:`~collections.abc.Iterable` ， :class:`~collections.abc.Container`"
-" , 和 :class:`~collections.abc.MutableMapping` "
+" , 和 :class:`~collections.abc.MutableMapping`"
 
 #: ../../faq/design.rst:570
 msgid ""
@@ -1059,7 +1060,7 @@ msgstr ""
 
 #: ../../faq/design.rst:717
 msgid "Why are colons required for the if/while/def/class statements?"
-msgstr "为什么 if/while/def/class语句需要冒号？ "
+msgstr "为什么 if/while/def/class语句需要冒号？"
 
 #: ../../faq/design.rst:719
 msgid ""

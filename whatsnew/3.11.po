@@ -18,10 +18,11 @@
 # Leo Li <foxleoly@hotmail.com>, 2022
 # cdarlint <cdarling@126.com>, 2022
 # Sefank <sefank@foxmail.com>, 2022
-# Bryan不可思议, 2022
 # 周盛道 <zhoushengdao@sina.cn>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
 # Nyuan Zhang, 2023
+# Jason Ren, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -30,7 +31,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: Nyuan Zhang, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -337,8 +338,8 @@ msgid ""
 "runtime's tag for a ``-32`` suffix. All releases of Python since 3.5 have "
 "included this in their 32-bit builds."
 msgstr ""
-"当使用旧式的 ``-<major>``、``-<major>.<minor>``、``-<major>-<bitness>`` 或者是 "
-"``-<major>.<minor>-<bitness>``参数时，应保留过去版本的所有已有行为，且只选择 ``PythonCore`` "
+"当使用旧式的 ``-<major>`` 、``-<major>.<minor>`` 、``-<major>-<bitness>`` 或者是 "
+"``-<major>.<minor>-<bitness>`` 参数时，应保留过去版本的所有已有行为，且只选择 ``PythonCore`` "
 "的版本。不过，``-64`` 后缀现在表示“非 32 位”（不一定是 x86-64），因为有多个受支持的 64 位平台。通过检查运行时标记中的 "
 "``-32`` 后缀来检测 32 位运行时。Python 3.5 版本及其之后的所有版本都在 32 位版本中的运行时标记里标注了这一后缀。"
 
@@ -706,8 +707,8 @@ msgid ""
 "``exc_type`` and ``exc_traceback`` have been removed, as they can be derived"
 " from ``exc_value``. (Contributed by Irit Katriel in :issue:`45711`.)"
 msgstr ""
-"解释器状态对已处理异常（又名 ``exc_info`` 或 ``_PyErr_StackItem``）的表示现在只有 ``exc_value`` "
-"字段；``exc_type`` 和 ``exc_traceback``已被移除，因为它们可以派生自 ``exc_value``。（由 Irit "
+"解释器状态对已处理异常（又名 ``exc_info`` 或 ``_PyErr_StackItem`` ）的表示现在只有 ``exc_value`` "
+"字段；``exc_type`` 和 ``exc_traceback`` 已被移除，因为它们可以派生自 ``exc_value`` 。（由 Irit "
 "Katriel 在 :issue:`45711` 中贡献）"
 
 #: ../../whatsnew/3.11.rst:523
@@ -1787,7 +1788,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:1345
 msgid "Previously in 3.10, Python module execution looked like this:"
-msgstr ""
+msgstr "在 3.10 版本时，Python 模块执行类似于这样："
 
 #: ../../whatsnew/3.11.rst:1351
 msgid ""

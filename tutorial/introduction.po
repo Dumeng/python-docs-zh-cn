@@ -10,6 +10,7 @@
 # ww song <sww4718168@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
 # 乐成 王, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: 乐成 王, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -481,7 +482,7 @@ msgid ""
 "than), ``>`` (greater than), ``==`` (equal to), ``<=`` (less than or equal "
 "to), ``>=`` (greater than or equal to) and ``!=`` (not equal to)."
 msgstr ""
-":keyword:`while` 循环只要条件（这里是``a < 10``）为真就会一直执行。Python 和 C "
+":keyword:`while` 循环只要条件（这里是 ``a < 10``）为真就会一直执行。Python 和 C "
 "一样，任何非零整数都为真，零为假。这个条件也可以是字符串或列表的值，事实上，任何序列都可以；长度非零就为真，空序列则为假。示例中的判断只是最简单的比较。比较操作符的写法和"
 " C 语言一样： ``<`` （小于）、 ``>`` （大于）、 ``==`` （等于）、 ``<=`` （小于等于)、 ``>=`` （大于等于）及 "
 "``!=`` （不等于）。"
@@ -538,6 +539,5 @@ msgid ""
 "only difference between the two is that within single quotes you don't need "
 "to escape ``\"`` (but you have to escape ``\\'``) and vice versa."
 msgstr ""
-"与其他语言不同，特殊字符如 ``\\n`` "
-"在单引号（``'...'``）和双引号（``\"...\"``）里的意义一样。这两种引号唯一的区别是，不需要在单引号里转义双引号 "
-"``\"``（但此时必须把单引号转义成 ``\\'``），反之亦然。"
+"与其他语言不同，特殊字符如 ``\\n`` 在单引号（``'...'`` ）和双引号（``\"...\"`` "
+"）里的意义一样。这两种引号唯一的区别是，不需要在单引号里转义双引号 ``\"`` （但此时必须把单引号转义成 ``\\'`` ），反之亦然。"

@@ -8,6 +8,7 @@
 # Alpha Du <alphanow@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -886,8 +887,8 @@ msgid ""
 "deterministic profiling is not that expensive, yet provides extensive run "
 "time statistics about the execution of a Python program."
 msgstr ""
-"在Python中，由于在执行过程中总有一个活动的解释器，因此执行确定性评测不需要插入指令的代码。Python 自动为每个事件提供一个:dfn:`钩子` "
-"（可选回调）。此外，Python "
+"在Python中，由于在执行过程中总有一个活动的解释器，因此执行确定性评测不需要插入指令的代码。Python 自动为每个事件提供一个 :dfn:`钩子`"
+" （可选回调）。此外，Python "
 "的解释特性往往会给执行增加太多开销，以至于在典型的应用程序中，确定性分析往往只会增加很小的处理开销。结果是，确定性分析并没有那么代价高昂，但是它提供了有关"
 " Python 程序执行的大量运行时统计信息。"
 

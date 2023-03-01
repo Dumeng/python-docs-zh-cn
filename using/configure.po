@@ -7,6 +7,7 @@
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -85,7 +86,7 @@ msgid ""
 "Compile the Python ``main()`` function and link Python executable with C++ "
 "compiler: ``$CXX``, or *COMPILER* if specified."
 msgstr ""
-"编译 Python ``main()`` 函数，用 C++ 编译器链接 Python 可执行文件： `$CXX`` 或 *COMPILER*。"
+"编译 Python ``main()`` 函数，用 C++ 编译器链接 Python 可执行文件：``$CXX`` 或 *COMPILER*。"
 
 #: ../../using/configure.rst:52
 msgid "Set the Python executable suffix to *SUFFIX*."
@@ -197,7 +198,7 @@ msgid ""
 "``/usr/share/python-wheels/`` directory and don't install the "
 ":mod:`ensurepip._bundled` package."
 msgstr ""
-"某些 Linux 发行版的打包策略建议不要捆绑依赖关系。如 Fedora 在``/usr/share/python-wheels/`` 目录下安装 "
+"某些 Linux 发行版的打包策略建议不要捆绑依赖关系。如 Fedora 在 ``/usr/share/python-wheels/`` 目录下安装 "
 "wheel 包，而不安装 :mod:`ensurepip._bundled` 包。"
 
 #: ../../using/configure.rst:126

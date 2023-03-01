@@ -6,6 +6,7 @@
 # Translators:
 # ppcfish <ppcfish@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,8 +57,8 @@ msgid ""
 "each function that is going to be called by the Python interpreter.  Global "
 "or static C++ objects with constructors are probably not a good idea."
 msgstr ""
-"是的，可以使用C ++中兼容C的功能。 在Python include文件周围放置` `extern“C”{...}`` "
-"，并在Python解释器调用的每个函数之前放置 ``extern“C”`` 。 具有构造函数的全局或静态C ++对象可能不是一个好主意。"
+"是的，可以使用 C++ 中兼容 C 的功能。 在 Python include 文件周围放置 ``extern \"C\" { ... }`` "
+"，并在Python解释器调用的每个函数之前放置 ``extern \"C\"`` 。 具有构造函数的全局或静态 C++ 对象可能不是一个好主意。"
 
 #: ../../faq/extending.rst:37
 msgid "Writing C is hard; are there any alternatives?"
@@ -299,7 +300,7 @@ msgstr ""
 
 #: ../../faq/extending.rst:212
 msgid "For C++ libraries, see :ref:`c-wrapper-software`."
-msgstr "有关C ++库，请参阅 :ref:`c-wrapper-software` "
+msgstr "有关C ++库，请参阅 :ref:`c-wrapper-software`"
 
 #: ../../faq/extending.rst:216
 msgid "I added a module using the Setup file and the make fails; why?"

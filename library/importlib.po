@@ -13,6 +13,7 @@
 # Dai Xu <daixu61@hotmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -351,7 +352,7 @@ msgid ""
 "  The ``init`` function of extension modules is not called a second time."
 msgstr ""
 "Python 模块的代码会被重新编译并且那个模块级的代码被重新执行，通过重新使用一开始加载那个模块的 "
-":term:`loader`，定义一个新的绑定在那个模块字典中的名称的对象集合。扩展模块的``init``函数不会被调用第二次。"
+":term:`loader`，定义一个新的绑定在那个模块字典中的名称的对象集合。扩展模块的 ``init`` 函数不会被调用第二次。"
 
 #: ../../library/importlib.rst:183
 msgid ""
@@ -443,7 +444,7 @@ msgid ""
 "classes used by :keyword:`import`. Some subclasses of the core abstract base"
 " classes are also provided to help in implementing the core ABCs."
 msgstr ""
-" :mod:`importlib.abc` 模块包含了:keyword:`import` 使用到的所有核心抽象基类。在实现核心的 ABCs "
+":mod:`importlib.abc` 模块包含了 :keyword:`import` 使用到的所有核心抽象基类。在实现核心的 ABCs "
 "中，核心抽象基类的一些子类也提供了帮助。"
 
 #: ../../library/importlib.rst:247
@@ -904,7 +905,7 @@ msgstr ""
 msgid ""
 "With the subsequent code object one can execute it in a module by running "
 "``exec(code, module.__dict__)``."
-msgstr "在有后续代码对象的情况下，可以在一个模块中通过运行``exec(code, module.__dict__)``来执行它。"
+msgstr "在有后续代码对象的情况下，可以在一个模块中通过运行 ``exec(code, module.__dict__)`` 来执行它。"
 
 #: ../../library/importlib.rst:591
 msgid "Made the method static."
@@ -969,7 +970,7 @@ msgstr "模块的文件路径"
 
 #: ../../library/importlib.rst:649
 msgid "Calls super's ``load_module()``."
-msgstr "调用super的``load_module()``。"
+msgstr "调用super的 ``load_module()``。"
 
 #: ../../library/importlib.rst:651
 msgid "Use :meth:`Loader.exec_module` instead."
@@ -1111,7 +1112,7 @@ msgid ""
 msgstr ""
 ":meth:`InspectLoader.is_package` 的具体实现。一个模块被确定为一个包的条件是：它的文件路径（由 "
 ":meth:`ExecutionLoader.get_filename` 提供）当文件扩展名被移除时是一个命名为 ``__init__`` "
-"的文件，**并且** 这个模块名字本身不是以``__init__``结束。"
+"的文件，**并且** 这个模块名字本身不是以 ``__init__`` 结束。"
 
 #: ../../library/importlib.rst:758
 msgid ":mod:`importlib.machinery` -- Importers and path hooks"
@@ -1717,9 +1718,9 @@ msgid ""
 "__spec__.parent)`` without doing a check to see if the **package** argument "
 "is needed."
 msgstr ""
-"如果 **name** 前面没有句点，那就简单地返回 "
-"**name**。这样就能采用``importlib.util.resolve_name('sys', __spec__.parent)`` "
-"之类的写法，而无需检查是否需要 **package** 参数。"
+"如果 **name** 前面没有句点，那就简单地返回 **name**。这样就能采用 "
+"``importlib.util.resolve_name('sys', __spec__.parent)`` 之类的写法，而无需检查是否需要 "
+"**package** 参数。"
 
 #: ../../library/importlib.rst:1293
 msgid ""

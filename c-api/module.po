@@ -10,6 +10,7 @@
 # 高乐喆 <gaolezhe@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # Shan Su, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Shan Su, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,8 +36,8 @@ msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python module type.  "
 "This is exposed to Python programs as ``types.ModuleType``."
 msgstr ""
-"这个 C 类型实例 :c:type:`PyTypeObject` 用来表示Python中的模块类型。在 Python "
-"程序中该实例被暴露为``types.ModuleType``。"
+"这个 C 类型实例 :c:type:`PyTypeObject` 用来表示Python中的模块类型。在 Python 程序中该实例被暴露为 "
+"``types.ModuleType``。"
 
 #: ../../c-api/module.rst:21
 msgid ""
@@ -60,11 +61,11 @@ msgid ""
 msgstr ""
 "返回新的模块对象，其属性 :attr:`__name__`  为 *name* 。模块的如下属性 :attr:`__name__`, "
 ":attr:`__doc__`, :attr:`__package__`, and :attr:`__loader__` 都会被自动填充。（所有属性除了"
-" :attr:`__name__` 都被设为``None``）。调用时应当提供 :attr:`__file__` 属性。 "
+" :attr:`__name__` 都被设为 ``None``）。调用时应当提供 :attr:`__file__` 属性。"
 
 #: ../../c-api/module.rst:48
 msgid ":attr:`__package__` and :attr:`__loader__` are set to ``None``."
-msgstr "属性 :attr:`__package__` 和 :attr:`__loader__` 被设为``None``。"
+msgstr "属性 :attr:`__package__` 和 :attr:`__loader__` 被设为 ``None``。"
 
 #: ../../c-api/module.rst:54
 msgid ""
@@ -197,20 +198,21 @@ msgid ""
 "with :c:func:`PyModule_GetState`, rather than in static globals. This makes "
 "modules safe for use in multiple sub-interpreters."
 msgstr ""
-"可以把模块的状态保存在为单个模块分配的内存区域中，使用:c:func:`PyModule_GetState`检索，而不是保存在静态全局区。这使得模块可以在多个子解释器中安全地使用。"
+"可以把模块的状态保存在为单个模块分配的内存区域中，使用 :c:func:`PyModule_GetState` "
+"检索，而不是保存在静态全局区。这使得模块可以在多个子解释器中安全地使用。"
 
 #: ../../c-api/module.rst:165
 msgid ""
 "This memory area is allocated based on *m_size* on module creation, and "
 "freed when the module object is deallocated, after the :c:member:`m_free` "
 "function has been called, if present."
-msgstr "这个内存区域在模块创建时根据*m_size*分配，并在调用:c:member:`m_free`函数（如果存在）释放模块对象后释放。"
+msgstr "这个内存区域在模块创建时根据*m_size*分配，并在调用 :c:member:`m_free` 函数（如果存在）释放模块对象后释放。"
 
 #: ../../c-api/module.rst:169
 msgid ""
 "Setting ``m_size`` to ``-1`` means that the module does not support sub-"
 "interpreters, because it has global state."
-msgstr "将``m_size``设置为``-1``，意味着这个模块具有全局状态，因此不支持子解释器。"
+msgstr "将 ``m_size`` 设置为 ``-1``，意味着这个模块具有全局状态，因此不支持子解释器。"
 
 #: ../../c-api/module.rst:172
 msgid ""
@@ -218,7 +220,7 @@ msgid ""
 "initialized and specifies the additional amount of memory it requires for "
 "its state. Non-negative ``m_size`` is required for multi-phase "
 "initialization."
-msgstr "将其设置为非负值，意味着模块可以重新初始化，并指定其状态所需要的额外内存大小。多阶段初始化需要非负的``m_size``。"
+msgstr "将其设置为非负值，意味着模块可以重新初始化，并指定其状态所需要的额外内存大小。多阶段初始化需要非负的 ``m_size``。"
 
 #: ../../c-api/module.rst:177
 msgid "See :PEP:`3121` for more details."
@@ -228,7 +230,7 @@ msgstr "请参阅 :PEP:`3121` 了解详情。"
 msgid ""
 "A pointer to a table of module-level functions, described by "
 ":c:type:`PyMethodDef` values.  Can be ``NULL`` if no functions are present."
-msgstr "一个指向模块函数表的指针，由:c:type:`PyMethodDef`描述。如果模块没有函数，可以为``NULL``。"
+msgstr "一个指向模块函数表的指针，由 :c:type:`PyMethodDef` 描述。如果模块没有函数，可以为 ``NULL``。"
 
 #: ../../c-api/module.rst:186
 msgid ""
@@ -261,7 +263,9 @@ msgid ""
 " 0 and the module state (as returned by :c:func:`PyModule_GetState`) is "
 "``NULL``."
 msgstr ""
-"如果模块状态已被请求但尚未被分配，则不会调用此函数。例如在模块刚刚创建完成之后、被执行之前（:c:data:`Py_mod_exec`函数）时的情况。更准确地说，如果:c:member:`m_size`大于0，并且模块状态（由:c:func:`PyModule_GetState`返回）为``NULL``，则不会调用此函数。"
+"如果模块状态已被请求但尚未被分配，则不会调用此函数。例如在模块刚刚创建完成之后、被执行之前（:c:data:`Py_mod_exec` "
+"函数）时的情况。更准确地说，如果 :c:member:`m_size` 大于0，并且模块状态（由 :c:func:`PyModule_GetState`"
+" 返回）为 ``NULL`` ，则不会调用此函数。"
 
 #: ../../c-api/module.rst:209 ../../c-api/module.rst:230
 #: ../../c-api/module.rst:245
@@ -272,7 +276,7 @@ msgstr "在模块状态被分配之前不再调用。"
 msgid ""
 "A clear function to call during GC clearing of the module object, or "
 "``NULL`` if not needed."
-msgstr "在模块对象的垃圾回收清理期间所调用的清理函数，如果不需要则为``NULL``。"
+msgstr "在模块对象的垃圾回收清理期间所调用的清理函数，如果不需要则为 ``NULL``。"
 
 #: ../../c-api/module.rst:224
 msgid ""
@@ -282,13 +286,15 @@ msgid ""
 "collector is not involved and :c:member:`~PyModuleDef.m_free` is called "
 "directly."
 msgstr ""
-"就像:c:member:`PyTypeObject.tp_clear`那样，这个函数并不总是在模块被释放前被调用。例如，当引用计数足以确定一个对象不再被使用时，就会直接调用:c:member:`~PyModuleDef.m_free`，而不使用循环垃圾回收器。"
+"就像 :c:member:`PyTypeObject.tp_clear` "
+"那样，这个函数并不总是在模块被释放前被调用。例如，当引用计数足以确定一个对象不再被使用时，就会直接调用 "
+":c:member:`~PyModuleDef.m_free`，而不使用循环垃圾回收器。"
 
 #: ../../c-api/module.rst:235
 msgid ""
 "A function to call during deallocation of the module object, or ``NULL`` if "
 "not needed."
-msgstr "在模块对象的释放期间所调用的函数，如果不需要则为``NULL``。"
+msgstr "在模块对象的释放期间所调用的函数，如果不需要则为 ``NULL``。"
 
 #: ../../c-api/module.rst:249
 msgid "Single-phase initialization"
@@ -307,8 +313,8 @@ msgid ""
 "like :c:func:`PyModule_Create2` with *module_api_version* set to "
 ":const:`PYTHON_API_VERSION`."
 msgstr ""
-"创建一个新的模块对象，在参数*def*中给出定义。它等同于将参数*module_api_version*设置为:const:`PYTHON_API_VERSION`的"
-" :c:func:`PyModule_Create2`函数。"
+"创建一个新的模块对象，在参数 *def* 中给出定义。它等同于将参数 *module_api_version* 设置为 "
+":const:`PYTHON_API_VERSION` 的 :c:func:`PyModule_Create2` 函数。"
 
 #: ../../c-api/module.rst:264
 msgid ""
@@ -316,20 +322,21 @@ msgid ""
 "version *module_api_version*.  If that version does not match the version of"
 " the running interpreter, a :exc:`RuntimeWarning` is emitted."
 msgstr ""
-"创建一个新的模块对象，在参数*def*中给出定义，设定API版本为参数*module_api_version*。如果该版本与正在运行的解释器版本不匹配，则会触发:exc:`RuntimeWarning`。"
+"创建一个新的模块对象，在参数 *def* 中给出定义，设定API版本为参数 *module_api_version* "
+"。如果该版本与正在运行的解释器版本不匹配，则会触发 :exc:`RuntimeWarning`。"
 
 #: ../../c-api/module.rst:270
 msgid ""
 "Most uses of this function should be using :c:func:`PyModule_Create` "
 "instead; only use this if you are sure you need it."
-msgstr "大多数时候应该使用:c:func:`PyModule_Create`代替使用此函数，除非你确定需要使用它。"
+msgstr "大多数时候应该使用 :c:func:`PyModule_Create` 代替使用此函数，除非你确定需要使用它。"
 
 #: ../../c-api/module.rst:273
 msgid ""
 "Before it is returned from in the initialization function, the resulting "
 "module object is typically populated using functions like "
 ":c:func:`PyModule_AddObjectRef`."
-msgstr "在初始化函数返回之前，生成的模块对象通常使用:c:func:`PyModule_AddObjectRef`等函数进行填充。"
+msgstr "在初始化函数返回之前，生成的模块对象通常使用 :c:func:`PyModule_AddObjectRef` 等函数进行填充。"
 
 #: ../../c-api/module.rst:279
 msgid "Multi-phase initialization"
@@ -344,7 +351,8 @@ msgid ""
 "The distinction is similar to the :py:meth:`__new__` and :py:meth:`__init__`"
 " methods of classes."
 msgstr ""
-"另一种指定扩展的方式是“多阶段初始化”。以这种方式创建的扩展模块的行为更类似Python模块：初始化分成两个阶段，*创建阶段*创建模块对象，*执行阶段*填充模块对象。它们的区别类似类的:py:meth:`__new__`和:py:meth:`__init__`方法。"
+"另一种指定扩展的方式是“多阶段初始化”。以这种方式创建的扩展模块的行为更类似 Python 模块：初始化分成两个阶段，*创建阶段* "
+"创建模块对象，*执行阶段* 填充模块对象。它们的区别类似类的 :py:meth:`__new__` 和 :py:meth:`__init__` 方法。"
 
 #: ../../c-api/module.rst:288
 msgid ""
@@ -359,7 +367,9 @@ msgid ""
 ":attr:`__dict__` or individual classes created with "
 ":c:func:`PyType_FromSpec`)."
 msgstr ""
-"与使用单阶段初始化创建的模块不同，这些模块不是单例：如果*sys.modules*被移除、模块被重新导入，将会创建一个新的模块对象，旧模块将进入常规的垃圾回收——就像Python模块那样。默认情况下，根据同一个定义创建的多个模块应该是相互独立的：修改其中之一不应该影响其它模块。这意味着所有状态都应该特定于模块对象（例如使用:c:func:`PyModule_GetState`），或是它的内容（例如模块的:attr:`__dict__`属性，或是使用:c:func:`PyType_FromSpec`创建的独立的类）。"
+"与使用单阶段初始化创建的模块不同，这些模块不是单例：如果*sys.modules*被移除、模块被重新导入，将会创建一个新的模块对象，旧模块将进入常规的垃圾回收——就像Python模块那样。默认情况下，根据同一个定义创建的多个模块应该是相互独立的：修改其中之一不应该影响其它模块。这意味着所有状态都应该特定于模块对象（例如使用"
+" :c:func:`PyModule_GetState`），或是它的内容（例如模块的 :attr:`__dict__` 属性，或是使用 "
+":c:func:`PyType_FromSpec` 创建的独立的类）。"
 
 #: ../../c-api/module.rst:298
 msgid ""
@@ -367,7 +377,7 @@ msgid ""
 " :ref:`sub-interpreters <sub-interpreter-support>`. Making sure multiple "
 "modules are independent is typically enough to achieve this."
 msgstr ""
-"所有使用多阶段初始化创建的模块都应该支持:ref:`子解释器<sub-interpreter-"
+"所有使用多阶段初始化创建的模块都应该支持 :ref:`子解释器<sub-interpreter-"
 "support>`。保证多个模块之间相互独立，通常就可以实现这一点。"
 
 #: ../../c-api/module.rst:302
@@ -377,7 +387,9 @@ msgid ""
 ":c:member:`~PyModuleDef.m_slots`. Before it is returned, the ``PyModuleDef``"
 " instance must be initialized with the following function:"
 msgstr ""
-"要请求多阶段初始化，初始化函数(PyInit_modulename)返回一个包含非空的:c:member:`~PyModuleDef.m_slots`属性的:c:type:`PyModuleDef`实例。在它被返回之前，这个``PyModuleDef``实例必须先使用以下函数初始化："
+"要请求多阶段初始化，初始化函数 (PyInit_modulename) 返回一个包含非空的 "
+":c:member:`~PyModuleDef.m_slots` 属性的 :c:type:`PyModuleDef` 实例。在它被返回之前，这个 "
+"``PyModuleDef`` 实例必须先使用以下函数初始化："
 
 #: ../../c-api/module.rst:309
 msgid ""
@@ -387,7 +399,7 @@ msgstr "确保模块定义是一个正确初始化的Python对象，拥有正确
 
 #: ../../c-api/module.rst:312
 msgid "Returns *def* cast to ``PyObject*``, or ``NULL`` if an error occurred."
-msgstr "返回转换为``PyObject*``的*def*，如果发生错误，则返回``NULL``。"
+msgstr "返回转换为 ``PyObject*`` 的 *def* ，如果发生错误，则返回 ``NULL``。"
 
 #: ../../c-api/module.rst:316
 msgid ""
@@ -475,7 +487,7 @@ msgstr "指定一个供调用以 *执行* 模块的函数。 这造价于执行�
 msgid ""
 "If multiple ``Py_mod_exec`` slots are specified, they are processed in the "
 "order they appear in the *m_slots* array."
-msgstr "如果指定了多个``Py_mod_exec``槽位，将按照它们在*m_slots*数组中出现的顺序进行处理。"
+msgstr "如果指定了多个 ``Py_mod_exec`` 槽位，将按照它们在*m_slots*数组中出现的顺序进行处理。"
 
 #: ../../c-api/module.rst:379
 msgid "See :PEP:`489` for more details on multi-phase initialization."
@@ -492,7 +504,8 @@ msgid ""
 "objects dynamically. Note that both ``PyModule_FromDefAndSpec`` and "
 "``PyModule_ExecDef`` must be called to fully initialize a module."
 msgstr ""
-"当使用多阶段初始化时，将会调用以下函数。例如，在动态创建模块对象的时候，可以直接使用它们。注意，必须调用``PyModule_FromDefAndSpec``和``PyModule_ExecDef``来完整地初始化一个模块。"
+"当使用多阶段初始化时，将会调用以下函数。例如，在动态创建模块对象的时候，可以直接使用它们。注意，必须调用 "
+"``PyModule_FromDefAndSpec`` 和 ``PyModule_ExecDef`` 来完整地初始化一个模块。"
 
 #: ../../c-api/module.rst:391
 msgid ""
@@ -500,7 +513,8 @@ msgid ""
 " *spec*.  This behaves like :c:func:`PyModule_FromDefAndSpec2` with "
 "*module_api_version* set to :const:`PYTHON_API_VERSION`."
 msgstr ""
-"创建一个新的模块对象，在参数*def*和*spec*中给出定义。它等同于将参数*module_api_version*设置为:const:`PYTHON_API_VERSION`的:c:func:`PyModule_FromDefAndSpec2`函数。"
+"创建一个新的模块对象，在参数*def*和*spec*中给出定义。它等同于将参数*module_api_version*设置为 "
+":const:`PYTHON_API_VERSION` 的 :c:func:`PyModule_FromDefAndSpec2` 函数。"
 
 #: ../../c-api/module.rst:399
 msgid ""
@@ -509,13 +523,14 @@ msgid ""
 " not match the version of the running interpreter, a :exc:`RuntimeWarning` "
 "is emitted."
 msgstr ""
-"创建一个新的模块对象，在参数*def*和*spec*中给出定义，设置API版本为参数*module_api_version*。如果该版本与正在运行的解释器版本不匹配，则会触发:exc:`RuntimeWarning`。"
+"创建一个新的模块对象，在参数 *def* 和 *spec* 中给出定义，设置API版本为参数 "
+"*module_api_version*。如果该版本与正在运行的解释器版本不匹配，则会触发 :exc:`RuntimeWarning`。"
 
 #: ../../c-api/module.rst:406
 msgid ""
 "Most uses of this function should be using :c:func:`PyModule_FromDefAndSpec`"
 " instead; only use this if you are sure you need it."
-msgstr "大多数时候应该使用:c:func:`PyModule_FromDefAndSpec`代替使用此函数，除非你确定需要使用它。"
+msgstr "大多数时候应该使用 :c:func:`PyModule_FromDefAndSpec` 代替使用此函数，除非你确定需要使用它。"
 
 #: ../../c-api/module.rst:413
 msgid "Process any execution slots (:c:data:`Py_mod_exec`) given in *def*."
@@ -527,7 +542,8 @@ msgid ""
 "automatically when creating a module from ``PyModuleDef``, using either "
 "``PyModule_Create`` or ``PyModule_FromDefAndSpec``."
 msgstr ""
-"将*module*的文档字符串设置为*docstring*。当使用``PyModule_Create``或``PyModule_FromDefAndSpec``从``PyModuleDef``创建模块时，会自动调用此函数。"
+"将*module*的文档字符串设置为*docstring*。当使用 ``PyModule_Create`` 或 "
+"``PyModule_FromDefAndSpec`` 从 ``PyModuleDef`` 创建模块时，会自动调用此函数。"
 
 #: ../../c-api/module.rst:428
 msgid ""
@@ -540,7 +556,11 @@ msgid ""
 "``PyModuleDef``, using either ``PyModule_Create`` or "
 "``PyModule_FromDefAndSpec``."
 msgstr ""
-"将以``NULL``结尾的*functions*数组中的函数添加到*module*模块中。有关单个条目的更多细节，请参与:c:type:`PyMethodDef`文档（由于缺少共享的模块命名空间，在C中实现的模块级“函数”通常将模块作为它的第一个参数，与Python类的实例方法类似）。当使用``PyModule_Create``或``PyModule_FromDefAndSpec``从``PyModuleDef``创建模块时，会自动调用此函数。"
+"将以 ``NULL`` 结尾的*functions*数组中的函数添加到*module*模块中。有关单个条目的更多细节，请参与 "
+":c:type:`PyMethodDef` "
+"文档（由于缺少共享的模块命名空间，在C中实现的模块级“函数”通常将模块作为它的第一个参数，与Python类的实例方法类似）。当使用 "
+"``PyModule_Create`` 或 ``PyModule_FromDefAndSpec`` 从 ``PyModuleDef`` "
+"创建模块时，会自动调用此函数。"
 
 #: ../../c-api/module.rst:440
 msgid "Support functions"
@@ -563,13 +583,13 @@ msgstr "将一个名称为*name*的对象添加到*module*模块中。这是一�
 #: ../../c-api/module.rst:452
 msgid ""
 "On success, return ``0``. On error, raise an exception and return ``-1``."
-msgstr "如果成功，返回``0``。如果发生错误，引发异常并返回``-1``。"
+msgstr "如果成功，返回 ``0``。如果发生错误，引发异常并返回 ``-1``。"
 
 #: ../../c-api/module.rst:454
 msgid ""
 "Return ``NULL`` if *value* is ``NULL``. It must be called with an exception "
 "raised in this case."
-msgstr "如果*value*为``NULL``，返回``NULL``。在调用它时发生这种情况，必须抛出异常。"
+msgstr "如果*value*为 ``NULL``，返回 ``NULL``。在调用它时发生这种情况，必须抛出异常。"
 
 #: ../../c-api/module.rst:457 ../../c-api/module.rst:506
 msgid "Example usage::"
@@ -608,13 +628,13 @@ msgstr ""
 msgid ""
 "Unlike other functions that steal references, ``PyModule_AddObject()`` only "
 "decrements the reference count of *value* **on success**."
-msgstr "和其它窃取引用的函数不同，``PyModule_AddObject()``只在**成功**时减少*value*的引用计数。"
+msgstr "和其它窃取引用的函数不同，``PyModule_AddObject()`` 只在**成功**时减少*value*的引用计数。"
 
 #: ../../c-api/module.rst:503
 msgid ""
 "This means that its return value must be checked, and calling code must "
 ":c:func:`Py_DECREF` *value* manually on error."
-msgstr "这意味着必须检查它的返回值，调用方必须在发生错误时手动为*value*调用:c:func:`Py_DECREF`。"
+msgstr "这意味着必须检查它的返回值，调用方必须在发生错误时手动为*value*调用 :c:func:`Py_DECREF`。"
 
 #: ../../c-api/module.rst:546
 msgid ""
@@ -622,7 +642,8 @@ msgid ""
 "can be used from the module's initialization function. Return ``-1`` on "
 "error, ``0`` on success."
 msgstr ""
-"将一个名称为*name*的整型常量添加到*module*模块中。这个方便的函数可以在模块的初始化函数中使用。如果发生错误，返回``-1``，成功返回``0``。"
+"将一个名称为*name*的整型常量添加到*module*模块中。这个方便的函数可以在模块的初始化函数中使用。如果发生错误，返回 ``-1``，成功返回 "
+"``0``。"
 
 #: ../../c-api/module.rst:553
 msgid ""
@@ -630,7 +651,8 @@ msgid ""
 "be used from the module's initialization function.  The string *value* must "
 "be ``NULL``-terminated.  Return ``-1`` on error, ``0`` on success."
 msgstr ""
-"将一个名称为*name*的字符串常量添加到*module*模块中。这个方便的函数可以在模块的初始化函数中使用。字符串*value*必须以``NULL``结尾。如果发生错误，返回``-1``，成功返回``0``。"
+"将一个名称为*name*的字符串常量添加到*module*模块中。这个方便的函数可以在模块的初始化函数中使用。字符串*value*必须以 "
+"``NULL`` 结尾。如果发生错误，返回 ``-1`` ，成功返回 ``0`` 。"
 
 #: ../../c-api/module.rst:560
 msgid ""
@@ -639,8 +661,9 @@ msgid ""
 "constant *AF_INET* with the value of *AF_INET* to *module*. Return ``-1`` on"
 " error, ``0`` on success."
 msgstr ""
-"将一个整型常量添加到*module*模块中。名称和值取自*macro*参数。例如，``PyModule_AddIntMacro(module, "
-"AF_INET)``将值为*AF_INET*的整型常量*AF_INET*添加到*module*模块中。如果发生错误，返回``-1``，成功返回``0``。"
+"将一个整型常量添加到*module*模块中。名称和值取自*macro*参数。例如， ``PyModule_AddIntMacro(module, "
+"AF_INET)`` 将值为*AF_INET*的整型常量*AF_INET*添加到*module*模块中。如果发生错误，返回 ``-1`` ，成功返回 "
+"``0`` 。"
 
 #: ../../c-api/module.rst:568
 msgid "Add a string constant to *module*."
@@ -653,7 +676,8 @@ msgid ""
 " the last component of :c:member:`~PyTypeObject.tp_name` after dot. Return "
 "``-1`` on error, ``0`` on success."
 msgstr ""
-"将一个类型对象添加到*module*模块中。类型对象通过在函数内部调用:c:func:`PyType_Ready`完成初始化。类型对象的名称取自:c:member:`~PyTypeObject.tp_name`最后一个点号之后的部分。如果发生错误，返回``-1``，成功返回``0``。"
+"将一个类型对象添加到 *module* 模块中。类型对象通过在函数内部调用 :c:func:`PyType_Ready` 完成初始化。类型对象的名称取自"
+" :c:member:`~PyTypeObject.tp_name` 最后一个点号之后的部分。如果发生错误，返回 ``-1``，成功返回 ``0``。"
 
 #: ../../c-api/module.rst:582
 msgid "Module lookup"
@@ -681,7 +705,8 @@ msgid ""
 "case the corresponding module object is not found or has not been attached "
 "to the interpreter state yet, it returns ``NULL``."
 msgstr ""
-"返回当前解释器中由*def*创建的模块对象。此方法要求模块对象此前已通过:c:func:`PyState_AddModule`函数附加到解释器状态中。如果找不到相应的模块对象，或模块对象还未附加到解释器状态，返回``NULL``。"
+"返回当前解释器中由 *def* 创建的模块对象。此方法要求模块对象此前已通过 :c:func:`PyState_AddModule` "
+"函数附加到解释器状态中。如果找不到相应的模块对象，或模块对象还未附加到解释器状态，返回 ``NULL``。"
 
 #: ../../c-api/module.rst:600
 msgid ""

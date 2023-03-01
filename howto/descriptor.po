@@ -10,6 +10,7 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -541,7 +542,7 @@ msgid ""
 "instance ``__dict__``, its :meth:`__get__` method is invoked according to "
 "the precedence rules listed below."
 msgstr ""
-"表达式 ``obj.x`` 在命名空间的链中查找``obj`` 的属性 ``x``。如果搜索在实例 ``__dict__`` "
+"表达式 ``obj.x`` 在命名空间的链中查找 ``obj`` 的属性 ``x``。如果搜索在实例 ``__dict__`` "
 "之外找到描述器，则根据下面列出的优先级规则调用其 :meth:`__get__` 方法。"
 
 #: ../../howto/descriptor.rst:565
@@ -937,7 +938,7 @@ msgid ""
 "``cls.f(*args)`` becomes ``f(*args)``."
 msgstr ""
 "概括地说，函数对象具有 :meth:`__get__` 方法，以便在作为属性访问时可以将其转换为方法。非数据描述器将 ``obj.f(*args)`` "
-"的调用会被转换为 ``f(obj, *args)`` 。调用 `klass.f(*args)`` 因而变成 ``f(*args)`` 。"
+"的调用会被转换为 ``f(obj, *args)`` 。调用 ``klass.f(*args)`` 因而变成 ``f(*args)`` 。"
 
 #: ../../howto/descriptor.rst:1219
 msgid "This chart summarizes the binding and its two most useful variants:"

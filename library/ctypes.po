@@ -12,6 +12,7 @@
 # Madlee <madlee_thegreat@hotmail.com>, 2021
 # zeroswan <zeroswan@outlook.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -20,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -197,7 +198,7 @@ msgid ""
 "module handle."
 msgstr ""
 "你可以貌似是调用其它 Python 函数那样直接调用这些函数。在这个例子中，我们调用了 ``time()`` 函数，该函数返回一个系统时间戳（从 "
-"Unix 时间起点到现在的秒数），而``GetModuleHandleA()`` 函数返回一个 win32 模块句柄。"
+"Unix 时间起点到现在的秒数），而 ``GetModuleHandleA()`` 函数返回一个 win32 模块句柄。"
 
 #: ../../library/ctypes.rst:157
 msgid ""
@@ -1259,7 +1260,7 @@ msgid ""
 msgstr ""
 "注意 ``temp0`` 和 ``temp1`` 对象始终引用了对象 ``rc`` 的内容。然后执行 ``rc.a = temp0`` 会把 "
 "``temp0`` 的内容拷贝到 ``rc`` 的空间。这也改变了  ``temp1`` 的内容。最终导致赋值语句 ``rc.b = temp1`` "
-"没有产生预想的效果。 "
+"没有产生预想的效果。"
 
 #: ../../library/ctypes.rst:1188
 msgid ""
@@ -1475,7 +1476,7 @@ msgid ""
 msgstr ""
 "仅 Windows : 此类的实例即加载好的动态链接库，其中的函数使用 ``stdcall`` 调用约定，并且假定返回 windows 指定的 "
 ":class:`HRESULT` 返回码。 :class:`HRESULT` 的值包含的信息说明函数调用成功还是失败，以及额外错误码。 "
-"如果返回值表示失败，会自动抛出 :class:`OSError` 异常。 "
+"如果返回值表示失败，会自动抛出 :class:`OSError` 异常。"
 
 #: ../../library/ctypes.rst:1375
 msgid ":exc:`WindowsError` used to be raised."

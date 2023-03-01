@@ -13,6 +13,7 @@
 # stone jing <stonejing1817@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -61,10 +62,13 @@ msgid ""
 "messages.  The module will also issue errors when users give the program "
 "invalid arguments."
 msgstr ""
+":mod:`argparse` 模块可以让人轻松编写用户友好的命令行接口。 程序定义它需要哪些参数，:mod:`argparse` 将会知道如何从 "
+":data:`sys.argv` 解析它们。 :mod:`argparse` 模块还能自动生成帮助和用法消息文本。 "
+"该模块还会在用户向程序传入无效参数时发出错误消息。"
 
 #: ../../library/argparse.rst:30
 msgid "Core Functionality"
-msgstr ""
+msgstr "核心功能"
 
 #: ../../library/argparse.rst:32
 msgid ""
@@ -72,6 +76,8 @@ msgid ""
 "around an instance of :class:`argparse.ArgumentParser`.  It is a container "
 "for argument specifications and has options that apply the parser as whole::"
 msgstr ""
+":mod:`argparse` 模块对命令行接口的支持是围绕 :class:`argparse.ArgumentParser` 的实例建立的。 "
+"它是一个针对参数规格说明的容器并包含多个全面应用解析器的选项::"
 
 #: ../../library/argparse.rst:41
 msgid ""
@@ -79,12 +85,16 @@ msgid ""
 "specifications to the parser.  It supports positional arguments, options "
 "that accept values, and on/off flags::"
 msgstr ""
+":meth:`ArgumentParser.add_argument` 方法将单个参数规格说明关联到解析器。 "
+"它支持位置参数，接受各种值的选项，以及各种启用/禁用旗标::"
 
 #: ../../library/argparse.rst:50
 msgid ""
 "The :meth:`ArgumentParser.parse_args` method runs the parser and places the "
 "extracted data in a :class:`argparse.Namespace` object::"
 msgstr ""
+":meth:`ArgumentParser.parse_args` 方法运行解析器并将提取的数据放入 "
+":class:`argparse.Namespace` 对象::"
 
 #: ../../library/argparse.rst:58
 msgid "Quick Links for add_argument()"
@@ -124,95 +134,97 @@ msgstr "choices_"
 
 #: ../../library/argparse.rst:64
 msgid "Limit values to a specific set of choices"
-msgstr ""
+msgstr "将值限制为指定的可选项集合"
 
 #: ../../library/argparse.rst:64
 msgid ""
 "``['foo', 'bar']``, ``range(1, 10)``, or :class:`~collections.abc.Container`"
 " instance"
 msgstr ""
+"``['foo', 'bar']``, ``range(1, 10)`` 或 :class:`~collections.abc.Container` "
+"实例"
 
 #: ../../library/argparse.rst:65
 msgid "const_"
-msgstr ""
+msgstr "const_"
 
 #: ../../library/argparse.rst:65
 msgid "Store a constant value"
-msgstr ""
+msgstr "存储一个常量值"
 
 #: ../../library/argparse.rst:66
 msgid "default_"
-msgstr ""
+msgstr "default_"
 
 #: ../../library/argparse.rst:66
 msgid "Default value used when an argument is not provided"
-msgstr ""
+msgstr "当未提供某个参数时要使用的默认值"
 
 #: ../../library/argparse.rst:66
 msgid "Defaults to ``None``"
-msgstr ""
+msgstr "默认为 ``None``"
 
 #: ../../library/argparse.rst:67
 msgid "dest_"
-msgstr ""
+msgstr "dest_"
 
 #: ../../library/argparse.rst:67
 msgid "Specify the attribute name used in the result namespace"
-msgstr ""
+msgstr "指定要在结果命名空间中使用的属性名称"
 
 #: ../../library/argparse.rst:68
 msgid "help_"
-msgstr ""
+msgstr "help_"
 
 #: ../../library/argparse.rst:68
 msgid "Help message for an argument"
-msgstr ""
+msgstr "某个参数的帮助消息"
 
 #: ../../library/argparse.rst:69
 msgid "metavar_"
-msgstr ""
+msgstr "metavar_"
 
 #: ../../library/argparse.rst:69
 msgid "Alternate display name for the argument as shown in help"
-msgstr ""
+msgstr "要在帮助中显示的参数替代显示名称"
 
 #: ../../library/argparse.rst:70
 msgid "nargs_"
-msgstr ""
+msgstr "nargs_"
 
 #: ../../library/argparse.rst:70
 msgid "Number of times the argument can be used"
-msgstr ""
+msgstr "参数可被使用的次数"
 
 #: ../../library/argparse.rst:70
 msgid ":class:`int`, ``'?'``, ``'*'``, ``'+'``, or ``argparse.REMAINDER``"
-msgstr ""
+msgstr ":class:`int`, ``'?'``, ``'*'``, ``'+'`` 或 ``argparse.REMAINDER``"
 
 #: ../../library/argparse.rst:71
 msgid "required_"
-msgstr ""
+msgstr "required_"
 
 #: ../../library/argparse.rst:71
 msgid "Indicate whether an argument is required or optional"
-msgstr ""
+msgstr "指明某个参数是必需的还是可选的"
 
 #: ../../library/argparse.rst:71
 msgid "``True`` or ``False``"
-msgstr ""
+msgstr "``True`` 或 ``False``"
 
 #: ../../library/argparse.rst:72
 msgid "type_"
-msgstr ""
+msgstr "type_"
 
 #: ../../library/argparse.rst:72
 msgid "Automatically convert an argument to the given type"
-msgstr ""
+msgstr "自动将参数转换为给定的类型"
 
 #: ../../library/argparse.rst:72
 msgid ""
 ":class:`int`, :class:`float`, ``argparse.FileType('w')``, or callable "
 "function"
-msgstr ""
+msgstr ":class:`int`, :class:`float`, ``argparse.FileType('w')`` 或可调用函数"
 
 #: ../../library/argparse.rst:77
 msgid "Example"
@@ -228,7 +240,7 @@ msgstr "以下代码是一个 Python 程序，它获取一个整数列表并计�
 msgid ""
 "Assuming the above Python code is saved into a file called ``prog.py``, it "
 "can be run at the command line and it provides useful help messages:"
-msgstr ""
+msgstr "假定上面的 Python 代码保存在名为 ``prog.py`` 的文件中，它可以在命令行中运行并提供有用的帮助消息:"
 
 #: ../../library/argparse.rst:111
 msgid ""
@@ -238,7 +250,7 @@ msgstr "当使用适当的参数运行时，它会输出命令行传入整数的
 
 #: ../../library/argparse.rst:122
 msgid "If invalid arguments are passed in, an error will be displayed:"
-msgstr ""
+msgstr "如果传入了无效的参数，将显示一个错误消息:"
 
 #: ../../library/argparse.rst:130
 msgid "The following sections walk you through this example."
@@ -285,6 +297,9 @@ msgid ""
 "attribute will be either the :func:`sum` function, if ``--sum`` was "
 "specified at the command line, or the :func:`max` function if it was not."
 msgstr ""
+"然后，调用 :meth:`~ArgumentParser.parse_args` 将返回一个具有 ``integers`` 和 "
+"``accumulate`` 这两个属性的对象。 ``integers`` 属性将是由一个或多个整数组成的列表，而 ``accumulate`` "
+"属性在用命令行指定了 ``--sum`` 时将为 :func:`sum` 函数，否则将为 :func:`max` 函数。"
 
 #: ../../library/argparse.rst:168
 msgid "Parsing arguments"
@@ -548,7 +563,7 @@ msgid ""
 "You must fully initialize the parsers before passing them via ``parents=``. "
 "If you change the parent parsers after the child parser, those changes will "
 "not be reflected in the child."
-msgstr "你在通过``parents=`` 传递解析器之前必须完全初始化它们。 如果你在子解析器之后改变父解析器，这些改变将不会反映在子解析器上。"
+msgstr "你在通过 ``parents=`` 传递解析器之前必须完全初始化它们。 如果你在子解析器之后改变父解析器，这些改变将不会反映在子解析器上。"
 
 #: ../../library/argparse.rst:431
 msgid "formatter_class"
@@ -618,7 +633,7 @@ msgid ""
 "``prefix_chars=`` argument to the ArgumentParser constructor::"
 msgstr ""
 "许多命令行会使用 ``-`` 当作前缀，比如 ``-f/--foo``。如果解析器需要支持不同的或者额外的字符，比如像 ``+f`` 或者 "
-"``/foo`` 的选项，可以在参数解析构建器中使用 ``prefix_chars=`` 参数。 "
+"``/foo`` 的选项，可以在参数解析构建器中使用 ``prefix_chars=`` 参数。"
 
 #: ../../library/argparse.rst:551
 msgid ""
@@ -1090,7 +1105,7 @@ msgid ""
 "required for the various :class:`ArgumentParser` actions.  The two most "
 "common uses of it are:"
 msgstr ""
-":meth:`~ArgumentParser.add_argument`  的``const`` 参数用于保存不从命令行中读取但被各种 "
+":meth:`~ArgumentParser.add_argument`  的 ``const`` 参数用于保存不从命令行中读取但被各种 "
 ":class:`ArgumentParser` 动作需求的常数值。最常用的两例为："
 
 #: ../../library/argparse.rst:1046

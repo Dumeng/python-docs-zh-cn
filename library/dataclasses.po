@@ -11,6 +11,7 @@
 # BigOrangeQWQ, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
 # 乐成 王, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
-"Last-Translator: 乐成 王, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +34,7 @@ msgstr ":mod:`dataclasses` --- 数据类"
 
 #: ../../library/dataclasses.rst:10
 msgid "**Source code:** :source:`Lib/dataclasses.py`"
-msgstr "**源码：** :source:`Lib/dataclasses.py` "
+msgstr "**源码：** :source:`Lib/dataclasses.py`"
 
 #: ../../library/dataclasses.rst:14
 msgid ""
@@ -280,8 +281,9 @@ msgid ""
 ":term:`parameter` glossary entry for details.  Also see the :const:`KW_ONLY`"
 " section."
 msgstr ""
-"``kw_only``：如果为真值（默认为``False``），那么所有字段都将被标记为仅限关键字。若一个字段被标记为仅限关键字，唯一的变化是，:meth:`__init__`"
-" 的对应形参会被标记为仅限关键字参数，在调用:meth:`__init__`时，该形参需要通过关键字传入，dataclasses "
+"``kw_only``：如果为真值（默认为 "
+"``False``），那么所有字段都将被标记为仅限关键字。若一个字段被标记为仅限关键字，唯一的变化是，:meth:`__init__` "
+"的对应形参会被标记为仅限关键字参数，在调用 :meth:`__init__` 时，该形参需要通过关键字传入，dataclasses "
 "的任何其它行为都不会受影响。详见 :term:`parameter` 术语条目表。另请参见 :const:`KW_ONLY` 部分。"
 
 #: ../../library/dataclasses.rst:185
@@ -504,7 +506,7 @@ msgid ""
 "Raises :exc:`TypeError` if not passed a dataclass or instance of one. Does "
 "not return pseudo-fields which are ``ClassVar`` or ``InitVar``."
 msgstr ""
-"返回一个能描述此数据类所包含的字段的元组，元组的每一项都是:class:`Field` "
+"返回一个能描述此数据类所包含的字段的元组，元组的每一项都是 :class:`Field` "
 "对象。接受数据类或数据类的实例。如果没有传递一个数据类或实例将引发 :exc:`TypeError`。不返回 ``ClassVar`` 或 "
 "``InitVar`` 等伪字段。"
 
@@ -980,7 +982,7 @@ msgid ""
 "The value for the field passed to the dataclass's ``__init__`` method is "
 "passed to the descriptor's ``__set__`` method rather than overwriting the "
 "descriptor object."
-msgstr "字段的值被传递到数据类的``__init__``方法时，会传递给描述器的``__set__``方法，而不会覆盖掉描述器对象。"
+msgstr "字段的值被传递到数据类的 ``__init__`` 方法时，会传递给描述器的 ``__set__`` 方法，而不会覆盖掉描述器对象。"
 
 #: ../../library/dataclasses.rst:763
 msgid ""
@@ -988,7 +990,7 @@ msgid ""
 "or ``__set__`` method is called rather than returning or overwriting the "
 "descriptor object."
 msgstr ""
-"相似的是，当我们获取或设置字段的值时，不会覆盖或返回描述器对象，而是会调用描述器的``__get__``或 ``__set__``方法后返回。"
+"相似的是，当我们获取或设置字段的值时，不会覆盖或返回描述器对象，而是会调用描述器的 ``__get__`` 或 ``__set__`` 方法后返回。"
 
 #: ../../library/dataclasses.rst:766
 msgid ""
@@ -1000,8 +1002,8 @@ msgid ""
 "default value will be provided for the field."
 msgstr ""
 "检测字段是否存在默认值时，``dataclasses``会通过类方法的形式去调用描述器的``__get__``方法(即为``descriptor.__get__(obj=None,"
-" "
-"type=cls)``)。如果描述器有返回值，则返回值为字段的默认值，若调用描述器时抛出:exc:`AttributeError`错误，则该字段无默认值。"
+" type=cls)``)。如果描述器有返回值，则返回值为字段的默认值，若调用描述器时抛出 :exc:`AttributeError` "
+"错误，则该字段无默认值。"
 
 #: ../../library/dataclasses.rst:801
 msgid ""

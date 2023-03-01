@@ -9,6 +9,7 @@
 # nick <2330458484@qq.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -782,7 +783,7 @@ msgstr "请查看 HTTP 服务器的日志文件。（在另一个单独窗口中
 msgid ""
 "Always check a script for syntax errors first, by doing something like "
 "``python script.py``."
-msgstr "一定要先检查脚本是否有语法错误，做法类似：``python script.py`` 。 "
+msgstr "一定要先检查脚本是否有语法错误，做法类似：``python script.py`` 。"
 
 #: ../../library/cgi.rst:544
 msgid ""

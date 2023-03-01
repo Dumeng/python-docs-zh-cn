@@ -14,9 +14,9 @@
 # ww song <sww4718168@gmail.com>, 2022
 # chime z <chimez@163.com>, 2022
 # 高乐喆 <gaolezhe@outlook.com>, 2023
-# Zhang LongQi <longqi90@gmail.com>, 2023
 # Shan Su, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
@@ -25,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1287,8 +1287,9 @@ msgid ""
 "explicitly at the start of the module's initialization function, before "
 "doing anything else.  This is typically done like this::"
 msgstr ""
-"这是类型的类型，换句话说就是元类型，它由宏 "
-"``PyObject_HEAD_INIT``的参数来做初始化，它的值一般情况下是``&PyType_Type``。可是为了使动态可载入扩展模块至少在Windows上可用，编译器会报错这是一个不可用的初始化。因此按照惯例传递``NULL``给宏``PyObject_HEAD_INIT``并且在模块的初始化函数开始时候其他任何操作之前初始化这个字段。典型做法是这样的："
+"这是类型的类型，换句话说就是元类型，它由宏 ``PyObject_HEAD_INIT`` 的参数来做初始化，它的值一般情况下是 "
+"``&PyType_Type`` 。可是为了使动态可载入扩展模块至少在Windows上可用，编译器会报错这是一个不可用的初始化。因此按照惯例传递 "
+"``NULL`` 给宏 ``PyObject_HEAD_INIT`` 并且在模块的初始化函数开始时候其他任何操作之前初始化这个字段。典型做法是这样的："
 
 #: ../../c-api/typeobj.rst:519
 msgid ""
@@ -1297,7 +1298,9 @@ msgid ""
 "initializes it to the :attr:`ob_type` field of the base class. "
 ":c:func:`PyType_Ready` will not change this field if it is non-zero."
 msgstr ""
-"这应该在创建该类型的任何实例之前完成。:c:func:`PyType_Ready`检查:attr:`ob_type`是否为``NULL``，如果是，则用基类的:attr:`ob_type`字段初始化它。如果该字段非零，则:c:func:`PyType_Ready`不会更改它。"
+"这应该在创建该类型的任何实例之前完成。:c:func:`PyType_Ready` 检查 :attr:`ob_type` 是否为 "
+"``NULL``，如果是，则用基类的 :attr:`ob_type` 字段初始化它。如果该字段非零，则 :c:func:`PyType_Ready` "
+"不会更改它。"
 
 #: ../../c-api/typeobj.rst:526 ../../c-api/typeobj.rst:707
 #: ../../c-api/typeobj.rst:824 ../../c-api/typeobj.rst:916
@@ -1313,8 +1316,8 @@ msgid ""
 "These fields are only present when the macro ``Py_TRACE_REFS`` is defined "
 "(see the :option:`configure --with-trace-refs option <--with-trace-refs>`)."
 msgstr ""
-"这些字段仅在定义了宏``Py_TRACE_REFS``时存在（参阅:option:`configure --with-trace-refs option"
-" <--with-trace-refs>）。"
+"这些字段仅在定义了宏 ``Py_TRACE_REFS`` 时存在（参阅 :option:`configure --with-trace-refs "
+"option <--with-trace-refs>`）。"
 
 #: ../../c-api/typeobj.rst:535
 msgid ""
@@ -1324,8 +1327,8 @@ msgid ""
 " allocated objects <heap-types>`, these two fields are used to link the "
 "object into a doubly linked list of *all* live objects on the heap."
 msgstr ""
-"由``PyObject_HEAD_INIT``宏负责将它们初始化为``NULL``。对于:ref:`静态分配的对象<static-"
-"types>`，这两个字段始终为``NULL``。对于:ref:`动态分配的对象<heap-"
+"由 ``PyObject_HEAD_INIT`` 宏负责将它们初始化为 ``NULL`` 。对于 :ref:`静态分配的对象 <static-"
+"types>`，这两个字段始终为 ``NULL`` 。对于 :ref:`动态分配的对象 <heap-"
 "types>`，这两个字段用于将对象链接到堆上所有活动对象的双向链表中。"
 
 #: ../../c-api/typeobj.rst:541
@@ -1335,7 +1338,8 @@ msgid ""
 "still alive at the end of a run when the environment variable "
 ":envvar:`PYTHONDUMPREFS` is set."
 msgstr ""
-"它们可用于各种调试目的。目前唯一的用途是:func:`sys.getobjects`函数，在设置了环境变量:envvar:`PYTHONDUMPREFS`时，打印运行结束时仍然活跃的对象。"
+"它们可用于各种调试目的。目前唯一的用途是 :func:`sys.getobjects` 函数，在设置了环境变量 "
+":envvar:`PYTHONDUMPREFS` 时，打印运行结束时仍然活跃的对象。"
 
 #: ../../c-api/typeobj.rst:548
 msgid "These fields are not inherited by subtypes."
@@ -1351,7 +1355,7 @@ msgid ""
 "initialized to zero. For :ref:`dynamically allocated type objects <heap-"
 "types>`, this field has a special internal meaning."
 msgstr ""
-"对于:ref:`静态分配的内存对象<static-types>`，它应该初始化为0。对于:ref:`动态分配的类型对象<heap-"
+"对于 :ref:`静态分配的内存对象<static-types>`，它应该初始化为 0。对于 :ref:`动态分配的类型对象<heap-"
 "types>`，该字段具有特殊的内部含义。"
 
 #: ../../c-api/typeobj.rst:566
@@ -1366,7 +1370,9 @@ msgid ""
 ":c:type:`PyBaseObject_Type` and :c:type:`PyType_Type` effectively act as "
 "defaults.)"
 msgstr ""
-"每个槽位都有一个部分来描述继承关系。如果:c:func:`PyType_Ready`会在该字段为``NULL``时设置它的值，那么也会有一个“默认”部分。（注意，在:c:type:`PyBaseObject_Type`和:c:type:`PyType_Type`中设置的许多字段实际上就是默认值。）"
+"每个槽位都有一个部分来描述继承关系。如果 :c:func:`PyType_Ready` 会在该字段为 ``NULL`` "
+"时设置它的值，那么也会有一个“默认”部分。（注意，在 :c:type:`PyBaseObject_Type` 和 "
+":c:type:`PyType_Type` 中设置的许多字段实际上就是默认值。）"
 
 #: ../../c-api/typeobj.rst:575
 msgid ""
@@ -1379,7 +1385,10 @@ msgid ""
 ":mod:`Q` in package :mod:`P` should have the "
 ":c:member:`~PyTypeObject.tp_name` initializer ``\"P.Q.M.T\"``."
 msgstr ""
-"指针，指向以NULL结尾的表示类型名称的字符串。对于可以作为模块的全局变量访问的类型，字符串应该是完整的模块名，后跟一个点，再后跟类型名。对于内置类型，字符串应该只是类型名。如果模块是包的子模块，则完整的包名是完整的模块名的一部分。例如，包:mod:`P`的子包:mod:`Q`的模块:mod:`M`中定义的类型:class:`T`的:c:member:`~PyTypeObject.tp_name`应该初始化为``\"P.Q.M.T\"``。"
+"指针，指向以 NULL "
+"结尾的表示类型名称的字符串。对于可以作为模块的全局变量访问的类型，字符串应该是完整的模块名，后跟一个点，再后跟类型名。对于内置类型，字符串应该只是类型名。如果模块是包的子模块，则完整的包名是完整的模块名的一部分。例如，包"
+" :mod:`P` 的子包 :mod:`Q` 的模块 :mod:`M` 中定义的类型 :class:`T` 的 "
+":c:member:`~PyTypeObject.tp_name` 应该初始化为 ``\"P.Q.M.T\"``。"
 
 #: ../../c-api/typeobj.rst:583
 msgid ""
@@ -1486,7 +1495,8 @@ msgid ""
 "deallocated (as is the case for the singletons ``None`` and ``Ellipsis``).  "
 "The function signature is::"
 msgstr ""
-"指向实例析构函数的指针。除非保证类型的实例永远不会被释放（就像单例对象``None``和``Ellipsis``那样），否则必须定义这个函数。函数声明如下："
+"指向实例析构函数的指针。除非保证类型的实例永远不会被释放（就像单例对象 ``None`` 和 ``Ellipsis`` "
+"那样），否则必须定义这个函数。函数声明如下："
 
 #: ../../c-api/typeobj.rst:663
 msgid ""
@@ -1506,7 +1516,14 @@ msgid ""
 ":c:func:`PyObject_GC_Del` if the instance was allocated using "
 ":c:func:`PyObject_GC_New` or :c:func:`PyObject_GC_NewVar`."
 msgstr ""
-"当引用计数为0时，由:c:func:`Py_DECREF`和:c:func:`Py_XDECREF`宏调用析构函数。此时，实例仍然存在，但已经没有了对它的引用。析构函数应该释放该实例拥有的所有引用，释放该实例拥有的所有内存缓冲区（通过分配内存对应的释放函数），并调用该类型的:c:member:`~PyTypeObject.tp_free`函数。如果该类型不可子类型化（没有设置:const:`Py_TPFLAGS_BASETYPE`标志位），则允许直接调用对象的释放函数，不必调用:c:member:`~PyTypeObject.tp_free`。对象的释放函数应该与分配函数对应：如果使用:c:func:`PyObject_New`或:c:func:`PyObject_VarNew`分配，通常为:c:func:`PyObject_Del`；如果使用:c:func:`PyObject_GC_New`或:c:func:`PyObject_GC_NewVar`分配，通常为:c:func:`PyObject_GC_Del`。"
+"当引用计数为0时，由 :c:func:`Py_DECREF` 和 :c:func:`Py_XDECREF` "
+"宏调用析构函数。此时，实例仍然存在，但已经没有了对它的引用。析构函数应该释放该实例拥有的所有引用，释放该实例拥有的所有内存缓冲区（通过分配内存对应的释放函数），并调用该类型的"
+" :c:member:`~PyTypeObject.tp_free` 函数。如果该类型不可子类型化（没有设置 "
+":const:`Py_TPFLAGS_BASETYPE` 标志位），则允许直接调用对象的释放函数，不必调用 "
+":c:member:`~PyTypeObject.tp_free` 。对象的释放函数应该与分配函数对应：如果使用 "
+":c:func:`PyObject_New` 或 :c:func:`PyObject_VarNew` 分配，通常为 "
+":c:func:`PyObject_Del` ；如果使用 :c:func:`PyObject_GC_New` 或 "
+":c:func:`PyObject_GC_NewVar` 分配，通常为 :c:func:`PyObject_GC_Del`。"
 
 #: ../../c-api/typeobj.rst:678
 msgid ""
@@ -1514,7 +1531,8 @@ msgid ""
 " flag bit set), the destructor should call :c:func:`PyObject_GC_UnTrack` "
 "before clearing any member fields."
 msgstr ""
-"如果该类型支持垃圾回收（设置了:const:`Py_TPFLAGS_HAVE_GC`标志位），析构器应该在清理任何成员字段之前调用:c:func:`PyObject_GC_UnTrack`。"
+"如果该类型支持垃圾回收（设置了 :const:`Py_TPFLAGS_HAVE_GC` 标志位），析构器应该在清理任何成员字段之前调用 "
+":c:func:`PyObject_GC_UnTrack`。"
 
 #: ../../c-api/typeobj.rst:690
 msgid ""
@@ -1589,7 +1607,8 @@ msgid ""
 "but taking a C string instead of a Python string object to give the "
 "attribute name."
 msgstr ""
-"该字段已弃用。当它被定义时，应该和:c:member:`~PyTypeObject.tp_getattro`指向同一个函数，但接受一个C字符串参数表示属性名，而不是Python字符串对象。"
+"该字段已弃用。当它被定义时，应该和 :c:member:`~PyTypeObject.tp_getattro` "
+"指向同一个函数，但接受一个C字符串参数表示属性名，而不是Python字符串对象。"
 
 #: ../../c-api/typeobj.rst:765 ../../c-api/typeobj.rst:957
 msgid "Group: :attr:`tp_getattr`, :attr:`tp_getattro`"
@@ -1621,7 +1640,8 @@ msgid ""
 "but taking a C string instead of a Python string object to give the "
 "attribute name."
 msgstr ""
-"该字段已弃用。当它被定义时，应该和:c:member:`~PyTypeObject.tp_setattro`指向同一个函数，但接受一个C字符串参数表示属性名，而不是Python字符串对象。"
+"该字段已弃用。当它被定义时，应该和 :c:member:`~PyTypeObject.tp_setattro` "
+"指向同一个函数，但接受一个C字符串参数表示属性名，而不是Python字符串对象。"
 
 #: ../../c-api/typeobj.rst:782 ../../c-api/typeobj.rst:983
 msgid "Group: :attr:`tp_setattr`, :attr:`tp_setattro`"

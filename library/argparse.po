@@ -12,8 +12,8 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # stone jing <stonejing1817@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-24 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -354,12 +354,12 @@ msgstr "usage_ - 描述程序用途的字符串（默认值：从添加到解析
 msgid ""
 "description_ - Text to display before the argument help (by default, no "
 "text)"
-msgstr ""
+msgstr "description_ - 要在参数帮助信息之前显示的文本（默认：无文本）"
 
 #: ../../library/argparse.rst:207
 msgid ""
 "epilog_ - Text to display after the argument help (by default, no text)"
-msgstr ""
+msgstr "epilog_ - 要在参数帮助信息之后显示的文本（默认：无文本）"
 
 #: ../../library/argparse.rst:209
 msgid ""
@@ -656,6 +656,9 @@ msgid ""
 "of the specified characters will be treated as files, and will be replaced "
 "by the arguments they contain.  For example::"
 msgstr ""
+"在某些时候，如在处理一个特别长的参数列表时，把参数列表保存在一个文件中而不是在命令行中打印出来会更有意义。 如果提供 "
+"``fromfile_prefix_chars=`` 参数给 :class:`ArgumentParser` "
+"构造器，则任何以指定字符打头的参数都将被当作文件来处理，并将被它们包含的参数所替代。 举例来说::"
 
 #: ../../library/argparse.rst:573
 msgid ""
@@ -851,7 +854,7 @@ msgstr "type_ - 命令行参数应当被转换成的类型。"
 
 #: ../../library/argparse.rst:758
 msgid "choices_ - A sequence of the allowable values for the argument."
-msgstr ""
+msgstr "choices_ - 由允许作为参数的值组成的序列。"
 
 #: ../../library/argparse.rst:760
 msgid ""
@@ -885,10 +888,13 @@ msgid ""
 ":meth:`~ArgumentParser.add_argument` must therefore be either a series of "
 "flags, or a simple argument name."
 msgstr ""
+":meth:`~ArgumentParser.add_argument` 方法必须知道是要接收一个可选参数，如 ``-f`` 或 "
+"``--foo``，还是一个位置参数，如由文件名组成的列表。 因此首先传递给 :meth:`~ArgumentParser.add_argument` "
+"的参数必须是一组旗标，或一个简单的参数名称。"
 
 #: ../../library/argparse.rst:784
 msgid "For example, an optional argument could be created like::"
-msgstr ""
+msgstr "例如，可以这样创建可选参数::"
 
 #: ../../library/argparse.rst:788
 msgid "while a positional argument could be created like::"
@@ -932,6 +938,8 @@ msgid ""
 "``'store_const'`` action is most commonly used with optional arguments that "
 "specify some sort of flag.  For example::"
 msgstr ""
+"``'store_const'`` - 存储由 const_ 关键字参数指定的值；请注意 const_ 关键字参数默认为 ``None``。 "
+"``'store_const'`` 动作最常被用于指定某类旗标的可选参数。 例如::"
 
 #: ../../library/argparse.rst:837
 msgid ""
@@ -951,6 +959,8 @@ msgid ""
 "parsed value for the option, with any values from the command line appended "
 "after those default values. Example usage::"
 msgstr ""
+"``'append'`` - 存储一个列表，并将每个参数值添加到该列表。 它适用于允许可多次指定的选项。 "
+"如果默认值非空，则默认的元素将出现在该选项的已解析值中，并将所有来自命令行的值添加在默认值之后。 示例用法::"
 
 #: ../../library/argparse.rst:860
 msgid ""
@@ -960,6 +970,8 @@ msgid ""
 "useful when multiple arguments need to store constants to the same list. For"
 " example::"
 msgstr ""
+"``'append_const'`` - 存储一个列表，并将由 const_ 关键字参数指定的值添加到列表中；请注意 const_ 关键字参数默认为 "
+"``None``。 ``'append_const'`` 动作通常适用于多个参数需要将常量存储到同一列表的场合。 例如::"
 
 #: ../../library/argparse.rst:872
 msgid ""
@@ -1118,6 +1130,10 @@ msgid ""
 ":meth:`~ArgumentParser.add_argument`, it will receive a default value of "
 "``None``."
 msgstr ""
+"当 :meth:`~ArgumentParser.add_argument` 附带 ``action='store_const'`` 或 "
+"``action='append_const'`` 被调用时。 这些动作会把 ``const`` 值添加到 "
+":meth:`~ArgumentParser.parse_args` 所返回的对象的属性中。 请查看 action_ 的示例描述。 如果未将 "
+"``const`` 提供给 :meth:`~ArgumentParser.add_argument`，它将接收一个 ``None`` 的默认值。"
 
 #: ../../library/argparse.rst:1054
 msgid ""

@@ -1144,12 +1144,18 @@ msgid ""
 "command-line argument following it, the value of ``const`` will be assumed "
 "to be ``None`` instead.  See the nargs_ description for examples."
 msgstr ""
+"当 :meth:`~ArgumentParser.add_argument` 附带选项字符串 (如 ``-f`` 或 ``--foo``) 和 "
+"``nargs='?'`` 被调用的时候。 这会创建一个可以跟随零到一个命令行参数的选项参数。 "
+"当解析该命令行时，如果选项字符串没有跟随任何命令行参数，``const`` 的值将被假定为以 ``None`` 代替。 请参阅 nargs_ "
+"描述中的示例。"
 
 #: ../../library/argparse.rst:1061
 msgid ""
 "``const=None`` by default, including when ``action='append_const'`` or "
 "``action='store_const'``."
 msgstr ""
+"在默认情况下 ``const=None``，包括 ``action='append_const'`` 或 "
+"``action='store_const'`` 的时候。"
 
 #: ../../library/argparse.rst:1068
 msgid "default"
@@ -1296,6 +1302,9 @@ msgid ""
 "line is parsed, argument values will be checked, and an error message will "
 "be displayed if the argument was not one of the acceptable values::"
 msgstr ""
+"某些命令行参数应当从一组受限的值中选择。 这可以通过将一个序列对象作为 *choices* 关键字参数传给 "
+":meth:`~ArgumentParser.add_argument` 来处理。 "
+"当执行命令行解析时，参数值将被检查，如果参数不是可接受的值之一就将显示错误消息::"
 
 #: ../../library/argparse.rst:1216
 msgid ""
@@ -1303,12 +1312,15 @@ msgid ""
 "conversions have been performed, so the type of the objects in the *choices*"
 " sequence should match the type_ specified::"
 msgstr ""
+"请注意 *choices* 序列包含的内容会在执行任意 type_ 转换之后被检查，因此 *choices* 序列中对象的类型应当与指定的 type_ "
+"相匹配::"
 
 #: ../../library/argparse.rst:1228
 msgid ""
 "Any sequence can be passed as the *choices* value, so :class:`list` objects,"
 " :class:`tuple` objects, and custom sequences are all supported."
 msgstr ""
+"任何序列都可作为 *choices* 值传入，因此 :class:`list` 对象、:class:`tuple` 对象以及自定义序列都是受支持的。"
 
 #: ../../library/argparse.rst:1231
 msgid ""

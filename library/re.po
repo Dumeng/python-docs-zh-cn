@@ -470,6 +470,8 @@ msgid ""
 "``[]()[{}]`` will match a right bracket, as well as left bracket, braces, "
 "and parentheses."
 msgstr ""
+"要在集合内匹配一个 ``']'`` 字面值，可以在它前面加上反斜杠，或是将它放到集合的开头。 例如，``[()[\\]{}]`` 和 "
+"``[]()[{}]`` 都可以匹配右方括号，以及左方括号，花括号和圆括号。"
 
 #: ../../library/re.rst:282
 msgid ""

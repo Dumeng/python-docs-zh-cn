@@ -16,9 +16,9 @@
 # helloworldSB <warningfor163@foxmail.com>, 2022
 # Sefank <sefank@foxmail.com>, 2022
 # Nyuan Zhang, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Jason Ren, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -27,7 +27,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2420,6 +2420,8 @@ msgid ""
 ":class:`collections.abc.AsyncIterator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.AsyncIterator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2329
 msgid "A generic version of :class:`collections.abc.Awaitable`."
@@ -2430,6 +2432,8 @@ msgid ""
 ":class:`collections.abc.Awaitable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Awaitable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2339
 msgid "Context manager types"
@@ -2444,6 +2448,8 @@ msgid ""
 ":class:`contextlib.AbstractContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`contextlib.AbstractContextManager` 现在支持下标操作 (``[]``)。 参见 :pep:`585` "
+"和 :ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2355
 msgid "A generic version of :class:`contextlib.AbstractAsyncContextManager`."
@@ -2454,6 +2460,8 @@ msgid ""
 ":class:`contextlib.AbstractAsyncContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`contextlib.AbstractAsyncContextManager` 现在 支持下标操作 (``[]``)。 参见 "
+":pep:`585` 和 :ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2366
 msgid "Protocols"
@@ -2514,7 +2522,7 @@ msgstr "不变更返回值。对类型检查器而言，代表了返回值具有
 msgid ""
 "Ask a static type checker to confirm that *val* has an inferred type of "
 "*typ*."
-msgstr ""
+msgstr "让静态类型检查器确认 *val* 具有推断为 *typ* 的类型。"
 
 #: ../../library/typing.rst:2418
 msgid ""

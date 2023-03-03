@@ -785,6 +785,9 @@ msgid ""
 "This document specifies requirements for algorithms that reduce this user-"
 "visible delay and provides an algorithm."
 msgstr ""
+"Happy Eyeballs 算法：成功使用双栈主机。 当服务器的 IPv4 路径和协议工作正常，但服务器的 IPv6 "
+"路径和协议工作不正常时，双线客户端应用程序相比仅有 IPv4 的客户端会感受到明显的连接延迟。 这是不可接受的因为它会导致双栈客户端糟糕的用户体验。 "
+"这篇文档指明了减少这种用户可见延迟的算法要求并提供了具体的算法。"
 
 #: ../../library/asyncio-eventloop.rst:518
 msgid "For more information: https://tools.ietf.org/html/rfc6555"

@@ -7,8 +7,8 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Naisen Xu <723648649@qq.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1216,11 +1216,11 @@ msgstr ""
 
 #: ../../library/decimal.rst:1067
 msgid "Resets all of the flags to ``0``."
-msgstr ""
+msgstr "将所有旗标重置为 ``0``。"
 
 #: ../../library/decimal.rst:1071
 msgid "Resets all of the traps to ``0``."
-msgstr ""
+msgstr "将所有陷阱重置为 ``0``。"
 
 #: ../../library/decimal.rst:1077
 msgid "Return a duplicate of the context."
@@ -1613,15 +1613,15 @@ msgstr "64位"
 
 #: ../../library/decimal.rst:1486 ../../library/decimal.rst:1488
 msgid "``425000000``"
-msgstr ""
+msgstr "``425000000``"
 
 #: ../../library/decimal.rst:1486 ../../library/decimal.rst:1488
 msgid "``999999999999999999``"
-msgstr ""
+msgstr "``999999999999999999``"
 
 #: ../../library/decimal.rst:1490
 msgid "``-425000000``"
-msgstr ""
+msgstr "``-425000000``"
 
 #: ../../library/decimal.rst:1490
 msgid "``-999999999999999999``"

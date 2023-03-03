@@ -15,8 +15,8 @@
 # Sean Chao <seanchao0804@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # 高乐喆 <gaolezhe@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -25,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -974,11 +974,11 @@ msgstr "说明"
 
 #: ../../library/sys.rst:574
 msgid "``epsilon``"
-msgstr ""
+msgstr "``epsilon``"
 
 #: ../../library/sys.rst:574
 msgid "``DBL_EPSILON``"
-msgstr ""
+msgstr "``DBL_EPSILON``"
 
 #: ../../library/sys.rst:574
 msgid ""
@@ -992,11 +992,11 @@ msgstr "另请参阅 :func:`math.ulp`。"
 
 #: ../../library/sys.rst:579
 msgid "``dig``"
-msgstr ""
+msgstr "``dig``"
 
 #: ../../library/sys.rst:579
 msgid "``DBL_DIG``"
-msgstr ""
+msgstr "``DBL_DIG``"
 
 #: ../../library/sys.rst:579
 msgid ""
@@ -1006,11 +1006,11 @@ msgstr "浮点数可以真实表示的最大十进制数字；见下文"
 
 #: ../../library/sys.rst:582
 msgid "``mant_dig``"
-msgstr ""
+msgstr "``mant_dig``"
 
 #: ../../library/sys.rst:582
 msgid "``DBL_MANT_DIG``"
-msgstr ""
+msgstr "``DBL_MANT_DIG``"
 
 #: ../../library/sys.rst:582
 msgid ""
@@ -1020,11 +1020,11 @@ msgstr "浮点数精度：``radix`` 基数下的浮点数有效位数"
 
 #: ../../library/sys.rst:585
 msgid "``max``"
-msgstr ""
+msgstr "``max``"
 
 #: ../../library/sys.rst:585
 msgid "``DBL_MAX``"
-msgstr ""
+msgstr "``DBL_MAX``"
 
 #: ../../library/sys.rst:585
 msgid "maximum representable positive finite float"
@@ -1032,11 +1032,11 @@ msgstr "可表示的最大正浮点数（非无穷）"
 
 #: ../../library/sys.rst:587
 msgid "``max_exp``"
-msgstr ""
+msgstr "``max_exp``"
 
 #: ../../library/sys.rst:587
 msgid "``DBL_MAX_EXP``"
-msgstr ""
+msgstr "``DBL_MAX_EXP``"
 
 #: ../../library/sys.rst:587
 msgid ""
@@ -1046,11 +1046,11 @@ msgstr "使得 ``radix**(e-1)`` 是可表示的浮点数（非无穷）的最大
 
 #: ../../library/sys.rst:590
 msgid "``max_10_exp``"
-msgstr ""
+msgstr "``max_10_exp``"
 
 #: ../../library/sys.rst:590
 msgid "``DBL_MAX_10_EXP``"
-msgstr ""
+msgstr "``DBL_MAX_10_EXP``"
 
 #: ../../library/sys.rst:590
 msgid ""
@@ -1060,11 +1060,11 @@ msgstr "使得 ``10**e`` 在可表示的浮点数（非无穷）范围内的最�
 
 #: ../../library/sys.rst:593
 msgid "``min``"
-msgstr ""
+msgstr "``min``"
 
 #: ../../library/sys.rst:593
 msgid "``DBL_MIN``"
-msgstr ""
+msgstr "``DBL_MIN``"
 
 #: ../../library/sys.rst:593
 msgid "minimum representable positive *normalized* float"
@@ -1078,11 +1078,11 @@ msgstr "使用 :func:`math.ulp(0.0) <math.ulp>` 获取可表示的最小正 *非
 
 #: ../../library/sys.rst:599
 msgid "``min_exp``"
-msgstr ""
+msgstr "``min_exp``"
 
 #: ../../library/sys.rst:599
 msgid "``DBL_MIN_EXP``"
-msgstr ""
+msgstr "``DBL_MIN_EXP``"
 
 #: ../../library/sys.rst:599
 msgid "minimum integer *e* such that ``radix**(e-1)`` is a normalized float"
@@ -1090,11 +1090,11 @@ msgstr "使得 ``radix**(e-1)`` 是规格化浮点数的最小整数 *e*"
 
 #: ../../library/sys.rst:602
 msgid "``min_10_exp``"
-msgstr ""
+msgstr "``min_10_exp``"
 
 #: ../../library/sys.rst:602
 msgid "``DBL_MIN_10_EXP``"
-msgstr ""
+msgstr "``DBL_MIN_10_EXP``"
 
 #: ../../library/sys.rst:602
 msgid "minimum integer *e* such that ``10**e`` is a normalized float"
@@ -1102,11 +1102,11 @@ msgstr "使得 ``10**e`` 是规格化浮点数的最小整数 *e*"
 
 #: ../../library/sys.rst:605
 msgid "``radix``"
-msgstr ""
+msgstr "``radix``"
 
 #: ../../library/sys.rst:605
 msgid "``FLT_RADIX``"
-msgstr ""
+msgstr "``FLT_RADIX``"
 
 #: ../../library/sys.rst:605
 msgid "radix of exponent representation"
@@ -1114,11 +1114,11 @@ msgstr "指数表示法中采用的基数"
 
 #: ../../library/sys.rst:607
 msgid "``rounds``"
-msgstr ""
+msgstr "``rounds``"
 
 #: ../../library/sys.rst:607
 msgid "``FLT_ROUNDS``"
-msgstr ""
+msgstr "``FLT_ROUNDS``"
 
 #: ../../library/sys.rst:607
 msgid ""
@@ -1127,12 +1127,14 @@ msgid ""
 " time: ``-1`` indeterminable, ``0`` toward zero, ``1`` to nearest, ``2`` "
 "toward positive infinity, ``3`` toward negative infinity"
 msgstr ""
+"代表浮点算术舍入模式的整数。 这反映了在解释器启动时系统 ``FLT_ROUNDS`` 宏的值: ``-1`` 为不确定, ``0`` 为向零舍入, "
+"``1`` 为向最接近的值舍入, ``2`` 为向正无穷大舍入, ``3`` 为向负无穷大舍入"
 
 #: ../../library/sys.rst:617
 msgid ""
 "All other values for ``FLT_ROUNDS`` characterize implementation-defined "
 "rounding behavior."
-msgstr ""
+msgstr "``FLT_ROUNDS`` 的所有其他值被用于代表具体实现所定义的舍入行为。"
 
 #: ../../library/sys.rst:621
 msgid ""

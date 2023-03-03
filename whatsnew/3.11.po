@@ -19,19 +19,19 @@
 # cdarlint <cdarling@126.com>, 2022
 # Sefank <sefank@foxmail.com>, 2022
 # 周盛道 <zhoushengdao@sina.cn>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Nyuan Zhang, 2023
 # Jason Ren, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3879,35 +3879,35 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:2416
 msgid ":c:type:`PyFrameObject` fields:"
-msgstr ""
+msgstr ":c:type:`PyFrameObject` 字段:"
 
 #: ../../whatsnew/3.11.rst:2418
 msgid "``f_back``: use :c:func:`PyFrame_GetBack`."
-msgstr ""
+msgstr "``f_back``: 使用 :c:func:`PyFrame_GetBack`。"
 
 #: ../../whatsnew/3.11.rst:2419
 msgid "``f_blockstack``: removed."
-msgstr ""
+msgstr "``f_blockstack``: 已移除。"
 
 #: ../../whatsnew/3.11.rst:2420
 msgid "``f_builtins``: use :c:func:`PyFrame_GetBuiltins`."
-msgstr ""
+msgstr "``f_builtins``: 使用 :c:func:`PyFrame_GetBuiltins`。"
 
 #: ../../whatsnew/3.11.rst:2421
 msgid "``f_code``: use :c:func:`PyFrame_GetCode`."
-msgstr ""
+msgstr "``f_code``: 使用 :c:func:`PyFrame_GetCode`。"
 
 #: ../../whatsnew/3.11.rst:2422
 msgid "``f_gen``: use :c:func:`PyFrame_GetGenerator`."
-msgstr ""
+msgstr "``f_gen``: 使用 :c:func:`PyFrame_GetGenerator`。"
 
 #: ../../whatsnew/3.11.rst:2423
 msgid "``f_globals``: use :c:func:`PyFrame_GetGlobals`."
-msgstr ""
+msgstr "``f_globals``: 使用 :c:func:`PyFrame_GetGlobals`。"
 
 #: ../../whatsnew/3.11.rst:2424
 msgid "``f_iblock``: removed."
-msgstr ""
+msgstr "``f_iblock``: 已移除。"
 
 #: ../../whatsnew/3.11.rst:2425
 msgid ""
@@ -3915,6 +3915,8 @@ msgid ""
 "``PyCode_Addr2Line()`` should use :c:func:`PyFrame_GetLineNumber` instead; "
 "it may be faster."
 msgstr ""
+"``f_lasti``: 使用 :c:func:`PyFrame_GetLasti`。 使用 ``f_lasti`` 并带有 "
+"``PyCode_Addr2Line()`` 的代码应当改用 :c:func:`PyFrame_GetLineNumber`；它可能会更快。"
 
 #: ../../whatsnew/3.11.rst:2428
 msgid "``f_lineno``: use :c:func:`PyFrame_GetLineNumber`"

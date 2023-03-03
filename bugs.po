@@ -10,8 +10,8 @@
 # provefar <provefars@gmail.com>, 2021
 # Shengjing Zhu <zsj950618@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # 高乐喆 <gaolezhe@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: 高乐喆 <gaolezhe@outlook.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -178,7 +178,7 @@ msgstr "提交表单有两个字段，\"Title\" 和 \"Comment\"。"
 msgid ""
 "For the \"Title\" field, enter a *very* short description of the problem; "
 "fewer than ten words is good."
-msgstr ""
+msgstr "对于 \"Title\" 字段，请输入对问题的 *非常* 简短的描述；最好是少于十个单词。"
 
 #: ../../bugs.rst:75
 msgid ""

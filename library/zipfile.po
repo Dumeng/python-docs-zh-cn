@@ -89,6 +89,8 @@ msgid ""
 ":class:`pathlib.Path`, including the full "
 ":class:`importlib.resources.abc.Traversable` interface."
 msgstr ""
+"实现了 :class:`pathlib.Path` 所提供接口的一个子集的类，包括完整的 "
+":class:`importlib.resources.abc.Traversable` 接口。"
 
 #: ../../library/zipfile.rst:68
 msgid "Class for creating ZIP archives containing Python libraries."

@@ -59,6 +59,8 @@ msgid ""
 "point. End users typically would not expect ``1.1 + 2.2`` to display as "
 "``3.3000000000000003`` as it does with binary floating point."
 msgstr ""
+"Decimal 数字可以完全精确地表示。 相比之下，``1.1`` 和 ``2.2`` 这样的数字在二进制浮点形式下没有精确的表示。 最终用户通常不希望"
+" ``1.1 + 2.2`` 像在二进制浮点形式下那样被显示为 ``3.3000000000000003``。"
 
 #: ../../library/decimal.rst:47
 msgid ""
@@ -69,6 +71,9 @@ msgid ""
 "accumulate. For this reason, decimal is preferred in accounting applications"
 " which have strict equality invariants."
 msgstr ""
+"这样的精确性会延续到算术运算中。 对于 decimal 浮点数，``0.1 + 0.1 + 0.1 - 0.3`` 会精确地等于零。 "
+"而对于二进制浮点数，结果则为 ``5.5511151231257827e-017``。 "
+"虽然接近于零，但其中的误差将妨碍到可靠的相等性检测并且这样的误差还会不断累积。 因此，decimal 更适合具有严格相等不变性要求的会计类应用。"
 
 #: ../../library/decimal.rst:54
 msgid ""
@@ -274,7 +279,7 @@ msgstr ""
 msgid ""
 "Individual traps are set using the dictionary in the :attr:`~Context.traps` "
 "attribute of a context:"
-msgstr ""
+msgstr "单个陷阱是使用上下文的 :attr:`~Context.traps` 属性中的字典来设置的:"
 
 #: ../../library/decimal.rst:331
 msgid ""
@@ -324,6 +329,9 @@ msgid ""
 "an integer exponent. For example, ``Decimal((0, (1, 4, 1, 4), -3))`` returns"
 " ``Decimal('1.414')``."
 msgstr ""
+"如果 *value* 是一个 :class:`tuple`，它应当有三个组成部分，一个符号 (``0`` 表示正数 ``1`` "
+"表示负数)，一个由数字组成的 :class:`tuple`，以及一个整数指数值。 例如，``Decimal((0, (1, 4, 1, 4), "
+"-3))`` 将返回 ``Decimal('1.414')``。"
 
 #: ../../library/decimal.rst:376
 msgid ""
@@ -910,7 +918,7 @@ msgstr ""
 msgid ""
 "Test whether self and other have the same exponent or whether both are "
 "``NaN``."
-msgstr ""
+msgstr "检测自身与 other 是否具有相同的指数或是否均为 ``NaN``。"
 
 #: ../../library/decimal.rst:841
 msgid ""
@@ -1625,15 +1633,15 @@ msgstr "``-425000000``"
 
 #: ../../library/decimal.rst:1490
 msgid "``-999999999999999999``"
-msgstr ""
+msgstr "``-999999999999999999``"
 
 #: ../../library/decimal.rst:1492
 msgid "``-849999999``"
-msgstr ""
+msgstr "``-849999999``"
 
 #: ../../library/decimal.rst:1492
 msgid "``-1999999999999999997``"
-msgstr ""
+msgstr "``-1999999999999999997``"
 
 #: ../../library/decimal.rst:1498
 msgid ""
@@ -1662,7 +1670,7 @@ msgstr "舍入模式"
 
 #: ../../library/decimal.rst:1517
 msgid "Round towards ``Infinity``."
-msgstr ""
+msgstr "舍入方向为 ``Infinity``。"
 
 #: ../../library/decimal.rst:1521
 msgid "Round towards zero."
@@ -1670,7 +1678,7 @@ msgstr "舍入方向为零。"
 
 #: ../../library/decimal.rst:1525
 msgid "Round towards ``-Infinity``."
-msgstr ""
+msgstr "舍入方向为 ``-Infinity``。"
 
 #: ../../library/decimal.rst:1529
 msgid "Round to nearest with ties going towards zero."

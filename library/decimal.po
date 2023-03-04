@@ -802,6 +802,9 @@ msgid ""
 "example, ``Decimal('32.100')`` and ``Decimal('0.321000e+2')`` both normalize"
 " to the equivalent value ``Decimal('32.1')``."
 msgstr ""
+"通过去除尾随的零并将所有等于 ``Decimal('0')`` 的结果转换为 ``Decimal('0e0')``。 用于为等效类的属性生成标准值。 "
+"例如，``Decimal('32.100')`` 和 ``Decimal('0.321000e+2')`` 都会被标准化为相等的值 "
+"``Decimal('32.1')``。"
 
 #: ../../library/decimal.rst:755
 msgid ""
@@ -887,7 +890,7 @@ msgstr ""
 msgid ""
 "An error is returned whenever the resulting exponent is greater than "
 ":attr:`~Context.Emax` or less than :meth:`~Context.Etiny`."
-msgstr ""
+msgstr "每当结果的指数大于 :attr:`~Context.Emax` 或小于 :meth:`~Context.Etiny` 就将返回一个错误。"
 
 #: ../../library/decimal.rst:797
 msgid ""
@@ -1014,6 +1017,9 @@ msgid ""
 ":class:`Decimal` instance whose exponent and sign are both zero, and whose "
 "digits are all either ``0`` or ``1``."
 msgstr ""
+":meth:`~Decimal.logical_and`, :meth:`~Decimal.logical_invert`, "
+":meth:`~Decimal.logical_or` 和 :meth:`~Decimal.logical_xor` 方法均期望其参数为 "
+"*逻辑操作数*。 *逻辑操作数* 即指数位和符号位均为零，且其数字位均为 ``0`` 或 ``1`` 的 :class:`Decimal` 实例。"
 
 #: ../../library/decimal.rst:907
 msgid "Context objects"
@@ -1122,6 +1128,8 @@ msgid ""
 "exceptions.  This allows an application to complete a run in the presence of"
 " conditions that would otherwise halt the program."
 msgstr ""
+"由于禁用了陷阱，此上下文适用于希望结果值为 ``NaN`` 或 ``Infinity`` 而不是引发异常的应用程序。 "
+"这允许应用程序在出现当其他情况下会中止程序的条件时仍能完成运行。"
 
 #: ../../library/decimal.rst:992
 msgid ""
@@ -1156,6 +1164,9 @@ msgid ""
 "for :class:`Overflow`, :class:`InvalidOperation`, and "
 ":class:`DivisionByZero`."
 msgstr ""
+"默认值为 :attr:`Context.prec`\\ =\\ ``28``, :attr:`Context.rounding`\\ =\\ "
+":const:`ROUND_HALF_EVEN`，并为 :class:`Overflow`, :class:`InvalidOperation` 和 "
+":class:`DivisionByZero` 启用陷阱。"
 
 #: ../../library/decimal.rst:1009
 msgid ""
@@ -1176,7 +1187,7 @@ msgstr ""
 msgid ""
 "*prec* is an integer in the range [``1``, :const:`MAX_PREC`] that sets the "
 "precision for arithmetic operations in the context."
-msgstr ""
+msgstr "*prec* 是一个用于设置该上下文中算术运算的精度的 [``1``, :const:`MAX_PREC`] 范围内的整数。"
 
 #: ../../library/decimal.rst:1022
 msgid ""
@@ -1196,6 +1207,8 @@ msgid ""
 "allowable for exponents. *Emin* must be in the range [:const:`MIN_EMIN`, "
 "``0``], *Emax* in the range [``0``, :const:`MAX_EMAX`]."
 msgstr ""
+"*Emin* 和 *Emax* 字段是指定指数所允许的外部上限的整数。 *Emin* 必须在 [:const:`MIN_EMIN`, ``0``] "
+"范围内，*Emax* 必须在 [``0``, :const:`MAX_EMAX`] 范围内。"
 
 #: ../../library/decimal.rst:1032
 msgid ""
@@ -1203,6 +1216,8 @@ msgid ""
 "``1``, exponents are printed with a capital ``E``; otherwise, a lowercase "
 "``e`` is used: ``Decimal('6.02e+23')``."
 msgstr ""
+"*capitals* 字段为 ``0`` 或 ``1`` (默认值)。 如果设为 ``1``，指数将附带大写的 ``E`` "
+"打印出来；在其他情况下将使用小写的 ``e``: ``Decimal('6.02e+23')``。"
 
 #: ../../library/decimal.rst:1036
 msgid ""
@@ -1217,12 +1232,17 @@ msgid ""
 "value of the number but loses information about significant trailing zeros."
 "  For example::"
 msgstr ""
+"*clamp* 字段为 ``0`` (默认值) 或 ``1``。 如果设为 ``1``，则 :class:`Decimal` 实例的指数 ``e`` "
+"的表示范围在此上下文中将严格限制在 ``Emin - prec + 1 <= e <= Emax - prec + 1`` 范围内。 如果 "
+"*clamp* 为 ``0`` 则将适用较弱的条件：调整后的 :class:`Decimal` 实例指数最大值为 "
+":attr:`~Context.Emax`。 当 *clamp* 为 ``1`` "
+"时，一个较大的普通数值将在可能的情况下减小其指数并为其系数添加相应数量的零，以便符合指数值限制；这可以保留数字值但会丢失有效末尾零的信息。 例如::"
 
 #: ../../library/decimal.rst:1051
 msgid ""
 "A *clamp* value of ``1`` allows compatibility with the fixed-width decimal "
 "interchange formats specified in IEEE 754."
-msgstr ""
+msgstr "将 *clamp* 值设为 ``1`` 即允许与 IEEE 754 所描述的固定宽度十进制交换格式保持兼容性。"
 
 #: ../../library/decimal.rst:1054
 msgid ""

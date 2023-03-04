@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1335,6 +1335,8 @@ msgid ""
 "*dest* parameter.  If this display isn't desirable (perhaps because there "
 "are many choices), just specify an explicit metavar_."
 msgstr ""
+"已格式化的选项会覆盖默认的 *metavar*，该值一般是派生自 *dest*。 这通常就是你所需要的，因为用户永远不会看到 *dest* 形参。 "
+"如果不想要这样的显示（或许因为有很多选择），只需指定一个显式的 metavar_。"
 
 #: ../../library/argparse.rst:1243
 msgid "required"
@@ -1922,6 +1924,8 @@ msgid ""
 "convert this into :data:`sys.stdin` for readable :class:`FileType` objects "
 "and :data:`sys.stdout` for writable :class:`FileType` objects::"
 msgstr ""
+"FileType 对象能理解伪参数 ``'-'`` 并会自动将其转换为 :data:`sys.stdin` 用于可读的 "
+":class:`FileType` 对象以及 :data:`sys.stdout` 用于可写的 :class:`FileType` 对象::"
 
 #: ../../library/argparse.rst:1926
 msgid "The *encodings* and *errors* keyword arguments."
@@ -1939,6 +1943,8 @@ msgid ""
 "appropriate groups can be created using the :meth:`add_argument_group` "
 "method::"
 msgstr ""
+"在默认情况下，:class:`ArgumentParser` 会在显示帮助消息时将命令行参数分为“位置参数”和“可选参数”两组。 "
+"当存在比默认更好的参数分组概念时，可以使用 :meth:`add_argument_group` 方法来创建适当的分组::"
 
 #: ../../library/argparse.rst:1952
 msgid ""
@@ -1968,6 +1974,8 @@ msgid ""
 " exists on the API by accident through inheritance and will be removed in "
 "the future."
 msgstr ""
+"在参数分组上调用 :meth:`add_argument_group` 已被弃用。 此特性从未受到支持并且不保证总能正确工作。此函数出现在 API "
+"中是继承导致的意外并将在未来被移除。"
 
 #: ../../library/argparse.rst:1989
 msgid "Mutual exclusion"
@@ -2005,6 +2013,8 @@ msgid ""
 "supported and do not always work correctly. The functions exist on the API "
 "by accident through inheritance and will be removed in the future."
 msgstr ""
+"在互斥的分组上调用 :meth:`add_argument_group` 或 :meth:`add_mutually_exclusive_group` "
+"已被弃用。 这些特性从未受到支持并且不保证总能正确工作。 这些函数出现在 API 中是继承导致的意外并将在未来被移除。"
 
 #: ../../library/argparse.rst:2033
 msgid "Parser defaults"

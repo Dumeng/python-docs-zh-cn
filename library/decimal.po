@@ -1919,6 +1919,8 @@ msgid ""
 "can still incur round-off error when non-zero digits exceed the fixed "
 "precision."
 msgstr ""
+"使用 decimal 浮点数可以消除十进制表示错误（即能够精确地表示 ``0.1`` "
+"这样的数）；然而，某些运算在非零数位超出了给定的精度时仍然可能导至舍入错误。"
 
 #: ../../library/decimal.rst:1702
 msgid ""
@@ -1947,6 +1949,8 @@ msgid ""
 "including ``NaN``, ``sNaN``, ``-Infinity``, ``Infinity``, and two zeros, "
 "``+0`` and ``-0``."
 msgstr ""
+":mod:`decimal` 模块的数字系统提供了一些特殊的值包括 ``NaN``, ``sNaN``, ``-Infinity``, "
+"``Infinity``, 和两种零值，``+0`` 和 ``-0``。"
 
 #: ../../library/decimal.rst:1752
 msgid ""
@@ -1976,6 +1980,10 @@ msgid ""
 "series of computations that occasionally have missing inputs --- it allows "
 "the calculation to proceed while flagging specific results as invalid."
 msgstr ""
+"某些运算没有确定的结果并将返回 ``NaN``，或者如果捕获了 :exc:`InvalidOperation` 信号，则会引发一个异常。 "
+"例如，``0/0`` 将返回 ``NaN`` 表示 \"not a number\"。 这样的 ``NaN`` "
+"将静默产生，并且一旦产生就将在参与其他运算时始终得到 ``NaN`` 的结果。 这种行为对于偶尔缺少输入的各类计算都很有用处 --- "
+"它允许在将特定结果标记为无效的同时让计算继续进行。"
 
 #: ../../library/decimal.rst:1769
 msgid ""
@@ -1983,6 +1991,7 @@ msgid ""
 "operation.  This is a useful return value when an invalid result needs to "
 "interrupt a calculation for special handling."
 msgstr ""
+"一种变体形式是 ``sNaN``，它在每次运算后会发出信号而不是保持静默。 当对于无效结果需要中断计算进行特别处理时这是一个很有用的返回值。"
 
 #: ../../library/decimal.rst:1773
 msgid ""

@@ -1256,6 +1256,11 @@ msgid ""
 "``x.exp(context=C)``.  Each :class:`Context` method accepts a Python integer"
 " (an instance of :class:`int`) anywhere that a Decimal instance is accepted."
 msgstr ""
+":class:`Context` 类定义了几种通用方法以及大量直接在给定上下文中进行算术运算的方法。 此外，对于上述的每种 "
+":class:`Decimal` 方法（除了 :meth:`~Decimal.adjusted` 和 :meth:`~Decimal.as_tuple`"
+" 方法）都有一个对应的 :class:`Context` 方法。 例如，对于一个 :class:`Context` 的实例 ``C`` 和 "
+":class:`Decimal` 的实例 ``x``，``C.exp(x)`` 就等价于 ``x.exp(context=C)``。 每个 "
+":class:`Context` 方法都接受一个 Python 整数（即 :class:`int` 的实例）在任何接受 Decimal 实例的地方使用。"
 
 #: ../../library/decimal.rst:1067
 msgid "Resets all of the flags to ``0``."
@@ -1777,6 +1782,8 @@ msgid ""
 ":attr:`~Context.Emin` and :attr:`~Context.Emax` limits.  If possible, the "
 "exponent is reduced to fit by adding zeros to the coefficient."
 msgstr ""
+"通常，限位将在一个指数值超出上下文的 :attr:`~Context.Emin` 和 :attr:`~Context.Emax` 限制时发生。 "
+"在可能的情况下，会通过向系数添加零来将指数缩减至符合限制。"
 
 #: ../../library/decimal.rst:1579
 msgid "Base class for other signals and a subclass of :exc:`ArithmeticError`."
@@ -1792,6 +1799,8 @@ msgid ""
 "negative power.  If this signal is not trapped, returns ``Infinity`` or "
 "``-Infinity`` with the sign determined by the inputs to the calculation."
 msgstr ""
+"可在除法、取余除法或对一个数执行负数次幂运算时发生。 如果此信号未被陷阱捕获，则返回 ``Infinity`` 或 ``-Infinity`` "
+"并由对计算的输入来确定正负符号。"
 
 #: ../../library/decimal.rst:1593
 msgid "Indicates that rounding occurred and the result is not exact."
@@ -1812,7 +1821,7 @@ msgstr "执行了一个无效的操作。"
 msgid ""
 "Indicates that an operation was requested that does not make sense. If not "
 "trapped, returns ``NaN``.  Possible causes include::"
-msgstr ""
+msgstr "表明请求了一个无意义的运算。 如果未被捕获，则返回 ``NaN``。 可能的原因包括::"
 
 #: ../../library/decimal.rst:1620
 msgid "Numerical overflow."
@@ -1826,6 +1835,9 @@ msgid ""
 " outward to ``Infinity``.  In either case, :class:`Inexact` and "
 ":class:`Rounded` are also signaled."
 msgstr ""
+"表明在发生舍入之后指数值大于 :attr:`Context.Emax`。 "
+"如果未被捕获，则结果将取决于舍入模式，或是向下舍入为最大的可表示有限数值，或是向上舍入为 ``Infinity``。 无论是哪种情况，都将发出 "
+":class:`Inexact` 和 :class:`Rounded` 信号。"
 
 #: ../../library/decimal.rst:1631
 msgid "Rounding occurred though possibly no information was lost."
@@ -1837,10 +1849,12 @@ msgid ""
 "(such as rounding ``5.00`` to ``5.0``).  If not trapped, returns the result "
 "unchanged.  This signal is used to detect loss of significant digits."
 msgstr ""
+"一旦舍入操作丢弃了数位就会发出此信号；即使被丢弃的数位是零（如将 ``5.00`` 舍入到 ``5.0`` 的情况）。 "
+"如果未被捕获，则不加修改地返回结果。 此信号用于检测有效位数的丢弃。"
 
 #: ../../library/decimal.rst:1641
 msgid "Exponent was lower than :attr:`~Context.Emin` prior to rounding."
-msgstr ""
+msgstr "在舍入之前指数值低于 :attr:`~Context.Emin`。"
 
 #: ../../library/decimal.rst:1643
 msgid ""

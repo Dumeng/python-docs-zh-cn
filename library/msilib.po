@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-03 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -57,6 +57,8 @@ msgid ""
 "this package is the creation of Python installer package itself (although "
 "that currently uses a different version of ``msilib``)."
 msgstr ""
+"这个包的目标是提供对 ``.msi`` 文件中的全部表的完整访问，因此，它是一个相当低层级的 API。 这个包的一个主要应用是创建 Python "
+"安装程序包本身 (尽管它目前是使用不同版本的 ``msilib``)。"
 
 #: ../../library/msilib.rst:32
 msgid ""
@@ -194,7 +196,7 @@ msgstr "将文件 *path* 添加到 *database* 的 ``_Stream`` 表，使用流名
 msgid ""
 "Return a new UUID, in the format that MSI typically requires (i.e. in curly "
 "braces, and with all hexdigits in uppercase)."
-msgstr ""
+msgstr "返回一个新的 UUID，符合 MSI 通常的格式要求（即外加花括号，且所有十六进制数码均为大写形式）。"
 
 #: ../../library/msilib.rst:131
 msgid ""
@@ -217,12 +219,14 @@ msgid ""
 "Return a view object, by calling :c:func:`MSIDatabaseOpenView`. *sql* is the"
 " SQL statement to execute."
 msgstr ""
+"通过调用 :c:func:`MSIDatabaseOpenView` 返回一个视图对象。 *sql* 是要执行的 SQL 语句。statement to"
+" execute."
 
 #: ../../library/msilib.rst:149
 msgid ""
 "Commit the changes pending in the current transaction, by calling "
 ":c:func:`MSIDatabaseCommit`."
-msgstr ""
+msgstr "通过调用 :c:func:`MSIDatabaseCommit` 提交当前事务中挂起的修改。"
 
 #: ../../library/msilib.rst:155
 msgid ""
@@ -230,10 +234,11 @@ msgid ""
 ":c:func:`MsiGetSummaryInformation`.  *count* is the maximum number of "
 "updated values."
 msgstr ""
+"通过调用 :c:func:`MsiGetSummaryInformation` 返回一个新的概要信息对象。 *count* 为已更新值的最大数量。"
 
 #: ../../library/msilib.rst:161
 msgid "Close the database object, through :c:func:`MsiCloseHandle`."
-msgstr ""
+msgstr "通过 :c:func:`MsiCloseHandle` 关闭数据库对象。"
 
 #: ../../library/msilib.rst:167
 msgid ""
@@ -244,10 +249,16 @@ msgid ""
 "us/library/windows/desktop/aa370301.aspx>`_ `MsiCloseHandle "
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/aa370067.aspx>`_"
 msgstr ""
+"`MSIDatabaseOpenView <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa370082.aspx>`_ `MSIDatabaseCommit "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/aa370075.aspx>`_ "
+"`MSIGetSummaryInformation <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa370301.aspx>`_ `MsiCloseHandle "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/aa370067.aspx>`_"
 
 #: ../../library/msilib.rst:175
 msgid "View Objects"
-msgstr ""
+msgstr "视图对象"
 
 #: ../../library/msilib.rst:180
 msgid ""
@@ -255,6 +266,8 @@ msgid ""
 "*params* is not ``None``, it is a record describing actual values of the "
 "parameter tokens in the query."
 msgstr ""
+"通过 :c:func:`MSIViewExecute` 执行视图的 SQL 查询。 如果 *params* 不为 "
+"``None``，它应是一条描述查询中形参名称的实际值的记录。"
 
 #: ../../library/msilib.rst:187
 msgid ""
@@ -262,6 +275,8 @@ msgid ""
 ":c:func:`MsiViewGetColumnInfo`. *kind* can be either ``MSICOLINFO_NAMES`` or"
 " ``MSICOLINFO_TYPES``."
 msgstr ""
+"通过调用 :c:func:`MsiViewGetColumnInfo` 返回一条描述视图的列的记录。 *kind* 可以是 "
+"``MSICOLINFO_NAMES`` 或 ``MSICOLINFO_TYPES``。"
 
 #: ../../library/msilib.rst:194
 msgid ""

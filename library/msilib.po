@@ -495,17 +495,17 @@ msgstr ""
 msgid ""
 "Return the index of the file in the CAB file, and the new name of the file "
 "inside the CAB file."
-msgstr ""
+msgstr "返回文件在 CAB 文件中的索引，以及文件在 CAB 文件中的新名称。"
 
 #: ../../library/msilib.rst:357
 msgid ""
 "Generate a CAB file, add it as a stream to the MSI file, put it into the "
 "``Media`` table, and remove the generated file from the disk."
-msgstr ""
+msgstr "生成一个 CAB 文件，以流方式添加到 MSI 文件，将其放入 ``Media`` 表，并从磁盘移除所生成的文件。"
 
 #: ../../library/msilib.rst:364
 msgid "Directory Objects"
-msgstr ""
+msgstr "目录对象"
 
 #: ../../library/msilib.rst:369
 msgid ""
@@ -568,29 +568,34 @@ msgid ""
 "*attributes*. The resulting feature object can be passed to the "
 ":meth:`start_component` method of :class:`Directory`."
 msgstr ""
+"使用值 *id*, *parent.id*, *title*, *desc*, *display*, *level*, *directory* 和 "
+"*attributes* 向 ``Feature`` 表添加一条新记录。 结果特征对象可被传给 :class:`Directory` 的 "
+":meth:`start_component` 方法。"
 
 #: ../../library/msilib.rst:431
 msgid ""
 "Make this feature the current feature of :mod:`msilib`. New components are "
 "automatically added to the default feature, unless a feature is explicitly "
 "specified."
-msgstr ""
+msgstr "将此特征设为 :mod:`msilib` 的当前特征。 新组件会自动被添加到默认特征，除非显式指定了一个特征。"
 
 #: ../../library/msilib.rst:438
 msgid ""
 "`Feature Table <https://msdn.microsoft.com/en-"
 "us/library/windows/desktop/aa368585.aspx>`_"
 msgstr ""
+"`特征表 <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa368585.aspx>`_"
 
 #: ../../library/msilib.rst:443
 msgid "GUI classes"
-msgstr ""
+msgstr "GUI 类"
 
 #: ../../library/msilib.rst:445
 msgid ""
 ":mod:`msilib` provides several classes that wrap the GUI tables in an MSI "
 "database. However, no standard user interface is provided."
-msgstr ""
+msgstr ":mod:`msilib` 提供了一些在 MSI 数据库中包装 GUI 表的类。 但是，并未提供标准用户接口。"
 
 #: ../../library/msilib.rst:451
 msgid ""

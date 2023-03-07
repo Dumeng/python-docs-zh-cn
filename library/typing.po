@@ -1422,7 +1422,7 @@ msgid ""
 "``covariant=True`` or ``contravariant=True``.  See :pep:`484` for more "
 "details.  By default, type variables are invariant."
 msgstr ""
-"类型变量可以通过传递 ``covariant=True`` 或 ``contravariant=True`` 来标记协变或反变。 更多细节请参见 "
+"类型变量可以通过传递 ``covariant=True`` 或 ``contravariant=True`` 来标记协变或逆变。 更多细节请参见 "
 ":pep:`484` 。 默认情况下，类型变量是不变的。"
 
 #: ../../library/typing.rst:1302
@@ -1586,7 +1586,7 @@ msgid ""
 ":class:`TypeVar`.  However the actual semantics of these keywords are yet to"
 " be decided."
 msgstr ""
-"用 ``covariant=True`` 或 ``contravariant=True`` 创建的参数规范变量可以用来声明协变或禁变的通用类型。 参数 "
+"用 ``covariant=True`` 或 ``contravariant=True`` 创建的参数规范变量可以用来声明协变或逆变泛型类型。 参数 "
 "``bound`` 也被接受，类似于 :class:`TypeVar`。 然而这些关键字的实际语义还有待决定。"
 
 #: ../../library/typing.rst:1496

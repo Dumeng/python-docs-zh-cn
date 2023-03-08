@@ -526,17 +526,19 @@ msgstr ""
 
 #: ../../howto/logging-cookbook.rst:805
 msgid "To test these files, do the following in a POSIX environment:"
-msgstr ""
+msgstr "要测试这些文件，请在 POSIX 环境中执行以下操作:"
 
 #: ../../howto/logging-cookbook.rst:807
 msgid ""
 "Download `the Gist <socket-listener-gist_>`__ as a ZIP archive using the "
 ":guilabel:`Download ZIP` button."
 msgstr ""
+"使用 :guilabel:`Download ZIP` 按钮将 `此 Gist <socket-listener-gist_>`__ 下载为 ZIP "
+"归档文件。"
 
 #: ../../howto/logging-cookbook.rst:810
 msgid "Unzip the above files from the archive into a scratch directory."
-msgstr ""
+msgstr "将上述文件从归档解压缩到一个初始目录中。"
 
 #: ../../howto/logging-cookbook.rst:812
 msgid ""
@@ -545,18 +547,21 @@ msgid ""
 "files, and a :file:`venv` subdirectory to contain a virtual environment into"
 " which ``bottle``, ``gunicorn`` and ``supervisor`` are installed."
 msgstr ""
+"在初始目录中，运行 ``bash prepare.sh`` 完成准备工作。 这将创建一个 :file:`run` 子目录来包含 Supervisor "
+"相关文件和日志文件，以及一个 :file:`venv` 子目录来包含安装了 ``bottle``, ``gunicorn`` 和 "
+"``supervisor`` 的虚拟环境。"
 
 #: ../../howto/logging-cookbook.rst:817
 msgid ""
 "Run ``bash ensure_app.sh`` to ensure that Supervisor is running with the "
 "above configuration."
-msgstr ""
+msgstr "运行 ``bash ensure_app.sh`` 以确保 Supervisor 正在使用上述配置运行。"
 
 #: ../../howto/logging-cookbook.rst:820
 msgid ""
 "Run ``venv/bin/python client.py`` to exercise the web application, which "
 "will lead to records being written to the log."
-msgstr ""
+msgstr "运行 ``venv/bin/python client.py`` 来使用 Web 应用程序，这将使得记录被写入到日志中。"
 
 #: ../../howto/logging-cookbook.rst:823
 msgid ""

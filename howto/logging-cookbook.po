@@ -501,19 +501,19 @@ msgstr "一个通过连接到监听器的套接字来执行日志记录的简单
 
 #: ../../howto/logging-cookbook.rst:795
 msgid ":file:`webapp.json`"
-msgstr ""
+msgstr ":file:`webapp.json`"
 
 #: ../../howto/logging-cookbook.rst:795
 msgid "A JSON configuration file for the web application"
-msgstr ""
+msgstr "一个针对 Web 应用程序的 JSON 配置文件"
 
 #: ../../howto/logging-cookbook.rst:797
 msgid ":file:`client.py`"
-msgstr ""
+msgstr ":file:`client.py`"
 
 #: ../../howto/logging-cookbook.rst:797
 msgid "A Python script to exercise the web application"
-msgstr ""
+msgstr "使用 Web 应用程序的 Python 脚本"
 
 #: ../../howto/logging-cookbook.rst:800
 msgid ""

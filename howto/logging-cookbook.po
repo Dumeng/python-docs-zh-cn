@@ -238,7 +238,7 @@ msgstr "并修改 ``stdout`` 处理句柄上的节来添加它:"
 msgid ""
 "A filter is just a function, so we can define the ``filter_maker`` (a "
 "factory function) as follows:"
-msgstr ""
+msgstr "过滤器就是一个函数，因此我们可以定义 ``filter_maker`` (工厂函数) 如下:"
 
 #: ../../howto/logging-cookbook.rst:375
 msgid ""
@@ -250,14 +250,17 @@ msgid ""
 "``__main__.filter_maker`` in the filter configuration. You will need to "
 "change that if you define it in a different module."
 msgstr ""
+"此函数将传入的字符串参数转换为数字级别，并返回一个仅在传入等于或低于指定数字级别的级别时返回 ``True`` 的函数。 请注意在这个示例中我是将 "
+"``filter_maker`` 定义在一个从命令行运行的测试脚本 ``main.py`` 中，因此其所属模块将为 ``__main__`` —— "
+"即在过滤器配置中写作 ``__main__.filter_maker``。 如果你在不同的模块中定义它则需要加以修改。"
 
 #: ../../howto/logging-cookbook.rst:383
 msgid "With the filter added, we can run ``main.py``, which in full is:"
-msgstr ""
+msgstr "在添加该过滤器后，我们就可以运行 ``main.py``，完整代码如下:"
 
 #: ../../howto/logging-cookbook.rst:453
 msgid "And after running it like this:"
-msgstr ""
+msgstr "使用这样的命令运行它之后:"
 
 #: ../../howto/logging-cookbook.rst:459
 msgid "We can see the results are as expected:"
@@ -368,6 +371,9 @@ msgid ""
 "application, to use the above approach for logging, so that any blocking "
 "code runs only in the ``QueueListener`` thread."
 msgstr ""
+"虽然前面的讨论没有专门提及异步代码，但需要注意当在异步代码中记录日志时，网络甚至文件处理句柄都可能会导致问题（阻塞事件循环）因为某些日志记录是在 "
+":mod:`asyncio` 内部完成的。 如果在应用程序中使用了任何异步代码，最好的做法是使用上面的日志记录方式，这样任何阻塞式代码都将只在 "
+"``QueueListener`` 线程中运行。"
 
 #: ../../howto/logging-cookbook.rst:615
 msgid ""
@@ -433,6 +439,9 @@ msgid ""
 "the above functionality using Supervisor. It consists of the following "
 "files:"
 msgstr ""
+"要在生产环境中运行日志记录监听器，你可能需要使用一个进程管理工具如 `Supervisor <http://supervisord.org/>`_。 "
+"`这个 Gist <socket-listener-gist_>`__ 提供了使用 Supervisor 来运行上述功能的基本框架文件。 "
+"它由以下文件组成:"
 
 #: ../../howto/logging-cookbook.rst:777
 msgid "File"
@@ -472,23 +481,23 @@ msgstr "用于确保 Supervisor 在使用上述配置运行的 Bash 脚本"
 
 #: ../../howto/logging-cookbook.rst:789
 msgid ":file:`log_listener.py`"
-msgstr ""
+msgstr ":file:`log_listener.py`"
 
 #: ../../howto/logging-cookbook.rst:789
 msgid ""
 "The socket listener program which receives log events and records them to a "
 "file"
-msgstr ""
+msgstr "接收日志事件并将其记录到文件中的套接字监听器"
 
 #: ../../howto/logging-cookbook.rst:792
 msgid ":file:`main.py`"
-msgstr ""
+msgstr ":file:`main.py`"
 
 #: ../../howto/logging-cookbook.rst:792
 msgid ""
 "A simple web application which performs logging via a socket connected to "
 "the listener"
-msgstr ""
+msgstr "一个通过连接到监听器的套接字来执行日志记录的简单 Web 应用程序"
 
 #: ../../howto/logging-cookbook.rst:795
 msgid ":file:`webapp.json`"

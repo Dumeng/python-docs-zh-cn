@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,16 +8,16 @@
 # Chang Ye <yech1990@gmail.com>, 2020
 # ppcfish <ppcfish@gmail.com>, 2020
 # Naisen Xu <723648649@qq.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-02-24 14:34+0000\n"
 "PO-Revision-Date: 2020-05-30 12:17+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -914,7 +914,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:849
 msgid ":pep:`307` - Extensions to the pickle protocol"
-msgstr ""
+msgstr ":pep:`307` - pickle 协议的扩展"
 
 #: ../../whatsnew/2.3.rst:850
 msgid "Written and implemented  by Guido van Rossum and Tim Peters."
@@ -1007,19 +1007,19 @@ msgstr "其他语言特性修改"
 msgid ""
 "Here are all of the changes that Python 2.3 makes to the core Python "
 "language."
-msgstr ""
+msgstr "以下是 Python 2.3 针对核心 Python 语言的所有改变。"
 
 #: ../../whatsnew/2.3.rst:970
 msgid ""
 "The :keyword:`yield` statement is now always a keyword, as described in "
 "section :ref:`section-generators` of this document."
-msgstr ""
+msgstr ":keyword:`yield` 语句现在将始终是关键字，如本文档的 :ref:`section-generators` 一节所描述的。"
 
 #: ../../whatsnew/2.3.rst:973
 msgid ""
 "A new built-in function :func:`enumerate` was added, as described in section"
 " :ref:`section-enumerate` of this document."
-msgstr ""
+msgstr "新增内置函数 :func:`enumerate`，如本文档的 :ref:`section-enumerate` 一节所描述的。"
 
 #: ../../whatsnew/2.3.rst:976
 msgid ""
@@ -1027,6 +1027,8 @@ msgid ""
 "the built-in :class:`bool` type, as described in section :ref:`section-bool`"
 " of this document."
 msgstr ""
+"新增两个常量 :const:`True` 和 :const:`False` 以及内置的 :class:`bool` 类型，如本文档的 "
+":ref:`section-bool` 一节所描述的。"
 
 #: ../../whatsnew/2.3.rst:980
 msgid ""
@@ -1083,7 +1085,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1029
 msgid "(Patches contributed by Raymond Hettinger.)"
-msgstr ""
+msgstr "（由 Raymond Hettinger 贡献补丁。）"
 
 #: ../../whatsnew/2.3.rst:1031
 msgid ""
@@ -1203,7 +1205,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1125
 msgid "String Changes"
-msgstr ""
+msgstr "字符串的改变"
 
 #: ../../whatsnew/2.3.rst:1127
 msgid ""
@@ -1229,7 +1231,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1157
 msgid "(Suggested by Simon Brunning and implemented by Walter Dörwald.)"
-msgstr ""
+msgstr "（由 Simon Brunning 提议并由 Walter Dörwald 实现。）"
 
 #: ../../whatsnew/2.3.rst:1159
 msgid ""
@@ -2061,7 +2063,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1869
 msgid "https://hg.python.org/cpython/file/default/Objects/obmalloc.c"
-msgstr ""
+msgstr "https://hg.python.org/cpython/file/default/Objects/obmalloc.c"
 
 #: ../../whatsnew/2.3.rst:1868
 msgid ""
@@ -2171,7 +2173,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:1938
 msgid "Port-Specific Changes"
-msgstr ""
+msgstr "移植专属的改变"
 
 #: ../../whatsnew/2.3.rst:1940
 msgid ""

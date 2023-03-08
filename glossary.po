@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-02-24 14:34+0000\n"
 "PO-Revision-Date: 2020-05-30 11:46+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1803,7 +1803,7 @@ msgid ""
 ":class:`str` or :class:`bytes` result instead, respectively. Introduced by "
 ":pep:`519`."
 msgstr ""
-"代表一个文件系统路径的对象。类路径对象可以是一个表示路径的 :class:`str` 或者 :class:`bytes` 对象，还可以是一个实现了 "
+"代表一个文件系统路径的对象。路径类对象可以是一个表示路径的 :class:`str` 或者 :class:`bytes` 对象，还可以是一个实现了 "
 ":class:`os.PathLike` 协议的对象。一个支持 :class:`os.PathLike` 协议的对象可通过调用 "
 ":func:`os.fspath` 函数转换为 :class:`str` 或者 :class:`bytes` "
 "类型的文件系统路径；:func:`os.fsdecode` 和 :func:`os.fsencode` 可被分别用来确保获得 :class:`str` "

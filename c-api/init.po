@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,16 +10,18 @@
 # ppcfish <ppcfish@gmail.com>, 2020
 # Edward Ji <jiziao6@gmail.com>, 2021
 # Jing Li <tes286.lijing@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# 高乐喆 <gaolezhe@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-03-03 14:35+0000\n"
 "PO-Revision-Date: 2020-05-30 11:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,6 +218,8 @@ msgid ""
 ":class:`str` or :class:`bytes` with :class:`int`.  Issue an error if greater"
 " or equal to ``2``."
 msgstr ""
+"当比较 :class:`bytes` 或 :class:`bytearray` 与 :class:`str` 或 :class:`bytes` 与 "
+":class:`int` 时发出警告。 如果大于或等于 ``2``，则发出错误。"
 
 #: ../../c-api/init.rst:90
 msgid "Set by the :option:`-b` option."
@@ -249,24 +253,24 @@ msgstr "由 :option:`-B` 选项和 :envvar:`PYTHONDONTWRITEBYTECODE` 环境变�
 msgid ""
 "Suppress error messages when calculating the module search path in "
 ":c:func:`Py_GetPath`."
-msgstr ""
+msgstr "在 :c:func:`Py_GetPath` 中计算模块搜索路径时隐藏错误信息。"
 
 #: ../../c-api/init.rst:113
 msgid ""
 "Private flag used by ``_freeze_importlib`` and ``frozenmain`` programs."
-msgstr ""
+msgstr "``_freeze_importlib`` 和 ``frozenmain`` 宏使用的私有标志"
 
 #: ../../c-api/init.rst:117
 msgid ""
 "Set to ``1`` if the :envvar:`PYTHONHASHSEED` environment variable is set to "
 "a non-empty string."
-msgstr ""
+msgstr "如果 :envvar:`PYTHONHASHSEED` 环境变量被设置为非空字符串将被设置为 ``1``。"
 
 #: ../../c-api/init.rst:120
 msgid ""
 "If the flag is non-zero, read the :envvar:`PYTHONHASHSEED` environment "
 "variable to initialize the secret hash seed."
-msgstr ""
+msgstr "如果该旗标为非零值，则读取 :envvar:`PYTHONHASHSEED` 环境变量来初始化加密哈希种子。"
 
 #: ../../c-api/init.rst:125
 msgid ""
@@ -286,6 +290,8 @@ msgid ""
 "used, enter interactive mode after executing the script or the command, even"
 " when :data:`sys.stdin` does not appear to be a terminal."
 msgstr ""
+"当将脚本作为第一个参数传入或是使用了 :option:`-c` 选项时，则会在执行该脚本或命令后进入交互模式，即使在 :data:`sys.stdin`"
+" 并非一个终端时也是如此。"
 
 #: ../../c-api/init.rst:136
 msgid ""
@@ -411,7 +417,7 @@ msgstr ""
 
 #: ../../c-api/init.rst:225
 msgid "Initializing and finalizing the interpreter"
-msgstr ""
+msgstr "初始化和最终化解释器"
 
 #: ../../c-api/init.rst:243
 msgid ""
@@ -474,6 +480,7 @@ msgid ""
 " in an application a developer might want to free all memory allocated by "
 "Python before exiting from the application."
 msgstr ""
+"提供此功能的原因有很多。嵌入应用程序可能希望重新启动Python，而不必重新启动应用程序本身。从动态可加载库（或DLL）加载Python解释器的应用程序可能希望在卸载DLL之前释放Python分配的所有内存。在搜索应用程序内存泄漏的过程中，开发人员可能希望在退出应用程序之前释放Python分配的所有内存。"
 
 #: ../../c-api/init.rst:293
 msgid ""
@@ -742,7 +749,7 @@ msgstr ""
 msgid ""
 "Return information about the sequence number and build date and time  of the"
 " current Python interpreter instance, for example ::"
-msgstr ""
+msgstr "返回有关当前Python解释器实例的序列号和构建日期和时间的信息，例如："
 
 #: ../../c-api/init.rst:566
 msgid ""
@@ -866,7 +873,7 @@ msgstr ""
 msgid ""
 "Most extension code manipulating the :term:`GIL` has the following simple "
 "structure::"
-msgstr ""
+msgstr "大多数操作 :term:`GIL` 的扩展代码具有以下简单结构："
 
 #: ../../c-api/init.rst:689
 msgid "This is so common that a pair of macros exists to simplify it::"
@@ -1251,7 +1258,7 @@ msgid ""
 "Create a new thread state object belonging to the given interpreter object. "
 "The global interpreter lock need not be held, but may be held if it is "
 "necessary to serialize calls to this function."
-msgstr ""
+msgstr "创建属于给定解释器对象的新线程状态对象。全局解释器锁不需要保持，但如果需要序列化对此函数的调用，则可以保持。"
 
 #: ../../c-api/init.rst:1048
 msgid ""
@@ -1351,7 +1358,7 @@ msgstr ""
 msgid ""
 "Acquire the global interpreter lock.  The lock must have been created "
 "earlier. If this thread already has the lock, a deadlock ensues."
-msgstr ""
+msgstr "获取全局解释器锁。锁必须是先前创建的。如果该线程已经拥有锁，则会出现死锁。"
 
 #: ../../c-api/init.rst:1141
 msgid ""
@@ -1764,7 +1771,7 @@ msgstr ""
 
 #: ../../c-api/init.rst:1487
 msgid "Return the main interpreter state object."
-msgstr ""
+msgstr "返回主解释器状态对象。"
 
 #: ../../c-api/init.rst:1492
 msgid ""

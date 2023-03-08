@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,16 +9,16 @@
 # dannyvi <dannyvis@icloud.com>, 2020
 # stone jing <stonejing1817@gmail.com>, 2020
 # ppcfish <ppcfish@gmail.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-03-03 14:35+0000\n"
 "PO-Revision-Date: 2020-05-30 12:06+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1141,7 +1141,7 @@ msgstr "``\"store_true\"``"
 
 #: ../../library/optparse.rst:931
 msgid "store ``True``"
-msgstr ""
+msgstr "存储 ``True``"
 
 #: ../../library/optparse.rst:934
 msgid "``\"store_false\"``"
@@ -1149,7 +1149,7 @@ msgstr "``\"store_false\"``"
 
 #: ../../library/optparse.rst:934
 msgid "store ``False``"
-msgstr ""
+msgstr "存储 ``False``"
 
 #: ../../library/optparse.rst:940
 msgid "``\"append_const\"``"
@@ -1187,26 +1187,26 @@ msgstr ""
 
 #: ../../library/optparse.rst:961
 msgid "For example, when you call ::"
-msgstr ""
+msgstr "例如，当你调用 ::"
 
 #: ../../library/optparse.rst:965
 msgid ""
 "one of the first things :mod:`optparse` does is create the ``options`` "
 "object::"
-msgstr ""
+msgstr ":mod:`optparse` 首先会做的一件事情是创建 ``options`` 对象::"
 
 #: ../../library/optparse.rst:969
 msgid "If one of the options in this parser is defined with ::"
-msgstr ""
+msgstr "如果该解析器中的某个选项定义带有 ::"
 
 #: ../../library/optparse.rst:973
 msgid "and the command-line being parsed includes any of the following::"
-msgstr ""
+msgstr "并且被解析的命令行包括以下任意一项::"
 
 #: ../../library/optparse.rst:980
 msgid ""
 "then :mod:`optparse`, on seeing this option, will do the equivalent of ::"
-msgstr ""
+msgstr "那么 :mod:`optparse` 在看到此选项时，将执行这样的操作 ::"
 
 #: ../../library/optparse.rst:984
 msgid ""
@@ -1214,10 +1214,12 @@ msgid ""
 "almost as important as :attr:`~Option.action`, but :attr:`~Option.action` is"
 " the only one that makes sense for *all* options."
 msgstr ""
+":attr:`~Option.type` 和 :attr:`~Option.dest` 选项属性几乎与 :attr:`~Option.action` "
+"一样重要，但 :attr:`~Option.action` 是唯一对 *所有* 选项都有意义的。"
 
 #: ../../library/optparse.rst:992
 msgid "Option attributes"
-msgstr ""
+msgstr "选项属性"
 
 #: ../../library/optparse.rst:994
 msgid ""
@@ -1226,6 +1228,8 @@ msgid ""
 "not relevant to a particular option, or fail to pass a required option "
 "attribute, :mod:`optparse` raises :exc:`OptionError`."
 msgstr ""
+"下列选项属性可以作为关键字参数传给 :meth:`OptionParser.add_option`。 "
+"如果你传入一个与特定选项无关的选项属性，或是未能传入必要的选项属性，:mod:`optparse` 将会引发 :exc:`OptionError`。"
 
 #: ../../library/optparse.rst:1001
 msgid "(default: ``\"store\"``)"
@@ -2422,7 +2426,7 @@ msgstr ""
 
 #: ../../library/optparse.rst:2009
 msgid "Features of note:"
-msgstr ""
+msgstr "应注意的特性:"
 
 #: ../../library/optparse.rst:2011
 msgid ""

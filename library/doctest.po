@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,15 +12,16 @@
 # CCXXXI <ccxxxi@qq.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2021
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-03-03 14:35+0000\n"
 "PO-Revision-Date: 2020-05-30 12:00+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2021\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1842,8 +1843,12 @@ msgid ""
 "customized by passing a subclass of :class:`OutputChecker` to the "
 "constructor."
 msgstr ""
-"é¢æè¾åºåå®é"
-"è¾åºä¹é´çæ¯è¾æ¯ç±ä¸ä¸ª :class:`OutputChecker` å®æçã è¿ç§æ¯è¾å¯ä»¥ç¨ä¸äºéé¡¹æ å¿æ¥å®å¶ï¼æ´å¤ä¿¡æ¯è¯·ç :ref:`doctest-options` é¨åã å¦æéé¡¹æ å¿ä¸å¤ï¼é£ä¹ä¹å¯ä»¥éè¿åæé å½æ°ä¼ é :class:`OutputChecker` çå­ç±»æ¥å®å¶æ¯è¾ã"
+"é¢æè¾åºåå®éè¾åºä¹é´çæ¯è¾æ¯ç±ä¸ä¸ª :class:`OutputChecker` "
+"å®æçã "
+"è¿ç§æ¯è¾å¯ä»¥ç¨ä¸äºéé¡¹æ å¿æ¥å®å¶ï¼æ´å¤ä¿¡æ¯è¯·ç "
+":ref:`doctest-options` é¨åã "
+"å¦æéé¡¹æ å¿ä¸å¤ï¼é£ä¹ä¹å¯ä»¥éè¿åæé å½æ°ä¼ é "
+":class:`OutputChecker` çå­ç±»æ¥å®å¶æ¯è¾ã"
 
 #: ../../library/doctest.rst:1423
 msgid ""
@@ -1855,8 +1860,14 @@ msgid ""
 "overriding the methods :meth:`report_start`, :meth:`report_success`, "
 ":meth:`report_unexpected_exception`, and :meth:`report_failure`."
 msgstr ""
-"æµè¯è¿è¡å¨çæ¾ç¤ºè¾åºå¯ä»¥éè¿ä¸¤ç§æ¹å¼æ§å¶ãé¦å"
-"ï¼ä¸ä¸ªè¾åºå½æ°å¯ä»¥è¢«ä¼ éç» :meth:`TestRunner.run` ï¼è¿ä¸ªå½æ°å°è¢«è°ç¨ï¼å¹¶æ¾ç¤ºåºåºè¯¥æ¾ç¤ºçå­ç¬¦ä¸²ã å®çé»è®¤å¼æ¯ ``sys.stdout.write`` ã å¦æåªæè·è¾åºæ¯ä¸å¤çï¼é£ä¹ä¹å¯ä»¥éè¿å­ç±»å DocTestRunner ï¼å¹¶éå :meth:`report_start` , :meth:`report_success` ,  :meth:`report_unexpected_exception` , å :meth:`report_failure` æ¹æ³æ¥å®å¶æ¾ç¤ºè¾åºã"
+"æµè¯è¿è¡å¨çæ¾ç¤ºè¾åºå¯ä»¥éè¿ä¸¤ç§æ¹å¼æ§å¶ãé¦ï¼ä¸ä¸ªè¾åºå½æ°å¯ä»¥è¢«ä¼ éç»"
+" :meth:`TestRunner.run` "
+"ï¼è¿ä¸ªå½æ°å°è¢«è°ç¨ï¼å¹¶æ¾ç¤ºåºåºè¯¥æ¾ç¤ºçå­ç¬¦ä¸²ã "
+"å®çé»è®¤å¼æ¯ ``sys.stdout.write`` ã "
+"å¦æåªæè·è¾åºæ¯ä¸å¤çï¼é£ä¹ä¹å¯ä»¥éè¿å­ç±»å "
+"DocTestRunner ï¼å¹¶éå :meth:`report_start` , :meth:`report_success` ,  "
+":meth:`report_unexpected_exception` , å :meth:`report_failure` "
+"æ¹æ³æ¥å®å¶æ¾ç¤ºè¾åºã"
 
 #: ../../library/doctest.rst:1431
 msgid ""
@@ -1864,9 +1875,9 @@ msgid ""
 " object (or drop-in replacement) that should be used to compare the expected"
 " outputs to the actual outputs of doctest examples."
 msgstr ""
-"å¯éçå"
-"³é®å­åæ° *checker* æå®äº :class:`OutputChecker` å¯¹è±¡ï¼ææ¿æ¢ï¼ï¼å®åºè¯¥è¢«ç¨æ¥æ¯è¾é¢æè¾åºå doctest ç¨ä¾çå®é"
-"è¾åºã"
+"å¯éç³é®å­åæ° *checker* æå®äº :class:`OutputChecker` "
+"å¯¹è±¡ï¼ææ¿æ¢ï¼ï¼å®åºè¯¥è¢«ç¨æ¥æ¯è¾é¢æè¾åºå doctest "
+"ç¨ä¾çå®éè¾åºã"
 
 #: ../../library/doctest.rst:1435
 msgid ""
@@ -1887,9 +1898,9 @@ msgid ""
 "test runner compares expected output to actual output, and how it displays "
 "failures. For more information, see section :ref:`doctest-options`."
 msgstr ""
-"å¯éçå"
-"³é®å­åæ° *optionflags* å¯ä»¥ç¨æ¥æ§å¶æµè¯è¿è¡å¨å¦ä½æ¯è¾é¢æè¾åºåå®é"
-"è¾åºï¼ä»¥åå¦ä½æ¾ç¤ºå¤±è´¥ãæ´å¤ä¿¡æ¯ï¼è¯·åè§ç« è :ref:`doctest-options` ã"
+"å¯éç³é®å­åæ° *optionflags* "
+"å¯ä»¥ç¨æ¥æ§å¶æµè¯è¿è¡å¨å¦ä½æ¯è¾é¢æè¾åºåå®éè¾åºï¼ä»¥åå¦ä½æ¾ç¤ºå¤±è´¥ãæ´å¤ä¿¡æ¯ï¼è¯·åè§ç« è"
+" :ref:`doctest-options` ã"
 
 #: ../../library/doctest.rst:1451
 msgid ""

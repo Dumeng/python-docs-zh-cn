@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,15 +11,16 @@
 # Harry Liu. <harry.python@gmail.com>, 2020
 # Jiuh-star <jiuh.star@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# Jing Li <tes286.lijing@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-02-24 14:34+0000\n"
 "PO-Revision-Date: 2020-05-30 11:53+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Jing Li <tes286.lijing@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -368,23 +369,23 @@ msgstr "没有可写的"
 
 #: ../../extending/newtypes.rst:290
 msgid ":const:`READ_RESTRICTED`"
-msgstr ""
+msgstr ":const:`READ_RESTRICTED`"
 
 #: ../../extending/newtypes.rst:290
 msgid "Not readable in restricted mode."
-msgstr ""
+msgstr "限制模式下不可读"
 
 #: ../../extending/newtypes.rst:292
 msgid ":const:`WRITE_RESTRICTED`"
-msgstr ""
+msgstr ":const:`WRITE_RESTRICTED`"
 
 #: ../../extending/newtypes.rst:292
 msgid "Not writable in restricted mode."
-msgstr ""
+msgstr "限制模式不可写"
 
 #: ../../extending/newtypes.rst:294
 msgid ":const:`RESTRICTED`"
-msgstr ""
+msgstr ":const:`RESTRICTED`"
 
 #: ../../extending/newtypes.rst:294
 msgid "Not readable or writable in restricted mode."
@@ -481,6 +482,10 @@ msgid ""
 "comparison is not implemented and the other object's comparison method "
 "should be tried, or ``NULL`` if an exception was set."
 msgstr ""
+"这个函数将被用两个Python对象和一个运算符作为参数调用, 运算符可以是 ``Py_EQ`` , ``Py_NE`` , ``Py_LE`` , "
+"``Py_GT`` , ``Py_LT`` 或 ``Py_GT`` 中的一个. 它将依照运算符比较两个对象并且返回 ``Py_True`` 或 "
+"``Py_False`` 如果比较成功, ``Py_NotImplemented`` 表明两个对象不支持尝试的方法, ``NULL`` "
+"表明造成了一个异常"
 
 #: ../../extending/newtypes.rst:386
 msgid ""

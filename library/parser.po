@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2021, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
 # Leo Li <foxleoly@hotmail.com>, 2020
 # Freesand Leo <yuqinju@163.com>, 2020
+# Jing Li <tes286.lijing@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-01 16:06+0000\n"
+"POT-Creation-Date: 2023-02-24 14:34+0000\n"
 "PO-Revision-Date: 2020-05-30 12:07+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2020\n"
+"Last-Translator: Jing Li <tes286.lijing@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -151,7 +152,7 @@ msgid ""
 "ST objects may be created from source code or from a parse tree. When "
 "creating an ST object from source, different functions are used to create "
 "the ``'eval'`` and ``'exec'`` forms."
-msgstr ""
+msgstr "ST对象可以由源代码或解析树创建。当ST对象由源代码创建时, 不同的函数将被创建``'eval'``和``'exec'``"
 
 #: ../../library/parser.rst:117
 msgid ""

@@ -1322,13 +1322,13 @@ msgstr "利用 rotator 和 namer 自定义日志轮换操作"
 msgid ""
 "An example of how you can define a namer and rotator is given in the "
 "following runnable script, which shows gzip compression of the log file::"
-msgstr ""
+msgstr "下面的可运行代码给出了你可以怎样定义命名器和轮换器的例子，其中演示了日志文件的 gzip 压缩过程::"
 
 #: ../../howto/logging-cookbook.rst:2015
 msgid ""
 "After running this, you will see six new files, five of which are "
 "compressed:"
-msgstr ""
+msgstr "运行此脚本后，你将看到六个新文件，其中五个是已压缩的:"
 
 #: ../../howto/logging-cookbook.rst:2028
 msgid "A more elaborate multiprocessing example"

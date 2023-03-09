@@ -523,6 +523,9 @@ msgid ""
 "same log file without conflicting with one another --- they all go through "
 "the socket listener."
 msgstr ""
+"该 Web 应用程序使用了 `Gunicorn <https://gunicorn.org/>`_，这个流行的 Web "
+"应用服务器可启动多个工作进程来处理请求。 这个示例设置演示了多个工作进程是如何写入相同的日志文件而不会相互冲突的 --- "
+"它们都通过套接字监听器进程操作。"
 
 #: ../../howto/logging-cookbook.rst:805
 msgid "To test these files, do the following in a POSIX environment:"

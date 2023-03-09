@@ -573,18 +573,22 @@ msgid ""
 "won't be in any particular order, since they have been handled concurrently "
 "by different worker processes in a non-deterministic way."
 msgstr ""
+"检查 :file:`run` 子目录中的日志文件。 你应当看到匹配模式为 :file:`app.log*` 的文件中最新的日志记录行。 "
+"它们不会有任何特定的顺序，因为它们是由不同的工作进程以不确定的方式并发地处理的。"
 
 #: ../../howto/logging-cookbook.rst:828
 msgid ""
 "You can shut down the listener and the web application by running "
 "``venv/bin/supervisorctl -c supervisor.conf shutdown``."
 msgstr ""
+"你可以通过运行 ``venv/bin/supervisorctl -c supervisor.conf shutdown`` 来关闭监听器和 Web "
+"应用程序。"
 
 #: ../../howto/logging-cookbook.rst:831
 msgid ""
 "You may need to tweak the configuration files in the unlikely event that the"
 " configured ports clash with something else in your test environment."
-msgstr ""
+msgstr "你可能需要在配置的端口与你的测试环境中其他程序发生意外冲突的情况下调整配置文件。"
 
 #: ../../howto/logging-cookbook.rst:837
 msgid "Adding contextual information to your logging output"
@@ -738,7 +742,7 @@ msgstr "在运行时，产生如下内容:"
 
 #: ../../howto/logging-cookbook.rst:996
 msgid "Use of ``contextvars``"
-msgstr ""
+msgstr "``contextvars`` 的使用"
 
 #: ../../howto/logging-cookbook.rst:998
 msgid ""

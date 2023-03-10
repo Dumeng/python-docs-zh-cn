@@ -753,6 +753,9 @@ msgid ""
 "logs can populated with contextual information such as, for example, request"
 " attributes handled by web applications."
 msgstr ""
+"自 Python 3.7 起，:mod:`contextvars` 模块提供了同时适用于 :mod:`threading` 和 "
+":mod:`asyncio` 处理需求的上下文本地存储。 因此这种存储类型通常要比线程本地存储更好。 "
+"下面的例子演示了在多线程环境中日志如何用上下文信息来填充内容，例如 Web 应用程序所处理的请求属性。"
 
 #: ../../howto/logging-cookbook.rst:1004
 msgid ""
@@ -764,10 +767,13 @@ msgid ""
 "application's log file, while including in the log additional contextual "
 "information such as client IP, HTTP request method and client username?"
 msgstr ""
+"出于说明的目的，比方说你有几个不同的 Web 应用程序，彼此都保持独立状态但运行在同一个 Python 进程中并且它们共同使用了某个库。 "
+"这些应用程序要如何拥有各自的日志记录，其中来自这个库的日志消息（以及其他请求处理代码）会发到对应的应用程序的日志文件，同时在日志中包括额外的上下文信息如客户端"
+" IP、HTTP 请求方法和客户端用户名呢？"
 
 #: ../../howto/logging-cookbook.rst:1011
 msgid "Let's assume that the library can be simulated by the following code:"
-msgstr ""
+msgstr "让我们假定这个库可以通过以下代码来模拟:"
 
 #: ../../howto/logging-cookbook.rst:1027
 msgid ""

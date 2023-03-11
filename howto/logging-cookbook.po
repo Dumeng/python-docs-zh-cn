@@ -2241,16 +2241,19 @@ msgid ""
 "logger. You can do this using a class which wraps a logger with a file-like "
 "API. Here's a short script illustrating such a class:"
 msgstr ""
+"有时，你需要通过接口访问某个预期要写入到文件类对象第三方 API，但你希望将 API 的输出重定向到一个日志记录器。 你可以使用一个以文件类 API "
+"来包装日志记录器的类。 下面是一个演示这样的类的简短脚本:"
 
 #: ../../howto/logging-cookbook.rst:3760
 msgid "When this script is run, it prints"
-msgstr ""
+msgstr "当此脚本运行时，它将打印"
 
 #: ../../howto/logging-cookbook.rst:3767
 msgid ""
 "You could also use ``LoggerWriter`` to redirect ``sys.stdout`` and "
 "``sys.stderr`` by doing something like this:"
 msgstr ""
+"你还可以使用 ``LoggerWriter`` 通过下面这样的做法来重定向 ``sys.stdout`` 和 ``sys.stderr``:"
 
 #: ../../howto/logging-cookbook.rst:3777
 msgid ""
@@ -2259,6 +2262,8 @@ msgid ""
 "``sys.stderr`` value *before* it is overwritten by a ``LoggerWriter`` "
 "instance). Then, you'd get this kind of result:"
 msgstr ""
+"你应当在根据需要配置日志记录 *之后* 再这样做。 在上面的例子中，:func:`~logging.basicConfig` 调用执行了此操作（在 "
+"``sys.stderr`` 被一个 ``LoggerWriter`` 实例覆盖 *之前* 使用它的值）。 然后，你将得到这样的结果:"
 
 #: ../../howto/logging-cookbook.rst:3790
 msgid ""
@@ -2266,6 +2271,7 @@ msgid ""
 ":func:`~logging.basicConfig`, but you can use a different formatter when you"
 " configure logging."
 msgstr ""
+"当然，上面的例子是按照 :func:`~logging.basicConfig` 所使用的格式来显示输出的，但你也可以在配置日志记录时使用其他的格式。"
 
 #: ../../howto/logging-cookbook.rst:3794
 msgid ""
@@ -2273,10 +2279,12 @@ msgid ""
 "and the sequence of write calls which you are intercepting. For example, "
 "with the definition of ``LoggerWriter`` above, if you have the snippet"
 msgstr ""
+"请注意当使用上面的预置方案时，你将在一定程度上受到你所拦截的写入调用的缓冲和顺序的控制。 例如，在使用上述 ``LoggerWriter`` "
+"的定义的情况下，如果你使用代码段"
 
 #: ../../howto/logging-cookbook.rst:3803
 msgid "then running the script results in"
-msgstr ""
+msgstr "则运行该脚本的结果为"
 
 #: ../../howto/logging-cookbook.rst:3821
 msgid ""

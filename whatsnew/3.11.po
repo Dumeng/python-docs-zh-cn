@@ -1779,6 +1779,8 @@ msgid ""
 "Python caches :term:`bytecode` in the :ref:`__pycache__ <tut-pycache>` "
 "directory to speed up module loading."
 msgstr ""
+"Python 会将 :term:`bytecode` 缓存到 :ref:`__pycache__ <tut-pycache>` "
+"目录以加快模型加载的速度。"
 
 #: ../../whatsnew/3.11.rst:1348
 msgid "Previously in 3.10, Python module execution looked like this:"
@@ -1810,22 +1812,22 @@ msgstr "更快的运行时"
 
 #: ../../whatsnew/3.11.rst:1377
 msgid "Cheaper, lazy Python frames"
-msgstr ""
+msgstr "开销更低、更为惰性的 Python 帧"
 
 #: ../../whatsnew/3.11.rst:1379
 msgid ""
 "Python frames, holding execution information, are created whenever Python "
 "calls a Python function. The following are new frame optimizations:"
-msgstr ""
+msgstr "存放执行信息的 Python 帧会在 Python 调用一个 Python 函数时被自动创建。 下面是新帧的优化操作:"
 
 #: ../../whatsnew/3.11.rst:1383
 msgid "Streamlined the frame creation process."
-msgstr ""
+msgstr "优化改进了帧创建进程。"
 
 #: ../../whatsnew/3.11.rst:1384
 msgid ""
 "Avoided memory allocation by generously re-using frame space on the C stack."
-msgstr ""
+msgstr "通过大量重用 C 栈上的帧空间来避免内存分配。"
 
 #: ../../whatsnew/3.11.rst:1385
 msgid ""
@@ -1881,7 +1883,7 @@ msgstr "（由 Pablo Galindo 和 Mark Shannon 在 :issue:`45256` 中贡献。）
 
 #: ../../whatsnew/3.11.rst:1425
 msgid "PEP 659: Specializing Adaptive Interpreter"
-msgstr ""
+msgstr "PEP 659：专门化自适应解释器"
 
 #: ../../whatsnew/3.11.rst:1427
 msgid ""
@@ -1951,7 +1953,7 @@ msgstr "双目运算"
 
 #: ../../whatsnew/3.11.rst:1460
 msgid "``x + x``"
-msgstr ""
+msgstr "``x + x``"
 
 #: ../../whatsnew/3.11.rst:1462
 msgid "``x - x``"

@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"POT-Creation-Date: 2023-03-10 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -781,6 +781,8 @@ msgid ""
 "classes, ``Request`` and ``WebApp``. These simulate how real threaded web "
 "applications work - each request is handled by a thread:"
 msgstr ""
+"我们可以通过两个简单的类 ``Request`` 和 ``WebApp`` 来模拟多个 Web 应用程序。 它们模拟了真正的多线程 Web "
+"应用程序是如何工作的 —— 每个请求均由单独的线程来处理:"
 
 #: ../../howto/logging-cookbook.rst:1171
 msgid ""
@@ -792,10 +794,13 @@ msgid ""
 "dummy request will always appear together in a log line). This is "
 "illustrated by the following shell output:"
 msgstr ""
+"如果你运行上面的代码，你将会发现约有半数请求是发给 :file:`app1.log` 而其余的则是发给 "
+":file:`app2.log`，并且所有请求都会被记录至 :file:`app.log`。 每个 Web 应用专属的日志将只包含该 Web "
+"应用的日志条目，请求信息也将以一致的方式显示在日志里（即每个模拟请求中的信息将总是在一个日志行中一起显示）。 如下面的 shell 输出所示:"
 
 #: ../../howto/logging-cookbook.rst:1218
 msgid "Imparting contextual information in handlers"
-msgstr ""
+msgstr "在处理句柄中传递上下文信息"
 
 #: ../../howto/logging-cookbook.rst:1220
 msgid ""
@@ -804,6 +809,8 @@ msgid ""
 "handlers, you can use a filter that returns a new :class:`~LogRecord` "
 "instead of modifying it in-place, as shown in the following script::"
 msgstr ""
+"每个 :class:`~Handler` 都有自己的过滤器链。 如果你想向一个 :class:`LogRecord` "
+"添加上下文信息而不使其泄露给其它处理句柄，你可以使用一个返回新 :class:`~LogRecord` 而不是原地修改它的过滤器，如下面的脚本所示::"
 
 #: ../../howto/logging-cookbook.rst:1247
 msgid "Logging to a single file from multiple processes"
@@ -1604,6 +1611,11 @@ msgid ""
 " logging calls which are out there in existing code will be using %-format "
 "strings."
 msgstr ""
+"日志调用 (:meth:`~Logger.debug`, :meth:`~Logger.info` 等) "
+"只接受包含实际日志消息自身的位置参数，而关键字参数仅用于确定如何处理日志调用的选项 (例如 ``exc_info`` "
+"关键字参数表示应将回溯信息记入日志，而 ``extra`` 关键字参数则指定要添加到日志的额外上下文信息)。 所以你不能直接使用 "
+":meth:`str.format` 或 :class:`string.Template` 语法来直接执行日志调用，因为 logging 包在内部是使用"
+" % 格式符来合并格式字符串和可变参数的。 这一点不应被改变以保持向下兼容性，因为现有代码中所有的日志调用都将使用 % 格式化字符串。"
 
 #: ../../howto/logging-cookbook.rst:2545
 msgid ""
@@ -1916,7 +1928,7 @@ msgstr "你当然可以使用传统的装饰方法::"
 
 #: ../../howto/logging-cookbook.rst:2978
 msgid "Sending logging messages to email, with buffering"
-msgstr ""
+msgstr "将日志消息发送至电子邮件，附带缓存支持"
 
 #: ../../howto/logging-cookbook.rst:2980
 msgid ""
@@ -1929,6 +1941,10 @@ msgid ""
 "downloaded script with the ``-h`` argument to see the required and optional "
 "arguments.)"
 msgstr ""
+"为演示如何通过电子邮件发送日志消息，让每封电子邮件发送指定数量的日志消息，你可以子类化 "
+":class:`~logging.handlers.BufferingHandler`。 "
+"对于下面的例子，你可以继续调整以适合你自己的特定需求，它提供了简单的测试代码来允许你附带命令行参数运行该脚本来指定你需要通过 SMTP 发送的内容。 "
+"（请附带 ``-h`` 参数运行已下载的脚本来查看必须的和可选的参数。）"
 
 #: ../../howto/logging-cookbook.rst:3052
 msgid ""
@@ -1937,6 +1953,8 @@ msgid ""
 " emails will each have ten log messages, and the eleventh will have two "
 "messages. That makes up 102 messages as specified in the script."
 msgstr ""
+"如果你运行此脚本并且你的 SMTP 服务器已正确设置，你将发现它会向你指定的地址发出十一封电子邮件。 "
+"前十封邮件每封各有十条日志消息，第十一封将有两条消息。 如脚本所指定的总计为 102 条消息。"
 
 #: ../../howto/logging-cookbook.rst:3060
 msgid "Formatting times using UTC (GMT) via configuration"
@@ -1946,7 +1964,7 @@ msgstr "通过配置使用UTC (GMT) 格式化时间"
 msgid ""
 "Sometimes you want to format times using UTC, which can be done using a "
 "class such as ``UTCFormatter``, shown below::"
-msgstr ""
+msgstr "有时你会想要使用 UTC 时间格式，这可以用 ``UTCFormatter`` 这样的类来实现，如下所示::"
 
 #: ../../howto/logging-cookbook.rst:3071
 msgid ""
@@ -2214,7 +2232,7 @@ msgstr ""
 
 #: ../../howto/logging-cookbook.rst:3718
 msgid "How to treat a logger like an output stream"
-msgstr ""
+msgstr "如何将日志记录器作为输出流"
 
 #: ../../howto/logging-cookbook.rst:3720
 msgid ""

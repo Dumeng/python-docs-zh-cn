@@ -725,6 +725,8 @@ msgid ""
 "Group *name* containing characters outside the ASCII range "
 "(``b'\\x00'``-``b'\\x7f'``) in :class:`bytes` patterns."
 msgstr ""
+"分组的 *name* 包含 ASCII 范围 (``b'\\x00'``-``b'\\x7f'``) 以外的字符且为 :class:`bytes` "
+"模式。"
 
 #: ../../library/re.rst:429
 msgid "``(?P=name)``"
@@ -841,6 +843,8 @@ msgid ""
 "characters outside the ASCII range (``b'\\x00'``-``b'\\x7f'``) in "
 ":class:`bytes` replacement strings."
 msgstr ""
+"分组的 *id* 包含 ASCII 数码以外的任意字符。 分组的 *name* 包含 ASCII 范围 "
+"(``b'\\x00'``-``b'\\x7f'``) 以外的字符且为 :class:`bytes` 替换字符串。"
 
 #: ../../library/re.rst:503
 msgid ""

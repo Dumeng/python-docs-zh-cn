@@ -6,9 +6,9 @@
 # Translators:
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # nick <2330458484@qq.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-10 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:18+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -319,6 +319,9 @@ msgid ""
 " such errors, but production code should do so.  Also, this method will only"
 " work if the archive fits in memory::"
 msgstr ""
+"若要原地更新打包文件，可用 :class:`~io.BytesIO` 对象在内存中进行替换，然后再覆盖源文件。 "
+"请注意原地覆盖文件存在发生错误时丢失原始文件的风险。 这段代码没有考虑发生错误的情况，但生产性代码应该要考虑。 "
+"另外，此方法将仅在内存能容纳打包文件时才适用::"
 
 #: ../../library/zipapp.rst:236
 msgid "Specifying the Interpreter"

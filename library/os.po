@@ -1373,6 +1373,8 @@ msgid ""
 "Make the calling process a session leader; make the tty the controlling tty,"
 " the stdin, the stdout, and the stderr of the calling process; close fd."
 msgstr ""
+"准备 tty 设置 fd 为新登录会话的文件描述符。 设置调用方进程为会话主进程；设置该 tty 为主控 tty，调用方进程使用其 stdin, "
+"stdout 和 stderr；关闭 fd。"
 
 #: ../../library/os.rst:1058
 msgid ""
@@ -1655,6 +1657,8 @@ msgid ""
 ":ref:`Availability <availability>`: Linux >= 2.6.30, FreeBSD >= 6.0, OpenBSD"
 " >= 2.7, AIX >= 7.1."
 msgstr ""
+":ref:`可用性 <availability>`: Linux >= 2.6.30, FreeBSD >= 6.0, OpenBSD >= 2.7, "
+"AIX >= 7.1。"
 
 #: ../../library/os.rst:1302 ../../library/os.rst:1372
 msgid "Using flags requires Linux >= 4.6."
@@ -1677,7 +1681,7 @@ msgstr ""
 
 #: ../../library/os.rst:1317
 msgid ":ref:`Availability <availability>`: Linux >= 4.14."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 4.14。"
 
 #: ../../library/os.rst:1324
 msgid ""
@@ -1693,7 +1697,7 @@ msgstr "目前在 Linux 上，此功能仅在使用 :data:`O_DIRECT` 标志打�
 
 #: ../../library/os.rst:1331
 msgid ":ref:`Availability <availability>`: Linux >= 4.6."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 4.6。"
 
 #: ../../library/os.rst:1338
 msgid ""
@@ -1768,7 +1772,7 @@ msgstr ""
 
 #: ../../library/os.rst:1406
 msgid ":ref:`Availability <availability>`: Linux >= 4.16."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 4.16。"
 
 #: ../../library/os.rst:1413
 msgid "Read at most *n* bytes from file descriptor *fd*."
@@ -1869,7 +1873,7 @@ msgid ""
 "Parameter to the :func:`sendfile` function, if the implementation supports "
 "it. The data won't be cached in the virtual memory and will be freed "
 "afterwards."
-msgstr ""
+msgstr "传给 :func:`sendfile` 函数的形参，如果具体实现支持的话。 数据不会缓存在虚拟内存中并将随即被释放。"
 
 #: ../../library/os.rst:1509
 msgid ""
@@ -1901,7 +1905,7 @@ msgstr ""
 
 #: ../../library/os.rst:1529
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.17 with glibc >= 2.5"
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 2.6.17 且 glibc >= 2.5"
 
 #: ../../library/os.rst:1542
 msgid ""
@@ -2049,6 +2053,7 @@ msgid ""
 "On WebAssembly platforms ``wasm32-emscripten`` and ``wasm32-wasi``, the file"
 " descriptor cannot be modified."
 msgstr ""
+"在 WebAssembly 平台 ``wasm32-emscripten`` 和 ``wasm32-wasi`` 上，文件描述符无法被修改。"
 
 #: ../../library/os.rst:1684
 msgid "Get the \"inheritable\" flag of the specified file descriptor (a boolean)."
@@ -2703,12 +2708,16 @@ msgid ""
 "directories you can set the umask before invoking :func:`makedirs`.  The "
 "file permission bits of existing parent directories are not changed."
 msgstr ""
+"*mode* 形参会被传递给 :func:`mkdir` 用来创建最后一级目录；请参阅 :ref:`mkdir() 的说明 "
+"<mkdir_modebits>` 了解其解读方式。 要设置任何新建父目录的权限你可以在发起调用 :func:`makedirs` 之前设置掩码。 "
+"现有父目录的文件权限不会被更改。"
 
 #: ../../library/os.rst:2168
 msgid ""
 "If *exist_ok* is ``False`` (the default), a :exc:`FileExistsError` is raised"
 " if the target directory already exists."
 msgstr ""
+"如果 *exist_ok* 为 ``False`` (默认值)，则如果目标目录已存在将会引发 :exc:`FileExistsError`。"
 
 #: ../../library/os.rst:2173
 msgid ""
@@ -4250,7 +4259,7 @@ msgstr ""
 
 #: ../../library/os.rst:3383
 msgid ":ref:`Availability <availability>`: Linux >= 3.17 with glibc >= 2.27."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 3.17 且 glibc >= 2.27。"
 
 #: ../../library/os.rst:3406
 msgid "These flags can be passed to :func:`memfd_create`."
@@ -4258,11 +4267,11 @@ msgstr "以上标志位可以传递给 :func:`memfd_create`。"
 
 #: ../../library/os.rst:3408
 msgid ":ref:`Availability <availability>`: Linux >= 3.17 with glibc >= 2.27"
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 3.17 且 glibc >= 2.27"
 
 #: ../../library/os.rst:3410
 msgid "The ``MFD_HUGE*`` flags are only available since Linux 4.14."
-msgstr ""
+msgstr "``MFD_HUGE*`` 旗标仅从 Linux 4.14 开始可用。"
 
 #: ../../library/os.rst:3417
 msgid ""
@@ -4328,7 +4337,7 @@ msgstr ""
 
 #: ../../library/os.rst:3462
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.27 with glibc >= 2.8"
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 2.6.27 且 glibc >= 2.8"
 
 #: ../../library/os.rst:3468
 msgid ""
@@ -4341,7 +4350,7 @@ msgstr ""
 #: ../../library/os.rst:3471 ../../library/os.rst:3480
 #: ../../library/os.rst:3488 ../../library/os.rst:3497
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.27"
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 2.6.27"
 
 #: ../../library/os.rst:3477
 msgid ""
@@ -6127,7 +6136,7 @@ msgstr ""
 
 #: ../../library/os.rst:4912
 msgid "Add ``'SC_MINSIGSTKSZ'`` name."
-msgstr ""
+msgstr "添加 ``'SC_MINSIGSTKSZ'`` 名称。"
 
 #: ../../library/os.rst:4915
 msgid ""
@@ -6272,10 +6281,12 @@ msgid ""
 "See also the `Linux getrandom() manual page <https://man7.org/linux/man-"
 "pages/man2/getrandom.2.html>`_."
 msgstr ""
+"另请参阅 `Linux getrandom() 手册页 <https://man7.org/linux/man-"
+"pages/man2/getrandom.2.html>`_。"
 
 #: ../../library/os.rst:5033
 msgid ":ref:`Availability <availability>`: Linux >= 3.17."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 3.17。"
 
 #: ../../library/os.rst:5039
 msgid ""
@@ -6313,7 +6324,7 @@ msgstr ""
 
 #: ../../library/os.rst:5056
 msgid "On Windows, it will use ``BCryptGenRandom()``."
-msgstr ""
+msgstr "在 Windows 上，它将使用 ``BCryptGenRandom()``。"
 
 #: ../../library/os.rst:5059
 msgid ""
@@ -6351,7 +6362,7 @@ msgstr ""
 msgid ""
 "On Windows, ``BCryptGenRandom()`` is used instead of ``CryptGenRandom()`` "
 "which is deprecated."
-msgstr ""
+msgstr "在 Windows 上，将使用 ``BCryptGenRandom()`` 而不是已被弃用的 ``CryptGenRandom()``。"
 
 #: ../../library/os.rst:5083
 msgid ""

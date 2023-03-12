@@ -659,6 +659,8 @@ msgid ""
 "from the password record for *user*, because that group ID will otherwise be"
 " potentially omitted."
 msgstr ""
+"返回 *user* 所属的组 ID 列表。 如果 *group* 不在该列表中，它将被包括在内；通常，*group* 将会被指定为来自 *user* "
+"的密码记录文件的组 ID 字段，因为在其他情况下该组 ID 有可能会被略去。"
 
 #: ../../library/os.rst:396
 msgid ""
@@ -1122,7 +1124,7 @@ msgstr "返回值是复制的字节的数目。这可能低于需求的数目。
 
 #: ../../library/os.rst:842
 msgid ":ref:`Availability <availability>`: Linux >= 4.5 with glibc >= 2.27."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 4.5 且 glibc >= 2.27。"
 
 #: ../../library/os.rst:849
 msgid ""
@@ -1205,7 +1207,7 @@ msgstr ""
 msgid ""
 "The function is limited on Emscripten and WASI, see :ref:`wasm-availability`"
 " for more information."
-msgstr ""
+msgstr "该函数 Emscripten 和 WASI 将受到限制，请参阅 :ref:`wasm-availability` 了解详情。"
 
 #: ../../library/os.rst:906
 msgid ""
@@ -1656,7 +1658,7 @@ msgstr ""
 
 #: ../../library/os.rst:1302 ../../library/os.rst:1372
 msgid "Using flags requires Linux >= 4.6."
-msgstr ""
+msgstr "使用旗标需要 Linux >= 4.6。"
 
 #: ../../library/os.rst:1309
 msgid ""

@@ -1957,11 +1957,11 @@ msgstr "``x + x``"
 
 #: ../../whatsnew/3.11.rst:1462
 msgid "``x - x``"
-msgstr ""
+msgstr "``x - x``"
 
 #: ../../whatsnew/3.11.rst:1464
 msgid "``x * x``"
-msgstr ""
+msgstr "``x * x``"
 
 #: ../../whatsnew/3.11.rst:1460
 msgid ""
@@ -1969,6 +1969,8 @@ msgid ""
 ":class:`float` and :class:`str` take custom fast paths for their underlying "
 "types."
 msgstr ""
+"常见类型如 :class:`int`, :class:`float` 和 :class:`str` "
+"的双目加法、乘法和减法将采用针对其下层类型专门定制的快速路径。"
 
 #: ../../whatsnew/3.11.rst:1460
 msgid "10%"
@@ -1991,12 +1993,14 @@ msgid ""
 "Subscripting container types such as :class:`list`, :class:`tuple` and "
 ":class:`dict` directly index the underlying data structures."
 msgstr ""
+"对容器类型如 :class:`list`, :class:`tuple` 和 :class:`dict` 的下标操作将直接索引下层数据结构。"
 
 #: ../../whatsnew/3.11.rst:1470
 msgid ""
 "Subscripting custom :meth:`~object.__getitem__` is also inlined similar to "
 ":ref:`inline-calls`."
 msgstr ""
+"对自定义 :meth:`~object.__getitem__` 的下标操作也是采用类似于 :ref:`inline-calls` 的内联方式。"
 
 #: ../../whatsnew/3.11.rst:1466 ../../whatsnew/3.11.rst:1473
 msgid "10-25%"
@@ -2028,11 +2032,11 @@ msgstr "调用"
 
 #: ../../whatsnew/3.11.rst:1476
 msgid "``f(arg)``"
-msgstr ""
+msgstr "``f(arg)``"
 
 #: ../../whatsnew/3.11.rst:1478
 msgid "``C(arg)``"
-msgstr ""
+msgstr "``C(arg)``"
 
 #: ../../whatsnew/3.11.rst:1476
 msgid ""
@@ -2040,6 +2044,7 @@ msgid ""
 ":class:`str` directly call their underlying C version. This avoids going "
 "through the internal calling convention."
 msgstr ""
+"对常用内置 (C) 函数和类型如 :func:`len` 和 :class:`str` 的调用将直接调用其下层 C 版本。 这将避免经历内部调用流程。"
 
 #: ../../whatsnew/3.11.rst:1476
 msgid "20%"
@@ -2055,11 +2060,11 @@ msgstr "加载全局变量"
 
 #: ../../whatsnew/3.11.rst:1481
 msgid "``print``"
-msgstr ""
+msgstr "``print``"
 
 #: ../../whatsnew/3.11.rst:1483
 msgid "``len``"
-msgstr ""
+msgstr "``len``"
 
 #: ../../whatsnew/3.11.rst:1481
 msgid ""
@@ -2069,7 +2074,7 @@ msgstr "对象在全局/内置命名空间中的索引会被缓存。 加载全�
 
 #: ../../whatsnew/3.11.rst:1481
 msgid "[#load-global]_"
-msgstr ""
+msgstr "[#load-global]_"
 
 #: ../../whatsnew/3.11.rst:1481 ../../whatsnew/3.11.rst:1485
 #: ../../whatsnew/3.11.rst:1494
@@ -2093,7 +2098,7 @@ msgstr "类似于加载全局变量。 属性在类/对象命名空间中的索�
 
 #: ../../whatsnew/3.11.rst:1485
 msgid "[#load-attr]_"
-msgstr ""
+msgstr "[#load-attr]_"
 
 #: ../../whatsnew/3.11.rst:1490
 msgid "Load methods for call"
@@ -2145,7 +2150,7 @@ msgstr "``*seq``"
 msgid ""
 "Specialized for common containers such as :class:`list` and :class:`tuple`. "
 "Avoids internal calling convention."
-msgstr ""
+msgstr "针对常见容器如 :class:`list` 和 :class:`tuple` 进行了专门化。 避免内部调用流程。"
 
 #: ../../whatsnew/3.11.rst:1497
 msgid "8%"
@@ -2159,7 +2164,7 @@ msgstr "Brandt Bucher"
 msgid ""
 "A similar optimization already existed since Python 3.8. 3.11 specializes "
 "for more forms and reduces some overhead."
-msgstr ""
+msgstr "类似的优化自 Python 3.8 起即已存在。 3.11 针对更多形式进行了专门化并减少了部分开销。"
 
 #: ../../whatsnew/3.11.rst:1505
 msgid ""
@@ -2167,6 +2172,8 @@ msgid ""
 "for more forms. Furthermore, all attribute loads should be sped up by "
 ":issue:`45947`."
 msgstr ""
+"类似的优化自 Python 3.10 起即已存在。 3.11 针对更多形式进行了专门化。 此外，所有属性加载都应当通过 :issue:`45947` "
+"获得了加速。"
 
 #: ../../whatsnew/3.11.rst:1513
 msgid "Misc"
@@ -2250,11 +2257,11 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:1578
 msgid "Is there a JIT compiler?"
-msgstr ""
+msgstr "是否有 JIT 编译器？"
 
 #: ../../whatsnew/3.11.rst:1580
 msgid "No. We're still exploring other optimizations."
-msgstr ""
+msgstr "没有。 我们还在探索其他优化方式。"
 
 #: ../../whatsnew/3.11.rst:1586
 msgid "About"
@@ -2291,18 +2298,20 @@ msgid ""
 ":opcode:`ASYNC_GEN_WRAP`, :opcode:`RETURN_GENERATOR` and :opcode:`SEND`, "
 "used in generators and co-routines."
 msgstr ""
+":opcode:`ASYNC_GEN_WRAP`, :opcode:`RETURN_GENERATOR` 和 "
+":opcode:`SEND`，用于生成器和协程。"
 
 #: ../../whatsnew/3.11.rst:1616
 msgid ""
 ":opcode:`COPY_FREE_VARS`, which avoids needing special caller-side code for "
 "closures."
-msgstr ""
+msgstr ":opcode:`COPY_FREE_VARS`，这可以避免需要特别的调用方代码来关闭。"
 
 #: ../../whatsnew/3.11.rst:1619
 msgid ""
 ":opcode:`JUMP_BACKWARD_NO_INTERRUPT`, for use in certain loops where "
 "handling interrupts is undesirable."
-msgstr ""
+msgstr ":opcode:`JUMP_BACKWARD_NO_INTERRUPT`，用于某些不希望处理中断的循环。"
 
 #: ../../whatsnew/3.11.rst:1622
 msgid ":opcode:`MAKE_CELL`, to create :ref:`cell-objects`."
@@ -3951,43 +3960,47 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:2460
 msgid "``f_lineno``: use :c:func:`PyFrame_GetLineNumber`"
-msgstr ""
+msgstr "``f_lineno``: 使用 :c:func:`PyFrame_GetLineNumber`"
 
 #: ../../whatsnew/3.11.rst:2461
 msgid "``f_locals``: use :c:func:`PyFrame_GetLocals`."
-msgstr ""
+msgstr "``f_locals``: 使用 :c:func:`PyFrame_GetLocals`。"
 
 #: ../../whatsnew/3.11.rst:2462
 msgid "``f_stackdepth``: removed."
-msgstr ""
+msgstr "``f_stackdepth``: 已移除。"
 
 #: ../../whatsnew/3.11.rst:2463
 msgid "``f_state``: no public API (renamed to ``f_frame.f_state``)."
-msgstr ""
+msgstr "``f_state``: 无公共 API (重命名为 ``f_frame.f_state``)。"
 
 #: ../../whatsnew/3.11.rst:2464
 msgid "``f_trace``: no public API."
-msgstr ""
+msgstr "``f_trace``: 无公共 API。"
 
 #: ../../whatsnew/3.11.rst:2465
 msgid ""
 "``f_trace_lines``: use ``PyObject_GetAttrString((PyObject*)frame, "
 "\"f_trace_lines\")``."
 msgstr ""
+"``f_trace_lines``: 使用 ``PyObject_GetAttrString((PyObject*)frame, "
+"\"f_trace_lines\")``。"
 
 #: ../../whatsnew/3.11.rst:2466
 msgid ""
 "``f_trace_opcodes``: use ``PyObject_GetAttrString((PyObject*)frame, "
 "\"f_trace_opcodes\")``."
 msgstr ""
+"``f_trace_opcodes``: 使用 ``PyObject_GetAttrString((PyObject*)frame, "
+"\"f_trace_opcodes\")``。"
 
 #: ../../whatsnew/3.11.rst:2467
 msgid "``f_localsplus``: no public API (renamed to ``f_frame.localsplus``)."
-msgstr ""
+msgstr "``f_localsplus``: 无公共 API (重命名为 ``f_frame.localsplus``)。"
 
 #: ../../whatsnew/3.11.rst:2468
 msgid "``f_valuestack``: removed."
-msgstr ""
+msgstr "``f_valuestack``: 已移除。"
 
 #: ../../whatsnew/3.11.rst:2470
 msgid ""
@@ -4092,7 +4105,7 @@ msgstr ""
 #: ../../whatsnew/3.11.rst:2577
 msgid ""
 "Deprecate the following functions to configure the Python initialization:"
-msgstr ""
+msgstr "弃用以下配置 Python 初始化的函数:"
 
 #: ../../whatsnew/3.11.rst:2579
 msgid ":c:func:`PySys_AddWarnOptionUnicode`"

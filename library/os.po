@@ -4941,6 +4941,9 @@ msgid ""
 ":func:`open` function. The returned file object reads or writes text strings"
 " rather than bytes."
 msgstr ""
+"打开一个通往或接受命令 *cmd* 的管道。 返回值是连接到该管道的已打开文件对象，它可读取还是可写入取决于其 *mode* 是 ``'r'`` "
+"(默认) 还是 ``'w'``。 *buffering* 参数与内置 :func:`open` 函数相应的参数含义相同。 "
+"返回的文件对象只能读写文本字符串而不是字节串。"
 
 #: ../../library/os.rst:3992
 msgid ""
@@ -4982,7 +4985,7 @@ msgstr ":ref:`可用性 <availability>`: 非 Emscripten，非 WASI。"
 msgid ""
 "The :ref:`Python UTF-8 Mode <utf8-mode>` affects encodings used for *cmd* "
 "and pipe contents."
-msgstr ""
+msgstr ":ref:`Python UTF-8 模型 <utf8-mode>` 影响 *cmd* 和管道内容所使用的编码格式。"
 
 #: ../../library/os.rst:4017
 msgid ""
@@ -4990,6 +4993,8 @@ msgid ""
 ":class:`subprocess.Popen` or :func:`subprocess.run` to control options like "
 "encodings."
 msgstr ""
+":func:`popen` 是针对 :class:`subprocess.Popen` 的简单包装器。 请使用 "
+":class:`subprocess.Popen` 或 :func:`subprocess.run` 来控制编码格式等选项。"
 
 #: ../../library/os.rst:4026
 msgid "Wraps the :c:func:`posix_spawn` C library API for use from Python."
@@ -5099,6 +5104,9 @@ msgid ""
 ":c:data:`POSIX_SPAWN_SETSID_NP` flag. Otherwise, :exc:`NotImplementedError` "
 "is raised."
 msgstr ""
+"如果 *setsid* 参数为 ``True``，它将为 ``posix_spawn`` 新建一个会话 ID。 *setsid* 需要 "
+":c:data:`POSIX_SPAWN_SETSID` 或 :c:data:`POSIX_SPAWN_SETSID_NP` 旗标。 否则，将会引发 "
+":exc:`NotImplementedError`。"
 
 #: ../../library/os.rst:4086
 msgid ""
@@ -5154,11 +5162,11 @@ msgstr ""
 
 #: ../../library/os.rst:4122
 msgid ":ref:`Availability <availability>`: POSIX, not Emscripten, not WASI."
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: POSIX，非 Emscripten，非 WASI。"
 
 #: ../../library/os.rst:4124
 msgid "See :func:`posix_spawn` documentation."
-msgstr ""
+msgstr "参见 :func:`posix_spawn` 文档。"
 
 #: ../../library/os.rst:4130
 msgid ""

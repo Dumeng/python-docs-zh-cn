@@ -4053,6 +4053,9 @@ msgid ""
 "*st_mtime_ns* fields from the :func:`os.stat` result object with the *ns* "
 "parameter to :func:`utime`."
 msgstr ""
+"请注意你在此处设置的确切时间可能不会被后续的 :func:`~os.stat` 调用所返回，具体取决于你的操作系统记录访问和修改时间的分辨率；请参阅 "
+":func:`~os.stat`。 保留准确时间的最佳方式是使用来自于将 *ns* 形参设为 :func:`utime` 的 "
+":func:`os.stat` 结果对象的 *st_atime_ns* 和 *st_mtime_ns* 字段。"
 
 #: ../../library/os.rst:3196
 msgid ""

@@ -4094,6 +4094,11 @@ msgid ""
 "generating the lists, whether a name for that file be included is "
 "unspecified."
 msgstr ""
+"*dirpath* 是一个字符串，表示目录的路径。 *dirnames* 是由 *dirpath* 中的子目录名称组成的列表 "
+"(包括指向目录的符号链接，不包括 ``'.'`` 和 ``'..'``)。 *filenames* 是由 *dirpath* "
+"中非目录文件名称组成的列表。 请注意列表中的名称不包含路径部分。 要获取 *dirpath* 中文件或目录的完整路径 (以 *top* 打头，请执行 "
+"``os.path.join(dirpath, name)``。 列表是否排序取决于具体文件系统。 如果有文件在列表生成期间被移除或添加到 "
+"*dirpath*，是否要包括该文件的名称并没有规定。"
 
 #: ../../library/os.rst:3228
 msgid ""
@@ -4394,7 +4399,7 @@ msgstr "为读取 :func:`eventfd` 文件描述符的操作提供类似信号量�
 
 #: ../../library/os.rst:3506
 msgid ":ref:`Availability <availability>`: Linux >= 2.6.30"
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 2.6.30"
 
 #: ../../library/os.rst:3512
 msgid "Linux extended attributes"
@@ -4724,7 +4729,7 @@ msgstr "其中部分退出代码在部分 Unix 平台上可能不可用，因为
 msgid ""
 "Exit code that means no error occurred. May be taken from the defined value "
 "of ``EXIT_SUCCESS`` on some platforms. Generally has a value of zero."
-msgstr ""
+msgstr "表示没有发生错误的退出码。 在某些平台上可能会从 ``EXIT_SUCCESS`` 定义的值中选取。 通常其值为零。"
 
 #: ../../library/os.rst:3759
 msgid ""
@@ -4919,7 +4924,7 @@ msgstr "更多详细信息请参阅 :manpage:`pidfd_open(2)` 手册页。"
 
 #: ../../library/os.rst:3970
 msgid ":ref:`Availability <availability>`: Linux >= 5.3"
-msgstr ""
+msgstr ":ref:`可用性 <availability>`: Linux >= 5.3"
 
 #: ../../library/os.rst:3976
 msgid ""

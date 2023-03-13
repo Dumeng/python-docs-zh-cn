@@ -2749,7 +2749,7 @@ msgstr ""
 msgid ""
 "The *mode* argument no longer affects the file permission bits of newly "
 "created intermediate-level directories."
-msgstr ""
+msgstr "*mode* 参数不会再影响新创建的中间目录的文件权限位。"
 
 #: ../../library/os.rst:2200
 msgid ""
@@ -2886,6 +2886,8 @@ msgid ""
 ":exc:`OSError` is raised.  Use :func:`rmdir` to remove directories. If the "
 "file does not exist, a :exc:`FileNotFoundError` is raised."
 msgstr ""
+"移除（删除）文件 *path*。 如果 *path* 是目录，则会引发 :exc:`OSError`。 请使用 :func:`rmdir` 来移除目录。"
+" 如果文件不存在，则会引发 :exc:`FileNotFoundError`。"
 
 #: ../../library/os.rst:2337 ../../library/os.rst:2450
 #: ../../library/os.rst:3086
@@ -2945,6 +2947,8 @@ msgid ""
 "operation may fail if *src* and *dst* are on different filesystems. Use "
 ":func:`shutil.move` to support moves to a different filesystem."
 msgstr ""
+"在 Windows 上，如果 *dst* 存在则总是会引发 :exc:`FileExistsError`。 如果 *src* 和 *dst* "
+"是在不同的文件系统上则此操作可能会失败。 请使用 :func:`shutil.move` 以支持移动到不同的文件系统。"
 
 #: ../../library/os.rst:2383
 msgid ""
@@ -3028,6 +3032,8 @@ msgid ""
 "respectively.  In order to remove whole directory trees, "
 ":func:`shutil.rmtree` can be used."
 msgstr ""
+"移除（删除）目录 *path*。 如果目录不存在或不为空，则会分别引发 :exc:`FileNotFoundError` 或 "
+":exc:`OSError`。 要移除整个目录树，可以使用 :func:`shutil.rmtree`。"
 
 #: ../../library/os.rst:2453
 msgid ""
@@ -3128,6 +3134,14 @@ msgid ""
 "<https://msdn.microsoft.com/en-"
 "us/library/windows/desktop/aa364428(v=vs.85).aspx>`_ functions."
 msgstr ""
+"在基于 Unix 的系统上，:func:`scandir` 使用系统的 `opendir() "
+"<https://pubs.opengroup.org/onlinepubs/009695399/functions/opendir.html>`_ 和"
+" `readdir() "
+"<https://pubs.opengroup.org/onlinepubs/009695399/functions/readdir_r.html>`_"
+" 函数。 在 Windows 上，它使用 Win32 `FindFirstFileW <https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa364418(v=vs.85).aspx>`_ 和 `FindNextFileW "
+"<https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa364428(v=vs.85).aspx>`_ 函数。"
 
 #: ../../library/os.rst:2530
 msgid ""

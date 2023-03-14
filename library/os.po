@@ -5580,7 +5580,7 @@ msgstr ""
 msgid ""
 "If there are no children that could be waited for, :exc:`ChildProcessError` "
 "is raised."
-msgstr ""
+msgstr "如果不存在可被等待的子进程，则将引发 :exc:`ChildProcessError`。"
 
 #: ../../library/os.rst:4389 ../../library/os.rst:4461
 msgid ""
@@ -5816,7 +5816,7 @@ msgstr ""
 msgid ""
 "These are the possible values for :attr:`!si_code` in the result returned by"
 " :func:`waitid`."
-msgstr ""
+msgstr "这些是由 :func:`waitid` 所返回的结果中 :attr:`!si_code` 可能的取值。"
 
 #: ../../library/os.rst:4602
 msgid "Added :data:`CLD_KILLED` and :data:`CLD_STOPPED` values."

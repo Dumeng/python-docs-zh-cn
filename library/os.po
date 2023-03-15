@@ -5653,6 +5653,8 @@ msgid ""
 "requested state, ``None`` is returned. Otherwise, if there are no matching "
 "children that could be waited for, :exc:`ChildProcessError` is raised."
 msgstr ""
+"如果指定了 :data:`WNOHANG` 而在所请求的状态中没有匹配的子进程，则将返回 ``None``。 "
+"在其他情况下，如果没有匹配的子进程可被等待，则将引发 :exc:`ChildProcessError`。"
 
 #: ../../library/os.rst:4433
 msgid "The details of this function differ on Unix and Windows."

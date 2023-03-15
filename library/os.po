@@ -5594,10 +5594,12 @@ msgid ""
 "the completion of a specific child process and have more options. "
 ":func:`waitpid` is the only one also available on Windows."
 msgstr ""
+"下面列出的其他 :func:`!wait*` 函数可被用于等待特定子进程完成并具有更多的选项。 :func:`waitpid` 是其中唯一在 "
+"Windows 上也可用的。"
 
 #: ../../library/os.rst:4403
 msgid "Wait for the completion of a child process."
-msgstr ""
+msgstr "等待一个子进程完成。"
 
 #: ../../library/os.rst:4405
 msgid ""
@@ -5605,6 +5607,8 @@ msgid ""
 ":data:`P_PIDFD`. The interpretation of *id* depends on it; see their "
 "individual descriptions."
 msgstr ""
+"*idtype* 可以为 :data:`P_PID`, :data:`P_PGID`, :data:`P_ALL` 或 (在 Linux 上) "
+":data:`P_PIDFD`。 对于 *id* 的解读由它来决定；请参阅它们各自的说明。"
 
 #: ../../library/os.rst:4408
 msgid ""
@@ -5612,34 +5616,36 @@ msgid ""
 ":data:`WSTOPPED` or :data:`WCONTINUED` is required; :data:`WNOHANG` and "
 ":data:`WNOWAIT` are additional optional flags."
 msgstr ""
+"*options* 是多个旗标的 OR 组合。 要求至少有 :data:`WEXITED`, :data:`WSTOPPED` 或 "
+":data:`WCONTINUED` 中的一个；:data:`WNOHANG` 和 :data:`WNOWAIT` 是附加的可选旗标。"
 
 #: ../../library/os.rst:4412
 msgid ""
 "The return value is an object representing the data contained in the "
 ":c:type:`!siginfo_t` structure with the following attributes:"
-msgstr ""
+msgstr "返回值是一个代表 :c:type:`!siginfo_t` 结构体所包含数据的对象，具有以下属性:"
 
 #: ../../library/os.rst:4415
 msgid ":attr:`!si_pid` (process ID)"
-msgstr ""
+msgstr ":attr:`!si_pid` (进程 ID)"
 
 #: ../../library/os.rst:4416
 msgid ":attr:`!si_uid` (real user ID of the child)"
-msgstr ""
+msgstr ":attr:`!si_uid` (子进程的实际用户 ID)"
 
 #: ../../library/os.rst:4417
 msgid ":attr:`!si_signo` (always :data:`~signal.SIGCHLD`)"
-msgstr ""
+msgstr ":attr:`!si_signo` (始终为 :data:`~signal.SIGCHLD`)"
 
 #: ../../library/os.rst:4418
 msgid ""
 ":attr:`!si_status` (the exit status or signal number, depending on "
 ":attr:`!si_code`)"
-msgstr ""
+msgstr ":attr:`!si_status` (退出状态或信号编号，具体取决于 :attr:`!si_code`)"
 
 #: ../../library/os.rst:4419
 msgid ":attr:`!si_code` (see :data:`CLD_EXITED` for possible values)"
-msgstr ""
+msgstr ":attr:`!si_code` (可能的值参见 :data:`CLD_EXITED`)"
 
 #: ../../library/os.rst:4421
 msgid ""

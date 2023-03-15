@@ -5692,6 +5692,9 @@ msgid ""
 " for, :exc:`ChildProcessError` is raised.  Other options that can be used "
 "are :data:`WUNTRACED` and :data:`WCONTINUED`."
 msgstr ""
+"*options* 是多个旗标的 OR 组合。 如果它包含了 :data:`WNOHANG` 并且在所请求的状态中没有匹配的子进程，则将返回 ``(0,"
+" 0)``。 在其他情况下，如果没有匹配的子进程可以被等待，则将引发 :exc:`ChildProcessError`。 其他的可用选项还有 "
+":data:`WUNTRACED` 和 :data:`WCONTINUED`。"
 
 #: ../../library/os.rst:4453
 msgid ""
@@ -5718,6 +5721,9 @@ msgid ""
 "*options* argument is the same as that provided to :func:`waitpid` and "
 ":func:`wait4`."
 msgstr ""
+"与 :func:`waitpid` 类似，区别在于没有给出进程 id 参数并且返回一个 3 元组，其中包括子进程的 id、退出状态指示以及资源使用信息。"
+" 请参阅 :func:`resource.getrusage` 了解有关资源使用信息的详情。 *options* 参数与提供给 "
+":func:`waitpid` 和 :func:`wait4` 的相同。"
 
 #: ../../library/os.rst:4481 ../../library/os.rst:4495
 msgid ""

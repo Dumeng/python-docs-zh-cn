@@ -5739,34 +5739,39 @@ msgid ""
 " information.  The arguments to :func:`wait4` are the same as those provided"
 " to :func:`waitpid`."
 msgstr ""
+"与 :func:`waitpid` 类似，区别在于它是返回一个 3 元组，其中包括子进程的 id、退出状态指示以及资源使用信息。 请参阅 "
+":func:`resource.getrusage` 了解有关资源使用信息的详情。 :func:`wait4` 的参数与提供给 "
+":func:`waitpid` 的相同。"
 
 #: ../../library/os.rst:4506
 msgid ""
 "These are the possible values for *idtype* in :func:`waitid`. They affect "
 "how *id* is interpreted:"
-msgstr ""
+msgstr "这些是 :func:`waitid` 中 *idtype* 可取的值。 它们会影响 *id* 的解读方式:"
 
 #: ../../library/os.rst:4509
 msgid ":data:`!P_PID` - wait for the child whose PID is *id*."
-msgstr ""
+msgstr ":data:`!P_PID` - 等待 PID 为 *id* 的子进程。"
 
 #: ../../library/os.rst:4510
 msgid ":data:`!P_PGID` - wait for any child whose progress group ID is *id*."
-msgstr ""
+msgstr ":data:`!P_PGID` - 等待进程组 ID 为 *id* 的任何子进程。"
 
 #: ../../library/os.rst:4511
 msgid ":data:`!P_ALL` - wait for any child; *id* is ignored."
-msgstr ""
+msgstr ":data:`!P_ALL` - 等待任何子进程；*id* 会被忽略。"
 
 #: ../../library/os.rst:4512
 msgid ""
 ":data:`!P_PIDFD` - wait for the child identified by the file descriptor *id*"
 " (a process file descriptor created with :func:`pidfd_open`)."
 msgstr ""
+":data:`!P_PIDFD` - 等待以文件描述符 *id* 作为标识的子进程（使用a process file descriptor "
+"created with :func:`pidfd_open` 创建的进程文件描述符）。"
 
 #: ../../library/os.rst:4517
 msgid ":data:`!P_PIDFD` is only available on Linux >= 5.4."
-msgstr ""
+msgstr ":data:`!P_PIDFD` 仅在 Linux >= 5.4 时可用。"
 
 #: ../../library/os.rst:4520
 msgid "The :data:`!P_PIDFD` constant."

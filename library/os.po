@@ -5775,7 +5775,7 @@ msgstr ":data:`!P_PIDFD` 仅在 Linux >= 5.4 时可用。"
 
 #: ../../library/os.rst:4520
 msgid "The :data:`!P_PIDFD` constant."
-msgstr ""
+msgstr ":data:`!P_PIDFD` 常量。"
 
 #: ../../library/os.rst:4526
 msgid ""
@@ -5783,28 +5783,30 @@ msgid ""
 ":func:`waitid` causes child processes to be reported if they have been "
 "continued from a job control stop since they were last reported."
 msgstr ""
+"如果子进程自它们上次被报告之后从作业控制停止位置继续执行，则 :func:`waitpid`, :func:`wait3`, :func:`wait4`"
+" 和 :func:`waitid` 的这个 *选项* 旗标将导致子进程被报告。"
 
 #: ../../library/os.rst:4535
 msgid ""
 "This *options* flag for :func:`waitid` causes child processes that have "
 "terminated to be reported."
-msgstr ""
+msgstr ":func:`waitid` 的这个 *选项* 旗标将导致已终结的子进程被报告。"
 
 #: ../../library/os.rst:4538
 msgid ""
 "The other ``wait*`` functions always report children that have terminated, "
 "so this option is not available for them."
-msgstr ""
+msgstr "其他 ``wait*`` 函数总是会报告已终结的子进程，所以此选项对它们不可用。"
 
 #: ../../library/os.rst:4548
 msgid ""
 "This *options* flag for :func:`waitid` causes child processes that have been"
 " stopped by the delivery of a signal to be reported."
-msgstr ""
+msgstr "这个 :func:`waitid` 的 *选项* 旗标将导致被信号发送所停止的子进程被报告。"
 
 #: ../../library/os.rst:4551 ../../library/os.rst:4583
 msgid "This option is not available for the other ``wait*`` functions."
-msgstr ""
+msgstr "这个选项对于其他 ``wait*`` 函数不可用。"
 
 #: ../../library/os.rst:4560
 msgid ""
@@ -5812,10 +5814,12 @@ msgid ""
 "causes child processes to also be reported if they have been stopped but "
 "their current state has not been reported since they were stopped."
 msgstr ""
+"如果子进程自它们上次被停止之后再次被停止但它们的当前状态还未被报告，则 :func:`waitpid`, :func:`wait3` 和 "
+":func:`wait4` 的这个 *选项* 旗标也将导致子进程被报告。"
 
 #: ../../library/os.rst:4564
 msgid "This option is not available for :func:`waitid`."
-msgstr ""
+msgstr "这个选项对于 :func:`waitid` 不可用。"
 
 #: ../../library/os.rst:4571
 msgid ""
@@ -5823,6 +5827,8 @@ msgid ""
 "and :func:`waitid` to return right away if no child process status is "
 "available immediately."
 msgstr ""
+"如果没有任何子进程状态是立即可用的，则这个 *选项* 旗标将导致 :func:`waitpid`, :func:`wait3`, "
+":func:`wait4` 和 :func:`waitid` 立即返回。"
 
 #: ../../library/os.rst:4580
 msgid ""
@@ -5830,6 +5836,8 @@ msgid ""
 "state, so that a later :func:`!wait*` call can be used to retrieve the child"
 " status information again."
 msgstr ""
+"这个 *选项* 旗标将导致 :func:`waitid` 以可等待的状态离开子进程，这样后续的 :func:`!wait*` "
+"调用可被用来再次获取子进程状态信息。"
 
 #: ../../library/os.rst:4595
 msgid ""

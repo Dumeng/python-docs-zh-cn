@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-10 14:15+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -73,6 +73,9 @@ msgid ""
 "specialize it for different runtime conditions. The adaptive bytecode can be"
 " shown by passing ``adaptive=True``."
 msgstr ""
+"有些指令带有一个或多个内联缓存条目，它们是采用 :opcode:`CACHE` 指令的形式。 这些指令默认是隐藏的，但可以通过将 "
+"``show_caches=True`` 传给任何 :mod:`dis` 工具对象来显示。 "
+"此外，解释器现在会适配字节码以使其能针对不同的运行时条件实现专门化。 适配的字节码可通过传入 ``adaptive=True`` 来显示。"
 
 #: ../../library/dis.rst:46
 msgid "Example: Given the function :func:`myfunc`::"
@@ -82,7 +85,7 @@ msgstr "示例：给出函数 :func:`myfunc`::"
 msgid ""
 "the following command can be used to display the disassembly of "
 ":func:`myfunc`:"
-msgstr ""
+msgstr "以下命令可被用来显示 :func:`myfunc` 的反汇编:"
 
 #: ../../library/dis.rst:65
 msgid "(The \"2\" is a line number)."
@@ -138,13 +141,13 @@ msgstr ""
 msgid ""
 "If *show_caches* is ``True``, :meth:`.dis` will display inline cache entries"
 " used by the interpreter to specialize the bytecode."
-msgstr ""
+msgstr "如果 *show_caches* 为 ``True``，:meth:`.dis` 将显示解释器用来专门化字节码的内联缓存条目。"
 
 #: ../../library/dis.rst:99
 msgid ""
 "If *adaptive* is ``True``, :meth:`.dis` will display specialized bytecode "
 "that may be different from the original bytecode."
-msgstr ""
+msgstr "如果 *adaptive* 为 ``True``，:meth:`.dis` 将显示可能不同于原始字节码的专门化字节码。"
 
 #: ../../library/dis.rst:104
 msgid ""
@@ -181,7 +184,7 @@ msgstr "现在可以处理协程和异步生成器对象。"
 #: ../../library/dis.rst:237 ../../library/dis.rst:264
 #: ../../library/dis.rst:285
 msgid "Added the *show_caches* and *adaptive* parameters."
-msgstr ""
+msgstr "增加了 *show_caches* 和 *adaptive* 形参。"
 
 #: ../../library/dis.rst:131
 msgid "Example:"
@@ -267,13 +270,13 @@ msgstr "递归的最大深度受 *depth* 限制，除非它是 ``None`` 。 ``de
 msgid ""
 "If *show_caches* is ``True``, this function will display inline cache "
 "entries used by the interpreter to specialize the bytecode."
-msgstr ""
+msgstr "如果 *show_caches* 为 ``True``，此函数将显示解释器用来专门化字节码的内联缓存条目。"
 
 #: ../../library/dis.rst:209
 msgid ""
 "If *adaptive* is ``True``, this function will display specialized bytecode "
 "that may be different from the original bytecode."
-msgstr ""
+msgstr "如果 *adaptive* 为 ``True``，此函数将显示可能不同于原始字节码的专门化字节码。"
 
 #: ../../library/dis.rst:215
 msgid "Implemented recursive disassembling and added *depth* parameter."
@@ -341,7 +344,7 @@ msgstr "迭代器生成一系列 :class:`Instruction` ，命名为元组，提�
 #: ../../library/dis.rst:281
 msgid ""
 "The *show_caches* and *adaptive* parameters work as they do in :func:`dis`."
-msgstr ""
+msgstr "*show_caches* 和 *adaptive* 形参的作用与 :func:`dis` 中的同名形参相同。"
 
 #: ../../library/dis.rst:291
 msgid ""

@@ -9,7 +9,7 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Zombie110year <zombie110year@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-17 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -122,6 +122,8 @@ msgid ""
 "2.  Raises a :exc:`TypeError` if *altchars* is not a :term:`bytes-like "
 "object`."
 msgstr ""
+"如果 *altchars* 的长度不为 2 则可以断言或引发 :exc:`ValueError`。 如果 *altchars* 不是 "
+":term:`bytes-like object` 则会引发 :exc:`TypeError`。"
 
 #: ../../library/base64.rst:67
 msgid ""

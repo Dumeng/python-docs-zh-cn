@@ -308,7 +308,7 @@ msgstr ":samp:`PS C:\\\\> {<venv>}\\\\Scripts\\\\Activate.ps1`"
 
 #: ../../library/venv.rst:86
 msgid ":program:`fish` and :program:`csh` activation scripts."
-msgstr ""
+msgstr ":program:`fish` 和 :program:`csh` 激活脚本。"
 
 #: ../../library/venv.rst:89
 msgid ""

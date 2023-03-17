@@ -122,6 +122,8 @@ msgid ""
 "the way ``python -m`` does. As with a script, the debugger will pause "
 "execution just before the first line of the module."
 msgstr ""
+":file:`pdb.py` 现在接受 ``-m`` 选项，它将以与 ``python -m`` 类似的方式来执行模块。 "
+"就像一个脚本那样，调试器将在模块的第一行之前暂停执行。"
 
 #: ../../library/pdb.rst:79
 msgid "The typical usage to break into the debugger is to insert::"

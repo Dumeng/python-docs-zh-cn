@@ -11,8 +11,8 @@
 # Zombie110year <zombie110year@gmail.com>, 2021
 # nick <2330458484@qq.com>, 2021
 # jaystone776 <1732865113@qq.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -21,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-17 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2096,6 +2096,8 @@ msgid ""
 "available to read. Despite their names, a true value does not indicate that "
 "the corresponding function will be used, only that it may be."
 msgstr ""
+"在任何 Python 版本上将这些属性设为假值都是安全的。 它们在不受支持的旧版本上将没有任何效果。 请不要假定这些属性都是可读的。 "
+"尽管它们被如此命名，但将其设为真值并不表示对应的函数将被使用，只表示有这样的可能性。"
 
 #: ../../library/subprocess.rst:1629
 msgid ""

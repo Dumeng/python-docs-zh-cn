@@ -2172,6 +2172,9 @@ msgid ""
 ":option:`--prefix` argument to the :program:`configure` script.  See "
 ":ref:`installation_paths` for derived paths."
 msgstr ""
+"一个指定用于安装与平台无关的 Python 文件的站点专属目录前缀的字符串；在 Unix 上，默认为 :file:`/usr/local`。 "
+"这可以在构建时通过将 :option:`--prefix` 参数传入 :program:`configure` 脚本来设置。 请参阅 "
+":ref:`installation_paths` 了解衍生的路径。"
 
 #: ../../library/sys.rst:1314
 msgid ""

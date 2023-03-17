@@ -628,6 +628,8 @@ msgid ""
 "fractional part. See functions :func:`math.floor` and :func:`math.ceil` for "
 "alternative conversions."
 msgstr ""
+"从 :class:`float` 转换为 :class:`int` 将会执行截断，丢弃掉小数部分。 请参阅 :func:`math.floor` 和 "
+":func:`math.ceil` 函数了解替代的转换方式。"
 
 #: ../../library/stdtypes.rst:344
 msgid ""

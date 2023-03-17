@@ -1574,7 +1574,7 @@ msgstr "创建一个空 Shape 对象，类型为 \"compound\"。"
 msgid ""
 "Add as many components to this object as desired, using the "
 ":meth:`~Shape.addcomponent` method."
-msgstr ""
+msgstr "可根据需要使用 :meth:`~Shape.addcomponent` 方法向此对象添加多个组件。"
 
 #: ../../library/turtle.rst:1550
 msgid "For example:"
@@ -2081,7 +2081,7 @@ msgstr "一个 :class:`tkinter.Canvas` 类对象"
 msgid ""
 "Provides screen oriented methods like :func:`bgcolor` etc. that are "
 "described above."
-msgstr ""
+msgstr "提供面向屏幕的方法如 :func:`bgcolor` 等。 说明见上文。"
 
 #: ../../library/turtle.rst:2133
 msgid ""
@@ -2310,7 +2310,7 @@ msgstr ""
 #: ../../library/turtle.rst:2318
 msgid ""
 "The built in configuration would correspond to the following ``turtle.cfg``:"
-msgstr ""
+msgstr "内置的配置对应了下面的 ``turtle.cfg``:"
 
 #: ../../library/turtle.rst:2343
 msgid "Short explanation of selected entries:"
@@ -2320,7 +2320,7 @@ msgstr "选定条目的简短说明:"
 msgid ""
 "The first four lines correspond to the arguments of the :func:`Screen.setup "
 "<setup>` method."
-msgstr ""
+msgstr "开头的四行对应了 :func:`Screen.setup <setup>` 方法的参数。"
 
 #: ../../library/turtle.rst:2347
 msgid ""

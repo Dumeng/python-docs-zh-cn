@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 14:15+0000\n"
+"POT-Creation-Date: 2023-03-17 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -548,7 +548,7 @@ msgstr ""
 
 #: ../../library/dis.rst:489
 msgid "**Binary and in-place operations**"
-msgstr ""
+msgstr "**双目和原地操作**"
 
 #: ../../library/dis.rst:491
 msgid ""
@@ -571,7 +571,7 @@ msgstr ""
 msgid ""
 "Implements the binary and in-place operators (depending on the value of "
 "*op*)."
-msgstr ""
+msgstr "实现双目和原地操作运算符（取决于 *op* 的值）。"
 
 #: ../../library/dis.rst:511
 msgid "Implements ``TOS = TOS1[TOS]``."
@@ -602,19 +602,19 @@ msgstr ""
 msgid ""
 "If the ``where`` operand is nonzero, it indicates where the instruction "
 "occurs:"
-msgstr ""
+msgstr "如果 ``where`` 操作数为非零值，则表示指令所在的位置:"
 
 #: ../../library/dis.rst:536
 msgid "``1`` After a call to ``__aenter__``"
-msgstr ""
+msgstr "``1`` 为对 ``__aenter__`` 的调用之后"
 
 #: ../../library/dis.rst:537
 msgid "``2`` After a call to ``__aexit__``"
-msgstr ""
+msgstr "``2`` 为对 ``__aexit__`` 的调用之后"
 
 #: ../../library/dis.rst:541
 msgid "Previously, this instruction did not have an oparg."
-msgstr ""
+msgstr "在之前版本中，该指令没有 oparg。"
 
 #: ../../library/dis.rst:547
 msgid "Implements ``TOS = TOS.__aiter__()``."
@@ -1020,16 +1020,16 @@ msgstr "将字节码计数器的值增加 *delta*。"
 
 #: ../../library/dis.rst:969
 msgid "Decrements bytecode counter by *delta*. Checks for interrupts."
-msgstr ""
+msgstr "将字节码计数器减少 *delta*。 检查中断。"
 
 #: ../../library/dis.rst:976
 msgid "Decrements bytecode counter by *delta*. Does not check for interrupts."
-msgstr ""
+msgstr "将字节码计数器减少 *delta*。 不检查中断。"
 
 #: ../../library/dis.rst:983
 msgid ""
 "If TOS is true, increments the bytecode counter by *delta*.  TOS is popped."
-msgstr ""
+msgstr "如果 TOS 为真值，则将字节码计数器增加 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:990
 msgid ""

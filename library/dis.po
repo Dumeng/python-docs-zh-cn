@@ -422,13 +422,13 @@ msgstr "操作的数字参数（如果有的话），否则为 ``None``"
 
 #: ../../library/dis.rst:354
 msgid "resolved arg value (if any), otherwise ``None``"
-msgstr ""
+msgstr "已解析的 arg 值（如果有的话），否则为 ``None``"
 
 #: ../../library/dis.rst:359
 msgid ""
 "human readable description of operation argument (if any), otherwise an "
 "empty string."
-msgstr ""
+msgstr "人类可读的操作参数（如果存在）的描述，否则为空字符串。"
 
 #: ../../library/dis.rst:365
 msgid "start index of operation within bytecode sequence"
@@ -484,7 +484,7 @@ msgstr "将第 *i* 个条目推入栈顶。 该条目不会从其原始位置上
 
 #: ../../library/dis.rst:428
 msgid "Swap TOS with the item at position *i*."
-msgstr ""
+msgstr "将 TOS 项与 *i* 位置上的项互换。"
 
 #: ../../library/dis.rst:435
 msgid ""

@@ -1034,57 +1034,57 @@ msgstr "如果 TOS 为真值，则将字节码计数器增加 *delta*。 TOS 将
 #: ../../library/dis.rst:990
 msgid ""
 "If TOS is true, decrements the bytecode counter by *delta*.  TOS is popped."
-msgstr ""
+msgstr "如果 TOS 为真值，则将字节码计数器减少 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:997
 msgid ""
 "If TOS is false, increments the bytecode counter by *delta*.  TOS is popped."
-msgstr ""
+msgstr "如果 TOS 为假值，则将字节码计数器增加 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:1004
 msgid ""
 "If TOS is false, decrements the bytecode counter by *delta*.  TOS is popped."
-msgstr ""
+msgstr "如果 TOS 为假值，则将字节码计数器减少 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:1011
 msgid ""
 "If TOS is not ``None``, increments the bytecode counter by *delta*.  TOS is "
 "popped."
-msgstr ""
+msgstr "如果 TOS 不为 ``None``，则将字节码计数器增加 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:1018
 msgid ""
 "If TOS is not ``None``, decrements the bytecode counter by *delta*.  TOS is "
 "popped."
-msgstr ""
+msgstr "如果 TOS 不为 ``None``，则将字节码计数器减少 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:1025
 msgid ""
 "If TOS is ``None``, increments the bytecode counter by *delta*.  TOS is "
 "popped."
-msgstr ""
+msgstr "如果 TOS 为 ``None``，则将字节码计数器增加 *delta*。 将被弹出。"
 
 #: ../../library/dis.rst:1032
 msgid ""
 "If TOS is ``None``, decrements the bytecode counter by *delta*.  TOS is "
 "popped."
-msgstr ""
+msgstr "如果 TOS 为 ``None``，则将字节码计数器减少 *delta*。 TOS 将被弹出。"
 
 #: ../../library/dis.rst:1039
 msgid ""
 "If TOS is true, increments the bytecode counter by *delta* and leaves TOS on"
 " the stack.  Otherwise (TOS is false), TOS is popped."
-msgstr ""
+msgstr "如果 TOS 为真值，则将字节码计数器增加 *delta* 并将 TOS 留在栈中。 否则（TOS 为假值），TOS 将被弹出。"
 
 #: ../../library/dis.rst:1044 ../../library/dis.rst:1054
 msgid "The oparg is now a relative delta rather than an absolute target."
-msgstr ""
+msgstr "现在 oparg 是一个相对变化量而非绝对目标值。"
 
 #: ../../library/dis.rst:1049
 msgid ""
 "If TOS is false, increments the bytecode counter by *delta* and leaves TOS "
 "on the stack.  Otherwise (TOS is true), TOS is popped."
-msgstr ""
+msgstr "如果 TOS 为假值，则将字节码计数器增加 *delta* 并将 TOS 留在栈中。 否则（TOS 为真值），TOS 将被弹出。"
 
 #: ../../library/dis.rst:1060
 msgid ""

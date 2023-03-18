@@ -765,6 +765,8 @@ msgid ""
 "subgroup. When there is no match, pops one item (the match type) and pushes "
 "``None``."
 msgstr ""
+"在匹配的情况下，从栈中弹出两项并推入不匹配的子分组 (如完全匹配则为 ``None``) 以及匹配的子分组。 当没有任何匹配时，则弹出一项 (匹配类型)"
+" 并推入 ``None``。"
 
 #: ../../library/dis.rst:693
 msgid ""
@@ -1108,7 +1110,7 @@ msgstr "将名为 ``co_names[namei>>1]`` 的全局对象加载到栈顶。"
 msgid ""
 "If the low bit of ``namei`` is set, then a ``NULL`` is pushed to the stack "
 "before the global variable."
-msgstr ""
+msgstr "如果设置了 ``namei`` 的低比特位，则会在全局变量前将一个 ``NULL`` 推入栈。"
 
 #: ../../library/dis.rst:1076
 msgid ""
@@ -1127,7 +1129,7 @@ msgstr "移除局部对象 ``co_varnames[var_num]``。"
 msgid ""
 "Creates a new cell in slot ``i``.  If that slot is empty then that value is "
 "stored into the new cell."
-msgstr ""
+msgstr "在槽位 ``i`` 中创建一个新单元。 如果该槽位为空则该值将存储到新单元中。"
 
 #: ../../library/dis.rst:1099
 msgid ""
@@ -1404,26 +1406,28 @@ msgid ""
 "positional and keyword attributes required by *count* and TOS, push a tuple "
 "of extracted attributes.  Otherwise, push ``None``."
 msgstr ""
+"弹出 TOS, TOS1 和 TOS2。 如果 TOS2 是 TOS1 的一个实例且具有 *count* 和 TOS "
+"所要求的位置和关键字属性，则推入包含已提取属性的元组。 在其他情况下，则推入 ``None``。"
 
 #: ../../library/dis.rst:1327
 msgid "A no-op. Performs internal tracing, debugging and optimization checks."
-msgstr ""
+msgstr "空操作。 执行内部追踪、调试和优化检查。"
 
 #: ../../library/dis.rst:1329
 msgid "The ``where`` operand marks where the ``RESUME`` occurs:"
-msgstr ""
+msgstr "``where`` 操作数标记 ``RESUME`` 在哪里发生:"
 
 #: ../../library/dis.rst:1331
 msgid "``0`` The start of a function"
-msgstr ""
+msgstr "``0`` 函数的开头"
 
 #: ../../library/dis.rst:1332
 msgid "``1`` After a ``yield`` expression"
-msgstr ""
+msgstr "``1`` 在 ``yield`` 表达式之后"
 
 #: ../../library/dis.rst:1333
 msgid "``2`` After a ``yield from`` expression"
-msgstr ""
+msgstr "``2`` 在 ``yield from`` 表达式之后"
 
 #: ../../library/dis.rst:1334
 msgid "``3`` After an ``await`` expression"
@@ -1433,19 +1437,19 @@ msgstr "``3`` 在 ``await`` 表达式之后"
 msgid ""
 "Create a generator, coroutine, or async generator from the current frame. "
 "Clear the current frame and return the newly created generator."
-msgstr ""
+msgstr "从当前帧创建一个生成器、协程或异步生成器。 清空当前帧并返回新创建的生成器。"
 
 #: ../../library/dis.rst:1349
 msgid ""
 "Sends ``None`` to the sub-generator of this generator. Used in ``yield "
 "from`` and ``await`` statements."
-msgstr ""
+msgstr "将 ``None`` 发送给该生成器的子生成器。 在 ``yield from`` 和 ``await`` 语句中使用。"
 
 #: ../../library/dis.rst:1357
 msgid ""
 "Wraps the value on top of the stack in an ``async_generator_wrapped_value``."
 " Used to yield in async generators."
-msgstr ""
+msgstr "将位于栈顶的值包装在 ``async_generator_wrapped_value`` 中。 用于在异步生成器中产生值。"
 
 #: ../../library/dis.rst:1365
 msgid ""

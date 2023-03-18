@@ -648,7 +648,7 @@ msgstr ""
 #: ../../library/dis.rst:661
 msgid ""
 "Exception representation on the stack now consist of one, not three, items."
-msgstr ""
+msgstr "栈中的异常表示形式现在将由一个而不是三个条目组成。"
 
 #: ../../library/dis.rst:577
 msgid ""
@@ -730,33 +730,33 @@ msgstr ""
 #: ../../library/dis.rst:648
 msgid ""
 "Pops a value from the stack, which is used to restore the exception state."
-msgstr ""
+msgstr "从栈中弹出一个值，它将被用来恢复异常状态。"
 
 #: ../../library/dis.rst:655
 msgid ""
 "Re-raises the exception currently on top of the stack. If oparg is non-zero,"
 " pops an additional value from the stack which is used to set ``f_lasti`` of"
 " the current frame."
-msgstr ""
+msgstr "重新引发当前位于栈顶的异常。 如果 oparg 为非零值，则将从栈中弹出一个额外的值，它会被用来设置当前帧的 ``f_lasti``。"
 
 #: ../../library/dis.rst:666
 msgid ""
 "Pops a value from the stack. Pushes the current exception to the top of the "
 "stack. Pushes the value originally popped back to the stack. Used in "
 "exception handlers."
-msgstr ""
+msgstr "从栈中弹出一个值。 将当前异常推入栈顶。 将原先被弹出的值推回栈。 在异常处理句柄中使用。"
 
 #: ../../library/dis.rst:674
 msgid ""
 "Performs exception matching for ``except``. Tests whether the TOS1 is an "
 "exception matching TOS. Pops TOS and pushes the boolean result of the test."
-msgstr ""
+msgstr "为 ``except`` 执行异常匹配。 检测 TOS1 是否为匹配 TOS 的异常。 弹出 TOS 并将测试的布尔值结果推入栈。"
 
 #: ../../library/dis.rst:681
 msgid ""
 "Performs exception matching for ``except*``. Applies ``split(TOS)`` on the "
 "exception group representing TOS1."
-msgstr ""
+msgstr "为 ``except*`` 执行异常匹配。 在代表 TOS1 的异常组上应用 ``split(TOS)``。"
 
 #: ../../library/dis.rst:684
 msgid ""
@@ -799,7 +799,7 @@ msgstr "将 :exc:`AssertionError` 推入栈顶。 由 :keyword:`assert` 语句�
 msgid ""
 "Pushes :func:`builtins.__build_class__` onto the stack.  It is later called "
 "to construct a class."
-msgstr ""
+msgstr "将 :func:`builtins.__build_class__` 推入栈。 之后它将会被调用来构造一个类。"
 
 #: ../../library/dis.rst:731
 msgid ""
@@ -1102,7 +1102,7 @@ msgstr ""
 
 #: ../../library/dis.rst:1068
 msgid "Loads the global named ``co_names[namei>>1]`` onto the stack."
-msgstr ""
+msgstr "将名为 ``co_names[namei>>1]`` 的全局对象加载到栈顶。"
 
 #: ../../library/dis.rst:1070
 msgid ""
@@ -1213,27 +1213,27 @@ msgstr "NULL"
 
 #: ../../library/dis.rst:1178 ../../library/dis.rst:1184
 msgid "The callable"
-msgstr ""
+msgstr "可调用对象"
 
 #: ../../library/dis.rst:1179
 msgid "The positional arguments"
-msgstr ""
+msgstr "位置参数"
 
 #: ../../library/dis.rst:1180 ../../library/dis.rst:1187
 msgid "The named arguments"
-msgstr ""
+msgstr "关键字参数"
 
 #: ../../library/dis.rst:1182
 msgid "or:"
-msgstr ""
+msgstr "或者:"
 
 #: ../../library/dis.rst:1185
 msgid "``self``"
-msgstr ""
+msgstr "``self``"
 
 #: ../../library/dis.rst:1186
 msgid "The remaining positional arguments"
-msgstr ""
+msgstr "其余的位置参数"
 
 #: ../../library/dis.rst:1189
 msgid ""

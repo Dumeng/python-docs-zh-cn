@@ -9,7 +9,7 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Jiuh-star <jiuh.star@gmail.com>, 2021
 # jaystone776 <1732865113@qq.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-17 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -153,6 +153,12 @@ msgid ""
 "are installed in :file:`{prefix}/include`, where ``prefix`` is the "
 "installation directory specified to the installer."
 msgstr ""
+"头文件通常会与 Python 一起安装。 在 Unix 上，它们位于 :file:`{prefix}/include/pythonversion/` 和"
+" :file:`{exec_prefix}/include/pythonversion/` 目录，其中 :option:`prefix "
+"<--prefix>` 和 :option:`exec_prefix <--exec-prefix>` 是由向 Python 的 "
+":program:`configure` 脚本传入的对应形参定义，而 *version* 则为 ``'%d.%d' % "
+"sys.version_info[:2]``。 在 Windows 上，头文件安装于 :file:`{prefix}/include`，其中 "
+"``prefix`` 是为安装程序指定的安装目录。"
 
 #: ../../c-api/intro.rst:88
 msgid ""
@@ -163,6 +169,9 @@ msgid ""
 " :option:`prefix <--prefix>` include the platform specific headers from "
 ":option:`exec_prefix <--exec-prefix>`."
 msgstr ""
+"要包括这些头文件，请将两个目录（如果不同）都放到你所用编译器用于包括头文件的搜索目录中。 请 *不要* 将父目录放入搜索路径然后使用 "
+"``#include <pythonX.Y/Python.h>``；这将使得多平台编译不可用，因为 :option:`prefix "
+"<--prefix>` 下与平台无关的头文件包括了来自 :option:`exec_prefix <--exec-prefix>` 的平台专属头文件。"
 
 #: ../../c-api/intro.rst:95
 msgid ""

@@ -1381,6 +1381,9 @@ msgid ""
 "*stretch_len* is stretchfactor in direction of its orientation, *outline* "
 "determines the width of the shape's outline."
 msgstr ""
+"返回或设置画笔的属性 x/y 拉伸因子和/或轮廓。 设置大小调整模式为 \"user\"。 当且仅当大小调整模式为 \"user\" "
+"时，海龟会基于其拉伸因子调整外观: *stretch_wid* 为垂直于其朝向的宽度拉伸因子，*stretch_len* "
+"为平行于其朝向的长度拉伸因子，*outline* 决定形状轮廓线的宽度。"
 
 #: ../../library/turtle.rst:1235 ../../library/turtle.rst:1894
 #: ../../library/turtle.rst:1895 ../../library/turtle.rst:1896
@@ -2326,7 +2329,7 @@ msgstr "开头的四行对应了 :func:`Screen.setup <setup>` 方法的参数。
 msgid ""
 "Line 5 and 6 correspond to the arguments of the method "
 ":func:`Screen.screensize <screensize>`."
-msgstr ""
+msgstr "第 5 和第 6 行对应于 :func:`Screen.screensize <screensize>` 方法的参数。"
 
 #: ../../library/turtle.rst:2349
 msgid ""
@@ -2340,6 +2343,8 @@ msgid ""
 "have to write ``fillcolor = \"\"`` (but all nonempty strings must not have "
 "quotes in the cfg file)."
 msgstr ""
+"如果你想使用无填充色（即让海龟变透明），则你必须写 ``fillcolor = \"\"`` (但在but all nonempty strings "
+"must not have quotes in the cfg 文件中所有非空字符串都不可加引号)。"
 
 #: ../../library/turtle.rst:2354
 msgid ""

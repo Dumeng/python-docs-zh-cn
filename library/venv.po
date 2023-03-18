@@ -241,6 +241,10 @@ msgid ""
 "activation script is platform-specific (:samp:`{<venv>}` must be replaced by"
 " the path to the directory containing the virtual environment):"
 msgstr ""
+"一个虚拟环境可以通过位于其二进制文件目录 (在 POSIX 上为 ``bin``；在 Windows 上为 ``Scripts``) "
+"中的脚本来“激活”。 这会将该目录添加到你的 :envvar:`!PATH`，这样运行 :program:`python` 将发起调用该虚拟环境的 "
+"Python 解释器并且你可以运行该目录中安装的脚本而无需使用其完整路径。 激活脚本的发起调用方式是平台专属的 (:samp:`{<venv>}` "
+"必须用包含虚拟环境的目录的路径来替换):"
 
 #: ../../library/venv.rst:71
 msgid "Platform"

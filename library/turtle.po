@@ -2681,6 +2681,10 @@ msgid ""
 "duplications of the corresponding :class:`TurtleScreen`/:class:`Screen` "
 "methods.)"
 msgstr ""
+":func:`Turtle.tracer <tracer>`, :func:`Turtle.window_width <window_width>` 和"
+" :func:`Turtle.window_height <window_height>` 等方法已被去除。 具有这些名称和功能的方法现在只限于作为 "
+":class:`Screen` 的方法。 自这些方法派生的函数仍保持可用。 (实际上在 Python 2.6 中这些方法就已经只是对应 "
+":class:`TurtleScreen`/:class:`Screen` 方法的副本了。)"
 
 #: ../../library/turtle.rst:2484
 msgid ""
@@ -2688,6 +2692,8 @@ msgid ""
 ":func:`begin_fill` and :func:`end_fill` have changed slightly: now every "
 "filling process must be completed with an ``end_fill()`` call."
 msgstr ""
+":func:`!Turtle.fill` 方法已被去除。 :func:`begin_fill` 和 :func:`end_fill` "
+"的行为则有细微改变：现在每个填充过程必须以一个 ``end_fill()`` 调用来结束。"
 
 #: ../../library/turtle.rst:2489
 msgid ""
@@ -2696,6 +2702,8 @@ msgid ""
 "otherwise. This behaviour corresponds to a ``fill()`` call without arguments"
 " in Python 2.6."
 msgstr ""
+"增加了一个 :func:`Turtle.filling <filling>` 方法。 该方法返回一个布尔值：如果填充过程正在运行则为 "
+"``True``，否则为 ``False``。 此行为对应于 Python 2.6 中一个不带参数的 ``fill()`` 调用。"
 
 #: ../../library/turtle.rst:2495
 msgid "Changes since Python 3.0"
@@ -2709,6 +2717,9 @@ msgid ""
 ":func:`tiltangle` has been enhanced in functionality: it now can be used to "
 "get or set the tilt angle. :func:`settiltangle` has been deprecated."
 msgstr ""
+"增加了 :class:`Turtle` 方法 :func:`shearfactor`, :func:`shapetransform` 和 "
+":func:`get_shapepoly`。 这样就可以使用所有的常规线性变换来改变海龟形状。 :func:`tiltangle` "
+"的功能已得到加强：现在它可以被用来获取或设置倾斜角度。 :func:`settiltangle` 已被弃用。has been deprecated."
 
 #: ../../library/turtle.rst:2504
 msgid ""
@@ -2716,6 +2727,8 @@ msgid ""
 " to :func:`onkey`. As the latter binds actions to the key release event, an "
 "alias: :func:`onkeyrelease` was also added for it."
 msgstr ""
+"增加了 :class:`Screen` 方法 :func:`onkeypress` 作为 :func:`onkey` 的补充。 "
+"当后者将动作绑定到松开按键事件时，还将为它添加一个别名: :func:`onkeyrelease`。"
 
 #: ../../library/turtle.rst:2508
 msgid ""
@@ -2723,6 +2736,8 @@ msgid ""
 " longer a need to use the standalone :func:`mainloop` function when working "
 "with :class:`Screen` and :class:`Turtle` objects."
 msgstr ""
+"增加了 :func:`Screen.mainloop <mainloop>` 方法，这样在操作 :class:`Screen` 和 "
+":class:`Turtle` 对象时就无需再使用单独的 :func:`mainloop` 函数。"
 
 #: ../../library/turtle.rst:2512
 msgid ""
@@ -2730,6 +2745,9 @@ msgid ""
 ":func:`Screen.numinput <numinput>`. These pop up input dialogs and return "
 "strings and numbers respectively."
 msgstr ""
+"增加了两个输入方法: :func:`Screen.textinput <textinput>` 和 :func:`Screen.numinput "
+"<numinput>`。 这两个方法会弹出输入对话框接受输入并分别返回字符串和数字。 These pop up input dialogs and "
+"return strings and numbers respectively."
 
 #: ../../library/turtle.rst:2516
 msgid ""

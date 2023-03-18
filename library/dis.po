@@ -493,20 +493,22 @@ msgid ""
 "itself. It is automatically hidden by all ``dis`` utilities, but can be "
 "viewed with ``show_caches=True``."
 msgstr ""
+"此操作码不是真正的指令，它被用来为解释器标记额外空间以便在字节码中直接缓存有用的数据。 它会被所有 ``dis`` 工具自动隐藏，但可以通过 "
+"``show_caches=True`` 来查看。"
 
 #: ../../library/dis.rst:440
 msgid ""
 "Logically, this space is part of the preceding instruction. Many opcodes "
 "expect to be followed by an exact number of caches, and will instruct the "
 "interpreter to skip over them at runtime."
-msgstr ""
+msgstr "从逻辑上说，此空间是之前的指令的组成部分。 许多操作码都预期带有固定数量的缓存，并会指示解释器在运行时跳过它们。"
 
 #: ../../library/dis.rst:444
 msgid ""
 "Populated caches can look like arbitrary instructions, so great care should "
 "be taken when reading or modifying raw, adaptive bytecode containing "
 "quickened data."
-msgstr ""
+msgstr "被填充的缓存看起来可以像是任意的指令，因此在读取或修改包含快取数据的原始自适应字节码时应当非常小心。"
 
 #: ../../library/dis.rst:451
 msgid "**Unary operations**"
@@ -639,6 +641,8 @@ msgid ""
 "raised exception in TOS. Both are popped. If the exception is not "
 ":exc:`StopAsyncIteration`, it is re-raised."
 msgstr ""
+"终结一个 :keyword:`async for` 循环。 在等待下一项时处理被引发的异常。 栈包含了 TOS1 中的异步可迭代对象和 TOS "
+"中的已引发异常。 两者都将被弹出。 如果异常不是 :exc:`StopAsyncIteration`，它会被重新引发。"
 
 #: ../../library/dis.rst:572 ../../library/dis.rst:650
 #: ../../library/dis.rst:661

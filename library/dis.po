@@ -776,6 +776,8 @@ msgid ""
 "two items from the stack and pushes the exception to reraise or ``None`` if "
 "there isn't one."
 msgstr ""
+"合并来自 TOS 的已引发和已重新引发的异常，放入一个从 try-except* 代码块传播的异常组。 使用来自 TOS1 "
+"的原始异常组来重新构造由已重新引发的异常组成的结构体。 将两个条目弹出栈并推入要重新引发的异常或者在没有异常时推入 ``None``。"
 
 #: ../../library/dis.rst:703
 msgid ""
@@ -784,12 +786,14 @@ msgid ""
 "call ``context_manager.__exit__(*exc_info())`` when an exception has "
 "occurred in a :keyword:`with` statement."
 msgstr ""
+"调用栈中 4 号位置上的函数并附带代表位于栈顶的异常的参数 (type, val, tb)。 用于在 :keyword:`with` "
+"语句内发生异常时实现调用 ``context_manager.__exit__(*exc_info())``。"
 
 #: ../../library/dis.rst:710
 msgid ""
 "The ``__exit__`` function is in position 4 of the stack rather than 7. "
 "Exception representation on the stack now consist of one, not three, items."
-msgstr ""
+msgstr "``__exit__`` 函数位于栈的 4 号位而不是 7 号位。 栈中的异常表示形式现在由一项而不是三项组成。"
 
 #: ../../library/dis.rst:717
 msgid ""
@@ -811,6 +815,9 @@ msgid ""
 ":meth:`~object.__enter__` is called. Finally, the result of calling the "
 "``__enter__()`` method is pushed onto the stack."
 msgstr ""
+"此操作码会在 with 代码块开始之前执行多个操作。 首先，它将从上下文管理器加载 :meth:`~object.__exit__` 并将其推入栈顶以供"
+" :opcode:`WITH_EXCEPT_START` 后续使用。 然后，将调用 :meth:`~object.__enter__`。 最后，将调用 "
+"``__enter__()`` 方法的结果推入栈顶。"
 
 #: ../../library/dis.rst:742
 msgid "Push ``len(TOS)`` onto the stack."
@@ -846,12 +853,14 @@ msgid ""
 "contains all of the keys in TOS, push a :class:`tuple` containing the "
 "corresponding values. Otherwise, push ``None``."
 msgstr ""
+"TOS 是一个映射键的元组，而 TOS1 是匹配目标。 如果 TOS1 包含 TOS 中的所有键，则推入一个包含对应值的 :class:`tuple`。"
+" 在其他情况下，推入 ``None``。"
 
 #: ../../library/dis.rst:775 ../../library/dis.rst:1320
 msgid ""
 "Previously, this instruction also pushed a boolean value indicating success "
 "(``True``) or failure (``False``)."
-msgstr ""
+msgstr "在之前的版本中，该指令还会推入一个表示成功 (``True``) 或失败 (``False``) 的布尔值。"
 
 #: ../../library/dis.rst:782
 msgid ""
@@ -1136,24 +1145,26 @@ msgid ""
 "Pushes a reference to the cell contained in slot ``i`` of the \"fast "
 "locals\" storage.  The name of the variable is ``co_fastlocalnames[i]``."
 msgstr ""
+"推入一个指向包含在 \"fast locals\" 存储的 ``i`` 号槽位的单元的引用。 变量名为 "
+"``co_fastlocalnames[i]``。"
 
 #: ../../library/dis.rst:1102
 msgid ""
 "Note that ``LOAD_CLOSURE`` is effectively an alias for ``LOAD_FAST``. It "
 "exists to keep bytecode a little more readable."
-msgstr ""
+msgstr "注意 ``LOAD_CLOSURE`` 实际上是 ``LOAD_FAST`` 的一个别名。 它的存在是为了让字节码的可读性更好一些。"
 
 #: ../../library/dis.rst:1105 ../../library/dis.rst:1114
 #: ../../library/dis.rst:1126 ../../library/dis.rst:1135
 #: ../../library/dis.rst:1146
 msgid "``i`` is no longer offset by the length of ``co_varnames``."
-msgstr ""
+msgstr "``i`` 不再是长度为 ``co_varnames`` 的偏移量。"
 
 #: ../../library/dis.rst:1111
 msgid ""
 "Loads the cell contained in slot ``i`` of the \"fast locals\" storage. "
 "Pushes a reference to the object the cell contains on the stack."
-msgstr ""
+msgstr "加载包含在 \"fast locals\" 存储的 ``i`` 号槽位中的单元。 将一个指向该单元所包含对象的引用推入栈。"
 
 #: ../../library/dis.rst:1120
 msgid ""

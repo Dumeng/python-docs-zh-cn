@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-17 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -347,7 +347,7 @@ msgstr "我们已经添加呢一个外部导入::"
 msgid ""
 "This include provides declarations that we use to handle attributes, as "
 "described a bit later."
-msgstr ""
+msgstr "这包括提供被我们用来处理属性的声明，正如我们稍后所描述的。"
 
 #: ../../extending/newtypes_tutorial.rst:249
 msgid ""
@@ -356,10 +356,12 @@ msgid ""
 "strings containing first and last names.  The *number* attribute is a C "
 "integer."
 msgstr ""
+"现在 :class:`Custom` 类型的 C 结构体中有三个数据属性，*first*, *last* 和 *number*。 其中 *first* "
+"和 *last* 变量是包含头一个和末一个名称的 Python 字符串。 *number* 属性是一个 C 整数。"
 
 #: ../../extending/newtypes_tutorial.rst:253
 msgid "The object structure is updated accordingly::"
-msgstr ""
+msgstr "对象的结构将被相应地更新::"
 
 #: ../../extending/newtypes_tutorial.rst:262
 msgid ""

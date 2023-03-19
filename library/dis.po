@@ -1177,19 +1177,19 @@ msgstr "类似于 :opcode:`LOAD_DEREF` 但在查询单元之前会首先检查�
 msgid ""
 "Stores TOS into the cell contained in slot ``i`` of the \"fast locals\" "
 "storage."
-msgstr ""
+msgstr "将 TOS 存放到 \"fast locals\" 存储中包含在 ``i`` 号槽位的单元内。"
 
 #: ../../library/dis.rst:1141
 msgid ""
 "Empties the cell contained in slot ``i`` of the \"fast locals\" storage. "
 "Used by the :keyword:`del` statement."
-msgstr ""
+msgstr "清空 \"fast locals\" 存储中包含在 ``i`` 号槽位的单元。 被用于 :keyword:`del` 语句。"
 
 #: ../../library/dis.rst:1152
 msgid ""
 "Copies the ``n`` free variables from the closure into the frame. Removes the"
 " need for special code on the caller's side when calling closures."
-msgstr ""
+msgstr "将 ``n`` 个自由变量从闭包拷贝到帧中。 当调用闭包时不再需要调用方添加特殊的代码。"
 
 #: ../../library/dis.rst:1161
 msgid ""
@@ -1219,6 +1219,8 @@ msgid ""
 "including the named arguments specified by the preceding :opcode:`KW_NAMES`,"
 " if any. On the stack are (in ascending order), either:"
 msgstr ""
+"调用一个可调用对象并传入由 ``argc`` 所指定数量的参数，包括之前的 :opcode:`KW_NAMES` 所指定的关键字参数，如果有的话。 "
+"在栈上（按升序排列），可以是:"
 
 #: ../../library/dis.rst:1177
 msgid "NULL"
@@ -1252,14 +1254,14 @@ msgstr "其余的位置参数"
 msgid ""
 "``argc`` is the total of the positional and named arguments, excluding "
 "``self`` when a ``NULL`` is not present."
-msgstr ""
+msgstr "``argc`` 是位置和关键字参数的总和，当未提供 ``NULL`` 时将排除 ``self``。"
 
 #: ../../library/dis.rst:1192
 msgid ""
 "``CALL`` pops all arguments and the callable object off the stack, calls the"
 " callable object with those arguments, and pushes the return value returned "
 "by the callable object."
-msgstr ""
+msgstr "``CALL`` 将把所有参数和可调用对象弹出栈，附带这些参数调用该可调用对象，并将该可调用对象的返回值推入栈。"
 
 #: ../../library/dis.rst:1201
 msgid ""
@@ -1285,6 +1287,9 @@ msgid ""
 "method. Otherwise, ``NULL`` and the object return by the attribute lookup "
 "are pushed."
 msgstr ""
+"从 TOS 对象加载名为 ``co_names[namei]`` 的方法。 TOS 将被弹出。 该字节码可区分两种情况：如果 TOS "
+"有一个正确命名的方法 ，字节码会将未绑定方法和 TOS 推入栈。 TOS 将在调用该未绑定方法时被 :opcode:`CALL` 用作第一个参数 "
+"(``self``)。 在其他情况下，则将 ``NULL`` 和属性查找所返回的对象推入栈。"
 
 #: ../../library/dis.rst:1228
 msgid ""
@@ -1292,12 +1297,15 @@ msgid ""
 "effective specialization of calls. ``argc`` is the number of arguments as "
 "described in :opcode:`CALL`."
 msgstr ""
+"向 :opcode:`CALL` 添加前缀。 从逻辑上说这是个空操作。 它的存在是为了有效达成调用的专门化。 ``argc`` 是如 "
+":opcode:`CALL` 所描述的参数的数量."
 
 #: ../../library/dis.rst:1237
 msgid ""
 "Pushes a ``NULL`` to the stack. Used in the call sequence to match the "
 "``NULL`` pushed by :opcode:`LOAD_METHOD` for non-method calls."
 msgstr ""
+"将一个 ``NULL`` 推入栈。 在调用序列中用来匹配 :opcode:`LOAD_METHOD` 针对非方法调用推入栈的 ``NULL``。"
 
 #: ../../library/dis.rst:1246
 msgid ""
@@ -1305,6 +1313,8 @@ msgid ""
 " an internal variable for use by :opcode:`CALL`. ``co_consts[consti]`` must "
 "be a tuple of strings."
 msgstr ""
+"向 :opcode:`PRECALL` 添加前缀。 将指向 ``co_consts[consti]`` 的引用存入一个内部变量供 "
+":opcode:`CALL` 使用。 ``co_consts[consti]`` 必须为一个字符串数组。"
 
 #: ../../library/dis.rst:1255
 msgid ""

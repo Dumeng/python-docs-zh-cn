@@ -433,6 +433,10 @@ msgid ""
 " often ignore the arguments, leaving the argument handling to initializer "
 "(a.k.a. ``tp_init`` in C or ``__init__`` in Python) methods."
 msgstr ""
+"``tp_new`` 将接受被实例化的类型（不要求为 "
+"``CustomType``，如果被实例化的是一个子类）以及在该类型被调用时传入的任何参数，并预期返回所创建的实例。 ``tp_new`` "
+"处理句柄总是接受位置和关键字参数，但它们总是会忽略这些参数，而将参数处理留给初始化（即 C 中的 ``tp_init`` 或 Python 中的 "
+"``__init__`` 函数）方法来执行。"
 
 #: ../../extending/newtypes_tutorial.rst:335
 msgid ""

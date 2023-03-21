@@ -442,13 +442,13 @@ msgstr ""
 msgid ""
 "``tp_new`` shouldn't call ``tp_init`` explicitly, as the interpreter will do"
 " it itself."
-msgstr ""
+msgstr "``tp_new`` 不应显式地调用 ``tp_init``，因为解释器会自行调用它。"
 
 #: ../../extending/newtypes_tutorial.rst:338
 msgid ""
 "The ``tp_new`` implementation calls the :c:member:`~PyTypeObject.tp_alloc` "
 "slot to allocate memory::"
-msgstr ""
+msgstr "``tp_new`` 实现会调用 :c:member:`~PyTypeObject.tp_alloc` 槽位来分配内存::"
 
 #: ../../extending/newtypes_tutorial.rst:343
 msgid ""
@@ -456,6 +456,8 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_alloc` result against ``NULL`` before "
 "proceeding."
 msgstr ""
+"由于内存分配可能会失败，我们必须在继续执行之前检查 :c:member:`~PyTypeObject.tp_alloc` 结果确认其不为 "
+"``NULL``。"
 
 #: ../../extending/newtypes_tutorial.rst:347
 msgid ""
@@ -464,6 +466,8 @@ msgid ""
 "class, which is :class:`object` by default.  Most types use the default "
 "allocation strategy."
 msgstr ""
+"我们没有自行填充 :c:member:`~PyTypeObject.tp_alloc` 槽位。 而是由 :c:func:`PyType_Ready` "
+"通过从我们的基类继承来替我们填充它，其中默认为 :class:`object`。 大部分类型都是使用默认的分配策略。"
 
 #: ../../extending/newtypes_tutorial.rst:353
 msgid ""
@@ -477,16 +481,22 @@ msgid ""
 "may not work correctly. (Specifically, you may not be able to create "
 "instances of such subclasses without getting a :exc:`TypeError`.)"
 msgstr ""
+"如果你要创建一个协作 :c:member:`~PyTypeObject.tp_new` (它会调用基类型的 "
+":c:member:`~PyTypeObject.tp_new` 或 :meth:`__new__`)，那么你 *不能* "
+"在运行时尝试使用方法解析顺序来确定要调用的方法。 必须总是静态地确定你要调用的类型，并直接调用它的 "
+":c:member:`~PyTypeObject.tp_new`，或是通过 ``type->tp_base->tp_new``。 "
+"如果你不这样做，你的类型的同样从其他 Python 定义的类继承的 Python 子类可能无法正确工作。 "
+"(特别地，你可能无法创建这样的子类的实例而是会引发 :exc:`TypeError`。)"
 
 #: ../../extending/newtypes_tutorial.rst:363
 msgid ""
 "We also define an initialization function which accepts arguments to provide"
 " initial values for our instance::"
-msgstr ""
+msgstr "我们还定义了一个接受参数来为我们的实例提供初始值的初始化函数::"
 
 #: ../../extending/newtypes_tutorial.rst:392
 msgid "by filling the :c:member:`~PyTypeObject.tp_init` slot. ::"
-msgstr ""
+msgstr "通过填充 :c:member:`~PyTypeObject.tp_init` 槽位。 ::"
 
 #: ../../extending/newtypes_tutorial.rst:396
 msgid ""
@@ -495,6 +505,8 @@ msgid ""
 "created.  Initializers always accept positional and keyword arguments, and "
 "they should return either ``0`` on success or ``-1`` on error."
 msgstr ""
+":c:member:`~PyTypeObject.tp_init` 槽位在 Python 中暴露为 :meth:`__init__` 方法。 "
+"它被用来在对象被创建后初始化它。 初始化器总是接受位置和关键字参数，它们应当在成功时返回 ``0`` 而在出错时返回 ``-1``。"
 
 #: ../../extending/newtypes_tutorial.rst:401
 msgid ""

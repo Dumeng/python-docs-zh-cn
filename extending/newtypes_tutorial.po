@@ -564,12 +564,12 @@ msgstr ""
 msgid ""
 "We want to expose our instance variables as attributes. There are a number "
 "of ways to do that. The simplest way is to define member definitions::"
-msgstr ""
+msgstr "我们可能会想将我们的实例变量暴露为属性。 有几种方式可以做到这一点。 最简单的方式是定义成员的定义::"
 
 #: ../../extending/newtypes_tutorial.rst:447
 msgid ""
 "and put the definitions in the :c:member:`~PyTypeObject.tp_members` slot::"
-msgstr ""
+msgstr "并将定义放置到 :c:member:`~PyTypeObject.tp_members` 槽位中::"
 
 #: ../../extending/newtypes_tutorial.rst:451
 msgid ""
@@ -577,6 +577,8 @@ msgid ""
 "documentation string.  See the :ref:`Generic-Attribute-Management` section "
 "below for details."
 msgstr ""
+"每个成员的定义都有成员名称、类型、偏移量、访问旗标和文档字符串。 请参阅下面的 :ref:`Generic-Attribute-Management` "
+"小节来了解详情。section below for details."
 
 #: ../../extending/newtypes_tutorial.rst:455
 msgid ""
@@ -588,12 +590,15 @@ msgid ""
 "non-``NULL`` values, the members can be set to ``NULL`` if the attributes "
 "are deleted."
 msgstr ""
+"此方式的缺点之一是它没有提供限制可被赋值给 Python 属性的对象类型的办法。 我们预期 first 和 last "
+"的名称为字符串，但它们可以被赋值为任意 Python 对象。 此外，这些属性还可以被删除，并将 C 指针设为 ``NULL``。 "
+"即使我们可以保证这些成员被初始化为非 ``NULL`` 值，如果这些属性被删除这些成员仍可被设为 ``NULL``。"
 
 #: ../../extending/newtypes_tutorial.rst:462
 msgid ""
 "We define a single method, :meth:`Custom.name()`, that outputs the objects "
 "name as the concatenation of the first and last names. ::"
-msgstr ""
+msgstr "我们定义了一个单独的方法，:meth:`Custom.name()`，它将对象名称输出为 first 和 last 名称的拼接。 ::"
 
 #: ../../extending/newtypes_tutorial.rst:479
 msgid ""

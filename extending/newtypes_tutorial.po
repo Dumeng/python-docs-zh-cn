@@ -610,6 +610,9 @@ msgid ""
 " to accept a positional argument tuple or keyword argument dictionary. This "
 "method is equivalent to the Python method:"
 msgstr ""
+"该方法的实现形式是一个接受 :class:`Custom` (或 :class:`Custom` 的子类) 实例作为第一个参数的 C 函数。 "
+"方法总是接受一个实例作为第一个参数。 方法也总是接受位置和关键字参数，但在本例中我们未接受任何参数也不需要接受位置参数元组或关键字参数字典。 "
+"该方法等价于以下 Python 方法:"
 
 #: ../../extending/newtypes_tutorial.rst:492
 msgid ""
@@ -619,22 +622,25 @@ msgid ""
 " of these attributes and to restrict the attribute values to be strings.  "
 "We'll see how to do that in the next section."
 msgstr ""
+"请注意我们必须检查我们的 :attr:`first` 和 :attr:`last` 成员是否可能为 ``NULL``。 "
+"这是因为它们可以被删除，在此情况下它们会被设为 ``NULL``。 更好的做法是防止删除这些属性并将属性的值限制为字符串。 "
+"我们将在下一节了解如何做到这一点。"
 
 #: ../../extending/newtypes_tutorial.rst:498
 msgid ""
 "Now that we've defined the method, we need to create an array of method "
 "definitions::"
-msgstr ""
+msgstr "现在我们已经定义好了方法，我们需要创建一个方法定义数组::"
 
 #: ../../extending/newtypes_tutorial.rst:508
 msgid ""
 "(note that we used the :const:`METH_NOARGS` flag to indicate that the method"
 " is expecting no arguments other than *self*)"
-msgstr ""
+msgstr "（请注意我们使用 :const:`METH_NOARGS` 旗标来指明该方法不准备接受 *self* 以外的任何参数）"
 
 #: ../../extending/newtypes_tutorial.rst:511
 msgid "and assign it to the :c:member:`~PyTypeObject.tp_methods` slot::"
-msgstr ""
+msgstr "并将其赋给 :c:member:`~PyTypeObject.tp_methods` 槽位::"
 
 #: ../../extending/newtypes_tutorial.rst:515
 msgid ""

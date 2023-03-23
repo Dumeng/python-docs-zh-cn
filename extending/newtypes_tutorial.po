@@ -649,6 +649,8 @@ msgid ""
 " about the type of the object being created or used, so all we need to do is"
 " to add the :const:`Py_TPFLAGS_BASETYPE` to our class flag definition::"
 msgstr ""
+"最后，我们将使我们的类型可被用作派生子类的基类。 我们精心地编写我们的方法以便它们不会随意假定被创建或使用的对象类型，所以我们需要做的就是将 "
+":const:`Py_TPFLAGS_BASETYPE` 添加到我们的类旗标定义中::"
 
 #: ../../extending/newtypes_tutorial.rst:522
 msgid ""
@@ -656,14 +658,16 @@ msgid ""
 "module name in the :c:type:`PyModuleDef` struct, and update the full class "
 "name in the :c:type:`PyTypeObject` struct."
 msgstr ""
+"我们将 :c:func:`PyInit_custom` 重命名为 :c:func:`PyInit_custom2`，更新 "
+":c:type:`PyModuleDef` 结构体中的模块名，并更新 :c:type:`PyTypeObject` 结构体中的完整类名。"
 
 #: ../../extending/newtypes_tutorial.rst:526
 msgid "Finally, we update our :file:`setup.py` file to build the new module:"
-msgstr ""
+msgstr "最后，我们更新我们的 :file:`setup.py` 文件来生成新的模块。"
 
 #: ../../extending/newtypes_tutorial.rst:539
 msgid "Providing finer control over data attributes"
-msgstr ""
+msgstr "提供对于数据属性的更精细控制Providing finer control over data attributes"
 
 #: ../../extending/newtypes_tutorial.rst:541
 msgid ""
@@ -673,6 +677,9 @@ msgid ""
 ":attr:`last` could be set to non-string values or even deleted. We want to "
 "make sure that these attributes always contain strings."
 msgstr ""
+"在本小节中，我们将对 :class:`Custom` 示例中 :attr:`first` 和 :attr:`last` 属性的设置提供更细致的控制。 "
+"在我们上一版本的模块中，实例变量 :attr:`first` 和 :attr:`last` 可以被设为非字符串值甚至被删除。 "
+"我们希望这些属性总是包含字符串。"
 
 #: ../../extending/newtypes_tutorial.rst:550
 msgid ""
@@ -680,6 +687,8 @@ msgid ""
 "attributes, we'll use custom getter and setter functions.  Here are the "
 "functions for getting and setting the :attr:`first` attribute::"
 msgstr ""
+"为了提供对于 :attr:`first` 和 :attr:`last` 属性更强的控制，我们将使用自定义的读取和设置函数。 下面就是用于读取和设置 "
+":attr:`first` 属性的函数::"
 
 #: ../../extending/newtypes_tutorial.rst:581
 msgid ""
@@ -945,7 +954,7 @@ msgstr "脚注"
 msgid ""
 "This is true when we know that the object is a basic type, like a string or "
 "a float."
-msgstr ""
+msgstr "当我们知道该对象属于基本类型，如字符串或浮点数时情况就是如此。"
 
 #: ../../extending/newtypes_tutorial.rst:897
 msgid ""

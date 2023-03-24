@@ -295,6 +295,9 @@ msgid ""
 ":exc:`asyncio.CancelledError` directly subclasses :exc:`BaseException` so "
 "most code will not need to be aware of it."
 msgstr ""
+"推荐协程使用 ``try/finally`` 代码块来可靠地执行清理逻辑。 对于 :exc:`asyncio.CancelledError` "
+"被显式捕获的情况，它通常应当在清理完成时被传播。 :exc:`asyncio.CancelledError` 会直接子类化 "
+":exc:`BaseException` 因此大多数代码都不需要关心这一点。"
 
 #: ../../library/asyncio-task.rst:306
 msgid ""
@@ -654,17 +657,17 @@ msgstr ":func:`asyncio.timeout` 所产生的上下文管理器可以被重新调
 msgid ""
 "An :ref:`asynchronous context manager <async-context-managers>` for "
 "cancelling overdue coroutines."
-msgstr ""
+msgstr "一个用于撤销已过期协程的 :ref:`异步内容管理器 <async-context-managers>`。"
 
 #: ../../library/asyncio-task.rst:632
 msgid ""
 "``when`` should be an absolute time at which the context should time out, as"
 " measured by the event loop's clock:"
-msgstr ""
+msgstr "``when`` 应当是一个指明上下文将要过期的绝对时间，由事件循环的时钟来计时。"
 
 #: ../../library/asyncio-task.rst:635
 msgid "If ``when`` is ``None``, the timeout will never trigger."
-msgstr ""
+msgstr "如果 ``when`` 为 ``None``，则超时将永远不会被触发。"
 
 #: ../../library/asyncio-task.rst:636
 msgid ""

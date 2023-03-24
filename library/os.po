@@ -4706,6 +4706,8 @@ msgid ""
 "The standard way to exit is :func:`sys.exit(n) <sys.exit>`.  :func:`!_exit` "
 "should normally only be used in the child process after a :func:`fork`."
 msgstr ""
+"退出的标准方式是使用 :func:`sys.exit(n) <sys.exit>`。 :func:`!_exit` 通常只应在 :func:`fork`"
+" 所生成的子进程中使用。"
 
 #: ../../library/os.rst:3738
 msgid ""

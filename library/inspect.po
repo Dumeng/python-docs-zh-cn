@@ -901,6 +901,9 @@ msgid ""
 "source code cannot be retrieved. A :exc:`TypeError` is raised if the object "
 "is a built-in module, class, or function."
 msgstr ""
+"返回一个源代码行的列表和对象的起始行号。 参数可以是一个模块、类、方法、函数、回溯或者代码对象。 "
+"源代码将以与该对象所对应的行的列表的形式返回并且行号指明其中第一行代码出现在初始源文件的那个位置。 如果源代码无法被获取则会引发 "
+":exc:`OSError`。 如果对象是一个内置模块、类或函数则会引发 :exc:`TypeError`。"
 
 #: ../../library/inspect.rst:559 ../../library/inspect.rst:573
 msgid ""
@@ -916,6 +919,8 @@ msgid ""
 "the source code cannot be retrieved. A :exc:`TypeError` is raised if the "
 "object is a built-in module, class, or function."
 msgstr ""
+"返回对象的源代码文本。 参数可以是一个模块、类、方法、函数、回溯帧或代码对象。 源代码将以单个字符串的形式被返回。 如果源代码无法被获取则会引发 "
+":exc:`OSError`。 如果对象是一个内置模块、类或函数则会引发 :exc:`TypeError`。"
 
 #: ../../library/inspect.rst:580
 msgid ""

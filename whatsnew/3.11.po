@@ -999,6 +999,8 @@ msgid ""
 "respectively are supported, the former equals to ``dup2`` usage while the "
 "latter set the ``FD_CLOEXEC`` flag in addition."
 msgstr ""
+"在 FreeBSD 上，:data:`!F_DUP2FD` 和 :data:`!F_DUP2FD_CLOEXEC` 旗标分别受到支持，前者等价于 "
+"``dup2`` 用法而后者额外设置了 ``FD_CLOEXEC`` 旗标。"
 
 #: ../../whatsnew/3.11.rst:735
 msgid "fractions"

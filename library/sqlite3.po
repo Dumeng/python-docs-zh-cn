@@ -131,6 +131,9 @@ msgid ""
 "create a connection to the database :file:`tutorial.db` in the current "
 "working directory, implicitly creating it if it does not exist:"
 msgstr ""
+"首先，我们需要创建一个新的数据库并打开一个数据库连接以允许 :mod:`!sqlite3` 通过它来动作。 调用 "
+":func:`sqlite3.connect` 来创建与当前工作目录下 :file:`tutorial.db` "
+"数据库的连接，如果它不存在则会隐式地创建它:"
 
 #: ../../library/sqlite3.rst:84
 msgid ""

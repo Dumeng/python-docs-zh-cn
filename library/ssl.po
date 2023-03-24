@@ -12,8 +12,8 @@
 # Hissy <aozora@live.cn>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -22,7 +22,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-24 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1665,6 +1665,9 @@ msgid ""
 "returns ``None`` if no connection has been established or the socket is a "
 "client socket."
 msgstr ""
+"返回在客户端和服务器均可用的密码列表。 所返回列表的每个条目都是由三个值组成的元组其中包含密码名称、定义其使用方式的 SSL "
+"协议版本，以及密码所使用的加密比特位数量。 如果连接尚未建立或套接字为客户端套接字则 :meth:`~SSLSocket.shared_ciphers`"
+" 将返回 ``None``。"
 
 #: ../../library/ssl.rst:1323
 msgid ""

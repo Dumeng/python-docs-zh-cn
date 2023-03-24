@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 14:15+0000\n"
+"POT-Creation-Date: 2023-03-24 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -335,13 +335,11 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:272
 msgid ""
-"How many seconds the connection should wait before raising an exception, if "
-"the database is locked by another connection. If another connection opens a "
-"transaction to modify the database, it will be locked until that transaction"
-" is committed. Default five seconds."
+"How many seconds the connection should wait before raising an "
+":exc:`OperationalError` when a table is locked. If another connection opens "
+"a transaction to modify a table, that table will be locked until the "
+"transaction is committed. Default five seconds."
 msgstr ""
-"当已有其他的连接创建一个事务去修改数据库时，数据库将会在事务完成提交前加锁 (locked) ，在此期间数据库无法被修改。如果数据库已经被其他连接加锁 "
-"，该参数指明该连接在得到抛出的异常 (exception) 前会等待多少秒。默认值为5秒。"
 
 #: ../../library/sqlite3.rst:279
 msgid ""
@@ -916,30 +914,31 @@ msgid ""
 "``finalize()``: Return the final result of the aggregate as :ref:`a type "
 "natively supported by SQLite <sqlite3-types>`."
 msgstr ""
+"``finalize()``: 将聚合的最终结果作为 :ref:`一个 SQLite 原生支持的类型 <sqlite3-types>` 返回。"
 
 #: ../../library/sqlite3.rst:699
 msgid ""
 "The number of arguments that the ``step()`` method must accept is controlled"
 " by *n_arg*."
-msgstr ""
+msgstr "``step()`` 方法所必须接受的参数数量是由 *n_arg* 控制的。"
 
 #: ../../library/sqlite3.rst:702
 msgid "Set to ``None`` to remove an existing SQL aggregate function."
-msgstr ""
+msgstr "设为 ``None`` 以移除现有的 SQL 聚合函数。"
 
 #: ../../library/sqlite3.rst:737
 msgid "Create or remove a user-defined aggregate window function."
-msgstr ""
+msgstr "创建或移除用户定义的聚合窗口函数。"
 
 #: ../../library/sqlite3.rst:739
 msgid "The name of the SQL aggregate window function to create or remove."
-msgstr ""
+msgstr "要创建或移除的 SQL 聚合窗口函数的名称。"
 
 #: ../../library/sqlite3.rst:742
 msgid ""
 "The number of arguments the SQL aggregate window function can accept. If "
 "``-1``, it may take any number of arguments."
-msgstr ""
+msgstr "SQL 聚合窗口函数可接受的参数数量。 如为 ``-1``，则可以接受任意数量的参数。"
 
 #: ../../library/sqlite3.rst:746
 msgid ""
@@ -959,11 +958,11 @@ msgstr "此类必须实现以下方法："
 
 #: ../../library/sqlite3.rst:749
 msgid "``step()``: Add a row to the current window."
-msgstr ""
+msgstr "``step()``: 向当前窗口添加一行。"
 
 #: ../../library/sqlite3.rst:750
 msgid "``value()``: Return the current value of the aggregate."
-msgstr ""
+msgstr "``value()``: 返回聚合的当前值。"
 
 #: ../../library/sqlite3.rst:751
 msgid "``inverse()``: Remove a row from the current window."
@@ -1023,7 +1022,8 @@ msgstr ""
 #: ../../library/sqlite3.rst:868
 msgid ""
 "Call this method from a different thread to abort any queries that might be "
-"executing on the connection. Aborted queries will raise an exception."
+"executing on the connection. Aborted queries will raise an "
+":exc:`OperationalError`."
 msgstr ""
 
 #: ../../library/sqlite3.rst:875

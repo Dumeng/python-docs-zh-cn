@@ -780,6 +780,8 @@ msgid ""
 "zero. Fortunately, Python's cyclic garbage collector will eventually figure "
 "out that the list is garbage and free it."
 msgstr ""
+"在这个例子中，我们创建了一个包含其自身的列表。 当我们删除它的时候，它将仍然具有一个来自其本身的引用。 它的引用计数并未降为零。 幸运的是，Python"
+" 的循环垃圾回收器将最终发现该列表是无用的垃圾并释放它。"
 
 #: ../../extending/newtypes_tutorial.rst:676
 msgid ""
@@ -789,6 +791,9 @@ msgid ""
 ":class:`Custom`, and subclasses may add arbitrary attributes.  For any of "
 "those two reasons, :class:`Custom` objects can participate in cycles:"
 msgstr ""
+"在 :class:`Custom` 示例的第二个版本中，我们允许任意各类的对象存储到 :attr:`first` 或 :attr:`last` 属性中 "
+"[#]_。 此外，在第二个和第三个版本中，我们还允许子类化 :class:`Custom`，并且子类可以添加任意属性。 "
+"出于这两个原因中的任何一个，:class:`Custom` 对象都可以加入循环:"
 
 #: ../../extending/newtypes_tutorial.rst:690
 msgid ""

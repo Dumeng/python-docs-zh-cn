@@ -309,6 +309,11 @@ msgid ""
 "suppressing :exc:`asyncio.CancelledError` is truly desired, it is necessary "
 "to also call ``uncancel()`` to completely remove the cancellation state."
 msgstr ""
+"启用结构化并发的 asyncio 组件，如 :class:`asyncio.TaskGroup` 和 "
+":func:`asyncio.timeout`，在内部是使用撤销操作来实现的因而在协程屏蔽了 :exc:`asyncio.CancelledError`"
+" 时可能无法正常工作。 类似地，用户代码通常也不应调用 :meth:`uncancel <asyncio.Task.uncancel>`。 "
+"但是，在确实想要屏蔽 :exc:`asyncio.CancelledError` 的情况下，则还有必要调用 ``uncancel()`` "
+"来完全移除撤销状态。"
 
 #: ../../library/asyncio-task.rst:318
 msgid "Task Groups"
@@ -673,7 +678,7 @@ msgstr "如果 ``when`` 为 ``None``，则超时将永远不会被触发。"
 msgid ""
 "If ``when < loop.time()``, the timeout will trigger on the next iteration of"
 " the event loop."
-msgstr ""
+msgstr "如果 ``when < loop.time()``，则超时将在事件循环的下一次迭代中被触发。"
 
 #: ../../library/asyncio-task.rst:641
 msgid ""
@@ -682,7 +687,7 @@ msgstr "返回当前终止点，或者如果未设置当前终止点则返回 ``
 
 #: ../../library/asyncio-task.rst:646
 msgid "Reschedule the timeout."
-msgstr ""
+msgstr "重新安排超时。"
 
 #: ../../library/asyncio-task.rst:650
 msgid ""
@@ -1229,6 +1234,10 @@ msgid ""
 "decide to suppress the cancellation, it needs to call :meth:`Task.uncancel` "
 "in addition to catching the exception."
 msgstr ""
+"协程随后将有机会进行清理甚至通过 :keyword:`try` ... ... ``except CancelledError`` ... "
+":keyword:`finally` 代码块抑制异常来拒绝请求。 因此，不同于 :meth:`Future.cancel`, "
+":meth:`Task.cancel` 不保证 Task 会被取消，虽然完全抑制撤销并不常见也很不建议这样做。 "
+"但是如果协程决定要抑制撤销，那么它需要额外调用 :meth:`Task.uncancel` 来捕获异常。"
 
 #: ../../library/asyncio-task.rst:1142
 msgid "Added the *msg* parameter."
@@ -1300,7 +1309,7 @@ msgid ""
 "If end-user code is, for some reason, suppresing cancellation by catching "
 ":exc:`CancelledError`, it needs to call this method to remove the "
 "cancellation state."
-msgstr ""
+msgstr "如果最终用户代码出于某种原因通过捕获 :exc:`CancelledError` 抑制撤销操作，那么它需要调用此方法来移除撤销状态。"
 
 #: ../../library/asyncio-task.rst:1236
 msgid ""

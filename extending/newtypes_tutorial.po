@@ -896,10 +896,12 @@ msgid ""
 "handlers, we'd need to modify them for cyclic garbage collection.  Most "
 "extensions will use the versions automatically provided."
 msgstr ""
+"这样就差不多了。 如果我们编写了自定义的 :c:member:`~PyTypeObject.tp_alloc` 或 "
+":c:member:`~PyTypeObject.tp_free` 处理句柄，则我们需要针对循环垃圾回收来修改它。 大多数扩展都将使用自动提供的版本。"
 
 #: ../../extending/newtypes_tutorial.rst:794
 msgid "Subclassing other types"
-msgstr ""
+msgstr "子类化其他类型"
 
 #: ../../extending/newtypes_tutorial.rst:796
 msgid ""
@@ -908,6 +910,8 @@ msgid ""
 "can easily use the :c:type:`PyTypeObject` it needs. It can be difficult to "
 "share these :c:type:`PyTypeObject` structures between extension modules."
 msgstr ""
+"创建派生自现有类型的新类型是有可能的。 最容易的做法是从内置类型继承，因为扩展可以方便地使用它所需要的 :c:type:`PyTypeObject`。 "
+"在不同扩展模块之间共享这些 :c:type:`PyTypeObject` 结构体则是困难的。"
 
 #: ../../extending/newtypes_tutorial.rst:801
 msgid ""
@@ -916,6 +920,8 @@ msgid ""
 "with regular lists, but will have an additional :meth:`increment` method "
 "that increases an internal counter:"
 msgstr ""
+"在这个例子中我们将创建一个继承自内置 :class:`list` 类型的 :class:`SubList` 类型。 "
+"这个新类型将完全兼容常规列表，但将拥有一个额外的 :meth:`increment` 来增加内部计数器的值:"
 
 #: ../../extending/newtypes_tutorial.rst:821
 msgid ""

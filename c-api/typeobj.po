@@ -2924,11 +2924,11 @@ msgstr ""
 
 #: ../../c-api/typeobj.rst:1878
 msgid "For static subtypes, :c:type:`PyBaseObject_Type` uses PyObject_Del."
-msgstr ""
+msgstr "对于静态子类型，:c:type:`PyBaseObject_Type` 使用 PyObject_Del。"
 
 #: ../../c-api/typeobj.rst:1883
 msgid "An optional pointer to a function called by the garbage collector."
-msgstr ""
+msgstr "可选的指向垃圾回收器所调用的函数的指针。"
 
 #: ../../c-api/typeobj.rst:1885
 msgid ""
@@ -2983,13 +2983,13 @@ msgstr ""
 #: ../../c-api/typeobj.rst:1961 ../../c-api/typeobj.rst:1971
 #: ../../c-api/typeobj.rst:1985
 msgid "This field is not inherited."
-msgstr ""
+msgstr "这个字段不会被继承。"
 
 #: ../../c-api/typeobj.rst:1934
 msgid ""
 "Tuple containing the expanded set of base types, starting with the type "
 "itself and ending with :class:`object`, in Method Resolution Order."
-msgstr ""
+msgstr "包含基类型的扩展集的元组，以类型本身开始并以 :class:`object` 作为结束，使用方法解析顺序。"
 
 #: ../../c-api/typeobj.rst:1942
 msgid ""

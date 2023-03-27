@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-24 14:14+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../c-api/structures.rst:6
 msgid "Common Object Structures"
-msgstr "公用对象的结构"
+msgstr "公用对象结构体"
 
 #: ../../c-api/structures.rst:8
 msgid ""
@@ -61,6 +61,10 @@ msgid ""
 "can be cast to a :c:expr:`PyObject*`.  Access to the members must be done by"
 " using the macros :c:macro:`Py_REFCNT` and :c:macro:`Py_TYPE`."
 msgstr ""
+"所有对象类型都是此类型的扩展。 这是一个包含了 Python 将对象的指针当作对象来处理所需的信息的类型。 "
+"在一个普通的“发行”编译版中，它只包含对象的引用计数和指向对应类型对象的指针。 没有什么对象被实际声明为 "
+":c:type:`PyObject`，但每个指向 Python 对象的指针都可以被转换为 :c:expr:`PyObject*`。 "
+"对成员的访问必须通过使用 :c:macro:`Py_REFCNT` 和 :c:macro:`Py_TYPE` 宏来完成。"
 
 #: ../../c-api/structures.rst:37
 msgid ""
@@ -70,23 +74,26 @@ msgid ""
 "must be done by using the macros :c:macro:`Py_REFCNT`, :c:macro:`Py_TYPE`, "
 "and :c:macro:`Py_SIZE`."
 msgstr ""
+"这是一个 :c:type:`PyObject` 的添加了 :attr:`ob_size` 字段的扩展。 它仅用于具有某种 *长度* 标记的对象。 "
+"此类型并不经常在 Python/C API 中出现。 对成员的访问必须通过使用 :c:macro:`Py_REFCNT`, "
+":c:macro:`Py_TYPE` 和 :c:macro:`Py_SIZE` 宏来完成。"
 
 #: ../../c-api/structures.rst:46
 msgid ""
 "This is a macro used when declaring new types which represent objects "
 "without a varying length.  The PyObject_HEAD macro expands to::"
-msgstr ""
+msgstr "这是一个在声明代表无可变长度对象的新类型时所使用的宏。 PyObject_HEAD 宏被扩展为::"
 
 #: ../../c-api/structures.rst:51
 msgid "See documentation of :c:type:`PyObject` above."
-msgstr ""
+msgstr "参见上面 :c:type:`PyObject` 的文档。"
 
 #: ../../c-api/structures.rst:56
 msgid ""
 "This is a macro used when declaring new types which represent objects with a"
 " length that varies from instance to instance. The PyObject_VAR_HEAD macro "
 "expands to::"
-msgstr ""
+msgstr "这是一个在声明代表每个实例具有可变长度的对象时所使用的宏。 PyObject_VAR_HEAD 宏被扩展为::"
 
 #: ../../c-api/structures.rst:62
 msgid "See documentation of :c:type:`PyVarObject` above."
@@ -125,68 +132,69 @@ msgstr "返回一个 :term:`borrowed reference`。"
 
 #: ../../c-api/structures.rst:102
 msgid "Use the :c:func:`Py_SET_TYPE` function to set an object type."
-msgstr ""
+msgstr "使用 :c:func:`Py_SET_TYPE` 函数来设置一个对象类型。"
 
 #: ../../c-api/structures.rst:104
 msgid ""
 ":c:func:`Py_TYPE()` is changed to an inline static function. The parameter "
 "type is no longer :c:expr:`const PyObject*`."
-msgstr ""
+msgstr ":c:func:`Py_TYPE()` 被改为一个内联的静态函数。 形参类型不再是 :c:expr:`const PyObject*`。"
 
 #: ../../c-api/structures.rst:111
 msgid ""
 "Return non-zero if the object *o* type is *type*. Return zero otherwise. "
 "Equivalent to: ``Py_TYPE(o) == type``."
-msgstr ""
+msgstr "如果对象 *o* 的类型为 *type* 则返回非零值。 否则返回零。 等价于: ``Py_TYPE(o) == type``。"
 
 #: ../../c-api/structures.rst:119
 msgid "Set the object *o* type to *type*."
-msgstr ""
+msgstr "将对象 *o* 的类型设为 *type*。"
 
 #: ../../c-api/structures.rst:126
 msgid "Get the reference count of the Python object *o*."
-msgstr ""
+msgstr "获取 Python 对象 *o* 的引用计数。"
 
 #: ../../c-api/structures.rst:128
 msgid ""
 "Use the :c:func:`Py_SET_REFCNT()` function to set an object reference count."
-msgstr ""
+msgstr "使用 :c:func:`Py_SET_REFCNT()` 函数来设置一个对象引用计数。"
 
 #: ../../c-api/structures.rst:130
 msgid "The parameter type is no longer :c:expr:`const PyObject*`."
-msgstr ""
+msgstr "形参类型不再是 :c:expr:`const PyObject*`。"
 
 #: ../../c-api/structures.rst:133
 msgid ":c:func:`Py_REFCNT()` is changed to the inline static function."
-msgstr ""
+msgstr ":c:func:`Py_REFCNT()` 被改为内联的静态函数。"
 
 #: ../../c-api/structures.rst:139
 msgid "Set the object *o* reference counter to *refcnt*."
-msgstr ""
+msgstr "将对象 *o* 的引用计数器设为 *refcnt*。"
 
 #: ../../c-api/structures.rst:146
 msgid "Get the size of the Python object *o*."
-msgstr ""
+msgstr "获取 Python 对象 *o* 的大小。"
 
 #: ../../c-api/structures.rst:148
 msgid "Use the :c:func:`Py_SET_SIZE` function to set an object size."
-msgstr ""
+msgstr "使用 :c:func:`Py_SET_SIZE` 函数来设置一个对象大小。"
 
 #: ../../c-api/structures.rst:150
 msgid ""
 ":c:func:`Py_SIZE()` is changed to an inline static function. The parameter "
 "type is no longer :c:expr:`const PyVarObject*`."
 msgstr ""
+":c:func:`Py_SIZE()` 被改为一个内联静态函数。 形参类型不再是 :c:expr:`const PyVarObject*`。"
 
 #: ../../c-api/structures.rst:157
 msgid "Set the object *o* size to *size*."
-msgstr ""
+msgstr "将对象 *o* 的大小设为 *size*。"
 
 #: ../../c-api/structures.rst:164
 msgid ""
 "This is a macro which expands to initialization values for a new "
 ":c:type:`PyObject` type.  This macro expands to::"
-msgstr ""
+msgstr "这是一个为新的 :c:type:`PyObject` 类型扩展初始化值的宏。 该宏扩展为::"
 
 #: ../../c-api/structures.rst:173
 msgid ""
@@ -194,10 +202,11 @@ msgid ""
 ":c:type:`PyVarObject` type, including the :attr:`ob_size` field. This macro "
 "expands to::"
 msgstr ""
+"这是一个为新的 :c:type:`PyVarObject` 类型扩展初始化值的宏，包括 :attr:`ob_size` 字段。 该宏扩展为::"
 
 #: ../../c-api/structures.rst:182
 msgid "Implementing functions and methods"
-msgstr ""
+msgstr "实现函数和方法"
 
 #: ../../c-api/structures.rst:186
 msgid ""
@@ -208,28 +217,35 @@ msgid ""
 "value of the function as exposed in Python.  The function must return a new "
 "reference."
 msgstr ""
+"用于在 C 中实现大多数 Python 可调用对象的函数类型。 该类型的函数接受两个 :c:expr:`PyObject*` 形参并返回一个这样的值。 "
+"如果返回值为 ``NULL``，则将设置一个异常。 如果不为 ``NULL``，则返回值将被解读为 Python 中暴露的函数的返回值。 "
+"此函数必须返回一个新的引用。"
 
 #: ../../c-api/structures.rst:193
 msgid "The function signature is::"
-msgstr ""
+msgstr "函数的签名为::"
 
 #: ../../c-api/structures.rst:200
 msgid ""
 "Type of the functions used to implement Python callables in C with signature"
 " :const:`METH_VARARGS | METH_KEYWORDS`. The function signature is::"
 msgstr ""
+"用于在 C 中实现具有 :const:`METH_VARARGS | METH_KEYWORDS` 签名的 Python 可调用对象的函数类型。 "
+"函数的签名为::"
 
 #: ../../c-api/structures.rst:211
 msgid ""
 "Type of the functions used to implement Python callables in C with signature"
 " :const:`METH_FASTCALL`. The function signature is::"
-msgstr ""
+msgstr "用于在 C 中实现具有 :const:`METH_FASTCALL` 签名的 Python 可调用对象的函数类型。 函数的签名为::"
 
 #: ../../c-api/structures.rst:221
 msgid ""
 "Type of the functions used to implement Python callables in C with signature"
 " :const:`METH_FASTCALL | METH_KEYWORDS`. The function signature is::"
 msgstr ""
+"用于在 C 中实现具有 :const:`METH_FASTCALL | METH_KEYWORDS` 签名的 Python 可调用对象的函数类型。 "
+"函数的签名为::"
 
 #: ../../c-api/structures.rst:232
 msgid ""
@@ -237,20 +253,22 @@ msgid ""
 " :const:`METH_METHOD | METH_FASTCALL | METH_KEYWORDS`. The function "
 "signature is::"
 msgstr ""
+"用于在 C 中实现具有 :const:`METH_METHOD | METH_FASTCALL | METH_KEYWORDS` 签名的 Python "
+"可调用对象的函数类型。 函数的签名为::"
 
 #: ../../c-api/structures.rst:247
 msgid ""
 "Structure used to describe a method of an extension type.  This structure "
 "has four fields:"
-msgstr ""
+msgstr "用于描述一个扩展类型的方法的结构体。 该结构体有四个字段:"
 
 #: ../../c-api/structures.rst:252
 msgid "name of the method"
-msgstr ""
+msgstr "方法名"
 
 #: ../../c-api/structures.rst:256
 msgid "pointer to the C implementation"
-msgstr ""
+msgstr "指向 C 实现的指针"
 
 #: ../../c-api/structures.rst:260
 msgid "flags bits indicating how the call should be constructed"

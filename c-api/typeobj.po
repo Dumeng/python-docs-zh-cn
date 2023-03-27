@@ -2795,11 +2795,11 @@ msgstr ""
 
 #: ../../c-api/typeobj.rst:1776
 msgid "For static subtypes, :c:type:`PyBaseObject_Type` uses PyObject_Del."
-msgstr ""
+msgstr "对于静态子类型，:c:type:`PyBaseObject_Type` 使用 PyObject_Del."
 
 #: ../../c-api/typeobj.rst:1781
 msgid "An optional pointer to a function called by the garbage collector."
-msgstr ""
+msgstr "可选的指向垃圾回收器所调用的函数的指针。"
 
 #: ../../c-api/typeobj.rst:1783
 msgid ""
@@ -2840,27 +2840,27 @@ msgstr ""
 #: ../../c-api/typeobj.rst:1846 ../../c-api/typeobj.rst:1856
 #: ../../c-api/typeobj.rst:1870
 msgid "This field is not inherited."
-msgstr ""
+msgstr "这个字段不会被继承。"
 
 #: ../../c-api/typeobj.rst:1821
 msgid ""
 "Tuple containing the expanded set of base types, starting with the type "
 "itself and ending with :class:`object`, in Method Resolution Order."
-msgstr ""
+msgstr "包含基类型的扩展集的元组，以类型本身开始并以 :class:`object` 作为结束，使用方法解析顺序。"
 
 #: ../../c-api/typeobj.rst:1827
 msgid ""
 "This field is not inherited; it is calculated fresh by "
 ":c:func:`PyType_Ready`."
-msgstr ""
+msgstr "这个字段不会被继承；它是通过 :c:func:`PyType_Ready` 计算得到的。"
 
 #: ../../c-api/typeobj.rst:1833
 msgid "Unused.  Internal use only."
-msgstr ""
+msgstr "尚未使用。 仅供内部使用。"
 
 #: ../../c-api/typeobj.rst:1842
 msgid "List of weak references to subclasses.  Internal use only."
-msgstr ""
+msgstr "由对子类的弱引用组成的列表。 仅供内部使用。"
 
 #: ../../c-api/typeobj.rst:1851
 msgid ""

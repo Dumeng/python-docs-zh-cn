@@ -318,6 +318,7 @@ msgid ""
 "functions defined for modules.  At most one of these flags may be set for "
 "any given method."
 msgstr ""
+"这两个常量不是被用来指明调用惯例而是在配合类方法使用时指明绑定。 它们不会被用于在模块上定义的函数。 对于任何给定方法这些旗标最多只会设置其中一个。"
 
 #: ../../c-api/structures.rst:242
 msgid ""
@@ -364,15 +365,15 @@ msgstr ":attr:`name`"
 
 #: ../../c-api/structures.rst:281
 msgid "name of the member"
-msgstr ""
+msgstr "成员名称"
 
 #: ../../c-api/structures.rst:283
 msgid ":attr:`!type`"
-msgstr ""
+msgstr ":attr:`!type`"
 
 #: ../../c-api/structures.rst:283
 msgid "the type of the member in the C struct"
-msgstr ""
+msgstr "C 结构体中成员的类型"
 
 #: ../../c-api/structures.rst:286
 msgid ":attr:`offset`"
@@ -385,7 +386,7 @@ msgstr "Py_ssize_t"
 #: ../../c-api/structures.rst:286
 msgid ""
 "the offset in bytes that the member is located on the type's object struct"
-msgstr ""
+msgstr "成员在类型的对象结构体中所在位置的以字节表示的偏移量"
 
 #: ../../c-api/structures.rst:290
 msgid ":attr:`flags`"
@@ -393,7 +394,7 @@ msgstr ":attr:`flags`"
 
 #: ../../c-api/structures.rst:290
 msgid "flag bits indicating if the field should be read-only or writable"
-msgstr ""
+msgstr "指明字段是否应为只读或可写的旗标位"
 
 #: ../../c-api/structures.rst:294
 msgid ":attr:`doc`"

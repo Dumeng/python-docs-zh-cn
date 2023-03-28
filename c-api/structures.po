@@ -353,6 +353,10 @@ msgid ""
 "keyword arguments are stored in the *args* array, after the positional "
 "arguments."
 msgstr ""
+":const:`METH_FASTCALL` 的扩展也支持关键字参数，它使用 "
+":c:type:`_PyCFunctionFastWithKeywords` 类型的方法。 关键字参数是以与 :ref:`vectorcall 协议 "
+"<vectorcall>` 相同的方式传入的：还存在额外的代表关键字参数名称的元组第四个 :c:expr:`PyObject*` "
+"形参（它将保证为字符串）或者如果没有关键字则可能为 ``NULL``。 关键字参数的值存放在 *args* 数组中，在位置参数之后。"
 
 #: ../../c-api/structures.rst:330
 msgid ""

@@ -402,6 +402,9 @@ msgid ""
 "parameter, and a :c:expr:`PyObject*` parameter representing the single "
 "argument."
 msgstr ""
+"具有一个单独对象参数的方法可使用 :const:`METH_O` 旗标列出，而不必发起调用 :c:func:`PyArg_ParseTuple` 并附带"
+" ``\"O\"`` 参数。 它们的类型为 :c:type:`PyCFunction`，带有 *self* 形参，以及代表该单独参数的 "
+":c:expr:`PyObject*` 形参。"
 
 #: ../../c-api/structures.rst:361
 msgid ""
@@ -410,6 +413,7 @@ msgid ""
 "functions defined for modules.  At most one of these flags may be set for "
 "any given method."
 msgstr ""
+"这两个常量不是被用来指明调用惯例而是在配合类方法使用时指明绑定。 它们不会被用于在模块上定义的函数。 对于任何给定方法这些旗标最多只会设置其中一个。"
 
 #: ../../c-api/structures.rst:371
 msgid ""

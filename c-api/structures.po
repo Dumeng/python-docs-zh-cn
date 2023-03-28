@@ -364,6 +364,8 @@ msgid ""
 " class*, that is, the class that contains the method in question. The "
 "defining class might be a superclass of ``Py_TYPE(self)``."
 msgstr ""
+":const:`METH_FASTCALL | METH_KEYWORDS` 的扩展支持 *定义式类*，也就是包含相应方法的类。 定义式类可以是 "
+"``Py_TYPE(self)`` 的超类。"
 
 #: ../../c-api/structures.rst:334
 msgid ""
@@ -371,6 +373,8 @@ msgid ""
 "``METH_FASTCALL | METH_KEYWORDS`` with ``defining_class`` argument added "
 "after ``self``."
 msgstr ""
+"该方法必须为 :c:type:`PyCMethod` 类型，与在 ``self`` 之后添加了 ``defining_class`` 参数的 "
+"``METH_FASTCALL | METH_KEYWORDS`` 一样。"
 
 #: ../../c-api/structures.rst:343
 msgid ""

@@ -691,6 +691,10 @@ msgid ""
 " :c:macro:`T_OBJECT` and :c:macro:`T_OBJECT_EX` members can be deleted.  "
 "(They are set to ``NULL``)."
 msgstr ""
+":attr:`flags` 可以为 ``0`` 表示读写访问或 :c:macro:`READONLY` 表示只读访问。 使用 "
+":c:macro:`T_STRING` 作为 :attr:`type` 表示 :c:macro:`READONLY`。 "
+":c:macro:`T_STRING` 数据将被解读为 UTF-8 编码格式。 只有 :c:macro:`T_OBJECT` 和 "
+":c:macro:`T_OBJECT_EX` 成员可以被删除。 (它们会被设为 ``NULL``)。"
 
 #: ../../c-api/structures.rst:472
 msgid ""
@@ -702,12 +706,20 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_vectorcall_offset` in type objects. These must "
 "be defined with ``T_PYSSIZET`` and ``READONLY``, for example::"
 msgstr ""
+"堆分配类型 (使用 :c:func:`PyType_FromSpec` 或类似函数创建), ``PyMemberDef`` 可以包含特殊成员 "
+"``__dictoffset__``, ``__weaklistoffset__`` 和 ``__vectorcalloffset__`` "
+"的定义，对应类型对象中的 :c:member:`~PyTypeObject.tp_dictoffset`, "
+":c:member:`~PyTypeObject.tp_weaklistoffset` 和 "
+":c:member:`~PyTypeObject.tp_vectorcall_offset`。 它们必须使用 ``T_PYSSIZET`` 和 "
+"``READONLY`` 来定义，例如::"
 
 #: ../../c-api/structures.rst:489
 msgid ""
 "Get an attribute belonging to the object at address *obj_addr*.  The "
 "attribute is described by ``PyMemberDef`` *m*.  Returns ``NULL`` on error."
 msgstr ""
+"获取属于地址Get an attribute belonging to the object at address *obj_addr* "
+"上的对象的某个属性。 该属性是以 ``PyMemberDef`` *m* 来描述的。 出错时返回 ``NULL``。"
 
 #: ../../c-api/structures.rst:496
 msgid ""
@@ -715,12 +727,15 @@ msgid ""
 "*o*. The attribute to set is described by ``PyMemberDef`` *m*.  Returns "
 "``0`` if successful and a negative value on failure."
 msgstr ""
+"将属于位于地址 *obj_addr* 的对象的属性设置到对象 *o*。 要设置的属性由 ``PyMemberDef`` *m* 描述。 成功时返回 "
+"``0`` 而失败时返回负值。"
 
 #: ../../c-api/structures.rst:503
 msgid ""
 "Structure to define property-like access for a type. See also description of"
 " the :c:member:`PyTypeObject.tp_getset` slot."
 msgstr ""
+"用于定义针对某个类型的特征属性式的访问的结构体。 另请参阅 :c:member:`PyTypeObject.tp_getset` 槽位的描述。"
 
 #: ../../c-api/structures.rst:509
 msgid "name"
@@ -744,11 +759,11 @@ msgstr "用于获取属性的 C 函数"
 
 #: ../../c-api/structures.rst:513
 msgid "set"
-msgstr ""
+msgstr "set"
 
 #: ../../c-api/structures.rst:513
 msgid "setter"
-msgstr ""
+msgstr "setter"
 
 #: ../../c-api/structures.rst:513
 msgid ""

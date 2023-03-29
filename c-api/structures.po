@@ -471,7 +471,7 @@ msgstr "T_OBJECT"
 
 #: ../../c-api/structures.rst:311 ../../c-api/structures.rst:312
 msgid "PyObject \\*"
-msgstr ""
+msgstr "PyObject \\*"
 
 #: ../../c-api/structures.rst:312
 msgid "T_OBJECT_EX"
@@ -524,7 +524,7 @@ msgstr "unsigned long"
 
 #: ../../c-api/structures.rst:319
 msgid "T_BOOL"
-msgstr ""
+msgstr "T_BOOL"
 
 #: ../../c-api/structures.rst:320
 msgid "T_LONGLONG"

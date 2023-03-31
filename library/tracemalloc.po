@@ -517,13 +517,15 @@ msgstr "过滤器的行号 (``int``)。 如果 *lineno* 为 ``None``，则该过
 
 #: ../../library/tracemalloc.rst:495
 msgid "Filename pattern of the filter (``str``). Read-only property."
-msgstr ""
+msgstr "过滤器的文件名模型 (``str``)。 只读的特征属性。"
 
 #: ../../library/tracemalloc.rst:499
 msgid ""
 "If *all_frames* is ``True``, all frames of the traceback are checked. If "
 "*all_frames* is ``False``, only the most recent frame is checked."
 msgstr ""
+"如果 *all_frames* 为 ``True``，则回溯的所有帧都会被检查。 如果 *all_frames* 为 "
+"``False``，则只有最近的帧会被检查。"
 
 #: ../../library/tracemalloc.rst:502
 msgid ""
@@ -531,19 +533,21 @@ msgid ""
 ":func:`get_traceback_limit` function and :attr:`Snapshot.traceback_limit` "
 "attribute."
 msgstr ""
+"如果回溯限制为 ``1`` 则该属性将没有效果。 参见 :func:`get_traceback_limit` 函数和 "
+":attr:`Snapshot.traceback_limit` 属性。"
 
 #: ../../library/tracemalloc.rst:508
 msgid "Frame"
-msgstr ""
+msgstr "帧"
 
 #: ../../library/tracemalloc.rst:512
 msgid "Frame of a traceback."
-msgstr ""
+msgstr "回溯的帧。"
 
 #: ../../library/tracemalloc.rst:514
 msgid ""
 "The :class:`Traceback` class is a sequence of :class:`Frame` instances."
-msgstr ""
+msgstr ":class:`Traceback` 类是一个 :class:`Frame` 实例的序列。instances."
 
 #: ../../library/tracemalloc.rst:518
 msgid "Filename (``str``)."
@@ -559,23 +563,24 @@ msgstr "快照"
 
 #: ../../library/tracemalloc.rst:530
 msgid "Snapshot of traces of memory blocks allocated by Python."
-msgstr ""
+msgstr "由 Python 分配的内存块的追踪的快照。"
 
 #: ../../library/tracemalloc.rst:532
 msgid "The :func:`take_snapshot` function creates a snapshot instance."
-msgstr ""
+msgstr ":func:`take_snapshot` 函数创建一个快照实例。"
 
 #: ../../library/tracemalloc.rst:536
 msgid ""
 "Compute the differences with an old snapshot. Get statistics as a sorted "
 "list of :class:`StatisticDiff` instances grouped by *key_type*."
 msgstr ""
+"计算与某个旧快照的差异。 获取按 *key_type* 分组的 :class:`StatisticDiff` 实例的已排序列表形式的统计信息。"
 
 #: ../../library/tracemalloc.rst:539
 msgid ""
 "See the :meth:`Snapshot.statistics` method for *key_type* and *cumulative* "
 "parameters."
-msgstr ""
+msgstr "请参阅 :meth:`Snapshot.statistics` 方法了解 *key_type* 和 *cumulative* 形参。"
 
 #: ../../library/tracemalloc.rst:542
 msgid ""
@@ -584,6 +589,9 @@ msgid ""
 "of :attr:`StatisticDiff.count_diff`, :attr:`Statistic.count` and then by "
 ":attr:`StatisticDiff.traceback`."
 msgstr ""
+"结果将按以下值从大到小排序: :attr:`StatisticDiff.size_diff` 的绝对值, "
+":attr:`StatisticDiff.size`, :attr:`StatisticDiff.count_diff` 的绝对值, "
+":attr:`Statistic.count` 然后是 :attr:`StatisticDiff.traceback`。"
 
 #: ../../library/tracemalloc.rst:550
 msgid "Write the snapshot into a file."
@@ -600,17 +608,20 @@ msgid ""
 "instances.  If *filters* is an empty list, return a new :class:`Snapshot` "
 "instance with a copy of the traces."
 msgstr ""
+"使用已过滤的 :attr:`traces` 序列新建一个 :class:`Snapshot` 实例，*filters* 是 "
+":class:`DomainFilter` 和 :class:`Filter` 实例的列表。 如果 *filters* "
+"为空列表，则返回一个包含追踪的副本的新的 :class:`Snapshot` 实例。"
 
 #: ../../library/tracemalloc.rst:562
 msgid ""
 "All inclusive filters are applied at once, a trace is ignored if no "
 "inclusive filters match it. A trace is ignored if at least one exclusive "
 "filter matches it."
-msgstr ""
+msgstr "包括的所有过滤器将同时被应用，一个追踪如果没有任何包括的过滤器与其匹配则会被忽略。 一个追踪如果有至少一个排除的过滤器与其匹配将会被忽略。"
 
 #: ../../library/tracemalloc.rst:566
 msgid ":class:`DomainFilter` instances are now also accepted in *filters*."
-msgstr ""
+msgstr ":class:`DomainFilter` 实例现在同样被 *filters* 所接受。"
 
 #: ../../library/tracemalloc.rst:572
 msgid "Load a snapshot from a file."
@@ -665,6 +676,8 @@ msgid ""
 "cumulative mode can only be used with *key_type* equals to ``'filename'`` "
 "and ``'lineno'``."
 msgstr ""
+"如果 *cumulative* 为 ``True``，则累积一个追踪的回溯的所有帧的内存块的大小和数量，而不只是最近的帧。 累积模式只能在 "
+"*key_type* 等于 ``'filename'`` 和 ``'lineno'`` 的情况下使用。"
 
 #: ../../library/tracemalloc.rst:595
 msgid ""
@@ -672,24 +685,27 @@ msgid ""
 ":attr:`Statistic.size`, :attr:`Statistic.count` and then by "
 ":attr:`Statistic.traceback`."
 msgstr ""
+"结果将按以下值从大到小排序: :attr:`Statistic.size`, :attr:`Statistic.count` 然后是 "
+":attr:`Statistic.traceback`。"
 
 #: ../../library/tracemalloc.rst:602
 msgid ""
 "Maximum number of frames stored in the traceback of :attr:`traces`: result "
 "of the :func:`get_traceback_limit` when the snapshot was taken."
 msgstr ""
+"保存在 :attr:`traces` 的回溯中的帧的最大数量：当快照被保存时 :func:`get_traceback_limit` 的结果。"
 
 #: ../../library/tracemalloc.rst:607
 msgid ""
 "Traces of all memory blocks allocated by Python: sequence of :class:`Trace` "
 "instances."
-msgstr ""
+msgstr "由 Python 分配的所有内存块的追踪: :class:`Trace` 实例的序列。"
 
 #: ../../library/tracemalloc.rst:610
 msgid ""
 "The sequence has an undefined order. Use the :meth:`Snapshot.statistics` "
 "method to get a sorted list of statistics."
-msgstr ""
+msgstr "该序列的顺序是未定义的。 请使用 :meth:`Snapshot.statistics` 方法来获取统计信息的已排序列表。"
 
 #: ../../library/tracemalloc.rst:615
 msgid "Statistic"
@@ -714,7 +730,7 @@ msgstr "内存块数（``整形``）。"
 
 #: ../../library/tracemalloc.rst:631
 msgid "Total size of memory blocks in bytes (``int``)."
-msgstr ""
+msgstr "以字节数表示的内存块总计大小 (``int``)。"
 
 #: ../../library/tracemalloc.rst:635 ../../library/tracemalloc.rst:704
 msgid ""
@@ -783,7 +799,7 @@ msgstr "一个内存块的跟踪信息。"
 msgid ""
 "The :attr:`Snapshot.traces` attribute is a sequence of :class:`Trace` "
 "instances."
-msgstr ""
+msgstr ":attr:`Snapshot.traces` 属性是一个 :class:`Trace` 实例的序列。"
 
 #: ../../library/tracemalloc.rst:700
 msgid "Size of the memory block in bytes (``int``)."

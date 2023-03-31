@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-03-31 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
 "Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -551,8 +551,8 @@ msgstr ""
 "类型包装，才能够被正确地转换为所需的C语言类型。"
 
 #: ../../library/ctypes.rst:378
-msgid "Calling varadic functions"
-msgstr "调用可变函数"
+msgid "Calling variadic functions"
+msgstr ""
 
 #: ../../library/ctypes.rst:380
 msgid ""

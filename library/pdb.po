@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:14+0000\n"
+"POT-Creation-Date: 2023-03-31 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -174,10 +174,8 @@ msgstr ""
 msgid ""
 "Evaluate the *expression* (given as a string or a code object) under "
 "debugger control.  When :func:`runeval` returns, it returns the value of the"
-" expression.  Otherwise this function is similar to :func:`run`."
+" *expression*.  Otherwise this function is similar to :func:`run`."
 msgstr ""
-"在调试器控制范围内执行 *expression* （以字符串或代码对象的形式提供）。:func:`runeval` "
-"返回时将返回表达式的值。本函数在其他方面与 :func:`run` 类似。"
 
 #: ../../library/pdb.rst:133
 msgid ""
@@ -250,14 +248,11 @@ msgstr ""
 #: ../../library/pdb.rst:180
 msgid ""
 "By default, Pdb sets a handler for the SIGINT signal (which is sent when the"
-" user presses :kbd:`Ctrl-C` on the console) when you give a ``continue`` "
-"command. This allows you to break into the debugger again by pressing "
-":kbd:`Ctrl-C`.  If you want Pdb not to touch the SIGINT handler, set "
-"*nosigint* to true."
+" user presses :kbd:`Ctrl-C` on the console) when you give a "
+":pdbcmd:`continue` command. This allows you to break into the debugger again"
+" by pressing :kbd:`Ctrl-C`.  If you want Pdb not to touch the SIGINT "
+"handler, set *nosigint* to true."
 msgstr ""
-"默认情况下，当发出 ``continue`` 命令时，Pdb 将为 SIGINT 信号设置一个处理程序（SIGINT 信号是用户在控制台按 "
-":kbd:`Ctrl-C` 时发出的）。这使用户可以按 :kbd:`Ctrl-C` 再次进入调试器。如果希望 Pdb 不要修改 SIGINT "
-"处理程序，请将 *nosigint* 设置为 true。"
 
 #: ../../library/pdb.rst:185
 msgid ""
@@ -464,14 +459,12 @@ msgstr "启用指定的断点。"
 
 #: ../../library/pdb.rst:331
 msgid ""
-"Set the ignore count for the given breakpoint number.  If count is omitted, "
-"the ignore count is set to 0.  A breakpoint becomes active when the ignore "
-"count is zero.  When non-zero, the count is decremented each time the "
-"breakpoint is reached and the breakpoint is not disabled and any associated "
-"condition evaluates to true."
+"Set the ignore count for the given breakpoint number.  If *count* is "
+"omitted, the ignore count is set to 0.  A breakpoint becomes active when the"
+" ignore count is zero.  When non-zero, the *count* is decremented each time "
+"the breakpoint is reached and the breakpoint is not disabled and any "
+"associated condition evaluates to true."
 msgstr ""
-"为指定的断点编号设置忽略次数。如果省略 count，则忽略次数将设置为 0。忽略次数为 0 "
-"时断点将变为活动状态。如果为非零值，在每次达到断点，且断点未禁用，且关联条件计算值为 true 的情况下，该忽略次数会递减。"
 
 #: ../../library/pdb.rst:339
 msgid ""
@@ -526,14 +519,12 @@ msgstr ""
 
 #: ../../library/pdb.rst:372
 msgid ""
-"If you use the 'silent' command in the command list, the usual message about"
-" stopping at a breakpoint is not printed.  This may be desirable for "
+"If you use the ``silent`` command in the command list, the usual message "
+"about stopping at a breakpoint is not printed.  This may be desirable for "
 "breakpoints that are to print a specific message and then continue.  If none"
 " of the other commands print anything, you see no sign that the breakpoint "
 "was reached."
 msgstr ""
-"如果在命令列表中加入 'silent' "
-"命令，那么在该断点处停下时就不会打印常规信息。如果希望断点打印特定信息后继续运行，这可能是理想的。如果没有其他命令来打印一些信息，则看不到已达到断点的迹象。"
 
 #: ../../library/pdb.rst:379
 msgid ""
@@ -561,10 +552,10 @@ msgstr "如果不带参数，则继续运行，直到行号比当前行大时停
 
 #: ../../library/pdb.rst:395
 msgid ""
-"With a line number, continue execution until a line with a number greater or"
-" equal to that is reached.  In both cases, also stop when the current frame "
-"returns."
-msgstr "如果带有行号，则继续运行，直到行号大于或等于该行号时停止。在这两种情况下，当前帧返回时也将停止。"
+"With *lineno*, continue execution until a line with a number greater or "
+"equal to *lineno* is reached.  In both cases, also stop when the current "
+"frame returns."
+msgstr ""
 
 #: ../../library/pdb.rst:399
 msgid "Allow giving an explicit line number."
@@ -629,8 +620,8 @@ msgid "Print the argument list of the current function."
 msgstr "打印当前函数的参数列表。"
 
 #: ../../library/pdb.rst:449
-msgid "Evaluate the *expression* in the current context and print its value."
-msgstr "在当前上下文中运行 *expression* 并打印它的值。"
+msgid "Evaluate *expression* in the current context and print its value."
+msgstr ""
 
 #: ../../library/pdb.rst:453
 msgid ""
@@ -640,34 +631,34 @@ msgstr "``print()`` 也可以使用，但它不是一个调试器命令 --- 它�
 
 #: ../../library/pdb.rst:459
 msgid ""
-"Like the :pdbcmd:`p` command, except the value of the expression is pretty-"
+"Like the :pdbcmd:`p` command, except the value of *expression* is pretty-"
 "printed using the :mod:`pprint` module."
-msgstr "与 :pdbcmd:`p` 命令类似，但表达式的值使用 :mod:`pprint` 模块美观地打印。"
+msgstr ""
 
 #: ../../library/pdb.rst:464
-msgid "Print the type of the *expression*."
-msgstr "打印 *expression* 的类型。"
+msgid "Print the type of *expression*."
+msgstr ""
 
 #: ../../library/pdb.rst:468
-msgid "Try to get source code for the given object and display it."
-msgstr "尝试获取给定对象的源代码并显示出来。"
+msgid "Try to get source code of *expression* and display it."
+msgstr ""
 
 #: ../../library/pdb.rst:474
 msgid ""
-"Display the value of the expression if it changed, each time execution stops"
-" in the current frame."
-msgstr "如果表达式的值发生改变则显示它的值，每次将停止执行当前帧。"
+"Display the value of *expression* if it changed, each time execution stops "
+"in the current frame."
+msgstr ""
 
 #: ../../library/pdb.rst:477
 msgid ""
-"Without expression, list all display expressions for the current frame."
-msgstr "不带表达式则列出当前帧的所有显示表达式。"
+"Without *expression*, list all display expressions for the current frame."
+msgstr ""
 
 #: ../../library/pdb.rst:483
 msgid ""
-"Do not display the expression any more in the current frame.  Without "
-"expression, clear all display expressions for the current frame."
-msgstr "不再显示当前帧中的表达式。 不带表达式则清除当前帧的所有显示表达式。"
+"Do not display *expression* anymore in the current frame.  Without "
+"*expression*, clear all display expressions for the current frame."
+msgstr ""
 
 #: ../../library/pdb.rst:490
 msgid ""
@@ -678,14 +669,12 @@ msgstr "启动一个交互式解释器（使用 :mod:`code` 模块），它的�
 
 #: ../../library/pdb.rst:500
 msgid ""
-"Create an alias called *name* that executes *command*.  The command must "
+"Create an alias called *name* that executes *command*.  The *command* must "
 "*not* be enclosed in quotes.  Replaceable parameters can be indicated by "
 "``%1``, ``%2``, and so on, while ``%*`` is replaced by all the parameters. "
-"If no command is given, the current alias for *name* is shown. If no "
+"If *command* is omitted, the current alias for *name* is shown. If no "
 "arguments are given, all aliases are listed."
 msgstr ""
-"创建一个标识为 *name* 的别名来执行 *command*。 执行的命令 *不可* 加上引号。 可替换形参可通过 ``%1``, ``%2`` "
-"等来标示，而 ``%*`` 会被所有形参所替换。 如果没有给出命令，则会显示 *name* 的当前别名。 如果没有给出参数，则会列出所有别名。"
 
 #: ../../library/pdb.rst:506
 msgid ""
@@ -705,8 +694,8 @@ msgid ""
 msgstr "作为示例，这里列出了两个有用的别名（特别适合放在 :file:`.pdbrc` 文件中）::"
 
 #: ../../library/pdb.rst:522
-msgid "Delete the specified alias."
-msgstr "删除指定的别名。"
+msgid "Delete the specified alias *name*."
+msgstr ""
 
 #: ../../library/pdb.rst:526
 msgid ""
@@ -721,13 +710,11 @@ msgstr ""
 
 #: ../../library/pdb.rst:538
 msgid ""
-"Restart the debugged Python program.  If an argument is supplied, it is "
-"split with :mod:`shlex` and the result is used as the new :data:`sys.argv`. "
+"Restart the debugged Python program.  If *args* is supplied, it is split "
+"with :mod:`shlex` and the result is used as the new :data:`sys.argv`. "
 "History, breakpoints, actions and debugger options are preserved. "
 ":pdbcmd:`restart` is an alias for :pdbcmd:`run`."
 msgstr ""
-"重启被调试的 Python 程序。 如果提供了参数，它会用 :mod:`shlex` 来拆分且拆分结果将被用作新的 :data:`sys.argv`。 "
-"历史、中断点、动作和调试器选项将被保留。 :pdbcmd:`restart` 是 :pdbcmd:`run` 的一个别名。"
 
 #: ../../library/pdb.rst:545
 msgid "Quit from the debugger.  The program being executed is aborted."
@@ -735,10 +722,9 @@ msgstr "退出调试器。 被执行的程序将被中止。"
 
 #: ../../library/pdb.rst:549
 msgid ""
-"Enter a recursive debugger that steps through the code argument (which is an"
-" arbitrary expression or statement to be executed in the current "
-"environment)."
-msgstr "进入一个对代码参数执行步进的递归调试器（该参数是在当前环境中执行的任意表达式或语句）。"
+"Enter a recursive debugger that steps through *code* (which is an arbitrary "
+"expression or statement to be executed in the current environment)."
+msgstr ""
 
 #: ../../library/pdb.rst:555
 msgid "Print the return value for the last return of a function."

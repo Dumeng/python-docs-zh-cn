@@ -278,7 +278,7 @@ msgstr "将由 :mod:`tracemalloc` 模块所追踪的内存块的峰值大小设�
 msgid ""
 "Do nothing if the :mod:`tracemalloc` module is not tracing memory "
 "allocations."
-msgstr ""
+msgstr "如果 :mod:`tracemalloc` 模块未在追踪内存分配则不做任何事。"
 
 #: ../../library/tracemalloc.rst:341
 msgid ""
@@ -287,26 +287,28 @@ msgid ""
 ":func:`take_snapshot` before a call to :func:`reset_peak` can be "
 "meaningfully compared to snapshots taken after the call."
 msgstr ""
+"此函数只修改已记录的峰值大小，而不会修改或清空任何追踪，这不同于 :func:`clear_traces`。 在调用 "
+":func:`reset_peak` 之前使用 :func:`take_snapshot` 保存的快照可以与调用之后保存的快照进行有意义的比较。"
 
 #: ../../library/tracemalloc.rst:346
 msgid "See also :func:`get_traced_memory`."
-msgstr ""
+msgstr "另请参阅 :func:`get_traced_memory`。"
 
 #: ../../library/tracemalloc.rst:353
 msgid ""
 "Get the memory usage in bytes of the :mod:`tracemalloc` module used to store"
 " traces of memory blocks. Return an :class:`int`."
-msgstr ""
+msgstr "获取 :mod:`tracemalloc` 模块用于保存内存块追踪所使用的内存字节数。 返回一个 :class:`int`。"
 
 #: ../../library/tracemalloc.rst:360
 msgid ""
 "``True`` if the :mod:`tracemalloc` module is tracing Python memory "
 "allocations, ``False`` otherwise."
-msgstr ""
+msgstr "如果 :mod:`tracemalloc` 模块正在追踪 Python 内存分配则返回 ``True``，否则返回 ``False``。"
 
 #: ../../library/tracemalloc.rst:363
 msgid "See also :func:`start` and :func:`stop` functions."
-msgstr ""
+msgstr "另请参阅 :func:`start` 和 :func:`stop` 函数。"
 
 #: ../../library/tracemalloc.rst:368
 msgid ""
@@ -315,6 +317,8 @@ msgid ""
 "frames. By default, a trace of a memory block only stores the most recent "
 "frame: the limit is ``1``. *nframe* must be greater or equal to ``1``."
 msgstr ""
+"开始追踪 Python 内存分配：在 Python 内存分配器上安装钩子。 收集的追踪回溯将被限制为 *nframe* 个帧。 "
+"在默认情况下，一个内存块的追踪将只保存最近的帧：即限制为 ``1``。 *nframe* 必须大于等于 ``1``。"
 
 #: ../../library/tracemalloc.rst:373
 msgid ""

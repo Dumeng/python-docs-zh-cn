@@ -162,20 +162,26 @@ msgid ""
 "``import pdb`` line of the :mod:`doctest` module. The traceback may change "
 "if a new module is loaded."
 msgstr ""
+"我们可以看到大部分内存都被分配到 :mod:`importlib` 模块中以便从模块中加载数据（字节码和常量）: ``870.1 KiB``。 "
+"回溯位置是 :mod:`importlib` 最近加载数据的地方：在 :mod:`doctest` 模块的 ``import pdb`` 行。 "
+"如果加载了新模块则回溯可能发生改变。line of the. The traceback may change if a new module is "
+"loaded."
 
 #: ../../library/tracemalloc.rst:186
 msgid "Pretty top"
-msgstr ""
+msgstr "美化的 top"
 
 #: ../../library/tracemalloc.rst:188
 msgid ""
 "Code to display the 10 lines allocating the most memory with a pretty "
 "output, ignoring ``<frozen importlib._bootstrap>`` and ``<unknown>`` files::"
 msgstr ""
+"使用美化输出显示分配最多内存的 10 行的代码，忽略 ``<frozen importlib._bootstrap>`` 和 ``<unknown>``"
+" 文件::"
 
 #: ../../library/tracemalloc.rst:253
 msgid "Record the current and peak size of all traced memory blocks"
-msgstr ""
+msgstr "记录所有被追踪内存块的当前和峰值大小"
 
 #: ../../library/tracemalloc.rst:255
 msgid ""
@@ -185,6 +191,9 @@ msgid ""
 "observe the small memory usage after the sum is computed as well as the peak"
 " memory usage during the computations::"
 msgstr ""
+"以下代码通过创建一个包含数字的列表来低效率地计算总计值如 ``0 + 1 + 2 + ...``。 该列表会临时消耗大量内存。 我们可以使用 "
+":func:`get_traced_memory` 和 :func:`reset_peak` "
+"来观察计算总计值之后的内存使用减少以及计算过程中的内存使用峰值::"
 
 #: ../../library/tracemalloc.rst:280 ../../library/tracemalloc.rst:759
 msgid "Output::"
@@ -201,6 +210,11 @@ msgid ""
 "suggests we could optimise (by removing the unnecessary call to "
 ":class:`list`, and writing ``sum(range(...))``)."
 msgstr ""
+"使用 :func:`reset_peak` 将确保我们能够准确地记录 ``small_sum`` 计算期间的峰值，即使它远小于从 "
+":func:`start` 调用以来内存块的总体峰值大小。 如果没有对 :func:`reset_peak` 的调用，``second_peak`` "
+"将仍为计算 ``large_sum`` 时的峰值 (也就是说，等于 ``first_peak``)。 "
+"在这种情况下，两个峰值都将比最终的内存使用量高得多，这表明我们可以进行优化 (通过移除不必要的对 :class:`list` 的调用，并改写为 "
+"``sum(range(...))``)。"
 
 #: ../../library/tracemalloc.rst:295
 msgid "API"
@@ -225,36 +239,40 @@ msgid ""
 " not tracing memory allocations or did not trace the allocation of the "
 "object."
 msgstr ""
+"获取 Python 对象 *obj* 被分配位置的回溯。 返回一个 :class:`Traceback` 实例，或者如果 "
+":mod:`tracemalloc` 模块未追踪任何内存分配或未追踪该对象的分配则返回 ``None``。"
 
 #: ../../library/tracemalloc.rst:314
 msgid "See also :func:`gc.get_referrers` and :func:`sys.getsizeof` functions."
-msgstr ""
+msgstr "另请参阅 :func:`gc.get_referrers` 和 :func:`sys.getsizeof` 函数。"
 
 #: ../../library/tracemalloc.rst:319
 msgid "Get the maximum number of frames stored in the traceback of a trace."
-msgstr ""
+msgstr "获取保存在一个追踪的回溯中的最大帧数。"
 
 #: ../../library/tracemalloc.rst:321
 msgid ""
 "The :mod:`tracemalloc` module must be tracing memory allocations to get the "
 "limit, otherwise an exception is raised."
-msgstr ""
+msgstr ":mod:`tracemalloc` 模块必须正在追踪内存分配才能获得该限制值，否则将引发异常。"
 
 #: ../../library/tracemalloc.rst:324
 msgid "The limit is set by the :func:`start` function."
-msgstr ""
+msgstr "该限制是由 :func:`start` 函数设置的。"
 
 #: ../../library/tracemalloc.rst:329
 msgid ""
 "Get the current size and peak size of memory blocks traced by the "
 ":mod:`tracemalloc` module as a tuple: ``(current: int, peak: int)``."
 msgstr ""
+"获取一个元组形式的由 :mod:`tracemalloc` 模块所追踪的内存块的当前大小和峰值大小: ``(current: int, peak: "
+"int)``。"
 
 #: ../../library/tracemalloc.rst:335
 msgid ""
 "Set the peak size of memory blocks traced by the :mod:`tracemalloc` module "
 "to the current size."
-msgstr ""
+msgstr "将由 :mod:`tracemalloc` 模块所追踪的内存块的峰值大小设置为当前大小。"
 
 #: ../../library/tracemalloc.rst:338
 msgid ""
@@ -384,7 +402,7 @@ msgstr "域过滤器"
 
 #: ../../library/tracemalloc.rst:427
 msgid "Filter traces of memory blocks by their address space (domain)."
-msgstr ""
+msgstr "按地址空间（域）来过滤内存块的追踪。"
 
 #: ../../library/tracemalloc.rst:433
 msgid ""

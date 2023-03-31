@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-24 14:35+0000\n"
+"POT-Creation-Date: 2023-03-31 14:34+0000\n"
 "PO-Revision-Date: 2020-05-30 12:12+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -280,59 +280,64 @@ msgid ""
 "(``PYTHONTRACEMALLOC=NFRAME``) and the :option:`-X` ``tracemalloc=NFRAME`` "
 "command line option can be used to start tracing at startup."
 msgstr ""
+":envvar:`PYTHONTRACEMALLOC` 环境变量 (``PYTHONTRACEMALLOC=NFRAME``) 和 "
+":option:`-X` ``tracemalloc=NFRAME`` 命令行选项可被用来在启动时开始追踪。"
 
 #: ../../library/tracemalloc.rst:326
 msgid ""
 "See also :func:`stop`, :func:`is_tracing` and :func:`get_traceback_limit` "
 "functions."
 msgstr ""
+"另请参阅 :func:`stop`, :func:`is_tracing` 和 :func:`get_traceback_limit` 等函数。"
 
 #: ../../library/tracemalloc.rst:332
 msgid ""
 "Stop tracing Python memory allocations: uninstall hooks on Python memory "
 "allocators. Also clears all previously collected traces of memory blocks "
 "allocated by Python."
-msgstr ""
+msgstr "停止追踪 Python 内存分配：卸载 Python 内存分配器上的钩子。 并清空之前收集的所有由 Python 分配的内存块的追踪。"
 
 #: ../../library/tracemalloc.rst:336
 msgid ""
 "Call :func:`take_snapshot` function to take a snapshot of traces before "
 "clearing them."
-msgstr ""
+msgstr "调用 :func:`take_snapshot` 函数在清空追踪之前保存它们的快照。"
 
 #: ../../library/tracemalloc.rst:339
 msgid ""
 "See also :func:`start`, :func:`is_tracing` and :func:`clear_traces` "
 "functions."
-msgstr ""
+msgstr "另请参阅 :func:`start`, :func:`is_tracing` 和 :func:`clear_traces` 等函数。"
 
 #: ../../library/tracemalloc.rst:345
 msgid ""
 "Take a snapshot of traces of memory blocks allocated by Python. Return a new"
 " :class:`Snapshot` instance."
-msgstr ""
+msgstr "保存一个由 Python 分配的内存块的追踪的快照。 返回一个新的 :class:`Snapshot` 实例。"
 
 #: ../../library/tracemalloc.rst:348
 msgid ""
 "The snapshot does not include memory blocks allocated before the "
 ":mod:`tracemalloc` module started to trace memory allocations."
-msgstr ""
+msgstr "该快照不包括在 :mod:`tracemalloc` 模块开始追踪内存分配之前分配的内存块。"
 
 #: ../../library/tracemalloc.rst:351
 msgid ""
 "Tracebacks of traces are limited to :func:`get_traceback_limit` frames. Use "
 "the *nframe* parameter of the :func:`start` function to store more frames."
 msgstr ""
+"追踪的回溯被限制为 :func:`get_traceback_limit` 个帧。 可使用 :func:`start` 函数的 *nframe* "
+"形参来保存更多的帧。"
 
 #: ../../library/tracemalloc.rst:354
 msgid ""
 "The :mod:`tracemalloc` module must be tracing memory allocations to take a "
 "snapshot, see the :func:`start` function."
-msgstr ""
+msgstr ":mod:`tracemalloc` 模块必须正在追踪内存分配才能保存快照，参见 :func:`start` 函数。"
 
 #: ../../library/tracemalloc.rst:357
 msgid "See also the :func:`get_object_traceback` function."
-msgstr ""
+msgstr "另请参阅 :func:`get_object_traceback` 函数。"
 
 #: ../../library/tracemalloc.rst:361
 msgid "DomainFilter"
@@ -346,17 +351,17 @@ msgstr "按地址空间（域）来过滤内存块的追踪。"
 msgid ""
 "If *inclusive* is ``True`` (include), match memory blocks allocated in the "
 "address space :attr:`domain`."
-msgstr ""
+msgstr "如果 *inclusive* 为 ``True`` (包括)，则匹配分配于地址空间 :attr:`domain` 中的内存块。"
 
 #: ../../library/tracemalloc.rst:374
 msgid ""
 "If *inclusive* is ``False`` (exclude), match memory blocks not allocated in "
 "the address space :attr:`domain`."
-msgstr ""
+msgstr "如果 *inclusive* 为 ``False`` (排除)，则匹配不是分配于地址空间 :attr:`domain` 中的内存块。"
 
 #: ../../library/tracemalloc.rst:379 ../../library/tracemalloc.rst:631
 msgid "Address space of a memory block (``int``). Read-only property."
-msgstr ""
+msgstr "内存块的地址空间 (``int``)。 只读的特征属性。 Read-only property."
 
 #: ../../library/tracemalloc.rst:383
 msgid "Filter"
@@ -372,6 +377,8 @@ msgid ""
 "*filename_pattern*. The ``'.pyc'`` file extension is replaced with "
 "``'.py'``."
 msgstr ""
+"请参阅 :func:`fnmatch.fnmatch` 函数来了解 *filename_pattern* 的语法。 ``'.pyc'`` 文件扩展名以 "
+"``'.py'`` 替换。"
 
 #: ../../library/tracemalloc.rst:393
 msgid "Examples:"
@@ -404,13 +411,15 @@ msgstr "增加了 :attr:`domain` 属性。"
 
 #: ../../library/tracemalloc.rst:411
 msgid "Address space of a memory block (``int`` or ``None``)."
-msgstr ""
+msgstr "内存块的地址空间 (``int`` 或 ``None``)。"
 
 #: ../../library/tracemalloc.rst:413 ../../library/tracemalloc.rst:633
 msgid ""
 "tracemalloc uses the domain ``0`` to trace memory allocations made by "
 "Python. C extensions can use other domains to trace other resources."
 msgstr ""
+"tracemalloc 使用 ``0`` 号域来追踪 Python 的内存分配操作。 C 扩展可以使用其他域来追踪其他资源。extensions can"
+" use other domains to trace other resources."
 
 #: ../../library/tracemalloc.rst:418
 msgid ""
@@ -418,6 +427,8 @@ msgid ""
 "a file with a name matching :attr:`filename_pattern` at line number "
 ":attr:`lineno`."
 msgstr ""
+"如果 *inclusive* 为 ``True`` (包括)，则只匹配名称与 :attr:`filename_pattern` 匹配的文件在行号为 "
+":attr:`lineno` 的位置上分配的内存块。"
 
 #: ../../library/tracemalloc.rst:422
 msgid ""
@@ -425,22 +436,26 @@ msgid ""
 "file with a name matching :attr:`filename_pattern` at line number "
 ":attr:`lineno`."
 msgstr ""
+"如果 *inclusive* 为 ``False`` (排除)，则忽略名称与 :attr:`filename_pattern` 匹配的文件在行号为 "
+":attr:`lineno` 的位置上分配的内存块。"
 
 #: ../../library/tracemalloc.rst:428
 msgid ""
 "Line number (``int``) of the filter. If *lineno* is ``None``, the filter "
 "matches any line number."
-msgstr ""
+msgstr "过滤器的行号 (``int``)。 如果 *lineno* 为 ``None``，则该过滤器将匹配任意行号。"
 
 #: ../../library/tracemalloc.rst:433
 msgid "Filename pattern of the filter (``str``). Read-only property."
-msgstr ""
+msgstr "过滤器的文件名模型 (``str``)。 只读的特征属性。"
 
 #: ../../library/tracemalloc.rst:437
 msgid ""
 "If *all_frames* is ``True``, all frames of the traceback are checked. If "
 "*all_frames* is ``False``, only the most recent frame is checked."
 msgstr ""
+"如果 *all_frames* 为 ``True``，则回溯的所有帧都会被检查。 如果 *all_frames* 为 "
+"``False``，则只有最近的帧会被检查。"
 
 #: ../../library/tracemalloc.rst:440
 msgid ""
@@ -448,19 +463,21 @@ msgid ""
 ":func:`get_traceback_limit` function and :attr:`Snapshot.traceback_limit` "
 "attribute."
 msgstr ""
+"如果回溯限制为 ``1`` 则该属性将没有效果。 参见 :func:`get_traceback_limit` 函数和 "
+":attr:`Snapshot.traceback_limit` 属性。"
 
 #: ../../library/tracemalloc.rst:446
 msgid "Frame"
-msgstr ""
+msgstr "帧"
 
 #: ../../library/tracemalloc.rst:450
 msgid "Frame of a traceback."
-msgstr ""
+msgstr "回溯的帧。"
 
 #: ../../library/tracemalloc.rst:452
 msgid ""
 "The :class:`Traceback` class is a sequence of :class:`Frame` instances."
-msgstr ""
+msgstr ":class:`Traceback` 类是一个 :class:`Frame` 实例的序列。instances."
 
 #: ../../library/tracemalloc.rst:456
 msgid "Filename (``str``)."
@@ -476,23 +493,24 @@ msgstr "快照"
 
 #: ../../library/tracemalloc.rst:468
 msgid "Snapshot of traces of memory blocks allocated by Python."
-msgstr ""
+msgstr "由 Python 分配的内存块的追踪的快照。"
 
 #: ../../library/tracemalloc.rst:470
 msgid "The :func:`take_snapshot` function creates a snapshot instance."
-msgstr ""
+msgstr ":func:`take_snapshot` 函数创建一个快照实例。"
 
 #: ../../library/tracemalloc.rst:474
 msgid ""
 "Compute the differences with an old snapshot. Get statistics as a sorted "
 "list of :class:`StatisticDiff` instances grouped by *key_type*."
 msgstr ""
+"计算与某个旧快照的差异。 获取按 *key_type* 分组的 :class:`StatisticDiff` 实例的已排序列表形式的统计信息。"
 
 #: ../../library/tracemalloc.rst:477
 msgid ""
 "See the :meth:`Snapshot.statistics` method for *key_type* and *cumulative* "
 "parameters."
-msgstr ""
+msgstr "请参阅 :meth:`Snapshot.statistics` 方法了解 *key_type* 和 *cumulative* 形参。"
 
 #: ../../library/tracemalloc.rst:480
 msgid ""
@@ -501,6 +519,9 @@ msgid ""
 "of :attr:`StatisticDiff.count_diff`, :attr:`Statistic.count` and then by "
 ":attr:`StatisticDiff.traceback`."
 msgstr ""
+"结果将按以下值从大到小排序: :attr:`StatisticDiff.size_diff` 的绝对值, "
+":attr:`StatisticDiff.size`, :attr:`StatisticDiff.count_diff` 的绝对值, "
+":attr:`Statistic.count` 然后是 :attr:`StatisticDiff.traceback`。"
 
 #: ../../library/tracemalloc.rst:488
 msgid "Write the snapshot into a file."
@@ -517,6 +538,9 @@ msgid ""
 "instances.  If *filters* is an empty list, return a new :class:`Snapshot` "
 "instance with a copy of the traces."
 msgstr ""
+"使用已过滤的 :attr:`traces` 序列新建一个 :class:`Snapshot` 实例，*filters* 是 "
+":class:`DomainFilter` 和 :class:`Filter` 实例的列表。 如果 *filters* "
+"为空列表，则返回一个包含追踪的副本的新的 :class:`Snapshot` 实例。"
 
 #: ../../library/tracemalloc.rst:500
 msgid ""

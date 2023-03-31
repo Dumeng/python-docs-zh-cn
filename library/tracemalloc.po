@@ -547,11 +547,11 @@ msgid ""
 "All inclusive filters are applied at once, a trace is ignored if no "
 "inclusive filters match it. A trace is ignored if at least one exclusive "
 "filter matches it."
-msgstr ""
+msgstr "包括的所有过滤器将同时被应用，一个追踪如果没有任何包括的过滤器与其匹配则会被忽略。 一个追踪如果有至少一个排除的过滤器与其匹配将会被忽略。"
 
 #: ../../library/tracemalloc.rst:504
 msgid ":class:`DomainFilter` instances are now also accepted in *filters*."
-msgstr ""
+msgstr ":class:`DomainFilter` 实例现在同样被 *filters* 所接受。"
 
 #: ../../library/tracemalloc.rst:510
 msgid "Load a snapshot from a file."
@@ -606,6 +606,8 @@ msgid ""
 "cumulative mode can only be used with *key_type* equals to ``'filename'`` "
 "and ``'lineno'``."
 msgstr ""
+"如果 *cumulative* 为 ``True``，则累积一个追踪的回溯的所有帧的内存块的大小和数量，而不只是最近的帧。 累积模式只能在 "
+"*key_type* 等于 ``'filename'`` 和 ``'lineno'`` 的情况下使用。"
 
 #: ../../library/tracemalloc.rst:533
 msgid ""
@@ -613,24 +615,27 @@ msgid ""
 ":attr:`Statistic.size`, :attr:`Statistic.count` and then by "
 ":attr:`Statistic.traceback`."
 msgstr ""
+"结果将按以下值从大到小排序: :attr:`Statistic.size`, :attr:`Statistic.count` 然后是 "
+":attr:`Statistic.traceback`。"
 
 #: ../../library/tracemalloc.rst:540
 msgid ""
 "Maximum number of frames stored in the traceback of :attr:`traces`: result "
 "of the :func:`get_traceback_limit` when the snapshot was taken."
 msgstr ""
+"保存在 :attr:`traces` 的回溯中的帧的最大数量：当快照被保存时 :func:`get_traceback_limit` 的结果。"
 
 #: ../../library/tracemalloc.rst:545
 msgid ""
 "Traces of all memory blocks allocated by Python: sequence of :class:`Trace` "
 "instances."
-msgstr ""
+msgstr "由 Python 分配的所有内存块的追踪: :class:`Trace` 实例的序列。"
 
 #: ../../library/tracemalloc.rst:548
 msgid ""
 "The sequence has an undefined order. Use the :meth:`Snapshot.statistics` "
 "method to get a sorted list of statistics."
-msgstr ""
+msgstr "该序列的顺序是未定义的。 请使用 :meth:`Snapshot.statistics` 方法来获取统计信息的已排序列表。"
 
 #: ../../library/tracemalloc.rst:553
 msgid "Statistic"
@@ -655,7 +660,7 @@ msgstr "内存块数（``整形``）。"
 
 #: ../../library/tracemalloc.rst:569
 msgid "Total size of memory blocks in bytes (``int``)."
-msgstr ""
+msgstr "以字节数表示的内存块总计大小 (``int``)。"
 
 #: ../../library/tracemalloc.rst:573 ../../library/tracemalloc.rst:642
 msgid ""
@@ -724,7 +729,7 @@ msgstr "一个内存块的跟踪信息。"
 msgid ""
 "The :attr:`Snapshot.traces` attribute is a sequence of :class:`Trace` "
 "instances."
-msgstr ""
+msgstr ":attr:`Snapshot.traces` 属性是一个 :class:`Trace` 实例的序列。"
 
 #: ../../library/tracemalloc.rst:638
 msgid "Size of the memory block in bytes (``int``)."

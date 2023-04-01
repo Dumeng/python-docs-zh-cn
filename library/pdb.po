@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 14:13+0000\n"
+"POT-Creation-Date: 2023-03-31 18:02+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -176,6 +176,8 @@ msgid ""
 "debugger control.  When :func:`runeval` returns, it returns the value of the"
 " *expression*.  Otherwise this function is similar to :func:`run`."
 msgstr ""
+"在调试器控制下对 *expression* (以字符串或代码对象的形式给出) 求值。 当 :func:`runeval` 返回时，它将返回 "
+"*expression* 的值。 在其他方面此函数与 :func:`run` 类似。"
 
 #: ../../library/pdb.rst:133
 msgid ""
@@ -621,7 +623,7 @@ msgstr "打印当前函数的参数列表。"
 
 #: ../../library/pdb.rst:449
 msgid "Evaluate *expression* in the current context and print its value."
-msgstr ""
+msgstr "在当前上下文中对 *expression* 求值并打印该值。"
 
 #: ../../library/pdb.rst:453
 msgid ""
@@ -633,15 +635,15 @@ msgstr "``print()`` 也可以使用，但它不是一个调试器命令 --- 它�
 msgid ""
 "Like the :pdbcmd:`p` command, except the value of *expression* is pretty-"
 "printed using the :mod:`pprint` module."
-msgstr ""
+msgstr "与 :pdbcmd:`p` 命令类似，但 *expression* 的值将使用 :mod:`pprint` 模块美观地打印。"
 
 #: ../../library/pdb.rst:464
 msgid "Print the type of *expression*."
-msgstr ""
+msgstr "打印 *expression* 的类型。"
 
 #: ../../library/pdb.rst:468
 msgid "Try to get source code of *expression* and display it."
-msgstr ""
+msgstr "尝试获取 *expression* 的源代码并显示它。"
 
 #: ../../library/pdb.rst:474
 msgid ""
@@ -695,7 +697,7 @@ msgstr "作为示例，这里列出了两个有用的别名（特别适合放在
 
 #: ../../library/pdb.rst:522
 msgid "Delete the specified alias *name*."
-msgstr ""
+msgstr "删除指定的别名 *name*。"
 
 #: ../../library/pdb.rst:526
 msgid ""

@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-24 14:14+0000\n"
+"POT-Creation-Date: 2023-03-31 18:02+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -92,16 +92,32 @@ msgstr "要获取已弃用特性及其弃用时间线的概要，请参阅 `Depr
 
 #: ../../library/typing.rst:44
 msgid ""
+"For a quick overview of type hints, refer to `this cheat sheet "
+"<https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html>`_."
+msgstr ""
+"要获取有关类型提示的简要介绍，请参考 `这个备忘单 "
+"<https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html>`_。"
+
+#: ../../library/typing.rst:47
+msgid ""
+"The \"Type System Reference\" section of https://mypy.readthedocs.io/ -- "
+"since the Python typing system is standardised via PEPs, this reference "
+"should broadly apply to most Python type checkers, although some parts may "
+"still be specific to mypy."
+msgstr ""
+
+#: ../../library/typing.rst:52
+msgid ""
 "The documentation at https://typing.readthedocs.io/ serves as useful "
 "reference for type system features, useful typing related tools and typing "
 "best practices."
 msgstr "位于 https://typing.readthedocs.io/ 的文档提供有用的类型系统功能参考, 类型关系工具以及练习"
 
-#: ../../library/typing.rst:51
+#: ../../library/typing.rst:58
 msgid "Relevant PEPs"
 msgstr "相关的 PEP"
 
-#: ../../library/typing.rst:53
+#: ../../library/typing.rst:60
 msgid ""
 "Since the initial introduction of type hints in :pep:`484` and :pep:`483`, a"
 " number of PEPs have modified and enhanced Python's framework for type "
@@ -109,32 +125,32 @@ msgid ""
 msgstr ""
 "自从在 :pep:`484` 和 :pep:`483` 中首次引入类型提示以来，一些 PEP 已经修改和增强了 Python 的类型注释框架。包括:"
 
-#: ../../library/typing.rst:58
+#: ../../library/typing.rst:65
 msgid ":pep:`526`: Syntax for Variable Annotations"
 msgstr ":pep:`526`: 变量注解的语法"
 
-#: ../../library/typing.rst:58
+#: ../../library/typing.rst:65
 msgid ""
 "*Introducing* syntax for annotating variables outside of function "
 "definitions, and :data:`ClassVar`"
 msgstr "*引入* 在函数定义之外标注变量的语法，以及 :data:`ClassVar` 。"
 
-#: ../../library/typing.rst:61
+#: ../../library/typing.rst:68
 msgid ":pep:`544`: Protocols: Structural subtyping (static duck typing)"
 msgstr ":pep:`544`: Protocol：结构子类型（静态鸭子类型）。"
 
-#: ../../library/typing.rst:61
+#: ../../library/typing.rst:68
 msgid ""
 "*Introducing* :class:`Protocol` and the "
 ":func:`@runtime_checkable<runtime_checkable>` decorator"
 msgstr ""
 "*引入* :class:`Protocol` 和 :func:`@runtime_checkable <runtime_checkable>` 装饰器。"
 
-#: ../../library/typing.rst:64
+#: ../../library/typing.rst:71
 msgid ":pep:`585`: Type Hinting Generics In Standard Collections"
 msgstr ":pep:`585`: 标准集合中的类型提示泛型"
 
-#: ../../library/typing.rst:64
+#: ../../library/typing.rst:71
 msgid ""
 "*Introducing* :class:`types.GenericAlias` and the ability to use standard "
 "library classes as :ref:`generic types<types-genericalias>`"
@@ -142,44 +158,44 @@ msgstr ""
 "*引入* :class:`types.GenericAlias` 和使用标准库类作为 :ref:`通用类型 <types-genericalias>` "
 "的能力。"
 
-#: ../../library/typing.rst:66
+#: ../../library/typing.rst:73
 msgid ":pep:`586`: Literal Types"
 msgstr ":pep:`586`: 文字类型"
 
-#: ../../library/typing.rst:67
+#: ../../library/typing.rst:74
 msgid "*Introducing* :data:`Literal`"
 msgstr "*引入* :data:`Literal`"
 
-#: ../../library/typing.rst:68
+#: ../../library/typing.rst:75
 msgid ""
 ":pep:`589`: TypedDict: Type Hints for Dictionaries with a Fixed Set of Keys"
 msgstr ":pep:`589`: TypedDict: 具有固定键集的字典的类型提示"
 
-#: ../../library/typing.rst:69
+#: ../../library/typing.rst:76
 msgid "*Introducing* :class:`TypedDict`"
 msgstr "*引入* :class:`TypedDict`"
 
-#: ../../library/typing.rst:70
+#: ../../library/typing.rst:77
 msgid ":pep:`591`: Adding a final qualifier to typing"
 msgstr ":pep:`591`: 为 typing 添加最终限定符"
 
-#: ../../library/typing.rst:71
+#: ../../library/typing.rst:78
 msgid "*Introducing* :data:`Final` and the :func:`@final<final>` decorator"
 msgstr "*引入* :data:`Final` 和 :func:`@final<final>` 装饰器"
 
-#: ../../library/typing.rst:72
+#: ../../library/typing.rst:79
 msgid ":pep:`593`: Flexible function and variable annotations"
 msgstr ":pep:`593`: 灵活的函数和变量注解"
 
-#: ../../library/typing.rst:73
+#: ../../library/typing.rst:80
 msgid "*Introducing* :data:`Annotated`"
 msgstr "*引入* :data:`Annotated`"
 
-#: ../../library/typing.rst:76
+#: ../../library/typing.rst:83
 msgid ":pep:`604`: Allow writing union types as ``X | Y``"
 msgstr ":pep:`604`: 允许 ``X | Y`` 形式的联合类型写法"
 
-#: ../../library/typing.rst:75
+#: ../../library/typing.rst:82
 msgid ""
 "*Introducing* :data:`types.UnionType` and the ability to use the binary-or "
 "operator ``|`` to signify a :ref:`union of types<types-union>`"
@@ -187,112 +203,112 @@ msgstr ""
 "*引入* :data:`types.UnionType` 和使用二元或运算符 ``|`` 来表示 :ref:`类型联合 <types-union>` "
 "的能力。"
 
-#: ../../library/typing.rst:78
+#: ../../library/typing.rst:85
 msgid ":pep:`612`: Parameter Specification Variables"
 msgstr ":pep:`612`: 形参规格变量"
 
-#: ../../library/typing.rst:79
+#: ../../library/typing.rst:86
 msgid "*Introducing* :class:`ParamSpec` and :data:`Concatenate`"
 msgstr "*引入* :class:`ParamSpec` 和 :data:`Concatenate`"
 
-#: ../../library/typing.rst:80
+#: ../../library/typing.rst:87
 msgid ":pep:`613`: Explicit Type Aliases"
 msgstr ":pep:`613`: 显式类型别名"
 
-#: ../../library/typing.rst:81
+#: ../../library/typing.rst:88
 msgid "*Introducing* :data:`TypeAlias`"
 msgstr "*引入* :data:`TypeAlias`"
 
-#: ../../library/typing.rst:82
+#: ../../library/typing.rst:89
 msgid ":pep:`646`: Variadic Generics"
 msgstr ":pep:`646`：可变参数泛型"
 
-#: ../../library/typing.rst:83
+#: ../../library/typing.rst:90
 msgid "*Introducing* :data:`TypeVarTuple`"
 msgstr "*引入* :data:`TypeVarTuple`"
 
-#: ../../library/typing.rst:84
+#: ../../library/typing.rst:91
 msgid ":pep:`647`: User-Defined Type Guards"
 msgstr ":pep:`647`: 用户自定义的类型保护器"
 
-#: ../../library/typing.rst:85
+#: ../../library/typing.rst:92
 msgid "*Introducing* :data:`TypeGuard`"
 msgstr "*引入* :data:`TypeGuard`"
 
-#: ../../library/typing.rst:86
+#: ../../library/typing.rst:93
 msgid ""
 ":pep:`655`: Marking individual TypedDict items as required or potentially "
 "missing"
 msgstr ":pep:`655`：将单个 TypedDict 项标记为必填或非必填项"
 
-#: ../../library/typing.rst:87
+#: ../../library/typing.rst:94
 msgid "*Introducing* :data:`Required` and :data:`NotRequired`"
 msgstr "*引入* :data:`Required` 和 :data:`NotRequired`"
 
-#: ../../library/typing.rst:88
+#: ../../library/typing.rst:95
 msgid ":pep:`673`: Self type"
 msgstr ":pep:`673`：Self 类型"
 
-#: ../../library/typing.rst:89
+#: ../../library/typing.rst:96
 msgid "*Introducing* :data:`Self`"
 msgstr "*引入* :data:`Self`"
 
-#: ../../library/typing.rst:90
+#: ../../library/typing.rst:97
 msgid ":pep:`675`: Arbitrary Literal String Type"
 msgstr ":pep:`675`：任意字面值字符串类型"
 
-#: ../../library/typing.rst:91
+#: ../../library/typing.rst:98
 msgid "*Introducing* :data:`LiteralString`"
 msgstr "*引入* :data:`LiteralString`"
 
-#: ../../library/typing.rst:93
+#: ../../library/typing.rst:100
 msgid ":pep:`681`: Data Class Transforms"
 msgstr ":pep:`681`：数据类变换"
 
-#: ../../library/typing.rst:93
+#: ../../library/typing.rst:100
 msgid ""
 "*Introducing* the :func:`@dataclass_transform<dataclass_transform>` "
 "decorator"
 msgstr "*引入* :func:`@dataclass_transform<dataclass_transform>` 装饰器"
 
-#: ../../library/typing.rst:98
+#: ../../library/typing.rst:105
 msgid "Type aliases"
 msgstr "类型别名"
 
-#: ../../library/typing.rst:100
+#: ../../library/typing.rst:107
 msgid ""
 "A type alias is defined by assigning the type to the alias. In this example,"
 " ``Vector`` and ``list[float]`` will be treated as interchangeable "
 "synonyms::"
 msgstr "把类型赋给别名，就可以定义类型别名。本例中，``Vector`` 和 ``list[float]`` 相同，可互换："
 
-#: ../../library/typing.rst:111
+#: ../../library/typing.rst:118
 msgid ""
 "Type aliases are useful for simplifying complex type signatures. For "
 "example::"
 msgstr "类型别名适用于简化复杂的类型签名。例如："
 
-#: ../../library/typing.rst:129
+#: ../../library/typing.rst:136
 msgid ""
 "Note that ``None`` as a type hint is a special case and is replaced by "
 "``type(None)``."
 msgstr "注意，``None`` 是一种类型提示特例，已被 ``type(None)`` 取代。"
 
-#: ../../library/typing.rst:135
+#: ../../library/typing.rst:142
 msgid "NewType"
 msgstr "NewType"
 
-#: ../../library/typing.rst:137
+#: ../../library/typing.rst:144
 msgid "Use the :class:`NewType` helper to create distinct types::"
 msgstr "使用 :class:`NewType` 助手来创建不同的类型 ::"
 
-#: ../../library/typing.rst:144
+#: ../../library/typing.rst:151
 msgid ""
 "The static type checker will treat the new type as if it were a subclass of "
 "the original type. This is useful in helping catch logical errors::"
 msgstr "静态类型检查器把新类型当作原始类型的子类，这种方式适用于捕捉逻辑错误："
 
-#: ../../library/typing.rst:156
+#: ../../library/typing.rst:163
 msgid ""
 "You may still perform all ``int`` operations on a variable of type "
 "``UserId``, but the result will always be of type ``int``. This lets you "
@@ -302,7 +318,7 @@ msgstr ""
 "``UserId`` 类型的变量可执行所有 ``int`` 操作，但返回结果都是 ``int`` 类型。这种方式允许在预期 ``int`` 时传入 "
 "``UserId``，还能防止意外创建无效的 ``UserId``："
 
-#: ../../library/typing.rst:164
+#: ../../library/typing.rst:171
 msgid ""
 "Note that these checks are enforced only by the static type checker. At "
 "runtime, the statement ``Derived = NewType('Derived', Base)`` will make "
@@ -314,31 +330,31 @@ msgstr ""
 "``Derived`` 可调用对象，该对象立即返回你传递给它的任何参数。 这意味着语句 ``Derived(some_value)`` "
 "不会创建一个新的类，也不会引入超出常规函数调用的很多开销。"
 
-#: ../../library/typing.rst:170
+#: ../../library/typing.rst:177
 msgid ""
 "More precisely, the expression ``some_value is Derived(some_value)`` is "
 "always true at runtime."
 msgstr "更确切地说，在运行时，``some_value is Derived(some_value)`` 表达式总为 True。"
 
-#: ../../library/typing.rst:173
+#: ../../library/typing.rst:180
 msgid "It is invalid to create a subtype of ``Derived``::"
 msgstr "创建 ``Derived`` 的子类型是无效的::"
 
-#: ../../library/typing.rst:182
+#: ../../library/typing.rst:189
 msgid ""
 "However, it is possible to create a :class:`NewType` based on a 'derived' "
 "``NewType``::"
 msgstr "然而，我们可以在 \"派生的\" ``NewType`` 的基础上创建一个 :class:`NewType`。"
 
-#: ../../library/typing.rst:190
+#: ../../library/typing.rst:197
 msgid "and typechecking for ``ProUserId`` will work as expected."
 msgstr "同时，``ProUserId`` 的类型检查也可以按预期执行。"
 
-#: ../../library/typing.rst:192
+#: ../../library/typing.rst:199
 msgid "See :pep:`484` for more details."
 msgstr "详见 :pep:`484`。"
 
-#: ../../library/typing.rst:196
+#: ../../library/typing.rst:203
 msgid ""
 "Recall that the use of a type alias declares two types to be *equivalent* to"
 " one another. Doing ``Alias = Original`` will make the static type checker "
@@ -348,7 +364,7 @@ msgstr ""
 "回顾上文，类型别名声明了两种彼此 *等价* 的类型。 ``Alias = Original`` 时，静态类型检查器认为 ``Alias`` 与 "
 "``Original`` *完全等价*。 这种方式适用于简化复杂类型签名。"
 
-#: ../../library/typing.rst:201
+#: ../../library/typing.rst:208
 msgid ""
 "In contrast, ``NewType`` declares one type to be a *subtype* of another. "
 "Doing ``Derived = NewType('Derived', Original)`` will make the static type "
@@ -361,7 +377,7 @@ msgstr ""
 "Original)`` 时，静态类型检查器把 ``Derived`` 当作 ``Original`` 的 *子类* ，即，``Original`` "
 "类型的值不能用在预期 ``Derived`` 类型的位置。这种方式适用于以最小运行时成本防止逻辑错误。"
 
-#: ../../library/typing.rst:210
+#: ../../library/typing.rst:217
 msgid ""
 "``NewType`` is now a class rather than a function.  There is some additional"
 " runtime cost when calling ``NewType`` over a regular function.  However, "
@@ -370,23 +386,23 @@ msgstr ""
 "``NewType`` 现在是一个类而不是一个函数。 在调用 ``NewType`` 而不是普通的函数时，会有一些额外的运行时间成本。 "
 "然而，这种开销将在 3.11.0 中减少。"
 
-#: ../../library/typing.rst:217
+#: ../../library/typing.rst:224
 msgid "Callable"
 msgstr "可调对象（Callable）"
 
-#: ../../library/typing.rst:219
+#: ../../library/typing.rst:226
 msgid ""
 "Frameworks expecting callback functions of specific signatures might be type"
 " hinted using ``Callable[[Arg1Type, Arg2Type], ReturnType]``."
 msgstr ""
 "预期特定签名回调函数的框架可以用 ``Callable[[Arg1Type, Arg2Type], ReturnType]`` 实现类型提示。"
 
-#: ../../library/typing.rst:222 ../../library/typing.rst:1164
-#: ../../library/typing.rst:2817
+#: ../../library/typing.rst:229 ../../library/typing.rst:1171
+#: ../../library/typing.rst:2824
 msgid "For example::"
 msgstr "例如："
 
-#: ../../library/typing.rst:237
+#: ../../library/typing.rst:244
 msgid ""
 "It is possible to declare the return type of a callable without specifying "
 "the call signature by substituting a literal ellipsis for the list of "
@@ -394,7 +410,7 @@ msgid ""
 msgstr ""
 "无需指定调用签名，用省略号字面量替换类型提示里的参数列表： ``Callable[..., ReturnType]``，就可以声明可调对象的返回类型。"
 
-#: ../../library/typing.rst:241 ../../library/typing.rst:843
+#: ../../library/typing.rst:248 ../../library/typing.rst:850
 msgid ""
 "Callables which take other callables as arguments may indicate that their "
 "parameter types are dependent on each other using :class:`ParamSpec`. "
@@ -410,46 +426,46 @@ msgstr ""
 "``Callable[Concatenate[Arg1Type, Arg2Type, ..., ParamSpecVariable], "
 "ReturnType]`` 的形式。"
 
-#: ../../library/typing.rst:249 ../../library/typing.rst:855
+#: ../../library/typing.rst:256 ../../library/typing.rst:862
 msgid ""
 "``Callable`` now supports :class:`ParamSpec` and :data:`Concatenate`. See "
 ":pep:`612` for more details."
 msgstr ""
 "``Callable`` 现在支持 :class:`ParamSpec` 和 :data:`Concatenate`。 详情见 :pep:`612`。"
 
-#: ../../library/typing.rst:254
+#: ../../library/typing.rst:261
 msgid ""
 "The documentation for :class:`ParamSpec` and :class:`Concatenate` provides "
 "examples of usage in ``Callable``."
 msgstr ""
 ":class:`ParamSpec` 和 :class:`Concatenate` 的文档提供了在 ``Callable`` 中使用的例子。"
 
-#: ../../library/typing.rst:260
+#: ../../library/typing.rst:267
 msgid "Generics"
 msgstr "泛型（Generic）"
 
-#: ../../library/typing.rst:262
+#: ../../library/typing.rst:269
 msgid ""
 "Since type information about objects kept in containers cannot be statically"
 " inferred in a generic way, abstract base classes have been extended to "
 "support subscription to denote expected types for container elements."
 msgstr "容器中，对象的类型信息不能以泛型方式静态推断，因此，抽象基类扩展支持下标，用于表示容器元素的预期类型。"
 
-#: ../../library/typing.rst:273
+#: ../../library/typing.rst:280
 msgid ""
 "Generics can be parameterized by using a factory available in typing called "
 ":class:`TypeVar`."
 msgstr "typing 模块中推出的 :class:`TypeVar` 工厂函数实现泛型参数化。"
 
-#: ../../library/typing.rst:289
+#: ../../library/typing.rst:296
 msgid "User-defined generic types"
 msgstr "用户定义的泛型类型"
 
-#: ../../library/typing.rst:291
+#: ../../library/typing.rst:298
 msgid "A user-defined class can be defined as a generic class."
 msgstr "用户定义的类可以定义为泛型类。"
 
-#: ../../library/typing.rst:317
+#: ../../library/typing.rst:324
 msgid ""
 "``Generic[T]`` as a base class defines that the class ``LoggedVar`` takes a "
 "single type parameter ``T`` . This also makes ``T`` valid as a type within "
@@ -457,7 +473,7 @@ msgid ""
 msgstr ""
 "``Generic[T]`` 是定义类 ``LoggedVar`` 的基类，该类使用单类型参数 ``T``。在该类体内，``T`` 是有效的类型。"
 
-#: ../../library/typing.rst:321
+#: ../../library/typing.rst:328
 msgid ""
 "The :class:`Generic` base class defines :meth:`~object.__class_getitem__` so"
 " that ``LoggedVar[T]`` is valid as a type::"
@@ -465,32 +481,32 @@ msgstr ""
 ":class:`Generic` 基类定义了 :meth:`~object.__class_getitem__` "
 "，因此，``LoggedVar[T]`` 也是有效类型："
 
-#: ../../library/typing.rst:330
+#: ../../library/typing.rst:337
 msgid ""
 "A generic type can have any number of type variables. All varieties of "
 ":class:`TypeVar` are permissible as parameters for a generic type::"
 msgstr "一个泛型可以有任何数量的类型变量。所有种类的 :class:`TypeVar` 都可以作为泛型的参数::"
 
-#: ../../library/typing.rst:342
+#: ../../library/typing.rst:349
 msgid ""
 "Each type variable argument to :class:`Generic` must be distinct. This is "
 "thus invalid::"
 msgstr ":class:`Generic` 类型变量的参数应各不相同。下列代码就是无效的："
 
-#: ../../library/typing.rst:353
+#: ../../library/typing.rst:360
 msgid "You can use multiple inheritance with :class:`Generic`::"
 msgstr ":class:`Generic` 支持多重继承："
 
-#: ../../library/typing.rst:363
+#: ../../library/typing.rst:370
 msgid ""
 "When inheriting from generic classes, some type variables could be fixed::"
 msgstr "继承自泛型类时，可以修正某些类型变量："
 
-#: ../../library/typing.rst:373
+#: ../../library/typing.rst:380
 msgid "In this case ``MyDict`` has a single parameter, ``T``."
 msgstr "比如，本例中 ``MyDict`` 调用的单参数，``T``。"
 
-#: ../../library/typing.rst:375
+#: ../../library/typing.rst:382
 msgid ""
 "Using a generic class without specifying type parameters assumes :data:`Any`"
 " for each position. In the following example, ``MyIterable`` is not generic "
@@ -499,15 +515,15 @@ msgstr ""
 "未指定泛型类的类型参数时，每个位置的类型都预设为 :data:`Any`。下例中，``MyIterable`` 不是泛型，但却隐式继承了 "
 "``Iterable[Any]``："
 
-#: ../../library/typing.rst:383
+#: ../../library/typing.rst:390
 msgid "User defined generic type aliases are also supported. Examples::"
 msgstr "还支持用户定义的泛型类型别名。例如："
 
-#: ../../library/typing.rst:400
+#: ../../library/typing.rst:407
 msgid ":class:`Generic` no longer has a custom metaclass."
 msgstr ":class:`Generic` 不再支持自定义元类。"
 
-#: ../../library/typing.rst:403
+#: ../../library/typing.rst:410
 msgid ""
 "User-defined generics for parameter expressions are also supported via "
 "parameter specification variables in the form ``Generic[P]``.  The behavior "
@@ -520,7 +536,7 @@ msgstr ""
 "形式的参数规范变量来支持。该行为与上面描述的类型变量一致，因为参数规范变量被类型化模块视为一个专门的类型变量。 "
 "这方面的一个例外是，一个类型列表可以用来替代 :class:`ParamSpec`::"
 
-#: ../../library/typing.rst:420
+#: ../../library/typing.rst:427
 msgid ""
 "Furthermore, a generic with only one parameter specification variable will "
 "accept parameter lists in the forms ``X[[Type1, Type2, ...]]`` and also "
@@ -530,7 +546,7 @@ msgstr ""
 "此外，一个只有一个参数规范变量的泛型将接受表格 ``X[[Type1, Type2, ...]]`` 中的参数列表，出于美观的考虑也包括 "
 "``X[Type1, Type2, ...]`` 。 在内部，后者被转换为前者，所以下面的内容是等价的::"
 
-#: ../../library/typing.rst:432
+#: ../../library/typing.rst:439
 msgid ""
 "Do note that generics with :class:`ParamSpec` may not have correct "
 "``__parameters__`` after substitution in some cases because they are "
@@ -539,7 +555,7 @@ msgstr ""
 "请注意，带有 :class:`ParamSpec` 的泛型在某些情况下可能不会有正确的 "
 "``__parameters__``，因为它们主要用于静态类型检查。"
 
-#: ../../library/typing.rst:436
+#: ../../library/typing.rst:443
 msgid ""
 ":class:`Generic` can now be parameterized over parameter expressions. See "
 ":class:`ParamSpec` and :pep:`612` for more details."
@@ -547,7 +563,7 @@ msgstr ""
 ":class:`Generic` 现在可以通过参数表达式进行参数化。参见 :class:`ParamSpec` 和 :pep:`612` "
 "以了解更多细节。"
 
-#: ../../library/typing.rst:440
+#: ../../library/typing.rst:447
 msgid ""
 "A user-defined generic class can have ABCs as base classes without a "
 "metaclass conflict. Generic metaclasses are not supported. The outcome of "
@@ -557,11 +573,11 @@ msgstr ""
 "用户定义的泛型类可以将 ABC 作为基类而不会导致元类冲突。 参数化泛型的输出结果会被缓存，且 typing 模块中的大多数类型都是 "
 ":term:`hashable` 并且支持相等性比较。"
 
-#: ../../library/typing.rst:447
+#: ../../library/typing.rst:454
 msgid "The :data:`Any` type"
 msgstr ":data:`Any` 类型"
 
-#: ../../library/typing.rst:449
+#: ../../library/typing.rst:456
 msgid ""
 "A special kind of type is :data:`Any`. A static type checker will treat "
 "every type as being compatible with :data:`Any` and :data:`Any` as being "
@@ -569,13 +585,13 @@ msgid ""
 msgstr ""
 ":data:`Any` 是一种特殊的类型。静态类型检查器认为所有类型均与 :data:`Any` 兼容，同样，:data:`Any` 也与所有类型兼容。"
 
-#: ../../library/typing.rst:453
+#: ../../library/typing.rst:460
 msgid ""
 "This means that it is possible to perform any operation or method call on a "
 "value of type :data:`Any` and assign it to any variable::"
 msgstr "也就是说，可对 :data:`Any` 类型的值执行任何操作或方法调用，并赋值给任意变量："
 
-#: ../../library/typing.rst:471
+#: ../../library/typing.rst:478
 msgid ""
 "Notice that no type checking is performed when assigning a value of type "
 ":data:`Any` to a more precise type. For example, the static type checker did"
@@ -586,19 +602,19 @@ msgstr ""
 "注意，:data:`Any` 类型的值赋给更精确的类型时，不执行类型检查。例如，把 ``a`` 赋给 ``s``，在运行时，即便 ``s`` 已声明为 "
 ":class:`str` 类型，但接收 :class:`int` 值时，静态类型检查器也不会报错。"
 
-#: ../../library/typing.rst:477
+#: ../../library/typing.rst:484
 msgid ""
 "Furthermore, all functions without a return type or parameter types will "
 "implicitly default to using :data:`Any`::"
 msgstr "此外，未指定返回值与参数类型的函数，都隐式地默认使用 :data:`Any`："
 
-#: ../../library/typing.rst:490
+#: ../../library/typing.rst:497
 msgid ""
 "This behavior allows :data:`Any` to be used as an *escape hatch* when you "
 "need to mix dynamically and statically typed code."
 msgstr "需要混用动态与静态类型代码时，此操作把 :data:`Any` 当作 *应急出口*。"
 
-#: ../../library/typing.rst:493
+#: ../../library/typing.rst:500
 msgid ""
 "Contrast the behavior of :data:`Any` with the behavior of :class:`object`. "
 "Similar to :data:`Any`, every type is a subtype of :class:`object`. However,"
@@ -608,7 +624,7 @@ msgstr ""
 ":data:`Any` 和 :class:`object` 的区别。与 :data:`Any` 相似，所有类型都是 :class:`object` "
 "的子类型。然而，与 :data:`Any` 不同，object 不可逆：:class:`object` *不是* 其它类型的子类型。"
 
-#: ../../library/typing.rst:498
+#: ../../library/typing.rst:505
 msgid ""
 "That means when the type of a value is :class:`object`, a type checker will "
 "reject almost all operations on it, and assigning it to a variable (or using"
@@ -618,17 +634,17 @@ msgstr ""
 "就是说，值的类型是 :class:`object` "
 "时，类型检查器几乎会拒绝所有对它的操作，并且，把它赋给更精确的类型变量（或返回值）属于类型错误。例如："
 
-#: ../../library/typing.rst:520
+#: ../../library/typing.rst:527
 msgid ""
 "Use :class:`object` to indicate that a value could be any type in a typesafe"
 " manner. Use :data:`Any` to indicate that a value is dynamically typed."
 msgstr "使用 :class:`object`，说明值能以类型安全的方式转为任何类型。使用 :data:`Any`，说明值是动态类型。"
 
-#: ../../library/typing.rst:525
+#: ../../library/typing.rst:532
 msgid "Nominal vs structural subtyping"
 msgstr "名义子类型 vs 结构子类型"
 
-#: ../../library/typing.rst:527
+#: ../../library/typing.rst:534
 msgid ""
 "Initially :pep:`484` defined the Python static type system as using *nominal"
 " subtyping*. This means that a class ``A`` is allowed where a class ``B`` is"
@@ -637,7 +653,7 @@ msgstr ""
 "最初 :pep:`484` 将 Python 静态类型系统定义为使用 *名义子类型*。这意味着当且仅当类 ``A`` 是 ``B`` "
 "的子类时，才满足有类 ``B`` 预期时使用类 ``A`` 。"
 
-#: ../../library/typing.rst:531
+#: ../../library/typing.rst:538
 msgid ""
 "This requirement previously also applied to abstract base classes, such as "
 ":class:`~collections.abc.Iterable`. The problem with this approach is that a"
@@ -649,7 +665,7 @@ msgstr ""
 "。这种方式的问题在于，定义类时必须显式说明，既不 Pythonic，也不是动态类型式 Python 代码的惯用写法。例如，下列代码就遵从了 "
 ":pep:`484` 的规范："
 
-#: ../../library/typing.rst:544
+#: ../../library/typing.rst:551
 msgid ""
 ":pep:`544` allows to solve this problem by allowing users to write the above"
 " code without explicit base classes in the class definition, allowing "
@@ -660,22 +676,22 @@ msgstr ""
 ":pep:`544` 允许用户在类定义时不显式说明基类，从而解决了这一问题，静态类型检查器隐式认为 ``Bucket`` 既是 ``Sized`` "
 "的子类型，又是 ``Iterable[int]`` 的子类型。这就是 *结构子类型* （又称为静态鸭子类型）："
 
-#: ../../library/typing.rst:560
+#: ../../library/typing.rst:567
 msgid ""
 "Moreover, by subclassing a special class :class:`Protocol`, a user can "
 "define new custom protocols to fully enjoy structural subtyping (see "
 "examples below)."
 msgstr "此外，结构子类型的优势在于，通过继承特殊类 :class:`Protocol` ，用户可以定义新的自定义协议（见下文中的例子）。"
 
-#: ../../library/typing.rst:565
+#: ../../library/typing.rst:572
 msgid "Module contents"
 msgstr "模块内容"
 
-#: ../../library/typing.rst:567
+#: ../../library/typing.rst:574
 msgid "The module defines the following classes, functions and decorators."
 msgstr "本模块定义了下列类、函数和修饰器。"
 
-#: ../../library/typing.rst:571
+#: ../../library/typing.rst:578
 msgid ""
 "This module defines several types that are subclasses of pre-existing "
 "standard library classes which also extend :class:`Generic` to support type "
@@ -685,7 +701,7 @@ msgstr ""
 "本模块定义了一些类型，作为标准库中已有的类的子类，从而可以让 :class:`Generic` 支持 ``[]`` 中的类型变量。Python 3.9 "
 "中，这些标准库的类已支持 ``[]`` ，因此，这些类型就变得冗余了。"
 
-#: ../../library/typing.rst:577
+#: ../../library/typing.rst:584
 msgid ""
 "The redundant types are deprecated as of Python 3.9 but no deprecation "
 "warnings will be issued by the interpreter. It is expected that type "
@@ -694,7 +710,7 @@ msgid ""
 msgstr ""
 "Python 3.9 弃用了这些冗余类型，但解释器并未提供相应的弃用警告。标记弃用类型的工作留待支持 Python 3.9 及以上版本的类型检查器实现。"
 
-#: ../../library/typing.rst:582
+#: ../../library/typing.rst:589
 msgid ""
 "The deprecated types will be removed from the :mod:`typing` module in the "
 "first Python version released 5 years after the release of Python 3.9.0. See"
@@ -703,38 +719,38 @@ msgstr ""
 "Python 3.9.0 发布五年后的首个 Python 发行版将从 :mod:`typing` 模块中移除这些弃用类型。详见 :pep:`585` "
 "《*标准集合的类型提示泛型*》。"
 
-#: ../../library/typing.rst:588
+#: ../../library/typing.rst:595
 msgid "Special typing primitives"
 msgstr "特殊类型原语"
 
-#: ../../library/typing.rst:591
+#: ../../library/typing.rst:598
 msgid "Special types"
 msgstr "特殊类型"
 
-#: ../../library/typing.rst:593
+#: ../../library/typing.rst:600
 msgid "These can be used as types in annotations and do not support ``[]``."
 msgstr "这些类型可用于类型注解，但不支持 ``[]``。"
 
-#: ../../library/typing.rst:597
+#: ../../library/typing.rst:604
 msgid "Special type indicating an unconstrained type."
 msgstr "不受限的特殊类型。"
 
-#: ../../library/typing.rst:599
+#: ../../library/typing.rst:606
 msgid "Every type is compatible with :data:`Any`."
 msgstr "所有类型都与 :data:`Any` 兼容。"
 
-#: ../../library/typing.rst:600
+#: ../../library/typing.rst:607
 msgid ":data:`Any` is compatible with every type."
 msgstr ":data:`Any` 与所有类型都兼容。"
 
-#: ../../library/typing.rst:602
+#: ../../library/typing.rst:609
 msgid ""
 ":data:`Any` can now be used as a base class. This can be useful for avoiding"
 " type checker errors with classes that can duck type anywhere or are highly "
 "dynamic."
 msgstr ":data:`Any` 现在可以用作基类。这有助于避免类型检查器在高度动态或可通过鸭子类型使用的类上报错。"
 
-#: ../../library/typing.rst:609
+#: ../../library/typing.rst:616
 msgid ""
 "Special type that includes only literal strings. A string literal is "
 "compatible with ``LiteralString``, as is another ``LiteralString``, but an "
@@ -744,45 +760,45 @@ msgstr ""
 "只包含字符串字面值的特殊类型。字符串字面值或其他 ``LiteralString`` 和 ``LiteralString`` 兼容，但 ``str`` "
 "对象不与其兼容。通过组合 ``LiteralString`` 产生的字符串也被认为是 ``LiteralString`` 。"
 
-#: ../../library/typing.rst:615 ../../library/typing.rst:2459
+#: ../../library/typing.rst:622 ../../library/typing.rst:2466
 msgid "Example::"
 msgstr "示例："
 
-#: ../../library/typing.rst:629
+#: ../../library/typing.rst:636
 msgid ""
 "This is useful for sensitive APIs where arbitrary user-generated strings "
 "could generate problems. For example, the two cases above that generate type"
 " checker errors could be vulnerable to an SQL injection attack."
 msgstr "这对于用户输入的任意字符串可以导致问题的敏感 API 很有用。例如，上述导致类型检查器错误的例子可能有 SQL 注入攻击风险。"
 
-#: ../../library/typing.rst:634
+#: ../../library/typing.rst:641
 msgid "See :pep:`675` for more details."
 msgstr "See :pep:`675` for more details."
 
-#: ../../library/typing.rst:640
+#: ../../library/typing.rst:647
 msgid ""
 "The `bottom type <https://en.wikipedia.org/wiki/Bottom_type>`_, a type that "
 "has no members."
 msgstr "`底类型 <https://en.wikipedia.org/wiki/Bottom_type>`_，一个没有成员的类型。"
 
-#: ../../library/typing.rst:643
+#: ../../library/typing.rst:650
 msgid ""
 "This can be used to define a function that should never be called, or a "
 "function that never returns::"
 msgstr "这可以用于定义一个永不应该被调用的函数，或一个永不返回的函数："
 
-#: ../../library/typing.rst:663
+#: ../../library/typing.rst:670
 msgid ""
 "On older Python versions, :data:`NoReturn` may be used to express the same "
 "concept. ``Never`` was added to make the intended meaning more explicit."
 msgstr ""
 "在更老的 Python 版本上，:data:`NoReturn` 可被用于表达相同的概念。 ``Never`` 为了更显式地表达这个意图被加入。"
 
-#: ../../library/typing.rst:668
+#: ../../library/typing.rst:675
 msgid "Special type indicating that a function never returns. For example::"
 msgstr "标记没有返回值的函数的特殊类型。例如："
 
-#: ../../library/typing.rst:676
+#: ../../library/typing.rst:683
 msgid ""
 "``NoReturn`` can also be used as a `bottom type "
 "<https://en.wikipedia.org/wiki/Bottom_type>`_, a type that has no values. "
@@ -793,65 +809,65 @@ msgstr ""
 "的定义，这是一种没有值的类型。自从 Python 3.11 开始，应该使用 :data:`Never` "
 "类型代替这个概念。类型检查器应该将这两种类型视为等价。"
 
-#: ../../library/typing.rst:687
+#: ../../library/typing.rst:694
 msgid "Special type to represent the current enclosed class. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:698
+#: ../../library/typing.rst:705
 msgid ""
 "This annotation is semantically equivalent to the following, albeit in a "
 "more succinct fashion::"
 msgstr ""
 
-#: ../../library/typing.rst:710
+#: ../../library/typing.rst:717
 msgid "In general if something currently follows the pattern of::"
 msgstr ""
 
-#: ../../library/typing.rst:717
+#: ../../library/typing.rst:724
 msgid ""
 "You should use :data:`Self` as calls to ``SubclassOfFoo.return_self`` would "
 "have ``Foo`` as the return type and not ``SubclassOfFoo``."
 msgstr ""
 
-#: ../../library/typing.rst:720
+#: ../../library/typing.rst:727
 msgid "Other common use cases include:"
 msgstr "其它常见用例包括："
 
-#: ../../library/typing.rst:722
+#: ../../library/typing.rst:729
 msgid ""
 ":class:`classmethod`\\s that are used as alternative constructors and return"
 " instances of the ``cls`` parameter."
 msgstr ""
 
-#: ../../library/typing.rst:724
+#: ../../library/typing.rst:731
 msgid "Annotating an :meth:`~object.__enter__` method which returns self."
 msgstr ""
 
-#: ../../library/typing.rst:726
+#: ../../library/typing.rst:733
 msgid "See :pep:`673` for more details."
 msgstr "更多细节请参见 :pep:`673`。"
 
-#: ../../library/typing.rst:732
+#: ../../library/typing.rst:739
 msgid ""
 "Special annotation for explicitly declaring a :ref:`type alias <type-"
 "aliases>`. For example::"
 msgstr "用于显式声明 :ref:`类型别名 <type-aliases>` 的特殊标注。 例如::"
 
-#: ../../library/typing.rst:739
+#: ../../library/typing.rst:746
 msgid "See :pep:`613` for more details about explicit type aliases."
 msgstr "关于显式类型别名的更多细节，请参见 :pep:`613`。"
 
-#: ../../library/typing.rst:744
+#: ../../library/typing.rst:751
 msgid "Special forms"
 msgstr "特殊形式"
 
-#: ../../library/typing.rst:746
+#: ../../library/typing.rst:753
 msgid ""
 "These can be used as types in annotations using ``[]``, each having a unique"
 " syntax."
 msgstr "可用于类型注解，且支持 ``[]`` ，每种形式都有其独特的句法。"
 
-#: ../../library/typing.rst:750
+#: ../../library/typing.rst:757
 msgid ""
 "Tuple type; ``Tuple[X, Y]`` is the type of a tuple of two items with the "
 "first item of type X and the second of type Y. The type of the empty tuple "
@@ -860,7 +876,7 @@ msgstr ""
 "元组类型； ``Tuple[X, Y]`` 是二项元组类型，第一个元素的类型是 X，第二个元素的类型是 Y。空元组的类型可写为 "
 "``Tuple[()]``。"
 
-#: ../../library/typing.rst:754
+#: ../../library/typing.rst:761
 msgid ""
 "Example: ``Tuple[T1, T2]`` is a tuple of two elements corresponding to type "
 "variables T1 and T2.  ``Tuple[int, float, str]`` is a tuple of an int, a "
@@ -869,7 +885,7 @@ msgstr ""
 "例：``Tuple[T1, T2]`` 是二项元组，类型变量分别为 T1 和 T2。``Tuple[int, float, str]`` "
 "是由整数、浮点数、字符串组成的三项元组。"
 
-#: ../../library/typing.rst:758
+#: ../../library/typing.rst:765
 msgid ""
 "To specify a variable-length tuple of homogeneous type, use literal "
 "ellipsis, e.g. ``Tuple[int, ...]``. A plain :data:`Tuple` is equivalent to "
@@ -878,7 +894,7 @@ msgstr ""
 "可用省略号字面量指定同质变长元组，例如，``Tuple[int, ...]`` 。:data:`Tuple` 与 ``Tuple[Any, ...]``"
 " 等价，也与 :class:`tuple` 等价。"
 
-#: ../../library/typing.rst:762
+#: ../../library/typing.rst:769
 msgid ""
 ":class:`builtins.tuple <tuple>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
@@ -886,65 +902,65 @@ msgstr ""
 ":class:`builtins.tuple <tuple>` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:768
+#: ../../library/typing.rst:775
 msgid ""
 "Union type; ``Union[X, Y]`` is equivalent to ``X | Y`` and means either X or"
 " Y."
 msgstr "联合类型； ``Union[X, Y]`` 等价于 ``X | Y`` ，意味着满足 X 或 Y 之一。"
 
-#: ../../library/typing.rst:770
+#: ../../library/typing.rst:777
 msgid ""
 "To define a union, use e.g. ``Union[int, str]`` or the shorthand ``int | "
 "str``. Using that shorthand is recommended. Details:"
 msgstr "要定义一个联合类型，可以使用类似 ``Union[int, str]`` 或简写 ``int | str``。建议使用这种简写。细节:"
 
-#: ../../library/typing.rst:772
+#: ../../library/typing.rst:779
 msgid "The arguments must be types and there must be at least one."
 msgstr "参数必须是某种类型，且至少有一个。"
 
-#: ../../library/typing.rst:774
+#: ../../library/typing.rst:781
 msgid "Unions of unions are flattened, e.g.::"
 msgstr "联合类型之联合类型会被展平，例如："
 
-#: ../../library/typing.rst:778
+#: ../../library/typing.rst:785
 msgid "Unions of a single argument vanish, e.g.::"
 msgstr "单参数之联合类型就是该参数自身，例如："
 
-#: ../../library/typing.rst:782
+#: ../../library/typing.rst:789
 msgid "Redundant arguments are skipped, e.g.::"
 msgstr "冗余的参数会被跳过，例如："
 
-#: ../../library/typing.rst:786
+#: ../../library/typing.rst:793
 msgid "When comparing unions, the argument order is ignored, e.g.::"
 msgstr "比较联合类型，不涉及参数顺序，例如："
 
-#: ../../library/typing.rst:790
+#: ../../library/typing.rst:797
 msgid "You cannot subclass or instantiate a ``Union``."
 msgstr "``Union`` 不能作为子类，也不能实例化。"
 
-#: ../../library/typing.rst:792
+#: ../../library/typing.rst:799
 msgid "You cannot write ``Union[X][Y]``."
 msgstr "不支持 ``Union[X][Y]`` 这种写法。"
 
-#: ../../library/typing.rst:794
+#: ../../library/typing.rst:801
 msgid "Don't remove explicit subclasses from unions at runtime."
 msgstr "在运行时，不要移除联合类型中的显式子类。"
 
-#: ../../library/typing.rst:797
+#: ../../library/typing.rst:804
 msgid ""
 "Unions can now be written as ``X | Y``. See :ref:`union type "
 "expressions<types-union>`."
 msgstr "联合类型现在可以写成 ``X | Y``。 参见 :ref:`联合类型表达式 <types-union>`。"
 
-#: ../../library/typing.rst:803
+#: ../../library/typing.rst:810
 msgid "Optional type."
 msgstr "可选类型。"
 
-#: ../../library/typing.rst:805
+#: ../../library/typing.rst:812
 msgid "``Optional[X]`` is equivalent to ``X | None`` (or ``Union[X, None]``)."
 msgstr "``Optional[X]`` 等价于 ``X | None`` （或 ``Union[X, None]`` ） 。"
 
-#: ../../library/typing.rst:807
+#: ../../library/typing.rst:814
 msgid ""
 "Note that this is not the same concept as an optional argument, which is one"
 " that has a default.  An optional argument with a default does not require "
@@ -953,31 +969,31 @@ msgid ""
 msgstr ""
 "注意，可选类型与含默认值的可选参数不同。含默认值的可选参数不需要在类型注解上添加 ``Optional`` 限定符，因为它仅是可选的。例如："
 
-#: ../../library/typing.rst:815
+#: ../../library/typing.rst:822
 msgid ""
 "On the other hand, if an explicit value of ``None`` is allowed, the use of "
 "``Optional`` is appropriate, whether the argument is optional or not. For "
 "example::"
 msgstr "另一方面，显式应用 ``None`` 值时，不管该参数是否可选， ``Optional`` 都适用。例如："
 
-#: ../../library/typing.rst:822
+#: ../../library/typing.rst:829
 msgid ""
 "Optional can now be written as ``X | None``. See :ref:`union type "
 "expressions<types-union>`."
 msgstr "可选参数现在可以写成 ``X | None``。 参见 :ref:`联合类型表达式 <types-union>`。"
 
-#: ../../library/typing.rst:828
+#: ../../library/typing.rst:835
 msgid "Callable type; ``Callable[[int], str]`` is a function of (int) -> str."
 msgstr "可调类型； ``Callable[[int], str]`` 是把（int）转为 str 的函数。"
 
-#: ../../library/typing.rst:830
+#: ../../library/typing.rst:837
 msgid ""
 "The subscription syntax must always be used with exactly two values: the "
 "argument list and the return type.  The argument list must be a list of "
 "types or an ellipsis; the return type must be a single type."
 msgstr "下标句法必须与参数列表和返回类型这两个值一起使用。参数列表只能是类型列表或省略号；返回类型只能是单一类型。"
 
-#: ../../library/typing.rst:835
+#: ../../library/typing.rst:842
 msgid ""
 "There is no syntax to indicate optional or keyword arguments; such function "
 "types are rarely used as callback types. ``Callable[..., ReturnType]`` "
@@ -990,7 +1006,7 @@ msgstr ""
 "（省略号字面量）可用于为接受任意数量参数，并返回 ``ReturnType`` 的可调对象提供类型提示。纯 :data:`Callable` 等价于 "
 "``Callable[..., Any]``，进而等价于 :class:`collections.abc.Callable` 。"
 
-#: ../../library/typing.rst:851
+#: ../../library/typing.rst:858
 msgid ""
 ":class:`collections.abc.Callable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
@@ -998,13 +1014,13 @@ msgstr ""
 ":class:`collections.abc.Callable` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:860
+#: ../../library/typing.rst:867
 msgid ""
 "The documentation for :class:`ParamSpec` and :class:`Concatenate` provide "
 "examples of usage with ``Callable``."
 msgstr ":class:`ParamSpec` 和 :class:`Concatenate` 的文档提供了使用 ``Callable`` 的例子。"
 
-#: ../../library/typing.rst:865
+#: ../../library/typing.rst:872
 msgid ""
 "Used with :data:`Callable` and :class:`ParamSpec` to type annotate a higher "
 "order callable which adds, removes, or transforms parameters of another "
@@ -1014,7 +1030,7 @@ msgid ""
 "``Concatenate`` must be a :class:`ParamSpec` or ellipsis (``...``)."
 msgstr ""
 
-#: ../../library/typing.rst:873
+#: ../../library/typing.rst:880
 msgid ""
 "For example, to annotate a decorator ``with_lock`` which provides a "
 ":class:`threading.Lock` to the decorated function,  ``Concatenate`` can be "
@@ -1029,17 +1045,17 @@ msgstr ""
 "期望一个可调用对象，该对象接收一个 ``Lock`` 作为第一个参数，并返回一个具有不同类型签名的可调用对象。 "
 "在这种情况下，:class:`ParamSpec` 表示返回的可调用对象的参数类型取决于被传入的可调用程序的参数类型::"
 
-#: ../../library/typing.rst:912 ../../library/typing.rst:1500
+#: ../../library/typing.rst:919 ../../library/typing.rst:1507
 msgid ""
 ":pep:`612` -- Parameter Specification Variables (the PEP which introduced "
 "``ParamSpec`` and ``Concatenate``)."
 msgstr ":pep:`612` -- 参数规范变量（引入 ``ParamSpec`` 和 ``Concatenate`` 的 PEP）。"
 
-#: ../../library/typing.rst:914
+#: ../../library/typing.rst:921
 msgid ":class:`ParamSpec` and :class:`Callable`."
 msgstr ":class:`ParamSpec` 和 :class:`Callable`。"
 
-#: ../../library/typing.rst:919
+#: ../../library/typing.rst:926
 msgid ""
 "A variable annotated with ``C`` may accept a value of type ``C``. In "
 "contrast, a variable annotated with ``Type[C]`` may accept values that are "
@@ -1049,11 +1065,11 @@ msgstr ""
 "用 ``C`` 注解的变量可以接受类型 ``C`` 的值。反之，用 ``Type[C]`` 注解的变量可以接受类自身的值 — 准确地说，是接受 "
 "``C`` 的 *类对象*，例如："
 
-#: ../../library/typing.rst:928
+#: ../../library/typing.rst:935
 msgid "Note that ``Type[C]`` is covariant::"
 msgstr "注意，``Type[C]`` 为协变量："
 
-#: ../../library/typing.rst:940
+#: ../../library/typing.rst:947
 msgid ""
 "The fact that ``Type[C]`` is covariant implies that all subclasses of ``C`` "
 "should implement the same constructor signature and class method signatures "
@@ -1066,7 +1082,7 @@ msgstr ""
 "相同的构造器签名及类方法签名。类型检查器应标记违反此项规定的内容，但也应允许符合指定基类构造器调用的子类进行构造器调用。:pep:`484`  "
 "修订版将来可能会调整类型检查器对这种特例的处理方式。"
 
-#: ../../library/typing.rst:948
+#: ../../library/typing.rst:955
 msgid ""
 "The only legal parameters for :class:`Type` are classes, :data:`Any`, "
 ":ref:`type variables <generics>`, and unions of any of these types. For "
@@ -1074,26 +1090,26 @@ msgid ""
 msgstr ""
 " :class:`Type` 合法的参数仅有类、:data:`Any` 、:ref:`类型变量<generics>` 以及上述类型的联合类型。例如："
 
-#: ../../library/typing.rst:954
+#: ../../library/typing.rst:961
 msgid ""
 "``Type[Any]`` is equivalent to ``Type`` which in turn is equivalent to "
 "``type``, which is the root of Python's metaclass hierarchy."
 msgstr " ``Type[Any]`` 等价于 ``Type``，进而等价于 Python 元类架构的根基，``type``。"
 
-#: ../../library/typing.rst:959
+#: ../../library/typing.rst:966
 msgid ""
 ":class:`builtins.type <type>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:965
+#: ../../library/typing.rst:972
 msgid ""
 "A type that can be used to indicate to type checkers that the corresponding "
 "variable or function parameter has a value equivalent to the provided "
 "literal (or one of several literals). For example::"
 msgstr "表示类型检查器对应变量或函数参数的值等价于给定字面量（或多个字面量之一）的类型。例如："
 
-#: ../../library/typing.rst:979
+#: ../../library/typing.rst:986
 msgid ""
 "``Literal[...]`` cannot be subclassed. At runtime, an arbitrary value is "
 "allowed as type argument to ``Literal[...]``, but type checkers may impose "
@@ -1102,7 +1118,7 @@ msgstr ""
 "``Literal[...]`` 不能创建子类。在运行时，任意值均可作为 ``Literal[...]`` "
 "的类型参数，但类型检查器可以对此加以限制。字面量类型详见 :pep:`586` 。"
 
-#: ../../library/typing.rst:985
+#: ../../library/typing.rst:992
 msgid ""
 "``Literal`` now de-duplicates parameters.  Equality comparisons of "
 "``Literal`` objects are no longer order dependent. ``Literal`` objects will "
@@ -1112,22 +1128,22 @@ msgstr ""
 "``Literal`` 现在能去除形参的重复。 ``Literal`` 对象的相等性比较不再依赖顺序。 现在如果有某个参数不为 "
 ":term:`hashable`，``Literal`` 对象在相等性比较期间将引发 :exc:`TypeError`。"
 
-#: ../../library/typing.rst:993
+#: ../../library/typing.rst:1000
 msgid "Special type construct to mark class variables."
 msgstr "标记类变量的特殊类型构造器。"
 
-#: ../../library/typing.rst:995
+#: ../../library/typing.rst:1002
 msgid ""
 "As introduced in :pep:`526`, a variable annotation wrapped in ClassVar "
 "indicates that a given attribute is intended to be used as a class variable "
 "and should not be set on instances of that class. Usage::"
 msgstr "如 :pep:`526` 所述，打包在 ClassVar 内的变量注解是指，给定属性应当用作类变量，而不应设置在类实例上。用法如下："
 
-#: ../../library/typing.rst:1003
+#: ../../library/typing.rst:1010
 msgid ":data:`ClassVar` accepts only types and cannot be further subscribed."
 msgstr ":data:`ClassVar` 仅接受类型，也不能使用下标。"
 
-#: ../../library/typing.rst:1005
+#: ../../library/typing.rst:1012
 msgid ""
 ":data:`ClassVar` is not a class itself, and should not be used with "
 ":func:`isinstance` or :func:`issubclass`. :data:`ClassVar` does not change "
@@ -1138,29 +1154,29 @@ msgstr ""
 ":func:`issubclass`。:data:`ClassVar` 不改变 Python "
 "运行时行为，但可以用于第三方类型检查器。例如，类型检查器会认为以下代码有错："
 
-#: ../../library/typing.rst:1019
+#: ../../library/typing.rst:1026
 msgid ""
 "A special typing construct to indicate to type checkers that a name cannot "
 "be re-assigned or overridden in a subclass. For example::"
 msgstr "告知类型检查器某名称不能再次赋值或在子类中重写的特殊类型构造器。例如："
 
-#: ../../library/typing.rst:1031 ../../library/typing.rst:2700
+#: ../../library/typing.rst:1038 ../../library/typing.rst:2707
 msgid ""
 "There is no runtime checking of these properties. See :pep:`591` for more "
 "details."
 msgstr "这些属性没有运行时检查。详见 :pep:`591`。"
 
-#: ../../library/typing.rst:1040
+#: ../../library/typing.rst:1047
 msgid ""
 "Special typing constructs that mark individual keys of a :class:`TypedDict` "
 "as either required or non-required respectively."
 msgstr ""
 
-#: ../../library/typing.rst:1043
+#: ../../library/typing.rst:1050
 msgid "See :class:`TypedDict` and :pep:`655` for more details."
 msgstr ""
 
-#: ../../library/typing.rst:1049
+#: ../../library/typing.rst:1056
 msgid ""
 "A type, introduced in :pep:`593` (``Flexible function and variable "
 "annotations``), to decorate existing types with context-specific metadata "
@@ -1183,7 +1199,7 @@ msgstr ""
 "功能不同，该功能完全禁用了函数或类的类型检查注解，而 ``Annotated`` 类型则允许对 ``T`` 进行静态类型检查（可安全地忽略 "
 "``x``），也可以在特定应用程序中实现 ``x`` 的运行时访问。"
 
-#: ../../library/typing.rst:1063
+#: ../../library/typing.rst:1070
 msgid ""
 "Ultimately, the responsibility of how to interpret the annotations (if at "
 "all) is the responsibility of the tool or library encountering the "
@@ -1194,21 +1210,21 @@ msgstr ""
 "毕竟，如何解释注解（如有）由处理 ``Annotated`` 类型的工具/库负责。工具/库处理 ``Annotated`` "
 "类型时，扫描所有注解以确定是否需要进行处理（例如，使用 ``isinstance()``）。"
 
-#: ../../library/typing.rst:1069
+#: ../../library/typing.rst:1076
 msgid ""
 "When a tool or a library does not support annotations or encounters an "
 "unknown annotation it should just ignore it and treat annotated type as the "
 "underlying type."
 msgstr "工具/库不支持注解，或遇到未知注解时，应忽略注解，并把注解类型当作底层类型。"
 
-#: ../../library/typing.rst:1073
+#: ../../library/typing.rst:1080
 msgid ""
 "It's up to the tool consuming the annotations to decide whether the client "
 "is allowed to have several annotations on one type and how to merge those "
 "annotations."
 msgstr "是否允许客户端在一个类型上使用多个注解，以及如何合并这些注解，由处理注解的工具决定。"
 
-#: ../../library/typing.rst:1077
+#: ../../library/typing.rst:1084
 msgid ""
 "Since the ``Annotated`` type allows you to put several annotations of the "
 "same (or different) type(s) on any node, the tools or libraries consuming "
@@ -1218,52 +1234,52 @@ msgstr ""
 "``Annotated`` "
 "类型支持把多个相同（或不同）的单个（或多个）类型注解置于任意节点。因此，使用这些注解的工具/库要负责处理潜在的重复项。例如，执行值范围分析时，应允许以下操作："
 
-#: ../../library/typing.rst:1086
+#: ../../library/typing.rst:1093
 msgid ""
 "Passing ``include_extras=True`` to :func:`get_type_hints` lets one access "
 "the extra annotations at runtime."
 msgstr "传递 ``include_extras=True`` 至 :func:`get_type_hints` ，即可在运行时访问额外的注解。"
 
-#: ../../library/typing.rst:1089
+#: ../../library/typing.rst:1096
 msgid "The details of the syntax:"
 msgstr "语义详情："
 
-#: ../../library/typing.rst:1091
+#: ../../library/typing.rst:1098
 msgid "The first argument to ``Annotated`` must be a valid type"
 msgstr "``Annotated`` 的第一个参数必须是有效类型。"
 
-#: ../../library/typing.rst:1093
+#: ../../library/typing.rst:1100
 msgid ""
 "Multiple type annotations are supported (``Annotated`` supports variadic "
 "arguments)::"
 msgstr "支持多个类型标注（``Annotated`` 支持可变参数）："
 
-#: ../../library/typing.rst:1098
+#: ../../library/typing.rst:1105
 msgid ""
 "``Annotated`` must be called with at least two arguments ( "
 "``Annotated[int]`` is not valid)"
 msgstr "调用 ``Annotated`` 至少要有两个参数（``Annotated[int]`` 是无效的）"
 
-#: ../../library/typing.rst:1101
+#: ../../library/typing.rst:1108
 msgid ""
 "The order of the annotations is preserved and matters for equality checks::"
 msgstr "注解的顺序会被保留，且影响等价检查："
 
-#: ../../library/typing.rst:1108
+#: ../../library/typing.rst:1115
 msgid ""
 "Nested ``Annotated`` types are flattened, with metadata ordered starting "
 "with the innermost annotation::"
 msgstr "嵌套 ``Annotated`` 类型会被展平，元数据从最内层注解依序展开："
 
-#: ../../library/typing.rst:1115
+#: ../../library/typing.rst:1122
 msgid "Duplicated annotations are not removed::"
 msgstr "不移除注解重复项："
 
-#: ../../library/typing.rst:1121
+#: ../../library/typing.rst:1128
 msgid "``Annotated`` can be used with nested and generic aliases::"
 msgstr "``Annotated`` 可用于嵌套或泛型别名："
 
-#: ../../library/typing.rst:1134
+#: ../../library/typing.rst:1141
 msgid ""
 "Special typing form used to annotate the return type of a user-defined type "
 "guard function.  ``TypeGuard`` only accepts a single type argument. At "
@@ -1272,7 +1288,7 @@ msgstr ""
 "用于注释用户定义的类型保护函数的返回类型的特殊类型化形式。 ``TypeGuard`` 只接受一个单一的类型参数。 "
 "在运行时，以这种方式标记的函数应该返回一个布尔值。"
 
-#: ../../library/typing.rst:1138
+#: ../../library/typing.rst:1145
 msgid ""
 "``TypeGuard`` aims to benefit *type narrowing* -- a technique used by static"
 " type checkers to determine a more precise type of an expression within a "
@@ -1284,7 +1300,7 @@ msgstr ""
 "这是静态类型检查器用来确定程序代码流中表达式的更精确类型的一种技术。通常，类型缩小是通过分析条件性代码流并将缩小的结果应用于一个代码块来完成的。 "
 "这里的条件表达式有时被称为 \"类型保护\"::"
 
-#: ../../library/typing.rst:1153
+#: ../../library/typing.rst:1160
 msgid ""
 "Sometimes it would be convenient to use a user-defined boolean function as a"
 " type guard.  Such a function should use ``TypeGuard[...]`` as its return "
@@ -1293,23 +1309,23 @@ msgstr ""
 "有时，使用一个用户定义的布尔函数作为类型保护会很方便。 这样的函数应该使用 ``TypeGuard[...]`` "
 "作为其返回类型，以提醒静态类型检查器注意这一意图。"
 
-#: ../../library/typing.rst:1157
+#: ../../library/typing.rst:1164
 msgid ""
 "Using  ``-> TypeGuard`` tells the static type checker that for a given "
 "function:"
 msgstr "对于一个给定的函数，使用 ``-> TypeGuard`` 告诉静态类型检查器:"
 
-#: ../../library/typing.rst:1160
+#: ../../library/typing.rst:1167
 msgid "The return value is a boolean."
 msgstr "返回值是一个布尔值。"
 
-#: ../../library/typing.rst:1161
+#: ../../library/typing.rst:1168
 msgid ""
 "If the return value is ``True``, the type of its argument is the type inside"
 " ``TypeGuard``."
 msgstr "如果返回值是 ``True``，其参数的类型是 ``TypeGuard`` 里面的类型。"
 
-#: ../../library/typing.rst:1178
+#: ../../library/typing.rst:1185
 msgid ""
 "If ``is_str_list`` is a class or instance method, then the type in "
 "``TypeGuard`` maps to the type of the second parameter after ``cls`` or "
@@ -1318,7 +1334,7 @@ msgstr ""
 "如果 ``is_str_list`` 是一个类或实例方法，那么 ``TypeGuard`` 中的类型映射到 ``cls`` 或 ``self`` "
 "之后的第二个参数的类型。"
 
-#: ../../library/typing.rst:1182
+#: ../../library/typing.rst:1189
 msgid ""
 "In short, the form ``def foo(arg: TypeA) -> TypeGuard[TypeB]: ...``, means "
 "that if ``foo(arg)`` returns ``True``, then ``arg`` narrows from ``TypeA`` "
@@ -1327,7 +1343,7 @@ msgstr ""
 "简而言之，``def foo(arg: TypeA) -> TypeGuard[TypeB]: ...`` 形式的意思是：如果 ``foo(arg)``"
 " 返回 ``True``，那么 ``arg`` 将把 ``TypeA`` 缩小为 ``TypeB``。"
 
-#: ../../library/typing.rst:1188
+#: ../../library/typing.rst:1195
 msgid ""
 "``TypeB`` need not be a narrower form of ``TypeA`` -- it can even be a wider"
 " form. The main reason is to allow for things like narrowing "
@@ -1336,47 +1352,47 @@ msgid ""
 "type-safe type guards is left to the user."
 msgstr ""
 
-#: ../../library/typing.rst:1194
+#: ../../library/typing.rst:1201
 msgid ""
 "``TypeGuard`` also works with type variables.  See :pep:`647` for more "
 "details."
 msgstr ""
 
-#: ../../library/typing.rst:1200
+#: ../../library/typing.rst:1207
 msgid "Building generic types"
 msgstr "构建泛型类型"
 
-#: ../../library/typing.rst:1202
+#: ../../library/typing.rst:1209
 msgid ""
 "These are not used in annotations. They are building blocks for creating "
 "generic types."
 msgstr "以下内容是创建泛型类型的基石，但不在注解内使用。"
 
-#: ../../library/typing.rst:1206
+#: ../../library/typing.rst:1213
 msgid "Abstract base class for generic types."
 msgstr "用于泛型类型的抽象基类。"
 
-#: ../../library/typing.rst:1208
+#: ../../library/typing.rst:1215
 msgid ""
 "A generic type is typically declared by inheriting from an instantiation of "
 "this class with one or more type variables. For example, a generic mapping "
 "type might be defined as::"
 msgstr "泛型类型一般通过继承含一个或多个类型变量的类实例进行声明。例如，泛型映射类型定义如下："
 
-#: ../../library/typing.rst:1217
+#: ../../library/typing.rst:1224
 msgid "This class can then be used as follows::"
 msgstr "该类的用法如下："
 
-#: ../../library/typing.rst:1230
+#: ../../library/typing.rst:1237
 msgid "Type variable."
 msgstr "类型变量。"
 
-#: ../../library/typing.rst:1232 ../../library/typing.rst:1429
-#: ../../library/typing.rst:1622
+#: ../../library/typing.rst:1239 ../../library/typing.rst:1436
+#: ../../library/typing.rst:1629
 msgid "Usage::"
 msgstr "用法："
 
-#: ../../library/typing.rst:1238
+#: ../../library/typing.rst:1245
 msgid ""
 "Type variables exist primarily for the benefit of static type checkers.  "
 "They serve as the parameters for generic types as well as for generic "
@@ -1385,32 +1401,32 @@ msgid ""
 msgstr ""
 "类型变量主要是为静态类型检查器提供支持，用于泛型类型与泛型函数定义的参数。有关泛型类型，详见 :class:`Generic`。泛型函数的写法如下："
 
-#: ../../library/typing.rst:1258
+#: ../../library/typing.rst:1265
 msgid ""
 "Note that type variables can be *bound*, *constrained*, or neither, but "
 "cannot be both bound *and* constrained."
 msgstr "请注意，类型变量可以是 *被绑定的* ， *被约束的* ，或者两者都不是，但不能既是被绑定的 *又是* 被约束的。"
 
-#: ../../library/typing.rst:1261
+#: ../../library/typing.rst:1268
 msgid ""
 "Bound type variables and constrained type variables have different semantics"
 " in several important ways. Using a *bound* type variable means that the "
 "``TypeVar`` will be solved using the most specific type possible::"
 msgstr ""
 
-#: ../../library/typing.rst:1276
+#: ../../library/typing.rst:1283
 msgid ""
 "Type variables can be bound to concrete types, abstract types (ABCs or "
 "protocols), and even unions of types::"
 msgstr "类型变量可以被绑定到具体类型、抽象类型（ ABC 或 protocol ），甚至是类型的联合::"
 
-#: ../../library/typing.rst:1282
+#: ../../library/typing.rst:1289
 msgid ""
 "Using a *constrained* type variable, however, means that the ``TypeVar`` can"
 " only ever be solved as being exactly one of the constraints given::"
 msgstr ""
 
-#: ../../library/typing.rst:1293
+#: ../../library/typing.rst:1300
 msgid ""
 "At runtime, ``isinstance(x, T)`` will raise :exc:`TypeError`.  In general, "
 ":func:`isinstance` and :func:`issubclass` should not be used with types."
@@ -1418,7 +1434,7 @@ msgstr ""
 "在运行时，``isinstance(x, T)`` 会触发 :exc:`TypeError` 异常。一般而言，:func:`isinstance` 和 "
 ":func:`issubclass` 不应与类型搭配使用。"
 
-#: ../../library/typing.rst:1296
+#: ../../library/typing.rst:1303
 msgid ""
 "Type variables may be marked covariant or contravariant by passing "
 "``covariant=True`` or ``contravariant=True``.  See :pep:`484` for more "
@@ -1427,13 +1443,13 @@ msgstr ""
 "类型变量可以通过传递 ``covariant=True`` 或 ``contravariant=True`` 来标记协变或逆变。 更多细节请参见 "
 ":pep:`484` 。 默认情况下，类型变量是不变的。"
 
-#: ../../library/typing.rst:1302
+#: ../../library/typing.rst:1309
 msgid ""
 "Type variable tuple. A specialized form of :class:`type variable <TypeVar>` "
 "that enables *variadic* generics."
 msgstr ""
 
-#: ../../library/typing.rst:1305
+#: ../../library/typing.rst:1312
 msgid ""
 "A normal type variable enables parameterization with a single type. A type "
 "variable tuple, in contrast, allows parameterization with an *arbitrary* "
@@ -1441,7 +1457,7 @@ msgid ""
 "wrapped in a tuple. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:1333
+#: ../../library/typing.rst:1340
 msgid ""
 "Note the use of the unpacking operator ``*`` in ``tuple[T, *Ts]``. "
 "Conceptually, you can think of ``Ts`` as a tuple of type variables ``(T1, "
@@ -1451,36 +1467,36 @@ msgid ""
 "<Unpack>` instead, as ``Unpack[Ts]``.)"
 msgstr ""
 
-#: ../../library/typing.rst:1341
+#: ../../library/typing.rst:1348
 msgid ""
 "Type variable tuples must *always* be unpacked. This helps distinguish type "
 "variable tuples from normal type variables::"
 msgstr ""
 
-#: ../../library/typing.rst:1348
+#: ../../library/typing.rst:1355
 msgid ""
 "Type variable tuples can be used in the same contexts as normal type "
 "variables. For example, in class definitions, arguments, and return types::"
 msgstr ""
 
-#: ../../library/typing.rst:1357
+#: ../../library/typing.rst:1364
 msgid ""
 "Type variable tuples can be happily combined with normal type variables::"
 msgstr ""
 
-#: ../../library/typing.rst:1370
+#: ../../library/typing.rst:1377
 msgid ""
 "However, note that at most one type variable tuple may appear in a single "
 "list of type arguments or type parameters::"
 msgstr ""
 
-#: ../../library/typing.rst:1377
+#: ../../library/typing.rst:1384
 msgid ""
 "Finally, an unpacked type variable tuple can be used as the type annotation "
 "of ``*args``::"
 msgstr ""
 
-#: ../../library/typing.rst:1387
+#: ../../library/typing.rst:1394
 msgid ""
 "In contrast to non-unpacked annotations of ``*args`` - e.g. ``*args: int``, "
 "which would specify that *all* arguments are ``int`` - ``*args: *Ts`` "
@@ -1489,11 +1505,11 @@ msgid ""
 "``call_soon`` match the types of the (positional) arguments of ``callback``."
 msgstr ""
 
-#: ../../library/typing.rst:1394
+#: ../../library/typing.rst:1401
 msgid "See :pep:`646` for more details on type variable tuples."
 msgstr "关于类型变量元组的更多细节，请参见 :pep:`646`。"
 
-#: ../../library/typing.rst:1400
+#: ../../library/typing.rst:1407
 msgid ""
 "A typing operator that conceptually marks an object as having been unpacked."
 " For example, using the unpack operator ``*`` on a :class:`type variable "
@@ -1501,20 +1517,20 @@ msgid ""
 "variable tuple as having been unpacked::"
 msgstr ""
 
-#: ../../library/typing.rst:1410
+#: ../../library/typing.rst:1417
 msgid ""
 "In fact, ``Unpack`` can be used interchangeably with ``*`` in the context of"
 " types. You might see ``Unpack`` being used explicitly in older versions of "
 "Python, where ``*`` couldn't be used in certain places::"
 msgstr ""
 
-#: ../../library/typing.rst:1426
+#: ../../library/typing.rst:1433
 msgid ""
 "Parameter specification variable.  A specialized version of :class:`type "
 "variables <TypeVar>`."
 msgstr "参数规范变量。 :class:`类型变量 <TypeVar>` 的一个专门版本。"
 
-#: ../../library/typing.rst:1433
+#: ../../library/typing.rst:1440
 msgid ""
 "Parameter specification variables exist primarily for the benefit of static "
 "type checkers.  They are used to forward the parameter types of one callable"
@@ -1528,7 +1544,7 @@ msgstr ""
 "``Concatenate`` 中使用时才有效，或者作为 ``Callable`` 的第一个参数，或者作为用户定义的泛型的参数。 参见 "
 ":class:`Generic` 以了解更多关于泛型的信息。"
 
-#: ../../library/typing.rst:1440
+#: ../../library/typing.rst:1447
 msgid ""
 "For example, to add basic logging to a function, one can create a decorator "
 "``add_logging`` to log function calls.  The parameter specification variable"
@@ -1538,7 +1554,7 @@ msgstr ""
 "例如，为了给一个函数添加基本的日志记录，我们可以创建一个装饰器 ``add_logging`` 来记录函数调用。 "
 "参数规范变量告诉类型检查器，传入装饰器的可调用对象和由其返回的新可调用对象有相互依赖的类型参数::"
 
-#: ../../library/typing.rst:1464
+#: ../../library/typing.rst:1471
 msgid ""
 "Without ``ParamSpec``, the simplest way to annotate this previously was to "
 "use a :class:`TypeVar` with bound ``Callable[..., Any]``.  However this "
@@ -1547,14 +1563,14 @@ msgstr ""
 "如果没有 ``ParamSpec``，以前注释这个的最简单的方法是使用一个 :class:`TypeVar` 与绑定 ``Callable[..., "
 "Any]``。"
 
-#: ../../library/typing.rst:1468
+#: ../../library/typing.rst:1475
 msgid ""
 "The type checker can't type check the ``inner`` function because ``*args`` "
 "and ``**kwargs`` have to be typed :data:`Any`."
 msgstr ""
 "类型检查器不能对 ``inner`` 函数进行类型检查，因为 ``*args`` 和 ``**kwargs`` 的类型必须是 :data:`Any`。"
 
-#: ../../library/typing.rst:1470
+#: ../../library/typing.rst:1477
 msgid ""
 ":func:`~cast` may be required in the body of the ``add_logging`` decorator "
 "when returning the ``inner`` function, or the static type checker must be "
@@ -1563,7 +1579,7 @@ msgstr ""
 ":func:`~cast` 在返回 ``inner`` 函数时，可能需要在 ``add_logging`` "
 "装饰器的主体中进行，或者必须告诉静态类型检查器忽略 ``return inner``。"
 
-#: ../../library/typing.rst:1477
+#: ../../library/typing.rst:1484
 msgid ""
 "Since ``ParamSpec`` captures both positional and keyword parameters, "
 "``P.args`` and ``P.kwargs`` can be used to split a ``ParamSpec`` into its "
@@ -1580,7 +1596,7 @@ msgstr ""
 "``P.kwargs`` 代表给定调用中的关键字参数到其值的映射，只能用于注释 ``**kwargs``。在运行时，``P.args`` 和 "
 "``P.kwargs`` 分别是 :class:`ParamSpecArgs` 和 :class:`ParamSpecKwargs` 的实例。"
 
-#: ../../library/typing.rst:1487
+#: ../../library/typing.rst:1494
 msgid ""
 "Parameter specification variables created with ``covariant=True`` or "
 "``contravariant=True`` can be used to declare covariant or contravariant "
@@ -1591,17 +1607,17 @@ msgstr ""
 "用 ``covariant=True`` 或 ``contravariant=True`` 创建的参数规范变量可以用来声明协变或逆变泛型类型。 参数 "
 "``bound`` 也被接受，类似于 :class:`TypeVar`。 然而这些关键字的实际语义还有待决定。"
 
-#: ../../library/typing.rst:1496
+#: ../../library/typing.rst:1503
 msgid ""
 "Only parameter specification variables defined in global scope can be "
 "pickled."
 msgstr "只有在全局范围内定义的参数规范变量可以被 pickle。"
 
-#: ../../library/typing.rst:1502
+#: ../../library/typing.rst:1509
 msgid ":class:`Callable` and :class:`Concatenate`."
 msgstr ":class:`Callable` 和 :class:`Concatenate`。"
 
-#: ../../library/typing.rst:1507
+#: ../../library/typing.rst:1514
 msgid ""
 "Arguments and keyword arguments attributes of a :class:`ParamSpec`. The "
 "``P.args`` attribute of a ``ParamSpec`` is an instance of ``ParamSpecArgs``,"
@@ -1613,13 +1629,13 @@ msgstr ""
 "``ParamSpecArgs`` 的一个实例，``P.kwargs`` 是 ``ParamSpecKwargs`` 的一个实例。 "
 "它们的目的是用于运行时内部检查的，对静态类型检查器没有特殊意义。"
 
-#: ../../library/typing.rst:1512
+#: ../../library/typing.rst:1519
 msgid ""
 "Calling :func:`get_origin` on either of these objects will return the "
 "original ``ParamSpec``::"
 msgstr "在这些对象中的任何一个上调用 :func:`get_origin`，都会返回原始的 ``ParamSpec``::"
 
-#: ../../library/typing.rst:1524
+#: ../../library/typing.rst:1531
 msgid ""
 "``AnyStr`` is a :class:`constrained type variable <TypeVar>` defined as "
 "``AnyStr = TypeVar('AnyStr', str, bytes)``."
@@ -1627,24 +1643,24 @@ msgstr ""
 "``AnyStr`` 定义为 ``AnyStr = TypeVar('AnyStr', str, bytes)`` 的 :class:`约束类型变量 "
 "<TypeVar>` 。"
 
-#: ../../library/typing.rst:1527
+#: ../../library/typing.rst:1534
 msgid ""
 "It is meant to be used for functions that may accept any kind of string "
 "without allowing different kinds of strings to mix. For example::"
 msgstr "这里指的是，它可以接受任意同类字符串，但不支持混用不同类别的字符串。例如："
 
-#: ../../library/typing.rst:1539
+#: ../../library/typing.rst:1546
 msgid ""
 "Base class for protocol classes. Protocol classes are defined like this::"
 msgstr "Protocol 类的基类。Protocol 类的定义如下："
 
-#: ../../library/typing.rst:1545
+#: ../../library/typing.rst:1552
 msgid ""
 "Such classes are primarily used with static type checkers that recognize "
 "structural subtyping (static duck-typing), for example::"
 msgstr "这些类主要与静态类型检查器搭配使用，用来识别结构子类型（静态鸭子类型），例如："
 
-#: ../../library/typing.rst:1557
+#: ../../library/typing.rst:1564
 msgid ""
 "See :pep:`544` for more details. Protocol classes decorated with "
 ":func:`runtime_checkable` (described later) act as simple-minded runtime "
@@ -1652,15 +1668,15 @@ msgid ""
 "type signatures."
 msgstr ""
 
-#: ../../library/typing.rst:1562
+#: ../../library/typing.rst:1569
 msgid "Protocol classes can be generic, for example::"
 msgstr "Protocol 类可以是泛型，例如："
 
-#: ../../library/typing.rst:1572
+#: ../../library/typing.rst:1579
 msgid "Mark a protocol class as a runtime protocol."
 msgstr "用于把 Protocol 类标记为运行时协议。"
 
-#: ../../library/typing.rst:1574
+#: ../../library/typing.rst:1581
 msgid ""
 "Such a protocol can be used with :func:`isinstance` and :func:`issubclass`. "
 "This raises :exc:`TypeError` when applied to a non-protocol class.  This "
@@ -1672,7 +1688,7 @@ msgstr ""
 ":exc:`TypeError`。该指令支持简易结构检查，与 :mod:`collections.abc` 的 "
 ":class:`~collections.abc.Iterable` 非常类似，只擅长做一件事。  例如："
 
-#: ../../library/typing.rst:1594
+#: ../../library/typing.rst:1601
 msgid ""
 ":func:`!runtime_checkable` will check only the presence of the required "
 "methods or attributes, not their type signatures or types. For example, "
@@ -1683,7 +1699,7 @@ msgid ""
 ":class:`ssl.SSLObject`."
 msgstr ""
 
-#: ../../library/typing.rst:1605
+#: ../../library/typing.rst:1612
 msgid ""
 "An :func:`isinstance` check against a runtime-checkable protocol can be "
 "surprisingly slow compared to an ``isinstance()`` check against a non-"
@@ -1691,35 +1707,35 @@ msgid ""
 "calls for structural checks in performance-sensitive code."
 msgstr ""
 
-#: ../../library/typing.rst:1614
+#: ../../library/typing.rst:1621
 msgid "Other special directives"
 msgstr "其他特殊指令"
 
-#: ../../library/typing.rst:1616
+#: ../../library/typing.rst:1623
 msgid ""
 "These are not used in annotations. They are building blocks for declaring "
 "types."
 msgstr "这些特殊指令是声明类型的基石，但不在注解内使用。"
 
-#: ../../library/typing.rst:1620
+#: ../../library/typing.rst:1627
 msgid "Typed version of :func:`collections.namedtuple`."
 msgstr ":func:`collections.namedtuple` 的类型版本。"
 
-#: ../../library/typing.rst:1628
+#: ../../library/typing.rst:1635
 msgid "This is equivalent to::"
 msgstr "这相当于："
 
-#: ../../library/typing.rst:1632
+#: ../../library/typing.rst:1639
 msgid ""
 "To give a field a default value, you can assign to it in the class body::"
 msgstr "为字段提供默认值，要在类体内赋值："
 
-#: ../../library/typing.rst:1641
+#: ../../library/typing.rst:1648
 msgid ""
 "Fields with a default value must come after any fields without a default."
 msgstr "带默认值的字段必须在不带默认值的字段后面。"
 
-#: ../../library/typing.rst:1643
+#: ../../library/typing.rst:1650
 msgid ""
 "The resulting class has an extra attribute ``__annotations__`` giving a dict"
 " that maps the field names to the field types.  (The field names are in the "
@@ -1731,61 +1747,61 @@ msgstr ""
 " 属性中，默认值在 ``_field_defaults`` 属性中，这两者都是 :func:`~collections.namedtuple` API "
 "的一部分。）"
 
-#: ../../library/typing.rst:1649
+#: ../../library/typing.rst:1656
 msgid "``NamedTuple`` subclasses can also have docstrings and methods::"
 msgstr "``NamedTuple`` 子类也支持文档字符串与方法："
 
-#: ../../library/typing.rst:1659
+#: ../../library/typing.rst:1666
 msgid "``NamedTuple`` subclasses can be generic::"
 msgstr "``NamedTuple`` 子类也可以为泛型："
 
-#: ../../library/typing.rst:1665
+#: ../../library/typing.rst:1672
 msgid "Backward-compatible usage::"
 msgstr "反向兼容用法："
 
-#: ../../library/typing.rst:1669
+#: ../../library/typing.rst:1676
 msgid "Added support for :pep:`526` variable annotation syntax."
 msgstr "添加了对 :pep:`526` 中变量注解句法的支持。"
 
-#: ../../library/typing.rst:1672
+#: ../../library/typing.rst:1679
 msgid "Added support for default values, methods, and docstrings."
 msgstr "添加了对默认值、方法、文档字符串的支持。"
 
-#: ../../library/typing.rst:1675
+#: ../../library/typing.rst:1682
 msgid ""
 "The ``_field_types`` and ``__annotations__`` attributes are now regular "
 "dictionaries instead of instances of ``OrderedDict``."
 msgstr ""
 "``_field_types`` 和 ``__annotations__`` 属性现已使用常规字典，不再使用 ``OrderedDict`` 实例。"
 
-#: ../../library/typing.rst:1679
+#: ../../library/typing.rst:1686
 msgid ""
 "Removed the ``_field_types`` attribute in favor of the more standard "
 "``__annotations__`` attribute which has the same information."
 msgstr "移除了 ``_field_types`` 属性， 改用具有相同信息，但更标准的  ``__annotations__`` 属性。"
 
-#: ../../library/typing.rst:1683
+#: ../../library/typing.rst:1690
 msgid "Added support for generic namedtuples."
 msgstr "添加对泛型命名元组的支持。"
 
-#: ../../library/typing.rst:1688
+#: ../../library/typing.rst:1695
 msgid ""
 "A helper class to indicate a distinct type to a typechecker, see "
 ":ref:`distinct`. At runtime it returns an object that returns its argument "
 "when called. Usage::"
 msgstr "一个辅助类，用于向类型检查器指示一个不同的类型，见 :ref:`distinct`。在运行时，它返回一个对象，在调用时返回其参数。用法::"
 
-#: ../../library/typing.rst:1698
+#: ../../library/typing.rst:1705
 msgid "``NewType`` is now a class rather than a function."
 msgstr "``NewType`` 现在是一个类而不是函数。"
 
-#: ../../library/typing.rst:1703
+#: ../../library/typing.rst:1710
 msgid ""
 "Special construct to add type hints to a dictionary. At runtime it is a "
 "plain :class:`dict`."
 msgstr "把类型提示添加至字典的特殊构造器。在运行时，它是纯 :class:`dict`。"
 
-#: ../../library/typing.rst:1706
+#: ../../library/typing.rst:1713
 msgid ""
 "``TypedDict`` declares a dictionary type that expects all of its instances "
 "to have a certain set of keys, where each key is associated with a value of "
@@ -1795,28 +1811,28 @@ msgstr ""
 "``TypedDict`` "
 "声明一个字典类型，该类型预期所有实例都具有一组键集，其中，每个键都与对应类型的值关联。运行时不检查此预期，而是由类型检查器强制执行。用法如下："
 
-#: ../../library/typing.rst:1722
+#: ../../library/typing.rst:1729
 msgid ""
 "To allow using this feature with older versions of Python that do not "
 "support :pep:`526`, ``TypedDict`` supports two additional equivalent "
 "syntactic forms:"
 msgstr ""
 
-#: ../../library/typing.rst:1726
+#: ../../library/typing.rst:1733
 msgid "Using a literal :class:`dict` as the second argument::"
 msgstr "使用字面量 :class:`dict` 作为第二个参数："
 
-#: ../../library/typing.rst:1730
+#: ../../library/typing.rst:1737
 msgid "Using keyword arguments::"
 msgstr "使用关键字参数："
 
-#: ../../library/typing.rst:1737
+#: ../../library/typing.rst:1744
 msgid ""
 "The keyword-argument syntax is deprecated in 3.11 and will be removed in "
 "3.13. It may also be unsupported by static type checkers."
 msgstr "使用关键字的语法在 3.11 中被弃用，并且会于 3.13 被移除。同时，该语法可能不被静态类型检查器支持。"
 
-#: ../../library/typing.rst:1738
+#: ../../library/typing.rst:1745
 msgid ""
 "The functional syntax should also be used when any of the keys are not valid"
 " :ref:`identifiers <identifiers>`, for example because they are keywords or "
@@ -1824,25 +1840,25 @@ msgid ""
 msgstr ""
 "当任何一个键不是有效的 :ref:`标识符 <identifiers>` 时，例如因为它们是关键字或包含连字符，也应该使用函数式语法。例子::"
 
-#: ../../library/typing.rst:1750
+#: ../../library/typing.rst:1757
 msgid ""
 "By default, all keys must be present in a ``TypedDict``. It is possible to "
 "mark individual keys as non-required using :data:`NotRequired`::"
 msgstr ""
 
-#: ../../library/typing.rst:1761
+#: ../../library/typing.rst:1768
 msgid ""
 "This means that a ``Point2D`` ``TypedDict`` can have the ``label`` key "
 "omitted."
 msgstr ""
 
-#: ../../library/typing.rst:1764
+#: ../../library/typing.rst:1771
 msgid ""
 "It is also possible to mark all keys as non-required by default by "
 "specifying a totality of ``False``::"
 msgstr ""
 
-#: ../../library/typing.rst:1774
+#: ../../library/typing.rst:1781
 msgid ""
 "This means that a ``Point2D`` ``TypedDict`` can have any of the keys "
 "omitted. A type checker is only expected to support a literal ``False`` or "
@@ -1852,35 +1868,35 @@ msgstr ""
 "这意味着一个 ``Point2D`` ``TypedDict`` 可以省略任何一个键。 类型检查器只需要支持一个字面的 ``False`` 或 "
 "``True`` 作为 ``total`` 参数的值。 ``True`` 是默认的，它使类主体中定义的所有项目都是必需的。"
 
-#: ../../library/typing.rst:1779
+#: ../../library/typing.rst:1786
 msgid ""
 "Individual keys of a ``total=False`` ``TypedDict`` can be marked as required"
 " using :data:`Required`::"
 msgstr ""
 
-#: ../../library/typing.rst:1794
+#: ../../library/typing.rst:1801
 msgid ""
 "It is possible for a ``TypedDict`` type to inherit from one or more other "
 "``TypedDict`` types using the class-based syntax. Usage::"
 msgstr "一个 ``TypedDict`` 类型有可能使用基于类的语法从一个或多个其他 ``TypedDict`` 类型继承。用法::"
 
-#: ../../library/typing.rst:1801
+#: ../../library/typing.rst:1808
 msgid ""
 "``Point3D`` has three items: ``x``, ``y`` and ``z``. It is equivalent to "
 "this definition::"
 msgstr "``Point3D`` 有三个项目 : ``x`` , ``y`` 和 ``z`` 。 其等价于定义::"
 
-#: ../../library/typing.rst:1809
+#: ../../library/typing.rst:1816
 msgid ""
 "A ``TypedDict`` cannot inherit from a non-\\ ``TypedDict`` class, except for"
 " :class:`Generic`. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:1827
+#: ../../library/typing.rst:1834
 msgid "A ``TypedDict`` can be generic::"
 msgstr "``TypedDict`` 也可以为泛型的："
 
-#: ../../library/typing.rst:1833
+#: ../../library/typing.rst:1840
 msgid ""
 "A ``TypedDict`` can be introspected via annotations dicts (see "
 ":ref:`annotations-howto` for more information on annotations best "
@@ -1891,26 +1907,26 @@ msgstr ""
 ":attr:`__total__` 、 :attr:`__required_keys__` 和 :attr:`__optional_keys__` "
 "进行内省。"
 
-#: ../../library/typing.rst:1839
+#: ../../library/typing.rst:1846
 msgid ""
 "``Point2D.__total__`` gives the value of the ``total`` argument. Example::"
 msgstr " ``Point2D.__total__`` 给出了参数 ``total`` 的值。例如："
 
-#: ../../library/typing.rst:1859
+#: ../../library/typing.rst:1866
 msgid ""
 "``Point2D.__required_keys__`` and ``Point2D.__optional_keys__`` return "
 ":class:`frozenset` objects containing required and non-required keys, "
 "respectively."
 msgstr ""
 
-#: ../../library/typing.rst:1862
+#: ../../library/typing.rst:1869
 msgid ""
 "Keys marked with :data:`Required` will always appear in "
 "``__required_keys__`` and keys marked with :data:`NotRequired` will always "
 "appear in ``__optional_keys__``."
 msgstr ""
 
-#: ../../library/typing.rst:1865
+#: ../../library/typing.rst:1872
 msgid ""
 "For backwards compatibility with Python 3.10 and below, it is also possible "
 "to use inheritance to declare both required and non-required keys in the "
@@ -1919,47 +1935,47 @@ msgid ""
 "``TypedDict`` with a different value for ``total``::"
 msgstr ""
 
-#: ../../library/typing.rst:1886
+#: ../../library/typing.rst:1893
 msgid ""
 "See :pep:`589` for more examples and detailed rules of using ``TypedDict``."
 msgstr "更多示例与 ``TypedDict`` 的详细规则，详见 :pep:`589`。"
 
-#: ../../library/typing.rst:1890
+#: ../../library/typing.rst:1897
 msgid ""
 "Added support for marking individual keys as :data:`Required` or "
 ":data:`NotRequired`. See :pep:`655`."
 msgstr ""
 
-#: ../../library/typing.rst:1894
+#: ../../library/typing.rst:1901
 msgid "Added support for generic ``TypedDict``\\ s."
 msgstr "添加对泛型 ``TypedDict`` 的支持。"
 
-#: ../../library/typing.rst:1898
+#: ../../library/typing.rst:1905
 msgid "Generic concrete collections"
 msgstr "泛型具象容器"
 
-#: ../../library/typing.rst:1901
+#: ../../library/typing.rst:1908
 msgid "Corresponding to built-in types"
 msgstr "对应的内置类型"
 
-#: ../../library/typing.rst:1905
+#: ../../library/typing.rst:1912
 msgid ""
 "A generic version of :class:`dict`. Useful for annotating return types. To "
 "annotate arguments it is preferred to use an abstract collection type such "
 "as :class:`Mapping`."
 msgstr ":class:`dict` 的泛型版本。适用于注解返回类型。注解参数时，最好使用 :class:`Mapping` 等抽象容器类型。"
 
-#: ../../library/typing.rst:1909
+#: ../../library/typing.rst:1916
 msgid "This type can be used as follows::"
 msgstr "该类型用法如下："
 
-#: ../../library/typing.rst:1914
+#: ../../library/typing.rst:1921
 msgid ""
 ":class:`builtins.dict <dict>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1920
+#: ../../library/typing.rst:1927
 msgid ""
 "Generic version of :class:`list`. Useful for annotating return types. To "
 "annotate arguments it is preferred to use an abstract collection type such "
@@ -1968,17 +1984,17 @@ msgstr ""
 ":class:`list` 的泛型版本。适用于注解返回类型。注解参数时，最好使用 :class:`Sequence` 或 "
 ":class:`Iterable` 等抽象容器类型。"
 
-#: ../../library/typing.rst:1925
+#: ../../library/typing.rst:1932
 msgid "This type may be used as follows::"
 msgstr "该类型用法如下："
 
-#: ../../library/typing.rst:1935
+#: ../../library/typing.rst:1942
 msgid ""
 ":class:`builtins.list <list>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1941
+#: ../../library/typing.rst:1948
 msgid ""
 "A generic version of :class:`builtins.set <set>`. Useful for annotating "
 "return types. To annotate arguments it is preferred to use an abstract "
@@ -1987,85 +2003,85 @@ msgstr ""
 ":class:`builtins.set <set>` 的泛型版本。适用于注解返回类型。注解参数时，最好使用 :class:`AbstractSet` "
 "等抽象容器类型。"
 
-#: ../../library/typing.rst:1945
+#: ../../library/typing.rst:1952
 msgid ""
 ":class:`builtins.set <set>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1951
+#: ../../library/typing.rst:1958
 msgid "A generic version of :class:`builtins.frozenset <frozenset>`."
 msgstr ":class:`builtins.frozenset <frozenset>` 的泛型版本。"
 
-#: ../../library/typing.rst:1953
+#: ../../library/typing.rst:1960
 msgid ""
 ":class:`builtins.frozenset <frozenset>` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1958
+#: ../../library/typing.rst:1965
 msgid ":data:`Tuple` is a special form."
 msgstr ":data:`Tuple` 是一种特殊形式。"
 
-#: ../../library/typing.rst:1961
+#: ../../library/typing.rst:1968
 msgid "Corresponding to types in :mod:`collections`"
 msgstr ":mod:`collections` 对应类型"
 
-#: ../../library/typing.rst:1965
+#: ../../library/typing.rst:1972
 msgid "A generic version of :class:`collections.defaultdict`."
 msgstr ":class:`collections.defaultdict` 的泛型版本。"
 
-#: ../../library/typing.rst:1969
+#: ../../library/typing.rst:1976
 msgid ""
 ":class:`collections.defaultdict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1975
+#: ../../library/typing.rst:1982
 msgid "A generic version of :class:`collections.OrderedDict`."
 msgstr ":class:`collections.OrderedDict` 的泛型版本。"
 
-#: ../../library/typing.rst:1979
+#: ../../library/typing.rst:1986
 msgid ""
 ":class:`collections.OrderedDict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1985
+#: ../../library/typing.rst:1992
 msgid "A generic version of :class:`collections.ChainMap`."
 msgstr ":class:`collections.ChainMap` 的泛型版本。"
 
-#: ../../library/typing.rst:1990
+#: ../../library/typing.rst:1997
 msgid ""
 ":class:`collections.ChainMap` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:1996
+#: ../../library/typing.rst:2003
 msgid "A generic version of :class:`collections.Counter`."
 msgstr ":class:`collections.Counter` 的泛型版本。"
 
-#: ../../library/typing.rst:2001
+#: ../../library/typing.rst:2008
 msgid ""
 ":class:`collections.Counter` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2007
+#: ../../library/typing.rst:2014
 msgid "A generic version of :class:`collections.deque`."
 msgstr ":class:`collections.deque` 的泛型版本。"
 
-#: ../../library/typing.rst:2012
+#: ../../library/typing.rst:2019
 msgid ""
 ":class:`collections.deque` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2017
+#: ../../library/typing.rst:2024
 msgid "Other concrete types"
 msgstr "其他具象类型"
 
-#: ../../library/typing.rst:2023
+#: ../../library/typing.rst:2030
 msgid ""
 "Generic type ``IO[AnyStr]`` and its subclasses ``TextIO(IO[str])`` and "
 "``BinaryIO(IO[bytes])`` represent the types of I/O streams such as returned "
@@ -2074,13 +2090,13 @@ msgstr ""
 "泛型类型 ``IO[AnyStr]`` 及其子类 ``TextIO(IO[str])`` 与 ``BinaryIO(IO[bytes])`` 表示 "
 "I/O 流的类型，例如 :func:`open` 所返回的对象。"
 
-#: ../../library/typing.rst:2030
+#: ../../library/typing.rst:2037
 msgid ""
 "The ``typing.io`` namespace is deprecated and will be removed. These types "
 "should be directly imported from ``typing`` instead."
 msgstr "``typing.io`` 命名空间已被废弃并将被删除。这些类型应该被直接从 ``typing`` 导入。"
 
-#: ../../library/typing.rst:2035
+#: ../../library/typing.rst:2042
 msgid ""
 "These type aliases correspond to the return types from :func:`re.compile` "
 "and :func:`re.match`.  These types (and the corresponding functions) are "
@@ -2091,13 +2107,13 @@ msgstr ""
 "``AnyStr`` 中的泛型并可通过编写 ``Pattern[str]``, ``Pattern[bytes]``, ``Match[str]`` 或"
 " ``Match[bytes]`` 来具体指定。"
 
-#: ../../library/typing.rst:2045
+#: ../../library/typing.rst:2052
 msgid ""
 "The ``typing.re`` namespace is deprecated and will be removed. These types "
 "should be directly imported from ``typing`` instead."
 msgstr "``typing.re`` 命名空间已被废弃并将被删除。这些类型应该被直接从 ``typing`` 导入。"
 
-#: ../../library/typing.rst:2046
+#: ../../library/typing.rst:2053
 msgid ""
 "Classes ``Pattern`` and ``Match`` from :mod:`re` now support ``[]``. See "
 ":pep:`585` and :ref:`types-genericalias`."
@@ -2105,7 +2121,7 @@ msgstr ""
 ":mod:`re` 模块中的 ``Pattern`` 与 ``Match`` 类现已支持 ``[]``。详见 :pep:`585` 与 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2052
+#: ../../library/typing.rst:2059
 msgid ""
 "``Text`` is an alias for ``str``. It is provided to supply a forward "
 "compatible path for Python 2 code: in Python 2, ``Text`` is an alias for "
@@ -2114,13 +2130,13 @@ msgstr ""
 "``Text`` 是 ``str`` 的别名。提供了对 Python 2 代码的向下兼容：Python 2 中，``Text`` 是 "
 "``unicode`` 的别名。"
 
-#: ../../library/typing.rst:2056
+#: ../../library/typing.rst:2063
 msgid ""
 "Use ``Text`` to indicate that a value must contain a unicode string in a "
 "manner that is compatible with both Python 2 and Python 3::"
 msgstr "使用 ``Text`` 时，值中必须包含 unicode 字符串，以兼容 Python 2 和 Python 3："
 
-#: ../../library/typing.rst:2064
+#: ../../library/typing.rst:2071
 msgid ""
 "Python 2 is no longer supported, and most type checkers also no longer "
 "support type checking Python 2 code. Removal of the alias is not currently "
@@ -2128,189 +2144,189 @@ msgid ""
 "wherever possible."
 msgstr ""
 
-#: ../../library/typing.rst:2071
+#: ../../library/typing.rst:2078
 msgid "Abstract Base Classes"
 msgstr "抽象基类"
 
-#: ../../library/typing.rst:2074
+#: ../../library/typing.rst:2081
 msgid "Corresponding to collections in :mod:`collections.abc`"
 msgstr ":mod:`collections.abc` 对应的容器"
 
-#: ../../library/typing.rst:2078
+#: ../../library/typing.rst:2085
 msgid "A generic version of :class:`collections.abc.Set`."
 msgstr ":class:`collections.abc.Set`  的泛型版本。"
 
-#: ../../library/typing.rst:2080
+#: ../../library/typing.rst:2087
 msgid ""
 ":class:`collections.abc.Set` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2086
+#: ../../library/typing.rst:2093
 msgid "A generic version of :class:`collections.abc.ByteString`."
 msgstr ":class:`collections.abc.ByteString` 的泛型版本。"
 
-#: ../../library/typing.rst:2088
+#: ../../library/typing.rst:2095
 msgid ""
 "This type represents the types :class:`bytes`, :class:`bytearray`, and "
 ":class:`memoryview` of byte sequences."
 msgstr "该类型代表了 :class:`bytes`、:class:`bytearray`、:class:`memoryview` 等字节序列类型。"
 
-#: ../../library/typing.rst:2091
+#: ../../library/typing.rst:2098
 msgid ""
 "As a shorthand for this type, :class:`bytes` can be used to annotate "
 "arguments of any of the types mentioned above."
 msgstr "作为该类型的简称，:class:`bytes` 可用于标注上述任意类型的参数。"
 
-#: ../../library/typing.rst:2094
+#: ../../library/typing.rst:2101
 msgid ""
 ":class:`collections.abc.ByteString` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2100
+#: ../../library/typing.rst:2107
 msgid "A generic version of :class:`collections.abc.Collection`"
 msgstr ":class:`collections.abc.Collection` 的泛型版本。"
 
-#: ../../library/typing.rst:2104
+#: ../../library/typing.rst:2111
 msgid ""
 ":class:`collections.abc.Collection` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2110
+#: ../../library/typing.rst:2117
 msgid "A generic version of :class:`collections.abc.Container`."
 msgstr ":class:`collections.abc.Container` 的泛型版本。"
 
-#: ../../library/typing.rst:2112
+#: ../../library/typing.rst:2119
 msgid ""
 ":class:`collections.abc.Container` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2118
+#: ../../library/typing.rst:2125
 msgid "A generic version of :class:`collections.abc.ItemsView`."
 msgstr ":class:`collections.abc.ItemsView` 的泛型版本。"
 
-#: ../../library/typing.rst:2120
+#: ../../library/typing.rst:2127
 msgid ""
 ":class:`collections.abc.ItemsView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2126
+#: ../../library/typing.rst:2133
 msgid "A generic version of :class:`collections.abc.KeysView`."
 msgstr ":class:`collections.abc.KeysView` 的泛型版本。"
 
-#: ../../library/typing.rst:2128
+#: ../../library/typing.rst:2135
 msgid ""
 ":class:`collections.abc.KeysView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2134
+#: ../../library/typing.rst:2141
 msgid ""
 "A generic version of :class:`collections.abc.Mapping`. This type can be used"
 " as follows::"
 msgstr ":class:`collections.abc.Mapping` 的泛型版本。用法如下："
 
-#: ../../library/typing.rst:2140
+#: ../../library/typing.rst:2147
 msgid ""
 ":class:`collections.abc.Mapping` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2146
+#: ../../library/typing.rst:2153
 msgid "A generic version of :class:`collections.abc.MappingView`."
 msgstr ":class:`collections.abc.MappingView` 的泛型版本。"
 
-#: ../../library/typing.rst:2148
+#: ../../library/typing.rst:2155
 msgid ""
 ":class:`collections.abc.MappingView` now supports subscripting (``[]``). See"
 " :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2154
+#: ../../library/typing.rst:2161
 msgid "A generic version of :class:`collections.abc.MutableMapping`."
 msgstr ":class:`collections.abc.MutableMapping` 的泛型版本。"
 
-#: ../../library/typing.rst:2156
+#: ../../library/typing.rst:2163
 msgid ""
 ":class:`collections.abc.MutableMapping` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2163
+#: ../../library/typing.rst:2170
 msgid "A generic version of :class:`collections.abc.MutableSequence`."
 msgstr ":class:`collections.abc.MutableSequence` 的泛型版本。"
 
-#: ../../library/typing.rst:2165
+#: ../../library/typing.rst:2172
 msgid ""
 ":class:`collections.abc.MutableSequence` now supports subscripting (``[]``)."
 " See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2172
+#: ../../library/typing.rst:2179
 msgid "A generic version of :class:`collections.abc.MutableSet`."
 msgstr ":class:`collections.abc.MutableSet` 的泛型版本。"
 
-#: ../../library/typing.rst:2174
+#: ../../library/typing.rst:2181
 msgid ""
 ":class:`collections.abc.MutableSet` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2180
+#: ../../library/typing.rst:2187
 msgid "A generic version of :class:`collections.abc.Sequence`."
 msgstr ":class:`collections.abc.Sequence` 的泛型版本。"
 
-#: ../../library/typing.rst:2182
+#: ../../library/typing.rst:2189
 msgid ""
 ":class:`collections.abc.Sequence` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2188
+#: ../../library/typing.rst:2195
 msgid "A generic version of :class:`collections.abc.ValuesView`."
 msgstr ":class:`collections.abc.ValuesView` 的泛型版本。"
 
-#: ../../library/typing.rst:2190
+#: ../../library/typing.rst:2197
 msgid ""
 ":class:`collections.abc.ValuesView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2195
+#: ../../library/typing.rst:2202
 msgid "Corresponding to other types in :mod:`collections.abc`"
 msgstr ":mod:`collections.abc` 对应的其他类型"
 
-#: ../../library/typing.rst:2199
+#: ../../library/typing.rst:2206
 msgid "A generic version of :class:`collections.abc.Iterable`."
 msgstr ":class:`collections.abc.Iterable` 的泛型版本。"
 
-#: ../../library/typing.rst:2201
+#: ../../library/typing.rst:2208
 msgid ""
 ":class:`collections.abc.Iterable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2207
+#: ../../library/typing.rst:2214
 msgid "A generic version of :class:`collections.abc.Iterator`."
 msgstr ":class:`collections.abc.Iterator` 的泛型版本。"
 
-#: ../../library/typing.rst:2209
+#: ../../library/typing.rst:2216
 msgid ""
 ":class:`collections.abc.Iterator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2215
+#: ../../library/typing.rst:2222
 msgid ""
 "A generator can be annotated by the generic type ``Generator[YieldType, "
 "SendType, ReturnType]``. For example::"
 msgstr "生成器可以由泛型类型 ``Generator[YieldType, SendType, ReturnType]`` 注解。例如："
 
-#: ../../library/typing.rst:2224
+#: ../../library/typing.rst:2231
 msgid ""
 "Note that unlike many other generics in the typing module, the ``SendType`` "
 "of :class:`Generator` behaves contravariantly, not covariantly or "
@@ -2319,47 +2335,47 @@ msgstr ""
 "注意，与 typing 模块里的其他泛型不同， :class:`Generator` 的 ``SendType`` "
 "属于逆变行为，不是协变行为，也是不变行为。"
 
-#: ../../library/typing.rst:2228
+#: ../../library/typing.rst:2235
 msgid ""
 "If your generator will only yield values, set the ``SendType`` and "
 "``ReturnType`` to ``None``::"
 msgstr "如果生成器只产生值，可将 ``SendType`` 与 ``ReturnType`` 设为 ``None``："
 
-#: ../../library/typing.rst:2236
+#: ../../library/typing.rst:2243
 msgid ""
 "Alternatively, annotate your generator as having a return type of either "
 "``Iterable[YieldType]`` or ``Iterator[YieldType]``::"
 msgstr "此外，还可以把生成器的返回类型注解为 ``Iterable[YieldType]`` 或 ``Iterator[YieldType]``："
 
-#: ../../library/typing.rst:2244
+#: ../../library/typing.rst:2251
 msgid ""
 ":class:`collections.abc.Generator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2250
+#: ../../library/typing.rst:2257
 msgid "An alias to :class:`collections.abc.Hashable`."
 msgstr ":class:`collections.abc.Hashable` 的别名。"
 
-#: ../../library/typing.rst:2254
+#: ../../library/typing.rst:2261
 msgid "A generic version of :class:`collections.abc.Reversible`."
 msgstr ":class:`collections.abc.Reversible` 的泛型版本。"
 
-#: ../../library/typing.rst:2256
+#: ../../library/typing.rst:2263
 msgid ""
 ":class:`collections.abc.Reversible` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2262
+#: ../../library/typing.rst:2269
 msgid "An alias to :class:`collections.abc.Sized`."
 msgstr ":class:`collections.abc.Sized` 的别名。"
 
-#: ../../library/typing.rst:2265
+#: ../../library/typing.rst:2272
 msgid "Asynchronous programming"
 msgstr "异步编程"
 
-#: ../../library/typing.rst:2269
+#: ../../library/typing.rst:2276
 msgid ""
 "A generic version of :class:`collections.abc.Coroutine`. The variance and "
 "order of type variables correspond to those of :class:`Generator`, for "
@@ -2368,7 +2384,7 @@ msgstr ""
 ":class:`collections.abc.Coroutine` 的泛型版本。类型变量的差异和顺序与 :class:`Generator` "
 "的内容相对应，例如："
 
-#: ../../library/typing.rst:2281
+#: ../../library/typing.rst:2288
 msgid ""
 ":class:`collections.abc.Coroutine` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
@@ -2376,13 +2392,13 @@ msgstr ""
 ":class:`collections.abc.Coroutine` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2287
+#: ../../library/typing.rst:2294
 msgid ""
 "An async generator can be annotated by the generic type "
 "``AsyncGenerator[YieldType, SendType]``. For example::"
 msgstr "异步生成器可由泛型类型 ``AsyncGenerator[YieldType, SendType]`` 注解。例如："
 
-#: ../../library/typing.rst:2296
+#: ../../library/typing.rst:2303
 msgid ""
 "Unlike normal generators, async generators cannot return a value, so there "
 "is no ``ReturnType`` type parameter. As with :class:`Generator`, the "
@@ -2391,12 +2407,12 @@ msgstr ""
 "与常规生成器不同，异步生成器不能返回值，因此没有 ``ReturnType`` 类型参数。 与 :class:`Generator` "
 "类似，``SendType`` 也属于逆变行为。"
 
-#: ../../library/typing.rst:2300
+#: ../../library/typing.rst:2307
 msgid ""
 "If your generator will only yield values, set the ``SendType`` to ``None``::"
 msgstr "如果生成器只产生值，可将 ``SendType`` 设置为 ``None``："
 
-#: ../../library/typing.rst:2308
+#: ../../library/typing.rst:2315
 msgid ""
 "Alternatively, annotate your generator as having a return type of either "
 "``AsyncIterable[YieldType]`` or ``AsyncIterator[YieldType]``::"
@@ -2404,7 +2420,7 @@ msgstr ""
 "此外，可用 ``AsyncIterable[YieldType]`` 或 ``AsyncIterator[YieldType]`` "
 "注解生成器的返回类型："
 
-#: ../../library/typing.rst:2318
+#: ../../library/typing.rst:2325
 msgid ""
 ":class:`collections.abc.AsyncGenerator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
@@ -2412,21 +2428,21 @@ msgstr ""
 ":class:`collections.abc.AsyncGenerator` 现在支持下标操作（``[]``）。参见 :pep:`585` 和 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2325
+#: ../../library/typing.rst:2332
 msgid "A generic version of :class:`collections.abc.AsyncIterable`."
 msgstr ":class:`collections.abc.AsyncIterable` 的泛型版本。"
 
-#: ../../library/typing.rst:2329
+#: ../../library/typing.rst:2336
 msgid ""
 ":class:`collections.abc.AsyncIterable` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
 
-#: ../../library/typing.rst:2335
+#: ../../library/typing.rst:2342
 msgid "A generic version of :class:`collections.abc.AsyncIterator`."
 msgstr ":class:`collections.abc.AsyncIterator` 的泛型版本。"
 
-#: ../../library/typing.rst:2339
+#: ../../library/typing.rst:2346
 msgid ""
 ":class:`collections.abc.AsyncIterator` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
@@ -2434,11 +2450,11 @@ msgstr ""
 ":class:`collections.abc.AsyncIterator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2345
+#: ../../library/typing.rst:2352
 msgid "A generic version of :class:`collections.abc.Awaitable`."
 msgstr ":class:`collections.abc.Awaitable` 的泛型版本。"
 
-#: ../../library/typing.rst:2349
+#: ../../library/typing.rst:2356
 msgid ""
 ":class:`collections.abc.Awaitable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
@@ -2446,15 +2462,15 @@ msgstr ""
 ":class:`collections.abc.Awaitable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
 ":ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2355
+#: ../../library/typing.rst:2362
 msgid "Context manager types"
 msgstr "上下文管理器类型"
 
-#: ../../library/typing.rst:2359
+#: ../../library/typing.rst:2366
 msgid "A generic version of :class:`contextlib.AbstractContextManager`."
 msgstr ":class:`contextlib.AbstractContextManager` 的泛型版本。"
 
-#: ../../library/typing.rst:2364
+#: ../../library/typing.rst:2371
 msgid ""
 ":class:`contextlib.AbstractContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
@@ -2462,11 +2478,11 @@ msgstr ""
 ":class:`contextlib.AbstractContextManager` 现在支持下标操作 (``[]``)。 参见 :pep:`585` "
 "和 :ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2371
+#: ../../library/typing.rst:2378
 msgid "A generic version of :class:`contextlib.AbstractAsyncContextManager`."
 msgstr ":class:`contextlib.AbstractAsyncContextManager` 的泛型版本。"
 
-#: ../../library/typing.rst:2376
+#: ../../library/typing.rst:2383
 msgid ""
 ":class:`contextlib.AbstractAsyncContextManager` now supports subscripting "
 "(``[]``). See :pep:`585` and :ref:`types-genericalias`."
@@ -2474,90 +2490,90 @@ msgstr ""
 ":class:`contextlib.AbstractAsyncContextManager` 现在 支持下标操作 (``[]``)。 参见 "
 ":pep:`585` 和 :ref:`types-genericalias`。"
 
-#: ../../library/typing.rst:2382
+#: ../../library/typing.rst:2389
 msgid "Protocols"
 msgstr "协议"
 
-#: ../../library/typing.rst:2384
+#: ../../library/typing.rst:2391
 msgid "These protocols are decorated with :func:`runtime_checkable`."
 msgstr "这些协议由 :func:`runtime_checkable` 装饰。"
 
-#: ../../library/typing.rst:2388
+#: ../../library/typing.rst:2395
 msgid ""
 "An ABC with one abstract method ``__abs__`` that is covariant in its return "
 "type."
 msgstr "含抽象方法 ``__abs__`` 的抽象基类，是其返回类型里的协变量。"
 
-#: ../../library/typing.rst:2393
+#: ../../library/typing.rst:2400
 msgid "An ABC with one abstract method ``__bytes__``."
 msgstr "含抽象方法 ``__bytes__`` 的抽象基类。"
 
-#: ../../library/typing.rst:2397
+#: ../../library/typing.rst:2404
 msgid "An ABC with one abstract method ``__complex__``."
 msgstr "含抽象方法 ``__complex__`` 的抽象基类。"
 
-#: ../../library/typing.rst:2401
+#: ../../library/typing.rst:2408
 msgid "An ABC with one abstract method ``__float__``."
 msgstr "含抽象方法 ``__float__`` 的抽象基类。"
 
-#: ../../library/typing.rst:2405
+#: ../../library/typing.rst:2412
 msgid "An ABC with one abstract method ``__index__``."
 msgstr "含抽象方法 ``__index__`` 的抽象基类。"
 
-#: ../../library/typing.rst:2411
+#: ../../library/typing.rst:2418
 msgid "An ABC with one abstract method ``__int__``."
 msgstr "含抽象方法 ``__int__`` 的抽象基类。"
 
-#: ../../library/typing.rst:2415
+#: ../../library/typing.rst:2422
 msgid ""
 "An ABC with one abstract method ``__round__`` that is covariant in its "
 "return type."
 msgstr "含抽象方法 ``__round__`` 的抽象基类，是其返回类型的协变量。"
 
-#: ../../library/typing.rst:2419
+#: ../../library/typing.rst:2426
 msgid "Functions and decorators"
 msgstr "函数与装饰器"
 
-#: ../../library/typing.rst:2423
+#: ../../library/typing.rst:2430
 msgid "Cast a value to a type."
 msgstr "把值强制转换为类型。"
 
-#: ../../library/typing.rst:2425
+#: ../../library/typing.rst:2432
 msgid ""
 "This returns the value unchanged.  To the type checker this signals that the"
 " return value has the designated type, but at runtime we intentionally don't"
 " check anything (we want this to be as fast as possible)."
 msgstr "不变更返回值。对类型检查器而言，代表了返回值具有指定的类型，但运行时故意不做任何检查（以便让检查速度尽量快）。"
 
-#: ../../library/typing.rst:2432
+#: ../../library/typing.rst:2439
 msgid ""
 "Ask a static type checker to confirm that *val* has an inferred type of "
 "*typ*."
 msgstr "让静态类型检查器确认 *val* 具有推断为 *typ* 的类型。"
 
-#: ../../library/typing.rst:2434
+#: ../../library/typing.rst:2441
 msgid ""
 "When the type checker encounters a call to ``assert_type()``, it emits an "
 "error if the value is not of the specified type::"
 msgstr ""
 
-#: ../../library/typing.rst:2441
+#: ../../library/typing.rst:2448
 msgid ""
 "At runtime this returns the first argument unchanged with no side effects."
 msgstr ""
 
-#: ../../library/typing.rst:2443
+#: ../../library/typing.rst:2450
 msgid ""
 "This function is useful for ensuring the type checker's understanding of a "
 "script is in line with the developer's intentions::"
 msgstr ""
 
-#: ../../library/typing.rst:2457
+#: ../../library/typing.rst:2464
 msgid ""
 "Ask a static type checker to confirm that a line of code is unreachable."
 msgstr ""
 
-#: ../../library/typing.rst:2470
+#: ../../library/typing.rst:2477
 msgid ""
 "Here, the annotations allow the type checker to infer that the last case can"
 " never execute, because ``arg`` is either an :class:`int` or a :class:`str`,"
@@ -2570,53 +2586,53 @@ msgid ""
 " bottom type, :data:`Never`, and nothing else."
 msgstr ""
 
-#: ../../library/typing.rst:2482
+#: ../../library/typing.rst:2489
 msgid "At runtime, this throws an exception when called."
 msgstr ""
 
-#: ../../library/typing.rst:2485
+#: ../../library/typing.rst:2492
 msgid ""
 "`Unreachable Code and Exhaustiveness Checking "
 "<https://typing.readthedocs.io/en/latest/source/unreachable.html>`__ has "
 "more information about exhaustiveness checking with static typing."
 msgstr ""
 
-#: ../../library/typing.rst:2493
+#: ../../library/typing.rst:2500
 msgid "Reveal the inferred static type of an expression."
 msgstr ""
 
-#: ../../library/typing.rst:2495
+#: ../../library/typing.rst:2502
 msgid ""
 "When a static type checker encounters a call to this function, it emits a "
 "diagnostic with the type of the argument. For example::"
 msgstr ""
 
-#: ../../library/typing.rst:2501
+#: ../../library/typing.rst:2508
 msgid ""
 "This can be useful when you want to debug how your type checker handles a "
 "particular piece of code."
 msgstr ""
 
-#: ../../library/typing.rst:2504
+#: ../../library/typing.rst:2511
 msgid ""
 "The function returns its argument unchanged, which allows using it within an"
 " expression::"
 msgstr ""
 
-#: ../../library/typing.rst:2509
+#: ../../library/typing.rst:2516
 msgid ""
 "Most type checkers support ``reveal_type()`` anywhere, even if the name is "
 "not imported from ``typing``. Importing the name from ``typing`` allows your"
 " code to run without runtime errors and communicates intent more clearly."
 msgstr ""
 
-#: ../../library/typing.rst:2514
+#: ../../library/typing.rst:2521
 msgid ""
 "At runtime, this function prints the runtime type of its argument to stderr "
 "and returns it unchanged::"
 msgstr ""
 
-#: ../../library/typing.rst:2524
+#: ../../library/typing.rst:2531
 msgid ""
 ":data:`~typing.dataclass_transform` may be used to decorate a class, "
 "metaclass, or a function that is itself a decorator. The presence of "
@@ -2625,19 +2641,19 @@ msgid ""
 ":func:`dataclasses.dataclass`-like behaviors."
 msgstr ""
 
-#: ../../library/typing.rst:2530
+#: ../../library/typing.rst:2537
 msgid "Example usage with a decorator function::"
 msgstr "在装饰器函数上的使用示例："
 
-#: ../../library/typing.rst:2544
+#: ../../library/typing.rst:2551
 msgid "On a base class::"
 msgstr "在基类上："
 
-#: ../../library/typing.rst:2553
+#: ../../library/typing.rst:2560
 msgid "On a metaclass::"
 msgstr ""
 
-#: ../../library/typing.rst:2564
+#: ../../library/typing.rst:2571
 msgid ""
 "The ``CustomerModel`` classes defined above will be treated by type checkers"
 " similarly to classes created with :func:`@dataclasses.dataclass "
@@ -2645,7 +2661,7 @@ msgid ""
 "classes have ``__init__`` methods that accept ``id`` and ``name``."
 msgstr ""
 
-#: ../../library/typing.rst:2570
+#: ../../library/typing.rst:2577
 msgid ""
 "The decorated class, metaclass, or function may accept the following bool "
 "arguments which type checkers will assume have the same effect as they would"
@@ -2655,60 +2671,60 @@ msgid ""
 "value of these arguments (``True`` or ``False``) to be statically evaluated."
 msgstr ""
 
-#: ../../library/typing.rst:2578
+#: ../../library/typing.rst:2585
 msgid ""
 "The arguments to the ``dataclass_transform`` decorator can be used to "
 "customize the default behaviors of the decorated class, metaclass, or "
 "function:"
 msgstr ""
 
-#: ../../library/typing.rst:2582
+#: ../../library/typing.rst:2589
 msgid ""
 "``eq_default`` indicates whether the ``eq`` parameter is assumed to be "
 "``True`` or ``False`` if it is omitted by the caller."
 msgstr ""
 
-#: ../../library/typing.rst:2584
+#: ../../library/typing.rst:2591
 msgid ""
 "``order_default`` indicates whether the ``order`` parameter is assumed to be"
 " True or False if it is omitted by the caller."
 msgstr ""
 
-#: ../../library/typing.rst:2586
+#: ../../library/typing.rst:2593
 msgid ""
 "``kw_only_default`` indicates whether the ``kw_only`` parameter is assumed "
 "to be True or False if it is omitted by the caller."
 msgstr ""
 
-#: ../../library/typing.rst:2588
+#: ../../library/typing.rst:2595
 msgid ""
 "``field_specifiers`` specifies a static list of supported classes or "
 "functions that describe fields, similar to ``dataclasses.field()``."
 msgstr ""
 
-#: ../../library/typing.rst:2590
+#: ../../library/typing.rst:2597
 msgid ""
 "Arbitrary other keyword arguments are accepted in order to allow for "
 "possible future extensions."
 msgstr ""
 
-#: ../../library/typing.rst:2593
+#: ../../library/typing.rst:2600
 msgid ""
 "Type checkers recognize the following optional arguments on field "
 "specifiers:"
 msgstr ""
 
-#: ../../library/typing.rst:2596
+#: ../../library/typing.rst:2603
 msgid ""
 "``init`` indicates whether the field should be included in the synthesized "
 "``__init__`` method. If unspecified, ``init`` defaults to ``True``."
 msgstr ""
 
-#: ../../library/typing.rst:2599
+#: ../../library/typing.rst:2606
 msgid "``default`` provides the default value for the field."
 msgstr ""
 
-#: ../../library/typing.rst:2600
+#: ../../library/typing.rst:2607
 msgid ""
 "``default_factory`` provides a runtime callback that returns the default "
 "value for the field. If neither ``default`` nor ``default_factory`` are "
@@ -2716,11 +2732,11 @@ msgid ""
 "provided a value when the class is instantiated."
 msgstr ""
 
-#: ../../library/typing.rst:2605
+#: ../../library/typing.rst:2612
 msgid "``factory`` is an alias for ``default_factory``."
 msgstr ""
 
-#: ../../library/typing.rst:2606
+#: ../../library/typing.rst:2613
 msgid ""
 "``kw_only`` indicates whether the field should be marked as keyword-only. If"
 " ``True``, the field will be keyword-only. If ``False``, it will not be "
@@ -2730,24 +2746,24 @@ msgid ""
 "will be used."
 msgstr ""
 
-#: ../../library/typing.rst:2612
+#: ../../library/typing.rst:2619
 msgid ""
 "``alias`` provides an alternative name for the field. This alternative name "
 "is used in the synthesized ``__init__`` method."
 msgstr ""
 
-#: ../../library/typing.rst:2615
+#: ../../library/typing.rst:2622
 msgid ""
 "At runtime, this decorator records its arguments in the "
 "``__dataclass_transform__`` attribute on the decorated object. It has no "
 "other runtime effect."
 msgstr ""
 
-#: ../../library/typing.rst:2619
+#: ../../library/typing.rst:2626
 msgid "See :pep:`681` for more details."
 msgstr "更多细节请参见 :pep:`681`。"
 
-#: ../../library/typing.rst:2625
+#: ../../library/typing.rst:2632
 msgid ""
 "The ``@overload`` decorator allows describing functions and methods that "
 "support multiple different combinations of argument types. A series of "
@@ -2766,18 +2782,18 @@ msgstr ""
 "``@overload``-装饰定义覆盖，后者用于运行时，而且会被类型检查器忽略。在运行时直接调用 ``@overload`` 装饰的函数会触发 "
 ":exc:`NotImplementedError`。下面的重载示例给出了比联合类型或类型变量更精准的类型："
 
-#: ../../library/typing.rst:2649
+#: ../../library/typing.rst:2656
 msgid ""
 "See :pep:`484` for more details and comparison with other typing semantics."
 msgstr ""
 
-#: ../../library/typing.rst:2651
+#: ../../library/typing.rst:2658
 msgid ""
 "Overloaded functions can now be introspected at runtime using "
 ":func:`get_overloads`."
 msgstr ""
 
-#: ../../library/typing.rst:2658
+#: ../../library/typing.rst:2665
 msgid ""
 "Return a sequence of :func:`@overload <overload>`-decorated definitions for "
 "*func*. *func* is the function object for the implementation of the "
@@ -2788,25 +2804,25 @@ msgid ""
 "returns an empty sequence."
 msgstr ""
 
-#: ../../library/typing.rst:2666
+#: ../../library/typing.rst:2673
 msgid ""
 "``get_overloads()`` can be used for introspecting an overloaded function at "
 "runtime."
 msgstr ""
 
-#: ../../library/typing.rst:2674
+#: ../../library/typing.rst:2681
 msgid ""
 "Clear all registered overloads in the internal registry. This can be used to"
 " reclaim the memory used by the registry."
 msgstr ""
 
-#: ../../library/typing.rst:2682
+#: ../../library/typing.rst:2689
 msgid ""
 "A decorator to indicate to type checkers that the decorated method cannot be"
 " overridden, and the decorated class cannot be subclassed. For example::"
 msgstr "告知类型检查器被装饰的方法不能被覆盖，且被装饰的类不能作为子类的装饰器，例如："
 
-#: ../../library/typing.rst:2705
+#: ../../library/typing.rst:2712
 msgid ""
 "The decorator will now set the ``__final__`` attribute to ``True`` on the "
 "decorated object. Thus, a check like ``if getattr(obj, \"__final__\", "
@@ -2816,59 +2832,59 @@ msgid ""
 "exception."
 msgstr ""
 
-#: ../../library/typing.rst:2716
+#: ../../library/typing.rst:2723
 msgid "Decorator to indicate that annotations are not type hints."
 msgstr "标明注解不是类型提示的装饰器。"
 
-#: ../../library/typing.rst:2718
+#: ../../library/typing.rst:2725
 msgid ""
 "This works as class or function :term:`decorator`.  With a class, it applies"
 " recursively to all methods and classes defined in that class (but not to "
 "methods defined in its superclasses or subclasses)."
 msgstr ""
 
-#: ../../library/typing.rst:2722
+#: ../../library/typing.rst:2729
 msgid "This mutates the function(s) in place."
 msgstr "本方法可直接修改函数。"
 
-#: ../../library/typing.rst:2726
+#: ../../library/typing.rst:2733
 msgid "Decorator to give another decorator the :func:`no_type_check` effect."
 msgstr "让其他装饰器具有 :func:`no_type_check` 效果的装饰器。"
 
-#: ../../library/typing.rst:2728
+#: ../../library/typing.rst:2735
 msgid ""
 "This wraps the decorator with something that wraps the decorated function in"
 " :func:`no_type_check`."
 msgstr "本装饰器用 :func:`no_type_check` 里的装饰函数打包其他装饰器。"
 
-#: ../../library/typing.rst:2733
+#: ../../library/typing.rst:2740
 msgid "Decorator to mark a class or function to be unavailable at runtime."
 msgstr "标记类或函数内不可用于运行时的装饰器。"
 
-#: ../../library/typing.rst:2735
+#: ../../library/typing.rst:2742
 msgid ""
 "This decorator is itself not available at runtime. It is mainly intended to "
 "mark classes that are defined in type stub files if an implementation "
 "returns an instance of a private class::"
 msgstr "在运行时，该装饰器本身不可用。实现返回的是私有类实例时，它主要是用于标记在类型存根文件中定义的类。"
 
-#: ../../library/typing.rst:2746
+#: ../../library/typing.rst:2753
 msgid ""
 "Note that returning instances of private classes is not recommended. It is "
 "usually preferable to make such classes public."
 msgstr "注意，建议不要返回私有类实例，最好将之设为公共类。"
 
-#: ../../library/typing.rst:2750
+#: ../../library/typing.rst:2757
 msgid "Introspection helpers"
 msgstr "内省辅助器"
 
-#: ../../library/typing.rst:2754
+#: ../../library/typing.rst:2761
 msgid ""
 "Return a dictionary containing type hints for a function, method, module or "
 "class object."
 msgstr "返回函数、方法、模块、类对象的类型提示的字典。"
 
-#: ../../library/typing.rst:2757
+#: ../../library/typing.rst:2764
 msgid ""
 "This is often the same as ``obj.__annotations__``. In addition, forward "
 "references encoded as string literals are handled by evaluating them in "
@@ -2877,7 +2893,7 @@ msgid ""
 "``C.__mro__`` in reverse order."
 msgstr ""
 
-#: ../../library/typing.rst:2763
+#: ../../library/typing.rst:2770
 msgid ""
 "The function recursively replaces all ``Annotated[T, ...]`` with ``T``, "
 "unless ``include_extras`` is set to ``True`` (see :class:`Annotated` for "
@@ -2886,7 +2902,7 @@ msgstr ""
 "本函数以递归地方式用 ``T`` 替换所有 ``Annotated[T, ...]``， 除非将 ``include_extras`` 的值设置为 "
 "``True`` （详见 :class:`Annotated`）。例如："
 
-#: ../../library/typing.rst:2778
+#: ../../library/typing.rst:2785
 msgid ""
 ":func:`get_type_hints` does not work with imported :ref:`type aliases <type-"
 "aliases>` that include forward references. Enabling postponed evaluation of "
@@ -2895,23 +2911,23 @@ msgstr ""
 ":func:`get_type_hints` 在导入的 :ref:`类型别名 <type-aliases>` "
 "中不工作，包括前向引用。启用注解的延迟评估（ :pep:`563` ）可能会消除对大多数前向引用的需要。"
 
-#: ../../library/typing.rst:2783
+#: ../../library/typing.rst:2790
 msgid "Added ``include_extras`` parameter as part of :pep:`593`."
 msgstr ":pep:`593` 的组成部分，添加了 ``include_extras`` 参数。"
 
-#: ../../library/typing.rst:2786
+#: ../../library/typing.rst:2793
 msgid ""
 "Previously, ``Optional[t]`` was added for function and method annotations if"
 " a default value equal to ``None`` was set. Now the annotation is returned "
 "unchanged."
 msgstr ""
 
-#: ../../library/typing.rst:2794
+#: ../../library/typing.rst:2801
 msgid ""
 "Provide basic introspection for generic types and special typing forms."
 msgstr "为泛型类型与特殊类型形式提供了基本的内省功能。"
 
-#: ../../library/typing.rst:2796
+#: ../../library/typing.rst:2803
 msgid ""
 "For a typing object of the form ``X[Y, Z, ...]`` these functions return "
 "``X`` and ``(Y, Z, ...)``. If ``X`` is a generic alias for a builtin or "
@@ -2926,11 +2942,11 @@ msgstr ""
 ":class:`Literal`，``(Y, Z, ...)`` 的顺序会因类型缓存，而与原始参数 ``[Y, Z, ...]`` "
 "的顺序不同。对于不支持的对象会相应地返回 ``None`` 或 ``()``。例如："
 
-#: ../../library/typing.rst:2815
+#: ../../library/typing.rst:2822
 msgid "Check if a type is a :class:`TypedDict`."
 msgstr "检查一个类型是否为 :class:`TypedDict`。"
 
-#: ../../library/typing.rst:2830
+#: ../../library/typing.rst:2837
 msgid ""
 "A class used for internal typing representation of string forward "
 "references. For example, ``List[\"SomeClass\"]`` is implicitly transformed "
@@ -2940,7 +2956,7 @@ msgstr ""
 "用于字符串前向引用的内部类型表示的类。 例如，``List[\"SomeClass\"]`` 会被隐式转换为 "
 "``List[ForwardRef(\"SomeClass\")]``。 这个类不应由用户来实例化，但可以由内省工具使用。"
 
-#: ../../library/typing.rst:2836
+#: ../../library/typing.rst:2843
 msgid ""
 ":pep:`585` generic types such as ``list[\"SomeClass\"]`` will not be "
 "implicitly transformed into ``list[ForwardRef(\"SomeClass\")]`` and thus "
@@ -2949,17 +2965,17 @@ msgstr ""
 ":pep:`585` 泛型类型例如 ``list[\"SomeClass\"]`` 将不会被隐式地转换为 "
 "``list[ForwardRef(\"SomeClass\")]`` 因而将不会自动解析为 ``list[SomeClass]``。"
 
-#: ../../library/typing.rst:2843
+#: ../../library/typing.rst:2850
 msgid "Constant"
 msgstr "常量"
 
-#: ../../library/typing.rst:2847
+#: ../../library/typing.rst:2854
 msgid ""
 "A special constant that is assumed to be ``True`` by 3rd party static type "
 "checkers. It is ``False`` at runtime. Usage::"
 msgstr "被第三方静态类型检查器假定为 ``True`` 的特殊常量。 在运行时为 ``False``。 用法如下::"
 
-#: ../../library/typing.rst:2856
+#: ../../library/typing.rst:2863
 msgid ""
 "The first type annotation must be enclosed in quotes, making it a \"forward "
 "reference\", to hide the ``expensive_mod`` reference from the interpreter "
@@ -2969,7 +2985,7 @@ msgstr ""
 "第一个类型注解必须用引号标注，才能把它当作“前向引用”，从而在解释器运行时中隐藏 ``expensive_mod`` "
 "引用。局部变量的类型注释不会被评估，因此，第二个注解不需要用引号引起来。"
 
-#: ../../library/typing.rst:2863
+#: ../../library/typing.rst:2870
 msgid ""
 "If ``from __future__ import annotations`` is used, annotations are not "
 "evaluated at function definition time. Instead, they are stored as strings "
@@ -2979,11 +2995,11 @@ msgstr ""
 "使用 ``from __future__ import`` 时，函数定义时不处理注解， 而是把注解当作字符串存在 ``__annotations__``"
 " 里，这样就不必为注解使用引号。（详见 :pep:`563`）。"
 
-#: ../../library/typing.rst:2872
+#: ../../library/typing.rst:2879
 msgid "Deprecation Timeline of Major Features"
 msgstr ""
 
-#: ../../library/typing.rst:2874
+#: ../../library/typing.rst:2881
 msgid ""
 "Certain features in ``typing`` are deprecated and may be removed in a future"
 " version of Python. The following table summarizes major deprecations for "
@@ -2993,62 +3009,62 @@ msgstr ""
 "``typing`` 的特定特性被弃用，并且可能在将来的 Python "
 "版本中被移除。下表总结了主要的弃用特性。该表可能会被更改，请注意部分弃用特性可能并未在此列出。"
 
-#: ../../library/typing.rst:2879
+#: ../../library/typing.rst:2886
 msgid "Feature"
 msgstr "特性"
 
-#: ../../library/typing.rst:2879
+#: ../../library/typing.rst:2886
 msgid "Deprecated in"
 msgstr "弃用于"
 
-#: ../../library/typing.rst:2879
+#: ../../library/typing.rst:2886
 msgid "Projected removal"
 msgstr ""
 
-#: ../../library/typing.rst:2879
+#: ../../library/typing.rst:2886
 msgid "PEP/issue"
 msgstr ""
 
-#: ../../library/typing.rst:2881
+#: ../../library/typing.rst:2888
 msgid "``typing.io`` and ``typing.re`` submodules"
-msgstr ""
+msgstr "``typing.io`` 和 ``typing.re`` 子模块"
 
-#: ../../library/typing.rst:2881
+#: ../../library/typing.rst:2888
 msgid "3.8"
 msgstr "3.8"
 
-#: ../../library/typing.rst:2881
+#: ../../library/typing.rst:2888
 msgid "3.13"
 msgstr "3.13"
 
-#: ../../library/typing.rst:2881
+#: ../../library/typing.rst:2888
 msgid ":issue:`38291`"
 msgstr ":issue:`38291`"
 
-#: ../../library/typing.rst:2884
+#: ../../library/typing.rst:2891
 msgid "``typing`` versions of standard collections"
 msgstr "标准多项集的 ``typing`` 版本"
 
-#: ../../library/typing.rst:2884
+#: ../../library/typing.rst:2891
 msgid "3.9"
 msgstr "3.9"
 
-#: ../../library/typing.rst:2884 ../../library/typing.rst:2887
+#: ../../library/typing.rst:2891 ../../library/typing.rst:2894
 msgid "Undecided"
 msgstr "未确定"
 
-#: ../../library/typing.rst:2884
+#: ../../library/typing.rst:2891
 msgid ":pep:`585`"
 msgstr ":pep:`585`"
 
-#: ../../library/typing.rst:2887
+#: ../../library/typing.rst:2894
 msgid "``typing.Text``"
 msgstr "``typing.Text``"
 
-#: ../../library/typing.rst:2887
+#: ../../library/typing.rst:2894
 msgid "3.11"
 msgstr "3.11"
 
-#: ../../library/typing.rst:2887
+#: ../../library/typing.rst:2894
 msgid ":gh:`92332`"
 msgstr ":gh:`92332`"

@@ -832,28 +832,30 @@ msgid ""
 ":attr:`Traceback.total_nframe` attribute. That allows to know if a traceback"
 " has been truncated by the traceback limit."
 msgstr ""
+"当保存一个快照时，追踪的回溯被限制为 :func:`get_traceback_limit` 个帧。 参见 :func:`take_snapshot` "
+"函数。 回溯的原始帧数存放在 :attr:`Traceback.total_nframe` 属性中。 这可以让人了解一个回溯是否因回溯限制而被截断。"
 
 #: ../../library/tracemalloc.rst:726
 msgid ""
 "The :attr:`Trace.traceback` attribute is an instance of :class:`Traceback` "
 "instance."
-msgstr ""
+msgstr ":attr:`Trace.traceback` 属性是一个 :class:`Traceback` 对象的实例。"
 
 #: ../../library/tracemalloc.rst:729
 msgid ""
 "Frames are now sorted from the oldest to the most recent, instead of most "
 "recent to oldest."
-msgstr ""
+msgstr "现在帧的排序是从最旧到最新，而不是从最新到最旧。"
 
 #: ../../library/tracemalloc.rst:734
 msgid ""
 "Total number of frames that composed the traceback before truncation. This "
 "attribute can be set to ``None`` if the information is not available."
-msgstr ""
+msgstr "在截断之前组成回溯的总帧数。 如果此信息不可用则该属性可被设为 ``None``。"
 
 #: ../../library/tracemalloc.rst:738
 msgid "The :attr:`Traceback.total_nframe` attribute was added."
-msgstr ""
+msgstr "增加了 :attr:`Traceback.total_nframe` 属性。"
 
 #: ../../library/tracemalloc.rst:743
 msgid ""
@@ -864,12 +866,15 @@ msgid ""
 "of the formatted frames is reversed, returning the most recent frame first "
 "instead of last."
 msgstr ""
+"将回溯格式化为由行组成的列表。 使用 :mod:`linecache` 模块从源代码提取行。 如果设置了 *limit*，则当 *limit* "
+"为正值时将格式化 *limit* 个最新的帧。 在其他情况下，则格式化 ``abs(limit)`` 个最新的帧。 如果 "
+"*most_recent_first* 为 ``True``，则将反转已格式化帧的顺序，首先返回最新的帧而不是最旧的。"
 
 #: ../../library/tracemalloc.rst:750
 msgid ""
 "Similar to the :func:`traceback.format_tb` function, except that "
 ":meth:`.format` does not include newlines."
-msgstr ""
+msgstr "类似于 :func:`traceback.format_tb` 函数，不同之处是 :meth:`.format` 不包括换行符。"
 
 #: ../../library/tracemalloc.rst:753
 msgid "Example::"

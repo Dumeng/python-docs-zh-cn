@@ -48,6 +48,8 @@ msgid ""
 "potentially switching from static types to heap types, and—perhaps most "
 "importantly—accessing per-module state from code."
 msgstr ""
+"本文档还描述了如何在可能的情况下切换到模块级状态。 这种转换涉及为状态分配空间、从静态类型到堆类型的潜在切换，以及 — 也许是最重要的 — "
+"从代码访问模块级状态。"
 
 #: ../../howto/isolating-extensions.rst:21
 msgid "Who should read this"
@@ -59,6 +61,7 @@ msgid ""
 "extensions who would like to make that extension safer to use in "
 "applications where Python itself is used as a library."
 msgstr ""
+"本指南是针对想要让扩展更安全地在将 Python 本身用作库的应用程序中使用的 :ref:`C-API <c-api-index>` 扩展维护者撰写的。"
 
 #: ../../howto/isolating-extensions.rst:29
 msgid "Background"
@@ -69,25 +72,26 @@ msgid ""
 "An *interpreter* is the context in which Python code runs. It contains "
 "configuration (e.g. the import path) and runtime state (e.g. the set of "
 "imported modules)."
-msgstr ""
+msgstr "*解释器* 是 Python 代码运行所在的上下文。 它包含配置（例如导入路径）和运行时状态（例如已导入模块的集合）。"
 
 #: ../../howto/isolating-extensions.rst:35
 msgid ""
 "Python supports running multiple interpreters in one process. There are two "
 "cases to think about—users may run interpreters:"
-msgstr ""
+msgstr "Python 支持在一个进程中运行多个解释器。 这里有两种情况需要考虑 — 用户可能会以下列方式运行解释器:"
 
 #: ../../howto/isolating-extensions.rst:38
 msgid ""
 "in sequence, with several :c:func:`Py_InitializeEx`/:c:func:`Py_FinalizeEx` "
 "cycles, and"
-msgstr ""
+msgstr "串行，使用多个 :c:func:`Py_InitializeEx`/:c:func:`Py_FinalizeEx` 循环，以及"
 
 #: ../../howto/isolating-extensions.rst:40
 msgid ""
 "in parallel, managing \"sub-interpreters\" using "
 ":c:func:`Py_NewInterpreter`/:c:func:`Py_EndInterpreter`."
 msgstr ""
+"并行，使用 :c:func:`Py_NewInterpreter`/:c:func:`Py_EndInterpreter` 管理多个“子解释器”。"
 
 #: ../../howto/isolating-extensions.rst:43
 msgid ""

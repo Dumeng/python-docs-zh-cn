@@ -113,17 +113,20 @@ msgid ""
 "introduce edge cases that lead to crashes when a module is loaded in more "
 "than one interpreter in the same process."
 msgstr ""
+"在历史上，Python 扩展模块对这种应用场景处理不佳。 许多扩展模块（甚至是某些标准库模块）都是使用 *进程内共享* 的全局状态，因为 C "
+"``static`` 变量十分易用。 结果，本应专属于某个解释器的数据最终却被多个解释器所共享。 "
+"除非扩展的开发者小心谨慎，否则当一个模块被相同进程内的多个解释器导入时很容易引入会导致崩溃的边界情况。"
 
 #: ../../howto/isolating-extensions.rst:56
 msgid ""
 "Unfortunately, *per-interpreter* state is not easy to achieve. Extension "
 "authors tend to not keep multiple interpreters in mind when developing, and "
 "it is currently cumbersome to test the behavior."
-msgstr ""
+msgstr "不幸的是，*解释器级* 状态很不容易做到。 扩展的作者在开发中总是倾向于不考虑多解释器的情况，并且目前要测试此类行为也是很困难的。"
 
 #: ../../howto/isolating-extensions.rst:61
 msgid "Enter Per-Module State"
-msgstr ""
+msgstr "进入模块级状态"
 
 #: ../../howto/isolating-extensions.rst:63
 msgid ""
@@ -134,6 +137,8 @@ msgid ""
 "multiple module objects corresponding to a single extension can even be "
 "loaded in a single interpreter."
 msgstr ""
+"Python 的 C API 没有关注于解释器级状态，而是演化为更好地支持更细粒度的 *模块级* 状态。 这意味着 C 层级数据被关联到了 "
+"*模块对象*。 每个解释器会创建它自己的模块级对象，保持数据的相互分隔。 要测试这种分隔，甚至可以将对应于单个扩展的多个模块对象加载到同一个解释器中。"
 
 #: ../../howto/isolating-extensions.rst:70
 msgid ""
@@ -143,6 +148,8 @@ msgid ""
 " any other :c:expr:`PyObject *`; there are no \"on interpreter shutdown\" "
 "hooks to think—or forget—about."
 msgstr ""
+"模块级状态提供了一种处理生命周期和资源归属的简单方式：扩展模块将在模块对象被创建时初始化，并在其释放时被清理。 在这一点上，模块就像是任何其他的 "
+":c:expr:`PyObject *`；没有必要添加 — 或者去除 — 处理“解释器关闭”的钩子。"
 
 #: ../../howto/isolating-extensions.rst:76
 msgid ""
@@ -152,10 +159,12 @@ msgid ""
 " exceptional cases: if you need them, you should give them additional care "
 "and testing. (Note that this guide does not cover them.)"
 msgstr ""
+"请注意各种不同“全局”状态：进程级、解释器级、线程级状态的应用场景。 "
+"默认为模块级状态，其他状态也是可选择的，但你应当将它们视为特殊情况：如果你需要它们，你应当给予它们额外的关注和测试。 （请注意本指南并没有涉及它们。）"
 
 #: ../../howto/isolating-extensions.rst:85
 msgid "Isolated Module Objects"
-msgstr ""
+msgstr "隔离的模块对象"
 
 #: ../../howto/isolating-extensions.rst:87
 msgid ""
@@ -555,11 +564,11 @@ msgstr "例如："
 
 #: ../../howto/isolating-extensions.rst:456
 msgid "Module State Access from Slot Methods, Getters and Setters"
-msgstr ""
+msgstr "槽位方法、读取方法和设置方法对模块状态的访问"
 
 #: ../../howto/isolating-extensions.rst:460
 msgid "This is new in Python 3.11."
-msgstr ""
+msgstr "这是 Python 3.11 的新增特性。"
 
 #: ../../howto/isolating-extensions.rst:468
 msgid ""
@@ -570,6 +579,10 @@ msgid ""
 ":c:type:`PyCMethod`. The same goes for getters and setters defined with "
 ":c:type:`PyGetSetDef`."
 msgstr ""
+"槽位方法 — 即特殊方法的对应的 C 快速版本，如 :c:member:`~PyNumberMethods.nb_add` 对应 "
+":py:attr:`~object.__add__` 而 :c:member:`~PyType.tp_new` 对应初始化方法 — "
+"它具有不允许传入定义类的非常简单的 API，这不同于 :c:type:`PyCMethod`。 同样的机制也适用于通过 "
+":c:type:`PyGetSetDef` 定义的读取方法和设置方法。"
 
 #: ../../howto/isolating-extensions.rst:475
 msgid ""

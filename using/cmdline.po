@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,16 +8,16 @@
 # cdarlint <cdarling@126.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2020
 # jaystone776 <1732865113@qq.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:41+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -649,6 +649,8 @@ msgid ""
 "length limitation <int_max_str_digits>`.  See also "
 ":envvar:`PYTHONINTMAXSTRDIGITS`."
 msgstr ""
+"``-X int_max_str_digits`` 将配置 :ref:`整数字符串转换长度限制 <int_max_str_digits>`。 另请参阅 "
+":envvar:`PYTHONINTMAXSTRDIGITS`。"
 
 #: ../../using/cmdline.rst:442
 msgid ""
@@ -733,7 +735,7 @@ msgstr "The ``-X showalloccount`` 选项已被移除。"
 
 #: ../../using/cmdline.rst:486
 msgid "The ``-X int_max_str_digits`` option."
-msgstr ""
+msgstr "``-X int_max_str_digits`` 选项。"
 
 #: ../../using/cmdline.rst:490
 msgid "The ``-X oldparser`` option."
@@ -977,7 +979,7 @@ msgid ""
 "If this variable is set to an integer, it is used to configure the "
 "interpreter's global :ref:`integer string conversion length limitation "
 "<int_max_str_digits>`."
-msgstr ""
+msgstr "如果将此变量设为一个整数，它会被用来配置解释器的全局 :ref:`整数字符串转换长度限制 <int_max_str_digits>`。"
 
 #: ../../using/cmdline.rst:678
 msgid ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -9,16 +9,16 @@
 # sgqy <sgqyzh@gmail.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2020
 # Dai Xu <daixu61@hotmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:44+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1361,7 +1361,7 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:999
 msgid "(:issue:`12016`)"
-msgstr ""
+msgstr "(:issue:`12016`)"
 
 #: ../../whatsnew/3.3.rst:1001
 msgid ""
@@ -1377,11 +1377,11 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:1012
 msgid "(:issue:`12100`)"
-msgstr ""
+msgstr "(:issue:`12100`)"
 
 #: ../../whatsnew/3.3.rst:1014
 msgid "The ``unicode_internal`` codec has been deprecated."
-msgstr ""
+msgstr "``unicode_internal`` 编解码器已被弃用。"
 
 #: ../../whatsnew/3.3.rst:1018
 msgid "collections"
@@ -1427,7 +1427,7 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:1048
 msgid "(:issue:`13585`)"
-msgstr ""
+msgstr "(:issue:`13585`)"
 
 #: ../../whatsnew/3.3.rst:1052
 msgid "crypt"
@@ -2650,21 +2650,23 @@ msgstr "signal"
 
 #: ../../whatsnew/3.3.rst:1824
 msgid "The :mod:`signal` module has new functions:"
-msgstr ""
+msgstr ":mod:`signal` 模块新增的函数:"
 
 #: ../../whatsnew/3.3.rst:1826
 msgid ""
 ":func:`~signal.pthread_sigmask`: fetch and/or change the signal mask of the "
 "calling thread (Contributed by Jean-Paul Calderone in :issue:`8407`);"
 msgstr ""
+":func:`~signal.pthread_sigmask`: 获取和/或改变调用方线程的信号掩码（由 Jean-Paul Calderone 在 "
+":issue:`8407` 中贡献）；"
 
 #: ../../whatsnew/3.3.rst:1828
 msgid ":func:`~signal.pthread_kill`: send a signal to a thread;"
-msgstr ""
+msgstr ":func:`~signal.pthread_kill`: 向指定线程发送信号；"
 
 #: ../../whatsnew/3.3.rst:1829
 msgid ":func:`~signal.sigpending`: examine pending functions;"
-msgstr ""
+msgstr ":func:`~signal.sigpending`: 检查挂起的函数；"
 
 #: ../../whatsnew/3.3.rst:1830
 msgid ":func:`~signal.sigwait`: wait a signal;"
@@ -2674,7 +2676,7 @@ msgstr ":func:`~signal.sigwait`: 等待一个信号;"
 msgid ""
 ":func:`~signal.sigwaitinfo`: wait for a signal, returning detailed "
 "information about it;"
-msgstr ""
+msgstr ":func:`~signal.sigwaitinfo`: 等待信号，返回相关的详细信息；"
 
 #: ../../whatsnew/3.3.rst:1833
 msgid ""
@@ -3180,7 +3182,7 @@ msgstr "性能优化"
 
 #: ../../whatsnew/3.3.rst:2151
 msgid "Major performance enhancements have been added:"
-msgstr ""
+msgstr "已增加的主要性能改善:"
 
 #: ../../whatsnew/3.3.rst:2153
 msgid ""

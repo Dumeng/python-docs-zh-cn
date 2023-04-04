@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -7,16 +7,16 @@
 # Fei Yin <icebirds@163.com>, 2018
 # 叶浚安 <ye.pandaaaa906@gmail.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:42+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -378,7 +378,7 @@ msgstr ""
 msgid ""
 "For example, in Python 2.1 the :mod:`regex` module is deprecated, so "
 "importing it causes a warning to be printed::"
-msgstr ""
+msgstr "例如，在 Python 2.1 中 :mod:`regex` 模块已被弃用，因此导入它时会打印一条警告信息::"
 
 #: ../../whatsnew/2.1.rst:256
 msgid "Warnings can be issued by calling the :func:`warnings.warn` function::"
@@ -388,7 +388,7 @@ msgstr "警告可以通过调用 :func:`warnings.warn` 函数来发出::"
 msgid ""
 "The first parameter is the warning message; an additional optional "
 "parameters can be used to specify a particular warning category."
-msgstr ""
+msgstr "第一个形参是警告消息；额外的可选形参可被用来指明特定的警告类别。"
 
 #: ../../whatsnew/2.1.rst:263
 msgid ""
@@ -630,7 +630,7 @@ msgstr ""
 
 #: ../../whatsnew/2.1.rst:479
 msgid "PEP 217: Interactive Display Hook"
-msgstr ""
+msgstr "PEP 217: 交互式显示钩子"
 
 #: ../../whatsnew/2.1.rst:481
 msgid ""
@@ -643,7 +643,7 @@ msgstr ""
 
 #: ../../whatsnew/2.1.rst:502
 msgid ":pep:`217` - Display Hook for Interactive Use"
-msgstr ""
+msgstr ":pep:`217` - 用于交互模式的显示钩子"
 
 #: ../../whatsnew/2.1.rst:503
 msgid "Written and implemented by Moshe Zadka."
@@ -651,7 +651,7 @@ msgstr "由 Moshe Zadka 撰写并实现"
 
 #: ../../whatsnew/2.1.rst:509
 msgid "PEP 208: New Coercion Model"
-msgstr ""
+msgstr "PEP 208: 新的强制转换模型"
 
 #: ../../whatsnew/2.1.rst:511
 msgid ""
@@ -680,7 +680,7 @@ msgstr ""
 
 #: ../../whatsnew/2.1.rst:534
 msgid ":pep:`208` - Reworking the Coercion Model"
-msgstr ""
+msgstr ":pep:`208` - 改写强制转换模型"
 
 #: ../../whatsnew/2.1.rst:533
 msgid ""
@@ -691,7 +691,7 @@ msgstr ""
 
 #: ../../whatsnew/2.1.rst:541
 msgid "PEP 241: Metadata in Python Packages"
-msgstr ""
+msgstr "PEP 241: Python 包中的元数据"
 
 #: ../../whatsnew/2.1.rst:543
 msgid ""
@@ -730,17 +730,17 @@ msgstr ""
 
 #: ../../whatsnew/2.1.rst:571
 msgid ":pep:`241` - Metadata for Python Software Packages"
-msgstr ""
+msgstr ":pep:`241` - 针对 Python 软件包的元数据"
 
 #: ../../whatsnew/2.1.rst:574
 msgid ":pep:`243` - Module Repository Upload Mechanism"
-msgstr ""
+msgstr ":pep:`243` - 模块仓库上传机制"
 
 #: ../../whatsnew/2.1.rst:574
 msgid ""
 "Written by Sean Reifschneider, this draft PEP describes a proposed mechanism"
 " for uploading  Python packages to a central server."
-msgstr ""
+msgstr "由 Sean Reifschneider 撰写，这个 PEP 草案描述了用于将 Python 软件包上传到一个中心服务器的建议机制。"
 
 #: ../../whatsnew/2.1.rst:581
 msgid "New and Improved Modules"

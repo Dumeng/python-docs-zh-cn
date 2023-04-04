@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,16 +10,16 @@
 # ww song <sww4718168@gmail.com>, 2018
 # Alpha Du <alphanow@gmail.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:44+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -344,7 +344,7 @@ msgstr "PEP 由 Barry Warsaw 撰写"
 
 #: ../../whatsnew/3.2.rst:357
 msgid "PEP 3149: ABI Version Tagged .so Files"
-msgstr ""
+msgstr "PEP 3149: 带有 ABI 版本标签的 .so 文件"
 
 #: ../../whatsnew/3.2.rst:359
 msgid ""
@@ -816,18 +816,18 @@ msgstr ""
 msgid ""
 ":meth:`xml.etree.ElementTree.Element.itertext` creates a text iterator over "
 "an element and its subelements"
-msgstr ""
+msgstr ":meth:`xml.etree.ElementTree.Element.itertext` 创建一个包含指定元素及其子元素的文本迭代器。"
 
 #: ../../whatsnew/3.2.rst:737
 msgid ""
 ":meth:`xml.etree.ElementTree.TreeBuilder.end` closes the current element"
-msgstr ""
+msgstr ":meth:`xml.etree.ElementTree.TreeBuilder.end` 关闭当前元素"
 
 #: ../../whatsnew/3.2.rst:738
 msgid ""
 ":meth:`xml.etree.ElementTree.TreeBuilder.doctype` handles a doctype "
 "declaration"
-msgstr ""
+msgstr ":meth:`xml.etree.ElementTree.TreeBuilder.doctype` 处理 doctype 声明"
 
 #: ../../whatsnew/3.2.rst:741
 msgid "Two methods have been deprecated:"
@@ -1536,7 +1536,7 @@ msgstr ""
 
 #: ../../whatsnew/3.2.rst:1396
 msgid "(Available on Unix systems. Patch by Sébastien Sablé in :issue:`9862`)"
-msgstr ""
+msgstr "（在 Unix 系统上可用。 由 Sébastien Sablé 在 :issue:`9862` 中提供补丁）"
 
 #: ../../whatsnew/3.2.rst:1399
 msgid "gzip and zipfile"
@@ -1605,7 +1605,7 @@ msgstr ""
 #: ../../whatsnew/3.2.rst:1467
 msgid ""
 "(Proposed by Tarek Ziadé and implemented by Lars Gustäbel in :issue:`6856`.)"
-msgstr ""
+msgstr "（由 Tarek Ziadé 提议并由 Lars Gustäbel 在 :issue:`6856` 中实现。）"
 
 #: ../../whatsnew/3.2.rst:1470
 msgid "hashlib"
@@ -1676,7 +1676,7 @@ msgstr "shutil"
 
 #: ../../whatsnew/3.2.rst:1541
 msgid "The :func:`shutil.copytree` function has two new options:"
-msgstr ""
+msgstr ":func:`shutil.copytree` 函数增加了两个新选项:"
 
 #: ../../whatsnew/3.2.rst:1543
 msgid ""
@@ -2293,13 +2293,13 @@ msgstr ""
 #: ../../whatsnew/3.2.rst:2011
 msgid ""
 ":func:`~site.getsitepackages` lists all global site-packages directories."
-msgstr ""
+msgstr ":func:`~site.getsitepackages` 列出所有全局 site-packages 目录。"
 
 #: ../../whatsnew/3.2.rst:2013
 msgid ""
 ":func:`~site.getuserbase` reports on the user's base directory where data "
 "can be stored."
-msgstr ""
+msgstr ":func:`~site.getuserbase` 报告可用来存储数据的用户基准目录。"
 
 #: ../../whatsnew/3.2.rst:2016
 msgid ""
@@ -2667,7 +2667,7 @@ msgstr ""
 #: ../../whatsnew/3.2.rst:2362
 msgid ""
 "(Patch and additional tests contributed by Dave Malcolm; :issue:`6690`)."
-msgstr ""
+msgstr "（补丁和附加测试由 Dave Malcolm 在 :issue:`6690` 中贡献）。"
 
 #: ../../whatsnew/3.2.rst:2364
 msgid ""
@@ -3087,7 +3087,7 @@ msgstr "移植到 Python 3.2"
 msgid ""
 "This section lists previously described changes and other bugfixes that may "
 "require changes to your code:"
-msgstr ""
+msgstr "本节列出了先前描述的改变以及可能需要修改你的代码的其他问题修正:"
 
 #: ../../whatsnew/3.2.rst:2610
 msgid ""

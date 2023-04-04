@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -11,16 +11,16 @@
 # Kade For, 2019
 # chen_chao <wenbushi@gmail.com>, 2019
 # ppcfish <ppcfish@gmail.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:43+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1184,7 +1184,7 @@ msgstr "几个例子："
 #: ../../whatsnew/2.5.rst:1018
 msgid ""
 "(Implemented by Fredrik Lundh following a suggestion by Raymond Hettinger.)"
-msgstr ""
+msgstr "（由 Fredrik Lundh 在 Raymond Hettinger 的建议下实现。）"
 
 #: ../../whatsnew/2.5.rst:1020
 msgid ""
@@ -2102,6 +2102,9 @@ msgid ""
 "https://web.archive.org/web/20201124024954/http://effbot.org/zone/element-"
 "index.htm."
 msgstr ""
+"本节的剩余部分将提供使用 ElementTree 的简要说明。 要获取 ElementTree 的完整文档可访问 "
+"https://web.archive.org/web/20201124024954/http://effbot.org/zone/element-"
+"index.htm。"
 
 #: ../../whatsnew/2.5.rst:1772
 msgid ""
@@ -2645,13 +2648,14 @@ msgstr ""
 
 #: ../../whatsnew/2.5.rst:2208
 msgid "Port-Specific Changes"
-msgstr ""
+msgstr "移植专属的改变"
 
 #: ../../whatsnew/2.5.rst:2210
 msgid ""
 "MacOS X (10.3 and higher): dynamic loading of modules now uses the "
 ":c:func:`dlopen` function instead of MacOS-specific functions."
 msgstr ""
+"MacOS X (10.3 及更高版本): 模块的动态加载现在会使用 :c:func:`dlopen` 函数而不是 MacOS 专属的函数。"
 
 #: ../../whatsnew/2.5.rst:2213
 msgid ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -13,17 +13,18 @@
 # Arisaka97 <solitaire2312@gmail.com>, 2020
 # WH-2099 <wh2099@outlook.com>, 2020
 # ww song <sww4718168@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2022
+# Bryan不可思议, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-24 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:11+0000\n"
-"Last-Translator: Alpha Du <alphanow@gmail.com>, 2022\n"
+"Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1424,6 +1425,9 @@ msgid ""
 ":ref:`integer string conversion length limitation <int_max_str_digits>` "
 "documentation."
 msgstr ""
+":class:`int` 字符串输入和字符串表示形式可受到限制以帮助避免拒绝服务攻击。 当将一个字符串 *x* 转换为 :class:`int` "
+"或者当将一个 :class:`int` 转换为字符串的操作超出限制则会引发 :exc:`ValueError`。 请参阅 "
+":ref:`整数字符串转换长度限制 <int_max_str_digits>` 文档。"
 
 #: ../../library/functions.rst:858
 msgid ""

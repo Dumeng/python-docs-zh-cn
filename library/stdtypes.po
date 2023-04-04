@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -21,17 +21,17 @@
 # Sean Chao <seanchao0804@gmail.com>, 2020
 # Jiuh-star <jiuh.star@gmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2022
-# WH-2099 <wh2099@outlook.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:27+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6447,7 +6447,7 @@ msgstr "每个类都存有对直接子类的弱引用列表。本方法返回所
 
 #: ../../library/stdtypes.rst:5250
 msgid "Integer string conversion length limitation"
-msgstr ""
+msgstr "整数字符串转换长度限制"
 
 #: ../../library/stdtypes.rst:5252
 msgid ""
@@ -6456,34 +6456,41 @@ msgid ""
 "applies to decimal or other non-power-of-two number bases. Hexadecimal, "
 "octal, and binary conversions are unlimited. The limit can be configured."
 msgstr ""
+"CPython 对于 :class:`int` 和 :class:`str` 之间的转换有一个全局限制以缓解拒绝服务攻击。 此限制 *仅会* "
+"作用于十进制或其他以非二的乘方为基数的数字。 十六进制、八进制和二进制转换不受限制。 该限制可以被配置。"
 
 #: ../../library/stdtypes.rst:5257
 msgid ""
-"The :class:`int` type in CPython is an abitrary length number stored in "
+"The :class:`int` type in CPython is an arbitrary length number stored in "
 "binary form (commonly known as a \"bignum\"). There exists no algorithm that"
 " can convert a string to a binary integer or a binary integer to a string in"
 " linear time, *unless* the base is a power of 2. Even the best known "
 "algorithms for base 10 have sub-quadratic complexity. Converting a large "
 "value such as ``int('1' * 500_000)`` can take over a second on a fast CPU."
 msgstr ""
+":class:`int` 类型在 CPython 中是存储为二进制形式的任意长度的数字（通常称为“大数字”）。 "
+"不存在可在线性时间内将一个字符串转换为二进制整数或将一个二进制整数转换为字符串的算法，*除非* 基数为 2 的乘方。 对于基数为 10 "
+"来说已知最好的算法也有亚二次方复杂度。 转换一个大数值如 ``int('1' * 500_000)`` 在快速的 CPU 上也会花费一秒以上的时间。"
 
 #: ../../library/stdtypes.rst:5264
 msgid ""
 "Limiting conversion size offers a practical way to avoid `CVE-2020-10735 "
 "<https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-10735>`_."
 msgstr ""
+"限制转换大小提供了一个避免 `CVE-2020-10735 <https://cve.mitre.org/cgi-"
+"bin/cvename.cgi?name=CVE-2020-10735>`_ 的可行方法。"
 
 #: ../../library/stdtypes.rst:5267
 msgid ""
 "The limit is applied to the number of digit characters in the input or "
 "output string when a non-linear conversion algorithm would be involved.  "
 "Underscores and the sign are not counted towards the limit."
-msgstr ""
+msgstr "此限制会在可能涉及非线性转换算法时作用于输入或输出字符串中的数字型字符数量。 下划线和正负号不计入限制数量。"
 
 #: ../../library/stdtypes.rst:5271
 msgid ""
 "When an operation would exceed the limit, a :exc:`ValueError` is raised:"
-msgstr ""
+msgstr "当一个操作会超出限制时，将引发 :exc:`ValueError`:"
 
 #: ../../library/stdtypes.rst:5293
 msgid ""
@@ -6492,80 +6499,85 @@ msgid ""
 " that can be configured is 640 digits as provided in "
 ":data:`sys.int_info.str_digits_check_threshold <sys.int_info>`."
 msgstr ""
+"默认限制为 4300 位即 :data:`sys.int_info.default_max_str_digits <sys.int_info>` 的值。"
+" 最低限制可被配置为 640 位即 :data:`sys.int_info.str_digits_check_threshold "
+"<sys.int_info>`。"
 
 #: ../../library/stdtypes.rst:5298
 msgid "Verification:"
-msgstr ""
+msgstr "验证:"
 
 #: ../../library/stdtypes.rst:5313
 msgid "Affected APIs"
-msgstr ""
+msgstr "受影响的 API"
 
 #: ../../library/stdtypes.rst:5315
 msgid ""
 "The limitation only applies to potentially slow conversions between "
 ":class:`int` and :class:`str` or :class:`bytes`:"
-msgstr ""
+msgstr "此限制仅会作用于 :class:`int` 和 :class:`str` 和 :class:`bytes` 之间存在速度变慢可能的转换:"
 
 #: ../../library/stdtypes.rst:5318
 msgid "``int(string)`` with default base 10."
-msgstr ""
+msgstr "``int(string)`` 默认以 10 为基数。"
 
 #: ../../library/stdtypes.rst:5319
 msgid "``int(string, base)`` for all bases that are not a power of 2."
-msgstr ""
+msgstr "``int(string, base)`` 用于所有不为 2 的乘方的基数。"
 
 #: ../../library/stdtypes.rst:5320
 msgid "``str(integer)``."
-msgstr ""
+msgstr "``str(integer)``。"
 
 #: ../../library/stdtypes.rst:5321
-msgid "``repr(integer)``"
-msgstr ""
+msgid "``repr(integer)``."
+msgstr "``repr(integer)``。"
 
 #: ../../library/stdtypes.rst:5322
 msgid ""
 "any other string conversion to base 10, for example ``f\"{integer}\"``, "
 "``\"{}\".format(integer)``, or ``b\"%d\" % integer``."
 msgstr ""
+"任何其他目标是以 10 为基数的字符串转换，例如 ``f\"{integer}\"``, ``\"{}\".format(integer)`` 或 "
+"``b\"%d\" % integer``。"
 
 #: ../../library/stdtypes.rst:5325
 msgid "The limitations do not apply to functions with a linear algorithm:"
-msgstr ""
+msgstr "此限制不会作用于使用线性算法的函数:"
 
 #: ../../library/stdtypes.rst:5327
 msgid "``int(string, base)`` with base 2, 4, 8, 16, or 32."
-msgstr ""
+msgstr "``int(string, base)`` 中 base 可以为 2, 4, 8, 16 或 32。"
 
 #: ../../library/stdtypes.rst:5328
 msgid ":func:`int.from_bytes` and :func:`int.to_bytes`."
-msgstr ""
+msgstr ":func:`int.from_bytes` 和 :func:`int.to_bytes`。"
 
 #: ../../library/stdtypes.rst:5329
 msgid ":func:`hex`, :func:`oct`, :func:`bin`."
-msgstr ""
+msgstr ":func:`hex`, :func:`oct`, :func:`bin`。"
 
 #: ../../library/stdtypes.rst:5330
 msgid ":ref:`formatspec` for hex, octal, and binary numbers."
-msgstr ""
+msgstr ":ref:`formatspec` 用于十六进制、八进制和二进制数。"
 
 #: ../../library/stdtypes.rst:5331
 msgid ":class:`str` to :class:`float`."
-msgstr ""
+msgstr ":class:`str` 至 :class:`float`。"
 
 #: ../../library/stdtypes.rst:5332
 msgid ":class:`str` to :class:`decimal.Decimal`."
-msgstr ""
+msgstr ":class:`str` 至 :class:`decimal.Decimal`。"
 
 #: ../../library/stdtypes.rst:5335
 msgid "Configuring the limit"
-msgstr ""
+msgstr "配置限制值"
 
 #: ../../library/stdtypes.rst:5337
 msgid ""
 "Before Python starts up you can use an environment variable or an "
 "interpreter command line flag to configure the limit:"
-msgstr ""
+msgstr "在 Python 启动之前你可以使用环境变量或解释器命令行旗标来配置限制值:"
 
 #: ../../library/stdtypes.rst:5340
 msgid ""
@@ -6573,12 +6585,16 @@ msgid ""
 "to set the limit to 640 or ``PYTHONINTMAXSTRDIGITS=0 python3`` to disable "
 "the limitation."
 msgstr ""
+":envvar:`PYTHONINTMAXSTRDIGITS`，例如 ``PYTHONINTMAXSTRDIGITS=640 python3`` "
+"是将限制设为 640 而 ``PYTHONINTMAXSTRDIGITS=0 python3`` 是禁用此限制。"
 
 #: ../../library/stdtypes.rst:5343
 msgid ""
 ":option:`-X int_max_str_digits <-X>`, e.g. ``python3 -X "
 "int_max_str_digits=640``"
 msgstr ""
+":option:`-X int_max_str_digits <-X>`，例如 ``python3 -X "
+"int_max_str_digits=640``"
 
 #: ../../library/stdtypes.rst:5345
 msgid ""
@@ -6586,14 +6602,18 @@ msgid ""
 ":envvar:`PYTHONINTMAXSTRDIGITS` or :option:`-X int_max_str_digits <-X>`. If "
 "both the env var and the ``-X`` option are set, the ``-X`` option takes "
 "precedence. A value of *-1* indicates that both were unset, thus a value of "
-":data:`sys.int_info.default_max_str_digits` was used during initilization."
+":data:`sys.int_info.default_max_str_digits` was used during initialization."
 msgstr ""
+":data:`sys.flags.int_max_str_digits` 包含 :envvar:`PYTHONINTMAXSTRDIGITS` 或 "
+":option:`-X int_max_str_digits <-X>` 的值。 如果环境变量和 ``-X`` 选项均有设置，则 ``-X`` "
+"选项优先。 值为 *-1* 表示两者均未设置，因此会在初始化时使用 "
+":data:`sys.int_info.default_max_str_digits` 的值。"
 
 #: ../../library/stdtypes.rst:5351
 msgid ""
 "From code, you can inspect the current limit and set a new one using these "
 ":mod:`sys` APIs:"
-msgstr ""
+msgstr "从代码中，你可以检查当前的限制并使用这些 :mod:`sys` API 来设置新值:"
 
 #: ../../library/stdtypes.rst:5354
 msgid ""
@@ -6601,24 +6621,28 @@ msgid ""
 "are a getter and setter for the interpreter-wide limit. Subinterpreters have"
 " their own limit."
 msgstr ""
+":func:`sys.get_int_max_str_digits` 和 :func:`sys.set_int_max_str_digits` "
+"是解释器级限制的读取器和设置器。 子解释器具有它们自己的限制。"
 
 #: ../../library/stdtypes.rst:5358
 msgid ""
 "Information about the default and minimum can be found in "
 ":attr:`sys.int_info`:"
-msgstr ""
+msgstr "有关默认值和最小值的信息可以在 :attr:`sys.int_info` 中找到:"
 
 #: ../../library/stdtypes.rst:5360
 msgid ""
 ":data:`sys.int_info.default_max_str_digits <sys.int_info>` is the compiled-"
 "in default limit."
-msgstr ""
+msgstr ":data:`sys.int_info.default_max_str_digits <sys.int_info>` 是已编译的默认限制。"
 
 #: ../../library/stdtypes.rst:5362
 msgid ""
 ":data:`sys.int_info.str_digits_check_threshold <sys.int_info>` is the lowest"
 " accepted value for the limit (other than 0 which disables it)."
 msgstr ""
+":data:`sys.int_info.str_digits_check_threshold <sys.int_info>` "
+"是该限制可接受的最低值（禁用该限制的 0 除外）。"
 
 #: ../../library/stdtypes.rst:5369
 msgid ""
@@ -6631,6 +6655,10 @@ msgid ""
 " exist for the code. A workaround for source that contains such large "
 "constants is to convert them to ``0x`` hexadecimal form as it has no limit."
 msgstr ""
+"设置较低的限制值 *可能* 导致问题。 虽然不常见，但还是会有在其源代码中包含超出最小阈值的十进制整数常量的代码存在。 "
+"设置此限制的一个后果将是包含比此限制长的十进制整数字面值的 Python 源代码将在解析期间遇到错误，通常是在启动时或导入时甚至是在安装时 —— "
+"只要对于某个代码还不存在已更新的 ``.pyc`` 就会发生。 一种在包含此类大数值常量的源代码中绕过该问题的办法是将它们转换为不受限制的 ``0x``"
+" 十六进制形式。"
 
 #: ../../library/stdtypes.rst:5378
 msgid ""
@@ -6639,10 +6667,12 @@ msgid ""
 "during startup and even during any installation step that may invoke Python "
 "to precompile ``.py`` sources to ``.pyc`` files."
 msgstr ""
+"如果你使用了较低的限制则请要彻底地测试你的应用程序。 确保你的测试通过环境变量或旗标尽早设置该限制来运行以便在启动期间甚至是在可能发起调用 Python"
+" 来将 ``.py`` 源文件预编译为 ``.pyc`` 文件的任何安装步骤其间应用该限制。"
 
 #: ../../library/stdtypes.rst:5384
 msgid "Recommended configuration"
-msgstr ""
+msgstr "推荐配置"
 
 #: ../../library/stdtypes.rst:5386
 msgid ""
@@ -6651,6 +6681,9 @@ msgid ""
 "limit, set it from your main entry point using Python version agnostic code "
 "as these APIs were added in security patch releases in versions before 3.11."
 msgstr ""
+"默认的 :data:`sys.int_info.default_max_str_digits` "
+"被认为对于大多数应用程序来说都是合理的。如果你的应用程序需要不同的限制值，请使用不预设 Python 版本的代码从你的主入口点进行设置，因为这些 API"
+" 是在 3.11 之前的版本所发布的安全补丁中添加的。"
 
 #: ../../library/stdtypes.rst:5391
 msgid "Example::"
@@ -6658,7 +6691,7 @@ msgstr "示例："
 
 #: ../../library/stdtypes.rst:5403
 msgid "If you need to disable it entirely, set it to ``0``."
-msgstr ""
+msgstr "如果你需要完全禁用它，请将其设为 ``0``。"
 
 #: ../../library/stdtypes.rst:5407
 msgid "Footnotes"

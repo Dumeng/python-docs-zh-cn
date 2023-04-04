@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -13,17 +13,17 @@
 # 1lin24 <1lin24@sina.com>, 2020
 # Sean Chao <seanchao0804@gmail.com>, 2020
 # Arisaka97 <solitaire2312@gmail.com>, 2020
-# Freesand Leo <yuqinju@163.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:29+0000\n"
-"Last-Translator: Alpha Du <alphanow@gmail.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -776,13 +776,15 @@ msgstr ":option:`-X utf8 <-X>`"
 
 #: ../../library/sys.rst:464
 msgid ":const:`int_max_str_digits`"
-msgstr ""
+msgstr ":const:`int_max_str_digits`"
 
 #: ../../library/sys.rst:464
 msgid ""
 ":option:`-X int_max_str_digits <-X>` (:ref:`integer string conversion length"
 " limitation <int_max_str_digits>`)"
 msgstr ""
+":option:`-X int_max_str_digits <-X>` (:ref:`integer string conversion length"
+" limitation <int_max_str_digits>`)"
 
 #: ../../library/sys.rst:467
 msgid "Added ``quiet`` attribute for the new :option:`-q` flag."
@@ -811,7 +813,7 @@ msgstr ""
 
 #: ../../library/sys.rst:484
 msgid "Added the ``int_max_str_digits`` attribute."
-msgstr ""
+msgstr "增加了 ``int_max_str_digits`` 属性。"
 
 #: ../../library/sys.rst:490
 msgid ""
@@ -1146,6 +1148,8 @@ msgid ""
 "Returns the current value for the :ref:`integer string conversion length "
 "limitation <int_max_str_digits>`. See also :func:`set_int_max_str_digits`."
 msgstr ""
+"返回 :ref:`整数字符串转换长度限制 <int_max_str_digits>` 的当前值。 另请参阅 "
+":func:`set_int_max_str_digits`。"
 
 #: ../../library/sys.rst:676
 msgid ""
@@ -1583,27 +1587,29 @@ msgstr "用于表示数字的C类型的字节大小"
 
 #: ../../library/sys.rst:957
 msgid ":const:`default_max_str_digits`"
-msgstr ""
+msgstr ":const:`default_max_str_digits`"
 
 #: ../../library/sys.rst:957
 msgid ""
 "default value for :func:`sys.get_int_max_str_digits` when it is not "
 "otherwise explicitly configured."
-msgstr ""
+msgstr ":func:`sys.get_int_max_str_digits` 在未被显式配置时将使用的默认值。"
 
 #: ../../library/sys.rst:961
 msgid ":const:`str_digits_check_threshold`"
-msgstr ""
+msgstr ":const:`str_digits_check_threshold`"
 
 #: ../../library/sys.rst:961
 msgid ""
 "minimum non-zero value for :func:`sys.set_int_max_str_digits`, "
 ":envvar:`PYTHONINTMAXSTRDIGITS`, or :option:`-X int_max_str_digits <-X>`."
 msgstr ""
+":func:`sys.set_int_max_str_digits`, :envvar:`PYTHONINTMAXSTRDIGITS` 或 "
+":option:`-X int_max_str_digits <-X>` 的最小非零值。"
 
 #: ../../library/sys.rst:969
 msgid "Added ``default_max_str_digits`` and ``str_digits_check_threshold``."
-msgstr ""
+msgstr "增加了 ``default_max_str_digits`` 和 ``str_digits_check_threshold``。"
 
 #: ../../library/sys.rst:975
 msgid ""
@@ -2034,6 +2040,8 @@ msgid ""
 "<int_max_str_digits>` used by this interpreter. See also "
 ":func:`get_int_max_str_digits`."
 msgstr ""
+"设置解释器所使用的 :ref:`整数字符串转换长度限制 <int_max_str_digits>`。 另请参阅 "
+":func:`get_int_max_str_digits`。"
 
 #: ../../library/sys.rst:1263
 msgid ""

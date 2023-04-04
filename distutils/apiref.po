@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -10,16 +10,16 @@
 # ppcfish <ppcfish@gmail.com>, 2019
 # skylight <abcdefskylight@gmail.com>, 2019
 # Kelly Hwong <dianhuangkan@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 17:40+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +33,7 @@ msgstr "API参考引用"
 
 #: ../../distutils/apiref.rst:11
 msgid "`New and changed setup.py arguments in setuptools`_"
-msgstr ""
+msgstr "`New and changed setup.py arguments in setuptools`_"
 
 #: ../../distutils/apiref.rst:10
 msgid ""
@@ -246,7 +246,7 @@ msgstr "包的类别列表"
 msgid ""
 "a list of strings; valid classifiers are listed on `PyPI "
 "<https://pypi.org/classifiers>`_."
-msgstr ""
+msgstr "一个字符串列表；可用的分类器已在 `PyPI <https://pypi.org/classifiers>`_ 上列出。"
 
 #: ../../distutils/apiref.rst:93
 msgid "*distclass*"
@@ -1220,23 +1220,23 @@ msgstr ""
 
 #: ../../distutils/apiref.rst:812
 msgid "macros defined with :option:`!-Dname[=value]`"
-msgstr ""
+msgstr "使用 :option:`!-Dname[=value]` 定义的宏"
 
 #: ../../distutils/apiref.rst:814
 msgid "macros undefined with :option:`!-Uname`"
-msgstr ""
+msgstr "使用 :option:`!-Uname` 取消定义的宏"
 
 #: ../../distutils/apiref.rst:816
 msgid "include search directories specified with :option:`!-Idir`"
-msgstr ""
+msgstr "包括使用 :option:`!-Idir` 指定的搜索目录"
 
 #: ../../distutils/apiref.rst:818
 msgid "libraries specified with :option:`!-llib`"
-msgstr ""
+msgstr "通过 :option:`!-llib` 指定的库"
 
 #: ../../distutils/apiref.rst:820
 msgid "library search directories specified with :option:`!-Ldir`"
-msgstr ""
+msgstr "通过 :option:`!-Ldir` 指定的库搜索目录"
 
 #: ../../distutils/apiref.rst:822
 msgid ""

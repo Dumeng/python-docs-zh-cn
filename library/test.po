@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-03-17 14:28+0000\n"
 "PO-Revision-Date: 2017-02-16 23:30+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1495,6 +1495,8 @@ msgid ""
 "to allow execution of test code that needs a different limit on the number "
 "of digits when converting between an integer and string."
 msgstr ""
+"此函数返回一个将在上下文生效期间改变全局 :func:`sys.set_int_max_str_digits` "
+"设置的上下文管理器以便允许执行当在整数和字符串之间进行转换时需要对位数有不同限制的测试代码。"
 
 #: ../../library/test.rst:1315
 msgid "The :mod:`test.support` module defines the following classes:"

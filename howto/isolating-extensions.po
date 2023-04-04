@@ -171,7 +171,7 @@ msgid ""
 "The key point to keep in mind when developing an extension module is that "
 "several module objects can be created from a single shared library. For "
 "example:"
-msgstr ""
+msgstr "在开发扩展模块时要记住的关键点是多个模块对象可以从单个共享库来创建。 例如:"
 
 #: ../../howto/isolating-extensions.rst:101
 msgid ""
@@ -182,13 +182,15 @@ msgid ""
 "exceptions are possible (see `Managing Global State`_), but they will need "
 "more thought and attention to edge cases."
 msgstr ""
+"作为经验法则，这两个模块应该是完全独立的。 模块专属的所有对象和状态应该被封装在模块对象内部，不与其他模块对象共享，并在模块对象被释放时进行清理。 "
+"由于这只是一个经验法则，例外情况也是可能的（参见 `Managing Global State`_)，但这将需要更多的考虑并注意边界情况。"
 
 #: ../../howto/isolating-extensions.rst:109
 msgid ""
 "While some modules could do with less stringent restrictions, isolated "
 "modules make it easier to set clear expectations and guidelines that work "
 "across a variety of use cases."
-msgstr ""
+msgstr "虽然有些模块不用太多的严格限制，但是隔离的模块使得更容易制定适合各种应用场景的明确期望和指南。"
 
 #: ../../howto/isolating-extensions.rst:115
 msgid "Surprising Edge Cases"

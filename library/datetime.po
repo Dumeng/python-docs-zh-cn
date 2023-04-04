@@ -1,38 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# emrich <emrich3@163.com>, 2021
-# Jack Wu <bitlabwzh@gmail.com>, 2021
-# eric R <trencyclopedia@gmail.com>, 2021
-# Fu Hanxi <hfudev@gmail.com>, 2021
-# walkinrain <walkinrain2008@outlook.com>, 2021
-# nick <2330458484@qq.com>, 2021
-# Zombie110year <zombie110year@gmail.com>, 2021
-# dannyvi <dannyvis@icloud.com>, 2021
-# Menghua Xiao <arieshout@gmail.com>, 2021
-# 叶浚安 <ye.pandaaaa906@gmail.com>, 2021
-# Trim21 <i@trim21.me>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# MuSheng Chen <sheng.2179@gmail.com>, 2021
-# jaystone776 <1732865113@qq.com>, 2021
-# 1lin24 <1lin24@sina.com>, 2021
-# dogn he <hedogn@163.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
-# ww song <sww4718168@gmail.com>, 2022
-# Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:28+0000\n"
-"PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"PO-Revision-Date: 2022-11-05 17:21+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -256,9 +237,9 @@ msgstr ""
 
 #: ../../library/datetime.rst:157
 msgid ""
-"Objects of these types are hashable, meaning that they can be used as "
-"dictionary keys."
-msgstr "这些类型的对象是可哈希的，这意味着它们可被作为字典的键。"
+"Objects of these types are :term:`hashable`, meaning that they can be used "
+"as dictionary keys."
+msgstr ""
 
 #: ../../library/datetime.rst:159
 msgid ""
@@ -1865,15 +1846,11 @@ msgstr ""
 msgid ""
 "Because naive ``datetime`` objects are treated by many ``datetime`` methods "
 "as local times, it is preferred to use aware datetimes to represent times in"
-" UTC; as a result, using ``utcfromtimetuple`` may give misleading results. "
-"If you have a naive ``datetime`` representing UTC, use "
+" UTC; as a result, using :meth:`datetime.utctimetuple` may give misleading "
+"results. If you have a naive ``datetime`` representing UTC, use "
 "``datetime.replace(tzinfo=timezone.utc)`` to make it aware, at which point "
 "you can use :meth:`.datetime.timetuple`."
 msgstr ""
-"由于简单型 ``datetime`` 对象会被许多 ``datetime`` 方法当作本地时间来处理，最好是使用感知型日期时间来表示 UTC "
-"时间；因此，使用 ``utcfromtimetuple`` 可能会给出误导性的结果。 如果你有一个表示 UTC 的简单型 "
-"``datetime``，请使用 ``datetime.replace(tzinfo=timezone.utc)`` 将其改为感知型，这样你才能使用 "
-":meth:`.datetime.timetuple`。"
 
 #: ../../library/datetime.rst:1352
 msgid ""
@@ -3555,11 +3532,9 @@ msgstr ""
 #: ../../library/datetime.rst:2572
 msgid ""
 "When used with the :meth:`strptime` method, the leading zero is optional for"
-"  formats ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, ``%S``, ``%J``, ``%U``, "
+"  formats ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, ``%S``, ``%j``, ``%U``, "
 "``%W``, and ``%V``. Format ``%y`` does require a leading zero."
 msgstr ""
-"当于 :meth:`strptime` 方法一起使用时，前导的零在格式 ``%d``, ``%m``, ``%H``, ``%I``, ``%M``, "
-"``%S``, ``%J``, ``%U``, ``%W`` 和 ``%V`` 中是可选的。 格式 ``%y`` 不要求有前导的零。"
 
 #: ../../library/datetime.rst:2577
 msgid "Footnotes"

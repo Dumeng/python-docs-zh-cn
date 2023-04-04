@@ -1,22 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Arisaka97 <solitaire2312@gmail.com>, 2021
-# nick <2330458484@qq.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2022
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:28+0000\n"
-"PO-Revision-Date: 2021-06-28 01:18+0000\n"
-"Last-Translator: Dai Xu <daixu61@hotmail.com>, 2021\n"
+"POT-Creation-Date: 2023-03-24 14:22+0000\n"
+"PO-Revision-Date: 2022-11-05 17:23+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -312,14 +309,12 @@ msgstr "若要替换已有打包文件中的释伴行，请用 :func:`create_arc
 #: ../../library/zipapp.rst:218
 msgid ""
 "To update the file in place, do the replacement in memory using a "
-":class:`BytesIO` object, and then overwrite the source afterwards.  Note "
-"that there is a risk when overwriting a file in place that an error will "
+":class:`~io.BytesIO` object, and then overwrite the source afterwards.  Note"
+" that there is a risk when overwriting a file in place that an error will "
 "result in the loss of the original file.  This code does not protect against"
 " such errors, but production code should do so.  Also, this method will only"
 " work if the archive fits in memory::"
 msgstr ""
-"若要原地更新打包文件，可用 :class:`BytesIO` "
-"对象在内存中进行替换，然后再覆盖源文件。注意，原地覆盖文件会有风险，出错时会丢失原文件。这里没有考虑出错情况，但生产代码则应进行处理。另外，这种方案仅当内存足以容纳打包文件时才有意义："
 
 #: ../../library/zipapp.rst:236
 msgid "Specifying the Interpreter"

@@ -194,7 +194,7 @@ msgstr "虽然有些模块不用太多的严格限制，但是隔离的模块使
 
 #: ../../howto/isolating-extensions.rst:115
 msgid "Surprising Edge Cases"
-msgstr ""
+msgstr "令人惊讶的边界情况"
 
 #: ../../howto/isolating-extensions.rst:117
 msgid ""

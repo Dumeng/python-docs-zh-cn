@@ -358,6 +358,7 @@ msgid ""
 "Functions get the module object as their first argument; for extracting the "
 "state, you can use ``PyModule_GetState``::"
 msgstr ""
+"从模块层级的函数访问状态是相当直观的。 函数通过它们的第一个参数获得模块对象；要提取状态，你可以使用 ``PyModule_GetState``::"
 
 #: ../../howto/isolating-extensions.rst:249
 msgid ""
@@ -365,10 +366,12 @@ msgid ""
 "there is no module state, i.e. ``PyModuleDef.m_size`` was zero. In your own "
 "module, you're in control of ``m_size``, so this is easy to prevent."
 msgstr ""
+"如果模块状态不存在则 ``PyModule_GetState`` 可能返回 ``NULL`` 而不设置异常，即 "
+"``PyModuleDef.m_size`` 为零。 在你自己的模块中，你可以任意控制 ``m_size``，因此这很容易避免。"
 
 #: ../../howto/isolating-extensions.rst:256
 msgid "Heap Types"
-msgstr ""
+msgstr "堆类型"
 
 #: ../../howto/isolating-extensions.rst:258
 msgid ""
@@ -376,6 +379,8 @@ msgid ""
 "PyTypeObject`` structures defined directly in code and initialized using "
 "``PyType_Ready()``."
 msgstr ""
+"在传统上，在 C 代码中定义的类型都是 *静态的*；也就是说，``static PyTypeObject`` 结构体在代码中直接定义并使用 "
+"``PyType_Ready()`` 来初始化。"
 
 #: ../../howto/isolating-extensions.rst:262
 msgid ""
@@ -384,6 +389,8 @@ msgid ""
 " limit the possible issues, static types are immutable at the Python level: "
 "for example, you can't set ``str.myattribute = 123``."
 msgstr ""
+"这样的类型必须在进程范围内共享。 在模块对象之间共享它们需要注意它们所拥有或访问的任何状态。 要限制可能出现的问题，静态类型在 Python "
+"层级上是不可变的：例如，你无法设置 ``str.myattribute = 123``。"
 
 #: ../../howto/isolating-extensions.rst:268
 msgid ""
@@ -394,6 +401,9 @@ msgid ""
 "Python objects across interpreters implicitly depends on CPython's current, "
 "process-wide GIL."
 msgstr ""
+"在解释器之间共享真正不可变的对象是可行的，只要它们不提供对可变对象的访问。 但是，在 CPython 中，每个 Python "
+"对象都有一个可变的实现细节：引用计数。 对引用计数的更改是由 GIL 来保护的。 因此，跨解释器共享任何 Python 对象的代码都隐式地依赖于 "
+"CPython 现有的、进程级的 GIL。"
 
 #: ../../howto/isolating-extensions.rst:275
 msgid ""

@@ -264,8 +264,8 @@ msgid ""
 "being loaded more than once per process—see `Opt-Out: Limiting to One Module"
 " Object per Process`_."
 msgstr ""
-"如果有必要使用进程级全局状态，避免多解释器相关问题的最简单的方式是显式地阻止模块在一个进程中被多次加载 — 参见 `Opt-Out: Limiting "
-"to One Module Object per Process`_。"
+"如果有必要使用进程级全局状态，避免多解释器相关问题的最简单的方式是显式地阻止模块在一个进程中被多次加载 — 参见 "
+"`回退选项：每个进程限一个模块对象`_。"
 
 #: ../../howto/isolating-extensions.rst:173
 msgid "Managing Per-Module State"
@@ -301,12 +301,14 @@ msgid ""
 " means error- and type-checking at the C level, which is easy to get wrong "
 "and hard to test sufficiently."
 msgstr ""
+"另一个选项是将状态保存在模块的 ``__dict__`` 中，但你必须避免当用户从 Python 代码中修改 ``__dict__`` 导致的程序崩溃。"
+" 这通常意味着要在 C 层级上进行错误和类型检查，很容易弄错又很难充分测试。"
 
 #: ../../howto/isolating-extensions.rst:193
 msgid ""
 "However, if module state is not needed in C code, storing it in ``__dict__``"
 " only is a good idea."
-msgstr ""
+msgstr "但是，如果 C 代码不需要模块状态，则仅将其保存在 ``__dict__`` 中就是一个好主意。"
 
 #: ../../howto/isolating-extensions.rst:196
 msgid ""
@@ -317,6 +319,9 @@ msgid ""
 " and make the code longer; this is the price for modules which can be "
 "unloaded cleanly."
 msgstr ""
+"如果模块状态包括 ``PyObject`` 指针，则模块对象必须持有对这些对象的引用并实现模块层级的钩子 ``m_traverse``, "
+"``m_clear`` 和 ``m_free``。 它们的作用方式很像类的 ``tp_traverse``, ``tp_clear`` 和 "
+"``tp_free``。 添加它们将会增加工作量并使代码更冗长；这是为了让模块能干净地卸载所需的代价。"
 
 #: ../../howto/isolating-extensions.rst:203
 msgid ""
@@ -325,10 +330,13 @@ msgid ""
 "<https://github.com/python/cpython/blob/master/Modules/xxlimited.c>`__; "
 "example module initialization shown at the bottom of the file."
 msgstr ""
+"带有模块级状态的模块示例目前可在 `xxlimited "
+"<https://github.com/python/cpython/blob/master/Modules/xxlimited.c>`__ "
+"获取；模块初始化的示例见文件的末尾部分。"
 
 #: ../../howto/isolating-extensions.rst:209
 msgid "Opt-Out: Limiting to One Module Object per Process"
-msgstr ""
+msgstr "回退选项：每个进程限一个模块对象"
 
 #: ../../howto/isolating-extensions.rst:211
 msgid ""
@@ -337,10 +345,12 @@ msgid ""
 "module, you can explicitly make your module loadable only once per process. "
 "For example::"
 msgstr ""
+"非负的 ``PyModuleDef.m_size`` 值表示一个模块能正确地支持多解释器。 "
+"如果你的模块还不能做到这样，你可以显式地设置你的模块在每个进程中只能加载一次。 例如::"
 
 #: ../../howto/isolating-extensions.rst:232
 msgid "Module State Access from Functions"
-msgstr ""
+msgstr "函数对模块状态的访问"
 
 #: ../../howto/isolating-extensions.rst:234
 msgid ""

@@ -243,7 +243,7 @@ msgstr "``readline`` 模块管理 *一个* 终端。"
 #: ../../howto/isolating-extensions.rst:157
 msgid ""
 "A module running on a circuit board wants to control *the* on-board LED."
-msgstr ""
+msgstr "在电路板上运行的模块想要控制 *一个* 板载 LED。"
 
 #: ../../howto/isolating-extensions.rst:160
 msgid ""
@@ -253,6 +253,9 @@ msgid ""
 " whether for Python or other languages). If that is not possible, consider "
 "explicit locking."
 msgstr ""
+"在这些情况下，Python 模块应当提供对全局状态的 *访问*，而不是 *拥有* 它。 "
+"如果可能，编写模块时要让它的多个副本可以独立地访问全局状态（能配合其它的库，不论它们是使用 Python 还是其他语言）。 "
+"如果这无法做到，可考虑显式加锁。"
 
 #: ../../howto/isolating-extensions.rst:166
 msgid ""
@@ -261,10 +264,12 @@ msgid ""
 "being loaded more than once per process—see `Opt-Out: Limiting to One Module"
 " Object per Process`_."
 msgstr ""
+"如果有必要使用进程级全局状态，避免多解释器相关问题的最简单的方式是显式地阻止模块在一个进程中被多次加载 — 参见 `Opt-Out: Limiting "
+"to One Module Object per Process`_。"
 
 #: ../../howto/isolating-extensions.rst:173
 msgid "Managing Per-Module State"
-msgstr ""
+msgstr "管理模块级状态"
 
 #: ../../howto/isolating-extensions.rst:175
 msgid ""
@@ -272,6 +277,8 @@ msgid ""
 "initialization <multi-phase-initialization>`. This signals that your module "
 "supports multiple interpreters correctly."
 msgstr ""
+"要使用模块级状态，请使用 :ref:`多阶段扩展模块初始化 <multi-phase-initialization>`。 "
+"这将标示你的模块能正确地支持多解释器。"
 
 #: ../../howto/isolating-extensions.rst:179
 msgid ""
@@ -283,6 +290,9 @@ msgid ""
 "``csv``'s :py:data:`~csv.field_size_limit`) which the C code needs to "
 "function."
 msgstr ""
+"将 ``PyModuleDef.m_size`` 设为一个正数来为模块请求指定字节的本地存储。 通常，这将被设为某个模块专属 ``struct`` "
+"的大小，它可以保存模块的所有 C 层级状态。 特别地，它应当是你存放类指针（包括异常，但不包括静态类型）和 C 代码正常运作所需设置（如 ``csv``"
+" 的 :py:data:`~csv.field_size_limit` 等）的地方。"
 
 #: ../../howto/isolating-extensions.rst:188
 msgid ""

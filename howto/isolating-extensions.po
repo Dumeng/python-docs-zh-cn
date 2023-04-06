@@ -488,30 +488,32 @@ msgstr ""
 
 #: ../../howto/isolating-extensions.rst:325
 msgid "Garbage-Collection Protocol"
-msgstr ""
+msgstr "垃圾回收协议"
 
 #: ../../howto/isolating-extensions.rst:327
 msgid ""
 "Instances of heap types hold a reference to their type. This ensures that "
 "the type isn't destroyed before all its instances are, but may result in "
 "reference cycles that need to be broken by the garbage collector."
-msgstr ""
+msgstr "堆类型的实例会持有一个指向其类型的引用。 这能确保类型的销毁不会发生在其实例之前，但可能会导致需要由垃圾回收器来打破的引用循环。"
 
 #: ../../howto/isolating-extensions.rst:332
 msgid ""
 "To avoid memory leaks, instances of heap types must implement the garbage "
 "collection protocol. That is, heap types should:"
-msgstr ""
+msgstr "要避免内存泄漏，堆类型的实例必须实现垃圾回收协议。 也就是说，堆类型应当:"
 
 #: ../../howto/isolating-extensions.rst:336
 msgid "Have the :c:data:`Py_TPFLAGS_HAVE_GC` flag."
-msgstr ""
+msgstr "具有 :c:data:`Py_TPFLAGS_HAVE_GC` 旗标。"
 
 #: ../../howto/isolating-extensions.rst:337
 msgid ""
 "Define a traverse function using ``Py_tp_traverse``, which visits the type "
 "(e.g. using :c:expr:`Py_VISIT(Py_TYPE(self))`)."
 msgstr ""
+"定义一个使用 ``Py_tp_traverse`` 的遍历函数，它将访问该类型 (例如使用 "
+":c:expr:`Py_VISIT(Py_TYPE(self))`)。"
 
 #: ../../howto/isolating-extensions.rst:340
 msgid ""
@@ -519,6 +521,8 @@ msgid ""
 ":c:data:`Py_TPFLAGS_HAVE_GC` and :c:member:`~PyTypeObject.tp_traverse` for "
 "additional considerations."
 msgstr ""
+"更多的信息请参阅 :c:data:`Py_TPFLAGS_HAVE_GC` 和 "
+":c:member:`~PyTypeObject.tp_traverse` 的 :ref:`文档 <type-structs>`。"
 
 #: ../../howto/isolating-extensions.rst:344
 msgid ""
@@ -526,20 +530,22 @@ msgid ""
 " (or another type), ensure that ``Py_TYPE(self)`` is visited only once. Note"
 " that only heap type are expected to visit the type in ``tp_traverse``."
 msgstr ""
+"如果你的遍历函数委托给了其基类（或另一个类型）的 ``tp_traverse``，请确保 ``Py_TYPE(self)`` 只被访问一次。 "
+"请注意只有堆类型会被预期访问 ``tp_traverse`` 中的类型。"
 
 #: ../../howto/isolating-extensions.rst:348
 msgid "For example, if your traverse function includes::"
-msgstr ""
+msgstr "举例来说，如果你的遍历函数包括::"
 
 #: ../../howto/isolating-extensions.rst:352
 msgid "...and ``base`` may be a static type, then it should also include::"
-msgstr ""
+msgstr "... 并且 ``base`` 可能是一个静态类型，则它也应当包括::"
 
 #: ../../howto/isolating-extensions.rst:360
 msgid ""
 "It is not necessary to handle the type's reference count in ``tp_new`` and "
 "``tp_clear``."
-msgstr ""
+msgstr "不需要在 ``tp_new`` 和 ``tp_clear`` 中处理该类型的引用计数。"
 
 #: ../../howto/isolating-extensions.rst:365
 msgid "Module State Access from Classes"

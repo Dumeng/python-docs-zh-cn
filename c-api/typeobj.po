@@ -1657,17 +1657,17 @@ msgstr "在之前被称为 ``tp_compare`` 和 ``tp_reserved``。"
 msgid ""
 "The :c:member:`~PyTypeObject.tp_as_async` field is not inherited, but the "
 "contained fields are inherited individually."
-msgstr ""
+msgstr ":c:member:`~PyTypeObject.tp_as_async` 字段不会被继承，但所包含的字段会被单独继承。"
 
 #: ../../c-api/typeobj.rst:802
 msgid ""
 "An optional pointer to a function that implements the built-in function "
 ":func:`repr`."
-msgstr ""
+msgstr "一个实现了内置函数 :func:`repr` 的函数的可选指针。"
 
 #: ../../c-api/typeobj.rst:805
 msgid "The signature is the same as for :c:func:`PyObject_Repr`::"
-msgstr ""
+msgstr "该签名与 :c:func:`PyObject_Repr` 的相同::"
 
 #: ../../c-api/typeobj.rst:809
 msgid ""
@@ -1677,6 +1677,9 @@ msgid ""
 " feasible, it should return a string starting with ``'<'`` and ending with "
 "``'>'`` from which both the type and the value of the object can be deduced."
 msgstr ""
+"该函数必须返回一个字符串或 Unicode 对象。 在理想情况下，该函数应当返回一个字符串，当将其传给 :func:`eval` "
+"时，只要有合适的环境，就会返回一个具有相同值的对象。 如果这不可行，则它应当返回一个以 ``'<'`` 开头并以 ``'>'`` "
+"结尾的可被用来推断出对象的类型和值的字符串。"
 
 #: ../../c-api/typeobj.rst:820 ../../c-api/typeobj.rst:932
 #: ../../c-api/typeobj.rst:957 ../../c-api/typeobj.rst:983
@@ -1956,18 +1959,19 @@ msgid ""
 "  If this bit is clear, the type cannot be subtyped (similar to a \"final\" "
 "class in Java)."
 msgstr ""
+"当此类型可被用作另一个类型的基类型时该比特位将被设置。 如果该比特位被清除，则此类型将无法被子类型化（类似于 Java 中的 \"final\" 类）。"
 
 #: ../../c-api/typeobj.rst:1065
 msgid ""
 "This bit is set when the type object has been fully initialized by "
 ":c:func:`PyType_Ready`."
-msgstr ""
+msgstr "当此类型对象通过 :c:func:`PyType_Ready` 被完全实例化时该比特位将被设置。"
 
 #: ../../c-api/typeobj.rst:1075
 msgid ""
 "This bit is set while :c:func:`PyType_Ready` is in the process of "
 "initializing the type object."
-msgstr ""
+msgstr "当 :c:func:`PyType_Ready` 处在初始化此类型对象过程中时该比特位将被设置。"
 
 #: ../../c-api/typeobj.rst:1085
 msgid ""
@@ -1978,12 +1982,17 @@ msgid ""
 "related fields :c:member:`~PyTypeObject.tp_traverse` and "
 ":c:member:`~PyTypeObject.tp_clear` are present in the type object."
 msgstr ""
+"当此对象支持垃圾回收时该比特位将被设置。 如果设置了该比特位，则实例必须使用 :c:func:`PyObject_GC_New` 来创建并使用 "
+":c:func:`PyObject_GC_Del` 来销毁。 更多信息见 :ref:`supporting-cycle-detection` 一节。 "
+"该比特位还表明与类型对象中存在 GC 相关字段 :c:member:`~PyTypeObject.tp_traverse` 和 "
+":c:member:`~PyTypeObject.tp_clear`。"
 
 #: ../../c-api/typeobj.rst:1094 ../../c-api/typeobj.rst:1259
 #: ../../c-api/typeobj.rst:1320
 msgid ""
 "Group: :const:`Py_TPFLAGS_HAVE_GC`, :attr:`tp_traverse`, :attr:`tp_clear`"
 msgstr ""
+"分组: :const:`Py_TPFLAGS_HAVE_GC`, :attr:`tp_traverse`, :attr:`tp_clear`"
 
 #: ../../c-api/typeobj.rst:1096
 msgid ""

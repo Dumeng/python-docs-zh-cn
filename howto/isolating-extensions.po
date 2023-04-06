@@ -413,14 +413,16 @@ msgid ""
 "*heap type* for short. These correspond more closely to classes created by "
 "Python's ``class`` statement."
 msgstr ""
+"因为它们是不可变的进程级全局对象，所以静态类型无法访问“它们的”模块状态。 如果任何此种类型的方法需要访问模块状态，则该类型必须被转换为 "
+"*堆分配类型*，或者简称为 *堆类型*。 此种类型相对更接近由 Python 的 ``class`` 语句所创建的类。"
 
 #: ../../howto/isolating-extensions.rst:282
 msgid "For new modules, using heap types by default is a good rule of thumb."
-msgstr ""
+msgstr "对于新模块，默认使用堆类型是一个很好的经验法则。"
 
 #: ../../howto/isolating-extensions.rst:286
 msgid "Changing Static Types to Heap Types"
-msgstr ""
+msgstr "将静态类型改为堆类型"
 
 #: ../../howto/isolating-extensions.rst:288
 msgid ""
@@ -431,18 +433,20 @@ msgid ""
 "unintentionally change a few details (e.g. pickleability or inherited "
 "slots). Always test the details that are important to you."
 msgstr ""
+"静态类型可以转换为堆类型，但要注意堆类型 API 并非针对静态类型的“无损”转换 — 也就是说，创建与给定静态类型完全一致的类型来设计的。 "
+"因此，当在新的 API 中重写类定义时，你很容易在无意中改变一些细节（例如可封存性或所继承的槽位等）。 请始终确保测试对你来说重要的细节。"
 
 #: ../../howto/isolating-extensions.rst:297
 msgid ""
 "Watch out for the following two points in particular (but note that this is "
 "not a comprehensive list):"
-msgstr ""
+msgstr "特别要关注以下两点（但请注意这并非一个完整的列表）:"
 
 #: ../../howto/isolating-extensions.rst:300
 msgid ""
 "Unlike static types, heap type objects are mutable by default. Use the "
 ":c:data:`Py_TPFLAGS_IMMUTABLETYPE` flag to prevent mutability."
-msgstr ""
+msgstr "不同于静态类型，堆类型对象默认是可变的。 请使用 :c:data:`Py_TPFLAGS_IMMUTABLETYPE` 旗标来防止可变性。"
 
 #: ../../howto/isolating-extensions.rst:302
 msgid ""
@@ -450,10 +454,12 @@ msgid ""
 "become possible to instantiate them from Python code. You can prevent this "
 "with the :c:data:`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag."
 msgstr ""
+"堆类型默认继承 :c:member:`~PyTypeObject.tp_new`，因此有可能通过 Python 代码来初始化它们。 你可以使用 "
+":c:data:`Py_TPFLAGS_DISALLOW_INSTANTIATION` 旗标来防止这一点。"
 
 #: ../../howto/isolating-extensions.rst:308
 msgid "Defining Heap Types"
-msgstr ""
+msgstr "定义堆类型"
 
 #: ../../howto/isolating-extensions.rst:310
 msgid ""
@@ -461,6 +467,8 @@ msgid ""
 "description or \"blueprint\" of a class, and calling "
 ":c:func:`PyType_FromModuleAndSpec` to construct a new class object."
 msgstr ""
+"堆类型可以通过填充 :c:struct:`PyType_Spec` 结构体来创建，它是对于特定类的描述或“蓝图”，并调用 "
+":c:func:`PyType_FromModuleAndSpec` 来构造新的类对象。to construct a new class object."
 
 #: ../../howto/isolating-extensions.rst:315
 msgid ""
@@ -468,12 +476,15 @@ msgid ""
 " but :c:func:`PyType_FromModuleAndSpec` associates the module with the "
 "class, allowing access to the module state from methods."
 msgstr ""
+"其他的函数，如 :c:func:`PyType_FromSpec`，也可以创建堆类型，但 "
+":c:func:`PyType_FromModuleAndSpec` 会将模块关联到类，以允许从方法访问模块状态。"
 
 #: ../../howto/isolating-extensions.rst:319
 msgid ""
 "The class should generally be stored in *both* the module state (for safe "
 "access from C) and the module's ``__dict__`` (for access from Python code)."
 msgstr ""
+"类通常应当 *同时* 保存在模块的状态（用于从 C 中安全地访问）和模块的 ``__dict__`` 中（用于从 Python 代码中访问）。"
 
 #: ../../howto/isolating-extensions.rst:325
 msgid "Garbage-Collection Protocol"

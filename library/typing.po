@@ -841,11 +841,11 @@ msgstr "其它常见用例包括："
 msgid ""
 ":class:`classmethod`\\s that are used as alternative constructors and return"
 " instances of the ``cls`` parameter."
-msgstr ""
+msgstr "被用作替代构造器的 :class:`classmethod`，它将返回 ``cls`` 形参的实例。"
 
 #: ../../library/typing.rst:731
 msgid "Annotating an :meth:`~object.__enter__` method which returns self."
-msgstr ""
+msgstr "标注一个返回自身的 :meth:`~object.__enter__` 方法。"
 
 #: ../../library/typing.rst:733
 msgid "See :pep:`673` for more details."
@@ -1033,6 +1033,11 @@ msgid ""
 "the first argument to a :data:`Callable`. The last parameter to "
 "``Concatenate`` must be a :class:`ParamSpec` or ellipsis (``...``)."
 msgstr ""
+"与 :data:`Callable` 和 :class:`ParamSpec` "
+"一起使用来对高阶可调用对象进行类型标注，该可象可以添加、移除或转换另一个可调用对象的形参。 使用形式为 ``Concatenate[Arg1Type, "
+"Arg2Type, ..., ParamSpecVariable]``。 ``Concatenate`` 目前只在用作传给 "
+":data:`Callable` 的第一个参数时有效。 传给 ``Concatenate`` 的最后一个形参必须为 :class:`ParamSpec`"
+" 或省略符 (``...``)。"
 
 #: ../../library/typing.rst:880
 msgid ""
@@ -1105,6 +1110,8 @@ msgid ""
 ":class:`builtins.type <type>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.type <type>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:972
 msgid ""
@@ -1174,11 +1181,11 @@ msgstr "这些属性没有运行时检查。详见 :pep:`591`。"
 msgid ""
 "Special typing constructs that mark individual keys of a :class:`TypedDict` "
 "as either required or non-required respectively."
-msgstr ""
+msgstr "将 :class:`TypedDict` 中单独的键分别标记为必需或非必需的特殊类型构造。"
 
 #: ../../library/typing.rst:1050
 msgid "See :class:`TypedDict` and :pep:`655` for more details."
-msgstr ""
+msgstr "详情参见 :class:`TypedDict` 和 :pep:`655`。"
 
 #: ../../library/typing.rst:1056
 msgid ""

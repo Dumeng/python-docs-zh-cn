@@ -11,10 +11,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-04-07 14:20+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
 "Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2123,9 +2123,9 @@ msgstr ""
 
 #: ../../library/socket.rst:1598
 msgid ""
-"The socket timeout is no more reset each time data is sent successfully. The"
-" socket timeout is now the maximum total duration to send all data."
-msgstr "每次成功发送数据后，套接字超时不再重置。现在，套接字超时是发送所有数据的最大总持续时间。"
+"The socket timeout is no longer reset each time data is sent successfully. "
+"The socket timeout is now the maximum total duration to send all data."
+msgstr ""
 
 #: ../../library/socket.rst:1611
 msgid ""
@@ -2371,11 +2371,9 @@ msgstr "在 *blocking mode* （阻塞模式）中，操作将阻塞，直到操�
 msgid ""
 "In *non-blocking mode*, operations fail (with an error that is unfortunately"
 " system-dependent) if they cannot be completed immediately: functions from "
-"the :mod:`select` can be used to know when and whether a socket is available"
-" for reading or writing."
+"the :mod:`select` module can be used to know when and whether a socket is "
+"available for reading or writing."
 msgstr ""
-"在 *non-blocking mode* （非阻塞模式）中，如果操作无法立即完成，则操作将失败（不幸的是，不同系统返回的错误不同）：位于 "
-":mod:`select` 中的函数可用于了解套接字何时以及是否可以读取或写入。"
 
 #: ../../library/socket.rst:1820
 msgid ""
@@ -2505,11 +2503,9 @@ msgstr ""
 #: ../../library/socket.rst:2006
 msgid ""
 "After binding (:const:`CAN_RAW`) or connecting (:const:`CAN_BCM`) the "
-"socket, you can use the :meth:`socket.send`, and the :meth:`socket.recv` "
+"socket, you can use the :meth:`socket.send` and :meth:`socket.recv` "
 "operations (and their counterparts) on the socket object as usual."
 msgstr ""
-"在绑定 (:const:`CAN_RAW`) 或连接 (:const:`CAN_BCM`) socket 之后，你将可以在 socket 对象上正常使用"
-" :meth:`socket.send` 以及 :meth:`socket.recv` 操作（及同类操作）。"
 
 #: ../../library/socket.rst:2010
 msgid "This last example might require special privileges::"

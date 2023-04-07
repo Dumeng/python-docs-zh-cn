@@ -1220,6 +1220,9 @@ msgid ""
 "filenames. The filesystem error handler is returned from "
 ":func:`getfilesystemencodeerrors`."
 msgstr ""
+"获取 :term:`文件系统编码格式 <filesystem encoding and error handler>`: 该编码格式与 "
+":term:`文件系统错误处理句柄 <filesystem encoding and error handler>` 一起使用以便在 Unicode "
+"文件名和字节文件名之间进行转换。 文件系统错误处理句柄是从 :func:`getfilesystemencodeerrors` 返回的。"
 
 #: ../../library/sys.rst:702
 msgid ""

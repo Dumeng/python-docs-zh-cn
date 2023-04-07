@@ -105,6 +105,8 @@ msgid ""
 "should broadly apply to most Python type checkers, although some parts may "
 "still be specific to mypy."
 msgstr ""
+"https://mypy.readthedocs.io/ 的 \"Type System Reference\" 小节 -- 由于 Python "
+"类型系统是通过 PEP 来标准化的，该参考应当广泛适用于大多数 Python 类型检查器，不过有部分内容仍然是 mypy 专属的。"
 
 #: ../../library/typing.rst:52
 msgid ""
@@ -811,23 +813,25 @@ msgstr ""
 
 #: ../../library/typing.rst:694
 msgid "Special type to represent the current enclosed class. For example::"
-msgstr ""
+msgstr "代表当前封包类的特殊类型。 例如::"
 
 #: ../../library/typing.rst:705
 msgid ""
 "This annotation is semantically equivalent to the following, albeit in a "
 "more succinct fashion::"
-msgstr ""
+msgstr "此标准在语法上等价于以下代码，但形式更为简洁::"
 
 #: ../../library/typing.rst:717
 msgid "In general if something currently follows the pattern of::"
-msgstr ""
+msgstr "总的来说如果某段代码目前遵循以下模式::"
 
 #: ../../library/typing.rst:724
 msgid ""
 "You should use :data:`Self` as calls to ``SubclassOfFoo.return_self`` would "
 "have ``Foo`` as the return type and not ``SubclassOfFoo``."
 msgstr ""
+"你应当将 :data:`Self` 用于对 ``SubclassOfFoo.return_self`` 的调用并应当得到 ``Foo`` 而不是 "
+"``SubclassOfFoo`` 作为返回类型。"
 
 #: ../../library/typing.rst:727
 msgid "Other common use cases include:"

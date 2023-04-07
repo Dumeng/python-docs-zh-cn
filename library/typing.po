@@ -422,9 +422,9 @@ msgid ""
 "``Callable[Concatenate[Arg1Type, Arg2Type, ..., ParamSpecVariable], "
 "ReturnType]`` respectively."
 msgstr ""
-"以其他可调用对象为参数的可调用对象可以使用 :class:`ParamSpec` "
-"来表明其参数类型是相互依赖的。此外，如果该可调用对象增加或删除了其他可调用对象的参数，可以使用 :data:`Concatenate` 操作符。 "
-"它们分别采取 ``Callable[ParamSpecVariable, ReturnType]`` 和 "
+"以其他可调用对象为参数的可调用对象可以使用 :class:`ParamSpec` 来表明其参数类型是相互依赖的。 "
+"此外，如果该可调用对象增加或删除了其他可调用对象的参数，可以使用 :data:`Concatenate` 操作符。 它们分别采取 "
+"``Callable[ParamSpecVariable, ReturnType]`` 和 "
 "``Callable[Concatenate[Arg1Type, Arg2Type, ..., ParamSpecVariable], "
 "ReturnType]`` 的形式。"
 
@@ -1362,12 +1362,14 @@ msgid ""
 " the former, since ``list`` is invariant. The responsibility of writing "
 "type-safe type guards is left to the user."
 msgstr ""
+"``TypeB`` 无需为 ``TypeA`` 的缩小形式 -- 它甚至可以是扩大形式。 主要原因是允许像把 ``list[object]`` 缩小到 "
+"``list[str]`` 这样的事情，即使后者不是前者的一个子类型，因为 ``list`` 是不变的。 编写类型安全的类型防护的责任留给了用户。"
 
 #: ../../library/typing.rst:1201
 msgid ""
 "``TypeGuard`` also works with type variables.  See :pep:`647` for more "
 "details."
-msgstr ""
+msgstr "``TypeGuard`` 也适用于类型变量。 详情参见 :pep:`647`。"
 
 #: ../../library/typing.rst:1207
 msgid "Building generic types"
@@ -1424,6 +1426,7 @@ msgid ""
 " in several important ways. Using a *bound* type variable means that the "
 "``TypeVar`` will be solved using the most specific type possible::"
 msgstr ""
+"绑定类型变量和约束类型变量在几个重要方面具有不同的主义。 使用 *绑定* 类型变量意味着 ``TypeVar`` 将尽可能使用最为专属的类型来解析::"
 
 #: ../../library/typing.rst:1283
 msgid ""
@@ -1435,7 +1438,7 @@ msgstr "类型变量可以被绑定到具体类型、抽象类型（ ABC 或 pro
 msgid ""
 "Using a *constrained* type variable, however, means that the ``TypeVar`` can"
 " only ever be solved as being exactly one of the constraints given::"
-msgstr ""
+msgstr "但是，如果使用 *约束* 类型变量，则意味着 ``TypeVar`` 只能被解析为恰好是给定的约束之一::"
 
 #: ../../library/typing.rst:1300
 msgid ""
@@ -1458,7 +1461,7 @@ msgstr ""
 msgid ""
 "Type variable tuple. A specialized form of :class:`type variable <TypeVar>` "
 "that enables *variadic* generics."
-msgstr ""
+msgstr "类型变量元组。 一种启用了 *variadic* 泛型的专属 :class:`类型变量 <TypeVar>` 形式。"
 
 #: ../../library/typing.rst:1312
 msgid ""
@@ -1467,6 +1470,8 @@ msgid ""
 "number of types by acting like an *arbitrary* number of type variables "
 "wrapped in a tuple. For example::"
 msgstr ""
+"一个普通类型变量将启用单个类型的形参化。 作为对比，一个类型变量元组通过将 *任意* 数量的类型变量封包在一个元组中来允许 *任意* 数量类型的形参化。"
+" 例如::"
 
 #: ../../library/typing.rst:1340
 msgid ""
@@ -1477,18 +1482,22 @@ msgid ""
 "older versions of Python, you might see this written using :data:`Unpack "
 "<Unpack>` instead, as ``Unpack[Ts]``.)"
 msgstr ""
+"请注意解包运算符 ``*`` 在 ``tuple[T, *Ts]`` 中的使用。 在概念上，你可以将 ``Ts`` 当作一个由类型变量组成的元组 "
+"``(T1, T2, ...)``。 那么 ``tuple[T, *Ts]`` 就将变为 ``tuple[T, *(T1, T2, "
+"...)]``，这等价于 ``tuple[T, T1, T2, ...]``。 （请注意在旧版本 Python 中，你可能会看到改用 "
+":data:`Unpack <Unpack>` 的写法，如 ``Unpack[Ts]``。）"
 
 #: ../../library/typing.rst:1348
 msgid ""
 "Type variable tuples must *always* be unpacked. This helps distinguish type "
 "variable tuples from normal type variables::"
-msgstr ""
+msgstr "类型变量元组 *总是* 要被解包。 这有助于区分类型变量元组和普通类型变量::"
 
 #: ../../library/typing.rst:1355
 msgid ""
 "Type variable tuples can be used in the same contexts as normal type "
 "variables. For example, in class definitions, arguments, and return types::"
-msgstr ""
+msgstr "类型变量元组可被用在与普通类型变量相同的上下文中。 例如，在类定义、参数和返回类型中::"
 
 #: ../../library/typing.rst:1364
 msgid ""

@@ -2368,7 +2368,7 @@ msgstr ""
 msgid ""
 "Output buffering is usually determined by *file*. However, if *flush* is "
 "true, the stream is forcibly flushed."
-msgstr ""
+msgstr "输出缓冲通常由 *file* 确定。 但是，如果 *flush* 为真值，流将被强制刷新。"
 
 #: ../../library/functions.rst:1450
 msgid "Added the *flush* keyword argument."

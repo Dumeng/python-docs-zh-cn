@@ -9,8 +9,8 @@
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-07 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -307,7 +307,7 @@ msgid ""
 "It is possible to reload modules -- if a reloaded module contains enums, "
 "they will be recreated, and the new members may not compare identical/equal "
 "to the original members."
-msgstr ""
+msgstr "重载模块是可能的 -- 如果载入的模块包含枚举，它们将被重新创建，而新成员的标识号/相等性比较不一定会通过。"
 
 #: ../../howto/enum.rst:381
 msgid "Allowed members and attributes of enumerations"
@@ -954,6 +954,8 @@ msgid ""
 "behavior, being able to access one member directly from another is useful, "
 "and is supported."
 msgstr ""
+"枚举成员是其枚举类型的实例，并且通常作为 ``EnumClass.member`` 来访问。 "
+"在特定场景下，如编写自定义枚举行为，可从一个成员访问另一个成员的能力是很有用的，并且是受支持的。"
 
 #: ../../howto/enum.rst:971
 msgid "Creating members that are mixed with other data types"

@@ -7,8 +7,8 @@
 # Zombie110year <zombie110year@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-07 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -122,6 +122,8 @@ msgid ""
 "string in the far right column was used to sort the output. The column "
 "headings include:"
 msgstr ""
+"第一行显示有 214 个调用被监控。 在这些调用中，207 个为 :dfn:`primitive`，表示这些调用不是通过递归引起的。 下一行: "
+"``Ordered by: cumulative time``，表示最右边那一列中的文本字符串被用来对输出进行排序。 列标题包括:"
 
 #: ../../library/profile.rst:89
 msgid "ncalls"

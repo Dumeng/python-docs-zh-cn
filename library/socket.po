@@ -14,8 +14,8 @@
 # Alpha Du <alphanow@gmail.com>, 2021
 # Sonny <758896823@qq.com>, 2021
 # Contextualist <harzjc@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-07 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2254,7 +2254,7 @@ msgstr ""
 msgid ""
 "The socket timeout is no longer reset each time data is sent successfully. "
 "The socket timeout is now the maximum total duration to send all data."
-msgstr ""
+msgstr "每次成员发送数据后，套接字超时将不再重置。 目前的套接字超时是发送所有数据的最大总持续时间。"
 
 #: ../../library/socket.rst:1703
 msgid ""
@@ -2507,6 +2507,8 @@ msgid ""
 "the :mod:`select` module can be used to know when and whether a socket is "
 "available for reading or writing."
 msgstr ""
+"在 *非阻塞模式* 中，如果操作无法立即完成则该操作将失败（不幸的是它所附带的错误将依赖于具体系统）: 来自 :mod:`select` "
+"模块的函数可被用来获知一个套接字是否可以读取或写入。"
 
 #: ../../library/socket.rst:1917
 msgid ""
@@ -2639,6 +2641,8 @@ msgid ""
 "socket, you can use the :meth:`socket.send` and :meth:`socket.recv` "
 "operations (and their counterparts) on the socket object as usual."
 msgstr ""
+"在绑定 (:const:`CAN_RAW`) 或连接 (:const:`CAN_BCM`) 套接字之后，你将可以在套接字对象上正常地使用 "
+":meth:`socket.send` 和 :meth:`socket.recv` 操作（及其同类操作）。"
 
 #: ../../library/socket.rst:2107
 msgid "This last example might require special privileges::"

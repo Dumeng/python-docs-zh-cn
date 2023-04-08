@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 18:02+0000\n"
+"POT-Creation-Date: 2023-04-07 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1502,19 +1502,19 @@ msgstr "类型变量元组可被用在与普通类型变量相同的上下文中
 #: ../../library/typing.rst:1364
 msgid ""
 "Type variable tuples can be happily combined with normal type variables::"
-msgstr ""
+msgstr "类型变量元组可以很好地与普通类型变量相互组合::"
 
 #: ../../library/typing.rst:1377
 msgid ""
 "However, note that at most one type variable tuple may appear in a single "
 "list of type arguments or type parameters::"
-msgstr ""
+msgstr "但是，请注意在一个类型参数或类型形参列表中最多只能有一个类型变量元组::"
 
 #: ../../library/typing.rst:1384
 msgid ""
 "Finally, an unpacked type variable tuple can be used as the type annotation "
 "of ``*args``::"
-msgstr ""
+msgstr "最后，一个已解包的类型变量元组可以被用作 ``*args`` 的类型标注::"
 
 #: ../../library/typing.rst:1394
 msgid ""
@@ -1524,6 +1524,9 @@ msgid ""
 "Here, this allows us to ensure the types of the ``*args`` passed to "
 "``call_soon`` match the types of the (positional) arguments of ``callback``."
 msgstr ""
+"相比非解包的 ``*args`` 标注 —— 例如 ``*args: int``，它将指明 *所有* 参数均为 ``int`` —— ``*args: "
+"*Ts`` 启用了对 ``*args`` 中 *单个* 参数的类型的引用。 在此，这允许我们确保传入 ``call_soon`` 的 ``*args``"
+" 的类型与 ``callback`` 的（位置）参数的类型相匹配。"
 
 #: ../../library/typing.rst:1401
 msgid "See :pep:`646` for more details on type variable tuples."
@@ -1536,6 +1539,8 @@ msgid ""
 "tuple <TypeVarTuple>` is equivalent to using ``Unpack`` to mark the type "
 "variable tuple as having been unpacked::"
 msgstr ""
+"一个在概念上将一个对象标记为已被解包的类型运算符。 例如，在一个 :class:`类型变量元组 <TypeVarTuple>` 上使用解包运算符 "
+"``*`` 等价于使用 ``Unpack`` 来将该类型变量元组标记为已被解包::"
 
 #: ../../library/typing.rst:1417
 msgid ""
@@ -1543,6 +1548,8 @@ msgid ""
 " types. You might see ``Unpack`` being used explicitly in older versions of "
 "Python, where ``*`` couldn't be used in certain places::"
 msgstr ""
+"实际上，在类型的上下文中 ``Unpack`` 可以和 ``*`` 互换使用。 你可能会看到 ``Unpack`` 在较旧版本的 Python "
+"中被显式地使用，在特定场合 ``*`` 则是无法使用的::"
 
 #: ../../library/typing.rst:1433
 msgid ""
@@ -1687,6 +1694,8 @@ msgid ""
 "protocols that check only the presence of given attributes, ignoring their "
 "type signatures."
 msgstr ""
+"请参阅 :pep:`544` 了解详情。 使用 :func:`runtime_checkable` "
+"装饰的协议类（稍后将介绍）可作为只检查给定属性是否存在，而忽略其类型签名的简单的运行时协议。"
 
 #: ../../library/typing.rst:1569
 msgid "Protocol classes can be generic, for example::"
@@ -1718,6 +1727,10 @@ msgid ""
 "message, therefore making it impossible to call (instantiate) "
 ":class:`ssl.SSLObject`."
 msgstr ""
+":func:`!runtime_checkable` 将只检查所需方法或属性是否存在，而不检查它们的类型签名或类型。 "
+"例如，:class:`ssl.SSLObject` 是一个类，因此它通过了针对 :data:`Callable` 的 "
+":func:`issubclass` 检查。 但是，``ssl.SSLObject.__init__`` 方法的存在只是引发 "
+":exc:`TypeError` 并附带更具信息量的消息，因此它无法调用 (实例化) :class:`ssl.SSLObject`。"
 
 #: ../../library/typing.rst:1612
 msgid ""
@@ -1726,6 +1739,8 @@ msgid ""
 "protocol class. Consider using alternative idioms such as :func:`hasattr` "
 "calls for structural checks in performance-sensitive code."
 msgstr ""
+"针对运行时可检查协议的 :func:`isinstance` 检查相比针对非协议类的 ``isinstance()`` 检查可能会惊人的缓慢。 "
+"请考虑在性能敏感的代码中使用替代性写法如 :func:`hasattr` 调用进行结构检查。"
 
 #: ../../library/typing.rst:1621
 msgid "Other special directives"
@@ -1836,7 +1851,7 @@ msgid ""
 "To allow using this feature with older versions of Python that do not "
 "support :pep:`526`, ``TypedDict`` supports two additional equivalent "
 "syntactic forms:"
-msgstr ""
+msgstr "为了在不支持 :pep:`526` 的旧版 Python 中使用此特性，``TypedDict`` 支持两种额外的等价语法形式:"
 
 #: ../../library/typing.rst:1733
 msgid "Using a literal :class:`dict` as the second argument::"

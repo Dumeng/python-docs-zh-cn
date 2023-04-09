@@ -1880,18 +1880,19 @@ msgid ""
 "By default, all keys must be present in a ``TypedDict``. It is possible to "
 "mark individual keys as non-required using :data:`NotRequired`::"
 msgstr ""
+"默认情况下，所有的键都必须出现在一个 ``TypedDict`` 中。 可以使用 :data:`NotRequired` 将单独的键标记为非必要的::"
 
 #: ../../library/typing.rst:1768
 msgid ""
 "This means that a ``Point2D`` ``TypedDict`` can have the ``label`` key "
 "omitted."
-msgstr ""
+msgstr "这意味着一个 ``Point2D`` ``TypedDict`` 可以省略 ``label`` 键。"
 
 #: ../../library/typing.rst:1771
 msgid ""
 "It is also possible to mark all keys as non-required by default by "
 "specifying a totality of ``False``::"
-msgstr ""
+msgstr "也可以通过全部指定 ``False`` 将所有键都标记为默认非必要的::"
 
 #: ../../library/typing.rst:1781
 msgid ""
@@ -1907,7 +1908,7 @@ msgstr ""
 msgid ""
 "Individual keys of a ``total=False`` ``TypedDict`` can be marked as required"
 " using :data:`Required`::"
-msgstr ""
+msgstr "一个 ``total=False`` ``TypedDict`` 中单独的键可以使用 :data:`Required` 标记为必要的::"
 
 #: ../../library/typing.rst:1801
 msgid ""
@@ -1925,7 +1926,7 @@ msgstr "``Point3D`` 有三个项目 : ``x`` , ``y`` 和 ``z`` 。 其等价于�
 msgid ""
 "A ``TypedDict`` cannot inherit from a non-\\ ``TypedDict`` class, except for"
 " :class:`Generic`. For example::"
-msgstr ""
+msgstr "``TypedDict`` 不能从非 ``TypedDict`` 类继承，除了 :class:`Generic`。 例如::"
 
 #: ../../library/typing.rst:1834
 msgid "A ``TypedDict`` can be generic::"
@@ -1953,6 +1954,8 @@ msgid ""
 ":class:`frozenset` objects containing required and non-required keys, "
 "respectively."
 msgstr ""
+"``Point2D.__required_keys__`` 和 ``Point2D.__optional_keys__`` "
+"返回分别包含必要的和非必要的键的 :class:`frozenset` 对象。"
 
 #: ../../library/typing.rst:1869
 msgid ""
@@ -1960,6 +1963,8 @@ msgid ""
 "``__required_keys__`` and keys marked with :data:`NotRequired` will always "
 "appear in ``__optional_keys__``."
 msgstr ""
+"标记为 :data:`Required` 的键总是会出现在 ``__required_keys__`` 中而标记为 "
+":data:`NotRequired` 的键总是会出现在 ``__optional_keys__`` 中。"
 
 #: ../../library/typing.rst:1872
 msgid ""

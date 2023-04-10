@@ -2273,6 +2273,8 @@ msgid ""
 ":class:`collections.abc.Container` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Container` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2125
 msgid "A generic version of :class:`collections.abc.ItemsView`."
@@ -2283,6 +2285,8 @@ msgid ""
 ":class:`collections.abc.ItemsView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.ItemsView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2133
 msgid "A generic version of :class:`collections.abc.KeysView`."
@@ -2293,6 +2297,8 @@ msgid ""
 ":class:`collections.abc.KeysView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.KeysView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2141
 msgid ""
@@ -2305,6 +2311,8 @@ msgid ""
 ":class:`collections.abc.Mapping` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Mapping` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2153
 msgid "A generic version of :class:`collections.abc.MappingView`."
@@ -2315,6 +2323,8 @@ msgid ""
 ":class:`collections.abc.MappingView` now supports subscripting (``[]``). See"
 " :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MappingView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2161
 msgid "A generic version of :class:`collections.abc.MutableMapping`."
@@ -2325,6 +2335,8 @@ msgid ""
 ":class:`collections.abc.MutableMapping` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MutableMapping` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2170
 msgid "A generic version of :class:`collections.abc.MutableSequence`."
@@ -2335,6 +2347,8 @@ msgid ""
 ":class:`collections.abc.MutableSequence` now supports subscripting (``[]``)."
 " See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MutableSequence` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2179
 msgid "A generic version of :class:`collections.abc.MutableSet`."
@@ -2345,6 +2359,8 @@ msgid ""
 ":class:`collections.abc.MutableSet` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.MutableSet` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2187
 msgid "A generic version of :class:`collections.abc.Sequence`."
@@ -2355,6 +2371,8 @@ msgid ""
 ":class:`collections.abc.Sequence` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Sequence` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2195
 msgid "A generic version of :class:`collections.abc.ValuesView`."
@@ -2365,6 +2383,8 @@ msgid ""
 ":class:`collections.abc.ValuesView` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.ValuesView` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2202
 msgid "Corresponding to other types in :mod:`collections.abc`"
@@ -2379,6 +2399,8 @@ msgid ""
 ":class:`collections.abc.Iterable` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Iterable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2214
 msgid "A generic version of :class:`collections.abc.Iterator`."
@@ -2389,6 +2411,8 @@ msgid ""
 ":class:`collections.abc.Iterator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Iterator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2222
 msgid ""
@@ -2422,6 +2446,8 @@ msgid ""
 ":class:`collections.abc.Generator` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Generator` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2257
 msgid "An alias to :class:`collections.abc.Hashable`."
@@ -2436,6 +2462,8 @@ msgid ""
 ":class:`collections.abc.Reversible` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Reversible` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2269
 msgid "An alias to :class:`collections.abc.Sized`."
@@ -2507,6 +2535,8 @@ msgid ""
 ":class:`collections.abc.AsyncIterable` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.AsyncIterable` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2342
 msgid "A generic version of :class:`collections.abc.AsyncIterator`."
@@ -2625,18 +2655,18 @@ msgstr "让静态类型检查器确认 *val* 具有推断为 *typ* 的类型。"
 msgid ""
 "When the type checker encounters a call to ``assert_type()``, it emits an "
 "error if the value is not of the specified type::"
-msgstr ""
+msgstr "当类型检查器遇到对 ``assert_type()`` 的调用时，如果该值不是指定的类型则会报错::"
 
 #: ../../library/typing.rst:2448
 msgid ""
 "At runtime this returns the first argument unchanged with no side effects."
-msgstr ""
+msgstr "在运行时这将不加修改地返回第一个参数并且没有附带影响。"
 
 #: ../../library/typing.rst:2450
 msgid ""
 "This function is useful for ensuring the type checker's understanding of a "
 "script is in line with the developer's intentions::"
-msgstr ""
+msgstr "此函数适用于确保类型检查器对脚本的理解符合开发者的意图::"
 
 #: ../../library/typing.rst:2464
 msgid ""

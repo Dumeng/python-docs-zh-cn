@@ -1974,6 +1974,9 @@ msgid ""
 "value for the ``total`` argument and then inheriting from it in another "
 "``TypedDict`` with a different value for ``total``::"
 msgstr ""
+"为了向下兼容 Python 3.10 及更老的版本，还可以使用继承机制在一个 ``TypedDict`` 中同时声明必要和非必要的键。 "
+"这是通过声明一个包含单独值的 ``TypedDict`` 作为 ``total`` 参数然后在另一个 ``TypedDict`` 中继承它并包含不同的 "
+"``total`` 值来实现的::"
 
 #: ../../library/typing.rst:1893
 msgid ""
@@ -1985,6 +1988,7 @@ msgid ""
 "Added support for marking individual keys as :data:`Required` or "
 ":data:`NotRequired`. See :pep:`655`."
 msgstr ""
+"增加了对将单独的键标记为 :data:`Required` 或 :data:`NotRequired` 的支持。 参见 :pep:`655`。"
 
 #: ../../library/typing.rst:1901
 msgid "Added support for generic ``TypedDict``\\ s."
@@ -2014,6 +2018,8 @@ msgid ""
 ":class:`builtins.dict <dict>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.dict <dict>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1927
 msgid ""
@@ -2033,6 +2039,8 @@ msgid ""
 ":class:`builtins.list <list>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.list <list>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1948
 msgid ""
@@ -2048,6 +2056,8 @@ msgid ""
 ":class:`builtins.set <set>` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.set <set>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:1958
 msgid "A generic version of :class:`builtins.frozenset <frozenset>`."
@@ -2058,6 +2068,8 @@ msgid ""
 ":class:`builtins.frozenset <frozenset>` now supports subscripting (``[]``). "
 "See :pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`builtins.frozenset <frozenset>` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1965
 msgid ":data:`Tuple` is a special form."
@@ -2076,6 +2088,8 @@ msgid ""
 ":class:`collections.defaultdict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.defaultdict` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1982
 msgid "A generic version of :class:`collections.OrderedDict`."
@@ -2086,6 +2100,8 @@ msgid ""
 ":class:`collections.OrderedDict` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.OrderedDict` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:1992
 msgid "A generic version of :class:`collections.ChainMap`."
@@ -2096,6 +2112,8 @@ msgid ""
 ":class:`collections.ChainMap` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.ChainMap` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2003
 msgid "A generic version of :class:`collections.Counter`."
@@ -2106,6 +2124,8 @@ msgid ""
 ":class:`collections.Counter` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.Counter` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:2014
 msgid "A generic version of :class:`collections.deque`."
@@ -2116,6 +2136,8 @@ msgid ""
 ":class:`collections.deque` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.deque` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:2024
 msgid "Other concrete types"
@@ -2183,6 +2205,8 @@ msgid ""
 "planned, but users are encouraged to use :class:`str` instead of ``Text`` "
 "wherever possible."
 msgstr ""
+"Python 2 已不再受支持，并且大部分类型检查器也都不再支持对 Python 2 代码进行类型检查。 "
+"目前还没有移除该别名的计划，但建议用户在可能的情况下使用 :class:`str` 来代替 ``Text``。"
 
 #: ../../library/typing.rst:2078
 msgid "Abstract Base Classes"
@@ -2201,6 +2225,8 @@ msgid ""
 ":class:`collections.abc.Set` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Set` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 :ref:`types-"
+"genericalias`。"
 
 #: ../../library/typing.rst:2093
 msgid "A generic version of :class:`collections.abc.ByteString`."
@@ -2223,6 +2249,8 @@ msgid ""
 ":class:`collections.abc.ByteString` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.ByteString` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2107
 msgid "A generic version of :class:`collections.abc.Collection`"
@@ -2233,6 +2261,8 @@ msgid ""
 ":class:`collections.abc.Collection` now supports subscripting (``[]``). See "
 ":pep:`585` and :ref:`types-genericalias`."
 msgstr ""
+":class:`collections.abc.Collection` 现在支持下标操作 (``[]``)。 参见 :pep:`585` 和 "
+":ref:`types-genericalias`。"
 
 #: ../../library/typing.rst:2117
 msgid "A generic version of :class:`collections.abc.Container`."

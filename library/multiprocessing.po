@@ -3310,7 +3310,7 @@ msgstr ""
 msgid ""
 "Note that any string beginning with two backslashes is assumed by default to"
 " be an ``'AF_PIPE'`` address rather than an ``'AF_UNIX'`` address."
-msgstr "注意，使用两个反斜线开头的字符串默认被当做 ``'AF_PIPE'`` 地址而不是 ``'AF_UNIX'``。"
+msgstr "注意，使用两个反斜线开头的字符串默认被当做 ``'AF_PIPE'`` 地址而不是 ``'AF_UNIX'`` 地址。"
 
 #: ../../library/multiprocessing.rst:2647
 msgid "Authentication keys"

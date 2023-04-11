@@ -2835,17 +2835,18 @@ msgstr "接受任何其他关键字以便允许可能的未来扩展。"
 msgid ""
 "Type checkers recognize the following optional arguments on field "
 "specifiers:"
-msgstr ""
+msgstr "类型检查器能识别下列字段设定器的可选参数:"
 
 #: ../../library/typing.rst:2603
 msgid ""
 "``init`` indicates whether the field should be included in the synthesized "
 "``__init__`` method. If unspecified, ``init`` defaults to ``True``."
 msgstr ""
+"``init`` 指明字段是否应当被包括在合成的 ``__init__`` 方法中。 如果未指明，则 ``init`` 默认为 ``True``。"
 
 #: ../../library/typing.rst:2606
 msgid "``default`` provides the default value for the field."
-msgstr ""
+msgstr "``default`` 为字段提供默认值。"
 
 #: ../../library/typing.rst:2607
 msgid ""
@@ -2854,10 +2855,12 @@ msgid ""
 "specified, the field is assumed to have no default value and must be "
 "provided a value when the class is instantiated."
 msgstr ""
+"``default_factory`` 提供一个返回字段默认值的运行时回调。 如果 ``default`` 或 ``default_factory`` "
+"均未指定，则会假定字段没有默认值而在类被初始化时必须提供一个值。"
 
 #: ../../library/typing.rst:2612
 msgid "``factory`` is an alias for ``default_factory``."
-msgstr ""
+msgstr "``factory`` 是 ``default_factory`` 的一个别名。"
 
 #: ../../library/typing.rst:2613
 msgid ""

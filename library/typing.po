@@ -2932,24 +2932,28 @@ msgid ""
 "overloads. If called on a function with no overloads, ``get_overloads()`` "
 "returns an empty sequence."
 msgstr ""
+"返回一个 *func* 的由 :func:`@overload <overload>` 装饰的定义组成的序列。 *func* "
+"是用于实现过载函数的函数对象。 例如，在文档中为 :func:`@overload <overload>` 给出 ``process`` "
+"的定义，``get_overloads(process)`` 将为所定义的三个过载函数返回由三个函数对象组成的序列。 "
+"如果在不带过载的函数上调用，``get_overloads()`` 将返回一个空序列。"
 
 #: ../../library/typing.rst:2673
 msgid ""
 "``get_overloads()`` can be used for introspecting an overloaded function at "
 "runtime."
-msgstr ""
+msgstr "``get_overloads()`` 可被用来在运行时内省一个过载函数。"
 
 #: ../../library/typing.rst:2681
 msgid ""
 "Clear all registered overloads in the internal registry. This can be used to"
 " reclaim the memory used by the registry."
-msgstr ""
+msgstr "清空内部注册表中所有的已注册过载函数。 这可被用来收回注册表所使用的内存。"
 
 #: ../../library/typing.rst:2689
 msgid ""
 "A decorator to indicate to type checkers that the decorated method cannot be"
 " overridden, and the decorated class cannot be subclassed. For example::"
-msgstr "告知类型检查器被装饰的方法不能被覆盖，且被装饰的类不能作为子类的装饰器，例如："
+msgstr "告知类型检查器被装饰的方法不能被重载，且被装饰的类不能被子类化的装饰器，例如::"
 
 #: ../../library/typing.rst:2712
 msgid ""
@@ -2960,6 +2964,9 @@ msgid ""
 "attributes, the decorator returns the object unchanged without raising an "
 "exception."
 msgstr ""
+"该装饰器现在将在被装饰的对象上将 ``__final__`` 属性设为 ``True``。 这样，可以在运行时使用 ``if getattr(obj, "
+"\"__final__\", False)`` 这样的检查来确定对象 ``obj`` 是否已被标记为终结。 "
+"如果被装饰的对象不支持设置属性，该装饰器将不加修改地返回对象而不会引发异常。"
 
 #: ../../library/typing.rst:2723
 msgid "Decorator to indicate that annotations are not type hints."
@@ -2971,10 +2978,12 @@ msgid ""
 " recursively to all methods and classes defined in that class (but not to "
 "methods defined in its superclasses or subclasses)."
 msgstr ""
+"这起到类或函数 :term:`decorator` 的作用。 "
+"当用于类时，它将递归地应用到该类中定义的所有方法和类（但不包括在其超类或子类中定义的方法）。"
 
 #: ../../library/typing.rst:2729
 msgid "This mutates the function(s) in place."
-msgstr "本方法可直接修改函数。"
+msgstr "本方法将原地修改函数（或多个函数）。"
 
 #: ../../library/typing.rst:2733
 msgid "Decorator to give another decorator the :func:`no_type_check` effect."

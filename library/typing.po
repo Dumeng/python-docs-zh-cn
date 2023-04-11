@@ -2750,18 +2750,21 @@ msgid ""
 "object performs runtime \"magic\" that transforms a class, giving it "
 ":func:`dataclasses.dataclass`-like behaviors."
 msgstr ""
+":data:`~typing.dataclass_transform` 可被用于装饰类、元类或本身为装饰器的函数。 使用 "
+"``@dataclass_transform()`` 将让静态类型检查器知道被装饰的对象会执行转换类的运行时“魔法”，从而给予它类似 "
+":func:`dataclasses.dataclass` 的行为。"
 
 #: ../../library/typing.rst:2537
 msgid "Example usage with a decorator function::"
-msgstr "在装饰器函数上的使用示例："
+msgstr "在装饰器函数上的使用示例::"
 
 #: ../../library/typing.rst:2551
 msgid "On a base class::"
-msgstr "在基类上："
+msgstr "在基类上::"
 
 #: ../../library/typing.rst:2560
 msgid "On a metaclass::"
-msgstr ""
+msgstr "在元类上::"
 
 #: ../../library/typing.rst:2571
 msgid ""
@@ -2770,6 +2773,9 @@ msgid ""
 "<dataclasses.dataclass>`. For example, type checkers will assume these "
 "classes have ``__init__`` methods that accept ``id`` and ``name``."
 msgstr ""
+"上面定义的 ``CustomerModel`` 类将被类型检查器视为类似于使用 :func:`@dataclasses.dataclass "
+"<dataclasses.dataclass>` 创建的类。 例如，类型检查器将假定这些类具有接受 ``id`` 和 ``name`` 的 "
+"``__init__`` 方法。"
 
 #: ../../library/typing.rst:2577
 msgid ""
@@ -2780,43 +2786,50 @@ msgid ""
 "``match_args``, ``kw_only``, and ``slots``. It must be possible for the "
 "value of these arguments (``True`` or ``False``) to be statically evaluated."
 msgstr ""
+"被装饰的类、元类或函数可以接受以下布尔值参数，类型检查器将假定它们具有与 "
+":func:`@dataclasses.dataclass<dataclasses.dataclass>` 装饰器相同的效果: ``init``, "
+"``eq``, ``order``, ``unsafe_hash``, ``frozen``, ``match_args``, ``kw_only`` "
+"和 ``slots``。 这些参数的值 (``True`` 或 ``False``) 必须可以被静态地求值。"
 
 #: ../../library/typing.rst:2585
 msgid ""
 "The arguments to the ``dataclass_transform`` decorator can be used to "
 "customize the default behaviors of the decorated class, metaclass, or "
 "function:"
-msgstr ""
+msgstr "传给 ``dataclass_transform`` 装饰器的参数可以被用来定制被装饰的类、元类或函数的默认行为:"
 
 #: ../../library/typing.rst:2589
 msgid ""
 "``eq_default`` indicates whether the ``eq`` parameter is assumed to be "
 "``True`` or ``False`` if it is omitted by the caller."
-msgstr ""
+msgstr "``eq_default`` 指明如果调用方省略 ``eq`` 形参则应将其假定为 ``True`` 还是 ``False``。"
 
 #: ../../library/typing.rst:2591
 msgid ""
 "``order_default`` indicates whether the ``order`` parameter is assumed to be"
 " True or False if it is omitted by the caller."
-msgstr ""
+msgstr "``order_default`` 指明如果调用方省略 ``order`` 形参则应将其假定为 True 还是 False。"
 
 #: ../../library/typing.rst:2593
 msgid ""
 "``kw_only_default`` indicates whether the ``kw_only`` parameter is assumed "
 "to be True or False if it is omitted by the caller."
 msgstr ""
+"``kw_only_default`` 指明如果调用方省略indicates whether the ``kw_only`` 形参则应将其假定为 "
+"True 还是 False。"
 
 #: ../../library/typing.rst:2595
 msgid ""
 "``field_specifiers`` specifies a static list of supported classes or "
 "functions that describe fields, similar to ``dataclasses.field()``."
 msgstr ""
+"``field_specifiers`` 指定一个受支持的类或描述字段的函数的静态列表，类似于 ``dataclasses.field()``。"
 
 #: ../../library/typing.rst:2597
 msgid ""
 "Arbitrary other keyword arguments are accepted in order to allow for "
 "possible future extensions."
-msgstr ""
+msgstr "接受任何其他关键字以便允许可能的未来扩展。"
 
 #: ../../library/typing.rst:2600
 msgid ""

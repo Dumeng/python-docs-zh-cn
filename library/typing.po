@@ -2871,19 +2871,22 @@ msgid ""
 "unspecified, the value of ``kw_only_default`` on ``dataclass_transform`` "
 "will be used."
 msgstr ""
+"``kw_only`` 指明字段是否应被标记为仅限关键字的。 如为 ``True``，字段将是仅限关键字的。 如为 "
+"``False``，它将不是仅限关键字的。 如未指明，则将使用以 ``dataclass_transform`` 装饰的对象的 ``kw_only`` "
+"形参的值，或者如果该值也未指明，则将使用 ``dataclass_transform`` 上 ``kw_only_default`` 的值。"
 
 #: ../../library/typing.rst:2619
 msgid ""
 "``alias`` provides an alternative name for the field. This alternative name "
 "is used in the synthesized ``__init__`` method."
-msgstr ""
+msgstr "``alias`` 提供了字段的替代名称。 该替代名称会被用于合成的 ``__init__`` 方法。method."
 
 #: ../../library/typing.rst:2622
 msgid ""
 "At runtime, this decorator records its arguments in the "
 "``__dataclass_transform__`` attribute on the decorated object. It has no "
 "other runtime effect."
-msgstr ""
+msgstr "在运行时，该装饰器会将其参数记录到被装饰对象的 ``__dataclass_transform__`` 属性。 它没有其他的运行时影响。"
 
 #: ../../library/typing.rst:2626
 msgid "See :pep:`681` for more details."
@@ -2911,13 +2914,13 @@ msgstr ""
 #: ../../library/typing.rst:2656
 msgid ""
 "See :pep:`484` for more details and comparison with other typing semantics."
-msgstr ""
+msgstr "请参阅 :pep:`484` 了解更多细节以及与其他类型语义的比较。"
 
 #: ../../library/typing.rst:2658
 msgid ""
 "Overloaded functions can now be introspected at runtime using "
 ":func:`get_overloads`."
-msgstr ""
+msgstr "过载的函数现在可以使用 :func:`get_overloads` 在运行时进行内省。"
 
 #: ../../library/typing.rst:2665
 msgid ""

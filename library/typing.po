@@ -2671,7 +2671,7 @@ msgstr "此函数适用于确保类型检查器对脚本的理解符合开发者
 #: ../../library/typing.rst:2464
 msgid ""
 "Ask a static type checker to confirm that a line of code is unreachable."
-msgstr ""
+msgstr "让静态类型检查器确认一行代码是不可达的。"
 
 #: ../../library/typing.rst:2477
 msgid ""
@@ -2685,10 +2685,15 @@ msgid ""
 " pass type checking, the inferred type of the argument passed in must be the"
 " bottom type, :data:`Never`, and nothing else."
 msgstr ""
+"在这里，标注让类型检查器能推断出最后一个分支永远不会被执行，因为 ``arg`` 为 :class:`int` 或为 "
+":class:`str`，而这两种情况都已被之前的分支所覆盖。 如果类型检查器发现对 ``assert_never()`` "
+"的调用是可达的，它就将报告错误。 例如，如果 ``arg`` 的类型标注改为 ``int | str | float``，则类型检查器将报告错误指出 "
+"``unreachable`` 为 :class:`float` 类型。 对于通过类型检查的 ``assert_never`` "
+"调用，传入参数的推断类型必须为底部类型 :data:`Never`，而不能为其他任何类型。"
 
 #: ../../library/typing.rst:2489
 msgid "At runtime, this throws an exception when called."
-msgstr ""
+msgstr "在运行时，如果调用此函数将抛出一个异常。"
 
 #: ../../library/typing.rst:2492
 msgid ""
@@ -2696,28 +2701,31 @@ msgid ""
 "<https://typing.readthedocs.io/en/latest/source/unreachable.html>`__ has "
 "more information about exhaustiveness checking with static typing."
 msgstr ""
+"`Unreachable Code and Exhaustiveness Checking "
+"<https://typing.readthedocs.io/en/latest/source/unreachable.html>`__ "
+"有更多关于使用静态类型进行穷尽性检查的信息。"
 
 #: ../../library/typing.rst:2500
 msgid "Reveal the inferred static type of an expression."
-msgstr ""
+msgstr "揭示一个表达式的推断静态类型。"
 
 #: ../../library/typing.rst:2502
 msgid ""
 "When a static type checker encounters a call to this function, it emits a "
 "diagnostic with the type of the argument. For example::"
-msgstr ""
+msgstr "当静态类型检查器遇到一个对此函数的调用时，它将发出包含参数类型的诊断信息。 例如::"
 
 #: ../../library/typing.rst:2508
 msgid ""
 "This can be useful when you want to debug how your type checker handles a "
 "particular piece of code."
-msgstr ""
+msgstr "这在你想要调试你的类型检查器如何处理一段特定代码时很有用处。"
 
 #: ../../library/typing.rst:2511
 msgid ""
 "The function returns its argument unchanged, which allows using it within an"
 " expression::"
-msgstr ""
+msgstr "该函数将不加修改地返回其参数，这将允许在表达式中使用它::"
 
 #: ../../library/typing.rst:2516
 msgid ""
@@ -2725,12 +2733,14 @@ msgid ""
 "not imported from ``typing``. Importing the name from ``typing`` allows your"
 " code to run without runtime errors and communicates intent more clearly."
 msgstr ""
+"大多数类型检查器都能在任何地方支持 ``reveal_type()``，即使并未从 ``typing`` 导入该名称。 从 ``typing`` "
+"导入该名称能让你的代码运行时不会出现运行时错误并且更清晰地传递意图。"
 
 #: ../../library/typing.rst:2521
 msgid ""
 "At runtime, this function prints the runtime type of its argument to stderr "
 "and returns it unchanged::"
-msgstr ""
+msgstr "在运行时，该函数会将其参数的运行时类型打印到 stderr 并不加修改地返回它::"
 
 #: ../../library/typing.rst:2531
 msgid ""

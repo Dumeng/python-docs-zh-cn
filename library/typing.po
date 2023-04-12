@@ -3030,6 +3030,9 @@ msgid ""
 "dictionary constructed by merging all the ``__annotations__`` along "
 "``C.__mro__`` in reverse order."
 msgstr ""
+"这往往与 ``obj.__annotations__`` 相同。 此外，编码为字符串字面值的前向引用是通过在 ``globals`` 与 "
+"``locals`` 命名空间中执行求值来处理的。 对于一个类 ``C``，则返回一个由所有 ``__annotations__`` 与 "
+"``C.__mro__`` 逆序合并所构建的字典。"
 
 #: ../../library/typing.rst:2770
 msgid ""
@@ -3058,7 +3061,7 @@ msgid ""
 "Previously, ``Optional[t]`` was added for function and method annotations if"
 " a default value equal to ``None`` was set. Now the annotation is returned "
 "unchanged."
-msgstr ""
+msgstr "在之前，如果设置了等于 ``None`` 的默认值则会为函数和方法标注添加 ``Optional[t]``。 现在标注将被不加修改地返回。"
 
 #: ../../library/typing.rst:2801
 msgid ""
@@ -3135,7 +3138,7 @@ msgstr ""
 
 #: ../../library/typing.rst:2879
 msgid "Deprecation Timeline of Major Features"
-msgstr ""
+msgstr "主要特性的弃用时间线"
 
 #: ../../library/typing.rst:2881
 msgid ""
@@ -3157,11 +3160,11 @@ msgstr "弃用于"
 
 #: ../../library/typing.rst:2886
 msgid "Projected removal"
-msgstr ""
+msgstr "计划移除"
 
 #: ../../library/typing.rst:2886
 msgid "PEP/issue"
-msgstr ""
+msgstr "PEP/问题"
 
 #: ../../library/typing.rst:2888
 msgid "``typing.io`` and ``typing.re`` submodules"

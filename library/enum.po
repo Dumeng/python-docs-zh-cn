@@ -10,18 +10,19 @@
 # Shengjing Zhu <zsj950618@gmail.com>, 2022
 # WH-2099 <wh2099@outlook.com>, 2022
 # jaystone776 <1732865113@qq.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Alpha Du <alphanow@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-04-07 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:05+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -97,19 +98,23 @@ msgstr "命名法"
 
 #: ../../library/enum.rst:55
 msgid "The class :class:`!Color` is an *enumeration* (or *enum*)"
-msgstr ""
+msgstr "类 :class:`!Color` 是一个 *枚举* （或 *enum* ）"
 
 #: ../../library/enum.rst:56
 msgid ""
 "The attributes :attr:`!Color.RED`, :attr:`!Color.GREEN`, etc., are "
 "*enumeration members* (or *members*) and are functionally constants."
 msgstr ""
+"属性 :attr:`!Color.RED` 、 :attr:`!Color.GREEN` 等是 *枚举成员* （或 *members* "
+"）并且在功能上是常量。"
 
 #: ../../library/enum.rst:58
 msgid ""
 "The enum members have *names* and *values* (the name of :attr:`!Color.RED` "
 "is ``RED``, the value of :attr:`!Color.BLUE` is ``3``, etc.)"
 msgstr ""
+"枚举成员有 *names* 和 *values* (:attr:`!Color.RED` 的名称是 "
+"``RED``，:attr:`!Color.BLUE` 的值是 ``3``，等等)"
 
 #: ../../library/enum.rst:65
 msgid "Module Contents"
@@ -117,43 +122,43 @@ msgstr "模块内容"
 
 #: ../../library/enum.rst:67
 msgid ":class:`EnumType`"
-msgstr ""
+msgstr ":class:`EnumType`"
 
 #: ../../library/enum.rst:69
 msgid "The ``type`` for Enum and its subclasses."
-msgstr ""
+msgstr " Enum 及其子类的 ``type`` 。"
 
 #: ../../library/enum.rst:71
 msgid ":class:`Enum`"
-msgstr ""
+msgstr ":class:`Enum`"
 
 #: ../../library/enum.rst:73
 msgid "Base class for creating enumerated constants."
-msgstr ""
+msgstr "用于创建枚举常量的基类。"
 
 #: ../../library/enum.rst:75
 msgid ":class:`IntEnum`"
-msgstr ""
+msgstr ":class:`IntEnum`"
 
 #: ../../library/enum.rst:77
 msgid ""
 "Base class for creating enumerated constants that are also subclasses of "
 ":class:`int`. (`Notes`_)"
-msgstr ""
+msgstr "用于创建枚举常量的基类，这些常量也是 :class:`int` 的子类。 (`Notes`_)"
 
 #: ../../library/enum.rst:80
 msgid ":class:`StrEnum`"
-msgstr ""
+msgstr ":class:`StrEnum`"
 
 #: ../../library/enum.rst:82
 msgid ""
 "Base class for creating enumerated constants that are also subclasses of "
 ":class:`str`. (`Notes`_)"
-msgstr ""
+msgstr "用于创建枚举常量的基类，这些常量也是 :class:`str` 的子类。 (`Notes`_)"
 
 #: ../../library/enum.rst:85
 msgid ":class:`Flag`"
-msgstr ""
+msgstr ":class:`Flag`"
 
 #: ../../library/enum.rst:87
 msgid ""
@@ -163,7 +168,7 @@ msgstr "创建可与位运算符搭配使用，又不会失去 :class:`Flag` 成
 
 #: ../../library/enum.rst:90
 msgid ":class:`IntFlag`"
-msgstr ""
+msgstr ":class:`IntFlag`"
 
 #: ../../library/enum.rst:92
 msgid ""
@@ -171,20 +176,24 @@ msgid ""
 "bitwise operators without losing their :class:`IntFlag` membership. "
 ":class:`IntFlag` members are also subclasses of :class:`int`. (`Notes`_)"
 msgstr ""
+"创建可与位运算符搭配使用，又不失去 :class:`IntFlag` 成员资格的枚举常量的基类。:class:`IntFlag` 成员也是 "
+":class:`int` 的子类。 (`Notes`_)"
 
 #: ../../library/enum.rst:96
 msgid ":class:`ReprEnum`"
-msgstr ""
+msgstr ":class:`ReprEnum`"
 
 #: ../../library/enum.rst:98
 msgid ""
 "Used by :class:`IntEnum`, :class:`StrEnum`, and :class:`IntFlag` to keep the"
 " :class:`str() <str>` of the mixed-in type."
 msgstr ""
+"由 :class:`IntEnum` 、:class:`StrEnum` 和 :class:`IntFlag` 用来保持混合类型的 "
+":class:`str() <str>` 。"
 
 #: ../../library/enum.rst:101
 msgid ":class:`EnumCheck`"
-msgstr ""
+msgstr ":class:`EnumCheck`"
 
 #: ../../library/enum.rst:103
 msgid ""
@@ -192,10 +201,12 @@ msgid ""
 "``UNIQUE``, for use with :func:`verify` to ensure various constraints are "
 "met by a given enumeration."
 msgstr ""
+"具有值 ``CONTINUOUS``、``NAMED_FLAGS`` 和 ``UNIQUE`` 的枚举，用于 :func:`verify` "
+"以确保给定枚举满足各种约束。"
 
 #: ../../library/enum.rst:107
 msgid ":class:`FlagBoundary`"
-msgstr ""
+msgstr ":class:`FlagBoundary`"
 
 #: ../../library/enum.rst:109
 msgid ""
@@ -203,31 +214,33 @@ msgid ""
 "``KEEP`` which allows for more fine-grained control over how invalid values "
 "are dealt with in an enumeration."
 msgstr ""
+"具有值 ``STRICT`` 、 ``CONFORM`` 、 ``EJECT`` 和 ``KEEP`` "
+"的枚举，允许对枚举中无效值的处理方式进行更细粒度的控制。"
 
 #: ../../library/enum.rst:113
 msgid ":class:`auto`"
-msgstr ""
+msgstr ":class:`auto`"
 
 #: ../../library/enum.rst:115
 msgid ""
 "Instances are replaced with an appropriate value for Enum members. "
 ":class:`StrEnum` defaults to the lower-cased version of the member name, "
 "while other Enums default to 1 and increase from there."
-msgstr ""
+msgstr "实例被替换为枚举成员的适当值。 :class:`StrEnum` 默认为成员名称的小写版本，而其他枚举默认为 1 并由此递增。"
 
 #: ../../library/enum.rst:119
 msgid ":func:`~enum.property`"
-msgstr ""
+msgstr ":func:`~enum.property`"
 
 #: ../../library/enum.rst:121
 msgid ""
 "Allows :class:`Enum` members to have attributes without conflicting with "
 "member names."
-msgstr ""
+msgstr "允许 :class:`Enum` 成员拥有不与成员名称冲突的属性。"
 
 #: ../../library/enum.rst:124
 msgid ":func:`unique`"
-msgstr ""
+msgstr ":func:`unique`"
 
 #: ../../library/enum.rst:126
 msgid ""
@@ -236,136 +249,229 @@ msgstr "确保一个名称只绑定一个值的 Enum 类装饰器。"
 
 #: ../../library/enum.rst:128
 msgid ":func:`verify`"
-msgstr ""
+msgstr ":func:`verify`"
 
 #: ../../library/enum.rst:130
 msgid ""
 "Enum class decorator that checks user-selectable constraints on an "
 "enumeration."
-msgstr ""
+msgstr "检查枚举的用户可选择约束的枚举类装饰器。"
 
 #: ../../library/enum.rst:133
 msgid ":func:`member`"
-msgstr ""
+msgstr ":func:`member`"
 
 #: ../../library/enum.rst:135
 msgid "Make ``obj`` a member.  Can be used as a decorator."
-msgstr ""
+msgstr "使 ``obj`` 成为成员。可以用作装饰器。"
 
 #: ../../library/enum.rst:137
 msgid ":func:`nonmember`"
-msgstr ""
+msgstr ":func:`nonmember`"
 
 #: ../../library/enum.rst:139
 msgid "Do not make ``obj`` a member.  Can be used as a decorator."
-msgstr ""
+msgstr "使 ``obj`` 不为成员。可以用作装饰器。"
 
 #: ../../library/enum.rst:141
 msgid ":func:`global_enum`"
-msgstr ""
+msgstr ":func:`global_enum`"
 
 #: ../../library/enum.rst:143
 msgid ""
 "Modify the :class:`str() <str>` and :func:`repr` of an enum to show its "
-"members as belonging to the module instead of its class. Should only be used"
-" if the enum members will be exported to the module global namespace."
+"members as belonging to the module instead of its class, and export the enum"
+" members to the global namespace."
 msgstr ""
+"修改枚举的 :class:`str() <str>` 和 :func:`repr` 以将其成员显示为属于模块而不是其类，并将枚举成员导出到全局命名空间。"
 
-#: ../../library/enum.rst:148
+#: ../../library/enum.rst:147
 msgid ":func:`show_flag_values`"
-msgstr ""
+msgstr ":func:`show_flag_values`"
 
-#: ../../library/enum.rst:150
+#: ../../library/enum.rst:149
 msgid "Return a list of all power-of-two integers contained in a flag."
-msgstr ""
+msgstr "返回标志中包含的所有二次幂整数的列表。"
 
-#: ../../library/enum.rst:153
+#: ../../library/enum.rst:152
 msgid "``Flag``, ``IntFlag``, ``auto``"
 msgstr "``Flag``, ``IntFlag``, ``auto``"
 
-#: ../../library/enum.rst:154
+#: ../../library/enum.rst:153
 msgid ""
 "``StrEnum``, ``EnumCheck``, ``ReprEnum``, ``FlagBoundary``, ``property``, "
 "``member``, ``nonmember``, ``global_enum``, ``show_flag_values``"
 msgstr ""
+"``StrEnum``, ``EnumCheck``, ``ReprEnum``, ``FlagBoundary``, ``property``, "
+"``member``, ``nonmember``, ``global_enum``, ``show_flag_values``"
 
-#: ../../library/enum.rst:159
+#: ../../library/enum.rst:158
 msgid "Data Types"
 msgstr "数据类型"
 
-#: ../../library/enum.rst:164
+#: ../../library/enum.rst:163
 msgid ""
 "*EnumType* is the :term:`metaclass` for *enum* enumerations.  It is possible"
 " to subclass *EnumType* -- see :ref:`Subclassing EnumType <enumtype-"
 "examples>` for details."
 msgstr ""
+"*EnumType* 是 *enum* 枚举的 :term:`metaclass` 。可以对 *EnumType* 进行子类化——有关详细信息，请参阅 "
+":ref:`Subclassing EnumType <enumtype-examples>`。"
 
-#: ../../library/enum.rst:168
+#: ../../library/enum.rst:167
 msgid ""
 "*EnumType* is responsible for setting the correct :meth:`!__repr__`, "
 ":meth:`!__str__`, :meth:`!__format__`, and :meth:`!__reduce__` methods on "
 "the final *enum*, as well as creating the enum members, properly handling "
 "duplicates, providing iteration over the enum class, etc."
 msgstr ""
+"*EnumType* 负责在最终的 *enum* 上设置正确的 :meth:`!__repr__` 、:meth:`!__str__` "
+"、:meth:`!__format__` 和 :meth:`!__reduce__` 方法，如以及创建枚举成员、正确处理重复项、提供枚举类的迭代等。"
 
-#: ../../library/enum.rst:175
+#: ../../library/enum.rst:174
+msgid "This method is called in two different ways:"
+msgstr "此方法以两种不同的方式调用："
+
+#: ../../library/enum.rst:176
+msgid "to look up an existing member:"
+msgstr "查找现有成员："
+
+#: ../../library/enum.rst:0 ../../library/enum.rst:0
+msgid "cls"
+msgstr "cls"
+
+#: ../../library/enum.rst:178 ../../library/enum.rst:184
+msgid "The enum class being called."
+msgstr "被调用的枚举类。"
+
+#: ../../library/enum.rst:0 ../../library/enum.rst:0
+msgid "value"
+msgstr "值"
+
+#: ../../library/enum.rst:179
+msgid "The value to lookup."
+msgstr "要查找的值。"
+
+#: ../../library/enum.rst:181
+msgid ""
+"to use the ``cls`` enum to create a new enum (only if the existing enum does"
+" not have any members):"
+msgstr "使用 ``cls`` 枚举创建新枚举（仅当现有枚举没有任何成员时）："
+
+#: ../../library/enum.rst:185
+msgid "The name of the new Enum to create."
+msgstr "要创建的新枚举的名称。"
+
+#: ../../library/enum.rst:0
+msgid "names"
+msgstr "names"
+
+#: ../../library/enum.rst:186
+msgid "The names/values of the members for the new Enum."
+msgstr "新枚举成员的名称/值。"
+
+#: ../../library/enum.rst:0
+msgid "module"
+msgstr "module -- 模块"
+
+#: ../../library/enum.rst:187
+msgid "The name of the module the new Enum is created in."
+msgstr "在其中创建新枚举的模块的名称。"
+
+#: ../../library/enum.rst:0
+msgid "qualname"
+msgstr "qualname"
+
+#: ../../library/enum.rst:188
+msgid "The actual location in the module where this Enum can be found."
+msgstr "可以找到此枚举的模块中的实际位置。"
+
+#: ../../library/enum.rst:0
+msgid "type"
+msgstr "type -- 类型"
+
+#: ../../library/enum.rst:189
+msgid "A mix-in type for the new Enum."
+msgstr "新枚举的混合类型。"
+
+#: ../../library/enum.rst:0 ../../library/enum.rst:0
+msgid "start"
+msgstr "start"
+
+#: ../../library/enum.rst:190
+msgid "The first integer value for the Enum (used by :class:`auto`)."
+msgstr "枚举的第一个整数值（由 :class:`auto` 使用）。"
+
+#: ../../library/enum.rst:0
+msgid "boundary"
+msgstr "边界"
+
+#: ../../library/enum.rst:191
+msgid ""
+"How to handle out-of-range values from bit operations (:class:`Flag` only)."
+msgstr "如何处理来自位操作的超出范围的值（仅限 :class:`Flag` ）。"
+
+#: ../../library/enum.rst:195
 msgid "Returns ``True`` if member belongs to the ``cls``::"
-msgstr ""
+msgstr "如果成员属于``cls`` 则返回``True`` ::"
 
-#: ../../library/enum.rst:183
+#: ../../library/enum.rst:203
 msgid ""
 "In Python 3.12 it will be possible to check for member values and not just "
 "members; until then, a ``TypeError`` will be raised if a non-Enum-member is "
 "used in a containment check."
 msgstr ""
+"在 Python 3.12 中，可以检查成员值而不仅仅是成员；在此之前，如果在包含检查中使用非枚举成员，则会引发 ``TypeError``。"
 
-#: ../../library/enum.rst:189
+#: ../../library/enum.rst:209
 msgid ""
 "Returns ``['__class__', '__doc__', '__members__', '__module__']`` and the "
 "names of the members in *cls*::"
 msgstr ""
+"返回 ``['__class__', '__doc__', '__members__', '__module__']`` 和 *cls* 中的成员名称 "
+"::"
 
-#: ../../library/enum.rst:197
+#: ../../library/enum.rst:217
 msgid ""
 "Returns the Enum member in *cls* matching *name*, or raises an "
 ":exc:`AttributeError`::"
 msgstr ""
 
-#: ../../library/enum.rst:204
+#: ../../library/enum.rst:224
 msgid ""
 "Returns the Enum member in *cls* matching *name*, or raises a "
 ":exc:`KeyError`::"
 msgstr ""
 
-#: ../../library/enum.rst:211
+#: ../../library/enum.rst:231
 msgid "Returns each member in *cls* in definition order::"
 msgstr ""
 
-#: ../../library/enum.rst:218
+#: ../../library/enum.rst:238
 msgid "Returns the number of member in *cls*::"
 msgstr ""
 
-#: ../../library/enum.rst:225
+#: ../../library/enum.rst:245
 msgid "Returns each member in *cls* in reverse definition order::"
 msgstr ""
 
-#: ../../library/enum.rst:233
+#: ../../library/enum.rst:253
 msgid "*Enum* is the base class for all *enum* enumerations."
 msgstr ""
 
-#: ../../library/enum.rst:237
+#: ../../library/enum.rst:257
 msgid "The name used to define the ``Enum`` member::"
 msgstr ""
 
-#: ../../library/enum.rst:244
+#: ../../library/enum.rst:264
 msgid "The value given to the ``Enum`` member::"
 msgstr ""
 
-#: ../../library/enum.rst:249
+#: ../../library/enum.rst:269
 msgid "Enum member values"
 msgstr "Enum 成员值"
 
-#: ../../library/enum.rst:251
+#: ../../library/enum.rst:271
 msgid ""
 "Member values can be anything: :class:`int`, :class:`str`, etc.  If the "
 "exact value is unimportant you may use :class:`auto` instances and an "
@@ -373,98 +479,17 @@ msgid ""
 "details."
 msgstr ""
 
-#: ../../library/enum.rst:258
+#: ../../library/enum.rst:278
 msgid ""
 "``_ignore_`` is only used during creation and is removed from the "
 "enumeration once creation is complete."
 msgstr ""
 
-#: ../../library/enum.rst:261
+#: ../../library/enum.rst:281
 msgid ""
 "``_ignore_`` is a list of names that will not become members, and whose "
 "names will also be removed from the completed enumeration.  See "
 ":ref:`TimePeriod <enum-time-period>` for an example."
-msgstr ""
-
-#: ../../library/enum.rst:267
-msgid "This method is called in two different ways:"
-msgstr ""
-
-#: ../../library/enum.rst:269
-msgid "to look up an existing member:"
-msgstr ""
-
-#: ../../library/enum.rst:0 ../../library/enum.rst:0
-msgid "cls"
-msgstr ""
-
-#: ../../library/enum.rst:271 ../../library/enum.rst:276
-msgid "The enum class being called."
-msgstr ""
-
-#: ../../library/enum.rst:0 ../../library/enum.rst:0
-msgid "value"
-msgstr "值"
-
-#: ../../library/enum.rst:272
-msgid "The value to lookup."
-msgstr ""
-
-#: ../../library/enum.rst:274
-msgid "to use the ``cls`` enum to create a new enum:"
-msgstr ""
-
-#: ../../library/enum.rst:277
-msgid "The name of the new Enum to create."
-msgstr ""
-
-#: ../../library/enum.rst:0
-msgid "names"
-msgstr "names"
-
-#: ../../library/enum.rst:278
-msgid "The names/values of the members for the new Enum."
-msgstr ""
-
-#: ../../library/enum.rst:0
-msgid "module"
-msgstr "module -- 模块"
-
-#: ../../library/enum.rst:279
-msgid "The name of the module the new Enum is created in."
-msgstr ""
-
-#: ../../library/enum.rst:0
-msgid "qualname"
-msgstr "qualname"
-
-#: ../../library/enum.rst:280
-msgid "The actual location in the module where this Enum can be found."
-msgstr ""
-
-#: ../../library/enum.rst:0
-msgid "type"
-msgstr "type -- 类型"
-
-#: ../../library/enum.rst:281
-msgid "A mix-in type for the new Enum."
-msgstr ""
-
-#: ../../library/enum.rst:0 ../../library/enum.rst:0
-msgid "start"
-msgstr "start"
-
-#: ../../library/enum.rst:282
-msgid "The first integer value for the Enum (used by :class:`auto`)."
-msgstr ""
-
-#: ../../library/enum.rst:0
-msgid "boundary"
-msgstr ""
-
-#: ../../library/enum.rst:283
-msgid ""
-"How to handle out-of-range values from bit operations (:class:`Flag` only)."
 msgstr ""
 
 #: ../../library/enum.rst:287
@@ -770,52 +795,51 @@ msgstr ""
 #: ../../library/enum.rst:724
 msgid ""
 "Out-of-range values lose their *Flag* membership and revert to :class:`int`."
-" This is the default for :class:`IntFlag`::"
 msgstr ""
 
-#: ../../library/enum.rst:737
+#: ../../library/enum.rst:736
 msgid ""
-"Out-of-range values are kept, and the *Flag* membership is kept. This is "
-"used for some stdlib flags::"
+"Out-of-range values are kept, and the *Flag* membership is kept. This is the"
+" default for :class:`IntFlag`::"
 msgstr ""
 
-#: ../../library/enum.rst:753
+#: ../../library/enum.rst:752
 msgid "Supported ``__dunder__`` names"
 msgstr "支持的 ``__dunder__`` 名称"
 
-#: ../../library/enum.rst:755
+#: ../../library/enum.rst:754
 msgid ""
 ":attr:`~EnumType.__members__` is a read-only ordered mapping of "
 "``member_name``:``member`` items.  It is only available on the class."
 msgstr ""
 
-#: ../../library/enum.rst:758
+#: ../../library/enum.rst:757
 msgid ""
 ":meth:`~object.__new__`, if specified, must create and return the enum "
 "members; it is also a very good idea to set the member's :attr:`!_value_` "
 "appropriately.  Once all the members are created it is no longer used."
 msgstr ""
 
-#: ../../library/enum.rst:764
+#: ../../library/enum.rst:763
 msgid "Supported ``_sunder_`` names"
 msgstr "支持的 ``_sunder_`` 名称"
 
-#: ../../library/enum.rst:766
+#: ../../library/enum.rst:765
 msgid "``_name_`` -- name of the member"
 msgstr "``_name_`` -- 成员的名称"
 
-#: ../../library/enum.rst:767
+#: ../../library/enum.rst:766
 msgid ""
 "``_value_`` -- value of the member; can be set / modified in ``__new__``"
 msgstr "``_value_`` -- 成员的值；可以在 ``__new__`` 中设置 / 修改"
 
-#: ../../library/enum.rst:769
+#: ../../library/enum.rst:768
 msgid ""
 "``_missing_`` -- a lookup function used when a value is not found; may be "
 "overridden"
 msgstr "``_missing_`` -- 当未发现某个值时所使用的查找函数；可被重载"
 
-#: ../../library/enum.rst:771
+#: ../../library/enum.rst:770
 msgid ""
 "``_ignore_`` -- a list of names, either as a :class:`list` or a "
 ":class:`str`, that will not be transformed into members, and will be removed"
@@ -823,43 +847,43 @@ msgid ""
 msgstr ""
 "``_ignore_`` -- 一个名称列表，可以为 :class:`list` 或 :class:`str`，它不会被转化为成员，并将从最终类中被移除"
 
-#: ../../library/enum.rst:774
+#: ../../library/enum.rst:773
 msgid ""
 "``_order_`` -- used in Python 2/3 code to ensure member order is consistent "
 "(class attribute, removed during class creation)"
 msgstr "``_order_`` -- 用于 Python 2/3 代码以确保成员顺序一致（类属性，在类创建期间会被移除）"
 
-#: ../../library/enum.rst:776
+#: ../../library/enum.rst:775
 msgid ""
 "``_generate_next_value_`` -- used to get an appropriate value for an enum "
 "member; may be overridden"
 msgstr ""
 
-#: ../../library/enum.rst:781
+#: ../../library/enum.rst:780
 msgid ""
 "For standard :class:`Enum` classes the next value chosen is the last value "
 "seen incremented by one."
 msgstr "对于标准的 :class:`Enum` 类，选择的下一个值是最后所见值加 1。"
 
-#: ../../library/enum.rst:784
+#: ../../library/enum.rst:783
 msgid ""
 "For :class:`Flag` classes the next value chosen will be the next highest "
 "power-of-two, regardless of the last value seen."
 msgstr "对于 :class:`Flag` 类，下一个选择的值将是下一个最高的 2 次幂数，与最后所见值无关。"
 
-#: ../../library/enum.rst:787
+#: ../../library/enum.rst:786
 msgid "``_missing_``, ``_order_``, ``_generate_next_value_``"
 msgstr "``_missing_``, ``_order_``, ``_generate_next_value_``"
 
-#: ../../library/enum.rst:788
+#: ../../library/enum.rst:787
 msgid "``_ignore_``"
 msgstr "``_ignore_``"
 
-#: ../../library/enum.rst:793
+#: ../../library/enum.rst:792
 msgid "Utilities and Decorators"
 msgstr ""
 
-#: ../../library/enum.rst:797
+#: ../../library/enum.rst:796
 msgid ""
 "*auto* can be used in place of a value.  If used, the *Enum* machinery will "
 "call an *Enum*'s :meth:`~Enum._generate_next_value_` to get an appropriate "
@@ -870,58 +894,58 @@ msgid ""
 "manually specified values."
 msgstr ""
 
-#: ../../library/enum.rst:805
+#: ../../library/enum.rst:804
 msgid ""
 "*auto* instances are only resolved when at the top level of an assignment:"
 msgstr ""
 
-#: ../../library/enum.rst:807
+#: ../../library/enum.rst:806
 msgid "``FIRST = auto()`` will work (auto() is replaced with ``1``);"
 msgstr ""
 
-#: ../../library/enum.rst:808
+#: ../../library/enum.rst:807
 msgid ""
 "``SECOND = auto(), -2`` will work (auto is replaced with ``2``, so ``2, -2``"
 " is"
 msgstr ""
 
-#: ../../library/enum.rst:809
+#: ../../library/enum.rst:808
 msgid "used to create the ``SECOND`` enum member;"
 msgstr ""
 
-#: ../../library/enum.rst:810
+#: ../../library/enum.rst:809
 msgid ""
 "``THREE = [auto(), -3]`` will *not* work (``<auto instance>, -3`` is used to"
 " create the ``THREE`` enum member)"
 msgstr ""
 
-#: ../../library/enum.rst:815
+#: ../../library/enum.rst:814
 msgid ""
 "In prior versions, ``auto()`` had to be the only thing on the assignment "
 "line to work properly."
 msgstr ""
 
-#: ../../library/enum.rst:818
+#: ../../library/enum.rst:817
 msgid ""
 "``_generate_next_value_`` can be overridden to customize the values used by "
 "*auto*."
 msgstr ""
 
-#: ../../library/enum.rst:821
+#: ../../library/enum.rst:820
 msgid ""
 "in 3.13 the default ``_generate_next_value_`` will always return the highest"
 " member value incremented by 1, and will fail if any member is an "
 "incompatible type."
 msgstr ""
 
-#: ../../library/enum.rst:827
+#: ../../library/enum.rst:826
 msgid ""
 "A decorator similar to the built-in *property*, but specifically for "
 "enumerations.  It allows member attributes to have the same names as members"
 " themselves."
 msgstr ""
 
-#: ../../library/enum.rst:831
+#: ../../library/enum.rst:830
 msgid ""
 "the *property* and the member must be defined in separate classes; for "
 "example, the *value* and *name* attributes are defined in the *Enum* class, "
@@ -929,29 +953,29 @@ msgid ""
 "``name``."
 msgstr ""
 
-#: ../../library/enum.rst:840
+#: ../../library/enum.rst:839
 msgid ""
 "A :keyword:`class` decorator specifically for enumerations.  It searches an "
 "enumeration's :attr:`~EnumType.__members__`, gathering any aliases it finds;"
 " if any are found :exc:`ValueError` is raised with the details::"
 msgstr ""
 
-#: ../../library/enum.rst:858
+#: ../../library/enum.rst:857
 msgid ""
 "A :keyword:`class` decorator specifically for enumerations.  Members from "
 ":class:`EnumCheck` are used to specify which constraints should be checked "
 "on the decorated enumeration."
 msgstr ""
 
-#: ../../library/enum.rst:866
+#: ../../library/enum.rst:865
 msgid "A decorator for use in enums: its target will become a member."
 msgstr ""
 
-#: ../../library/enum.rst:872
+#: ../../library/enum.rst:871
 msgid "A decorator for use in enums: its target will not become a member."
 msgstr ""
 
-#: ../../library/enum.rst:878
+#: ../../library/enum.rst:877
 msgid ""
 "A decorator to change the :class:`str() <str>` and :func:`repr` of an enum "
 "to show its members as belonging to the module instead of its class. Should "
@@ -959,41 +983,41 @@ msgid ""
 "namespace (see :class:`re.RegexFlag` for an example)."
 msgstr ""
 
-#: ../../library/enum.rst:888
+#: ../../library/enum.rst:887
 msgid ""
 "Return a list of all power-of-two integers contained in a flag *value*."
 msgstr ""
 
-#: ../../library/enum.rst:895
+#: ../../library/enum.rst:894
 msgid "Notes"
 msgstr "备注"
 
-#: ../../library/enum.rst:897
+#: ../../library/enum.rst:896
 msgid ":class:`IntEnum`, :class:`StrEnum`, and :class:`IntFlag`"
 msgstr ""
 
-#: ../../library/enum.rst:899
+#: ../../library/enum.rst:898
 msgid ""
 "These three enum types are designed to be drop-in replacements for existing "
 "integer- and string-based values; as such, they have extra limitations:"
 msgstr ""
 
-#: ../../library/enum.rst:902
+#: ../../library/enum.rst:901
 msgid "``__str__`` uses the value and not the name of the enum member"
 msgstr ""
 
-#: ../../library/enum.rst:904
+#: ../../library/enum.rst:903
 msgid ""
 "``__format__``, because it uses ``__str__``, will also use the value of the "
 "enum member instead of its name"
 msgstr ""
 
-#: ../../library/enum.rst:907
+#: ../../library/enum.rst:906
 msgid ""
 "If you do not need/want those limitations, you can either create your own "
 "base class by mixing in the ``int`` or ``str`` type yourself::"
 msgstr ""
 
-#: ../../library/enum.rst:914
+#: ../../library/enum.rst:913
 msgid "or you can reassign the appropriate :meth:`str`, etc., in your enum::"
 msgstr ""

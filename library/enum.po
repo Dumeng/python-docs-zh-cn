@@ -435,25 +435,25 @@ msgstr ""
 msgid ""
 "Returns the Enum member in *cls* matching *name*, or raises an "
 ":exc:`AttributeError`::"
-msgstr ""
+msgstr "返回 *cls* 中匹配 *name* 的 Enum 成员，或者引发 :exc:`AttributeError`::"
 
 #: ../../library/enum.rst:224
 msgid ""
 "Returns the Enum member in *cls* matching *name*, or raises a "
 ":exc:`KeyError`::"
-msgstr ""
+msgstr "返回 *cls* 中匹配 *name* 的 Enum 成员，或者引发 :exc:`KeyError`::"
 
 #: ../../library/enum.rst:231
 msgid "Returns each member in *cls* in definition order::"
-msgstr ""
+msgstr "按定义顺序返回 *cls* 中的每个成员::"
 
 #: ../../library/enum.rst:238
 msgid "Returns the number of member in *cls*::"
-msgstr ""
+msgstr "返回 *cls* 中成员的数量::"
 
 #: ../../library/enum.rst:245
 msgid "Returns each member in *cls* in reverse definition order::"
-msgstr ""
+msgstr "按定义的逆序返回 *cls* 中的每个成员::"
 
 #: ../../library/enum.rst:253
 msgid "*Enum* is the base class for all *enum* enumerations."

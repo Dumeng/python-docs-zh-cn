@@ -457,15 +457,15 @@ msgstr "按定义的逆序返回 *cls* 中的每个成员::"
 
 #: ../../library/enum.rst:253
 msgid "*Enum* is the base class for all *enum* enumerations."
-msgstr ""
+msgstr "*Enum* 是所有 *enum* 枚举的基类。"
 
 #: ../../library/enum.rst:257
 msgid "The name used to define the ``Enum`` member::"
-msgstr ""
+msgstr "用于定义 ``Enum`` 成员的名称::"
 
 #: ../../library/enum.rst:264
 msgid "The value given to the ``Enum`` member::"
-msgstr ""
+msgstr "赋给 ``Enum`` 成员的值::"
 
 #: ../../library/enum.rst:269
 msgid "Enum member values"
@@ -478,12 +478,14 @@ msgid ""
 "appropriate value will be chosen for you.  See :class:`auto` for the "
 "details."
 msgstr ""
+"成员值可以为任意类型: :class:`int`, :class:`str` 等等。 如果具体的值不重要则你可以使用 :class:`auto` "
+"实例这将为你选择一个适当的值。 详情参见 :class:`auto`。"
 
 #: ../../library/enum.rst:278
 msgid ""
 "``_ignore_`` is only used during creation and is removed from the "
 "enumeration once creation is complete."
-msgstr ""
+msgstr "``_ignore_`` 仅在创建期间使用并会在创建完成后立即从枚举中移除。"
 
 #: ../../library/enum.rst:281
 msgid ""

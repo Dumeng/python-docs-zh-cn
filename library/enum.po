@@ -493,12 +493,16 @@ msgid ""
 "names will also be removed from the completed enumeration.  See "
 ":ref:`TimePeriod <enum-time-period>` for an example."
 msgstr ""
+"``_ignore_`` 是由不会被作为成员的名称组成的列包，并且这些名称还将从完成的枚举中移除。 请参阅 :ref:`TimePeriod "
+"<enum-time-period>` 获取示例。"
 
 #: ../../library/enum.rst:287
 msgid ""
 "Returns ``['__class__', '__doc__', '__module__', 'name', 'value']`` and any "
 "public methods defined on *self.__class__*::"
 msgstr ""
+"返回 ``['__class__', '__doc__', '__module__', 'name', 'value']`` 以及在 "
+"*self.__class__* 上定义的任何公有方法::"
 
 #: ../../library/enum.rst:0
 msgid "name"
@@ -506,15 +510,15 @@ msgstr "name"
 
 #: ../../library/enum.rst:307
 msgid "The name of the member being defined (e.g. 'RED')."
-msgstr ""
+msgstr "定义的成员名称（例如 'RED'）。"
 
 #: ../../library/enum.rst:308
 msgid "The start value for the Enum; the default is 1."
-msgstr ""
+msgstr "Enum 的起始值；默认为 1。"
 
 #: ../../library/enum.rst:0
 msgid "count"
-msgstr ""
+msgstr "count"
 
 #: ../../library/enum.rst:309
 msgid "The number of members currently defined, not including this one."

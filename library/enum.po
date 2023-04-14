@@ -655,47 +655,47 @@ msgstr "返回所有包含的非别名成员::"
 
 #: ../../library/enum.rst:493
 msgid "Aliases are no longer returned during iteration."
-msgstr ""
+msgstr "在迭代期间别名将不会再被返回。"
 
 #: ../../library/enum.rst:497
 msgid "Returns number of members in flag::"
-msgstr ""
+msgstr "返回旗标中成员的数量::"
 
 #: ../../library/enum.rst:506
 msgid "Returns *True* if any members in flag, *False* otherwise::"
-msgstr ""
+msgstr "如果旗标中有成员则返回 *True*，否则返回 *False*::"
 
 #: ../../library/enum.rst:518
 msgid "Returns current flag binary or'ed with other::"
-msgstr ""
+msgstr "返回当前旗标与另一个旗标执行二进制或运算的结果::"
 
 #: ../../library/enum.rst:525
 msgid "Returns current flag binary and'ed with other::"
-msgstr ""
+msgstr "返回当前旗标与另一个旗标执行二进制与运算的结果::"
 
 #: ../../library/enum.rst:534
 msgid "Returns current flag binary xor'ed with other::"
-msgstr ""
+msgstr "返回当前旗标与另一个旗标执行二进制异或运算的结果::"
 
 #: ../../library/enum.rst:543
 msgid "Returns all the flags in *type(self)* that are not in self::"
-msgstr ""
+msgstr "返回 *type(self)* 中所有不在 self 中的旗标::"
 
 #: ../../library/enum.rst:554
 msgid ""
 "Function used to format any remaining unnamed numeric values.  Default is "
 "the value's repr; common choices are :func:`hex` and :func:`oct`."
-msgstr ""
+msgstr "用于格式化任何其他未命名数字值的函数。 默认为数字值的 repr；常见的选择有 :func:`hex` 和 :func:`oct`。"
 
 #: ../../library/enum.rst:559
 msgid ""
 "Using :class:`auto` with :class:`Flag` results in integers that are powers "
 "of two, starting with ``1``."
-msgstr ""
+msgstr "将 :class:`auto` 用于 :class:`Flag` 将得到二的整数次方，从 ``1`` 开始。"
 
 #: ../../library/enum.rst:562
 msgid "The *repr()* of zero-valued flags has changed.  It is now::"
-msgstr ""
+msgstr "零值旗标的 *repr()* 已被修改。 现在将是::"
 
 #: ../../library/enum.rst:570
 msgid ""

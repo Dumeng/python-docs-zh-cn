@@ -2971,19 +2971,19 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:2102
 msgid ":func:`types.resolve_bases`"
-msgstr ""
+msgstr ":func:`types.resolve_bases`"
 
 #: ../../reference/datamodel.rst:2102
 msgid "Dynamically resolve bases that are not instances of :class:`type`."
-msgstr ""
+msgstr "动态地解析不属于 :class:`type` 实例的基类。"
 
 #: ../../reference/datamodel.rst:2104
 msgid ":pep:`560`"
-msgstr ""
+msgstr ":pep:`560`"
 
 #: ../../reference/datamodel.rst:2105
 msgid "Core support for typing module and generic types."
-msgstr ""
+msgstr "对 typing 模块和泛用类型的核心支持。"
 
 #: ../../reference/datamodel.rst:2109
 msgid "Determining the appropriate metaclass"

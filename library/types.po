@@ -139,6 +139,9 @@ msgid ""
 "or it doesn't have an :meth:`!__mro_entries__` method, then it is included "
 "in the return tuple unchanged."
 msgstr ""
+"此函数会在 *bases* 中查找不是 :class:`type` 的实例的项，并返回一个元组，其中每个具有 "
+":meth:`~object.__mro_entries__` 方法的此种对象将被替换为调用该方法解包后的结果。 如果一个 *bases* 项是 "
+":class:`type` 的实例，或它不具有 :meth:`!__mro_entries__` 方法 ，则它将不加改变地被包括在返回的元组中。"
 
 #: ../../library/types.rst:87
 msgid ":pep:`560` - Core support for typing module and generic types"

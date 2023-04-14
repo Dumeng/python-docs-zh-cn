@@ -788,7 +788,7 @@ msgstr "当混合了另一数据类型时，:attr:`value` 属性会 *不同于* 
 
 #: ../../howto/enum.rst:840
 msgid "A ``data type`` is a mixin that defines :meth:`__new__`."
-msgstr ""
+msgstr "``数据类型`` 就是定义了 :meth:`__new__` 的混入类型。"
 
 #: ../../howto/enum.rst:841
 msgid ""
@@ -814,6 +814,8 @@ msgid ""
 ":meth:`__str__` method has been reset to their data types' :meth:`__str__` "
 "method."
 msgstr ""
+"因为 :class:`IntEnum`, :class:`IntFlag` 和 :class:`StrEnum` 被设计为现有常量的原样替代，它们的 "
+":meth:`__str__` 方法已被重围为其数据类型的 :meth:`__str__` 方法。"
 
 #: ../../howto/enum.rst:855
 msgid "When to use :meth:`__new__` vs. :meth:`__init__`"

@@ -582,12 +582,14 @@ msgid ""
 "performed with an *IntEnum* member, the resulting value loses its "
 "enumeration status."
 msgstr ""
+"*IntEnum* 与 *Enum* 是一样的，但其成员还属于整数并可被用在任何可以使用整数的地方。 如果对一个 *IntEnum* "
+"成员执行整数运算，结果值将失去其枚举状态。"
 
 #: ../../library/enum.rst:422
 msgid ""
 "Using :class:`auto` with :class:`IntEnum` results in integers of increasing "
 "value, starting with ``1``."
-msgstr ""
+msgstr "将 :class:`auto` 用于 :class:`IntEnum` 将得到递增的整数值，从 ``1`` 开始。"
 
 #: ../../library/enum.rst:425
 msgid ""
@@ -595,6 +597,8 @@ msgid ""
 "*replacement of existing constants* use-case. :meth:`~object.__format__` was"
 " already :meth:`!int.__format__` for that same reason."
 msgstr ""
+":meth:`~object.__str__` 现在是 :meth:`!int.__str__` 以更好地支持 *现有常量的替换* 应用场景。 "
+"出于同样的原因 :meth:`~object.__format__` 也已经是 :meth:`!int.__format__`。"
 
 #: ../../library/enum.rst:432
 msgid ""
@@ -603,6 +607,8 @@ msgid ""
 "any string operation performed on or with a *StrEnum* member is not part of "
 "the enumeration."
 msgstr ""
+"*StrEnum* 与 *Enum* 是一样的，但其成员还属于字符串并可被用在任何可以使用字符串的地方。 对一个 *StrEnum* "
+"成员执行字符串操作的结果将不是该枚举的一部分。"
 
 #: ../../library/enum.rst:438
 msgid ""
@@ -611,12 +617,15 @@ msgid ""
 "``isinstance(unknown, str)``), and in those locations you will need to use "
 "``str(StrEnum.member)``."
 msgstr ""
+"在标准库中有些地方会检查是否是真正的 :class:`str` 而不是 :class:`str` 的子类 (例如使用 ``type(unknown) "
+"== str`` 而不是 ``isinstance(unknown, str)``)，在这些地方你将需要使用 "
+"``str(StrEnum.member)``。"
 
 #: ../../library/enum.rst:445
 msgid ""
 "Using :class:`auto` with :class:`StrEnum` results in the lower-cased member "
 "name as the value."
-msgstr ""
+msgstr "将 :class:`auto` 用于 :class:`StrEnum` 将得到小写形式的成员名称字符串值。"
 
 #: ../../library/enum.rst:450
 msgid ""
@@ -624,6 +633,8 @@ msgid ""
 "*replacement of existing constants* use-case.  :meth:`~object.__format__` is"
 " likewise :meth:`!str.__format__` for that same reason."
 msgstr ""
+":meth:`~object.__str__` 是 :meth:`!str.__str__` 以更好地支持 *现有常量的替换* 应用场景。 "
+"出于同样的原因 :meth:`~object.__format__` 也是 :meth:`!str.__format__`。"
 
 #: ../../library/enum.rst:458
 msgid ""
@@ -631,14 +642,16 @@ msgid ""
 "``^`` (*XOR*), and ``~`` (*INVERT*); the results of those operators are "
 "members of the enumeration."
 msgstr ""
+"*Flag* 成员支持位运算符 ``&`` (*AND*), ``|`` (*OR*), ``^`` (*XOR*) 和 ``~`` "
+"(*INVERT*)；这些运算的结果将是该枚举的成员。"
 
 #: ../../library/enum.rst:464
 msgid "Returns *True* if value is in self::"
-msgstr ""
+msgstr "如果 value 是 self 之中则返回 *True*::"
 
 #: ../../library/enum.rst:484
 msgid "Returns all contained non-alias members::"
-msgstr ""
+msgstr "返回所有包含的非别名成员::"
 
 #: ../../library/enum.rst:493
 msgid "Aliases are no longer returned during iteration."

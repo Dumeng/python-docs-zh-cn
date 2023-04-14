@@ -6,7 +6,6 @@
 # Translators:
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # dannyvi <dannyvis@icloud.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
 # Shengjing Zhu <zsj950618@gmail.com>, 2022
 # WH-2099 <wh2099@outlook.com>, 2022
 # jaystone776 <1732865113@qq.com>, 2022
@@ -346,7 +345,7 @@ msgstr "被调用的枚举类。"
 
 #: ../../library/enum.rst:0 ../../library/enum.rst:0
 msgid "value"
-msgstr "值"
+msgstr "value"
 
 #: ../../library/enum.rst:179
 msgid "The value to lookup."
@@ -522,57 +521,59 @@ msgstr "count"
 
 #: ../../library/enum.rst:309
 msgid "The number of members currently defined, not including this one."
-msgstr ""
+msgstr "当前定义的成员数量，不包括这一个。"
 
 #: ../../library/enum.rst:0
 msgid "last_values"
-msgstr ""
+msgstr "last_values"
 
 #: ../../library/enum.rst:310
 msgid "A list of the previous values."
-msgstr ""
+msgstr "由前面的值组成的列表。"
 
 #: ../../library/enum.rst:312
 msgid ""
 "A *staticmethod* that is used to determine the next value returned by "
 ":class:`auto`::"
-msgstr ""
+msgstr "一个用来确定由 :class:`auto` 所返回的下一个值的 *静态方法*::"
 
 #: ../../library/enum.rst:327
 msgid ""
 "A *classmethod* that is used to further configure subsequent subclasses. By "
 "default, does nothing."
-msgstr ""
+msgstr "一个用来进一步配置后续子类的 *类方法*。 在默认情况下，将不做任何事。"
 
 #: ../../library/enum.rst:332
 msgid ""
 "A *classmethod* for looking up values not found in *cls*.  By default it "
 "does nothing, but can be overridden to implement custom search behavior::"
-msgstr ""
+msgstr "一个用来查找不存在于 *cls* 中的值的 *类方法*。 在默认情况下它将不做任何事，但可以被重载以实现自定义的搜索行为::"
 
 #: ../../library/enum.rst:353
 msgid ""
 "Returns the string used for *repr()* calls.  By default, returns the *Enum* "
 "name, member name, and value, but can be overridden::"
-msgstr ""
+msgstr "返回用于 *repr()* 调用的字符串。 在默认情况下，将返回 *Enum* 名称、成员名称和值，但也可以被重载::"
 
 #: ../../library/enum.rst:368
 msgid ""
 "Returns the string used for *str()* calls.  By default, returns the *Enum* "
 "name and member name, but can be overridden::"
-msgstr ""
+msgstr "返回用于 *str()* 调用的字符串。 在默认情况下，返回 *Enum* 名称和成员名称，但也可以被重载::"
 
 #: ../../library/enum.rst:382
 msgid ""
 "Returns the string used for *format()* and *f-string* calls.  By default, "
 "returns :meth:`__str__` return value, but can be overridden::"
 msgstr ""
+"返回用于 *format()* 和 *f-string* 调用的字符串。 在默认情况下，将返回 :meth:`__str__` "
+"的返回值，但也可以被重载::"
 
 #: ../../library/enum.rst:396
 msgid ""
 "Using :class:`auto` with :class:`Enum` results in integers of increasing "
 "value, starting with ``1``."
-msgstr ""
+msgstr "将 :class:`auto` 用于 :class:`Enum` 将得到递增的整数值，从 ``1`` 开始。"
 
 #: ../../library/enum.rst:402
 msgid ""

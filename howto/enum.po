@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:12+0000\n"
+"POT-Creation-Date: 2023-04-14 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -787,6 +787,10 @@ msgid ""
 msgstr "当混合了另一数据类型时，:attr:`value` 属性会 *不同于* 枚举成员自身，但它们仍保持等价且比较结果也相等。"
 
 #: ../../howto/enum.rst:840
+msgid "A ``data type`` is a mixin that defines :meth:`__new__`."
+msgstr ""
+
+#: ../../howto/enum.rst:841
 msgid ""
 "%-style formatting:  ``%s`` and ``%r`` call the :class:`Enum` class's "
 ":meth:`__str__` and :meth:`__repr__` respectively; other codes (such as "
@@ -795,7 +799,7 @@ msgstr ""
 "% 形式的格式化: ``%s`` 和 ``%r`` 会分别调用 :class:`Enum` 类的 :meth:`__str__` 和 "
 ":meth:`__repr__`；其他代码 (如 ``%i`` 或 ``%h`` 用于 IntEnum) 会将枚举成员视为对应的混入类型。"
 
-#: ../../howto/enum.rst:843
+#: ../../howto/enum.rst:844
 msgid ""
 ":ref:`Formatted string literals <f-strings>`, :meth:`str.format`, and "
 ":func:`format` will use the enum's :meth:`__str__` method."
@@ -803,21 +807,19 @@ msgstr ""
 ":ref:`格式化字符串字面值 <f-strings>`, :meth:`str.format` 和 :func:`format` 将使用枚举的 "
 ":meth:`__str__` 方法。"
 
-#: ../../howto/enum.rst:848
+#: ../../howto/enum.rst:849
 msgid ""
 "Because :class:`IntEnum`, :class:`IntFlag`, and :class:`StrEnum` are "
 "designed to be drop-in replacements for existing constants, their "
-":meth:`__str__` method has been reset to their data types :meth:`__str__` "
+":meth:`__str__` method has been reset to their data types' :meth:`__str__` "
 "method."
 msgstr ""
-"因为 :class:`IntEnum`, :class:`IntFlag` 和 :class:`StrEnum` 被设计为现有常量的原样替代，它们的 "
-":meth:`__str__` 方法已被重置为其数据类型的 :meth:`__str__` 方法。"
 
-#: ../../howto/enum.rst:854
+#: ../../howto/enum.rst:855
 msgid "When to use :meth:`__new__` vs. :meth:`__init__`"
 msgstr "何时使用 :meth:`__new__` 与 :meth:`__init__`"
 
-#: ../../howto/enum.rst:856
+#: ../../howto/enum.rst:857
 msgid ""
 ":meth:`__new__` must be used whenever you want to customize the actual value"
 " of the :class:`Enum` member.  Any other modifications may go in either "
@@ -826,28 +828,28 @@ msgstr ""
 "当你想要定制 :class:`Enum` 成员的实际值时必须使用 :meth:`__new__`。 任何其他修改可以用 :meth:`__new__` "
 "也可以用 :meth:`__init__`，应优先使用 :meth:`__init__`。"
 
-#: ../../howto/enum.rst:860
+#: ../../howto/enum.rst:861
 msgid ""
 "For example, if you want to pass several items to the constructor, but only "
 "want one of them to be the value::"
 msgstr "举例来说，如果你要向构造器传入多个条目，但只希望将其中一个作为值::"
 
-#: ../../howto/enum.rst:887
+#: ../../howto/enum.rst:888
 msgid "Finer Points"
 msgstr "细节要点"
 
-#: ../../howto/enum.rst:890
+#: ../../howto/enum.rst:891
 msgid "Supported ``__dunder__`` names"
 msgstr "支持的 ``__dunder__`` 名称"
 
-#: ../../howto/enum.rst:892
+#: ../../howto/enum.rst:893
 msgid ""
 ":attr:`__members__` is a read-only ordered mapping of "
 "``member_name``:``member`` items.  It is only available on the class."
 msgstr ""
 ":attr:`__members__` 是一个 ``member_name``:``member`` 条目的只读有序映射。 它只在类上可用。"
 
-#: ../../howto/enum.rst:895
+#: ../../howto/enum.rst:896
 msgid ""
 ":meth:`__new__`, if specified, must create and return the enum members; it "
 "is also a very good idea to set the member's :attr:`_value_` appropriately."
@@ -856,26 +858,26 @@ msgstr ""
 "如果指定了 :meth:`__new__`，它必须创建并返回枚举成员；相应地设定成员的 :attr:`_value_` 也是一个很好的主意。 "
 "一旦所有成员都创建完成它就不会再被使用。"
 
-#: ../../howto/enum.rst:901
+#: ../../howto/enum.rst:902
 msgid "Supported ``_sunder_`` names"
 msgstr "支持的 ``_sunder_`` 名称"
 
-#: ../../howto/enum.rst:903
+#: ../../howto/enum.rst:904
 msgid "``_name_`` -- name of the member"
 msgstr "``_name_`` -- 成员的名称"
 
-#: ../../howto/enum.rst:904
+#: ../../howto/enum.rst:905
 msgid ""
 "``_value_`` -- value of the member; can be set / modified in ``__new__``"
 msgstr "``_value_`` -- 成员的值；可以在 ``__new__`` 中设置 / 修改"
 
-#: ../../howto/enum.rst:906
+#: ../../howto/enum.rst:907
 msgid ""
 "``_missing_`` -- a lookup function used when a value is not found; may be "
 "overridden"
 msgstr "``_missing_`` -- 当未发现某个值时所使用的查找函数；可被重载"
 
-#: ../../howto/enum.rst:908
+#: ../../howto/enum.rst:909
 msgid ""
 "``_ignore_`` -- a list of names, either as a :class:`list` or a "
 ":class:`str`, that will not be transformed into members, and will be removed"
@@ -883,13 +885,13 @@ msgid ""
 msgstr ""
 "``_ignore_`` -- 一个名称列表，可以为 :class:`list` 或 :class:`str`，它不会被转化为成员，并将从最终类中被移除"
 
-#: ../../howto/enum.rst:911
+#: ../../howto/enum.rst:912
 msgid ""
 "``_order_`` -- used in Python 2/3 code to ensure member order is consistent "
 "(class attribute, removed during class creation)"
 msgstr "``_order_`` -- 用于 Python 2/3 代码以确保成员顺序一致（类属性，在类创建期间会被移除）"
 
-#: ../../howto/enum.rst:913
+#: ../../howto/enum.rst:914
 msgid ""
 "``_generate_next_value_`` -- used by the `Functional API`_ and by "
 ":class:`auto` to get an appropriate value for an enum member; may be "
@@ -898,27 +900,27 @@ msgstr ""
 "``_generate_next_value_`` -- 用于 `Functional API`_ 并通过 :class:`auto` "
 "为枚举成员获取适当的值；可被重载"
 
-#: ../../howto/enum.rst:919
+#: ../../howto/enum.rst:920
 msgid ""
 "For standard :class:`Enum` classes the next value chosen is the last value "
 "seen incremented by one."
 msgstr "对于标准的 :class:`Enum` 类，选择的下一个值是最后所见值加1。"
 
-#: ../../howto/enum.rst:922
+#: ../../howto/enum.rst:923
 msgid ""
 "For :class:`Flag` classes the next value chosen will be the next highest "
 "power-of-two, regardless of the last value seen."
 msgstr "对于 :class:`Flag` 类，下一个选择的值将是下一个最高的2次幂数，与最后所见值无关。"
 
-#: ../../howto/enum.rst:925
+#: ../../howto/enum.rst:926
 msgid "``_missing_``, ``_order_``, ``_generate_next_value_``"
 msgstr "``_missing_``, ``_order_``, ``_generate_next_value_``"
 
-#: ../../howto/enum.rst:926
+#: ../../howto/enum.rst:927
 msgid "``_ignore_``"
 msgstr "``_ignore_``"
 
-#: ../../howto/enum.rst:928
+#: ../../howto/enum.rst:929
 msgid ""
 "To help keep Python 2 / Python 3 code in sync an :attr:`_order_` attribute "
 "can be provided.  It will be checked against the actual order of the "
@@ -927,27 +929,27 @@ msgstr ""
 "用来帮助 Python 2 / Python 3 代码保持同步提供 :attr:`_order_` 属性。 "
 "它将与枚举的实际顺序进行对照检查，如果两者不匹配则会引发错误::"
 
-#: ../../howto/enum.rst:946
+#: ../../howto/enum.rst:947
 msgid ""
 "In Python 2 code the :attr:`_order_` attribute is necessary as definition "
 "order is lost before it can be recorded."
 msgstr "在 Python 2 代码中 :attr:`_order_` 属性是必须的，因为定义顺序在被记录之前就会丢失。"
 
-#: ../../howto/enum.rst:951
+#: ../../howto/enum.rst:952
 msgid "_Private__names"
 msgstr "_Private__names"
 
-#: ../../howto/enum.rst:953
+#: ../../howto/enum.rst:954
 msgid ""
 ":ref:`Private names <private-name-mangling>` are not converted to enum "
 "members, but remain normal attributes."
 msgstr ":ref:`私有名称 <private-name-mangling>` 不会被转换为枚举成员，而是保持为普通属性。"
 
-#: ../../howto/enum.rst:960
+#: ../../howto/enum.rst:961
 msgid "``Enum`` member type"
 msgstr "``Enum`` 成员类型"
 
-#: ../../howto/enum.rst:962
+#: ../../howto/enum.rst:963
 msgid ""
 "Enum members are instances of their enum class, and are normally accessed as"
 " ``EnumClass.member``.  In certain situations, such as writing custom enum "
@@ -957,11 +959,11 @@ msgstr ""
 "枚举成员是其枚举类型的实例，并且通常作为 ``EnumClass.member`` 来访问。 "
 "在特定场景下，如编写自定义枚举行为，可从一个成员访问另一个成员的能力是很有用的，并且是受支持的。"
 
-#: ../../howto/enum.rst:971
+#: ../../howto/enum.rst:972
 msgid "Creating members that are mixed with other data types"
 msgstr "创建与其他数据类型混合的成员"
 
-#: ../../howto/enum.rst:973
+#: ../../howto/enum.rst:974
 msgid ""
 "When subclassing other data types, such as :class:`int` or :class:`str`, "
 "with an :class:`Enum`, all values after the ``=`` are passed to that data "
@@ -970,11 +972,11 @@ msgstr ""
 "当使用 :class:`Enum` 来子类化其他数据类型，如 :class:`int` 或 :class:`str` 时，所有在 ``=`` "
 "之后的值都会被传递给该数据类型的构造器。 例如::"
 
-#: ../../howto/enum.rst:985
+#: ../../howto/enum.rst:986
 msgid "Boolean value of ``Enum`` classes and members"
 msgstr "``Enum`` 类和成员的布尔值"
 
-#: ../../howto/enum.rst:987
+#: ../../howto/enum.rst:988
 msgid ""
 "Enum classes that are mixed with non-:class:`Enum` types (such as "
 ":class:`int`, :class:`str`, etc.) are evaluated according to the mixed-in "
@@ -986,15 +988,15 @@ msgstr ""
 "等）混合的枚举类会根据混合类型的规则进行计算；否则，所有成员都计算为 "
 ":data:`True`。为了使你自己的枚举的布尔值取决于成员的值，请在你的类中添加以下内容::"
 
-#: ../../howto/enum.rst:996
+#: ../../howto/enum.rst:997
 msgid "Plain :class:`Enum` classes always evaluate as :data:`True`."
 msgstr "普通的 :class:`Enum` 类总是计算为 :data:`True`。"
 
-#: ../../howto/enum.rst:1000
+#: ../../howto/enum.rst:1001
 msgid "``Enum`` classes with methods"
 msgstr "带有方法的 ``Enum`` 类"
 
-#: ../../howto/enum.rst:1002
+#: ../../howto/enum.rst:1003
 msgid ""
 "If you give your enum subclass extra methods, like the `Planet`_ class "
 "below, those methods will show up in a :func:`dir` of the member, but not of"
@@ -1002,103 +1004,103 @@ msgid ""
 msgstr ""
 "如果你给你的枚举子类提供了额外的方法，如下面的 `Planet`_ 类那样，这些方法将显示在成员的，而不是类的 :func:`dir` 中::"
 
-#: ../../howto/enum.rst:1013
+#: ../../howto/enum.rst:1014
 msgid "Combining members of ``Flag``"
 msgstr "组合 ``Flag`` 的成员"
 
-#: ../../howto/enum.rst:1015
+#: ../../howto/enum.rst:1016
 msgid ""
 "Iterating over a combination of :class:`Flag` members will only return the "
 "members that are comprised of a single bit::"
 msgstr "遍历 :class:`Flag` 成员的组合将只返回由一个比特组成的成员::"
 
-#: ../../howto/enum.rst:1033
+#: ../../howto/enum.rst:1034
 msgid "``Flag`` and ``IntFlag`` minutia"
 msgstr "``Flag`` 和 ``IntFlag`` 的细节"
 
-#: ../../howto/enum.rst:1035
+#: ../../howto/enum.rst:1036
 msgid "Using the following snippet for our examples::"
 msgstr "使用以下代码段作为我们的例子::"
 
-#: ../../howto/enum.rst:1046
+#: ../../howto/enum.rst:1047
 msgid "the following are true:"
 msgstr "下列情况为True:"
 
-#: ../../howto/enum.rst:1048
+#: ../../howto/enum.rst:1049
 msgid "single-bit flags are canonical"
 msgstr "单比特标志是典型的"
 
-#: ../../howto/enum.rst:1049
+#: ../../howto/enum.rst:1050
 msgid "multi-bit and zero-bit flags are aliases"
 msgstr "多比特和零比特标志是别名"
 
-#: ../../howto/enum.rst:1050
+#: ../../howto/enum.rst:1051
 msgid "only canonical flags are returned during iteration::"
 msgstr "迭代过程中只返回典型的标志::"
 
-#: ../../howto/enum.rst:1055
+#: ../../howto/enum.rst:1056
 msgid ""
 "negating a flag or flag set returns a new flag/flag set with the "
 "corresponding positive integer value::"
 msgstr "取负一个标志或标志集会返回一个新的标志/标志集和其对应的正整数值::"
 
-#: ../../howto/enum.rst:1064
+#: ../../howto/enum.rst:1065
 msgid "names of pseudo-flags are constructed from their members' names::"
 msgstr "伪标志的名称是由其成员的名称构建的::"
 
-#: ../../howto/enum.rst:1069
+#: ../../howto/enum.rst:1070
 msgid "multi-bit flags, aka aliases, can be returned from operations::"
 msgstr "多位标志，又称别名，可以从操作中返回::"
 
-#: ../../howto/enum.rst:1080
+#: ../../howto/enum.rst:1081
 msgid ""
 "membership / containment checking: zero-valued flags are always considered "
 "to be contained::"
 msgstr "成员 / 包含检测：零值旗标总是会被视为包含::"
 
-#: ../../howto/enum.rst:1086
+#: ../../howto/enum.rst:1087
 msgid ""
 "otherwise, only if all bits of one flag are in the other flag will True be "
 "returned::"
 msgstr "在其他情况下，仅当一个旗标的所有比特位都包含于另一个旗标中才会返回 True::"
 
-#: ../../howto/enum.rst:1095
+#: ../../howto/enum.rst:1096
 msgid ""
 "There is a new boundary mechanism that controls how out-of-range / invalid "
 "bits are handled: ``STRICT``, ``CONFORM``, ``EJECT``, and ``KEEP``:"
 msgstr ""
 "有一个新的边界机制，控制如何处理超出范围的/无效的比特:``STRICT``，``CONFORM``，``EJECT``，``KEEP``。"
 
-#: ../../howto/enum.rst:1098
+#: ../../howto/enum.rst:1099
 msgid "STRICT --> raises an exception when presented with invalid values"
 msgstr "STRICT --> 当出现无效的值时，会触发一个异常。"
 
-#: ../../howto/enum.rst:1099
+#: ../../howto/enum.rst:1100
 msgid "CONFORM --> discards any invalid bits"
 msgstr "CONFORM --> 丢弃任何无效的比特"
 
-#: ../../howto/enum.rst:1100
+#: ../../howto/enum.rst:1101
 msgid ""
 "EJECT --> lose Flag status and become a normal int with the given value"
 msgstr "EJECT --> 失去Flag的状态，成为一个普通的int，其值为给定值。"
 
-#: ../../howto/enum.rst:1104
+#: ../../howto/enum.rst:1105
 msgid "KEEP --> keep the extra bits"
 msgstr "KEEP --> 保留额外的比特"
 
-#: ../../howto/enum.rst:1102
+#: ../../howto/enum.rst:1103
 msgid "keeps Flag status and extra bits"
 msgstr "保留Flag状态和额外的比特"
 
-#: ../../howto/enum.rst:1103
+#: ../../howto/enum.rst:1104
 msgid "extra bits do not show up in iteration"
 msgstr "额外的比特不会在迭代中显示出来"
 
-#: ../../howto/enum.rst:1104
+#: ../../howto/enum.rst:1105
 msgid "extra bits do show up in repr() and str()"
 msgstr "在repr()和str()中确实显示了额外的比特"
 
-#: ../../howto/enum.rst:1106
+#: ../../howto/enum.rst:1107
 msgid ""
 "The default for Flag is ``STRICT``, the default for ``IntFlag`` is "
 "``EJECT``, and the default for ``_convert_`` is ``KEEP`` (see "
@@ -1107,21 +1109,21 @@ msgstr ""
 "默认的标志为 "
 "``STRICT``，``IntFlag``默认为``EJECT``，``_convert_``默认为``KEEP``（需要``KEEP``的例子见``ssl.Options``）。"
 
-#: ../../howto/enum.rst:1114
+#: ../../howto/enum.rst:1115
 msgid "How are Enums and Flags different?"
 msgstr "枚举和旗标有何差异？"
 
-#: ../../howto/enum.rst:1116
+#: ../../howto/enum.rst:1117
 msgid ""
 "Enums have a custom metaclass that affects many aspects of both derived "
 ":class:`Enum` classes and their instances (members)."
 msgstr "Enum有一个自定义的元类，它影响到派生的 :class:`Enum` 类和它们的实例（成员）的许多方面。"
 
-#: ../../howto/enum.rst:1121
+#: ../../howto/enum.rst:1122
 msgid "Enum Classes"
 msgstr "枚举类"
 
-#: ../../howto/enum.rst:1123
+#: ../../howto/enum.rst:1124
 msgid ""
 "The :class:`EnumType` metaclass is responsible for providing the "
 ":meth:`__contains__`, :meth:`__dir__`, :meth:`__iter__` and other methods "
@@ -1137,11 +1139,11 @@ msgstr ""
 ":class:`Enum` 类上的各种其他方法是正确的（比如 :meth:`__new__`, :meth:`__getnewargs__`, "
 ":meth:`__str__` 和 :meth:`__repr__` 等）。"
 
-#: ../../howto/enum.rst:1132
+#: ../../howto/enum.rst:1133
 msgid "Flag Classes"
 msgstr "旗标类"
 
-#: ../../howto/enum.rst:1134
+#: ../../howto/enum.rst:1135
 msgid ""
 "Flags have an expanded view of aliasing: to be canonical, the value of a "
 "flag needs to be a power-of-two value, and not a duplicate name.  So, in "
@@ -1152,11 +1154,11 @@ msgstr ""
 "旗标具有扩展的别名视图：为了符合规范，旗标的值必须为二的乘方，且名称不可重复。 因此，除了别名的定义 :class:`Enum` 之外，没有值 (即 "
 "``0``) 或是几个二的乘方值之和 (如 ``3``) 的旗标也会被视为别名。"
 
-#: ../../howto/enum.rst:1140
+#: ../../howto/enum.rst:1141
 msgid "Enum Members (aka instances)"
 msgstr "枚举成员（即实例）"
 
-#: ../../howto/enum.rst:1142
+#: ../../howto/enum.rst:1143
 msgid ""
 "The most interesting thing about enum members is that they are singletons. "
 ":class:`EnumType` creates them all while it is creating the enum class "
@@ -1167,37 +1169,37 @@ msgstr ""
 ":class:`EnumType` 在创建枚举类本身的时候，创建了所有的枚举类，然后把一个自定义的 :meth:`__new__` "
 "放在那里，通过只返回现有的成员实例来确保没有新的成员被实例化。"
 
-#: ../../howto/enum.rst:1148
+#: ../../howto/enum.rst:1149
 msgid "Flag Members"
 msgstr "旗标成员"
 
-#: ../../howto/enum.rst:1150
+#: ../../howto/enum.rst:1151
 msgid ""
 "Flag members can be iterated over just like the :class:`Flag` class, and "
 "only the canonical members will be returned.  For example::"
 msgstr "旗标成员可以如 :class:`Flag` 类一样被迭代，并且只有规范的成员会被返回。 例如::"
 
-#: ../../howto/enum.rst:1156
+#: ../../howto/enum.rst:1157
 msgid "(Note that ``BLACK``, ``PURPLE``, and ``WHITE`` do not show up.)"
 msgstr "（请注意 ``BLACK``, ``PURPLE`` 和 ``WHITE`` 将不显示。）"
 
-#: ../../howto/enum.rst:1158
+#: ../../howto/enum.rst:1159
 msgid ""
 "Inverting a flag member returns the corresponding positive value, rather "
 "than a negative value --- for example::"
 msgstr "对一个旗标成员取反将返回对应的正值，而不是负值 --- 例如::"
 
-#: ../../howto/enum.rst:1164
+#: ../../howto/enum.rst:1165
 msgid ""
 "Flag members have a length corresponding to the number of power-of-two "
 "values they contain.  For example::"
 msgstr "旗标成员具有与它们所包含的二的乘方值的数量相对应的长度。 例如::"
 
-#: ../../howto/enum.rst:1174
+#: ../../howto/enum.rst:1175
 msgid "Enum Cookbook"
 msgstr "枚举指导手册"
 
-#: ../../howto/enum.rst:1177
+#: ../../howto/enum.rst:1178
 msgid ""
 "While :class:`Enum`, :class:`IntEnum`, :class:`StrEnum`, :class:`Flag`, and "
 ":class:`IntFlag` are expected to cover the majority of use-cases, they "
@@ -1209,92 +1211,92 @@ msgstr ""
 ":class:`IntFlag` 有望能涵盖大多数的使用情况，但它们不能涵盖所有情况。 "
 "这里有一些不同类型的枚举的方法，可以直接使用，或者作为创建定制枚举的范例。"
 
-#: ../../howto/enum.rst:1184
+#: ../../howto/enum.rst:1185
 msgid "Omitting values"
 msgstr "省略值"
 
-#: ../../howto/enum.rst:1186
+#: ../../howto/enum.rst:1187
 msgid ""
 "In many use-cases, one doesn't care what the actual value of an enumeration "
 "is. There are several ways to define this type of simple enumeration:"
 msgstr "在许多应用场景中，人们并不关心枚举的实际值是什么。 有几种方式可用来定义这种类型的简单枚举:"
 
-#: ../../howto/enum.rst:1189
+#: ../../howto/enum.rst:1190
 msgid "use instances of :class:`auto` for the value"
 msgstr "使用 :class:`auto` 的实例作为值"
 
-#: ../../howto/enum.rst:1190
+#: ../../howto/enum.rst:1191
 msgid "use instances of :class:`object` as the value"
 msgstr "使用 :class:`object` 的实例作为值"
 
-#: ../../howto/enum.rst:1191
+#: ../../howto/enum.rst:1192
 msgid "use a descriptive string as the value"
 msgstr "使用描述性的字符串作为值"
 
-#: ../../howto/enum.rst:1192
+#: ../../howto/enum.rst:1193
 msgid ""
 "use a tuple as the value and a custom :meth:`__new__` to replace the tuple "
 "with an :class:`int` value"
 msgstr "使用元组作为值并用自定义的 :meth:`__new__` 以一个 :class:`int` 值来替代该元组"
 
-#: ../../howto/enum.rst:1195
+#: ../../howto/enum.rst:1196
 msgid ""
 "Using any of these methods signifies to the user that these values are not "
 "important, and also enables one to add, remove, or reorder members without "
 "having to renumber the remaining members."
 msgstr "使用以上任何一种方法均可向用户指明值并不重要，并且使人能够添加、移除或重排序成员而不必改变其余成员的数值。"
 
-#: ../../howto/enum.rst:1201
+#: ../../howto/enum.rst:1202
 msgid "Using :class:`auto`"
 msgstr "使用 :class:`auto`"
 
-#: ../../howto/enum.rst:1203
+#: ../../howto/enum.rst:1204
 msgid "Using :class:`auto` would look like::"
 msgstr "使用 :class:`auto` 的形式如下::"
 
-#: ../../howto/enum.rst:1215
+#: ../../howto/enum.rst:1216
 msgid "Using :class:`object`"
 msgstr "使用 :class:`object`"
 
-#: ../../howto/enum.rst:1217
+#: ../../howto/enum.rst:1218
 msgid "Using :class:`object` would look like::"
 msgstr "使用 :class:`object` 的形式如下::"
 
-#: ../../howto/enum.rst:1227
+#: ../../howto/enum.rst:1228
 msgid ""
 "This is also a good example of why you might want to write your own "
 ":meth:`__repr__`::"
 msgstr "这也是一个可以说明为什么你会需要编写自己的 :meth:`__repr__` 的好例子::"
 
-#: ../../howto/enum.rst:1243
+#: ../../howto/enum.rst:1244
 msgid "Using a descriptive string"
 msgstr "使用描述性字符串"
 
-#: ../../howto/enum.rst:1245
+#: ../../howto/enum.rst:1246
 msgid "Using a string as the value would look like::"
 msgstr "使用字符串作为值的形式如下::"
 
-#: ../../howto/enum.rst:1257
+#: ../../howto/enum.rst:1258
 msgid "Using a custom :meth:`__new__`"
 msgstr "使用自定义的 :meth:`__new__`"
 
-#: ../../howto/enum.rst:1259
+#: ../../howto/enum.rst:1260
 msgid "Using an auto-numbering :meth:`__new__` would look like::"
 msgstr "使用自动编号 :meth:`__new__` 的形式如下::"
 
-#: ../../howto/enum.rst:1276
+#: ../../howto/enum.rst:1277
 msgid ""
 "To make a more general purpose ``AutoNumber``, add ``*args`` to the "
 "signature::"
 msgstr "要实现更通用的 ``AutoNumber``，请添加 ``*args`` 到签名中::"
 
-#: ../../howto/enum.rst:1286
+#: ../../howto/enum.rst:1287
 msgid ""
 "Then when you inherit from ``AutoNumber`` you can write your own "
 "``__init__`` to handle any extra arguments::"
 msgstr "这样当你从 ``AutoNumber`` 继承时你将可以编写你自己的 ``__init__`` 来处理任何附加参数::"
 
-#: ../../howto/enum.rst:1305
+#: ../../howto/enum.rst:1306
 msgid ""
 "The :meth:`__new__` method, if defined, is used during creation of the Enum "
 "members; it is then replaced by Enum's :meth:`__new__` which is used after "
@@ -1303,11 +1305,11 @@ msgstr ""
 "如果定义了 :meth:`__new__` 则它会在创建 Enum 成员期间被使用；随后它将被 Enum 的 :meth:`__new__` "
 "所替换，该方法会在类创建后被用来查找现有成员。"
 
-#: ../../howto/enum.rst:1311
+#: ../../howto/enum.rst:1312
 msgid "OrderedEnum"
 msgstr "OrderedEnum"
 
-#: ../../howto/enum.rst:1313
+#: ../../howto/enum.rst:1314
 msgid ""
 "An ordered enumeration that is not based on :class:`IntEnum` and so "
 "maintains the normal :class:`Enum` invariants (such as not being comparable "
@@ -1315,17 +1317,17 @@ msgid ""
 msgstr ""
 "一个有序枚举，它不是基于 :class:`IntEnum`，因此保持了正常的 :class:`Enum` 不变特性（例如不可与其他枚举进行比较）::"
 
-#: ../../howto/enum.rst:1347
+#: ../../howto/enum.rst:1348
 msgid "DuplicateFreeEnum"
 msgstr "DuplicateFreeEnum"
 
-#: ../../howto/enum.rst:1349
+#: ../../howto/enum.rst:1350
 msgid ""
 "Raises an error if a duplicate member value is found instead of creating an "
 "alias::"
 msgstr "如果发现重复的成员名称则会引发一个错误而不是创建一个别名::"
 
-#: ../../howto/enum.rst:1374
+#: ../../howto/enum.rst:1375
 msgid ""
 "This is a useful example for subclassing Enum to add or change other "
 "behaviors as well as disallowing aliases.  If the only desired change is "
@@ -1333,29 +1335,29 @@ msgid ""
 msgstr ""
 "这个例子适用于子类化 Enum 来添加或改变禁用别名以及其他行为。 如果需要的改变只是禁用别名，也可以选择使用 :func:`unique` 装饰器。"
 
-#: ../../howto/enum.rst:1380
+#: ../../howto/enum.rst:1381
 msgid "Planet"
 msgstr "Planet"
 
-#: ../../howto/enum.rst:1382
+#: ../../howto/enum.rst:1383
 msgid ""
 "If :meth:`__new__` or :meth:`__init__` is defined, the value of the enum "
 "member will be passed to those methods::"
 msgstr "如果定义了 :meth:`__new__` 或 :meth:`__init__`，则枚举成员的值将被传给这些方法::"
 
-#: ../../howto/enum.rst:1411
+#: ../../howto/enum.rst:1412
 msgid "TimePeriod"
 msgstr "TimePeriod"
 
-#: ../../howto/enum.rst:1413
+#: ../../howto/enum.rst:1414
 msgid "An example to show the :attr:`_ignore_` attribute in use::"
 msgstr "一个演示如何使用 :attr:`_ignore_` 属性的例子::"
 
-#: ../../howto/enum.rst:1432
+#: ../../howto/enum.rst:1433
 msgid "Subclassing EnumType"
 msgstr "子类化 EnumType"
 
-#: ../../howto/enum.rst:1434
+#: ../../howto/enum.rst:1435
 msgid ""
 "While most enum needs can be met by customizing :class:`Enum` subclasses, "
 "either with class decorators or custom functions, :class:`EnumType` can be "

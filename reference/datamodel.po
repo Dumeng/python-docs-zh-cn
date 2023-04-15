@@ -2968,6 +2968,10 @@ msgid ""
 "will be used instead of the base. The returned tuple may be empty: in these "
 "cases, the original base is ignored."
 msgstr ""
+"如果一个出现在类定义中的基类不是 :class:`type` 的实例，则会在该基类中搜索 :meth:`!__mro_entries__` 方法。 "
+"如果找到了 :meth:`!__mro_entries__` 方法，则在创建类时该基类会被替换为调用 :meth:`!__mro_entries__` "
+"的结果。 该方法被调用时将附带传给 *bases* 形参的原始基类元组，并且必须返回一个由将被用来替代该基类的类组成的元组。 "
+"返回的元组可能为空：在此情况下，原始基类将被忽略。"
 
 #: ../../reference/datamodel.rst:2102
 msgid ":func:`types.resolve_bases`"

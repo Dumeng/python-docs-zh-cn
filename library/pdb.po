@@ -7,8 +7,8 @@
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # eric R <trencyclopedia@gmail.com>, 2021
 # nick <2330458484@qq.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # Dai Xu <daixu61@hotmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-14 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Dai Xu <daixu61@hotmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -82,7 +82,7 @@ msgstr "中断进入调试器的典型用法是插入::"
 
 #: ../../library/pdb.rst:43
 msgid "Or::"
-msgstr ""
+msgstr "或者::"
 
 #: ../../library/pdb.rst:47
 msgid ""
@@ -103,7 +103,7 @@ msgstr ""
 msgid ""
 "The debugger's prompt is ``(Pdb)``, which is the indicator that you are in "
 "debug mode::"
-msgstr ""
+msgstr "调试器的提示符为 ``(Pdb)``，这指明你正处于调试模式下::"
 
 #: ../../library/pdb.rst:72
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 msgid ""
 "You can also invoke :mod:`pdb` from the command line to debug other scripts."
 "  For example::"
-msgstr ""
+msgstr "你还可以从命令行发起调用 :mod:`pdb` 来调试其他脚本。 例如::"
 
 #: ../../library/pdb.rst:83
 msgid ""
@@ -129,24 +129,27 @@ msgid ""
 "and in most cases is more useful than quitting the debugger upon program's "
 "exit."
 msgstr ""
+"当作为模块发起调用时，如果被调试的程序异常退出则 pdb 将自动进入事后调试。 在事后调试之后（或程序正常退出之后），pdb 将重启程序。 "
+"自动重启会保留 pdb 的状态（如断点）并且在大多数情况下这比在退出程序的同时退出调试器更实用。"
 
 #: ../../library/pdb.rst:89
 msgid ""
 "``-c`` option is introduced to execute commands as if given in a "
 ":file:`.pdbrc` file, see :ref:`debugger-commands`."
 msgstr ""
+"``-c`` 被引入用来执行如同在 :file:`.pdbrc` 文件中给出的命令，参见 :ref:`debugger-commands`。"
 
 #: ../../library/pdb.rst:93
 msgid ""
 "``-m`` option is introduced to execute modules similar to the way ``python "
 "-m`` does. As with a script, the debugger will pause execution just before "
 "the first line of the module."
-msgstr ""
+msgstr "``-m`` 选项被引入用来以类似 ``python -m`` 的方式执行模块。 就像一个脚本那样，调试器将在模块的第一行之前暂停执行。"
 
 #: ../../library/pdb.rst:98
 msgid ""
 "Typical usage to execute a statement under control of the debugger is::"
-msgstr ""
+msgstr "在调试器控制下执行一条语句的典型用法如下::"
 
 #: ../../library/pdb.rst:109
 msgid "The typical usage to inspect a crashed program is::"
@@ -398,7 +401,7 @@ msgid ""
 "Print a stack trace, with the most recent frame at the bottom.  An arrow "
 "(``>``) indicates the current frame, which determines the context of most "
 "commands."
-msgstr ""
+msgstr "抢鲜栈回溯，最新的帧位于底部。 有一个箭头 (``>``) 指明当前帧，该帧决定了大多数命令的上下文。"
 
 #: ../../library/pdb.rst:301
 msgid ""
@@ -631,7 +634,7 @@ msgstr "列出当前函数或帧的所有源代码。相关行的标记与 :pdbc
 
 #: ../../library/pdb.rst:463
 msgid "Print the arguments of the current function and their current values."
-msgstr ""
+msgstr "打印当前函数的参数及其当前的值。"
 
 #: ../../library/pdb.rst:467
 msgid "Evaluate *expression* in the current context and print its value."
@@ -673,7 +676,7 @@ msgid ""
 "Display evaluates *expression* and compares to the result of the previous "
 "evaluation of *expression*, so when the result is mutable, display may not "
 "be able to pick up the changes."
-msgstr ""
+msgstr "显示 *expression* 的值并与 *expression* 之前的求值结果进行比较，因此当结果可变时，显示可能无法体现变化。"
 
 #: ../../library/pdb.rst:503
 msgid "Example::"
@@ -683,11 +686,11 @@ msgstr "示例："
 msgid ""
 "Display won't realize ``lst`` has been changed because the result of "
 "evaluation is modified in place by ``lst.append(1)`` before being compared::"
-msgstr ""
+msgstr "显示将不会发现 ``lst`` 已被改变因为求值结果在执行比较之前已被 ``lst.append(1)`` 原地修改了::"
 
 #: ../../library/pdb.rst:526
 msgid "You can do some tricks with copy mechanism to make it work::"
-msgstr ""
+msgstr "你可以通过拷贝机制巧妙地实现此功能::"
 
 #: ../../library/pdb.rst:545
 msgid ""
@@ -769,7 +772,7 @@ msgstr "进入一个对 *code* 执行步进的递归调试器（该参数是在�
 
 #: ../../library/pdb.rst:617
 msgid "Print the return value for the last return of the current function."
-msgstr ""
+msgstr "打印当前函数最后一次返回的返回值。"
 
 #: ../../library/pdb.rst:620
 msgid "Footnotes"

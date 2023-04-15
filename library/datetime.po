@@ -23,8 +23,8 @@
 # Dai Xu <daixu61@hotmail.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -33,7 +33,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-14 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1110,6 +1110,8 @@ msgid ""
 "values. See also :ref:`strftime-strptime-behavior` and "
 ":meth:`date.isoformat`."
 msgstr ""
+"返回一个由显式格式字符串所控制的，代表日期的字符串。 表示时、分或秒的格式代码值将为 0。 另请参阅 :ref:`strftime-strptime-"
+"behavior` 和 :meth:`date.isoformat`。"
 
 #: ../../library/datetime.rst:746
 msgid ""
@@ -1118,6 +1120,9 @@ msgid ""
 "<f-strings>` and when using :meth:`str.format`. See also :ref:`strftime-"
 "strptime-behavior` and :meth:`date.isoformat`."
 msgstr ""
+"与 :meth:`.date.strftime` 相同。 此方法使得在 :ref:`格式化字符串字面值 <f-strings>` 中以及使用 "
+":meth:`str.format` 时为 :class:`.date` 对象指定格式字符串成为可能。 另请参阅 :ref:`strftime-"
+"strptime-behavior` 和 :meth:`date.isoformat`。"
 
 #: ../../library/datetime.rst:752
 msgid "Examples of Usage: :class:`date`"
@@ -1479,6 +1484,9 @@ msgid ""
 "See also :ref:`strftime-strptime-behavior` and "
 ":meth:`datetime.fromisoformat`."
 msgstr ""
+"如果 date_string 和 format 无法被 :func:`time.strptime` 解析或它返回一个不是时间元组的值则将引发 "
+":exc:`ValueError`。 另请参阅 :ref:`strftime-strptime-behavior` 和 "
+":meth:`datetime.fromisoformat`。"
 
 #: ../../library/datetime.rst:1061
 msgid ""
@@ -2071,6 +2079,8 @@ msgid ""
 "format string. See also :ref:`strftime-strptime-behavior` and "
 ":meth:`datetime.isoformat`."
 msgstr ""
+"返回一个由显式格式字符串所控制的，代表日期和时间的字符串。 另请参阅 :ref:`strftime-strptime-behavior` 和 "
+":meth:`datetime.isoformat`。"
 
 #: ../../library/datetime.rst:1521
 msgid ""
@@ -2079,6 +2089,9 @@ msgid ""
 "literals <f-strings>` and when using :meth:`str.format`. See also "
 ":ref:`strftime-strptime-behavior` and :meth:`datetime.isoformat`."
 msgstr ""
+"与 :meth:`.datetime.strftime` 相同。 此方法使得在 :ref:`格式化字符串字面值 <f-strings>` 中以及使用 "
+":meth:`str.format` 时为 :class:`.datetime` 对象指定格式字符串成为可能。 另请参阅 :ref:`strftime-"
+"strptime-behavior` 和 :meth:`datetime.isoformat`。"
 
 #: ../../library/datetime.rst:1528
 msgid "Examples of Usage: :class:`.datetime`"
@@ -2284,6 +2297,8 @@ msgid ""
 "string.  See also :ref:`strftime-strptime-behavior` and "
 ":meth:`time.isoformat`."
 msgstr ""
+"返回一个由显式格式字符串所控制的，代表时间的字符串。 另请参阅 :ref:`strftime-strptime-behavior` 和 "
+":meth:`time.isoformat`。"
 
 #: ../../library/datetime.rst:1875
 msgid ""
@@ -2292,6 +2307,9 @@ msgid ""
 "<f-strings>` and when using :meth:`str.format`. See also :ref:`strftime-"
 "strptime-behavior` and :meth:`time.isoformat`."
 msgstr ""
+"与 :meth:`.time.strftime` 相同。 此方法使得在 :ref:`格式化字符串字面值 <f-strings>` 中以及使用 "
+":meth:`str.format` 时为 :class:`.time` 对象指定格式字符串成为可能。 另请参阅 :ref:`strftime-"
+"strptime-behavior` 和 :meth:`time.isoformat`。"
 
 #: ../../library/datetime.rst:1883
 msgid ""
@@ -2884,7 +2902,7 @@ msgstr ":meth:`strftime` 和 :meth:`strptime` Format Codes"
 msgid ""
 "These methods accept format codes that can be used to parse and format "
 "dates::"
-msgstr ""
+msgstr "这些方法接受可被用于解析和格式化日期的格式代码::"
 
 #: ../../library/datetime.rst:2328
 msgid ""

@@ -725,13 +725,13 @@ msgstr "结果不是一个合法的 *IntFlag*: 结果将取决于 *FlagBoundary*
 
 #: ../../library/enum.rst:594
 msgid "The *repr()* of unnamed zero-valued flags has changed.  It is now:"
-msgstr ""
+msgstr "未命名零值旗标的 *repr()* 已被修改。 现在将是:"
 
 #: ../../library/enum.rst:601
 msgid ""
 "Using :class:`auto` with :class:`IntFlag` results in integers that are "
 "powers of two, starting with ``1``."
-msgstr ""
+msgstr "将 :class:`auto` 用于 :class:`IntFlag` 将得到二的整数次方，从 ``1`` 开始。"
 
 #: ../../library/enum.rst:606
 msgid ""
@@ -739,6 +739,8 @@ msgid ""
 "*replacement of existing constants* use-case.  :meth:`~object.__format__` "
 "was already :meth:`!int.__format__` for that same reason."
 msgstr ""
+":meth:`~object.__str__` 现在是 :meth:`!int.__str__` 以更好地支持 *现有常量的替换* 应用场景。 "
+"出于同样的原因 :meth:`~object.__format__` 也已经是 :meth:`!int.__format__`。"
 
 #: ../../library/enum.rst:610
 msgid ""
@@ -746,12 +748,16 @@ msgid ""
 "union of all flags not in the given flag, rather than a negative value. This"
 " matches the existing :class:`Flag` behavior."
 msgstr ""
+"对一个 :class:`!IntFlag` 的反转现在将返回一个等于不在给定旗标中的所有旗标的并集的正值，而非一个负值。 这与现有 "
+":class:`Flag` 的行为相匹配。"
 
 #: ../../library/enum.rst:616
 msgid ""
 ":class:`!ReprEnum` uses the :meth:`repr() <Enum.__repr__>` of :class:`Enum`,"
 " but the :class:`str() <str>` of the mixed-in data type:"
 msgstr ""
+":class:`!ReprEnum` 将使用 :class:`Enum` 的 :meth:`repr() "
+"<Enum.__repr__>`，但使用混入数据类型的 :class:`str() <str>`:"
 
 #: ../../library/enum.rst:619
 msgid ":meth:`!int.__str__` for :class:`IntEnum` and :class:`IntFlag`"

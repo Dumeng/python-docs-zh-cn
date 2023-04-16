@@ -1015,14 +1015,16 @@ msgid ""
 ":class:`EnumCheck` are used to specify which constraints should be checked "
 "on the decorated enumeration."
 msgstr ""
+"一个专用于枚举的 :keyword:`class` 装饰器。 将使用来自 :class:`EnumCheck` "
+"的成员指明应当在被装饰的枚举上检查哪些约束。"
 
 #: ../../library/enum.rst:866
 msgid "A decorator for use in enums: its target will become a member."
-msgstr ""
+msgstr "一个在枚举中使用的装饰器：它的目标将成为一个成员。"
 
 #: ../../library/enum.rst:872
 msgid "A decorator for use in enums: its target will not become a member."
-msgstr ""
+msgstr "一个在枚举中使用的装饰器：它的目标将不会成员一个成员。"
 
 #: ../../library/enum.rst:878
 msgid ""
@@ -1031,11 +1033,13 @@ msgid ""
 "only be used when the enum members are exported to the module global "
 "namespace (see :class:`re.RegexFlag` for an example)."
 msgstr ""
+"一个修改枚举的 :class:`str() <str>` 和 :func:`repr` 来将其成员显示为属于模块而不是类的装饰器。 "
+"应当仅在枚举成员被导出到模块全局命名空间时（请参看 :class:`re.RegexFlag` 获取示例）使用。"
 
 #: ../../library/enum.rst:888
 msgid ""
 "Return a list of all power-of-two integers contained in a flag *value*."
-msgstr ""
+msgstr "返回旗标 *value* 中包含的所有二的整数次幂的列表。"
 
 #: ../../library/enum.rst:895
 msgid "Notes"
@@ -1043,30 +1047,30 @@ msgstr "备注"
 
 #: ../../library/enum.rst:897
 msgid ":class:`IntEnum`, :class:`StrEnum`, and :class:`IntFlag`"
-msgstr ""
+msgstr ":class:`IntEnum`, :class:`StrEnum` 和 :class:`IntFlag`"
 
 #: ../../library/enum.rst:899
 msgid ""
 "These three enum types are designed to be drop-in replacements for existing "
 "integer- and string-based values; as such, they have extra limitations:"
-msgstr ""
+msgstr "这三个枚举类型被设计用来快速替代现有的基于整数和字符串的值；为此，它们都有额外的限制:"
 
 #: ../../library/enum.rst:902
 msgid "``__str__`` uses the value and not the name of the enum member"
-msgstr ""
+msgstr "``__str__`` 使用枚举成员的值而不是名称"
 
 #: ../../library/enum.rst:904
 msgid ""
 "``__format__``, because it uses ``__str__``, will also use the value of the "
 "enum member instead of its name"
-msgstr ""
+msgstr "``__format__``，因为它使用了 ``__str__``，也将使用枚举成员的值而不是其名称"
 
 #: ../../library/enum.rst:907
 msgid ""
 "If you do not need/want those limitations, you can either create your own "
 "base class by mixing in the ``int`` or ``str`` type yourself::"
-msgstr ""
+msgstr "如果你不需要/希望有这些限制，你可以通过自行混入 ``int`` 或 ``str`` 类型来创建你自己的基类::"
 
 #: ../../library/enum.rst:914
 msgid "or you can reassign the appropriate :meth:`str`, etc., in your enum::"
-msgstr ""
+msgstr "或者你也可以在你的枚举中重新赋值适当的 :meth:`str` 等::"

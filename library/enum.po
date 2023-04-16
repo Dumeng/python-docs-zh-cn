@@ -978,13 +978,16 @@ msgid ""
 " member value incremented by 1, and will fail if any member is an "
 "incompatible type."
 msgstr ""
+"在 3.13 中默认的 ``_generate_next_value_`` 将总是返回最高成员值递增 1 "
+"的结果，并且如果有任何成员为不兼容的类型则将失败。, and will fail if any member is an incompatible "
+"type."
 
 #: ../../library/enum.rst:827
 msgid ""
 "A decorator similar to the built-in *property*, but specifically for "
 "enumerations.  It allows member attributes to have the same names as members"
 " themselves."
-msgstr ""
+msgstr "一个类似于内置 *property* 的装饰器，但是专用于枚举。 它允许成员属性具有与成员自身相同的名称。"
 
 #: ../../library/enum.rst:831
 msgid ""
@@ -993,6 +996,8 @@ msgid ""
 "and *Enum* subclasses can define members with the names ``value`` and "
 "``name``."
 msgstr ""
+"*property* 和成员必须在单独的类中定义；例如 *value* 和 *name* 属性是在 *Enum* 类中定义，而 *Enum* "
+"的子类可以定义名称为 ``value`` 和 ``name`` 的成员。"
 
 #: ../../library/enum.rst:840
 msgid ""
@@ -1000,6 +1005,9 @@ msgid ""
 "enumeration's :attr:`~EnumType.__members__`, gathering any aliases it finds;"
 " if any are found :exc:`ValueError` is raised with the details::"
 msgstr ""
+"一个专用于枚举的 :keyword:`class` 装饰器。 它将搜索一个枚举的 "
+":attr:`~EnumType.__members__`，收集它所找到的任何别名；如果找到了任何别名则会引发 :exc:`ValueError` "
+"并附带详情::"
 
 #: ../../library/enum.rst:858
 msgid ""

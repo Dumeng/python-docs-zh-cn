@@ -852,6 +852,8 @@ msgid ""
 "members; it is also a very good idea to set the member's :attr:`!_value_` "
 "appropriately.  Once all the members are created it is no longer used."
 msgstr ""
+"如果指定了 :meth:`~object.__new__`，它必须创建并返回枚举成员；相应地设置成员的 :attr:`!_value_` "
+"也是一个很好的主意。 一旦所有成员都创建完成它将不再被使用。"
 
 #: ../../library/enum.rst:764
 msgid "Supported ``_sunder_`` names"
@@ -890,7 +892,7 @@ msgstr "``_order_`` -- 用于 Python 2/3 代码以确保成员顺序一致（类
 msgid ""
 "``_generate_next_value_`` -- used to get an appropriate value for an enum "
 "member; may be overridden"
-msgstr ""
+msgstr "``_generate_next_value_`` -- 用于为枚举成员获取适当的值；可被重载"
 
 #: ../../library/enum.rst:781
 msgid ""
@@ -914,7 +916,7 @@ msgstr "``_ignore_``"
 
 #: ../../library/enum.rst:793
 msgid "Utilities and Decorators"
-msgstr ""
+msgstr "工具与装饰器"
 
 #: ../../library/enum.rst:797
 msgid ""
@@ -926,43 +928,49 @@ msgid ""
 "version of the member's name.  Care must be taken if mixing *auto()* with "
 "manually specified values."
 msgstr ""
+"*auto* 可被用来替换某个值。 如果使用，*Enum* 机制将调用一个 *Enum* 的 "
+":meth:`~Enum._generate_next_value_` 来获取适当的值。 对于 *Enum* 和 *IntEnum* "
+"这个适当的值将为最近的值加一；对于 *Flag* 和 *IntFlag* 它将为大于最大的值的最大的二的整数次方；对于 *StrEnum* "
+"它将为成员名称的小写版本。 如果将 *auto()* 与手动指定的值混用则必须十分小心。"
 
 #: ../../library/enum.rst:805
 msgid ""
 "*auto* instances are only resolved when at the top level of an assignment:"
-msgstr ""
+msgstr "*auto* 实际仅会在赋值操作的最高层级上被解析:"
 
 #: ../../library/enum.rst:807
 msgid "``FIRST = auto()`` will work (auto() is replaced with ``1``);"
-msgstr ""
+msgstr "``FIRST = auto()`` 将是可用的 (auto() 会被替换为 ``1``);"
 
 #: ../../library/enum.rst:808
 msgid ""
 "``SECOND = auto(), -2`` will work (auto is replaced with ``2``, so ``2, -2``"
 " is"
-msgstr ""
+msgstr "``SECOND = auto(), -2`` 将是可用的 (auto 会被替换为 ``2``，因此 ``2, -2`` 将"
 
 #: ../../library/enum.rst:809
 msgid "used to create the ``SECOND`` enum member;"
-msgstr ""
+msgstr "被用来创建 ``SECOND`` 枚举成员;"
 
 #: ../../library/enum.rst:810
 msgid ""
 "``THREE = [auto(), -3]`` will *not* work (``<auto instance>, -3`` is used to"
 " create the ``THREE`` enum member)"
 msgstr ""
+"``THREE = [auto(), -3]`` 将 *不可用* (``<auto instance>, -3`` 将被用来创建 ``THREE`` "
+"枚举成员)"
 
 #: ../../library/enum.rst:815
 msgid ""
 "In prior versions, ``auto()`` had to be the only thing on the assignment "
 "line to work properly."
-msgstr ""
+msgstr "在之前的版本中，``auto()`` 必须为赋值行中唯一的内容才是可用的。"
 
 #: ../../library/enum.rst:818
 msgid ""
 "``_generate_next_value_`` can be overridden to customize the values used by "
 "*auto*."
-msgstr ""
+msgstr "``_generate_next_value_`` 可以被重载以便自定义 *auto* 所使用的值。"
 
 #: ../../library/enum.rst:821
 msgid ""

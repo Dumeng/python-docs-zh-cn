@@ -11,17 +11,17 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # jaystone776 <1732865113@qq.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-04-14 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -67,6 +67,11 @@ msgid ""
 "install other module distributions.  The Distutils' own setup script, shown "
 "here, is used to install the package into Python 1.5.2.) ::"
 msgstr ""
+"(请记住,虽然distutils包含在Python 1.6及更高版本中,但它们也有独立的存在,因此Python "
+"1.5.2用户可以使用它们来安装其他模块发行版。这里显示的distutils自己的setup脚本用于将该软件包安装到Python 1.5.2中。) "
+"这是一个略微复杂一点的例子，我们将在接下来的几节中继续追踪它：Distutils 本身的安装脚本。 （请记住虽然 Distutils 被包括在 "
+"Python 1.6 及之后的版本中，但它们也仍保存独立存在因此 Python 1.5.2 用户可以使用它们来安装其他模块分发版。 这里所演示的 "
+"Distutils 本身的安装脚本，是用来将该软件包安装到 Python 1.5.2 中。） ::"
 
 #: ../../distutils/setupscript.rst:37
 msgid ""

@@ -10,20 +10,20 @@
 # ppcfish <ppcfish@gmail.com>, 2022
 # Alpha Du <alphanow@gmail.com>, 2022
 # LeeWendao <LeeWendao@outlook.com>, 2022
-# 郝思儒 <haosiru@h-sr.cn>, 2023
+# char46 <haosiru@h-sr.cn>, 2023
 # Bryan不可思议, 2023
 # Jason Ren, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Nyuan Zhang, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 18:02+0000\n"
+"POT-Creation-Date: 2023-04-14 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Nyuan Zhang, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -343,6 +343,8 @@ msgid ""
 "a transaction to modify a table, that table will be locked until the "
 "transaction is committed. Default five seconds."
 msgstr ""
+"当一个表被锁定时连接在最终引发 :exc:`OperationalError` 之前应该等待多少秒。 "
+"如果另一个链接开启了一个事务来修改一个表，该表将被锁定直到该事务完成提交。 默认值为五秒。"
 
 #: ../../library/sqlite3.rst:279
 msgid ""
@@ -553,7 +555,7 @@ msgid ""
 "look up a converter function using the first word of the declared type as "
 "the converter dictionary key. For example:"
 msgstr ""
-"将这个旗标值传递给 :func:`connect`的 *detect_types* "
+"将这个旗标值传递给 :func:`connect` 的 *detect_types* "
 "形参，以使用创建数据库表时为每列声明的类型的查找转换器函数。:mod:`!sqlite3` "
 "将使用声明类型的第一个单词作为转换字典键来查找转换函数。例如："
 
@@ -618,12 +620,14 @@ msgid ""
 "the default `threading mode <https://sqlite.org/threadsafe.html>`_ the "
 "underlying SQLite library is compiled with. The SQLite threading modes are:"
 msgstr ""
+"DB-API 2.0 所要求的整数常量，指明 :mod:`!sqlite3` 模块支持的线程安全级别。 该属性将基于编译下层 SQLite "
+"库所使用的默认 `线程模式 <https://sqlite.org/threadsafe.html>`_ 来设置。 SQLite 的线程模式有:"
 
 #: ../../library/sqlite3.rst:500
 msgid ""
 "**Single-thread**: In this mode, all mutexes are disabled and SQLite is "
 "unsafe to use in more than a single thread at once."
-msgstr ""
+msgstr "**Single-thread**: 在此模式下，所有的互斥都被禁用并且 SQLite 同时在多个线程中使用将是不安全的。"
 
 #: ../../library/sqlite3.rst:502
 msgid ""
@@ -631,18 +635,19 @@ msgid ""
 "threads provided that no single database connection is used simultaneously "
 "in two or more threads."
 msgstr ""
+"**Multi-thread**: 在此模式下，只要单个数据库连接没有被同时用于两个或多个线程之中 SQLite 就可以安全地被多个线程所使用。"
 
 #: ../../library/sqlite3.rst:505
 msgid ""
 "**Serialized**: In serialized mode, SQLite can be safely used by multiple "
 "threads with no restriction."
-msgstr ""
+msgstr "**Serialized**: 在序列化模式下，SQLite 可以安全地被多个线程所使用而没有额外的限制。"
 
 #: ../../library/sqlite3.rst:508
 msgid ""
 "The mappings from SQLite threading modes to DB-API 2.0 threadsafety levels "
 "are as follows:"
-msgstr ""
+msgstr "从 SQLite 线程模式到 DB-API 2.0 线程安全级别的映射关系如下:"
 
 #: ../../library/sqlite3.rst:512
 msgid "SQLite threading mode"
@@ -787,13 +792,14 @@ msgstr "引发"
 
 #: ../../library/sqlite3.rst:591
 msgid "When trying to open a blob in a ``WITHOUT ROWID`` table."
-msgstr ""
+msgstr "当尝试打开 ``WITHOUT ROWID`` 的表中的某个 blob 时。"
 
 #: ../../library/sqlite3.rst:598
 msgid ""
 "The blob size cannot be changed using the :class:`Blob` class. Use the SQL "
 "function ``zeroblob`` to create a blob with a fixed size."
 msgstr ""
+"blob 的大小无法使用 :class:`Blob` 类来修改。 可使用 SQL 函数 ``zeroblob`` 来创建固定大小的 blob。"
 
 #: ../../library/sqlite3.rst:605
 msgid ""

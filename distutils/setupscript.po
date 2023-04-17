@@ -83,6 +83,10 @@ msgid ""
 " module would be tedious to generate and difficult to maintain.  For more "
 "information on the additional meta-data, see section :ref:`meta-data`."
 msgstr ""
+"这里与 :ref:`distutils-simple-example` 一节中介绍的最简版单文件分发包只有两处差异：更多的元数据，以及按包列出纯 "
+"Python 模块，而非按模块列出。 这一点很重要因为 Distutils "
+"是由（目前）分成两个包的几十个模块组成的；显式地列出每个模块将十分繁琐并且难以维护。 有关额外元数据的更多信息，请参阅 :ref:`meta-data`"
+" 一节。"
 
 #: ../../distutils/setupscript.rst:45
 msgid ""
@@ -94,6 +98,9 @@ msgid ""
 "systems, which of course is one of the major goals of the Distutils.  In "
 "this spirit, all pathnames in this document are slash-separated."
 msgstr ""
+"请注意在 setup 脚本中提供的任何路径名称（文件或目录）都应当使用 Unix 约定来书写，即以斜杠分隔。 Distutils "
+"会负责在实际使用该路径名称之前将这个与平台无关的表示形式转换为适用于你的当前平台的形式 。 这使得你的 setup "
+"脚本可以在跨操作系统进行移植，这当然是 Distutils 的主要目标之一。 基于此精神，在本文档中的所有路径名称都是以斜杠分隔的。"
 
 #: ../../distutils/setupscript.rst:53
 msgid ""
@@ -102,6 +109,8 @@ msgid ""
 "or :func:`os.listdir` to specify files, you should be careful to write "
 "portable code instead of hardcoding path separators::"
 msgstr ""
+"当然，这仅适用于提供给 Distutils 函数的路径名称。 举例来说，如果你使用标准 Python 函数例如 :func:`glob.glob` 或 "
+":func:`os.listdir` 来指定文件，则你应当小心地编写可移植的代码而不是硬编码路径分隔符::"
 
 #: ../../distutils/setupscript.rst:65
 msgid "Listing whole packages"
@@ -122,6 +131,12 @@ msgid ""
 "lives.  If you break this promise, the Distutils will issue a warning but "
 "still process the broken package anyway."
 msgstr ""
+"``packages`` 选项通知 Distutils 处理（构建、分发、安装等）在 ``packages`` 列表中提及的每个包中找到的所有纯 "
+"Python 模块。 当然，为做到这一点，包名称和文件系统的目录之间必须保持对应关系。 默认的对应关系是很显然的，即 :mod:`distutils` "
+"包即相对于分发包根目录的 :file:`distutils` 目录。 因此，当你在你的 setup 脚本中写 ``packages = "
+"['foo']`` 时，你就承诺了 Distutils 将在相对于你的 setup 脚本所在目录下找到一个文件 "
+":file:`foo/__init__.py` (在你的目录上可能会有不同的拼写形式，但意思已经很明白了)。 如果你违反此承诺，Distutils "
+"将发出警告但无论如何仍会处理损坏的包。"
 
 #: ../../distutils/setupscript.rst:79
 msgid ""

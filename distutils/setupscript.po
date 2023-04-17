@@ -147,6 +147,10 @@ msgid ""
 " in any package at all) are in :file:`lib`, modules in the :mod:`foo` "
 "package are in :file:`lib/foo`, and so forth.  Then you would put ::"
 msgstr ""
+"如果你使用不同的约定来布局你的源目录，那也没有问题：你只需提供 ``package_dir`` 选项来告知 Distutils 你的约定。 "
+"例如，假设你将所有For example, say you keep all Python 源代码保存在 :file:`lib` "
+"下，以便“根包”中的模块（即不属于任何包的模块）位于 :file:`lib` 中，:mod:`foo` 包中的模块位于 :file:`lib/foo` "
+"中，依此类推。 那么你应当编写::"
 
 #: ../../distutils/setupscript.rst:88
 msgid ""
@@ -156,6 +160,8 @@ msgid ""
 "``packages = ['foo']``, you are promising that the file "
 ":file:`lib/foo/__init__.py` exists."
 msgstr ""
+"在你的 setup 脚本中。 这个字典的键是包名，空的包名代表根包。 字典的值是相对于你的发布包根目录的目录名。 在本例中，当你声明 "
+"``packages = ['foo']`` 时，你将承诺存在 :file:`lib/foo/__init__.py` 这个文件。"
 
 #: ../../distutils/setupscript.rst:93
 msgid ""
@@ -163,6 +169,8 @@ msgid ""
 ":file:`lib`, the :mod:`foo.bar` package in :file:`lib/bar`, etc.  This would"
 " be written in the setup script as ::"
 msgstr ""
+"另一种可能的约定是将 :mod:`foo` 包直接放在 :file:`lib` 中，将 :mod:`foo.bar` 包放在 "
+":file:`lib/bar` 中等等。 这可以在 setup 脚本中写为 ::"
 
 #: ../../distutils/setupscript.rst:99
 msgid ""
@@ -175,6 +183,11 @@ msgid ""
 "the Distutils will *not* recursively scan your source tree looking for any "
 "directory with an :file:`__init__.py` file.)"
 msgstr ""
+"``package_dir`` 字典中的 ``package: dir`` 条目隐式地应用于 *package* 以下的所有包，因而在这里 "
+":mod:`foo.bar` 的情况会被自动地处理。 在这个示例中，使用 ``packages = ['foo', 'foo.bar']`` 告知 "
+"Distutils 要查找 :file:`lib/__init__.py` 和 :file:`lib/bar/__init__.py`。 （请记住虽然 "
+"``package_dir`` 会递归地应用，但你必须在 ``packages`` 中显式地列出所有的包：Distutils *不会* "
+"递归地扫描你的源代码树来查找任何带有 :file:`__init__.py` 文件的目录。）"
 
 #: ../../distutils/setupscript.rst:112
 msgid "Listing individual modules"
@@ -188,6 +201,8 @@ msgid ""
 "shown in section :ref:`distutils-simple-example`; here is a slightly more "
 "involved example::"
 msgstr ""
+"对于一个小型的模块分发包，你可能会倾向于列出所有的模块而不是只列出包 --- 特别是在“根包”中只有一个模块（即根本不存在包）的情况下。 "
+"这种最简单的情况见 :ref:`distutils-simple-example` 一节；下面是一个稍微复杂一点的例子::"
 
 #: ../../distutils/setupscript.rst:121
 msgid ""

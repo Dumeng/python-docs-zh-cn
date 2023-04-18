@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-04-07 14:20+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -136,7 +136,7 @@ msgid ""
 msgstr ""
 "如果 *encoding* 或者 *error* 被指定, 或者 *text* 被设为 True, 标准输入, 标准输出和标准错误的文件对象将通过指定的"
 " *encoding* 和 *errors* 以文本模式打开, 否则以默认的 :class:`io.TextIOWrapper` 打开. "
-"*universal_newline* 参数等同于 *text* 并且提供了向后兼容性. 默认情况下, 文件对象是以二进制模式打开的."
+"*universal_newlines* 参数等同于 *text* 并且提供了向后兼容性. 默认情况下, 文件对象是以二进制模式打开的."
 
 #: ../../library/subprocess.rst:81
 msgid ""
@@ -438,7 +438,7 @@ msgid ""
 "instead of ``locale.getpreferredencoding()``.  See the "
 ":class:`io.TextIOWrapper` class for more information on this change."
 msgstr ""
-"当 *universal_newline* 被设为 ``True``，则类使用 "
+"当 *universal_newlines* 被设为 ``True``，则类使用 "
 ":func:`locale.getpreferredencoding(False) <locale.getpreferredencoding>` "
 "编码来代替 ``locale.getpreferredencoding()``。关于它们的区别的更多信息，见 "
 ":class:`io.TextIOWrapper`。"
@@ -631,7 +631,7 @@ msgstr ":const:`0` 表示不使用缓冲区 （读取与写入是一个系统调
 msgid ""
 ":const:`1` means line buffered (only usable if ``text=True`` or "
 "``universal_newlines=True``)"
-msgstr ""
+msgstr ":const:`1` 表示行缓冲（仅当 ``text=True`` 或 ``universal_newlines=True`` 时有用）"
 
 #: ../../library/subprocess.rst:468
 msgid "any other positive value means use a buffer of approximately that size"

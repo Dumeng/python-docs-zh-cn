@@ -1116,7 +1116,7 @@ msgstr "从处理函数返回非零值将终止当前正在执行的查询并导
 msgid ""
 "Register callable *trace_callback* to be invoked for each SQL statement that"
 " is actually executed by the SQLite backend."
-msgstr ""
+msgstr "为 SQLite 后端实际执行的每条 SQL 语言注册将被发起调用的可调用对象 *trace_callback*。"
 
 #: ../../library/sqlite3.rst:918
 msgid ""
@@ -1127,10 +1127,13 @@ msgid ""
 " management <sqlite3-controlling-transactions>` of the :mod:`!sqlite3` "
 "module and the execution of triggers defined in the current database."
 msgstr ""
+"传给该回调的唯一参数是被执行的语句 (作为 :class:`str`)。 回调的返回值将被忽略。 请注意后端不仅会运行传给 "
+":meth:`Cursor.execute` 方法的语句。 其他来源还包括 :mod:`!sqlite3` 模块的 :ref:`事务管理 "
+"<sqlite3-controlling-transactions>` 以及在当前数据库中定义的触发器的执行。"
 
 #: ../../library/sqlite3.rst:926
 msgid "Passing ``None`` as *trace_callback* will disable the trace callback."
-msgstr ""
+msgstr "传入 ``None`` 作为 *trace_callback* 将禁用追踪回调。"
 
 #: ../../library/sqlite3.rst:929
 msgid ""

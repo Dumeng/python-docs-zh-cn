@@ -864,6 +864,8 @@ msgid ""
 "must return :ref:`a type natively supported by SQLite <sqlite3-types>`. Set "
 "to ``None`` to remove an existing SQL function."
 msgstr ""
+"当该 SQL 函数被发起调用时将会调用一个可调用对象。 该可调用对象必须返回 :ref:`一个 SQLite 原生支持的类型 "
+"<sqlite3-types>`。 设为 ``None`` 将会移除一个现有的 SQL 函数。"
 
 #: ../../library/sqlite3.rst:656
 msgid ""
@@ -871,10 +873,12 @@ msgid ""
 "<https://sqlite.org/deterministic.html>`_, which allows SQLite to perform "
 "additional optimizations."
 msgstr ""
+"如为 ``True``，创建的 SQL 函数将被标记为 `deterministic "
+"<https://sqlite.org/deterministic.html>`_，这允许 SQLite 执行额外的优化。"
 
 #: ../../library/sqlite3.rst:661
 msgid "If *deterministic* is used with SQLite versions older than 3.8.3."
-msgstr ""
+msgstr "如果 *deterministic* 在早于 SQLite 3.8.3 的版本上使用。"
 
 #: ../../library/sqlite3.rst:664
 msgid "The *deterministic* parameter."
@@ -889,17 +893,17 @@ msgstr "示例:"
 
 #: ../../library/sqlite3.rst:683
 msgid "Create or remove a user-defined SQL aggregate function."
-msgstr ""
+msgstr "创建或移除用户自定义的 SQL 聚合函数。"
 
 #: ../../library/sqlite3.rst:685
 msgid "The name of the SQL aggregate function."
-msgstr ""
+msgstr "SQL 聚合函数的名称。"
 
 #: ../../library/sqlite3.rst:688
 msgid ""
 "The number of arguments the SQL aggregate function can accept. If ``-1``, it"
 " may take any number of arguments."
-msgstr ""
+msgstr "SQL 聚合函数可接受的参数数量。 如为 ``-1``，则可以接受任意数量的参数。"
 
 #: ../../library/sqlite3.rst:692
 msgid ""
@@ -909,6 +913,9 @@ msgid ""
 "of arguments that the ``step()`` method must accept is controlled by "
 "*n_arg*.  Set to ``None`` to remove an existing SQL aggregate function."
 msgstr ""
+"一个类必须实现下列方法:  * ``step()``: 向聚合添加一行。 * ``finalize()``: 将聚合的最终结果作为 :ref:`一个 "
+"SQLite 原生支持的类型 <sqlite3-types>` 返回。 ``step()`` 方法需要接受的参数数量是由 *n_arg* 控制的。 设为"
+" ``None`` 将移除现有的 SQL 聚合函数。"
 
 #: ../../library/sqlite3.rst:693
 msgid "A class must implement the following methods:"
@@ -960,6 +967,10 @@ msgid ""
 "*num_params*.  Set to ``None`` to remove an existing SQL aggregate window "
 "function."
 msgstr ""
+"一个必须实现下列方法的类:  * ``step()``: 向当前窗口添加一行。 * ``value()``: 返回聚合的当前值。 * "
+"``inverse()``: 从当前窗口移除一行。 * ``finalize()``: 将聚合的最终结果作为 :ref:`一个 SQLite "
+"原生支持的类型 <sqlite3-types>` 返回。 ``step()`` 和 ``value()`` 方法需要接受的参数数量是由 "
+"*num_params* 控制的。 设为 ``None`` 将移除现有的 SQL 聚合窗口函数。"
 
 #: ../../library/sqlite3.rst:747
 msgid "A class that must implement the following methods:"
@@ -975,23 +986,23 @@ msgstr "``value()``: 返回聚合的当前值。"
 
 #: ../../library/sqlite3.rst:751
 msgid "``inverse()``: Remove a row from the current window."
-msgstr ""
+msgstr "``inverse()``: 从当前窗口移除一行。Remove a row from the current window."
 
 #: ../../library/sqlite3.rst:755
 msgid ""
 "The number of arguments that the ``step()`` and ``value()`` methods must "
 "accept is controlled by *num_params*."
-msgstr ""
+msgstr "``step()`` 和 ``value()`` 方法需要接受的参数数量是由 *num_params* 控制的。"
 
 #: ../../library/sqlite3.rst:758
 msgid "Set to ``None`` to remove an existing SQL aggregate window function."
-msgstr ""
+msgstr "设为 ``None`` 将移除现有的 SQL 聚合窗口函数。"
 
 #: ../../library/sqlite3.rst:760
 msgid ""
 "If used with a version of SQLite older than 3.25.0, which does not support "
 "aggregate window functions."
-msgstr ""
+msgstr "如果在早于 SQLite 3.25.0，不支持聚合窗口函数的版本上使用。"
 
 #: ../../library/sqlite3.rst:823
 msgid ""
@@ -1020,20 +1031,20 @@ msgstr "下面的例子显示了一个反向排序的排序方法:"
 
 #: ../../library/sqlite3.rst:859
 msgid "Remove a collation function by setting *callable* to ``None``."
-msgstr ""
+msgstr "通过将 *callable* 设为 ``None`` 来移除一个排序规则函数。"
 
 #: ../../library/sqlite3.rst:861
 msgid ""
 "The collation name can contain any Unicode character.  Earlier, only ASCII "
 "characters were allowed."
-msgstr ""
+msgstr "排序规则的名称可以包含任意 Unicode 字符。 在之前，只允许 ASCII 字符。"
 
 #: ../../library/sqlite3.rst:868
 msgid ""
 "Call this method from a different thread to abort any queries that might be "
 "executing on the connection. Aborted queries will raise an "
 ":exc:`OperationalError`."
-msgstr ""
+msgstr "从其他的线程调用此方法以中止可能正在连接上执行的任何查询。 被中止的查询将引发 :exc:`OperationalError`。"
 
 #: ../../library/sqlite3.rst:875
 msgid ""
@@ -1043,6 +1054,9 @@ msgid ""
 "signal how access to the column should be handled by the underlying SQLite "
 "library."
 msgstr ""
+"注册一个可调用对象 *authorizer_callback* 以便在每次尝试访问数据库表的某一列时发起调用它。 该回调应当返回 "
+":const:`SQLITE_OK`, :const:`SQLITE_DENY` 或 :const:`SQLITE_IGNORE` 中的一个以提示下层的"
+" SQLite 库应当如何处理对该列的访问。"
 
 #: ../../library/sqlite3.rst:881
 msgid ""
@@ -1053,6 +1067,9 @@ msgid ""
 "name of the inner-most trigger or view that is responsible for the access "
 "attempt or ``None`` if this access attempt is directly from input SQL code."
 msgstr ""
+"该回调的第一个参数指明哪种操作将被授权。 第二个和第三个参数根据第一个参数的具体值将为传给操作的参数或为 ``None``。 "
+"第四个参数如果适用则为数据库名称（\"main\", \"temp\" 等）。 "
+"第五个参数是负责尝试访问的最内层触发器或视图的名称或者如果该尝试访问是直接来自输入的 SQL 代码的话则为 ``None``。"
 
 #: ../../library/sqlite3.rst:888
 msgid ""
@@ -1061,14 +1078,16 @@ msgid ""
 " the first one. All necessary constants are available in the :mod:`!sqlite3`"
 " module."
 msgstr ""
+"请参阅 SQLite 文档了解第一个参数可能的值以及依赖于第一个参数的第二个和第三个参数的含义。 所有必需的常量均在 :mod:`!sqlite3` "
+"模块中可用。"
 
 #: ../../library/sqlite3.rst:892
 msgid "Passing ``None`` as *authorizer_callback* will disable the authorizer."
-msgstr ""
+msgstr "将 ``None`` 作为 *authorizer_callback* 传入将禁用授权回调。"
 
 #: ../../library/sqlite3.rst:894
 msgid "Added support for disabling the authorizer using ``None``."
-msgstr ""
+msgstr "增加对使用 ``None`` 禁用授权回调的支持。"
 
 #: ../../library/sqlite3.rst:900
 msgid ""
@@ -1077,12 +1096,14 @@ msgid ""
 "get called from SQLite during long-running operations, for example to update"
 " a GUI."
 msgstr ""
+"注册可调用对象 *progress_handler* 以便针对 SQLite 的每 *n* 条指令发起调用。 这在你想要在长时间运行的操作期间从 "
+"SQLite 获得调用，例如更新 GUI 时很有用处。"
 
 #: ../../library/sqlite3.rst:905
 msgid ""
 "If you want to clear any previously installed progress handler, call the "
 "method with ``None`` for *progress_handler*."
-msgstr ""
+msgstr "如果你想清除任何先前安装的进度处理句柄，可在调用该方法时传入 ``None`` 作为 *progress_handler*。"
 
 #: ../../library/sqlite3.rst:908
 msgid ""

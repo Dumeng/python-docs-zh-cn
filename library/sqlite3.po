@@ -1236,6 +1236,8 @@ msgid ""
 " of pages still to be copied, and the *total* number of pages. Defaults to "
 "``None``."
 msgstr ""
+"如果设为一个可调用对象，它将针对每次备份迭代附带三个整数参数被发起调用：上次迭代的状态 *status*，待拷贝的剩余页数 "
+"*remaining*，以及总页数 *total*。 默认值为 ``None``。"
 
 #: ../../library/sqlite3.rst:1056
 msgid ""
@@ -1243,38 +1245,40 @@ msgid ""
 "the main database, ``\"temp\"`` for the temporary database, or the name of a"
 " custom database as attached using the ``ATTACH DATABASE`` SQL statement."
 msgstr ""
+"要备份的数据库名称。 可能为代表主数据库的 ``\"main\"`` (默认值)，代表临时数据库的 ``\"temp\"``，或者使用 ``ATTACH"
+" DATABASE`` SQL 语句所附加的自定义数据库名称。"
 
 #: ../../library/sqlite3.rst:1063
 msgid ""
 "The number of seconds to sleep between successive attempts to back up "
 "remaining pages."
-msgstr ""
+msgstr "连续尝试备份剩余页所要间隔的休眠秒数。"
 
 #: ../../library/sqlite3.rst:1067
 msgid "Example 1, copy an existing database into another:"
-msgstr ""
+msgstr "示例 1，将现有数据库拷贝至另一个数据库:"
 
 #: ../../library/sqlite3.rst:1086
 msgid "Example 2, copy an existing database into a transient copy:"
-msgstr ""
+msgstr "示例 2，将现有数据库拷贝至一个临时副本:"
 
 #: ../../library/sqlite3.rst:1098
 msgid "Get a connection runtime limit."
-msgstr ""
+msgstr "获取一个连接的运行时限制。"
 
 #: ../../library/sqlite3.rst:1100
 msgid "The `SQLite limit category`_ to be queried."
-msgstr ""
+msgstr "要查询的 `SQLite limit category`_。"
 
 #: ../../library/sqlite3.rst:1105 ../../library/sqlite3.rst:1142
 msgid "If *category* is not recognised by the underlying SQLite library."
-msgstr ""
+msgstr "如果 *category* 不能被下层的 SQLite 库所识别。"
 
 #: ../../library/sqlite3.rst:1108
 msgid ""
 "Example, query the maximum length of an SQL statement for "
 ":class:`Connection` ``con`` (the default is 1000000000):"
-msgstr ""
+msgstr "示例，查询 :class:`Connection` ``con`` 上一条 SQL 语句的最大长度（默认值为 1000000000）:"
 
 #: ../../library/sqlite3.rst:1128
 msgid ""
@@ -1282,7 +1286,7 @@ msgid ""
 "upper bound are silently truncated to the hard upper bound. Regardless of "
 "whether or not the limit was changed, the prior value of the limit is "
 "returned."
-msgstr ""
+msgstr "设置连接运行时限制。 如果试图将限制提高到超出强制上界则会静默地截短到强制上界。 无论限制值是否被修改，都将返回之前的限制值。"
 
 #: ../../library/sqlite3.rst:1133
 msgid "The `SQLite limit category`_ to be set."

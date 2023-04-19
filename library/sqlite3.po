@@ -1152,6 +1152,8 @@ msgid ""
 "implementations.  One well-known extension is the fulltext-search extension "
 "distributed with SQLite."
 msgstr ""
+"如果 *enabled* 为 ``True`` 则允许 SQLite 从共享库加载 SQLite 扩展；否则，不允许加载 SQLite 扩展。 "
+"SQLite 扩展可以定义新的函数、聚合或全新的虚拟表实现。 一个知名的扩展是与随同 SQLite 一起分发的全文搜索扩展。"
 
 #: ../../library/sqlite3.rst:948
 msgid ""

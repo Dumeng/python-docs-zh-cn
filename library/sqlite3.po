@@ -1163,6 +1163,9 @@ msgid ""
 "must pass the :option:`--enable-loadable-sqlite-extensions` option to "
 ":program:`configure`."
 msgstr ""
+"在默认情况下 :mod:`!sqlite3` 模块的构建没有附带可加载扩展支持，因为某些平台（主要是 macOS）上的 SQLite "
+"库在编译时未启用此特性。 要获得可加载扩展支持，你必须将 :option:`--enable-loadable-sqlite-extensions` "
+"选项传给 :program:`configure`。"
 
 #: ../../library/sqlite3.rst:955
 msgid ""
@@ -1182,6 +1185,8 @@ msgid ""
 "extension loading with :meth:`enable_load_extension` before calling this "
 "method."
 msgstr ""
+"从位于 *path* 的共享库加载一个 SQLite 扩展。 请在调用此方法之前通过 :meth:`enable_load_extension` "
+"来启用扩展加载。"
 
 #: ../../library/sqlite3.rst:1006
 msgid ""
@@ -1201,6 +1206,8 @@ msgid ""
 "when saving an in-memory database for later restoration. Similar to the "
 "``.dump`` command in the :program:`sqlite3` shell."
 msgstr ""
+"返回一个 :term:`iterator` 用来将数据库转储为 SQL 源代码。 在保存内存数据库以便将来恢复时很有用处。 类似于 "
+":program:`sqlite3` shell 中的 ``.dump`` 命令。"
 
 #: ../../library/sqlite3.rst:1033
 msgid "Create a backup of an SQLite database."
@@ -1210,17 +1217,17 @@ msgstr "创建 SQLite 数据库的备份。"
 msgid ""
 "Works even if the database is being accessed by other clients or "
 "concurrently by the same connection."
-msgstr ""
+msgstr "即使数据库是通过其他客户端访问或通过同一连接并发访问也是有效的。"
 
 #: ../../library/sqlite3.rst:1038
 msgid "The database connection to save the backup to."
-msgstr ""
+msgstr "用于保存备份的数据库连接。"
 
 #: ../../library/sqlite3.rst:1041
 msgid ""
 "The number of pages to copy at a time. If equal to or less than ``0``, the "
 "entire database is copied in a single step. Defaults to ``-1``."
-msgstr ""
+msgstr "每次要拷贝的页数。 如果小于等于 ``0``，则一次性拷贝整个数据库。 默认为 ``-1``。"
 
 #: ../../library/sqlite3.rst:1047
 msgid ""

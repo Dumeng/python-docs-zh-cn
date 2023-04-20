@@ -1411,7 +1411,7 @@ msgstr ""
 #: ../../library/sqlite3.rst:1246 ../../library/sqlite3.rst:1528
 #: ../../library/sqlite3.rst:1551
 msgid "See :ref:`sqlite3-howto-row-factory` for more details."
-msgstr ""
+msgstr "详情参见 :ref:`sqlite3-howto-row-factory`。"
 
 #: ../../library/sqlite3.rst:1250
 msgid ""
@@ -1420,12 +1420,15 @@ msgid ""
 "``TEXT`` data type. By default, this attribute is set to :class:`str`. If "
 "you want to return ``bytes`` instead, set *text_factory* to ``bytes``."
 msgstr ""
+"一个接受 :class:`bytes` 形参并返回其文本表示形式的可调用对象。 该可调用对象将针对具有 ``TEXT`` 数据类型的 SQLite "
+"值发起调用。 在默认情况下，该属性将被设为 :class:`str`。 如果你想要改为返回 ``bytes``，请将 *text_factory* 设为"
+" ``bytes``。"
 
 #: ../../library/sqlite3.rst:1290
 msgid ""
 "Return the total number of database rows that have been modified, inserted, "
 "or deleted since the database connection was opened."
-msgstr ""
+msgstr "返回自打开数据库连接以来已修改、插入或删除的数据库行的总数。"
 
 #: ../../library/sqlite3.rst:1297
 msgid "Cursor objects"
@@ -1438,6 +1441,9 @@ msgid ""
 "created using :meth:`Connection.cursor`, or by using any of the "
 ":ref:`connection shortcut methods <sqlite3-connection-shortcuts>`."
 msgstr ""
+"一个代表被用于执行 SQL 语句，并管理获取操作的上下文的 `database cursor`_ 的 ``Cursor`` 对象。 游标对象是使用 "
+":meth:`Connection.cursor`，或是通过使用任何 :ref:`连接快捷方法 <sqlite3-connection-"
+"shortcuts>` 来创建的。"
 
 #: ../../library/sqlite3.rst:1306
 msgid ""
@@ -1445,6 +1451,8 @@ msgid ""
 ":meth:`~Cursor.execute` a ``SELECT`` query, you can simply iterate over the "
 "cursor to fetch the resulting rows:"
 msgstr ""
+"Cursor 对象属于 :term:`迭代器 <iterator>`，这意味着如果你通过 :meth:`~Cursor.execute` 来执行 "
+"``SELECT`` 查询，你可以简单地迭代游标来获取结果行:"
 
 #: ../../library/sqlite3.rst:1331
 msgid "A :class:`Cursor` instance has the following attributes and methods."
@@ -1454,11 +1462,11 @@ msgstr ":class:`Cursor` 游标实例具有以下属性和方法。"
 msgid ""
 "Execute SQL a single SQL statement, optionally binding Python values using "
 ":ref:`placeholders <sqlite3-placeholders>`."
-msgstr ""
+msgstr "执行一条 SQL 语句，可以选择使用 :ref:`占位符 <sqlite3-placeholders>` 来绑定 Python 值。"
 
 #: ../../library/sqlite3.rst:1342
 msgid "A single SQL statement."
-msgstr ""
+msgstr "一条 SQL 语句。"
 
 #: ../../library/sqlite3.rst:1345
 msgid ""
@@ -1466,6 +1474,8 @@ msgid ""
 "placeholders are used. A :term:`!sequence` if unnamed placeholders are used."
 " See :ref:`sqlite3-placeholders`."
 msgstr ""
+"要绑定到 *sql* 中占位符的 Python 值。 如果使用命名占位符则会使用 :class:`!dict`。 如果使用非命名占位符则会使用 "
+":term:`!sequence`。 参见 :ref:`sqlite3-placeholders`。"
 
 #: ../../library/sqlite3.rst:1352
 msgid "If *sql* contains more than one SQL statement."
@@ -2307,9 +2317,11 @@ msgid ""
 "transaction before execution of the given SQL script, regardless of the "
 "value of :attr:`~Connection.isolation_level`."
 msgstr ""
+":meth:`~Cursor.executescript` 方法会在执行给定的 SQL 脚本之前隐式地提交任何挂起的事务，无论 "
+":attr:`~Connection.isolation_level` 的值是什么。"
 
 #: ../../library/sqlite3.rst:2391
 msgid ""
 ":mod:`!sqlite3` used to implicitly commit an open transaction before DDL "
 "statements.  This is no longer the case."
-msgstr ""
+msgstr "在以前 :mod:`!sqlite3` 会在 DDL 语句之前隐式地提交已开启的事务。 现存则不会再这样做。"

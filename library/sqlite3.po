@@ -1290,18 +1290,18 @@ msgstr "设置连接运行时限制。 如果试图将限制提高到超出强�
 
 #: ../../library/sqlite3.rst:1133
 msgid "The `SQLite limit category`_ to be set."
-msgstr ""
+msgstr "要设置的 `SQLite limit category`_。"
 
 #: ../../library/sqlite3.rst:1136
 msgid ""
 "The value of the new limit. If negative, the current limit is unchanged."
-msgstr ""
+msgstr "新的限制值。 如为负值，当前限制将保持不变。"
 
 #: ../../library/sqlite3.rst:1145
 msgid ""
 "Example, limit the number of attached databases to 1 for :class:`Connection`"
 " ``con`` (the default limit is 10):"
-msgstr ""
+msgstr "示例，将 :class:`Connection` ``con`` 上附加的数据库数量限制为 1（默认限制为 10）:"
 
 #: ../../library/sqlite3.rst:1162
 msgid ""
@@ -1311,16 +1311,18 @@ msgid ""
 "sequence of bytes which would be written to disk if that database were "
 "backed up to disk."
 msgstr ""
+"将一个数据库序列化为 :class:`bytes` 对象。 对于普通的磁盘数据库文件，序列化就是磁盘文件的一个副本。 "
+"对于内存数据库或“临时”数据库，序列化就是当数据库备份到磁盘时要写入到磁盘的相同字节序列。"
 
 #: ../../library/sqlite3.rst:1168
 msgid "The database name to be serialized. Defaults to ``\"main\"``."
-msgstr ""
+msgstr "要序列化的数据库名称。 默认为 ``\"main\"``。"
 
 #: ../../library/sqlite3.rst:1176
 msgid ""
 "This method is only available if the underlying SQLite library has the "
 "serialize API."
-msgstr ""
+msgstr "此方法仅在下层 SQLite 库具有序列化 API 时可用。"
 
 #: ../../library/sqlite3.rst:1184
 msgid ""
@@ -1329,20 +1331,22 @@ msgid ""
 "disconnect from database *name*, and reopen *name* as an in-memory database "
 "based on the serialization contained in *data*."
 msgstr ""
+"将一个 :meth:`已序列化的 <serialize>` 数据库反序列化至 :class:`Connection`。 此方法将导致数据库连接从 "
+"*name* 数据库断开，并基于包含在 *data* 中的序列化数据将 *name* 作为内存数据库重新打开。"
 
 #: ../../library/sqlite3.rst:1190
 msgid "A serialized database."
-msgstr ""
+msgstr "已序列化的数据库。"
 
 #: ../../library/sqlite3.rst:1193
 msgid "The database name to deserialize into. Defaults to ``\"main\"``."
-msgstr ""
+msgstr "反序列化的目标数据库名称。 默认为 ``\"main\"``。"
 
 #: ../../library/sqlite3.rst:1197
 msgid ""
 "If the database connection is currently involved in a read transaction or a "
 "backup operation."
-msgstr ""
+msgstr "如果当前数据库连接正在执行读取事务或备份操作。"
 
 #: ../../library/sqlite3.rst:1201
 msgid "If *data* does not contain a valid SQLite database."

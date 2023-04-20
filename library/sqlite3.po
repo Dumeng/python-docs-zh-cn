@@ -1479,7 +1479,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1352
 msgid "If *sql* contains more than one SQL statement."
-msgstr ""
+msgstr "如果 *sql* 包含多条 SQL 语句。"
 
 #: ../../library/sqlite3.rst:1355
 msgid ""
@@ -1488,21 +1488,24 @@ msgid ""
 "no open transaction, a transaction is implicitly opened before executing "
 "*sql*."
 msgstr ""
+"如果 :attr:`~Connection.isolation_level` 不为 ``None``，*sql* 为一条 ``INSERT``, "
+"``UPDATE``, ``DELETE`` 或 ``REPLACE`` 语句，并且没有开启事务，则会在执行 *sql* 之前隐式地开启事务。"
 
 #: ../../library/sqlite3.rst:1360
 msgid "Use :meth:`executescript` to execute multiple SQL statements."
-msgstr ""
+msgstr "使用 :meth:`executescript` 来执行多条 SQL 语句。statements."
 
 #: ../../library/sqlite3.rst:1364
 msgid ""
 "For every item in *parameters*, repeatedly execute the :ref:`parameterized "
 "<sqlite3-placeholders>` SQL statement *sql*."
 msgstr ""
+"对于 *parameters* 中的每一项，重复执行 :ref:`参数化的 <sqlite3-placeholders>` SQL 语句 *sql*。"
 
 #: ../../library/sqlite3.rst:1368
 msgid ""
 "Uses the same implicit transaction handling as :meth:`~Cursor.execute`."
-msgstr ""
+msgstr "使用与 :meth:`~Cursor.execute` 相同的隐式事务处理。"
 
 #: ../../library/sqlite3.rst:1370
 msgid "A single SQL :abbr:`DML (Data Manipulation Language)` statement."

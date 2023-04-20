@@ -1350,29 +1350,29 @@ msgstr "如果当前数据库连接正在执行读取事务或备份操作。"
 
 #: ../../library/sqlite3.rst:1201
 msgid "If *data* does not contain a valid SQLite database."
-msgstr ""
+msgstr "如果 *data* 不包含有效的 SQLite 数据库。"
 
 #: ../../library/sqlite3.rst:1204
 msgid "If :func:`len(data) <len>` is larger than ``2**63 - 1``."
-msgstr ""
+msgstr "如果 :func:`len(data) <len>` 大于 ``2**63 - 1``。"
 
 #: ../../library/sqlite3.rst:1209
 msgid ""
 "This method is only available if the underlying SQLite library has the "
 "deserialize API."
-msgstr ""
+msgstr "此方法仅在下层的 SQLite 库具有反序列化 API 时可用。"
 
 #: ../../library/sqlite3.rst:1216
 msgid ""
 "This read-only attribute corresponds to the low-level SQLite `autocommit "
 "mode`_."
-msgstr ""
+msgstr "这个只读属性对应于低层级的 SQLite `autocommit mode`_。"
 
 #: ../../library/sqlite3.rst:1219
 msgid ""
 "``True`` if a transaction is active (there are uncommitted changes), "
 "``False`` otherwise."
-msgstr ""
+msgstr "如果一个事务处于活动状态（有未提交的更改）则为 ``True``，否则为 ``False``。"
 
 #: ../../library/sqlite3.rst:1226
 msgid ""
@@ -1383,12 +1383,18 @@ msgid ""
 "`SQLite transaction behaviour`_, implicit :ref:`transaction management "
 "<sqlite3-controlling-transactions>` is performed."
 msgstr ""
+"这个属性控制由 :mod:`!sqlite3` 执行的 :ref:`事务处理 <sqlite3-controlling-transactions>`。 "
+"如果设为 ``None``，则绝不会隐式地开启事务。 如果设为 ``\"DEFERRED\"``, ``\"IMMEDIATE\"`` 或 "
+"``\"EXCLUSIVE\"`` 中的一个，对应于下层的 `SQLite transaction behaviour`_，则会执行隐式的 "
+":ref:`事务管理 <sqlite3-controlling-transactions>`。"
 
 #: ../../library/sqlite3.rst:1234
 msgid ""
 "If not overridden by the *isolation_level* parameter of :func:`connect`, the"
 " default is ``\"\"``, which is an alias for ``\"DEFERRED\"``."
 msgstr ""
+"如果未被 :func:`connect` 的 *isolation_level* 形参覆盖，则默认为 ``\"\"``，这是 "
+"``\"DEFERRED\"`` 的一个别名。"
 
 #: ../../library/sqlite3.rst:1239
 msgid ""
@@ -1398,6 +1404,9 @@ msgid ""
 "new ones. Is ``None`` by default, meaning each row is returned as a "
 ":class:`tuple`."
 msgstr ""
+"针对从该连接创建的 :class:`Cursor` 对象的初始 :attr:`~Cursor.row_factory`。 "
+"为该属性赋值不会影响属于该连接的现有游标的 :attr:`!row_factory`，只影响新的游标。 默认为 ``None``，表示将每一行作为 "
+":class:`tuple` 返回。"
 
 #: ../../library/sqlite3.rst:1246 ../../library/sqlite3.rst:1528
 #: ../../library/sqlite3.rst:1551
@@ -1564,7 +1573,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1458 ../../library/sqlite3.rst:1462
 msgid "Required by the DB-API. Does nothing in :mod:`!sqlite3`."
-msgstr ""
+msgstr "DB-API 要求的方法。 在 :mod:`!sqlite3` 不做任何事情。"
 
 #: ../../library/sqlite3.rst:1466
 msgid ""
@@ -1637,7 +1646,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1539
 msgid "Row objects"
-msgstr ""
+msgstr "Row 对象"
 
 #: ../../library/sqlite3.rst:1543
 msgid ""

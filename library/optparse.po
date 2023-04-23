@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 14:13+0000\n"
+"POT-Creation-Date: 2023-04-21 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -226,6 +226,9 @@ msgid ""
 "interpret ``-ab``?  Because of this ambiguity, :mod:`optparse` does not "
 "support this feature."
 msgstr ""
+"通常，一个给定的选项将接受一个参数或是不接受。 许多人想要“可选的可选参数”特性，即某些选项将在看到特定参数时接受它，而如果没看到特定参数则不接受。 "
+"在某种程度上说这一特性是存在争议的，因它它将使解析发生歧义：如果 ``-a`` 接受一个可选参数而 ``-b`` "
+"是完全不同的另一个选项，那我们该如何解读 ``-ab`` 呢？ 由于这会存在歧义，因此 :mod:`optparse` 不支持这一特性。"
 
 #: ../../library/optparse.rst:165
 msgid "positional argument"
@@ -236,7 +239,7 @@ msgid ""
 "something leftover in the argument list after options have been parsed, i.e."
 " after options and their arguments have been parsed and removed from the "
 "argument list."
-msgstr ""
+msgstr "在解析选项之后，即在选项及其参数解析完成并从参数列表中移除后参数列表中余下的内容。"
 
 #: ../../library/optparse.rst:171
 msgid "required option"
@@ -249,10 +252,12 @@ msgid ""
 "doesn't prevent you from implementing required options, but doesn't give you"
 " much help at it either."
 msgstr ""
+"必须在命令行中提供的选项；请注意在英文中 \"required option\" 这个短语是自相矛盾的。 :mod:`optparse` "
+"不会阻止你实现必须选项，但也不会在这方面给你什么帮助。"
 
 #: ../../library/optparse.rst:173
 msgid "For example, consider this hypothetical command-line::"
-msgstr ""
+msgstr "例如，考虑这个假设的命令行::"
 
 #: ../../library/optparse.rst:177
 msgid ""
@@ -260,10 +265,12 @@ msgid ""
 "one argument, ``report.txt`` is an option argument.  ``foo`` and ``bar`` are"
 " positional arguments."
 msgstr ""
+"``-v`` 和 ``--report`` 都是选项。 假定 ``--report`` 接受一个参数，``report.txt`` 是一个选项参数。 "
+"``foo`` 和 ``bar`` 是位置参数。"
 
 #: ../../library/optparse.rst:185
 msgid "What are options for?"
-msgstr ""
+msgstr "选项的作用是什么？"
 
 #: ../../library/optparse.rst:187
 msgid ""
@@ -276,6 +283,9 @@ msgid ""
 " have been rightly criticized for their non-standard syntax and confusing "
 "interfaces.)"
 msgstr ""
+"选项被用来提供额外信息以便微调或定制程序的执行。 需要明确的一点是，选项通常都是 *可选的*。 一个程序应当能在没有设置任何选项的的情况下正常运行。 "
+"（从 Unix 或 GNU 工具集中随机挑选一个程序。 它是否能在未设置任何选项的情况下运行并且仍然得到有意义的结果？ 主要的例外有 ``find``,"
+" ``tar`` 和 ``dd`` --- 它们都是些因为语法不标准和界面混乱而受到公正抨击的变异奇行种。）"
 
 #: ../../library/optparse.rst:195
 msgid ""
@@ -284,6 +294,8 @@ msgid ""
 "of information that your program absolutely requires in order to run "
 "successfully, that's what positional arguments are for."
 msgstr ""
+"有很多人希望他们的程序具有“必需选项”。 请再思考一下。 如果某个项是必需的，那么它就 *不是可选的*！ "
+"如果你的程序必需要有某项信息才能成功运行，则它更适合作为位置参数。"
 
 #: ../../library/optparse.rst:200
 msgid ""
@@ -293,6 +305,8 @@ msgid ""
 "``cp`` fails if you run it with no arguments.  However, it has a flexible, "
 "useful syntax that does not require any options at all::"
 msgstr ""
+"作为良好的命令行界面设计的一个例子，请看基本的用于拷贝文件的 ``cp`` 工具。 试图拷贝文件而不提供一个目标和至少一个源是没有什么意义的。 "
+"因此，如果你不带参数地运行 ``cp`` 它将会报错。 不过，它具有一个完全不需要任何选项的灵活、易用的语法::"
 
 #: ../../library/optparse.rst:209
 msgid ""

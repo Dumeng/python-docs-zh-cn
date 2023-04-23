@@ -18,19 +18,19 @@
 # Leo Li <foxleoly@hotmail.com>, 2022
 # Sefank <sefank@foxmail.com>, 2022
 # 周盛道 <zhoushengdao@sina.cn>, 2022
-# Jason Ren, 2023
 # Bryan不可思议, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Jason Ren, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-24 14:14+0000\n"
+"POT-Creation-Date: 2023-04-21 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Jason Ren, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -727,6 +727,9 @@ msgid ""
 "initialize :data:`sys.path`. Otherwise, initialization will recalculate the "
 "path and replace any values added to ``module_search_paths``."
 msgstr ""
+"为了使用 :c:member:`PyConfig.module_search_paths` 初始化 "
+":data:`sys.path`，:c:member:`PyConfig.module_search_paths_set` 字段现在必须使用``1`` "
+"作初始化，否则，该初始化行为会重新计算路径并替换任何加入到 ``module_search_paths`` 的值。"
 
 #: ../../whatsnew/3.11.rst:534
 msgid ""
@@ -736,6 +739,10 @@ msgid ""
 "env` and :option:`--help-xoptions` flags, and with the new :option:`--help-"
 "all`. (Contributed by Éric Araujo in :issue:`46142`.)"
 msgstr ""
+":option:`--help` 选项的输出现在将适应于50行/80列。有关 :ref:`Python environment variables "
+"<using-on-envvars>`  和 :option:`-X` 选项的信息可以分别使用 :option:`--help-env` 和 "
+":option:`--help-xoptions` 标志获得，并可以使用新的标志 :option:`--help-all`。（由 Éric Araujo"
+" 在 :issue:`46142` 贡献。）"
 
 #: ../../whatsnew/3.11.rst:541
 msgid ""
@@ -750,6 +757,12 @@ msgid ""
 "limitation <int_max_str_digits>` documentation.  The default limit is 4300 "
 "digits in string form."
 msgstr ""
+"使用十进制以外的底，如 2（二进制）、4、8（八进制）、16（十六进制）、32 以外作为基数在 :class:`int` 和  :class:`str`"
+" 之间进行转换，如果字符串形式的数字数量超过一个限制，会抛出 :exc:`ValueError`，以避免因算法复杂而导致的潜在拒绝服务攻击。这是对 "
+"`CVE-2020-10735 <https://cve.mitre.org/cgi-"
+"bin/cvename.cgi?name=CVE-2020-10735>`_ 的缓解方案。这个限制可以通过环境变量、命令行旗标或 :mod:`sys` "
+"API 进行配置或禁用。参见 :ref:`integer string conversion length limitation "
+"<int_max_str_digits>` 文档。默认限制是字符串形式的 4300 位数字。"
 
 #: ../../whatsnew/3.11.rst:556
 msgid "New Modules"
@@ -4049,7 +4062,7 @@ msgstr ""
 
 #: ../../whatsnew/3.11.rst:2508
 msgid "``stackcheck_counter``: removed."
-msgstr ""
+msgstr "``stackcheck_counter``：已移除。"
 
 #: ../../whatsnew/3.11.rst:2510
 msgid "Code defining ``PyThreadState_GetFrame()`` on Python 3.8 and older::"
@@ -4162,7 +4175,7 @@ msgstr ""
 msgid ""
 "The following C APIs have been deprecated in earlier Python releases, and "
 "will be removed in Python 3.12."
-msgstr ""
+msgstr "以下 C API 在早期 Python 发行版中已经弃用，将在 Python 3.12 中移除。"
 
 #: ../../whatsnew/3.11.rst:2600
 msgid ":c:func:`PyUnicode_AS_DATA`"
@@ -4285,12 +4298,14 @@ msgid ""
 "``Py_IS_INFINITY()`` macro. (Contributed by Victor Stinner in "
 ":issue:`45440`.)"
 msgstr ""
+"移除了 ``Py_FORCE_DOUBLE()`` 宏，它曾经由 ``Py_IS_INFINITY()`` 宏使用。（由 Victor Stinner "
+"在 :issue:`45440` 贡献。）"
 
 #: ../../whatsnew/3.11.rst:2650
 msgid ""
 "The following items are no longer available when :c:macro:`Py_LIMITED_API` "
 "is defined:"
-msgstr ""
+msgstr "以下项目在 :c:macro:`Py_LIMITED_API` 定义时不再可用："
 
 #: ../../whatsnew/3.11.rst:2653
 msgid ":c:func:`PyMarshal_WriteLongToFile`"
@@ -4334,12 +4349,16 @@ msgid ""
 "``PyTypeObject.tp_members`` member instead. (Contributed by Victor Stinner "
 "in :issue:`40170`.)"
 msgstr ""
+"移除了 ``PyHeapType_GET_MEMBERS()`` 宏。它错误地暴露在公开的 C API 中，且只能由 Python 在内部使用。请使用 "
+"``PyTypeObject.tp_members`` 作为替代。（由 Victor Stinner 在 :issue:`40170` 贡献。）"
 
 #: ../../whatsnew/3.11.rst:2673
 msgid ""
 "Remove the ``HAVE_PY_SET_53BIT_PRECISION`` macro (moved to the internal C "
 "API). (Contributed by Victor Stinner in :issue:`45412`.)"
 msgstr ""
+"移除了 ``HAVE_PY_SET_53BIT_PRECISION`` 宏（移动到了内部 C API）。（由 Victor Stinner 在 "
+":issue:`45412` 贡献。）"
 
 #: ../../whatsnew/3.11.rst:2679
 msgid ""
@@ -4347,6 +4366,8 @@ msgid ""
 "since Python 3.3, are little used and are inefficient relative to the "
 "recommended alternatives."
 msgstr ""
+"移除了 :c:type:`Py_UNICODE` 编码器 API，它们从 Python 3.3 "
+"起已经弃用，很少使用，而且相对于推荐的替代品来说，效率很低。"
 
 #: ../../whatsnew/3.11.rst:2684
 msgid "The removed functions are:"

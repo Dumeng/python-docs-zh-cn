@@ -271,7 +271,7 @@ msgstr ""
 
 #: ../../library/optparse.rst:185
 msgid "What are options for?"
-msgstr ""
+msgstr "选项的作用是什么？"
 
 #: ../../library/optparse.rst:187
 msgid ""

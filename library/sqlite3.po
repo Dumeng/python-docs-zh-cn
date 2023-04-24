@@ -2303,7 +2303,7 @@ msgstr "关于此特性的更多信息，包括可用的形参列表，可以在
 
 #: ../../library/sqlite3.rst:2266
 msgid "How to create and use row factories"
-msgstr "如何创建并使用行工厂函数"
+msgstr "如何创建并使用行工厂对象"
 
 #: ../../library/sqlite3.rst:2268
 msgid ""
@@ -2322,7 +2322,7 @@ msgid ""
 "will use the same row factory."
 msgstr ""
 "虽然 :attr:`!row_factory` 同时作为 :class:`Cursor` 和 :class:`Connection` "
-"的属性存在，但推荐设置 :class:`Connection.row_factory`，这样在该连接上创建的所有游标都将使用同一个行工厂函数。"
+"的属性存在，但推荐设置 :class:`Connection.row_factory`，这样在该连接上创建的所有游标都将使用同一个行工厂对象。"
 
 #: ../../library/sqlite3.rst:2278
 msgid ""
@@ -2331,29 +2331,32 @@ msgid ""
 " To use :class:`!Row` as a row factory, assign it to the "
 ":attr:`!row_factory` attribute:"
 msgstr ""
+":class:`!Row` 提供了针对列的序列方式和大小写不敏感的名称方式访问，具有优于 :class:`!tuple` 的最小化内存开销和性能影响。 "
+"要使用 :class:`!Row` 作为行工厂对象，请将其赋值给 :attr:`!row_factory` 属性:"
 
 #: ../../library/sqlite3.rst:2288
 msgid "Queries now return :class:`!Row` objects:"
-msgstr ""
+msgstr "现在查询将返回 :class:`!Row` 对象:"
 
 #: ../../library/sqlite3.rst:2303
 msgid ""
 "You can create a custom :attr:`~Cursor.row_factory` that returns each row as"
 " a :class:`dict`, with column names mapped to values:"
 msgstr ""
+"你可以创建自定义 :attr:`~Cursor.row_factory` 用来返回 :class:`dict` 形式的行，将列名映射到相应的值。"
 
 #: ../../library/sqlite3.rst:2312
 msgid ""
 "Using it, queries now return a :class:`!dict` instead of a :class:`!tuple`:"
-msgstr ""
+msgstr "使用它，现在查询将返回 :class:`!dict` 而不是 :class:`!tuple`:"
 
 #: ../../library/sqlite3.rst:2322
 msgid "The following row factory returns a :term:`named tuple`:"
-msgstr ""
+msgstr "以下行工厂函数将返回一个 :term:`named tuple`:"
 
 #: ../../library/sqlite3.rst:2333
 msgid ":func:`!namedtuple_factory` can be used as follows:"
-msgstr ""
+msgstr ":func:`!namedtuple_factory` 可以像下面这样使用:"
 
 #: ../../library/sqlite3.rst:2348
 msgid ""
@@ -2361,6 +2364,8 @@ msgid ""
 ":class:`~dataclasses.dataclass`, or any other custom class, instead of a "
 ":class:`~collections.namedtuple`."
 msgstr ""
+"经过一些调整，上面的范例程序可以被适配为使用 :class:`~dataclasses.dataclass`，或任何其他自定义类，而不是 "
+":class:`~collections.namedtuple`。"
 
 #: ../../library/sqlite3.rst:2356
 msgid "Explanation"
@@ -2374,7 +2379,7 @@ msgstr "事务控制"
 msgid ""
 "The :mod:`!sqlite3` module does not adhere to the transaction handling "
 "recommended by :pep:`249`."
-msgstr ""
+msgstr ":mod:`!sqlite3` 模块并不严格遵循 :pep:`249` 所推荐的事务处理方式。"
 
 #: ../../library/sqlite3.rst:2366
 msgid ""

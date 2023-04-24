@@ -2191,25 +2191,29 @@ msgid ""
 "value. This is done when connecting to a database, using the *detect_types* "
 "parameter of :func:`connect`. There are three options:"
 msgstr ""
+"我们现在需要告诉 :mod:`!sqlite3` 何时应当转换一个给定的 SQLite 值。 这是在连接到一个数据库时完成的，使用 "
+":func:`connect` 的 *detect_types* 形参。 有三个选项:"
 
 #: ../../library/sqlite3.rst:2007
 msgid "Implicit: set *detect_types* to :const:`PARSE_DECLTYPES`"
-msgstr ""
+msgstr "隐式: 将 *detect_types* 设为 :const:`PARSE_DECLTYPES`"
 
 #: ../../library/sqlite3.rst:2008
 msgid "Explicit: set *detect_types* to :const:`PARSE_COLNAMES`"
-msgstr ""
+msgstr "显式: 将 *detect_types* 设为 :const:`PARSE_COLNAMES`"
 
 #: ../../library/sqlite3.rst:2009
 msgid ""
 "Both: set *detect_types* to ``sqlite3.PARSE_DECLTYPES | "
 "sqlite3.PARSE_COLNAMES``. Column names take precedence over declared types."
 msgstr ""
+"同时: 将 *detect_types* 设为 ``sqlite3.PARSE_DECLTYPES | "
+"sqlite3.PARSE_COLNAMES``。 列名的优先级高于声明的类型。"
 
 #: ../../library/sqlite3.rst:2013
 msgid ""
 "The following example illustrates the implicit and explicit approaches:"
-msgstr ""
+msgstr "下面的示例演示了隐式和显式的方法:"
 
 #: ../../library/sqlite3.rst:2064
 msgid "Adapter and converter recipes"

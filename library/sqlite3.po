@@ -2394,6 +2394,12 @@ msgid ""
 "of ``BEGIN`` statements :mod:`!sqlite3` implicitly executes – via the "
 ":attr:`~Connection.isolation_level` attribute."
 msgstr ""
+"如果连接的属性 :attr:`~Connection.isolation_level` 不为 ``None``，新的事务会在 "
+":meth:`~Cursor.execute` 和 :meth:`~Cursor.executemany` 执行 ``INSERT``, "
+"``UPDATE``, ``DELETE`` 或 ``REPLACE`` 语句之前隐式地开启；对于其他语句，则不会执行隐式的事务处理。 可分别使用 "
+":meth:`~Connection.commit` 和 :meth:`~Connection.rollback` 方法提交和回滚未应用的事务。 "
+"你可以通过 :attr:`~Connection.isolation_level` 属性来选择下层的 `SQLite transaction "
+"behaviour`_ — 也就是说，:mod:`!sqlite3` 是否要隐式地执行以及执行何种类型的 ``BEGIN`` 语句"
 
 #: ../../library/sqlite3.rst:2379
 msgid ""

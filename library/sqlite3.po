@@ -2257,36 +2257,39 @@ msgid ""
 "fails, or if the body of the ``with`` statement raises an uncaught "
 "exception, the transaction is rolled back."
 msgstr ""
+":class:`Connection` 对象可被用作上下文管理器以便在离开上下文管理器时自动提交或回滚事务。 如果 :keyword:`with` "
+"语句体无异常地结束，事务将被提交。 如果提交失败，或者如果 ``with`` 语句体引发了未捕获的异常，则事务将被回滚。"
 
 #: ../../library/sqlite3.rst:2182
 msgid ""
 "If there is no open transaction upon leaving the body of the ``with`` "
 "statement, the context manager is a no-op."
-msgstr ""
+msgstr "如果在离开 ``with`` 语句体时没有开启的事务，则上下文管理器将不做任何操作。"
 
 #: ../../library/sqlite3.rst:2187
 msgid ""
 "The context manager neither implicitly opens a new transaction nor closes "
 "the connection."
-msgstr ""
+msgstr "此上下文管理器不会隐式地开启新事务也不会关闭连接。"
 
 #: ../../library/sqlite3.rst:2220
 msgid "How to work with SQLite URIs"
-msgstr ""
+msgstr "如何使用 SQLite URI"
 
 #: ../../library/sqlite3.rst:2222
 msgid "Some useful URI tricks include:"
-msgstr ""
+msgstr "一些有用的 URI 技巧包括:"
 
 #: ../../library/sqlite3.rst:2224
 msgid "Open a database in read-only mode:"
-msgstr ""
+msgstr "以只读模式打开一个数据库:"
 
 #: ../../library/sqlite3.rst:2233
 msgid ""
 "Do not implicitly create a new database file if it does not already exist; "
 "will raise :exc:`~sqlite3.OperationalError` if unable to create a new file:"
 msgstr ""
+"如果一个数据库尚不存在则不会隐式地新建数据库；如果无法新建数据库则将引发 :exc:`~sqlite3.OperationalError`:"
 
 #: ../../library/sqlite3.rst:2243
 msgid "Create a shared named in-memory database:"

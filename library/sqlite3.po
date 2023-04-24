@@ -2137,10 +2137,13 @@ msgid ""
 "``__conform__(self, protocol)`` method which returns the adapted value. The "
 "object passed to *protocol* will be of type :class:`PrepareProtocol`."
 msgstr ""
+"假设我们有一个代表笛卡尔坐标系中的坐标值对 :class:`!Point`，``x`` 和 ``y`` 的类，该坐标值在数据库中将存储为一个文本字符串。"
+" 这可以通过添加一个返回已适配值的 ``__conform__(self, protocol)`` 方法来实现。 传给 *protocol* 的对象将为"
+" :class:`PrepareProtocol` 类型。"
 
 #: ../../library/sqlite3.rst:1947
 msgid "How to register adapter callables"
-msgstr ""
+msgstr "如何注册适配器可调用对象"
 
 #: ../../library/sqlite3.rst:1949
 msgid ""
@@ -2148,10 +2151,12 @@ msgid ""
 "object to an SQLite-compatible type. This function can then be registered "
 "using :func:`register_adapter`."
 msgstr ""
+"另一种可能的方式是创建一个将 Python 对象转换为 SQLite 兼容类型的函数。 随后可使用 :func:`register_adapter` "
+"来注册该函数。"
 
 #: ../../library/sqlite3.rst:1979
 msgid "How to convert SQLite values to custom Python types"
-msgstr ""
+msgstr "如何将 SQLite 值转换为自定义 Python 类型"
 
 #: ../../library/sqlite3.rst:1981
 msgid ""
@@ -2159,24 +2164,26 @@ msgid ""
 "values. To be able to convert *from* SQLite values *to* custom Python types,"
 " we use *converters*."
 msgstr ""
+"编写适配器使你可以将 *from* 自定义 Python 类型转换为 *to* SQLite 值。 为了能将 *from* SQLite 值转换为 "
+"*to* 自定义 Python 类型，我们可使用 *converters*。"
 
 #: ../../library/sqlite3.rst:1986
 msgid ""
 "Let's go back to the :class:`!Point` class. We stored the x and y "
 "coordinates separated via semicolons as strings in SQLite."
-msgstr ""
+msgstr "让我们回到 :class:`!Point` 类。 我们以以分号分隔的字符串形式在 SQLite 中存储了 x 和 y 坐标值。"
 
 #: ../../library/sqlite3.rst:1989
 msgid ""
 "First, we'll define a converter function that accepts the string as a "
 "parameter and constructs a :class:`!Point` object from it."
-msgstr ""
+msgstr "首先，我们将定义一个转换器函数，它接受这样的字符串作为形参并根据该参数构造一个 :class:`!Point` 对象。"
 
 #: ../../library/sqlite3.rst:1994
 msgid ""
 "Converter functions are **always** passed a :class:`bytes` object, no matter"
 " the underlying SQLite data type."
-msgstr ""
+msgstr "转换器函数 **总是** 接受传入一个 :class:`bytes` 对象，无论下层的 SQLite 数据类型是什么。"
 
 #: ../../library/sqlite3.rst:2003
 msgid ""

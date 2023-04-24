@@ -2217,15 +2217,15 @@ msgstr "下面的示例演示了隐式和显式的方法:"
 
 #: ../../library/sqlite3.rst:2064
 msgid "Adapter and converter recipes"
-msgstr ""
+msgstr "适配器和转换器范例程序"
 
 #: ../../library/sqlite3.rst:2066
 msgid "This section shows recipes for common adapters and converters."
-msgstr ""
+msgstr "本小节显示了通用适配器和转换器的范例程序。"
 
 #: ../../library/sqlite3.rst:2128
 msgid "How to use connection shortcut methods"
-msgstr ""
+msgstr "如何使用连接快捷方法"
 
 #: ../../library/sqlite3.rst:2130
 msgid ""

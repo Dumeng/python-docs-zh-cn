@@ -2293,17 +2293,17 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:2243
 msgid "Create a shared named in-memory database:"
-msgstr ""
+msgstr "创建一个名为 shared 的内存数据库:"
 
 #: ../../library/sqlite3.rst:2257
 msgid ""
 "More information about this feature, including a list of parameters, can be "
 "found in the `SQLite URI documentation`_."
-msgstr ""
+msgstr "关于此特性的更多信息，包括可用的形参列表，可以在 `SQLite URI documentation`_ 中找到。"
 
 #: ../../library/sqlite3.rst:2266
 msgid "How to create and use row factories"
-msgstr ""
+msgstr "如何创建并使用行工厂函数"
 
 #: ../../library/sqlite3.rst:2268
 msgid ""
@@ -2311,6 +2311,8 @@ msgid ""
 ":class:`!tuple` does not suit your needs, you can use the "
 ":class:`sqlite3.Row` class or a custom :attr:`~Cursor.row_factory`."
 msgstr ""
+"在默认情况下，:mod:`!sqlite3` 会以 :class:`tuple` 来表示每一行。 如果 :class:`!tuple` "
+"不适合你的需求，你可以使用 :class:`sqlite3.Row` 类或自定义的 :attr:`~Cursor.row_factory`。"
 
 #: ../../library/sqlite3.rst:2273
 msgid ""
@@ -2319,6 +2321,8 @@ msgid ""
 ":class:`Connection.row_factory`, so all cursors created from the connection "
 "will use the same row factory."
 msgstr ""
+"虽然 :attr:`!row_factory` 同时作为 :class:`Cursor` 和 :class:`Connection` "
+"的属性存在，但推荐设置 :class:`Connection.row_factory`，这样在该连接上创建的所有游标都将使用同一个行工厂函数。"
 
 #: ../../library/sqlite3.rst:2278
 msgid ""

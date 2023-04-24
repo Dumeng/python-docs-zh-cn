@@ -2121,10 +2121,12 @@ msgid ""
 "developer, it may make more sense to take direct control by registering "
 "custom adapter functions."
 msgstr ""
+"有两种方式可将 Python 对象适配到 SQLite 类型：让你的对象自行适配，或是使用 *适配器可调用对象*。 后者将优先于前者发挥作用。 "
+"对于导出自定义类型的库，启用该类型的自行适配可能更为合理。 而作为一名应用程序开发者，通过注册自定义适配器函数进行直接控制可能更为合理。"
 
 #: ../../library/sqlite3.rst:1914
 msgid "How to write adaptable objects"
-msgstr ""
+msgstr "如何编写可适配对象"
 
 #: ../../library/sqlite3.rst:1916
 msgid ""

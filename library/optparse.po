@@ -421,7 +421,7 @@ msgstr ""
 msgid ""
 "Once all of your options are defined, instruct :mod:`optparse` to parse your"
 " program's command line::"
-msgstr ""
+msgstr "一旦你定义好所有的选项，即可指令 :mod:`optparse` 来解析你的程序的命令行::"
 
 #: ../../library/optparse.rst:288
 msgid ""

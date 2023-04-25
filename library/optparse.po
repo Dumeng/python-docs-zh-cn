@@ -372,16 +372,18 @@ msgid ""
 "straightforward to use in most cases.  This section covers the code patterns"
 " that are common to any :mod:`optparse`\\ -based program."
 msgstr ""
+"虽然 :mod:`optparse` 非常灵活和强大，但在大多数情况下它也很简明易用。 本小节介绍了任何基于 :mod:`optparse` "
+"的程序中常见的代码模式。"
 
 #: ../../library/optparse.rst:252
 msgid ""
 "First, you need to import the OptionParser class; then, early in the main "
 "program, create an OptionParser instance::"
-msgstr ""
+msgstr "首先，你需要导入 OptionParser 类；然后在主程序的开头部分，创建一个 OptionParser 实例::"
 
 #: ../../library/optparse.rst:259
 msgid "Then you can start defining options.  The basic syntax is::"
-msgstr ""
+msgstr "然后你可以开始定义选项。 基本语法如下::"
 
 #: ../../library/optparse.rst:264
 msgid ""
@@ -389,19 +391,21 @@ msgid ""
 "and several option attributes that tell :mod:`optparse` what to expect and "
 "what to do when it encounters that option on the command line."
 msgstr ""
+"每个选项有一个或多个选项字符串，如 ``-f`` 或 ``--file``，以及一些选项属性用来告诉 :mod:`optparse` "
+"当它在命令行中遇到该选项时将得到什么和需要做什么。"
 
 #: ../../library/optparse.rst:268
 msgid ""
 "Typically, each option will have one short option string and one long option"
 " string, e.g.::"
-msgstr ""
+msgstr "通常，每个选项都会有一个短选项字符串和一个长选项字符串，例如 ::"
 
 #: ../../library/optparse.rst:273
 msgid ""
 "You're free to define as many short option strings and as many long option "
 "strings as you like (including zero), as long as there is at least one "
 "option string overall."
-msgstr ""
+msgstr "你可以随你的喜好自由定义任意数量的短选项字符串和任意数量的长选项字符串（包括零个），只要总计至少有一个选项字符串。"
 
 #: ../../library/optparse.rst:277
 msgid ""
@@ -411,6 +415,8 @@ msgid ""
 "reality, :mod:`optparse` encounters *option strings* and looks up options "
 "from them."
 msgstr ""
+"传给 :meth:`OptionParser.add_option` 的选项字符串实际上是特定调用所定义的选项的标签。 "
+"为了表述简单，我们将经常会说在命令行中 *遇到一个选项*；而实际上，:mod:`optparse` 是遇到了 *选项字符串* 并根据它们来查找选项。"
 
 #: ../../library/optparse.rst:283
 msgid ""

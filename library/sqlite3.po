@@ -2410,6 +2410,9 @@ msgid ""
 "library autocommit mode can be queried using the "
 ":attr:`~Connection.in_transaction` attribute."
 msgstr ""
+"如果 :attr:`~Connection.isolation_level` 被设为 ``None``，则完全不会隐式地开启任何事务。 这将使下层 "
+"SQLite 库处于 `自动提交模式`_，但也允许用户使用显式 SQL 语句执行他们自己的事务处理。 下层 SQLite 库的自动提交模式可使用 "
+":attr:`~Connection.in_transaction` 属性来查询。"
 
 #: ../../library/sqlite3.rst:2387
 msgid ""

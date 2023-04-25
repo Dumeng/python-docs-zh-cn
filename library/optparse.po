@@ -317,6 +317,9 @@ msgid ""
 "mission of ``cp``, which is to copy either one file to another, or several "
 "files to another directory."
 msgstr ""
+"你只使用这个语法就能畅行无阻。 大多数 ``cp`` "
+"实现还提供了许多精确调整文件拷贝方式的选项：你可以保留模式和修改时间，避免跟随符号链接，覆盖现有文件之前先询问，诸如此类。 但这些都不会破坏 "
+"``cp`` 的核心任务，即将一个文件拷贝为另一个文件，或将多个文件拷贝到另一个目录。"
 
 #: ../../library/optparse.rst:220
 msgid "What are positional arguments for?"
@@ -326,7 +329,7 @@ msgstr "位置参数有什么用？"
 msgid ""
 "Positional arguments are for those pieces of information that your program "
 "absolutely, positively requires to run."
-msgstr ""
+msgstr "位置参数是对于你的程序运行来说绝对、肯定需要的信息片段。"
 
 #: ../../library/optparse.rst:225
 msgid ""
@@ -338,6 +341,9 @@ msgid ""
 " a configuration file, or a GUI: if you make that many demands on your "
 "users, most of them will simply give up."
 msgstr ""
+"一个好的用户界面应当尽可能少地设置绝对必需提供的信息。 如果你的程序必需提供 17 项不同的信息片段才能成功运行，那么你要 *如何* "
+"从用户获取这些信息将不是问题的关键 --- 大多数人会在他们成功运行此程序之前放弃并离开。 无论用户界面是命令行、配置文件还是 GUI "
+"都一样适用：如果你对你的用户提出如此多的要求，它们大多将会直接放弃。"
 
 #: ../../library/optparse.rst:233
 msgid ""

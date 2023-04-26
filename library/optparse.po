@@ -582,13 +582,16 @@ msgid ""
 "actions, ``store_true`` and ``store_false``.  For example, you might have a "
 "``verbose`` flag that is turned on with ``-v`` and off with ``-q``::"
 msgstr ""
+"旗标选项 --- 当看到特定选项时将某个变量设为真值或假值 --- 是相当常见的。 :mod:`optparse` "
+"通过两个单独的动作支持它们，``store_true`` 和 ``store_false``。 例如，你可能会有个 ``verbose`` 旗标将通过 "
+"``-v`` 来启用并通过 ``-q`` 来禁用::"
 
 #: ../../library/optparse.rst:390
 msgid ""
 "Here we have two different options with the same destination, which is "
 "perfectly OK.  (It just means you have to be a bit careful when setting "
 "default values---see below.)"
-msgstr ""
+msgstr "这里我们有两个相同目标的不同选项，这是完全可行的。 （只是这意味着在设置默认值时你必须更加小心 --- 见下文所述。）"
 
 #: ../../library/optparse.rst:394
 msgid ""
@@ -596,14 +599,16 @@ msgid ""
 "``options.verbose`` to ``True``; when it encounters ``-q``, "
 "``options.verbose`` is set to ``False``."
 msgstr ""
+"当 :mod:`optparse` 在命令行中遇到 ``-v`` 时，它会将 ``options.verbose`` 设为 ``True``；当它遇到 "
+"``-q`` 时，则会将 ``options.verbose`` 设为 ``False``。"
 
 #: ../../library/optparse.rst:402
 msgid "Other actions"
-msgstr ""
+msgstr "其他动作"
 
 #: ../../library/optparse.rst:404
 msgid "Some other actions supported by :mod:`optparse` are:"
-msgstr ""
+msgstr "受到 :mod:`optparse` 支持的其他动作还有:"
 
 #: ../../library/optparse.rst:407 ../../library/optparse.rst:928
 msgid "``\"store_const\"``"
@@ -619,7 +624,7 @@ msgstr "``\"append\"``"
 
 #: ../../library/optparse.rst:410 ../../library/optparse.rst:937
 msgid "append this option's argument to a list"
-msgstr ""
+msgstr "将此选项的参数添加到一个列表"
 
 #: ../../library/optparse.rst:413 ../../library/optparse.rst:943
 msgid "``\"count\"``"
@@ -627,7 +632,7 @@ msgstr "``\"count\"``"
 
 #: ../../library/optparse.rst:413 ../../library/optparse.rst:943
 msgid "increment a counter by one"
-msgstr ""
+msgstr "让指定的计数器加一"
 
 #: ../../library/optparse.rst:416 ../../library/optparse.rst:946
 msgid "``\"callback\"``"
@@ -642,6 +647,8 @@ msgid ""
 "These are covered in section :ref:`optparse-reference-guide`, and section "
 ":ref:`optparse-option-callbacks`."
 msgstr ""
+"这些在 :ref:`optparse-reference-guide`，以及 :ref:`optparse-option-callbacks` "
+"等章节中有说明。"
 
 #: ../../library/optparse.rst:425
 msgid "Default values"
@@ -656,6 +663,9 @@ msgid ""
 "control.  :mod:`optparse` lets you supply a default value for each "
 "destination, which is assigned before the command line is parsed."
 msgstr ""
+"上述示例全都涉及当看到特定命令行选项时设置某些变量（即“目标”）的操作。 "
+"如果从未看到这些选项那么会发生什么叱？由于我们没有提供任何默认值，它们全都会被设为 ``None``。 这通常是可以的，但有时你会想要更多的控制。 "
+":mod:`optparse` 允许你为每个目标提供默认值，它们将在解析命令行之前被赋值。"
 
 #: ../../library/optparse.rst:434
 msgid ""

@@ -875,13 +875,13 @@ msgstr "继续使用前一节定义的解析器，很容易将 :class:`OptionGro
 
 #: ../../library/optparse.rst:591
 msgid "This would result in the following help output:"
-msgstr ""
+msgstr "这将产生以下帮助输出:"
 
 #: ../../library/optparse.rst:612
 msgid ""
 "A bit more complete example might involve using more than one group: still "
 "extending the previous example::"
-msgstr ""
+msgstr "更完整一些的示例可能涉及使用多个分组：继续扩展之前的例子::"
 
 #: ../../library/optparse.rst:629
 msgid "that results in the following output:"

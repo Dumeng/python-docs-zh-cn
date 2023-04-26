@@ -951,7 +951,7 @@ msgstr "与 :meth:`print_version` 相似但是会返回版本字符串而不是�
 
 #: ../../library/optparse.rst:706
 msgid "How :mod:`optparse` handles errors"
-msgstr ""
+msgstr ":mod:`optparse` 如何处理错误handles errors"
 
 #: ../../library/optparse.rst:708
 msgid ""
@@ -962,6 +962,10 @@ msgid ""
 "are dealt with in the usual way: raise an exception (either "
 ":exc:`optparse.OptionError` or :exc:`TypeError`) and let the program crash."
 msgstr ""
+":mod:`optparse` 必须考虑两种宽泛的错误类：程序员错误和用户错误。 程序员错误通常是对 "
+":func:`OptionParser.add_option` 的错误调用，例如无效的选项字符串，未知的选项属性，不存在的选项属性等等。 "
+"这些错误将以通常的方式来处理：引发一个异常 (或者是 :exc:`optparse.OptionError` 或者是 :exc:`TypeError`)"
+" 并让程序崩溃。"
 
 #: ../../library/optparse.rst:715
 msgid ""

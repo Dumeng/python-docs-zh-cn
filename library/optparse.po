@@ -827,25 +827,25 @@ msgstr ""
 
 #: ../../library/optparse.rst:564
 msgid "An option group is obtained using the class :class:`OptionGroup`:"
-msgstr ""
+msgstr "选项分组是使用 :class:`OptionGroup` 类来生成的:"
 
 #: ../../library/optparse.rst:568 ../../library/optparse.rst:1620
 msgid "where"
-msgstr ""
+msgstr "其中"
 
 #: ../../library/optparse.rst:570
 msgid ""
 "parser is the :class:`OptionParser` instance the group will be inserted in "
 "to"
-msgstr ""
+msgstr "parser 是分组将被插入的 :class:`OptionParser` 实例"
 
 #: ../../library/optparse.rst:572
 msgid "title is the group title"
-msgstr ""
+msgstr "title 是分组的标题"
 
 #: ../../library/optparse.rst:573
 msgid "description, optional, is a long description of the group"
-msgstr ""
+msgstr "description，可选项，是分组的长描述文本"
 
 #: ../../library/optparse.rst:575
 msgid ""
@@ -853,6 +853,8 @@ msgid ""
 ":class:`OptionParser`) and so the :meth:`add_option` method can be used to "
 "add an option to the group."
 msgstr ""
+":class:`OptionGroup` 继承自 :class:`OptionContainer` (类似 :class:`OptionParser`)"
+" 因此 :meth:`add_option` 方法可被用来向分组添加选项。"
 
 #: ../../library/optparse.rst:579
 msgid ""
@@ -860,12 +862,14 @@ msgid ""
 ":meth:`add_option_group` the group is added to the previously defined "
 "parser."
 msgstr ""
+"一旦声明了所有选项，使用 :class:`OptionParser` 方法 :meth:`add_option_group` "
+"即可将分组添加到之前定义的解析器。"
 
 #: ../../library/optparse.rst:582
 msgid ""
 "Continuing with the parser defined in the previous section, adding an "
 ":class:`OptionGroup` to a parser is easy::"
-msgstr ""
+msgstr "继续使用前一节定义的解析器，很容易将 :class:`OptionGroup` 添加到解析器中::"
 
 #: ../../library/optparse.rst:591
 msgid "This would result in the following help output:"

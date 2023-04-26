@@ -956,7 +956,7 @@ msgstr "与 :meth:`print_version` 相似但是会返回版本字符串而不是�
 
 #: ../../library/optparse.rst:706
 msgid "How :mod:`optparse` handles errors"
-msgstr ""
+msgstr ":mod:`optparse` 如何处理错误handles errors"
 
 #: ../../library/optparse.rst:708
 msgid ""

@@ -918,16 +918,19 @@ msgid ""
 " it encounters this option on the command line, it expands your ``version`` "
 "string (by replacing ``%prog``), prints it to stdout, and exits."
 msgstr ""
+"``%prog`` 会像在 ``usage`` 中那样被扩展。 除了这一点，``version`` 还可包含你想存放的任何东西。 "
+"当你提供它时，:mod:`optparse` 将自动向你的解析器添加一个 ``--version`` 选项。 如果它在命令行中遇到了该选项，它将扩展你的"
+" ``version`` 字符串 (通过替换 ``%prog``)，将其打印到标准输出，然后退出。"
 
 #: ../../library/optparse.rst:681
 msgid "For example, if your script is called ``/usr/bin/foo``:"
-msgstr ""
+msgstr "举例来说，如果你的脚本是 ``/usr/bin/foo``:"
 
 #: ../../library/optparse.rst:688
 msgid ""
 "The following two methods can be used to print and get the ``version`` "
 "string:"
-msgstr ""
+msgstr "下列两个方法可被用来打印和获取 ``version`` 字符串:"
 
 #: ../../library/optparse.rst:692
 msgid ""
@@ -936,12 +939,15 @@ msgid ""
 "``%prog`` in ``self.version`` is replaced with the name of the current "
 "program.  Does nothing if ``self.version`` is empty or undefined."
 msgstr ""
+"将当前程序的版本消息 (``self.version``) 打印到 *file* (默认为 stdout)。 就像 "
+":meth:`print_usage` 一样，任何在 ``self.version`` 中出现的 ``%prog`` 将被替换为当前程序的名称。 如果 "
+"``self.version`` 为空或未定义则不做任何操作。"
 
 #: ../../library/optparse.rst:699
 msgid ""
 "Same as :meth:`print_version` but returns the version string instead of "
 "printing it."
-msgstr ""
+msgstr "与 :meth:`print_version` 相似但是会返回版本字符串而不是打印它。"
 
 #: ../../library/optparse.rst:706
 msgid "How :mod:`optparse` handles errors"

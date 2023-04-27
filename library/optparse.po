@@ -1129,10 +1129,12 @@ msgid ""
 "when the user requests help (after ``usage``, but before the list of "
 "options)."
 msgstr ""
+"一段提供你的程序的简短介绍的文本。 :mod:`optparse` 会重格式化段落以适合当前终端宽度并在用户请求帮助时打印其内容（在 ``usage``"
+" 之后，选项列表之前）。"
 
 #: ../../library/optparse.rst:846
 msgid "``formatter`` (default: a new :class:`IndentedHelpFormatter`)"
-msgstr ""
+msgstr "``formatter`` (默认: 一个新的 :class:`IndentedHelpFormatter`)"
 
 #: ../../library/optparse.rst:844
 msgid ""
@@ -1140,6 +1142,8 @@ msgid ""
 "text.  :mod:`optparse` provides two concrete classes for this purpose: "
 "IndentedHelpFormatter and TitledHelpFormatter."
 msgstr ""
+"一个将被用于打印帮助文本的 optparse.HelpFormatter 实例。 :mod:`optparse` 为此目的提供了两个实体类: "
+"IndentedHelpFormatter 和 TitledHelpFormatter."
 
 #: ../../library/optparse.rst:850
 msgid "``add_help_option`` (default: ``True``)"
@@ -1149,7 +1153,7 @@ msgstr "``add_help_option`` (默认: ``True``)"
 msgid ""
 "If true, :mod:`optparse` will add a help option (with option strings ``-h`` "
 "and ``--help``) to the parser."
-msgstr ""
+msgstr "如为真值，:mod:`optparse` 将向解析器添加一个 help 选项 (使用选项字符串 ``-h`` 和 ``--help``)。"
 
 #: ../../library/optparse.rst:854
 msgid "``prog``"
@@ -1160,6 +1164,8 @@ msgid ""
 "The string to use when expanding ``%prog`` in ``usage`` and ``version`` "
 "instead of ``os.path.basename(sys.argv[0])``."
 msgstr ""
+"当在 ``usage`` 和 ``version`` 中用于代替 ``os.path.basename(sys.argv[0])`` 来扩展 "
+"``%prog`` 的字符串。"
 
 #: ../../library/optparse.rst:856
 msgid "``epilog`` (default: ``None``)"
@@ -1167,7 +1173,7 @@ msgstr "``epilog`` (默认: ``None``)"
 
 #: ../../library/optparse.rst:857
 msgid "A paragraph of help text to print after the option help."
-msgstr ""
+msgstr "一段将在选项帮助之后打印的帮助文本。"
 
 #: ../../library/optparse.rst:862
 msgid "Populating the parser"
@@ -1180,10 +1186,12 @@ msgid ""
 ":ref:`optparse-tutorial`.  :meth:`add_option` can be called in one of two "
 "ways:"
 msgstr ""
+"有几种方式可以为解析器填充选项。 最推荐的方式是使用 :meth:`OptionParser.add_option`，如 :ref:`optparse-"
+"tutorial` 一节所演示的。 :meth:`add_option` 可以通过两种方式来调用:"
 
 #: ../../library/optparse.rst:868
 msgid "pass it an Option instance (as returned by :func:`make_option`)"
-msgstr ""
+msgstr "传入一个 Option 实例（即 :func:`make_option` 所返回的对象）"
 
 #: ../../library/optparse.rst:870
 msgid ""

@@ -1040,7 +1040,7 @@ msgstr "创建解析器"
 msgid ""
 "The first step in using :mod:`optparse` is to create an OptionParser "
 "instance."
-msgstr ""
+msgstr "使用 :mod:`optparse` 的第一步是创建 OptionParser 实例。"
 
 #: ../../library/optparse.rst:805
 msgid ""

@@ -14,8 +14,8 @@
 # Siyuan Xu, 2021
 # chen_chao <wenbushi@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1538,6 +1538,10 @@ msgid ""
 "examples, but many of the design approaches described in these chapters are "
 "applicable to functional-style Python code."
 msgstr ""
+"**Structure and Interpretation of Computer Programs**, Harold Abelson 和 "
+"Gerald Jay Sussman 与 Julie Sussman 著。 该书可在 https://mitpress.mit.edu/sicp 获取。"
+" 在这部计算机科学的经典教科书中，第 2 和第 3 章讨论了使用序列和流来组织程序内部的数据传递。 书中的示例使用了 Scheme "
+"语言，但这些章节中介绍的许多设计理念同样适用于函数式风格的 Python 代码。"
 
 #: ../../howto/functional.rst:1218
 msgid ""

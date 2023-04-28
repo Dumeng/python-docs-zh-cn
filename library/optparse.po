@@ -1444,7 +1444,7 @@ msgstr ""
 msgid ""
 "The value to use for this option's destination if the option is not seen on "
 "the command line.  See also :meth:`OptionParser.set_defaults`."
-msgstr ""
+msgstr "当未在命令行中遇到此选项时将被用作此选项的目标的值。 另请参阅 :meth:`OptionParser.set_defaults`。"
 
 #: ../../library/optparse.rst:1048
 msgid "(default: 1)"
@@ -1456,16 +1456,18 @@ msgid ""
 " option is seen.  If > 1, :mod:`optparse` will store a tuple of values to "
 ":attr:`~Option.dest`."
 msgstr ""
+"当遇到此选项时应当读取多少个 :attr:`~Option.type` 类型的参数。 如果 > 1，:mod:`optparse` "
+"会将由多个值组成的元组保存到 :attr:`~Option.dest`。"
 
 #: ../../library/optparse.rst:1056
 msgid "For actions that store a constant value, the constant value to store."
-msgstr ""
+msgstr "对于保存常量值的动作，指定要保存的常量值。"
 
 #: ../../library/optparse.rst:1060
 msgid ""
 "For options of type ``\"choice\"``, the list of strings the user may choose "
 "from."
-msgstr ""
+msgstr "对于 ``\"choice\"`` 类型的选项，由用户可选择的字符串组成的列表。"
 
 #: ../../library/optparse.rst:1065
 msgid ""
@@ -1473,12 +1475,14 @@ msgid ""
 "option is seen.  See section :ref:`optparse-option-callbacks` for detail on "
 "the arguments passed to the callable."
 msgstr ""
+"对于使用 ``\"callback\"`` 动作的选项，当遇到此选项时要调用的可调用对象。 请参阅 :ref:`optparse-option-"
+"callbacks` 一节了解关于传给可调用对象的参数的详情。"
 
 #: ../../library/optparse.rst:1072
 msgid ""
 "Additional positional and keyword arguments to pass to ``callback`` after "
 "the four standard callback arguments."
-msgstr ""
+msgstr "将在四个标准回调参数之后传给 ``callback`` 的额外的位置和关键字参数。"
 
 #: ../../library/optparse.rst:1077
 msgid ""
@@ -1487,16 +1491,18 @@ msgid ""
 " help text is supplied, the option will be listed without help text.  To "
 "hide this option, use the special value :data:`optparse.SUPPRESS_HELP`."
 msgstr ""
+"当用户提供 :attr:`~Option.help` 选项 (例如 ``--help``) 之后将在列出所有可用选项时针对此选项打印的帮助文本。 "
+"如果没有提供帮助文本，则列出选项时将不附带帮助文本。 要隐藏此选项，请使用特殊值 :data:`optparse.SUPPRESS_HELP`。"
 
 #: ../../library/optparse.rst:1086
 msgid ""
 "Stand-in for the option argument(s) to use when printing help text.  See "
 "section :ref:`optparse-tutorial` for an example."
-msgstr ""
+msgstr "当打印帮助文本时要使用的代表选项参数的名称。 请参阅 :ref:`optparse-tutorial` 一节查看相应示例。"
 
 #: ../../library/optparse.rst:1093
 msgid "Standard option actions"
-msgstr ""
+msgstr "标准选项动作"
 
 #: ../../library/optparse.rst:1095
 msgid ""

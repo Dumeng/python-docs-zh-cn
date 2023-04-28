@@ -8,8 +8,8 @@
 # 汪心禾 <wangxinhe06@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -78,6 +78,15 @@ msgid ""
 "If omitted (or if *host* or *port* are ``''`` and/or ``0`` respectively) the"
 " OS default behavior will be used."
 msgstr ""
+":class:`SMTP` 实例是对 SMTP 连接的封装。 它提供了支持全部 SMTP 和 ESMTP 操作的方法。 如果给出了可选的 *host* "
+"和 *port* 形参，则会在初始化期间调用 SMTP :meth:`connect` 方法并附带这些形参。 如果指定了 "
+"*local_hostname*，它将在 HELO/EHLO 命令中被用作本地主机的 FQDN。 在其他情况下，会使用 "
+":func:`socket.getfqdn` 来找到本地主机名。 如果 :meth:`connect` 调用返回了表示成功代码以外的任何信息，则会引发 "
+":exc:`SMTPConnectError`。 可选的 *timeout* "
+"形参指定了阻塞操作如连接尝试的超时秒数（如果未指定，则将使用全局默认超时设置）。 如果达到超时限制，将会引发 :exc:`TimeoutError`。 "
+"可选的 *source_address* 形参允许在有多张网卡的计算机中绑定到某些特定的源地址，和/或绑定到某个特定的源 TCP 端口。 它接受一个 2"
+" 元组 ``(host, port)`` 作为在连接之前要绑定为其源地址的套接字。 如果省略 (或者如果 *host* 或 *port* 分别为 "
+"``''`` 和/或 ``0``) 则将使用 OS 的默认行为。"
 
 #: ../../library/smtplib.rst:44
 msgid ""

@@ -1476,7 +1476,7 @@ msgstr "返回一个对应于 *date_string*，根据 *format* 进行解析得到
 msgid ""
 "If *format* does not contain microseconds or timezone information, this is "
 "equivalent to::"
-msgstr ""
+msgstr "如果 *format* 不包含微秒或时区信息，这将等价于::"
 
 #: ../../library/datetime.rst:1050
 msgid ""

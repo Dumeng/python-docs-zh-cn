@@ -575,7 +575,7 @@ msgstr "在那些平台上要求为常规、非可变函数参数指定 *argtype
 msgid ""
 "Because specifying the attribute does not inhibit portability it is advised "
 "to always specify ``argtypes`` for all variadic functions."
-msgstr ""
+msgstr "因为指定该属性不会影响可移植性所有建议总是为所有可变函数指定 ``argtypes``。"
 
 #: ../../library/ctypes.rst:399
 msgid "Calling functions with your own custom data types"

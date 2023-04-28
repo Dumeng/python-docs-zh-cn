@@ -1244,11 +1244,11 @@ msgstr ""
 
 #: ../../library/optparse.rst:906
 msgid "To define an option with only a short option string::"
-msgstr ""
+msgstr "定义只有一个短选项字符串的选项::"
 
 #: ../../library/optparse.rst:910
 msgid "And to define an option with only a long option string::"
-msgstr ""
+msgstr "以及定义只有一个长选项字符串的选项::"
 
 #: ../../library/optparse.rst:914
 msgid ""

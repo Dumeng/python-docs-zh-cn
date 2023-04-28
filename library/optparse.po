@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 14:27+0000\n"
+"POT-Creation-Date: 2023-04-28 14:27+0000\n"
 "PO-Revision-Date: 2017-02-16 23:20+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1454,12 +1454,14 @@ msgid ""
 "option is seen.  See section :ref:`optparse-option-callbacks` for detail on "
 "the arguments passed to the callable."
 msgstr ""
+"对于使用 ``\"callback\"`` 动作的选项，当遇到此选项时要调用的可调用对象。 请参阅 :ref:`optparse-option-"
+"callbacks` 一节了解关于传给可调用对象的参数的详情。"
 
 #: ../../library/optparse.rst:1055
 msgid ""
 "Additional positional and keyword arguments to pass to ``callback`` after "
 "the four standard callback arguments."
-msgstr ""
+msgstr "将在四个标准回调参数之后传给 ``callback`` 的额外的位置和关键字参数。"
 
 #: ../../library/optparse.rst:1060
 msgid ""
@@ -1468,16 +1470,18 @@ msgid ""
 " help text is supplied, the option will be listed without help text.  To "
 "hide this option, use the special value :data:`optparse.SUPPRESS_HELP`."
 msgstr ""
+"当用户提供 :attr:`~Option.help` 选项 (例如 ``--help``) 之后将在列出所有可用选项时针对此选项打印的帮助文本。 "
+"如果没有提供帮助文本，则列出选项时将不附带帮助文本。 要隐藏此选项，请使用特殊值 :data:`optparse.SUPPRESS_HELP`。"
 
 #: ../../library/optparse.rst:1069
 msgid ""
 "Stand-in for the option argument(s) to use when printing help text.  See "
 "section :ref:`optparse-tutorial` for an example."
-msgstr ""
+msgstr "当打印帮助文本时要使用的代表选项参数的名称。 请参阅 :ref:`optparse-tutorial` 一节查看相应示例。"
 
 #: ../../library/optparse.rst:1076
 msgid "Standard option actions"
-msgstr ""
+msgstr "标准选项动作"
 
 #: ../../library/optparse.rst:1078
 msgid ""

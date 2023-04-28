@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -241,7 +241,7 @@ msgstr ""
 "移除打开的文件）期间出现的未处理异常将被忽略，并且剩余的可移除条目会被“尽可能”地删除。 在其他情况下，错误将在任何上下文清理发生时被引发 "
 "(:func:`cleanup` 调用、退出上下文管理器、对象被作为垃圾回收或解释器关闭等)。"
 
-#: ../../library/tempfile.rst:154 ../../library/tempfile.rst:231
+#: ../../library/tempfile.rst:154 ../../library/tempfile.rst:234
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``tempfile.mkdtemp`` with "
 "argument ``fullpath``."
@@ -329,7 +329,7 @@ msgstr ""
 ":func:`mkstemp` 返回一个元组，元组中第一个元素是句柄，它是一个系统级句柄，指向一个打开的文件（等同于 :func:`os.open` "
 "的返回值），第二元素是该文件的绝对路径。"
 
-#: ../../library/tempfile.rst:207 ../../library/tempfile.rst:233
+#: ../../library/tempfile.rst:207 ../../library/tempfile.rst:236
 msgid ""
 "*suffix*, *prefix*, and *dir* may now be supplied in bytes in order to "
 "obtain a bytes return value.  Prior to this, only str was allowed. *suffix* "
@@ -339,7 +339,7 @@ msgstr ""
 "现在，*suffix*、*prefix* 和 *dir* 可以以 bytes 类型按顺序提供，以获得 bytes 类型的返回值。之前只允许使用 "
 "str。*suffix* 和 *prefix* 现在可以接受 ``None``，并且默认为 ``None`` 以使用合适的默认值。"
 
-#: ../../library/tempfile.rst:213 ../../library/tempfile.rst:239
+#: ../../library/tempfile.rst:213 ../../library/tempfile.rst:242
 msgid "The *dir* parameter now accepts a :term:`path-like object`."
 msgstr "*dir* 参数现在可接受一个路径类对象 (:term:`path-like object`)。"
 
@@ -363,38 +363,42 @@ msgid ""
 msgstr "*prefix*、*suffix* 和 *dir* 的含义与它们在 :func:`mkstemp` 中的相同。"
 
 #: ../../library/tempfile.rst:229
-msgid ":func:`mkdtemp` returns the absolute pathname of the new directory."
-msgstr ":func:`mkdtemp` 返回新目录的绝对路径。"
+msgid ""
+":func:`mkdtemp` returns the absolute pathname of the new directory if *dir* "
+"is ``None`` or is an absolute path. If *dir* is a relative path, "
+":func:`mkdtemp` returns a relative path on Python 3.11 and lower. However, "
+"on 3.12 it will return an absolute path in all situations."
+msgstr ""
 
-#: ../../library/tempfile.rst:245
+#: ../../library/tempfile.rst:248
 msgid ""
 "Return the name of the directory used for temporary files. This defines the "
 "default value for the *dir* argument to all functions in this module."
 msgstr "返回放置临时文件的目录的名称。这个方法的返回值就是本模块所有函数的 *dir* 参数的默认值。"
 
-#: ../../library/tempfile.rst:249
+#: ../../library/tempfile.rst:252
 msgid ""
 "Python searches a standard list of directories to find one which the calling"
 " user can create files in.  The list is:"
 msgstr "Python 搜索标准目录列表，以找到调用者可以在其中创建文件的目录。这个列表是："
 
-#: ../../library/tempfile.rst:252
+#: ../../library/tempfile.rst:255
 msgid "The directory named by the :envvar:`TMPDIR` environment variable."
 msgstr ":envvar:`TMPDIR` 环境变量指向的目录。"
 
-#: ../../library/tempfile.rst:254
+#: ../../library/tempfile.rst:257
 msgid "The directory named by the :envvar:`TEMP` environment variable."
 msgstr ":envvar:`TEMP` 环境变量指向的目录。"
 
-#: ../../library/tempfile.rst:256
+#: ../../library/tempfile.rst:259
 msgid "The directory named by the :envvar:`TMP` environment variable."
 msgstr ":envvar:`TMP` 环境变量指向的目录。"
 
-#: ../../library/tempfile.rst:258
+#: ../../library/tempfile.rst:261
 msgid "A platform-specific location:"
 msgstr "与平台相关的位置："
 
-#: ../../library/tempfile.rst:260
+#: ../../library/tempfile.rst:263
 msgid ""
 "On Windows, the directories :file:`C:\\\\TEMP`, :file:`C:\\\\TMP`, "
 ":file:`\\\\TEMP`, and :file:`\\\\TMP`, in that order."
@@ -402,43 +406,43 @@ msgstr ""
 "在 Windows 上，依次为 :file:`C:\\\\TEMP`、:file:`C:\\\\TMP`、:file:`\\\\TEMP` 和 "
 ":file:`\\\\TMP`。"
 
-#: ../../library/tempfile.rst:263
+#: ../../library/tempfile.rst:266
 msgid ""
 "On all other platforms, the directories :file:`/tmp`, :file:`/var/tmp`, and "
 ":file:`/usr/tmp`, in that order."
 msgstr "在所有其他平台上，依次为 :file:`/tmp`、:file:`/var/tmp` 和 :file:`/usr/tmp`。"
 
-#: ../../library/tempfile.rst:266
+#: ../../library/tempfile.rst:269
 msgid "As a last resort, the current working directory."
 msgstr "不得已时，使用当前工作目录。"
 
-#: ../../library/tempfile.rst:268
+#: ../../library/tempfile.rst:271
 msgid ""
 "The result of this search is cached, see the description of :data:`tempdir` "
 "below."
 msgstr "搜索的结果会缓存起来，参见下面 :data:`tempdir` 的描述。"
 
-#: ../../library/tempfile.rst:273
+#: ../../library/tempfile.rst:276
 msgid ""
 "Always returns a str.  Previously it would return any :data:`tempdir` value "
 "regardless of type so long as it was not ``None``."
 msgstr "总是返回一个字符串。 在之前的版本中它会返回任意 :data:`tempdir` 值而不考虑它的类型，只要它不为 ``None``。"
 
-#: ../../library/tempfile.rst:278
+#: ../../library/tempfile.rst:281
 msgid "Same as :func:`gettempdir` but the return value is in bytes."
 msgstr "与 :func:`gettempdir` 相同，但返回值为字节类型。"
 
-#: ../../library/tempfile.rst:284
+#: ../../library/tempfile.rst:287
 msgid ""
 "Return the filename prefix used to create temporary files.  This does not "
 "contain the directory component."
 msgstr "返回用于创建临时文件的文件名前缀，它不包含目录部分。"
 
-#: ../../library/tempfile.rst:289
+#: ../../library/tempfile.rst:292
 msgid "Same as :func:`gettempprefix` but the return value is in bytes."
 msgstr "与 :func:`gettempprefix` 相同，但返回值为字节类型。"
 
-#: ../../library/tempfile.rst:293
+#: ../../library/tempfile.rst:296
 msgid ""
 "The module uses a global variable to store the name of the directory used "
 "for temporary files returned by :func:`gettempdir`.  It can be set directly "
@@ -450,7 +454,7 @@ msgstr ""
 "本模块使用一个全局变量来存储由 :func:`gettempdir` 返回的临时文件使用的目录路径。 它可被直接设置以覆盖选择过程，但不建议这样做。 "
 "本模块中的所有函数都接受一个 *dir* 参数，它可被用于指定目录。 这是不会通过改变全局 API 行为对其他无准备代码造成影响的推荐做法。"
 
-#: ../../library/tempfile.rst:302
+#: ../../library/tempfile.rst:305
 msgid ""
 "When set to a value other than ``None``, this variable defines the default "
 "value for the *dir* argument to the functions defined in this module, "
@@ -459,7 +463,7 @@ msgstr ""
 "当设为 ``None`` 以外的值时，此变量会为本模块中定义的函数的 *dir* 参数定义默认值，包括确定其类型为字节串还是字符串。 它不可以为 "
 ":term:`path-like object`。"
 
-#: ../../library/tempfile.rst:307
+#: ../../library/tempfile.rst:310
 msgid ""
 "If ``tempdir`` is ``None`` (the default) at any call to any of the above "
 "functions except :func:`gettempprefix` it is initialized following the "
@@ -468,7 +472,7 @@ msgstr ""
 "如果在调用除 :func:`gettempprefix` 外的上述任何函数时 ``tempdir`` 为 ``None`` (默认值) 则它会按照 "
 ":func:`gettempdir` 中所描述的算法来初始化。"
 
-#: ../../library/tempfile.rst:313
+#: ../../library/tempfile.rst:316
 msgid ""
 "Beware that if you set ``tempdir`` to a bytes value, there is a nasty side "
 "effect: The global default return type of :func:`mkstemp` and "
@@ -481,20 +485,20 @@ msgstr ""
 "的全局默认返回类型会在没有显式提供字符串类型的when no explicit ``prefix``, ``suffix`` 或 ``dir`` "
 "的时候被改为字节串。 请不要编写预期或依赖于此入围的代码。  这个笨拙行为是为了保持与历史实现的兼容性。"
 
-#: ../../library/tempfile.rst:324
+#: ../../library/tempfile.rst:327
 msgid "Examples"
 msgstr "例子"
 
-#: ../../library/tempfile.rst:326
+#: ../../library/tempfile.rst:329
 msgid ""
 "Here are some examples of typical usage of the :mod:`tempfile` module::"
 msgstr "以下是 :mod:`tempfile` 模块典型用法的一些示例::"
 
-#: ../../library/tempfile.rst:358
+#: ../../library/tempfile.rst:361
 msgid "Deprecated functions and variables"
 msgstr "已弃用的函数和变量"
 
-#: ../../library/tempfile.rst:360
+#: ../../library/tempfile.rst:363
 msgid ""
 "A historical way to create temporary files was to first generate a file name"
 " with the :func:`mktemp` function and then create a file using this name. "
@@ -509,11 +513,11 @@ msgstr ""
 "与随后尝试创建文件的进程之间的时间里，其他进程可能会使用该名称创建文件。解决方案是将两个步骤结合起来，立即创建文件。这个方案目前被 "
 ":func:`mkstemp` 和上述其他函数所采用。"
 
-#: ../../library/tempfile.rst:371
+#: ../../library/tempfile.rst:374
 msgid "Use :func:`mkstemp` instead."
 msgstr "使用 :func:`mkstemp` 来代替。"
 
-#: ../../library/tempfile.rst:374
+#: ../../library/tempfile.rst:377
 msgid ""
 "Return an absolute pathname of a file that did not exist at the time the "
 "call is made.  The *prefix*, *suffix*, and *dir* arguments are similar to "
@@ -523,7 +527,7 @@ msgstr ""
 "返回一个绝对路径，这个路径指向的文件在调用本方法时不存在。*prefix*、*suffix* 和 *dir* 参数与 :func:`mkstemp` "
 "中的同名参数类似，不同之处在于不支持字节类型的文件名，不支持 ``suffix=None`` 和 ``prefix=None``。"
 
-#: ../../library/tempfile.rst:381
+#: ../../library/tempfile.rst:384
 msgid ""
 "Use of this function may introduce a security hole in your program.  By the "
 "time you get around to doing anything with the file name it returns, someone"

@@ -13,10 +13,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,13 +49,11 @@ msgstr "扩展组成包的模块的搜索路径。 预期用途是将以下代�
 
 #: ../../library/pkgutil.rst:28
 msgid ""
-"This will add to the package's ``__path__`` all subdirectories of "
-"directories on :data:`sys.path` named after the package.  This is useful if "
-"one wants to distribute different parts of a single logical package as "
-"multiple directories."
+"For each directory on :data:`sys.path` that has a subdirectory that matches "
+"the package name, add the subdirectory to the package's :attr:`__path__`.  "
+"This is useful if one wants to distribute different parts of a single "
+"logical package as multiple directories."
 msgstr ""
-"这将添加到包的 ``__path__`` 所有在 :data:`sys.path` 上以该包命名的目录的子目录。 "
-"这在想把一个逻辑包的不同部分作为多个目录来分发时很有用处。"
 
 #: ../../library/pkgutil.rst:33
 msgid ""
@@ -130,10 +128,8 @@ msgid ""
 "This is a backwards compatibility wrapper around "
 ":func:`importlib.util.find_spec` that converts most failures to "
 ":exc:`ImportError` and only returns the loader rather than the full "
-":class:`ModuleSpec`."
+":class:`importlib.machinery.ModuleSpec`."
 msgstr ""
-"这是针对 :func:`importlib.util.find_spec` 的向下兼容包装器，它将大多数失败转换为 :exc:`ImportError`"
-" 并且只返回加载器而不是完整的 :class:`ModuleSpec`。"
 
 #: ../../library/pkgutil.rst:87 ../../library/pkgutil.rst:104
 #: ../../library/pkgutil.rst:119 ../../library/pkgutil.rst:140

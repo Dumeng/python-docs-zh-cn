@@ -20,7 +20,6 @@
 # jaystone776 <1732865113@qq.com>, 2021
 # 1lin24 <1lin24@sina.com>, 2021
 # dogn he <hedogn@163.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
 # Alpha Du <alphanow@gmail.com>, 2022
 # Bryan不可思议, 2023
@@ -31,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 14:13+0000\n"
+"POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1474,8 +1473,10 @@ msgid ""
 msgstr "返回一个对应于 *date_string*，根据 *format* 进行解析得到的 :class:`.datetime` 对象。"
 
 #: ../../library/datetime.rst:1046
-msgid "This is equivalent to::"
-msgstr "这相当于："
+msgid ""
+"If *format* does not contain microseconds or timezone information, this is "
+"equivalent to::"
+msgstr ""
 
 #: ../../library/datetime.rst:1050
 msgid ""

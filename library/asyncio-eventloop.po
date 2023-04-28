@@ -20,10 +20,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2166,8 +2166,8 @@ msgstr ""
 ":func:`start_server` 和 :func:`start_unix_server` 等函数来创建。"
 
 #: ../../library/asyncio-eventloop.rst:1541
-msgid "Do not instantiate the class directly."
-msgstr "请不要直接实例化该类。"
+msgid "Do not instantiate the :class:`Server` class directly."
+msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1545
 msgid ""
@@ -2247,21 +2247,23 @@ msgid "Wait until the :meth:`close` method completes."
 msgstr "等待 :meth:`close` 方法执行完毕。"
 
 #: ../../library/asyncio-eventloop.rst:1632
-msgid "List of :class:`socket.socket` objects the server is listening on."
-msgstr "服务器监听的 :class:`socket.socket` 对象列表。"
+msgid ""
+"List of socket-like objects, ``asyncio.trsock.TransportSocket``, which the "
+"server is listening on."
+msgstr ""
 
-#: ../../library/asyncio-eventloop.rst:1634
+#: ../../library/asyncio-eventloop.rst:1635
 msgid ""
 "Prior to Python 3.7 ``Server.sockets`` used to return an internal list of "
 "server sockets directly.  In 3.7 a copy of that list is returned."
 msgstr ""
 "在 Python 3.7 之前 ``Server.sockets`` 会直接返回内部的服务器套接字列表。 在 3.7 版则会返回该列表的副本。"
 
-#: ../../library/asyncio-eventloop.rst:1644
+#: ../../library/asyncio-eventloop.rst:1645
 msgid "Event Loop Implementations"
 msgstr "事件循环实现"
 
-#: ../../library/asyncio-eventloop.rst:1646
+#: ../../library/asyncio-eventloop.rst:1647
 msgid ""
 "asyncio ships with two different event loop implementations: "
 ":class:`SelectorEventLoop` and :class:`ProactorEventLoop`."
@@ -2269,7 +2271,7 @@ msgstr ""
 "asyncio 带有两种不同的事件循环实现: :class:`SelectorEventLoop` 和 "
 ":class:`ProactorEventLoop`。"
 
-#: ../../library/asyncio-eventloop.rst:1649
+#: ../../library/asyncio-eventloop.rst:1650
 msgid ""
 "By default asyncio is configured to use :class:`SelectorEventLoop` on Unix "
 "and :class:`ProactorEventLoop` on Windows."
@@ -2277,30 +2279,30 @@ msgstr ""
 "默认情况下 asyncio 被配置为在 Unix 上使用 :class:`SelectorEventLoop` 而在 Windows 上使用 "
 ":class:`ProactorEventLoop`。"
 
-#: ../../library/asyncio-eventloop.rst:1655
+#: ../../library/asyncio-eventloop.rst:1656
 msgid "An event loop based on the :mod:`selectors` module."
 msgstr "基于 :mod:`selectors` 模块的事件循环。"
 
-#: ../../library/asyncio-eventloop.rst:1657
+#: ../../library/asyncio-eventloop.rst:1658
 msgid ""
 "Uses the most efficient *selector* available for the given platform.  It is "
 "also possible to manually configure the exact selector implementation to be "
 "used::"
 msgstr "使用给定平台中最高效的可用 *selector*。 也可以手动配置要使用的特定 selector::"
 
-#: ../../library/asyncio-eventloop.rst:1672
+#: ../../library/asyncio-eventloop.rst:1673
 msgid ":ref:`Availability <availability>`: Unix, Windows."
 msgstr ":ref:`可用性 <availability>`: Unix, Windows。"
 
-#: ../../library/asyncio-eventloop.rst:1677
+#: ../../library/asyncio-eventloop.rst:1678
 msgid "An event loop for Windows that uses \"I/O Completion Ports\" (IOCP)."
 msgstr "用 \"I/O Completion Ports\" (IOCP) 构建的专为Windows 的事件循环。"
 
-#: ../../library/asyncio-eventloop.rst:1679
+#: ../../library/asyncio-eventloop.rst:1680
 msgid ":ref:`Availability <availability>`: Windows."
 msgstr ":ref:`可用性 <availability>`: Windows。"
 
-#: ../../library/asyncio-eventloop.rst:1683
+#: ../../library/asyncio-eventloop.rst:1684
 msgid ""
 "`MSDN documentation on I/O Completion Ports <https://docs.microsoft.com/en-"
 "ca/windows/desktop/FileIO/i-o-completion-ports>`_."
@@ -2308,11 +2310,11 @@ msgstr ""
 "`有关 I/O 完成端口的 MSDN 文档 <https://docs.microsoft.com/en-"
 "ca/windows/desktop/FileIO/i-o-completion-ports>`_。"
 
-#: ../../library/asyncio-eventloop.rst:1689
+#: ../../library/asyncio-eventloop.rst:1690
 msgid "Abstract base class for asyncio-compliant event loops."
 msgstr "asyncio 兼容事件循环的抽象基类。"
 
-#: ../../library/asyncio-eventloop.rst:1691
+#: ../../library/asyncio-eventloop.rst:1692
 msgid ""
 "The :ref:`asyncio-event-loop-methods` section lists all methods that an "
 "alternative implementation of ``AbstractEventLoop`` should have defined."
@@ -2320,11 +2322,11 @@ msgstr ""
 ":ref:`asyncio-event-loop-methods` 一节列出了 ``AbstractEventLoop`` "
 "的替代实现应当要定义的所有方法。"
 
-#: ../../library/asyncio-eventloop.rst:1697
+#: ../../library/asyncio-eventloop.rst:1698
 msgid "Examples"
 msgstr "例子"
 
-#: ../../library/asyncio-eventloop.rst:1699
+#: ../../library/asyncio-eventloop.rst:1700
 msgid ""
 "Note that all examples in this section **purposefully** show how to use the "
 "low-level event loop APIs, such as :meth:`loop.run_forever` and "
@@ -2336,28 +2338,28 @@ msgstr ""
 ":meth:`loop.call_soon`。 现代的 asyncio 应用很少需要以这样的方式编写；请考虑使用高层级的函数例如 "
 ":func:`asyncio.run`。"
 
-#: ../../library/asyncio-eventloop.rst:1709
+#: ../../library/asyncio-eventloop.rst:1710
 msgid "Hello World with call_soon()"
 msgstr "call_soon() 的 Hello World 示例。"
 
-#: ../../library/asyncio-eventloop.rst:1711
+#: ../../library/asyncio-eventloop.rst:1712
 msgid ""
 "An example using the :meth:`loop.call_soon` method to schedule a callback. "
 "The callback displays ``\"Hello World\"`` and then stops the event loop::"
 msgstr ""
 "一个使用 :meth:`loop.call_soon` 方法来安排回调的示例。 回调会显示 ``\"Hello World\"`` 然后停止事件循环::"
 
-#: ../../library/asyncio-eventloop.rst:1735
+#: ../../library/asyncio-eventloop.rst:1736
 msgid ""
 "A similar :ref:`Hello World <coroutine>` example created with a coroutine "
 "and the :func:`run` function."
 msgstr "一个类似的 :ref:`Hello World <coroutine>` 示例，使用协程和 :func:`run` 函数创建。"
 
-#: ../../library/asyncio-eventloop.rst:1742
+#: ../../library/asyncio-eventloop.rst:1743
 msgid "Display the current date with call_later()"
 msgstr "使用 call_later() 来展示当前的日期"
 
-#: ../../library/asyncio-eventloop.rst:1744
+#: ../../library/asyncio-eventloop.rst:1745
 msgid ""
 "An example of a callback displaying the current date every second. The "
 "callback uses the :meth:`loop.call_later` method to reschedule itself after "
@@ -2365,24 +2367,24 @@ msgid ""
 msgstr ""
 "一个每秒刷新显示当前日期的示例。 回调使用 :meth:`loop.call_later` 方法在 5 秒后将自身重新加入计划日程，然后停止事件循环::"
 
-#: ../../library/asyncio-eventloop.rst:1772
+#: ../../library/asyncio-eventloop.rst:1773
 msgid ""
 "A similar :ref:`current date <asyncio_example_sleep>` example created with a"
 " coroutine and the :func:`run` function."
 msgstr ""
 "一个类似的 :ref:`current date <asyncio_example_sleep>` 示例，使用协程和 :func:`run` 函数创建。"
 
-#: ../../library/asyncio-eventloop.rst:1779
+#: ../../library/asyncio-eventloop.rst:1780
 msgid "Watch a file descriptor for read events"
 msgstr "监控一个文件描述符的读事件"
 
-#: ../../library/asyncio-eventloop.rst:1781
+#: ../../library/asyncio-eventloop.rst:1782
 msgid ""
 "Wait until a file descriptor received some data using the "
 ":meth:`loop.add_reader` method and then close the event loop::"
 msgstr "使用 :meth:`loop.add_reader` 方法，等到文件描述符收到一些数据，然后关闭事件循环："
 
-#: ../../library/asyncio-eventloop.rst:1819
+#: ../../library/asyncio-eventloop.rst:1820
 msgid ""
 "A similar :ref:`example <asyncio_example_create_connection>` using "
 "transports, protocols, and the :meth:`loop.create_connection` method."
@@ -2390,7 +2392,7 @@ msgstr ""
 "一个类似的 :ref:`示例 <asyncio_example_create_connection>`，使用传输、协议和 "
 ":meth:`loop.create_connection` 方法创建。"
 
-#: ../../library/asyncio-eventloop.rst:1823
+#: ../../library/asyncio-eventloop.rst:1824
 msgid ""
 "Another similar :ref:`example <asyncio_example_create_connection-streams>` "
 "using the high-level :func:`asyncio.open_connection` function and streams."
@@ -2398,15 +2400,15 @@ msgstr ""
 "另一个类似的 :ref:`示例 <asyncio_example_create_connection-streams>`，使用了高层级的 "
 ":func:`asyncio.open_connection` 函数和流。"
 
-#: ../../library/asyncio-eventloop.rst:1831
+#: ../../library/asyncio-eventloop.rst:1832
 msgid "Set signal handlers for SIGINT and SIGTERM"
 msgstr "为SIGINT和SIGTERM设置信号处理器"
 
-#: ../../library/asyncio-eventloop.rst:1833
+#: ../../library/asyncio-eventloop.rst:1834
 msgid "(This ``signals`` example only works on Unix.)"
 msgstr "（这个 ``signals`` 示例只适用于 Unix。）"
 
-#: ../../library/asyncio-eventloop.rst:1835
+#: ../../library/asyncio-eventloop.rst:1836
 msgid ""
 "Register handlers for signals :py:data:`SIGINT` and :py:data:`SIGTERM` using"
 " the :meth:`loop.add_signal_handler` method::"

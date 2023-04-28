@@ -1317,6 +1317,8 @@ msgid ""
 "action, you may also supply :attr:`~Option.type` and :attr:`~Option.dest` "
 "option attributes; see :ref:`optparse-standard-option-actions`.)"
 msgstr ""
+"（如果你没有提供动作，则默认为 ``\"store\"``。 对于此动作，你还可以提供 :attr:`~Option.type` 和 "
+":attr:`~Option.dest` 选项属性；参见 :ref:`optparse-standard-option-actions`。）"
 
 #: ../../library/optparse.rst:955
 msgid ""
@@ -1327,6 +1329,9 @@ msgid ""
 "stored as attributes of this object, according to the :attr:`~Option.dest` "
 "(destination) option attribute."
 msgstr ""
+"如你所见，大多数动作都涉及在某处保存或更新一个值。 :mod:`optparse` 总是会为此创建一个特殊对象，在习惯上命名为 ``options`` "
+"(它恰好是 :class:`optparse.Values` 的实例)。 选项参数 (以及几种其他的值) 将根据 "
+":attr:`~Option.dest` (目标) 选项属性被保存为该对象的属性。"
 
 #: ../../library/optparse.rst:961
 msgid "For example, when you call ::"
@@ -1384,6 +1389,8 @@ msgid ""
 "command line; the available options are documented :ref:`here <optparse-"
 "standard-option-actions>`."
 msgstr ""
+"用于当在命令行中遇到此选项时确定 :mod:`optparse` 的行为；可用的选项记录在 :ref:`这里 <optparse-standard-"
+"option-actions>`。"
 
 #: ../../library/optparse.rst:1009
 msgid "(default: ``\"string\"``)"
@@ -1395,10 +1402,12 @@ msgid ""
 "``\"int\"``); the available option types are documented :ref:`here "
 "<optparse-standard-option-types>`."
 msgstr ""
+"此选项所接受的参数类型 (例如 ``\"string\"`` 或 ``\"int\"``)；可用的选项类型记录在 :ref:`这里 <optparse-"
+"standard-option-types>`。"
 
 #: ../../library/optparse.rst:1017 ../../library/optparse.rst:1067
 msgid "(default: derived from option strings)"
-msgstr ""
+msgstr "(默认: 获取自选项字符串)"
 
 #: ../../library/optparse.rst:1019
 msgid ""
@@ -1407,12 +1416,14 @@ msgid ""
 "attribute of the ``options`` object that :mod:`optparse` builds as it parses"
 " the command line."
 msgstr ""
+"如果此选项的动作涉及在某处写入或修改一个值，该属性将告诉 :mod:`optparse` 将它写入到哪里: :attr:`~Option.dest` "
+"指定 :mod:`optparse` 在解析命令行时构建的 ``options`` 对象的某个属性。"
 
 #: ../../library/optparse.rst:1026
 msgid ""
 "The value to use for this option's destination if the option is not seen on "
 "the command line.  See also :meth:`OptionParser.set_defaults`."
-msgstr ""
+msgstr "当未在命令行中遇到此选项时将被用作此选项的目标的值。 另请参阅 :meth:`OptionParser.set_defaults`。"
 
 #: ../../library/optparse.rst:1031
 msgid "(default: 1)"
@@ -1424,16 +1435,18 @@ msgid ""
 " option is seen.  If > 1, :mod:`optparse` will store a tuple of values to "
 ":attr:`~Option.dest`."
 msgstr ""
+"当遇到此选项时应当读取多少个 :attr:`~Option.type` 类型的参数。 如果 > 1，:mod:`optparse` "
+"会将由多个值组成的元组保存到 :attr:`~Option.dest`。"
 
 #: ../../library/optparse.rst:1039
 msgid "For actions that store a constant value, the constant value to store."
-msgstr ""
+msgstr "对于保存常量值的动作，指定要保存的常量值。"
 
 #: ../../library/optparse.rst:1043
 msgid ""
 "For options of type ``\"choice\"``, the list of strings the user may choose "
 "from."
-msgstr ""
+msgstr "对于 ``\"choice\"`` 类型的选项，由用户可选择的字符串组成的列表。"
 
 #: ../../library/optparse.rst:1048
 msgid ""

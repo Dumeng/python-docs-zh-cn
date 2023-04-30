@@ -400,7 +400,7 @@ msgstr ":ref:`泛用别名类型<types-genericalias>`"
 
 #: ../../library/types.rst:317
 msgid "In-depth documentation on instances of :class:`!types.GenericAlias`"
-msgstr ""
+msgstr "有关 :class:`!types.GenericAlias` 实例的详细文档"
 
 #: ../../library/types.rst:319
 msgid ":pep:`585` - Type Hinting Generics In Standard Collections"
@@ -408,7 +408,7 @@ msgstr ":pep:`585` - 标准多项集中的类型提示泛型"
 
 #: ../../library/types.rst:320
 msgid "Introducing the :class:`!types.GenericAlias` class"
-msgstr ""
+msgstr "引入 :class:`!types.GenericAlias` 类"
 
 #: ../../library/types.rst:324
 msgid "The type of :ref:`union type expressions<types-union>`."

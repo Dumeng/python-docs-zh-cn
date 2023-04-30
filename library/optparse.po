@@ -1329,6 +1329,8 @@ msgid ""
 ":mod:`optparse` always creates a special object for this, conventionally "
 "called ``options``, which is an instance of :class:`optparse.Values`."
 msgstr ""
+"如你所见，大多数动作都在某处保存或更新一个值。 :mod:`optparse` 总是会为此创建一个特殊对象，它被恰当地称为 ``options``，是 "
+":class:`optparse.Values` 的实例。"
 
 #: ../../library/optparse.rst:961
 msgid ""
@@ -1338,13 +1340,16 @@ msgid ""
 ":meth:`OptionParser.parse_args` (as described in :ref:`optparse-parsing-"
 "arguments`)."
 msgstr ""
+"一个将被解析的参数名和值作为属性保存的对象。 一般是通过调用 :meth:`OptionParser.parse_args` 来创建，并可被传给 "
+":meth:`OptionParser.parse_args` 的 *values* 参数的自定义子类所重载（如在 :ref:`optparse-"
+"parsing-arguments` 中描述的那样）。"
 
 #: ../../library/optparse.rst:966
 msgid ""
 "Option arguments (and various other values) are stored as attributes of this"
 " object, according to the :attr:`~Option.dest` (destination) option "
 "attribute."
-msgstr ""
+msgstr "Option 参数（以及各种其他的值）将根据 :attr:`~Option.dest` (目标) 选项属性被保存为此对象的属性。"
 
 #: ../../library/optparse.rst:970
 msgid "For example, when you call ::"
@@ -1389,6 +1394,8 @@ msgid ""
 "rather than directly, and can be overridden by a custom class via the "
 "*option_class* argument to :class:`OptionParser`."
 msgstr ""
+"一个单独的命令行参数，带有以关键字参数形式传给构造器的各种属性。 通常使用 :meth:`OptionParser.add_option` "
+"创建而不是直接创建，并可被作为 :class:`OptionParser` 的 *option_class* 参数传入的自定义类来重载。"
 
 #: ../../library/optparse.rst:1011
 msgid ""
@@ -1511,12 +1518,16 @@ msgid ""
 "specify to guide :mod:`optparse`'s behaviour; a few have required "
 "attributes, which you must specify for any option using that action."
 msgstr ""
+"各种选项动作具有略微不同的要求和效果。 大多数动作都具有几个可被你指定的独步选项属性用来控制 :mod:`optparse` "
+"的行为；少数还具有一些必需属性，你必须为任何使用该动作的选项指定这些属性。"
 
 #: ../../library/optparse.rst:1100
 msgid ""
 "``\"store\"`` [relevant: :attr:`~Option.type`, :attr:`~Option.dest`, "
 ":attr:`~Option.nargs`, :attr:`~Option.choices`]"
 msgstr ""
+"``\"store\"`` [关联: :attr:`~Option.type`, :attr:`~Option.dest`, "
+":attr:`~Option.nargs`, :attr:`~Option.choices`]"
 
 #: ../../library/optparse.rst:1103
 msgid ""
@@ -1527,16 +1538,20 @@ msgid ""
 "stored to :attr:`~Option.dest` as a tuple.  See the :ref:`optparse-standard-"
 "option-types` section."
 msgstr ""
+"该选项后必须跟一个参数，它将根据 :attr:`~Option.type` 被转换为相应的值并保存至 :attr:`~Option.dest`。 如果 "
+":attr:`~Option.nargs` > 1，则将从命令行读取多个参数；它们将全部根据 :attr:`~Option.type` "
+"被转换并以元组形式保存至 :attr:`~Option.dest`。 参见 :ref:`optparse-standard-option-types` "
+"一节。"
 
 #: ../../library/optparse.rst:1110
 msgid ""
 "If :attr:`~Option.choices` is supplied (a list or tuple of strings), the "
 "type defaults to ``\"choice\"``."
-msgstr ""
+msgstr "如果提供了 :attr:`~Option.choices` (由字符串组成的列表和元组)，则类型默认为 ``\"choice\"``。"
 
 #: ../../library/optparse.rst:1113
 msgid "If :attr:`~Option.type` is not supplied, it defaults to ``\"string\"``."
-msgstr ""
+msgstr "如果未提供 :attr:`~Option.type`，则默认为 ``\"string\"``。"
 
 #: ../../library/optparse.rst:1115
 msgid ""
@@ -1546,6 +1561,9 @@ msgid ""
 " destination from the first short option string (e.g., ``-f`` implies "
 "``f``)."
 msgstr ""
+"如果未提供 :attr:`~Option.dest`，则 :mod:`optparse` 会从第一个长选项字符串派生出目标 (例如 ``--foo-"
+"bar`` 将对应 ``foo_bar``)。 如果不存在长选项字符串，则 :mod:`optparse` 会从第一个短选项字符串派生出目标 (例如 "
+"``-f`` 将对应 ``f``)。"
 
 #: ../../library/optparse.rst:1120 ../../library/optparse.rst:1140
 #: ../../library/optparse.rst:1162 ../../library/optparse.rst:1180
@@ -1610,22 +1628,25 @@ msgid ""
 "multiple arguments are consumed, and a tuple of length :attr:`~Option.nargs`"
 " is appended to :attr:`~Option.dest`."
 msgstr ""
+"该选项必须跟一个参数，该参数将被添加到 :attr:`~Option.dest` 的列表中。 如果未提供 :attr:`~Option.dest` "
+"的默认值，那么当 :mod:`optparse` 首次在命令行中遇到该选项时将自动创建一个空列表。 如果 :attr:`~Option.nargs` >"
+" 1，则会读取多个参数，并将一个长度为 :attr:`~Option.nargs` 的元组添加到 :attr:`~Option.dest`。"
 
 #: ../../library/optparse.rst:1177
 msgid ""
 "The defaults for :attr:`~Option.type` and :attr:`~Option.dest` are the same "
 "as for the ``\"store\"`` action."
-msgstr ""
+msgstr ":attr:`~Option.type` 和 :attr:`~Option.dest` 的默认值与 ``\"store\"`` 动作的相同。"
 
 #: ../../library/optparse.rst:1184
 msgid ""
 "If ``-t3`` is seen on the command-line, :mod:`optparse` does the equivalent "
 "of::"
-msgstr ""
+msgstr "如果在命令行中遇到 ``-t3``，:mod:`optparse` 将执行这样的操作::"
 
 #: ../../library/optparse.rst:1190
 msgid "If, a little later on, ``--tracks=4`` is seen, it does::"
-msgstr ""
+msgstr "如果，在稍后的时候，再遇到 ``--tracks=4``，它将执行::"
 
 #: ../../library/optparse.rst:1194
 msgid ""
@@ -1635,12 +1656,15 @@ msgid ""
 "the default elements will be present in the parsed value for the option, "
 "with any values from the command line appended after those default values::"
 msgstr ""
+"``append`` 动作会在选项的当前值上调用 ``append`` 方法。 这意味着任何被指定的默认值必须具有 ``append`` 方法。 "
+"这还意味着如果默认值非空，则其中的默认元素将存在于选项的已解析值中，而任何来自命令行的值将被添加到这些默认值之后::"
 
 #: ../../library/optparse.rst:1205
 msgid ""
 "``\"append_const\"`` [required: :attr:`~Option.const`; relevant: "
 ":attr:`~Option.dest`]"
 msgstr ""
+"``\"append_const\"`` [需要: :attr:`~Option.const`; 关联: :attr:`~Option.dest`]"
 
 #: ../../library/optparse.rst:1208
 msgid ""
@@ -1649,10 +1673,13 @@ msgid ""
 " to ``None``, and an empty list is automatically created the first time the "
 "option is encountered."
 msgstr ""
+"与 ``\"store_const\"`` 类似，但 :attr:`~Option.const` 值将被添加到 "
+":attr:`~Option.dest`；与 ``\"append\"`` 一样，:attr:`~Option.dest` 默认为 "
+"``None``，并且当首次遇到该选项时将自动创建一个空列表。"
 
 #: ../../library/optparse.rst:1213
 msgid "``\"count\"`` [relevant: :attr:`~Option.dest`]"
-msgstr ""
+msgstr "``\"count\"`` [关联: :attr:`~Option.dest`]"
 
 #: ../../library/optparse.rst:1215
 msgid ""
@@ -1660,16 +1687,18 @@ msgid ""
 "is supplied, :attr:`~Option.dest` is set to zero before being incremented "
 "the first time."
 msgstr ""
+"对保存在 :attr:`~Option.dest` 的整数执行递增。 如果未提供默认值，则 :attr:`~Option.dest` "
+"会在第一次执行递增之前被设为零。"
 
 #: ../../library/optparse.rst:1223
 msgid ""
 "The first time ``-v`` is seen on the command line, :mod:`optparse` does the "
 "equivalent of::"
-msgstr ""
+msgstr "第一次在命令行中看到 ``-v`` 时，:mod:`optparse` 将执行这样的操作::"
 
 #: ../../library/optparse.rst:1229
 msgid "Every subsequent occurrence of ``-v`` results in  ::"
-msgstr ""
+msgstr "后续每次出现 ``-v`` 都将导致  ::"
 
 #: ../../library/optparse.rst:1233
 msgid ""
@@ -1677,16 +1706,19 @@ msgid ""
 ":attr:`~Option.type`, :attr:`~Option.nargs`, :attr:`~Option.callback_args`, "
 ":attr:`~Option.callback_kwargs`]"
 msgstr ""
+"``\"callback\"`` [需要: :attr:`~Option.callback`; 关联: :attr:`~Option.type`, "
+":attr:`~Option.nargs`, :attr:`~Option.callback_args`, "
+":attr:`~Option.callback_kwargs`]"
 
 #: ../../library/optparse.rst:1237
 msgid ""
 "Call the function specified by :attr:`~Option.callback`, which is called as "
 "::"
-msgstr ""
+msgstr "调用 :attr:`~Option.callback` 所指定的函数，它将以如下形式被调用 ::"
 
 #: ../../library/optparse.rst:1241
 msgid "See section :ref:`optparse-option-callbacks` for more detail."
-msgstr ""
+msgstr "请参阅 :ref:`optparse-option-callbacks` 一节了解详情。"
 
 #: ../../library/optparse.rst:1245
 msgid ""

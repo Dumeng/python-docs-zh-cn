@@ -1386,12 +1386,14 @@ msgid ""
 "call to the :meth:`poll`, :meth:`wait`, or :meth:`communicate` methods if "
 "they detect that the process has terminated."
 msgstr ""
+"子进程的返回码。 初始为 ``None``，:attr:`returncode` 是通过在检测到进程终结时调用 :meth:`poll`, "
+":meth:`wait` 或 :meth:`communicate` 等方法来设置的。"
 
 #: ../../library/subprocess.rst:928
 msgid ""
 "A ``None`` value indicates that the process hadn't yet terminated at the "
 "time of the last method call."
-msgstr ""
+msgstr "``None`` 值表示在最近一次方法调用时进程尚未终结"
 
 #: ../../library/subprocess.rst:936
 msgid "Windows Popen Helpers"

@@ -6,7 +6,7 @@
 # Translators:
 # nick <2330458484@qq.com>, 2021
 # laazy <laaazy@sjtu.edu.cn>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,6 +54,8 @@ msgid ""
 "This is useful if one wants to distribute different parts of a single "
 "logical package as multiple directories."
 msgstr ""
+"对于 :data:`sys.path` 中每个具有与该包名称相匹配的子目录的目录，将该子目录添加到包的 :attr:`__path__`。 "
+"这在需要将单个逻辑包的不同部分拆分为多个目录的情况下很有用处。"
 
 #: ../../library/pkgutil.rst:33
 msgid ""
@@ -130,6 +132,8 @@ msgid ""
 ":exc:`ImportError` and only returns the loader rather than the full "
 ":class:`importlib.machinery.ModuleSpec`."
 msgstr ""
+"这是针对 :func:`importlib.util.find_spec` 的向下兼容包装器，它将大多数失败转换为 :exc:`ImportError`"
+" 并且只返回加载器而不是完整的 :class:`importlib.machinery.ModuleSpec`。"
 
 #: ../../library/pkgutil.rst:87 ../../library/pkgutil.rst:104
 #: ../../library/pkgutil.rst:119 ../../library/pkgutil.rst:140

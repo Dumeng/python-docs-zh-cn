@@ -2167,7 +2167,7 @@ msgstr ""
 
 #: ../../library/asyncio-eventloop.rst:1541
 msgid "Do not instantiate the :class:`Server` class directly."
-msgstr ""
+msgstr "请不要直接实例化 :class:`Server` 类。"
 
 #: ../../library/asyncio-eventloop.rst:1545
 msgid ""
@@ -2250,7 +2250,7 @@ msgstr "等待 :meth:`close` 方法执行完毕。"
 msgid ""
 "List of socket-like objects, ``asyncio.trsock.TransportSocket``, which the "
 "server is listening on."
-msgstr ""
+msgstr "由类套接字对象组成的列表 ``asyncio.trsock.TransportSocket``，服务器将监听这些对象。"
 
 #: ../../library/asyncio-eventloop.rst:1635
 msgid ""

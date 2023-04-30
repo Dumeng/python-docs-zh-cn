@@ -1501,6 +1501,8 @@ msgid ""
 "<sqlite3-placeholders>` :abbr:`DML (Data Manipulation Language)` SQL "
 "statement *sql*."
 msgstr ""
+"对于 *parameters* 中的每一项，重复执行 :ref:`参数化的 <sqlite3-placeholders>` :abbr:`DML "
+"(Data Manipulation Language)` SQL 语句 *sql*。"
 
 #: ../../library/sqlite3.rst:1368
 msgid ""
@@ -1509,7 +1511,7 @@ msgstr "使用与 :meth:`~Cursor.execute` 相同的隐式事务处理。"
 
 #: ../../library/sqlite3.rst:1370
 msgid "A single SQL DML statement."
-msgstr ""
+msgstr "一条 SQL DML 语句。"
 
 #: ../../library/sqlite3.rst:1373
 msgid ""
@@ -1527,7 +1529,7 @@ msgstr "如果 *sql* 包含多条 SQL 语句，或是不属于 DML 语句。"
 msgid ""
 "Any resulting rows are discarded, including DML statements with `RETURNING "
 "clauses`_."
-msgstr ""
+msgstr "任何结果行都将被丢弃，包括带有 `RETURNING 子句`_ 的 DML 语句。"
 
 #: ../../library/sqlite3.rst:1403
 msgid ""

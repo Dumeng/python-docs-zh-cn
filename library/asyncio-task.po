@@ -765,7 +765,7 @@ msgstr ""
 msgid ""
 "The *aws* iterable must not be empty and generators yielding tasks are not "
 "accepted."
-msgstr ""
+msgstr "可迭代对象 *aws* 不能为空并且不接受产生任务的生成器。"
 
 #: ../../library/asyncio-task.rst:762
 msgid "Returns two sets of Tasks/Futures: ``(done, pending)``."
@@ -847,6 +847,8 @@ msgid ""
 "Return an iterator of coroutines. Each coroutine returned can be awaited to "
 "get the earliest next result from the iterable of the remaining awaitables."
 msgstr ""
+"并发地运行可迭代对象 *aws* 中的 :ref:`可等待对象 <asyncio-awaitables>`。 产生任务的生成器不可被用作 *aws* "
+"可迭代对象。 返回一个产生协程的迭代器。 所返回的每个协程可被等待以便从剩余的可等待对象的可迭代对象中获得早最的下一个结果。"
 
 #: ../../library/asyncio-task.rst:813
 msgid ""

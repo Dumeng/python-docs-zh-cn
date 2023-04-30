@@ -8,9 +8,9 @@
 # nick <2330458484@qq.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
 # BigOrangeQWQ, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # 乐成 王, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,6 +42,8 @@ msgid ""
 ":meth:`~object.__repr__` to user-defined classes.  It was originally "
 "described in :pep:`557`."
 msgstr ""
+"这个模块提供了一个装饰器和一些函数，用于自动为用户自定义的类添加生成的 :term:`special method` 例如 "
+":meth:`~object.__init__` 和 :meth:`~object.__repr__`。 它的初始描述见 :pep:`557`。"
 
 #: ../../library/dataclasses.rst:19
 msgid ""
@@ -52,7 +54,7 @@ msgstr "在这些生成的方法中使用的成员变量是使用 :pep:`526` 类
 #: ../../library/dataclasses.rst:34
 msgid ""
 "will add, among other things, a :meth:`~object.__init__` that looks like::"
-msgstr ""
+msgstr "除其他内容以外，还将添加如下所示的 :meth:`~object.__init__`::"
 
 #: ../../library/dataclasses.rst:41
 msgid ""
@@ -115,13 +117,13 @@ msgstr ":func:`dataclass` 的参数有："
 msgid ""
 "``init``: If true (the default), a :meth:`~object.__init__` method will be "
 "generated."
-msgstr ""
+msgstr "``init``: 如为真值（默认），将生成一个 :meth:`~object.__init__` 方法。"
 
 #: ../../library/dataclasses.rst:92
 msgid ""
 "If the class already defines :meth:`~object.__init__`, this parameter is "
 "ignored."
-msgstr ""
+msgstr "如果该类已经定义了 :meth:`~object.__init__`，则忽略此形参。"
 
 #: ../../library/dataclasses.rst:95
 msgid ""
@@ -132,12 +134,15 @@ msgid ""
 "example: ``InventoryItem(name='widget', unit_price=3.0, "
 "quantity_on_hand=10)``."
 msgstr ""
+"``repr``: 如果为真值（默认），将生成一个 :meth:`~object.__repr__` 方法。 生成的 repr "
+"字符串将带有类名及每个字符的名称和 repr，并按它们在类中定义的顺序排列。 不包括被标记为从 repr 排除的字段。 例如: "
+"``InventoryItem(name='widget', unit_price=3.0, quantity_on_hand=10)``。"
 
 #: ../../library/dataclasses.rst:102
 msgid ""
 "If the class already defines :meth:`~object.__repr__`, this parameter is "
 "ignored."
-msgstr ""
+msgstr "如果该类已经定义了 :meth:`~object.__repr__`，则忽略此形参。"
 
 #: ../../library/dataclasses.rst:105
 msgid ""
@@ -146,12 +151,14 @@ msgid ""
 "fields, in order.  Both instances in the comparison must be of the identical"
 " type."
 msgstr ""
+"``eq``: 如果为真值（默认），将生成 :meth:`~object.__eq__` 方法。 此方法将把类当作由其字段组成的元组那样按顺序进行比较。"
+" 要比较的两个实例必须是相同的类型。"
 
 #: ../../library/dataclasses.rst:110
 msgid ""
 "If the class already defines :meth:`~object.__eq__`, this parameter is "
 "ignored."
-msgstr ""
+msgstr "如果该类已经定义了 :meth:`~object.__eq__`，则忽略此形参。"
 
 #: ../../library/dataclasses.rst:113
 msgid ""
@@ -162,6 +169,10 @@ msgid ""
 "identical type.  If ``order`` is true and ``eq`` is false, a "
 ":exc:`ValueError` is raised."
 msgstr ""
+"``order``: 如果为真值 (默认为 ``False``)，将生成 :meth:`~object.__lt__`, "
+":meth:`~object.__le__`, :meth:`~object.__gt__` 和 :meth:`~object.__ge__` 方法。 "
+"这些方法将把类当作由其字段组成的元组那样按顺序进行比较。 要比较的两个实例必须是相同的类型。 如果 ``order`` 为真值并且 ``eq`` "
+"为假值，则会引发 :exc:`ValueError`。"
 
 #: ../../library/dataclasses.rst:120
 msgid ""
@@ -169,12 +180,17 @@ msgid ""
 ":meth:`~object.__le__`, :meth:`~object.__gt__`, or :meth:`~object.__ge__`, "
 "then :exc:`TypeError` is raised."
 msgstr ""
+"如果该类已经定义了 :meth:`~object.__lt__`, :meth:`~object.__le__`, "
+":meth:`~object.__gt__` 或者 :meth:`~object.__ge__` 中的任意一个，则会引发 "
+":exc:`TypeError`。"
 
 #: ../../library/dataclasses.rst:124
 msgid ""
 "``unsafe_hash``: If ``False`` (the default), a :meth:`~object.__hash__` "
 "method is generated according to how ``eq`` and ``frozen`` are set."
 msgstr ""
+"``unsafe_hash``: 如果为 ``False`` (默认值)，则会根据 ``eq`` 和 ``frozen`` 的设置情况生成 "
+":meth:`~object.__hash__` 方法。"
 
 #: ../../library/dataclasses.rst:127
 msgid ""
@@ -186,6 +202,10 @@ msgid ""
 "and the values of the ``eq`` and ``frozen`` flags in the :func:`dataclass` "
 "decorator."
 msgstr ""
+":meth:`~object.__hash__` 将由内置的 :meth:`hash()` 使用，并会在对象被添加到可哈希的多项集如字典和集合时被调用。"
+" 具有 :meth:`~object.__hash__` 意味着类的实例是不可变对象。 "
+"可变性是一个复杂的特性，它依赖于程序员的意图，:meth:`~object.__eq__` 的存在和行为方式，以及 :func:`dataclass` "
+"装饰器中 ``eq`` 和 ``frozen`` 旗标的值。"
 
 #: ../../library/dataclasses.rst:134
 msgid ""
@@ -196,6 +216,9 @@ msgid ""
 "meaning to Python, as described in the :meth:`~object.__hash__` "
 "documentation."
 msgstr ""
+"在默认情况下，:func:`dataclass` 不会隐式地添加 :meth:`~object.__hash__` 方法，除非这样做是安全的。 "
+"它也不会添加或更改现有的显式定义的 :meth:`~object.__hash__` 方法。 设置类属性 ``__hash__ = None`` 对 "
+"Python 来说有特别的含义，如 :meth:`~object.__hash__` 文档所描述的。"
 
 #: ../../library/dataclasses.rst:140
 msgid ""
@@ -207,6 +230,10 @@ msgid ""
 "immutable but can nonetheless be mutated. This is a specialized use case and"
 " should be considered carefully."
 msgstr ""
+"如果 :meth:`~object.__hash__` 没有被显式地定义，或者如果它被设为 ``None``，则 :func:`dataclass` "
+"*可能* 会添加一个隐式的 :meth:`~object.__hash__` 方法。 虽然并不推荐，但你可以设置 "
+"``unsafe_hash=True`` 来强制 :func:`dataclass` 创建一个 :meth:`~object.__hash__` 方法。"
+" 如果你的类在逻辑上不可变但仍然可被修改那么可能就是这种情况。 这是一个特殊应用场景并且应当被谨慎考虑。"
 
 #: ../../library/dataclasses.rst:147
 msgid ""
@@ -215,6 +242,8 @@ msgid ""
 ":meth:`~object.__hash__` method in your dataclass and set "
 "``unsafe_hash=True``; this will result in a :exc:`TypeError`."
 msgstr ""
+"以下是隐式创建 :meth:`~object.__hash__` 方法的规则。 请注意你不能在你的数据类中即定义显式的 "
+":meth:`~object.__hash__` 方法又设置 ``unsafe_hash=True``；这会导致 :exc:`TypeError`。"
 
 #: ../../library/dataclasses.rst:152
 msgid ""
@@ -227,6 +256,11 @@ msgid ""
 "superclass is :class:`object`, this means it will fall back to id-based "
 "hashing)."
 msgstr ""
+"如果 ``eq`` 和 ``frozen`` 都为真值，则 :func:`dataclass` 将默认为你生成一个 "
+":meth:`~object.__hash__` 方法。 如果 ``eq`` 为真值且 ``frozen`` 为假值，则 "
+":meth:`~object.__hash__` 将被设为 ``None``，以标记其为不可哈希的（因为它是可变对象）。 如果 ``eq`` 为假值，则"
+" :meth:`~object.__hash__` 将保持不变，这意味着将使用超类的 :meth:`~object.__hash__` 方法（如果超类是"
+" :class:`object`，这意味着它将回退为基于 id 的哈希）。"
 
 #: ../../library/dataclasses.rst:160
 msgid ""
@@ -235,6 +269,9 @@ msgid ""
 ":meth:`~object.__setattr__` or :meth:`~object.__delattr__` is defined in the"
 " class, then :exc:`TypeError` is raised.  See the discussion below."
 msgstr ""
+"``frozen``: 如果为真值 (默认为 ``False``)，则对字段赋值将引发异常。 这模拟了只读的冻结实例。 如果在类中定义了 "
+":meth:`~object.__setattr__` 或 :meth:`~object.__delattr__`，则将引发 "
+":exc:`TypeError`。 参见下文的讨论。"
 
 #: ../../library/dataclasses.rst:165
 msgid ""
@@ -244,6 +281,9 @@ msgid ""
 "generated, see above).  If false, or if ``__match_args__`` is already "
 "defined in the class, then ``__match_args__`` will not be generated."
 msgstr ""
+"``match_args``: 如果为真值 (默认为 ``True``)，则将根据传给已生成的 :meth:`~object.__init__` "
+"方法的形参列表来创建 ``__match_args__`` 元组 (即使没有生成 :meth:`~object.__init__`，见上文)。 "
+"如果为假值，或者如果 ``__match_args__`` 已在类中定义，则不会生成 ``__match_args__``。"
 
 #: ../../library/dataclasses.rst:174
 msgid ""
@@ -255,6 +295,10 @@ msgid ""
 "of dataclasses.  See the :term:`parameter` glossary entry for details.  Also"
 " see the :const:`KW_ONLY` section."
 msgstr ""
+"``kw_only``: 如果为真值 (默认为 ``False``)，则所有字段都将被标记为仅限关键字字段。 "
+"如果一个字段被标记为仅限关键字字段，则唯一的影响是由仅限关键字字段生成的 :meth:`~object.__init__` 的对应形参在 "
+":meth:`~object.__init__` 被调用时必须以关键字形式指定。 而 dataclass 的任何其它行为都不会受影响。 详情参见 "
+":term:`parameter` 术语表条目。 另请参见 :const:`KW_ONLY` 一节。"
 
 #: ../../library/dataclasses.rst:185
 msgid ""
@@ -263,6 +307,8 @@ msgid ""
 "original one. If :attr:`~object.__slots__` is already defined in the class, "
 "then :exc:`TypeError` is raised."
 msgstr ""
+"``slots``: 如果为真值 (默认为 ``False``)，则将生成 :attr:`~object.__slots__` "
+"属性并返回一个新类而非原来的类。 如果 :attr:`~object.__slots__` 已在类中定义，则会引发 :exc:`TypeError`。"
 
 #: ../../library/dataclasses.rst:192
 msgid ""
@@ -299,6 +345,7 @@ msgid ""
 "In this example, both ``a`` and ``b`` will be included in the added "
 ":meth:`~object.__init__` method, which will be defined as::"
 msgstr ""
+"在这个例子中，``a`` 和 ``b`` 都将被包括在所添加的 :meth:`~object.__init__` 方法中，该方法将被定义为::"
 
 #: ../../library/dataclasses.rst:222
 msgid ""
@@ -356,13 +403,13 @@ msgstr ""
 msgid ""
 "``init``: If true (the default), this field is included as a parameter to "
 "the generated :meth:`~object.__init__` method."
-msgstr ""
+msgstr "``init``: 如果为真值（默认），则该字段将作为一个形参被包括在所生成的 :meth:`~object.__init__` 方法中。"
 
 #: ../../library/dataclasses.rst:261
 msgid ""
 "``repr``: If true (the default), this field is included in the string "
 "returned by the generated :meth:`~object.__repr__` method."
-msgstr ""
+msgstr "``repr``: 如果为真值（默认），则该字段将被包括在所生成的 :meth:`~object.__repr__` 方法返回的字符串中。"
 
 #: ../../library/dataclasses.rst:264
 msgid ""
@@ -373,6 +420,9 @@ msgid ""
 "comparisons.  Setting this value to anything other than ``None`` is "
 "discouraged."
 msgstr ""
+"``hash``: 这可以是一个布尔值或为 ``None``。 如果为真值，则此字段将被包括在所生成的 :meth:`~object.__hash__`"
+" 方法中。 如果为 ``None`` (默认)，则将使用 ``compare`` 的值：这通常是预期的行为。 "
+"一个字段如果被用于比较那么就应当在哈希时考虑到它。 不建议将该值设为 ``None`` 以外的任何其他对象。"
 
 #: ../../library/dataclasses.rst:271
 msgid ""
@@ -391,6 +441,8 @@ msgid ""
 "equality and comparison methods (:meth:`~object.__eq__`, "
 ":meth:`~object.__gt__`, et al.)."
 msgstr ""
+"``compare``: 如果为真值（默认），则该字段将被包括在所生成的相等性和大小比较方法中 (:meth:`~object.__eq__`, "
+":meth:`~object.__gt__` 等等)。"
 
 #: ../../library/dataclasses.rst:281
 msgid ""
@@ -411,6 +463,8 @@ msgid ""
 "used when the generated :meth:`~object.__init__` method's parameters are "
 "computed."
 msgstr ""
+"``kw_only``: 如果为真值，则该字段将被标记为仅限关键字字段。 这将在计算所生成的 :meth:`~object.__init__` "
+"方法的形参时被使用。"
 
 #: ../../library/dataclasses.rst:295
 msgid ""
@@ -569,6 +623,8 @@ msgid ""
 " method of the dataclass.  This ensures that :ref:`__post_init__ <post-init-"
 "processing>`, if present, is also called."
 msgstr ""
+"新返回的对象是通过调用数据类的 :meth:`~object.__init__` 方法来创建的。 这确保了如果 :ref:`__post_init__ "
+"<post-init-processing>` 存在则它也会被调用。"
 
 #: ../../library/dataclasses.rst:438
 msgid ""
@@ -576,6 +632,8 @@ msgid ""
 "on the call to :func:`replace` so that they can be passed to "
 ":meth:`~object.__init__` and :ref:`__post_init__ <post-init-processing>`."
 msgstr ""
+"如果存在没有默认值的仅初始化变量，那么必须在调用 :func:`replace` 时给出它们，以便他们可以被传递给 "
+":meth:`~object.__init__` 和 :ref:`__post_init__ <post-init-processing>`。"
 
 #: ../../library/dataclasses.rst:442
 msgid ""
@@ -593,6 +651,10 @@ msgid ""
 "alternate class constructors, or perhaps a custom ``replace()`` (or "
 "similarly named) method which handles instance copying."
 msgstr ""
+"提前提醒 ``init=False`` 字段在对 :func:`replace` 调用期间的行为。 如果它们被初始化的话，它们将不是从源对象复制，而是在"
+" :ref:`__post_init__ <post-init-processing>` 中被初始化。 通常预期 ``init=False`` "
+"字段将很少能被正确地使用。 如果使用它们，那么使用另外的类构造器，或是自定义的 ``replace()`` (或类似名称的) "
+"方法来处理实例拷贝可能是更明智的做法。"
 
 #: ../../library/dataclasses.rst:457
 msgid ""
@@ -622,6 +684,10 @@ msgid ""
 ":meth:`~object.__init__` parameters that must be specified as keywords when "
 "the class is instantiated."
 msgstr ""
+"一个用作类型标注的监视值。 任何在伪字段之后的类型为 :const:`KW_ONLY` 的字段会被标记为仅限关键字字段。 请注意在其他情况下 "
+":const:`KW_ONLY` 类型的伪字段会被完全忽略。 这包括此类字段的名称。 根据惯例，名称 ``_`` 会被用作 "
+":const:`KW_ONLY` 字段。 仅限关键字字段指明当类被实例化时 :meth:`~object.__init__` "
+"形参必须以关键字形式来指定。"
 
 #: ../../library/dataclasses.rst:482
 msgid ""
@@ -641,6 +707,8 @@ msgid ""
 ":meth:`~object.__delattr__` is called on a dataclass which was defined with "
 "``frozen=True``. It is a subclass of :exc:`AttributeError`."
 msgstr ""
+"在定义时设置了 ``frozen=True`` 的类上调用隐式定义的 :meth:`~object.__setattr__` 或 "
+":meth:`~object.__delattr__` 时引发。 这是 :exc:`AttributeError` 的一个子类。"
 
 #: ../../library/dataclasses.rst:507
 msgid "Post-init processing"
@@ -656,6 +724,10 @@ msgid ""
 ":meth:`~object.__init__` method is generated, then :meth:`!__post_init__` "
 "will not automatically be called."
 msgstr ""
+"生成的 :meth:`~object.__init__` 代码将调用一个名为 :meth:`!__post_init__` 的方法，如果在类上已经定义了"
+" :meth:`!__post_init__` 的话。 它通常会以 ``self.__post_init__()`` 的形式调用。 但是，如果定义了任何"
+" ``InitVar`` 字段，它们也将按照它们在类中定义的顺序传递给 :meth:`!__post_init__`。 如果没有生成 "
+":meth:`~object.__init__` 方法，那么 :meth:`!__post_init__` 将不会被自动调用。"
 
 #: ../../library/dataclasses.rst:517
 msgid ""
@@ -670,6 +742,9 @@ msgid ""
 ":meth:`~object.__init__` method that has to be called, it is common to call "
 "this method in a :meth:`!__post_init__` method::"
 msgstr ""
+"由 :func:`dataclass` 所生成的 :meth:`~object.__init__` 方法不会调用基类的 "
+":meth:`~object.__init__` 方法。 如果基类有需要被调用的 :meth:`~object.__init__` 方法，通常是在 "
+":meth:`!__post_init__` 方法中调用此方法::"
 
 #: ../../library/dataclasses.rst:546
 msgid ""
@@ -678,6 +753,8 @@ msgid ""
 "dataclass will take care of initializing all fields of any base class that "
 "is a dataclass itself."
 msgstr ""
+"但是，请注意一般来说 dataclass 生成的 :meth:`~object.__init__` 方法不需要被调用，因为派生的 dataclass "
+"将负责初始化任何本身为 dataclass 的基类的所有字段。"
 
 #: ../../library/dataclasses.rst:550
 msgid ""
@@ -685,6 +762,8 @@ msgid ""
 ":meth:`!__post_init__`.  Also see the warning about how :func:`replace` "
 "handles ``init=False`` fields."
 msgstr ""
+"请参阅下面有关仅初始化变量的小节来了解如何将形参传递给 :meth:`!__post_init__`。 另请参阅关于 :func:`replace` "
+"如何处理 ``init=False`` 字段的警告。"
 
 #: ../../library/dataclasses.rst:555
 msgid "Class variables"
@@ -721,6 +800,11 @@ msgid ""
 ":ref:`__post_init__ <post-init-processing>` method.  They are not otherwise "
 "used by dataclasses."
 msgstr ""
+"另一个 :func:`dataclass` 会检查类型标的地方是为了确定一个字段是否为仅限初始化变量。 它通过查看字段的类型是否为 "
+"``dataclasses.InitVar`` 来实现这一点。 如果一个字段是 ``InitVar``，它会被当作名为仅限初始始化字段的伪字段。 "
+"因为它不是一个真正的字段，所以它不会被模块层级的 :func:`fields` 函数返回。 仅限初始化字段会作为形参被添加到所生成的 "
+":meth:`~object.__init__` 方法中，并被传递给可选的 :ref:`__post_init__ <post-init-"
+"processing>` 方法。 在其他情况下它们不会被 dataclass 所使用。"
 
 #: ../../library/dataclasses.rst:578
 msgid ""
@@ -748,6 +832,9 @@ msgid ""
 ":meth:`~object.__setattr__` and :meth:`~object.__delattr__` methods to the "
 "class.  These methods will raise a :exc:`FrozenInstanceError` when invoked."
 msgstr ""
+"不可能创建真正不可变的 Python 对象。 但是，通过将 ``frozen=True`` 传递给 :meth:`dataclass` "
+"装饰器，你可以模拟出不可变性。 在这种情况下，dataclass 将向类添加 :meth:`~object.__setattr__` 和 "
+":meth:`~object.__delattr__` 方法。 当被发起调用时这些方法将会引发 :exc:`FrozenInstanceError`。"
 
 #: ../../library/dataclasses.rst:605
 msgid ""
@@ -755,6 +842,8 @@ msgid ""
 ":meth:`~object.__init__` cannot use simple assignment to initialize fields, "
 "and must use :meth:`~object.__setattr__`."
 msgstr ""
+"使用 ``frozen=True`` 时会有少量的性能损失: :meth:`~object.__init__` "
+"不能使用简单的赋值来初始化字段，并且必须使用 :meth:`~object.__setattr__`。"
 
 #: ../../library/dataclasses.rst:610
 msgid "Inheritance"
@@ -784,11 +873,11 @@ msgstr ""
 #: ../../library/dataclasses.rst:635
 msgid ""
 "The generated :meth:`~object.__init__` method for ``C`` will look like::"
-msgstr ""
+msgstr "为 ``C`` 生成的 :meth:`~object.__init__` 方法看起来像是这样::"
 
 #: ../../library/dataclasses.rst:640
 msgid "Re-ordering of keyword-only parameters in :meth:`~object.__init__`"
-msgstr ""
+msgstr ":meth:`~object.__init__` 中仅限关键字形参的重新排序"
 
 #: ../../library/dataclasses.rst:642
 msgid ""
@@ -797,6 +886,8 @@ msgid ""
 "only) parameters.  This is a requirement of how keyword-only parameters are "
 "implemented in Python: they must come after non-keyword-only parameters."
 msgstr ""
+"在计算出 :meth:`~object.__init__` 所需要的形参之后，任何仅限关键字形参会被移至所有常规（非仅限关键字）形参的后面。 这是 "
+"Python 中实现仅限关键字形参所要求的：它们必须位于非仅限关键字形参之后。"
 
 #: ../../library/dataclasses.rst:648
 msgid ""
@@ -809,7 +900,7 @@ msgstr ""
 #: ../../library/dataclasses.rst:663
 msgid ""
 "The generated :meth:`~object.__init__` method for ``D`` will look like::"
-msgstr ""
+msgstr "为 ``D`` 生成的 :meth:`~object.__init__` 方法看起来像是这样::"
 
 #: ../../library/dataclasses.rst:667
 msgid ""
@@ -822,7 +913,7 @@ msgstr "请注意形参原来在字段列表中出现的位置已被重新排序
 msgid ""
 "The relative ordering of keyword-only parameters is maintained in the re-"
 "ordered :meth:`~object.__init__` parameter list."
-msgstr ""
+msgstr "仅限关键字形参的相对顺序会在重新排序的 :meth:`~object.__init__` 形参列表中继续保持。"
 
 #: ../../library/dataclasses.rst:676
 msgid "Default factory functions"
@@ -845,6 +936,9 @@ msgid ""
 "function.  This happens because there is no other way to give the field an "
 "initial value."
 msgstr ""
+"如果一个字段被排除在 :meth:`~object.__init__` 之外 (使用 ``init=False``) 但该字段同样也指定了 "
+"``default_factory``，则默认的工厂函数将始终从生成的 :meth:`~object.__init__` 函数中被调用。 "
+"发生这种情况是因为没有其它方法能为字段提供初始值。"
 
 #: ../../library/dataclasses.rst:691
 msgid "Mutable default values"

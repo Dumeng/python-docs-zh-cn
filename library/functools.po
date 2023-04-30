@@ -78,14 +78,14 @@ msgid ""
 "The cache is threadsafe so that the wrapped function can be used in multiple"
 " threads.  This means that the underlying data structure will remain "
 "coherent during concurrent updates."
-msgstr ""
+msgstr "该缓存是线程安全的因此被包装的函数可在多线程中使用。 这意味着下层的数据结构将在并发更新期间保持一致性。"
 
 #: ../../library/functools.rst:56 ../../library/functools.rst:155
 msgid ""
 "It is possible for the wrapped function to be called more than once if "
 "another thread makes an additional call before the initial call has been "
 "completed and cached."
-msgstr ""
+msgstr "如果另一个线程在初始调用完成并被缓存之前执行了额外的调用则被包装的函数可能会被多次调用。"
 
 #: ../../library/functools.rst:65
 msgid ""

@@ -19,17 +19,17 @@
 # Sefank <sefank@foxmail.com>, 2022
 # 周盛道 <zhoushengdao@sina.cn>, 2022
 # Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Jason Ren, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 14:13+0000\n"
+"POT-Creation-Date: 2023-04-28 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: Jason Ren, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -800,6 +800,10 @@ msgid ""
 ":func:`~asyncio.create_task` and :func:`~asyncio.gather` directly. "
 "(Contributed by Yury Selivanov and others in :gh:`90908`.)"
 msgstr ""
+"添加了 :class:`~asyncio.TaskGroup` 类，它是一个 :ref:`异步上下文管理器 <async-context-"
+"managers>`，可以持有一组任务，等待它们全部完成后才退出。 对于新代码，建议使用此类，而不是直接使用 "
+":func:`~asyncio.create_task` 和 :func:`~asyncio.gather`。 （由 Yury Selivanov "
+"等人在 :gh:`90908` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:584
 msgid ""
@@ -808,12 +812,16 @@ msgid ""
 "using :func:`~asyncio.wait_for` directly. (Contributed by Andrew Svetlov in "
 ":gh:`90927`.)"
 msgstr ""
+"增加了 :func:`~asyncio.timeout`，一个用于在异步操作上设置超时的异步上下文管理器。 对于新代码推荐用这个来代替直接使用 "
+":func:`~asyncio.wait_for`。 （由 Andrew Svetlov 在 :gh:`90927` 中贡献）"
 
 #: ../../whatsnew/3.11.rst:589
 msgid ""
 "Added the :class:`~asyncio.Runner` class, which exposes the machinery used "
 "by :func:`~asyncio.run`. (Contributed by Andrew Svetlov in :gh:`91218`.)"
 msgstr ""
+"增加了 :class:`~asyncio.Runner` 类，该类对外公开了 :func:`~asyncio.run` 所使用的机制。 （由 "
+"Andrew Svetlov 在 :gh:`91218` 中贡献。）.)"
 
 #: ../../whatsnew/3.11.rst:593
 msgid ""
@@ -821,6 +829,9 @@ msgid ""
 "in the asyncio library, and the related :exc:`~asyncio.BrokenBarrierError` "
 "exception. (Contributed by Yves Duprat and Andrew Svetlov in :gh:`87518`.)"
 msgstr ""
+"为 asyncio 库中的同步化原语添加了 :class:`~asyncio.Barrier` 类，以及相应的 "
+":exc:`~asyncio.BrokenBarrierError` 异常。 （由 Yves Duprat 和 Andrew Svetlov 在 "
+":gh:`87518` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:598
 msgid ""
@@ -828,6 +839,8 @@ msgid ""
 ":meth:`asyncio.loop.create_connection` so that multiple connection errors "
 "can be raised as an :exc:`ExceptionGroup`."
 msgstr ""
+"向 :meth:`asyncio.loop.create_connection` 添加了关键字参数 *all_errors* "
+"以便可以将多个连接错误作为一个 :exc:`ExceptionGroup` 来引发。"
 
 #: ../../whatsnew/3.11.rst:601
 msgid ""
@@ -835,6 +848,8 @@ msgid ""
 "existing stream-based connections to TLS. (Contributed by Ian Good in "
 ":issue:`34975`.)"
 msgstr ""
+"增加了 :meth:`asyncio.StreamWriter.start_tls` 方法用于将现有的基于流的连接升级为 TLS。 （由 Ian "
+"Good 在 :issue:`34975` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:605
 msgid ""
@@ -844,6 +859,11 @@ msgid ""
 ":class:`~asyncio.SelectorEventLoop` and :class:`~asyncio.ProactorEventLoop`."
 " (Contributed by Alex Grönholm in :issue:`46805`.)"
 msgstr ""
+"为事件循环添加了原始数据报套接字函数: :meth:`~asyncio.loop.sock_sendto`, "
+":meth:`~asyncio.loop.sock_recvfrom` 和 "
+":meth:`~asyncio.loop.sock_recvfrom_into`。 这些函数在 "
+":class:`~asyncio.SelectorEventLoop` 和 :class:`~asyncio.ProactorEventLoop` "
+"中均有实现。 （由 Alex Grönholm 在 :issue:`46805` 中贡献。）.)"
 
 #: ../../whatsnew/3.11.rst:613
 msgid ""
@@ -851,6 +871,9 @@ msgid ""
 "methods to :class:`~asyncio.Task`. These are primarily intended for internal"
 " use, notably by :class:`~asyncio.TaskGroup`."
 msgstr ""
+"为 :class:`~asyncio.Task` 添加了 :meth:`~asyncio.Task.cancelling` 和 "
+":meth:`~asyncio.Task.uncancel` 方法。 它们主要供内部使用，特别是 "
+":class:`~asyncio.TaskGroup`。"
 
 #: ../../whatsnew/3.11.rst:622
 msgid "contextlib"
@@ -862,6 +885,8 @@ msgid ""
 "the current working directory and then restore it on exit. Simple wrapper "
 "around :func:`~os.chdir`. (Contributed by Filipe Laíns in :issue:`25625`)"
 msgstr ""
+"增加了非并行安全的 :func:`~contextlib.chdir` 上下文管理器用来改变当前工作目录并在退出时恢复它。 是 "
+":func:`~os.chdir` 的简单包装器。 （由 Filipe Laíns 在 :issue:`25625` 中贡献）)"
 
 #: ../../whatsnew/3.11.rst:632
 msgid "dataclasses"
@@ -874,6 +899,8 @@ msgid ""
 ":class:`dict`, :class:`list` or :class:`set`. (Contributed by Eric V. Smith "
 "in :issue:`44674`.)"
 msgstr ""
+"修改了字段默认的可变性检查，默认仅允许 :term:`hashable` 而非任何不为 :class:`dict`, :class:`list` 或 "
+":class:`set` 实例的对象。 （由 Eric V. Smith 在 :issue:`44674` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:643
 msgid "datetime"

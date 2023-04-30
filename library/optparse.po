@@ -1533,6 +1533,9 @@ msgid ""
 " destination from the first short option string (e.g., ``-f`` implies "
 "``f``)."
 msgstr ""
+"如果未提供 :attr:`~Option.dest`，则 :mod:`optparse` 会从第一个长选项字符串派生出目标 (例如 ``--foo-"
+"bar`` 将对应 ``foo_bar``)。 如果不存在长选项字符串，则 :mod:`optparse` 会从第一个短选项字符串派生出目标 (例如 "
+"``-f`` 将对应 ``f``)。"
 
 #: ../../library/optparse.rst:1103 ../../library/optparse.rst:1123
 #: ../../library/optparse.rst:1145 ../../library/optparse.rst:1163
@@ -1597,18 +1600,21 @@ msgid ""
 "multiple arguments are consumed, and a tuple of length :attr:`~Option.nargs`"
 " is appended to :attr:`~Option.dest`."
 msgstr ""
+"该选项必须跟一个参数，该参数将被添加到 :attr:`~Option.dest` 的列表中。 如果未提供 :attr:`~Option.dest` "
+"的默认值，那么当 :mod:`optparse` 首次在命令行中遇到该选项时将自动创建一个空列表。 如果 :attr:`~Option.nargs` >"
+" 1，则会读取多个参数，并将一个长度为 :attr:`~Option.nargs` 的元组添加到 :attr:`~Option.dest`。"
 
 #: ../../library/optparse.rst:1160
 msgid ""
 "The defaults for :attr:`~Option.type` and :attr:`~Option.dest` are the same "
 "as for the ``\"store\"`` action."
-msgstr ""
+msgstr ":attr:`~Option.type` 和 :attr:`~Option.dest` 的默认值与 ``\"store\"`` 动作的相同。"
 
 #: ../../library/optparse.rst:1167
 msgid ""
 "If ``-t3`` is seen on the command-line, :mod:`optparse` does the equivalent "
 "of::"
-msgstr ""
+msgstr "如果在命令行中遇过 ``-t3``，:mod:`optparse` 将执行这样的操作::"
 
 #: ../../library/optparse.rst:1173
 msgid "If, a little later on, ``--tracks=4`` is seen, it does::"

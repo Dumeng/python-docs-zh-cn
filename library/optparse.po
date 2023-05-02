@@ -2388,21 +2388,21 @@ msgstr "下面是一个不接受任何参数，只是简单地记录所遇见的
 
 #: ../../library/optparse.rst:1696
 msgid "Of course, you could do that with the ``\"store_true\"`` action."
-msgstr ""
+msgstr "当然，你也可以使用 ``\"store_true\"`` 动作做到这一点。"
 
 #: ../../library/optparse.rst:1702
 msgid "Callback example 2: check option order"
-msgstr ""
+msgstr "回调示例 2：检查选项顺序"
 
 #: ../../library/optparse.rst:1704
 msgid ""
 "Here's a slightly more interesting example: record the fact that ``-a`` is "
 "seen, but blow up if it comes after ``-b`` in the command-line.  ::"
-msgstr ""
+msgstr "下面是一个更有趣些的示例：当看到 ``-a`` 出现时将会记录，而如果它在命令行中出现于 ``-b`` 之后则将报告错误。 ::"
 
 #: ../../library/optparse.rst:1719
 msgid "Callback example 3: check option order (generalized)"
-msgstr ""
+msgstr "回调示例 3：检查选项顺序（通用）"
 
 #: ../../library/optparse.rst:1721
 msgid ""

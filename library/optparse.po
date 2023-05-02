@@ -2421,11 +2421,11 @@ msgstr "下面是一个不接受任何参数，只是简单地记录所遇见的
 
 #: ../../library/optparse.rst:1713
 msgid "Of course, you could do that with the ``\"store_true\"`` action."
-msgstr ""
+msgstr "当然，你也可以使用 ``\"store_true\"`` 动作做到这一点。"
 
 #: ../../library/optparse.rst:1719
 msgid "Callback example 2: check option order"
-msgstr ""
+msgstr "回调示例 2：检查选项顺序"
 
 #: ../../library/optparse.rst:1721
 msgid ""

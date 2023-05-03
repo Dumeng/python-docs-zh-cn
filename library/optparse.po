@@ -2475,22 +2475,25 @@ msgid ""
 ":mod:`optparse` normally handles for you.  In particular, callbacks should "
 "implement the conventional rules for bare ``--`` and ``-`` arguments:"
 msgstr ""
+"当你想要一个选项接受可变数数量的参数时情况会变得更麻烦一点。 对于这种场景，你必须编写一个回调，因为 :mod:`optparse` "
+"没有为它提供任何内置的相应功能。 而你必须处理 :mod:`optparse` 通常会为你处理的传统 Unix 命令行的某些细节问题。 "
+"特别地，回调应当实现单个 ``--`` 和 ``-`` 参数的惯例规则:"
 
 #: ../../library/optparse.rst:1794
 msgid "either ``--`` or ``-`` can be option arguments"
-msgstr ""
+msgstr "``--`` 或 ``-`` 都可以是选项参数"
 
 #: ../../library/optparse.rst:1796
 msgid ""
 "bare ``--`` (if not the argument to some option): halt command-line "
 "processing and discard the ``--``"
-msgstr ""
+msgstr "单个 ``--`` (如果不是某个选项的参数): 停止命令行处理并丢弃该 ``--``"
 
 #: ../../library/optparse.rst:1799
 msgid ""
 "bare ``-`` (if not the argument to some option): halt command-line "
 "processing but keep the ``-`` (append it to ``parser.largs``)"
-msgstr ""
+msgstr "单个 ``-`` (如果不是某个选项的参数): 停止命令行处理但保留 ``-`` (将其添加到 ``parser.largs``)"
 
 #: ../../library/optparse.rst:1802
 msgid ""

@@ -2419,17 +2419,17 @@ msgid ""
 "checking the values of already-defined options.  For example, if you have "
 "options that should not be called when the moon is full, all you have to do "
 "is this::"
-msgstr ""
+msgstr "当然，你可以设置任何条件 --- 并不限于检查已定义选项的值。 举例来说，如果你有一个不应当在满月时被调用的选项，你就可以这样做::"
 
 #: ../../library/optparse.rst:1753
 msgid ""
 "(The definition of ``is_moon_full()`` is left as an exercise for the "
 "reader.)"
-msgstr ""
+msgstr "（定义 ``is_moon_full()`` 的任务将作为留给读者的练习。）"
 
 #: ../../library/optparse.rst:1759
 msgid "Callback example 5: fixed arguments"
-msgstr ""
+msgstr "回调示例 5：固定的参数"
 
 #: ../../library/optparse.rst:1761
 msgid ""
@@ -2441,10 +2441,14 @@ msgid ""
 ":attr:`~Option.nargs`, then the option takes :attr:`~Option.nargs` "
 "arguments."
 msgstr ""
+"当你定义接受固定数量参数的 callback 选项时情况会变得更有趣一点。 指定一个 callback 选项接受参数的操作类似于定义一个 "
+"``\"store\"`` 或 ``\"append\"`` 选项：如果你定义 "
+":attr:`~Option.type`，那么该选项将接受一个必须可被转换为相应类型的参数；如果你进一步定义 "
+":attr:`~Option.nargs`，那么该选项将接受 :attr:`~Option.nargs` 个参数。"
 
 #: ../../library/optparse.rst:1768
 msgid "Here's an example that just emulates the standard ``\"store\"`` action::"
-msgstr ""
+msgstr "下面是一个模拟了标准 ``\"store\"`` 动作的示例::"
 
 #: ../../library/optparse.rst:1777
 msgid ""
@@ -2452,10 +2456,12 @@ msgid ""
 " them to integers for you; all you have to do is store them.  (Or whatever; "
 "obviously you don't need a callback for this example.)"
 msgstr ""
+"请注意 :mod:`optparse` 将为你读取 3 个参数并将它们转换为整数；你所要做的只是保存它们。 "
+"（或任何其他操作；对于这个示例显然你不需要使用回调。）"
 
 #: ../../library/optparse.rst:1785
 msgid "Callback example 6: variable arguments"
-msgstr ""
+msgstr "回调示例 6：可变的参数"
 
 #: ../../library/optparse.rst:1787
 msgid ""

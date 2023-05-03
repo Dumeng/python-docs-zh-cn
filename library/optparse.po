@@ -2508,22 +2508,25 @@ msgid ""
 ":mod:`optparse` normally handles for you.  In particular, callbacks should "
 "implement the conventional rules for bare ``--`` and ``-`` arguments:"
 msgstr ""
+"当你想要一个选项接受可变数数量的参数时情况会变得更麻烦一点。 对于这种场景，你必须编写一个回调，因为 :mod:`optparse` "
+"没有为它提供任何内置的相应功能。 而你必须处理 :mod:`optparse` 通常会为你处理的传统 Unix 命令行的某些细节问题。 "
+"特别地，回调应当实现单个 ``--`` 和 ``-`` 参数的惯例规则:"
 
 #: ../../library/optparse.rst:1811
 msgid "either ``--`` or ``-`` can be option arguments"
-msgstr ""
+msgstr "``--`` 或 ``-`` 都可以作为选项参数"
 
 #: ../../library/optparse.rst:1813
 msgid ""
 "bare ``--`` (if not the argument to some option): halt command-line "
 "processing and discard the ``--``"
-msgstr ""
+msgstr "单个 ``--`` (如果不是某个选项的参数): 停止命令行处理并丢弃该 ``--``"
 
 #: ../../library/optparse.rst:1816
 msgid ""
 "bare ``-`` (if not the argument to some option): halt command-line "
 "processing but keep the ``-`` (append it to ``parser.largs``)"
-msgstr ""
+msgstr "单个 ``-`` (如果不是某个选项的参数): 停止命令行处理但保留 ``-`` (将其添加到 ``parser.largs``)"
 
 #: ../../library/optparse.rst:1819
 msgid ""
@@ -2533,16 +2536,18 @@ msgid ""
 "application (which is why :mod:`optparse` doesn't support this sort of thing"
 " directly)."
 msgstr ""
+"如果你想要一个选项接受可变数量的参数，那么有几个微妙、棘手的问题需要考虑到。 你选择的具体实现将基于你的应用程序对于各方面利弊的权衡（这就是为什么 "
+":mod:`optparse` 没有直接支持这一功能）。"
 
 #: ../../library/optparse.rst:1825
 msgid ""
 "Nevertheless, here's a stab at a callback for an option with variable "
 "arguments::"
-msgstr ""
+msgstr "无论如何，下面是一个对于接受可变参数的选项的回调的尝试::"
 
 #: ../../library/optparse.rst:1859
 msgid "Extending :mod:`optparse`"
-msgstr ""
+msgstr "扩展 :mod:`optparse`"
 
 #: ../../library/optparse.rst:1861
 msgid ""
@@ -2550,10 +2555,11 @@ msgid ""
 "command-line options are the action and type of each option, the most likely"
 " direction of extension is to add new actions and new types."
 msgstr ""
+"由于控制 :mod:`optparse` 如何读取命令行选项的两个主要因子是每个选项的动作和类型，所以扩展最可能的方向就是添加新的动作和新的类型。"
 
 #: ../../library/optparse.rst:1869
 msgid "Adding new types"
-msgstr ""
+msgstr "添加新的类型"
 
 #: ../../library/optparse.rst:1871
 msgid ""
@@ -2562,18 +2568,21 @@ msgid ""
 ":mod:`optparse`'s types: :attr:`~Option.TYPES` and "
 ":attr:`~Option.TYPE_CHECKER`."
 msgstr ""
+"要添加新的类型，你必须自定义 :mod:`optparse` 的 :class:`Option` 类的子类。 这个类包含几个用来定义 "
+":mod:`optparse` 的类型的属性: :attr:`~Option.TYPES` 和 "
+":attr:`~Option.TYPE_CHECKER`。"
 
 #: ../../library/optparse.rst:1877
 msgid ""
 "A tuple of type names; in your subclass, simply define a new tuple "
 ":attr:`TYPES` that builds on the standard one."
-msgstr ""
+msgstr "一个由类型名称组成的元组；在你的子类中，简单地定义一个在标准元组基础上构建的新元组 :attr:`TYPES`。"
 
 #: ../../library/optparse.rst:1882
 msgid ""
 "A dictionary mapping type names to type-checking functions.  A type-checking"
 " function has the following signature::"
-msgstr ""
+msgstr "一个将类型名称映射到类型检查函数的字典。 类型检查函数具有如下签名::"
 
 #: ../../library/optparse.rst:1887
 msgid ""

@@ -2674,24 +2674,27 @@ msgid ""
 " the default \"typed\" actions are ``\"store\"``, ``\"append\"``, and "
 "``\"callback\"``."
 msgstr ""
+"这些是相互重叠的集合：默认的 \"store\" 类动作有 ``\"store\"``, ``\"store_const\"``, "
+"``\"append\"`` 和 ``\"count\"``，而默认的 \"typed\" 类动作有 ``\"store\"``, "
+"``\"append\"`` 和 ``\"callback\"``。"
 
 #: ../../library/optparse.rst:1954
 msgid ""
 "When you add an action, you need to categorize it by listing it in at least "
 "one of the following class attributes of Option (all are lists of strings):"
-msgstr ""
+msgstr "当你添加一个动作时，你需要将它列在 Option 的以下类属性的至少一个当中以对它进行分类（全部为字符串列表）:"
 
 #: ../../library/optparse.rst:1959
 msgid "All actions must be listed in ACTIONS."
-msgstr ""
+msgstr "所有动作必须在 ACTIONS 中列出。"
 
 #: ../../library/optparse.rst:1963
 msgid "\"store\" actions are additionally listed here."
-msgstr ""
+msgstr "\"store\" 类动作要额外地在此列出。"
 
 #: ../../library/optparse.rst:1967
 msgid "\"typed\" actions are additionally listed here."
-msgstr ""
+msgstr "\"typed\" 类动作要额外地在此列出。"
 
 #: ../../library/optparse.rst:1971
 msgid ""
@@ -2700,12 +2703,14 @@ msgid ""
 "assigns the default type, ``\"string\"``, to options with no explicit type "
 "whose action is listed in :attr:`ALWAYS_TYPED_ACTIONS`."
 msgstr ""
+"总是会接受一个类型的动作（即其选项总是会接受一个值）要额外地在此列出。 它带来的唯一影响是 :mod:`optparse` 会将默认类型 "
+"``\"string\"`` 赋值给动作在 :attr:`ALWAYS_TYPED_ACTIONS` 中列出而未显式指定类型的选项。"
 
 #: ../../library/optparse.rst:1976
 msgid ""
 "In order to actually implement your new action, you must override Option's "
 ":meth:`take_action` method and add a case that recognizes your action."
-msgstr ""
+msgstr "为了真正实现你的新动作，你必须重载 Option 的 :meth:`take_action` 方法并添加一个识别你的动作的分支。"
 
 #: ../../library/optparse.rst:1979
 msgid ""

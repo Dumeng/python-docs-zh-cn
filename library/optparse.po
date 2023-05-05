@@ -2779,6 +2779,8 @@ msgid ""
 "value somewhere, so it goes in both :attr:`~Option.STORE_ACTIONS` and "
 ":attr:`~Option.TYPED_ACTIONS`."
 msgstr ""
+"``\"extend\"`` 既预期在命令行接受一个值又会将该值保存到某处，因此它同时被归类于 "
+":attr:`~Option.STORE_ACTIONS` 和 :attr:`~Option.TYPED_ACTIONS`。"
 
 #: ../../library/optparse.rst:2032
 msgid ""
@@ -2786,6 +2788,8 @@ msgid ""
 " ``\"extend\"`` actions, we put the ``\"extend\"`` action in "
 ":attr:`~Option.ALWAYS_TYPED_ACTIONS` as well."
 msgstr ""
+"为确保 :mod:`optparse` 将 ``\"string\"`` 的默认类型赋值给 ``\"extend\"`` 动作，我们同时将 "
+"``\"extend\"`` 动作归类于 :attr:`~Option.ALWAYS_TYPED_ACTIONS`。"
 
 #: ../../library/optparse.rst:2036
 msgid ""
@@ -2793,6 +2797,8 @@ msgid ""
 " control back to :meth:`Option.take_action` for the standard :mod:`optparse`"
 " actions."
 msgstr ""
+":meth:`MyOption.take_action` 只实现了这一个新动作，并将控制权回传给 :meth:`Option.take_action` "
+"以执行标准的 :mod:`optparse` 动作。"
 
 #: ../../library/optparse.rst:2040
 msgid ""
@@ -2800,6 +2806,8 @@ msgid ""
 "provides the very useful :meth:`ensure_value` method. :meth:`ensure_value` "
 "is essentially :func:`getattr` with a safety valve; it is called as ::"
 msgstr ""
+"``values`` 是 optparse_parser.Values 类的一个实例，该类提供了非常有用的 :meth:`ensure_value` "
+"方法。 :meth:`ensure_value` 实际就是一个带有安全阀的 :func:`getattr`；它的调用形式为 ::"
 
 #: ../../library/optparse.rst:2046
 msgid ""
@@ -2813,6 +2821,11 @@ msgid ""
 "destinations in question; they can just leave the default as ``None`` and "
 ":meth:`ensure_value` will take care of getting it right when it's needed."
 msgstr ""
+"如果 ``values`` 的 ``attr`` 属性不存在或为 ``None``，则 ensure_value() 会先将其设为 "
+"``value``，然后返回该值。 这非常适用于 ``\"extend\"``, ``\"append\"`` 和 ``\"count\"`` "
+"等动作，它们会将数据累积在一个变量中并预期该变量属于特定的类型（前两项是一个列表，后一项是一个整数）。 使用 :meth:`ensure_value` "
+"意味着使用你的动作的脚本无需关心为相应的选项目标设置默认值；可以简单地保持默认的 ``None`` 则 :meth:`ensure_value` "
+"将在必要时负责为其设置适当的值。"
 
 #: ../../library/optparse.rst:2057
 msgid "Exceptions"
@@ -2822,20 +2835,20 @@ msgstr "异常"
 msgid ""
 "Raised if an :class:`Option` instance is created with invalid or "
 "inconsistent arguments."
-msgstr ""
+msgstr "当使用无效或不一致的参数创建 :class:`Option` 实例时将被引发。"
 
 #: ../../library/optparse.rst:2066
 msgid "Raised if conflicting options are added to an :class:`OptionParser`."
-msgstr ""
+msgstr "当向 :class:`OptionParser` 添加相互冲突的选项时将被引发。"
 
 #: ../../library/optparse.rst:2070
 msgid "Raised if an invalid option value is encountered on the command line."
-msgstr ""
+msgstr "当在命令行中遇到无效的选项值时将被引发。"
 
 #: ../../library/optparse.rst:2074
 msgid "Raised if an invalid option is passed on the command line."
-msgstr ""
+msgstr "当在命令行中传入无效的选项时被引发。"
 
 #: ../../library/optparse.rst:2078
 msgid "Raised if an ambiguous option is passed on the command line."
-msgstr ""
+msgstr "当在命令行中传入有歧义的选项时将被引发。"

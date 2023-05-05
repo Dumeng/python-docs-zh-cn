@@ -2721,14 +2721,17 @@ msgid ""
 "existing list with them.  That is, if ``--names`` is an ``\"extend\"`` "
 "option of type ``\"string\"``, the command line ::"
 msgstr ""
+"例如，让我们添加一个 ``\"extend\"`` 动作。 它类似于标准的 ``\"append\"`` 动作，但 ``\"extend\"`` "
+"不是从命令行接受单个值并将其添加到现有列表，而是接受形式为以单个逗号分隔的多个值的字符串，并用这些值来扩展现有列表。 也就是说，如果 "
+"``--names`` 是一个类型为 ``\"string\"`` 的 ``\"extend\"`` 选项，则命令行 ::"
 
 #: ../../library/optparse.rst:1988
 msgid "would result in a list  ::"
-msgstr ""
+msgstr "将得到一个列表 ::"
 
 #: ../../library/optparse.rst:1992
 msgid "Again we define a subclass of Option::"
-msgstr ""
+msgstr "我们再定义一个 Option 的子类::"
 
 #: ../../library/optparse.rst:2009
 msgid "Features of note:"
@@ -2740,6 +2743,8 @@ msgid ""
 "value somewhere, so it goes in both :attr:`~Option.STORE_ACTIONS` and "
 ":attr:`~Option.TYPED_ACTIONS`."
 msgstr ""
+"``\"extend\"`` 既预期在命令行接受一个值又会将该值保存到某处，因此它同时被归类于 "
+":attr:`~Option.STORE_ACTIONS` 和 :attr:`~Option.TYPED_ACTIONS`。"
 
 #: ../../library/optparse.rst:2015
 msgid ""
@@ -2747,6 +2752,8 @@ msgid ""
 " ``\"extend\"`` actions, we put the ``\"extend\"`` action in "
 ":attr:`~Option.ALWAYS_TYPED_ACTIONS` as well."
 msgstr ""
+"为确保 :mod:`optparse` 将 ``\"string\"`` 的默认类型赋值给 ``\"extend\"`` 动作，我们同时将 "
+"``\"extend\"`` 动作归类于 :attr:`~Option.ALWAYS_TYPED_ACTIONS`。"
 
 #: ../../library/optparse.rst:2019
 msgid ""
@@ -2754,6 +2761,8 @@ msgid ""
 " control back to :meth:`Option.take_action` for the standard :mod:`optparse`"
 " actions."
 msgstr ""
+":meth:`MyOption.take_action` 只实现了这一个新动作，并将控制权回传给 :meth:`Option.take_action` "
+"以执行标准的 :mod:`optparse` 动作。"
 
 #: ../../library/optparse.rst:2023
 msgid ""
@@ -2761,6 +2770,8 @@ msgid ""
 "provides the very useful :meth:`ensure_value` method. :meth:`ensure_value` "
 "is essentially :func:`getattr` with a safety valve; it is called as ::"
 msgstr ""
+"``values`` 是 optparse_parser.Values 类的一个实例，该类提供了非常有用的 :meth:`ensure_value` "
+"方法。 :meth:`ensure_value` 实际就是一个带有安全阀的 :func:`getattr`；它的调用形式为 ::"
 
 #: ../../library/optparse.rst:2029
 msgid ""
@@ -2774,3 +2785,8 @@ msgid ""
 "destinations in question; they can just leave the default as ``None`` and "
 ":meth:`ensure_value` will take care of getting it right when it's needed."
 msgstr ""
+"如果 ``values`` 的 ``attr`` 属性不存在或为 ``None``，则 ensure_value() 会先将其设为 "
+"``value``，然后返回该值。 这非常适用于 ``\"extend\"``, ``\"append\"`` 和 ``\"count\"`` "
+"等动作，它们会将数据累积在一个变量中并预期该变量属于特定的类型（前两项是一个列表，后一项是一个整数）。 使用 :meth:`ensure_value` "
+"意味着使用你的动作的脚本无需关心为相应的选项目标设置默认值；可以简单地保持默认的 ``None`` 则 :meth:`ensure_value` "
+"将在必要时负责为其设置适当的值。"

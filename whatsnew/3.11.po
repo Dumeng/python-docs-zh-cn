@@ -1006,6 +1006,8 @@ msgid ""
 "Added the :func:`~enum.member` and :func:`~enum.nonmember` decorators, to "
 "ensure the decorated object is/is not converted to an enum member."
 msgstr ""
+"增加了 :func:`~enum.member` 和 :func:`~enum.nonmember` "
+"装饰器，用于确保被装饰的对象是/否会被转换为枚举成员。"
 
 #: ../../whatsnew/3.11.rst:696
 msgid ""
@@ -1013,6 +1015,8 @@ msgid ""
 ":func:`property` except for enums. Use this instead of "
 ":func:`types.DynamicClassAttribute`."
 msgstr ""
+"增加了 :func:`~enum.property` 装饰器，它类似于 :func:`property` 但是专门针对枚举。 请使用它来代替 "
+":func:`types.DynamicClassAttribute`。"
 
 #: ../../whatsnew/3.11.rst:700
 msgid ""
@@ -1022,6 +1026,9 @@ msgid ""
 "``'re.ASCII'`` for the :data:`~re.ASCII` member of :class:`re.RegexFlag` "
 "rather than ``'RegexFlag.ASCII'``."
 msgstr ""
+"增加了 :func:`~enum.global_enum` 枚举装饰器，它会调整 :meth:`~object.__repr__` 和 "
+":meth:`~object.__str__` 以将值显示为其模块的成员而不是枚举类的成员。 例如，``'re.ASCII'`` 是 "
+":class:`re.RegexFlag` 的 :data:`~re.ASCII` 成员而不是 ``'RegexFlag.ASCII'``。"
 
 #: ../../whatsnew/3.11.rst:706
 msgid ""
@@ -1030,6 +1037,9 @@ msgid ""
 "now works: ``len(AFlag(3)) == 2 and list(AFlag(3)) == (AFlag.ONE, "
 "AFlag.TWO)``"
 msgstr ""
+"增强了 :class:`~enum.Flag` 以支持针对其成员的 :func:`len`，迭代和 "
+":keyword:`in`/:keyword:`not in`。 例如，现在可以使用下面的代码: ``len(AFlag(3)) == 2 and "
+"list(AFlag(3)) == (AFlag.ONE, AFlag.TWO)``"
 
 #: ../../whatsnew/3.11.rst:711
 msgid ""
@@ -1037,6 +1047,8 @@ msgid ""
 "defined before :meth:`~object.__init_subclass__` is called; :func:`dir` now "
 "includes methods, etc., from mixed-in data types."
 msgstr ""
+"修改了 :class:`~enum.Enum` 和 :class:`~enum.Flag` 使得成员的定义是在 "
+":meth:`~object.__init_subclass__` 被调用之前；:func:`dir` 现在将包括来自混入数据类型的方法等。"
 
 #: ../../whatsnew/3.11.rst:716
 msgid ""

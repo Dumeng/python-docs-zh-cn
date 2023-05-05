@@ -951,6 +951,9 @@ msgid ""
 ":meth:`~object.__format__` (used by :func:`str`, :func:`format` and "
 ":term:`f-string`\\s)."
 msgstr ""
+"增加了 :class:`~enum.ReprEnum`，它只是在为 :meth:`~object.__str__` 和 "
+":meth:`~object.__format__` 方法（供 :func:`str`, :func:`format` 和 "
+":term:`f-string` 使用）返回成员的字面值（而不是名称）时修改了它们的 :meth:`~object.__repr__`。"
 
 #: ../../whatsnew/3.11.rst:671
 msgid ""
@@ -960,6 +963,10 @@ msgid ""
 "and ``format(AnIntEnum.ONE)`` return ``'1'``, whereas before "
 "``str(AnIntEnum.ONE)`` returned ``'AnIntEnum.ONE'``."
 msgstr ""
+"现将 :class:`~enum.IntEnum`, :class:`~enum.IntFlag` 和 :class:`~enum.StrEnum` "
+"改为继承自 :class:`~enum.ReprEnum`，这样它们的 :func:`str` 输出将与 :func:`format` "
+"相匹配，``str(AnIntEnum.ONE)`` 和 ``format(AnIntEnum.ONE)`` 均返回 ``'1'``，而之前 "
+"``str(AnIntEnum.ONE)`` 是返回 ``'AnIntEnum.ONE'``。"
 
 #: ../../whatsnew/3.11.rst:677
 msgid ""
@@ -970,6 +977,11 @@ msgid ""
 "behavior of :meth:`enum.Enum.__str__`, returning e.g. ``'AnEnum.MEMBER'`` "
 "for an enum ``AnEnum(str, Enum)`` instead of just ``'MEMBER'``."
 msgstr ""
+"将具有混入类型 (例如 :class:`int`, :class:`str`) 的枚举的 :meth:`Enum.__format__() "
+"<enum.Enum.__format__>` (:func:`format`, :meth:`str.format` 和 "
+":term:`f-string` 默认使用的方法) 改为在输出中包括类名，而不仅是成员的键。 这与 :meth:`enum.Enum.__str__` "
+"现有的行为相匹配， 例如将为枚举 ``AnEnum(str, Enum)`` 返回 ``'AnEnum.MEMBER'`` 而不仅是 "
+"``'MEMBER'``。"
 
 #: ../../whatsnew/3.11.rst:685
 msgid ""
@@ -977,6 +989,8 @@ msgid ""
 ":class:`~enum.FlagBoundary` enum with its options, to control how to handle "
 "out-of-range flag values."
 msgstr ""
+"将新的 *boundary* 类形参连同其选项添加到 :class:`~enum.Flag` 枚举和 "
+":class:`~enum.FlagBoundary` 枚举中，以控制超范围旗标值的处理方式。"
 
 #: ../../whatsnew/3.11.rst:689
 msgid ""
@@ -984,6 +998,8 @@ msgid ""
 ":class:`~enum.EnumCheck` enum with its options, to check enum classes "
 "against several specific constraints."
 msgstr ""
+"增加了 :func:`~enum.verify` 枚举装饰器和 :class:`~enum.EnumCheck` "
+"枚举及其选项，以基于特定约束条件来检查枚举类。"
 
 #: ../../whatsnew/3.11.rst:693
 msgid ""

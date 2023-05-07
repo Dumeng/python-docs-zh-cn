@@ -1056,6 +1056,8 @@ msgid ""
 "canonical while composite values (``3``, ``6``, ``10``, etc.) are considered"
 " aliases; inverted flags are coerced to their positive equivalent."
 msgstr ""
+"将 :class:`~enum.Flag` 修改为只考虑规范的基本值（即二的乘方）而复合值（如 ``3``, ``6``, ``10`` "
+"等）则被视为别名；逆向旗标将被强制转换为对应的正向旗标。"
 
 #: ../../whatsnew/3.11.rst:725
 msgid "fcntl"
@@ -1079,6 +1081,8 @@ msgid ""
 "Support :PEP:`515`-style initialization of :class:`~fractions.Fraction` from"
 " string.  (Contributed by Sergey B Kirpichev in :issue:`44258`.)"
 msgstr ""
+"支持基于字符串执行 :PEP:`515` 网络的 :class:`~fractions.Fraction` 初始化。 （由 Sergey B "
+"Kirpichev 在 :issue:`44258` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:740
 msgid ""
@@ -1086,6 +1090,9 @@ msgid ""
 "an ``isinstance(some_fraction, typing.SupportsInt)`` check passes. "
 "(Contributed by Mark Dickinson in :issue:`44547`.)"
 msgstr ""
+":class:`~fractions.Fraction` 现在实现了一个 ``__int__`` 方法，因而 "
+"``isinstance(some_fraction, typing.SupportsInt)`` 检测将会通过。 （由 Mark Dickinson "
+"在 :issue:`44547` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:748
 msgid "functools"
@@ -1096,10 +1103,12 @@ msgid ""
 ":func:`functools.singledispatch` now supports :data:`types.UnionType` and "
 ":data:`typing.Union` as annotations to the dispatch argument.::"
 msgstr ""
+":func:`functools.singledispatch` 现在支持以 :data:`types.UnionType` 和 "
+":data:`typing.Union` 作为 dispatch 参数的标注。::"
 
 #: ../../whatsnew/3.11.rst:775
 msgid "(Contributed by Yurii Karabas in :issue:`46014`.)"
-msgstr ""
+msgstr "（由 Yurii Karabas 在 :issue:`46014` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:781
 msgid "hashlib"

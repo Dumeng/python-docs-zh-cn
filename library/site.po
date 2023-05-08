@@ -7,17 +7,19 @@
 # Zombie110year <zombie110year@gmail.com>, 2021
 # helloworldSB <warningfor163@foxmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# WH-2099 <wh2099@outlook.com>, 2023
+# Dai Xu <daixu61@hotmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -385,3 +387,60 @@ msgstr ":pep:`370` -- 分用户的 site-packages 目录"
 #: ../../library/site.rst:280
 msgid ":ref:`sys-path-init` -- The initialization of :data:`sys.path`."
 msgstr ":ref:`sys-path-init` -- :data:`sys.path` 的初始化。"
+
+#: ../../library/site.rst:16 ../../library/site.rst:112
+#: ../../library/site.rst:124
+msgid "module"
+msgstr "module"
+
+#: ../../library/site.rst:16
+msgid "search"
+msgstr ""
+
+#: ../../library/site.rst:16 ../../library/site.rst:77
+msgid "path"
+msgstr ""
+
+#: ../../library/site.rst:28
+msgid "site-packages"
+msgstr ""
+
+#: ../../library/site.rst:28
+msgid "directory"
+msgstr ""
+
+#: ../../library/site.rst:52
+msgid "# (hash)"
+msgstr ""
+
+#: ../../library/site.rst:52
+msgid "comment"
+msgstr ""
+
+#: ../../library/site.rst:52
+msgid "statement"
+msgstr "statement -- 语句"
+
+#: ../../library/site.rst:52
+msgid "import"
+msgstr ""
+
+#: ../../library/site.rst:77
+msgid "package"
+msgstr "包"
+
+#: ../../library/site.rst:77
+msgid "configuration"
+msgstr ""
+
+#: ../../library/site.rst:77
+msgid "file"
+msgstr ""
+
+#: ../../library/site.rst:112
+msgid "sitecustomize"
+msgstr ""
+
+#: ../../library/site.rst:124
+msgid "usercustomize"
+msgstr ""

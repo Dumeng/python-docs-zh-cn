@@ -9,23 +9,23 @@
 # dannyvi <dannyvis@icloud.com>, 2021
 # walkinrain <walkinrain2008@outlook.com>, 2021
 # nick <2330458484@qq.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
 # 开 方 <kaifang.1995@gmail.com>, 2021
 # wsyxbcl <wsyxbcl@gmail.com>, 2021
 # Chang Ye <yech1990@gmail.com>, 2021
 # Hissy <aozora@live.cn>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
+# ppcfish <ppcfish@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -710,3 +710,23 @@ msgstr ""
 "如果没有指定 ``newline=''``，则嵌入引号中的换行符将无法正确解析，并且在写入时，使用 ``\\r\\n`` 换行的平台会有多余的 "
 "``\\r`` 写入。由于 csv 模块会执行自己的（:term:`通用 <universal newlines>`）换行符处理，因此指定 "
 "``newline=''`` 应该总是安全的。"
+
+#: ../../library/csv.rst:11
+msgid "csv"
+msgstr "csv"
+
+#: ../../library/csv.rst:11
+msgid "data"
+msgstr "数据"
+
+#: ../../library/csv.rst:11
+msgid "tabular"
+msgstr ""
+
+#: ../../library/csv.rst:53
+msgid "universal newlines"
+msgstr "universal newlines -- 通用换行"
+
+#: ../../library/csv.rst:53
+msgid "csv.reader function"
+msgstr ""

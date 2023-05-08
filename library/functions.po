@@ -10,16 +10,17 @@
 # cdarlint <cdarling@126.com>, 2021
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # Woostundy <woostundy@gmail.com>, 2021
-# WH-2099 <wh2099@outlook.com>, 2021
 # emrich <emrich3@163.com>, 2021
 # Shengjing Zhu <zsj950618@gmail.com>, 2021
 # belingud <1170202353@qq.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
 # Alpha Du <alphanow@gmail.com>, 2022
 # laazy <laaazy@sjtu.edu.cn>, 2022
 # Bryan不可思议, 2023
 # CCXXXI <ccxxxi@qq.com>, 2023
+# Dai Xu <daixu61@hotmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
+# sgqy <sgqyzh@gmail.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
@@ -27,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:12+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1941,7 +1942,7 @@ msgstr "打开文件用于写入，如果文件存在则在末尾追加"
 msgid "``'b'``"
 msgstr "``'b'``"
 
-#: ../../library/functions.rst:1191
+#: ../../library/functions.rst:1191 ../../library/functions.rst:1335
 msgid "binary mode"
 msgstr "二进制模式"
 
@@ -3198,3 +3199,111 @@ msgid ""
 "you are reading the code from a file, make sure to use newline conversion "
 "mode to convert Windows or Mac-style newlines."
 msgstr "解析器只接受 Unix 风格的行结束符。如果您从文件中读取代码，请确保用换行符转换模式转换 Windows 或 Mac 风格的换行符。"
+
+#: ../../library/functions.rst:152
+msgid "Boolean"
+msgstr ""
+
+#: ../../library/functions.rst:152 ../../library/functions.rst:1825
+msgid "type"
+msgstr "type"
+
+#: ../../library/functions.rst:564
+msgid "built-in function"
+msgstr ""
+
+#: ../../library/functions.rst:564
+msgid "exec"
+msgstr ""
+
+#: ../../library/functions.rst:641
+msgid "NaN"
+msgstr ""
+
+#: ../../library/functions.rst:641
+msgid "Infinity"
+msgstr ""
+
+#: ../../library/functions.rst:706
+msgid "__format__"
+msgstr ""
+
+#: ../../library/functions.rst:706 ../../library/functions.rst:1714
+msgid "string"
+msgstr "string"
+
+#: ../../library/functions.rst:706
+msgid "format() (built-in function)"
+msgstr ""
+
+#: ../../library/functions.rst:1153
+msgid "file object"
+msgstr "file object -- 文件对象"
+
+#: ../../library/functions.rst:1153 ../../library/functions.rst:1274
+msgid "open() built-in function"
+msgstr ""
+
+#: ../../library/functions.rst:1181
+msgid "file"
+msgstr ""
+
+#: ../../library/functions.rst:1181
+msgid "modes"
+msgstr ""
+
+#: ../../library/functions.rst:1274
+msgid "universal newlines"
+msgstr "universal newlines -- 通用换行"
+
+#: ../../library/functions.rst:1335
+msgid "line-buffered I/O"
+msgstr ""
+
+#: ../../library/functions.rst:1335
+msgid "unbuffered I/O"
+msgstr ""
+
+#: ../../library/functions.rst:1335
+msgid "buffer size, I/O"
+msgstr ""
+
+#: ../../library/functions.rst:1335
+msgid "I/O control"
+msgstr ""
+
+#: ../../library/functions.rst:1335
+msgid "buffering"
+msgstr ""
+
+#: ../../library/functions.rst:1335
+msgid "text mode"
+msgstr ""
+
+#: ../../library/functions.rst:1335 ../../library/functions.rst:1980
+msgid "module"
+msgstr "module"
+
+#: ../../library/functions.rst:1335
+msgid "sys"
+msgstr "sys"
+
+#: ../../library/functions.rst:1714
+msgid "str() (built-in function)"
+msgstr ""
+
+#: ../../library/functions.rst:1825
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../library/functions.rst:1980
+msgid "statement"
+msgstr "statement -- 语句"
+
+#: ../../library/functions.rst:1980
+msgid "import"
+msgstr ""
+
+#: ../../library/functions.rst:1980
+msgid "builtins"
+msgstr "builtins"

@@ -6,7 +6,6 @@
 # Translators:
 # cdarlint <cdarling@126.com>, 2021
 # Shengjing Zhu <zsj950618@gmail.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # Zombie110year <zombie110year@gmail.com>, 2021
 # ww song <sww4718168@gmail.com>, 2021
@@ -15,6 +14,8 @@
 # Sonny <758896823@qq.com>, 2021
 # Contextualist <harzjc@gmail.com>, 2021
 # Bryan不可思议, 2023
+# ppcfish <ppcfish@gmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
@@ -22,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:12+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2708,3 +2709,27 @@ msgstr ""
 "节）中。那些特定于平台的参考资料，它们包含与套接字有关的各种系统调用，也是套接字语义细节的宝贵信息来源。对于 Unix，请参考手册页。对于 "
 "Windows，请参阅 WinSock（或 Winsock 2）规范。如果需要支持 IPv6 的 API，读者可能希望参考 "
 ":rfc:`3493`，标题为 Basic Socket Interface Extensions for IPv6。"
+
+#: ../../library/socket.rst:22
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../library/socket.rst:22
+msgid "socket"
+msgstr "socket"
+
+#: ../../library/socket.rst:1477
+msgid "I/O control"
+msgstr ""
+
+#: ../../library/socket.rst:1477
+msgid "buffering"
+msgstr ""
+
+#: ../../library/socket.rst:1832
+msgid "module"
+msgstr "module"
+
+#: ../../library/socket.rst:1832
+msgid "struct"
+msgstr "struct"

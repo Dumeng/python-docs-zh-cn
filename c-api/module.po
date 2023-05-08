@@ -8,19 +8,20 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Yifan Sun, 2022
 # 高乐喆 <gaolezhe@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Shan Su, 2023
 # Bryan不可思议, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -746,3 +747,43 @@ msgid ""
 "Removes the module object created from *def* from the interpreter state. "
 "Return 0 on success or -1 on failure."
 msgstr "从解释器状态中移除由 *def* 创建的模块对象。 成功时返回 0，者失败时返回 -1。"
+
+#: ../../c-api/module.rst:8
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../c-api/module.rst:8
+msgid "module"
+msgstr "module"
+
+#: ../../c-api/module.rst:13
+msgid "ModuleType (in module types)"
+msgstr ""
+
+#: ../../c-api/module.rst:33 ../../c-api/module.rst:74
+msgid "__name__ (module attribute)"
+msgstr ""
+
+#: ../../c-api/module.rst:33
+msgid "__doc__ (module attribute)"
+msgstr ""
+
+#: ../../c-api/module.rst:33 ../../c-api/module.rst:104
+msgid "__file__ (module attribute)"
+msgstr ""
+
+#: ../../c-api/module.rst:33
+msgid "__package__ (module attribute)"
+msgstr ""
+
+#: ../../c-api/module.rst:33
+msgid "__loader__ (module attribute)"
+msgstr ""
+
+#: ../../c-api/module.rst:60
+msgid "__dict__ (module attribute)"
+msgstr ""
+
+#: ../../c-api/module.rst:74 ../../c-api/module.rst:104
+msgid "SystemError (built-in exception)"
+msgstr ""

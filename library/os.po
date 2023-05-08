@@ -19,23 +19,24 @@
 # Liying Yang <xlctemp@gmail.com>, 2021
 # 96ea86b025a96effe58335f7b3bef4bc_e6c340d <e08e1f6a23a9b48bf97be6e67771cdbc_822089>, 2021
 # 黄瓜小王子 <linxzh1989@gmail.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
 # CCXXXI <ccxxxi@qq.com>, 2021
-# Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Arisaka97 <solitaire2312@gmail.com>, 2022
 # Bryan不可思议, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Dai Xu <daixu61@hotmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
+# ppcfish <ppcfish@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-24 14:14+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5553,18 +5554,12 @@ msgstr ""
 #: ../../library/os.rst:4366
 msgid ""
 "See the Unix manual page :manpage:`times(2)` and `times(3) "
-"<https://www.freebsd.org/cgi/man.cgi?time(3)>`_ manual page on Unix or `the "
+"<https://man.freebsd.org/cgi/man.cgi?time(3)>`_ manual page on Unix or `the "
 "GetProcessTimes MSDN "
 "<https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-"
 "processthreadsapi-getprocesstimes>`_ on Windows. On Windows, only "
 ":attr:`!user` and :attr:`!system` are known; the other attributes are zero."
 msgstr ""
-"在 Unix 上请参阅 Unix 手册页 :manpage:`times(2)` 和 `times(3) "
-"<https://www.freebsd.org/cgi/man.cgi?time(3)>`_ 而在 Windows 上请参阅 "
-"`GetProcessTimes MSDN "
-"<https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-"
-"processthreadsapi-getprocesstimes>`_。 在 Windows 上，只有 :attr:`!user` 和 "
-":attr:`!system` 是已知的；其他属性均为零。"
 
 #: ../../library/os.rst:4380
 msgid ""
@@ -6454,3 +6449,147 @@ msgid ""
 "If  this  bit  is  set,  then  random bytes are drawn from the "
 "``/dev/random`` pool instead of the ``/dev/urandom`` pool."
 msgstr "如果设置了此标志位，那么将从 ``/dev/random`` 池而不是 ``/dev/urandom`` 池中提取随机字节。"
+
+#: ../../library/os.rst:363 ../../library/os.rst:518 ../../library/os.rst:682
+msgid "user"
+msgstr ""
+
+#: ../../library/os.rst:363
+msgid "effective id"
+msgstr ""
+
+#: ../../library/os.rst:372 ../../library/os.rst:438 ../../library/os.rst:447
+#: ../../library/os.rst:456 ../../library/os.rst:470 ../../library/os.rst:617
+#: ../../library/os.rst:3916 ../../library/os.rst:3916
+#: ../../library/os.rst:3943 ../../library/os.rst:3943
+msgid "process"
+msgstr "process"
+
+#: ../../library/os.rst:372 ../../library/os.rst:438
+msgid "group"
+msgstr ""
+
+#: ../../library/os.rst:447 ../../library/os.rst:518
+msgid "id"
+msgstr "id"
+
+#: ../../library/os.rst:456
+msgid "id of parent"
+msgstr ""
+
+#: ../../library/os.rst:470 ../../library/os.rst:617
+msgid "scheduling priority"
+msgstr ""
+
+#: ../../library/os.rst:541 ../../library/os.rst:747
+msgid "environment variables"
+msgstr ""
+
+#: ../../library/os.rst:541
+msgid "setting"
+msgstr ""
+
+#: ../../library/os.rst:682
+msgid "id, setting"
+msgstr ""
+
+#: ../../library/os.rst:715
+msgid "gethostname() (in module socket)"
+msgstr ""
+
+#: ../../library/os.rst:715
+msgid "gethostbyaddr() (in module socket)"
+msgstr ""
+
+#: ../../library/os.rst:747 ../../library/os.rst:2357
+msgid "deleting"
+msgstr ""
+
+#: ../../library/os.rst:1188 ../../library/os.rst:2710
+msgid "module"
+msgstr "module"
+
+#: ../../library/os.rst:1188
+msgid "pty"
+msgstr "pty"
+
+#: ../../library/os.rst:1824 ../../library/os.rst:2155
+#: ../../library/os.rst:2357 ../../library/os.rst:3208
+#: ../../library/os.rst:3208 ../../library/os.rst:3307
+#: ../../library/os.rst:3307
+msgid "directory"
+msgstr ""
+
+#: ../../library/os.rst:1824
+msgid "changing"
+msgstr ""
+
+#: ../../library/os.rst:2155
+msgid "creating"
+msgstr ""
+
+#: ../../library/os.rst:2155
+msgid "UNC paths"
+msgstr ""
+
+#: ../../library/os.rst:2155
+msgid "and os.makedirs()"
+msgstr ""
+
+#: ../../library/os.rst:2710
+msgid "stat"
+msgstr "stat"
+
+#: ../../library/os.rst:3208 ../../library/os.rst:3307
+msgid "walking"
+msgstr ""
+
+#: ../../library/os.rst:3208 ../../library/os.rst:3307
+msgid "traversal"
+msgstr ""
+
+#: ../../library/os.rst:3916 ../../library/os.rst:3943
+msgid "killing"
+msgstr ""
+
+#: ../../library/os.rst:3916 ../../library/os.rst:3943
+msgid "signalling"
+msgstr ""
+
+#: ../../library/os.rst:4921 ../../library/os.rst:4957
+msgid ". (dot)"
+msgstr ""
+
+#: ../../library/os.rst:4921 ../../library/os.rst:4929
+#: ../../library/os.rst:4937 ../../library/os.rst:4948
+#: ../../library/os.rst:4957
+msgid "in pathnames"
+msgstr ""
+
+#: ../../library/os.rst:4929
+msgid ".."
+msgstr ""
+
+#: ../../library/os.rst:4937 ../../library/os.rst:4948
+msgid "/ (slash)"
+msgstr ""
+
+#: ../../library/os.rst:4938
+msgid "\\ (backslash)"
+msgstr ""
+
+#: ../../library/os.rst:4938
+msgid "in pathnames (Windows)"
+msgstr ""
+
+#: ../../library/os.rst:4964
+msgid ": (colon)"
+msgstr ""
+
+#: ../../library/os.rst:4964
+msgid "path separator (POSIX)"
+msgstr ""
+
+#: ../../library/os.rst:4964
+msgid "; (semicolon)"
+msgstr ""

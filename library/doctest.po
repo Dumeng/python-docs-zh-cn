@@ -13,16 +13,17 @@
 # Alpha Du <alphanow@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# sunsol s <sunsolzn@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: sunsol s <sunsolzn@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2388,3 +2389,44 @@ msgid ""
 " Trying to guess where one ends and the other begins is too error-prone, and"
 " that also makes for a confusing test."
 msgstr "不支持同时包含预期输出和异常的用例。试图猜测一个在哪里结束，另一个在哪里开始，太容易出错了，而且这也会使测试变得混乱。"
+
+#: ../../library/doctest.rst:318
+msgid ">>>"
+msgstr ">>>"
+
+#: ../../library/doctest.rst:318 ../../library/doctest.rst:318
+msgid "interpreter prompt"
+msgstr ""
+
+#: ../../library/doctest.rst:318 ../../library/doctest.rst:554
+msgid "..."
+msgstr "..."
+
+#: ../../library/doctest.rst:482
+msgid "^ (caret)"
+msgstr ""
+
+#: ../../library/doctest.rst:482
+msgid "marker"
+msgstr ""
+
+#: ../../library/doctest.rst:534
+msgid "<BLANKLINE>"
+msgstr ""
+
+#: ../../library/doctest.rst:554 ../../library/doctest.rst:684
+#: ../../library/doctest.rst:684 ../../library/doctest.rst:684
+msgid "in doctests"
+msgstr ""
+
+#: ../../library/doctest.rst:684
+msgid "# (hash)"
+msgstr ""
+
+#: ../../library/doctest.rst:684
+msgid "+ (plus)"
+msgstr ""
+
+#: ../../library/doctest.rst:684
+msgid "- (minus)"
+msgstr ""

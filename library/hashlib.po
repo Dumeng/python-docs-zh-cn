@@ -11,16 +11,17 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # st z <zstcode@outlook.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# 汪心禾 <wangxinhe06@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:07+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: 汪心禾 <wangxinhe06@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -618,11 +619,9 @@ msgstr "树模式形参的说明。"
 #: ../../library/hashlib.rst:440
 msgid ""
 "See section 2.10 in `BLAKE2 specification "
-"<https://blake2.net/blake2_20130129.pdf>`_ for comprehensive review of tree "
-"hashing."
+"<https://www.blake2.net/blake2_20130129.pdf>`_ for comprehensive review of "
+"tree hashing."
 msgstr ""
-"请参阅 `BLAKE2 规格描述 <https://blake2.net/blake2_20130129.pdf>`_ 第 2.10 "
-"节获取有关树形哈希的完整说明。"
 
 #: ../../library/hashlib.rst:446
 msgid "Constants"
@@ -776,10 +775,8 @@ msgstr ""
 #: ../../library/hashlib.rst:626
 msgid ""
 "(`NIST SP-800-106 \"Randomized Hashing for Digital Signatures\" "
-"<https://csrc.nist.gov/publications/detail/sp/800-106/final>`_)"
+"<https://csrc.nist.gov/publications/detail/sp/800-106/archive/2009-02-25>`_)"
 msgstr ""
-"(`NIST SP-800-106 \"数字签名的随机哈希\" "
-"<https://csrc.nist.gov/publications/detail/sp/800-106/final>`_)"
 
 #: ../../library/hashlib.rst:629
 msgid ""
@@ -791,10 +788,9 @@ msgstr "在 BLAKE2 中，盐值会在初始化期间作为对哈希函数的一�
 msgid ""
 "*Salted hashing* (or just hashing) with BLAKE2 or any other general-purpose "
 "cryptographic hash function, such as SHA-256, is not suitable for hashing "
-"passwords.  See `BLAKE2 FAQ <https://blake2.net/#qa>`_ for more information."
+"passwords.  See `BLAKE2 FAQ <https://www.blake2.net/#qa>`_ for more "
+"information."
 msgstr ""
-"使用 BLAKE2 或任何其他通用加密哈希函数例如 SHA-256 进行 *加盐哈希* (或纯哈希) 并不适用于哈希密码。 请参阅 `BLAKE2 "
-"FAQ <https://blake2.net/#qa>`_ 了解更多信息。"
 
 #: ../../library/hashlib.rst:657
 msgid "Personalization"
@@ -935,8 +931,8 @@ msgid "Another way to encode binary hashes for non-binary environments."
 msgstr "针对非二进制环境对二进制哈希值进行编辑的另一种方式。"
 
 #: ../../library/hashlib.rst:791
-msgid "https://blake2.net"
-msgstr "https://blake2.net"
+msgid "https://www.blake2.net"
+msgstr ""
 
 #: ../../library/hashlib.rst:791
 msgid "Official BLAKE2 website."
@@ -981,3 +977,23 @@ msgstr ""
 #: ../../library/hashlib.rst:804
 msgid "NIST Recommendation for Password-Based Key Derivation."
 msgstr "NIST 对基于密码的密钥派生的建议。"
+
+#: ../../library/hashlib.rst:12
+msgid "message digest, MD5"
+msgstr ""
+
+#: ../../library/hashlib.rst:12
+msgid "secure hash algorithm, SHA1, SHA224, SHA256, SHA384, SHA512"
+msgstr ""
+
+#: ../../library/hashlib.rst:64
+msgid "OpenSSL"
+msgstr "OpenSSL"
+
+#: ../../library/hashlib.rst:64
+msgid "(use in module hashlib)"
+msgstr ""
+
+#: ../../library/hashlib.rst:343
+msgid "blake2b, blake2s"
+msgstr ""

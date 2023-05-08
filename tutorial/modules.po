@@ -12,16 +12,17 @@
 # 乐成 王, 2023
 # Bryan不可思议, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:14+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -696,3 +697,28 @@ msgid ""
 "execution of a module-level function definition adds the function name to "
 "the module's global namespace."
 msgstr "实际上函数定义也是被执行的语句；模块级函数定义的执行会将函数名称添加到模块的全局命名空间。"
+
+#: ../../tutorial/modules.rst:184 ../../tutorial/modules.rst:267
+#: ../../tutorial/modules.rst:348
+msgid "module"
+msgstr "module"
+
+#: ../../tutorial/modules.rst:184
+msgid "search"
+msgstr ""
+
+#: ../../tutorial/modules.rst:184
+msgid "path"
+msgstr ""
+
+#: ../../tutorial/modules.rst:267
+msgid "sys"
+msgstr "sys"
+
+#: ../../tutorial/modules.rst:348
+msgid "builtins"
+msgstr "builtins"
+
+#: ../../tutorial/modules.rst:492
+msgid "__all__"
+msgstr ""

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 14:13+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2119,3 +2119,11 @@ msgstr "``_USE_POSIX_SPAWN``"
 #: ../../library/subprocess.rst:1637
 msgid "``_USE_VFORK``"
 msgstr "``_USE_VFORK``"
+
+#: ../../library/subprocess.rst:291
+msgid "universal newlines"
+msgstr "universal newlines -- 通用换行"
+
+#: ../../library/subprocess.rst:291
+msgid "subprocess module"
+msgstr ""

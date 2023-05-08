@@ -10,6 +10,7 @@
 # Alpha Du <alphanow@gmail.com>, 2021
 # mlpp iina <duchuan2048@gmail.com>, 2021
 # Naisen Xu <723648649@qq.com>, 2021
+# WH-2099 <wh2099@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
@@ -17,10 +18,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-03 14:14+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -223,6 +224,8 @@ msgid ""
 "extends from ``1j`` along the imaginary axis to ``∞j``.  The other extends "
 "from ``-1j`` along the imaginary axis to ``-∞j``."
 msgstr ""
+"返回 *x* 的反双曲正弦。 存在两条支割线：一条沿着虚轴从 ``1j`` 延伸到 ``∞j``。 另一条沿着虚轴从 ``-1j`` 延伸到 "
+"``-∞j``。"
 
 #: ../../library/cmath.rst:178
 msgid ""
@@ -230,6 +233,7 @@ msgid ""
 " extends from ``1`` along the real axis to ``∞``. The other extends from "
 "``-1`` along the real axis to ``-∞``."
 msgstr ""
+"返回 *x* 反双曲正切。 存在两条支割线：一条沿着实轴从 ``1`` 延伸到 ``∞``。 另一条沿着实轴从 ``-1`` 延伸到 ``-∞``。"
 
 #: ../../library/cmath.rst:185
 msgid "Return the hyperbolic cosine of *x*."
@@ -391,3 +395,11 @@ msgstr ""
 "Kahan, W: Branch cuts for complex elementary functions; or, Much ado about "
 "nothing's sign bit. In Iserles, A., and Powell, M. (eds.), The state of the "
 "art in numerical analysis. Clarendon Press (1987) pp165--211."
+
+#: ../../library/cmath.rst:304
+msgid "module"
+msgstr "module"
+
+#: ../../library/cmath.rst:304
+msgid "math"
+msgstr "math"

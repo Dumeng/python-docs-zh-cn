@@ -6,17 +6,18 @@
 # Translators:
 # eric R <trencyclopedia@gmail.com>, 2021
 # Hissy <aozora@live.cn>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Dai Xu <daixu61@hotmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1709,3 +1710,97 @@ msgid ""
 msgstr ""
 "在遗留代码中，有可能在 :data:`sys.path_importer_cache` 中找到 :class:`imp.NullImporter` "
 "的实例。 建议将这些代码修改为使用 ``None`` 代替。 详情参见 :ref:`portingpythoncode`。"
+
+#: ../../reference/import.rst:8
+msgid "import machinery"
+msgstr ""
+
+#: ../../reference/import.rst:64 ../../reference/import.rst:95
+#: ../../reference/import.rst:129 ../../reference/import.rst:129
+msgid "package"
+msgstr "包"
+
+#: ../../reference/import.rst:95
+msgid "regular"
+msgstr ""
+
+#: ../../reference/import.rst:129
+msgid "namespace"
+msgstr "namespace -- 命名空间"
+
+#: ../../reference/import.rst:129
+msgid "portion"
+msgstr "portion -- 部分"
+
+#: ../../reference/import.rst:175
+msgid "sys.modules"
+msgstr ""
+
+#: ../../reference/import.rst:210 ../../reference/import.rst:276
+msgid "finder"
+msgstr "finder -- 查找器"
+
+#: ../../reference/import.rst:210
+msgid "loader"
+msgstr "loader -- 加载器"
+
+#: ../../reference/import.rst:210
+msgid "module spec"
+msgstr "module spec -- 模块规格"
+
+#: ../../reference/import.rst:249
+msgid "import hooks"
+msgstr ""
+
+#: ../../reference/import.rst:249
+msgid "meta hooks"
+msgstr ""
+
+#: ../../reference/import.rst:249
+msgid "path hooks"
+msgstr ""
+
+#: ../../reference/import.rst:249 ../../reference/import.rst:249
+#: ../../reference/import.rst:249
+msgid "hooks"
+msgstr ""
+
+#: ../../reference/import.rst:249
+msgid "import"
+msgstr ""
+
+#: ../../reference/import.rst:249
+msgid "meta"
+msgstr ""
+
+#: ../../reference/import.rst:249
+msgid "path"
+msgstr ""
+
+#: ../../reference/import.rst:276
+msgid "sys.meta_path"
+msgstr ""
+
+#: ../../reference/import.rst:276
+msgid "find_spec"
+msgstr ""
+
+#: ../../reference/import.rst:727
+msgid "path based finder"
+msgstr "path based finder -- 基于路径的查找器"
+
+#: ../../reference/import.rst:776
+msgid "sys.path"
+msgstr ""
+
+#: ../../reference/import.rst:776
+msgid "sys.path_hooks"
+msgstr ""
+
+#: ../../reference/import.rst:776
+msgid "sys.path_importer_cache"
+msgstr ""
+
+#: ../../reference/import.rst:776
+msgid "PYTHONPATH"
+msgstr ""

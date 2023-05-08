@@ -4,18 +4,20 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Freesand Leo <yuqinju@163.com>, 2021
 # jaystone776 <1732865113@qq.com>, 2021
+# WH-2099 <wh2099@outlook.com>, 2023
+# ww song <sww4718168@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: jaystone776 <1732865113@qq.com>, 2021\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -132,3 +134,63 @@ msgid ""
 ":func:`eval` is used for expression input.  It ignores leading whitespace. "
 "The string argument to :func:`eval` must have the following form:"
 msgstr ":func:`eval` 被用于表达式输入。 它会忽略开头的空白。 传递给 :func:`eval` 的字符串参数必须具有以下形式:"
+
+#: ../../reference/toplevel_components.rst:8
+msgid "interpreter"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:21
+msgid "program"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:23
+#: ../../reference/toplevel_components.rst:23
+#: ../../reference/toplevel_components.rst:23
+#: ../../reference/toplevel_components.rst:39
+msgid "module"
+msgstr "module"
+
+#: ../../reference/toplevel_components.rst:23
+msgid "sys"
+msgstr "sys"
+
+#: ../../reference/toplevel_components.rst:23
+#: ../../reference/toplevel_components.rst:39
+msgid "__main__"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:23
+msgid "builtins"
+msgstr "builtins"
+
+#: ../../reference/toplevel_components.rst:39
+msgid "interactive mode"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:49
+msgid "UNIX"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:49
+msgid "Windows"
+msgstr "Windows"
+
+#: ../../reference/toplevel_components.rst:49
+msgid "command line"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:49
+msgid "standard input"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:100
+msgid "input"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:101
+msgid "built-in function"
+msgstr ""
+
+#: ../../reference/toplevel_components.rst:101
+msgid "eval"
+msgstr ""

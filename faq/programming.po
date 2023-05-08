@@ -11,18 +11,18 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Xie Yanbo <xieyanbo@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -147,14 +147,11 @@ msgstr ""
 
 #: ../../faq/programming.rst:64
 msgid ""
-"Static type checkers such as `Mypy <http://mypy-lang.org/>`_, `Pyre "
+"Static type checkers such as `Mypy <https://mypy-lang.org/>`_, `Pyre "
 "<https://pyre-check.org/>`_, and `Pytype "
 "<https://github.com/google/pytype>`_ can check type hints in Python source "
 "code."
 msgstr ""
-"静态类型检查器，例如 `Mypy <http://mypy-lang.org/>`_ 、 `Pyre <https://pyre-"
-"check.org/>`_ 和 `Pytype <https://github.com/google/pytype>`_ "
-"可以检查Python源代码中的类型提示。"
 
 #: ../../faq/programming.rst:73
 msgid "How can I create a stand-alone binary from a Python script?"
@@ -2678,3 +2675,19 @@ msgid ""
 "The nature of the problem is made clear if you print out the \"identity\" of"
 " the class objects::"
 msgstr "只要把类对象的 id 打印出来，问题的性质就会一目了然："
+
+#: ../../faq/programming.rst:408
+msgid "argument"
+msgstr "argument -- 参数"
+
+#: ../../faq/programming.rst:408
+msgid "difference from parameter"
+msgstr ""
+
+#: ../../faq/programming.rst:408
+msgid "parameter"
+msgstr "parameter -- 形参"
+
+#: ../../faq/programming.rst:408
+msgid "difference from argument"
+msgstr ""

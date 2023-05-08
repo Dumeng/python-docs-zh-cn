@@ -11,18 +11,18 @@
 # ww song <sww4718168@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1804,3 +1804,23 @@ msgid ""
 msgstr ""
 "上面的内容隐式地扩展到文本文件中，因为 :func:`open()` 函数将把缓冲对象封装在 :class:`TextIOWrapper` 中。 "
 "这包括标准流，因而也会影响内置的 :func:`print()` 函数。"
+
+#: ../../library/io.rst:24
+msgid "file object"
+msgstr "file object -- 文件对象"
+
+#: ../../library/io.rst:24
+msgid "io module"
+msgstr ""
+
+#: ../../library/io.rst:970 ../../library/io.rst:1094
+msgid "universal newlines"
+msgstr "universal newlines -- 通用换行"
+
+#: ../../library/io.rst:970
+msgid "io.TextIOWrapper class"
+msgstr ""
+
+#: ../../library/io.rst:1094
+msgid "io.IncrementalNewlineDecoder class"
+msgstr ""

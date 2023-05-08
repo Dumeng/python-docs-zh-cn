@@ -6,16 +6,17 @@
 # Translators:
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# sunsol s <sunsolzn@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: sunsol s <sunsolzn@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -184,3 +185,11 @@ msgid ""
 msgstr ""
 "通过 :meth:`Repr.repr1` 使用动态分派允许 :class:`Repr` "
 "的子类添加对额外内置对象类型的支持，或是修改对已支持类型的处理。 这个例子演示了如何添加对文件对象的特殊支持::"
+
+#: ../../library/reprlib.rst:46
+msgid "..."
+msgstr "..."
+
+#: ../../library/reprlib.rst:46
+msgid "placeholder"
+msgstr ""

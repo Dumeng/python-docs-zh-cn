@@ -5,18 +5,19 @@
 # 
 # Translators:
 # dannyvi <dannyvis@icloud.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
+# ppcfish <ppcfish@gmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -160,3 +161,49 @@ msgstr "模块 :mod:`glob`"
 #: ../../library/fnmatch.rst:105
 msgid "Unix shell-style path expansion."
 msgstr "Unix shell 风格路径扩展。"
+
+#: ../../library/fnmatch.rst:9
+msgid "filenames"
+msgstr ""
+
+#: ../../library/fnmatch.rst:9
+msgid "wildcard expansion"
+msgstr ""
+
+#: ../../library/fnmatch.rst:11 ../../library/fnmatch.rst:41
+msgid "module"
+msgstr "module"
+
+#: ../../library/fnmatch.rst:11
+msgid "re"
+msgstr "re"
+
+#: ../../library/fnmatch.rst:19
+msgid "* (asterisk)"
+msgstr ""
+
+#: ../../library/fnmatch.rst:19 ../../library/fnmatch.rst:19
+#: ../../library/fnmatch.rst:19 ../../library/fnmatch.rst:19
+#: ../../library/fnmatch.rst:19
+msgid "in glob-style wildcards"
+msgstr ""
+
+#: ../../library/fnmatch.rst:19
+msgid "? (question mark)"
+msgstr ""
+
+#: ../../library/fnmatch.rst:19
+msgid "[] (square brackets)"
+msgstr ""
+
+#: ../../library/fnmatch.rst:19
+msgid "! (exclamation)"
+msgstr ""
+
+#: ../../library/fnmatch.rst:19
+msgid "- (minus)"
+msgstr ""
+
+#: ../../library/fnmatch.rst:41
+msgid "glob"
+msgstr "glob"

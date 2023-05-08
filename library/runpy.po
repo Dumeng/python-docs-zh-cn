@@ -7,16 +7,17 @@
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -314,3 +315,11 @@ msgstr ":ref:`using-on-general` —— CPython 命令行详解"
 #: ../../library/runpy.rst:179
 msgid "The :func:`importlib.import_module` function"
 msgstr ":func:`importlib.import_module` 函数"
+
+#: ../../library/runpy.rst:32 ../../library/runpy.rst:98
+msgid "module"
+msgstr "module"
+
+#: ../../library/runpy.rst:32 ../../library/runpy.rst:98
+msgid "__main__"
+msgstr ""

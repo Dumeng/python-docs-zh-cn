@@ -8,16 +8,18 @@
 # Menghua Xiao <arieshout@gmail.com>, 2021
 # walkinrain <walkinrain2008@outlook.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2022
+# WH-2099 <wh2099@outlook.com>, 2023
+# ppcfish <ppcfish@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -287,3 +289,20 @@ msgstr "模块 :mod:`pickle`"
 #: ../../library/shelve.rst:218
 msgid "Object serialization used by :mod:`shelve`."
 msgstr ":mod:`shelve` 所使用的对象序列化。"
+
+#: ../../library/shelve.rst:9 ../../library/shelve.rst:97
+#: ../../library/shelve.rst:97
+msgid "module"
+msgstr "module"
+
+#: ../../library/shelve.rst:9
+msgid "pickle"
+msgstr "pickle"
+
+#: ../../library/shelve.rst:97
+msgid "dbm.ndbm"
+msgstr ""
+
+#: ../../library/shelve.rst:97
+msgid "dbm.gnu"
+msgstr ""

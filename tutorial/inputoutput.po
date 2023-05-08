@@ -7,17 +7,20 @@
 # df2dc1c92e792f7ae8417c51df43db8f_594d92a <0f49be28017426edb1db1a2ab6e67088_717605>, 2021
 # jaystone776 <1732865113@qq.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# ppcfish <ppcfish@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
+# Dai Xu <daixu61@hotmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -584,3 +587,27 @@ msgstr ""
 "与 :ref:`JSON <tut-json>` 不同，*pickle* 是一种允许对复杂 Python 对象进行序列化的协议。因此，它为 Python"
 " 所特有，不能用于与其他语言编写的应用程序通信。默认情况下它也是不安全的：如果解序化的数据是由手段高明的攻击者精心设计的，这种不受信任来源的 "
 "pickle 数据可以执行任意代码。"
+
+#: ../../tutorial/inputoutput.rst:287
+msgid "built-in function"
+msgstr ""
+
+#: ../../tutorial/inputoutput.rst:287
+msgid "open"
+msgstr "open"
+
+#: ../../tutorial/inputoutput.rst:287
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../tutorial/inputoutput.rst:287
+msgid "file"
+msgstr ""
+
+#: ../../tutorial/inputoutput.rst:469
+msgid "module"
+msgstr "module"
+
+#: ../../tutorial/inputoutput.rst:469
+msgid "json"
+msgstr "json"

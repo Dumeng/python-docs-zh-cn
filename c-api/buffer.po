@@ -19,18 +19,18 @@
 # Dankinder <2535262279@qq.com>, 2021
 # helloworldSB <warningfor163@foxmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -844,3 +844,35 @@ msgid ""
 msgstr ""
 "如果此函数用作 :ref:`getbufferproc <buffer-structs>` 的一部分，则 *exporter* "
 "必须设置为导出对象，并且必须在未修改的情况下传递 *flags*。否则，*exporter* 必须是 ``NULL``。"
+
+#: ../../c-api/buffer.rst:3
+msgid "buffer protocol"
+msgstr ""
+
+#: ../../c-api/buffer.rst:3
+msgid "buffer interface"
+msgstr ""
+
+#: ../../c-api/buffer.rst:3 ../../c-api/buffer.rst:3
+msgid "(see buffer protocol)"
+msgstr ""
+
+#: ../../c-api/buffer.rst:3
+msgid "buffer object"
+msgstr ""
+
+#: ../../c-api/buffer.rst:32
+msgid "PyBufferProcs"
+msgstr ""
+
+#: ../../c-api/buffer.rst:284
+msgid "contiguous"
+msgstr "contiguous -- 连续"
+
+#: ../../c-api/buffer.rst:284
+msgid "C-contiguous"
+msgstr ""
+
+#: ../../c-api/buffer.rst:284
+msgid "Fortran contiguous"
+msgstr ""

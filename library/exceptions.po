@@ -5,17 +5,18 @@
 # 
 # Translators:
 # Alpha Du <alphanow@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:05+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1305,3 +1306,32 @@ msgstr "异常层次结构"
 #: ../../library/exceptions.rst:999
 msgid "The class hierarchy for built-in exceptions is:"
 msgstr "内置异常的类层级结构如下："
+
+#: ../../library/exceptions.rst:6 ../../library/exceptions.rst:6
+#: ../../library/exceptions.rst:17 ../../library/exceptions.rst:178
+msgid "statement"
+msgstr "statement -- 语句"
+
+#: ../../library/exceptions.rst:6
+msgid "try"
+msgstr ""
+
+#: ../../library/exceptions.rst:6
+msgid "except"
+msgstr ""
+
+#: ../../library/exceptions.rst:17
+msgid "raise"
+msgstr ""
+
+#: ../../library/exceptions.rst:178
+msgid "assert"
+msgstr ""
+
+#: ../../library/exceptions.rst:321
+msgid "module"
+msgstr "module"
+
+#: ../../library/exceptions.rst:321
+msgid "errno"
+msgstr ""

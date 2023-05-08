@@ -10,16 +10,18 @@
 # 钢 彭 <szhairui@gmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# sgqy <sgqyzh@gmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -967,3 +969,15 @@ msgstr ""
 "Python 应用程序通常不需要调用这些函数，而应改用 :mod:`gettext`。这条规则的一个已知例外，是与附加 C "
 "库链接的应用程序，他们在内部调用了 :c:func:`gettext` 或 "
 ":c:func:`dcgettext`。对于这些应用程序，可能有必要绑定文本域，以便库可以准确找到其消息目录。"
+
+#: ../../library/locale.rst:19 ../../library/locale.rst:479
+msgid "module"
+msgstr "module"
+
+#: ../../library/locale.rst:19
+msgid "_locale"
+msgstr ""
+
+#: ../../library/locale.rst:479
+msgid "string"
+msgstr "string"

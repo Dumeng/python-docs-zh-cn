@@ -8,18 +8,19 @@
 # nick <2330458484@qq.com>, 2021
 # shenjack <3695888@qq.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
+# Siyuan Xu, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Siyuan Xu, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -563,3 +564,19 @@ msgstr "下面的例子演示了打印和格式化栈的不同方式::"
 #: ../../library/traceback.rst:529
 msgid "This last example demonstrates the final few formatting functions:"
 msgstr "最后这个例子演示了最后几个格式化函数:"
+
+#: ../../library/traceback.rst:17
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../library/traceback.rst:17
+msgid "traceback"
+msgstr "traceback -- 回溯"
+
+#: ../../library/traceback.rst:57
+msgid "^ (caret)"
+msgstr ""
+
+#: ../../library/traceback.rst:57
+msgid "marker"
+msgstr ""

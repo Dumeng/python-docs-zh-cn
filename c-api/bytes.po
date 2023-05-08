@@ -9,17 +9,17 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # 8af080f2e6702c64bedd01873aed27e8_25aec74 <fd99d14239138a1f987c22e7736dde81_777475>, 2021
 # 昌伟 任 <small_pupil@126.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -366,3 +366,11 @@ msgstr ""
 "当成功时，*\\*bytes* 将存放改变大小后的字节串对象并返回 ``0``；*\\*bytes* 中的地址可能与其输入值不同。 如果重新分配失败，则"
 " *\\*bytes* 上的原字节串对象将被撤销分配，*\\*bytes* 会被设为 ``NULL``，同时设置 :exc:`MemoryError` "
 "并返回 ``-1``。"
+
+#: ../../c-api/bytes.rst:11
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../c-api/bytes.rst:11
+msgid "bytes"
+msgstr "字节串"

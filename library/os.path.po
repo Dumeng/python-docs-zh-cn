@@ -8,16 +8,17 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # 1lin24 <1lin24@sina.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -583,3 +584,43 @@ msgid ""
 "``True`` if arbitrary Unicode strings can be used as file names (within "
 "limitations imposed by the file system)."
 msgstr "如果（在文件系统限制下）允许将任意 Unicode 字符串用作文件名，则为 ``True``。"
+
+#: ../../library/os.path.rst:10
+msgid "path"
+msgstr ""
+
+#: ../../library/os.path.rst:10
+msgid "operations"
+msgstr ""
+
+#: ../../library/os.path.rst:155
+msgid "~ (tilde)"
+msgstr ""
+
+#: ../../library/os.path.rst:155
+msgid "home directory expansion"
+msgstr ""
+
+#: ../../library/os.path.rst:162
+msgid "module"
+msgstr "module"
+
+#: ../../library/os.path.rst:162
+msgid "pwd"
+msgstr ""
+
+#: ../../library/os.path.rst:183
+msgid "$ (dollar)"
+msgstr ""
+
+#: ../../library/os.path.rst:183
+msgid "environment variables expansion"
+msgstr ""
+
+#: ../../library/os.path.rst:183
+msgid "% (percent)"
+msgstr ""
+
+#: ../../library/os.path.rst:183
+msgid "environment variables expansion (Windows)"
+msgstr ""

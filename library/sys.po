@@ -16,16 +16,19 @@
 # Alpha Du <alphanow@gmail.com>, 2022
 # 高乐喆 <gaolezhe@outlook.com>, 2023
 # Bryan不可思议, 2023
+# sunsol s <sunsolzn@gmail.com>, 2023
+# Siyuan Xu, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:12+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1336,13 +1339,11 @@ msgstr ""
 
 #: ../../library/sys.rst:784
 msgid ""
-"See `recursive sizeof recipe <https://code.activestate.com/recipes/577504>`_"
-" for an example of using :func:`getsizeof` recursively to find the size of "
-"containers and all their contents."
+"See `recursive sizeof recipe "
+"<https://code.activestate.com/recipes/577504/>`_ for an example of using "
+":func:`getsizeof` recursively to find the size of containers and all their "
+"contents."
 msgstr ""
-"可以参考 `recursive sizeof recipe "
-"<https://code.activestate.com/recipes/577504>`_ 中的示例，关于递归调用 "
-":func:`getsizeof` 来得到各个容器及其所有内容物的大小。"
 
 #: ../../library/sys.rst:790
 msgid ""
@@ -3018,3 +3019,63 @@ msgid ""
 msgstr ""
 "ISO/IEC 9899:1999.  \"Programming languages -- C.\"  该标准的公开草案可从 "
 "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf 获得。"
+
+#: ../../library/sys.rst:97
+msgid "auditing"
+msgstr ""
+
+#: ../../library/sys.rst:443
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../library/sys.rst:443
+msgid "traceback"
+msgstr "traceback -- 回溯"
+
+#: ../../library/sys.rst:813 ../../library/sys.rst:1359
+msgid "profile function"
+msgstr ""
+
+#: ../../library/sys.rst:813 ../../library/sys.rst:1359
+msgid "profiler"
+msgstr ""
+
+#: ../../library/sys.rst:822 ../../library/sys.rst:1436
+msgid "trace function"
+msgstr ""
+
+#: ../../library/sys.rst:822 ../../library/sys.rst:1436
+msgid "debugger"
+msgstr ""
+
+#: ../../library/sys.rst:1178
+msgid "module"
+msgstr "module"
+
+#: ../../library/sys.rst:1178
+msgid "search"
+msgstr ""
+
+#: ../../library/sys.rst:1178
+msgid "path"
+msgstr ""
+
+#: ../../library/sys.rst:1323
+msgid "interpreter prompts"
+msgstr ""
+
+#: ../../library/sys.rst:1323
+msgid "prompts, interpreter"
+msgstr ""
+
+#: ../../library/sys.rst:1323
+msgid ">>>"
+msgstr ">>>"
+
+#: ../../library/sys.rst:1323 ../../library/sys.rst:1323
+msgid "interpreter prompt"
+msgstr ""
+
+#: ../../library/sys.rst:1323
+msgid "..."
+msgstr "..."

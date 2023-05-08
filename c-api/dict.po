@@ -15,10 +15,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -274,3 +274,23 @@ msgstr ""
 "将 *seq2* 中的键值对更新或合并到字典 *a*。 *seq2* 必须为产生长度为 2 的用作键值对的元素的可迭代对象。 当存在重复的键时，如果 "
 "*override* 真值则最后出现的键胜出。 当成功时返回 ``0`` 或者当引发异常时返回 ``-1``。 等价的 Python "
 "代码（返回值除外）::"
+
+#: ../../c-api/dict.rst:8
+msgid "object"
+msgstr "object -- 对象"
+
+#: ../../c-api/dict.rst:8
+msgid "dictionary"
+msgstr "dictionary -- 字典"
+
+#: ../../c-api/dict.rst:73
+msgid "PyUnicode_FromString()"
+msgstr ""
+
+#: ../../c-api/dict.rst:157
+msgid "built-in function"
+msgstr ""
+
+#: ../../c-api/dict.rst:157
+msgid "len"
+msgstr ""

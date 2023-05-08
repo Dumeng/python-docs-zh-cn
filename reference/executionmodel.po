@@ -7,17 +7,20 @@
 # ww song <sww4718168@gmail.com>, 2021
 # eric R <trencyclopedia@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Dai Xu <daixu61@hotmail.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
+# Siyuan Xu, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Siyuan Xu, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -409,3 +412,113 @@ msgid ""
 "This limitation occurs because the code that is executed by these operations"
 " is not available at the time the module is compiled."
 msgstr "出现这样的限制是由于通过这些操作执行的代码在模块被编译的时候并不可用。"
+
+#: ../../reference/executionmodel.rst:8
+msgid "execution model"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:8
+msgid "code"
+msgstr "code -- 代码"
+
+#: ../../reference/executionmodel.rst:8 ../../reference/executionmodel.rst:17
+msgid "block"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:31
+#: ../../reference/executionmodel.rst:179
+msgid "execution"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:31
+msgid "frame"
+msgstr "frame -- 帧"
+
+#: ../../reference/executionmodel.rst:42
+msgid "namespace"
+msgstr "namespace -- 命名空间"
+
+#: ../../reference/executionmodel.rst:42
+#: ../../reference/executionmodel.rst:101
+msgid "scope"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:51 ../../reference/executionmodel.rst:51
+msgid "name"
+msgstr "name"
+
+#: ../../reference/executionmodel.rst:51
+msgid "binding"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:57
+msgid "from"
+msgstr "from"
+
+#: ../../reference/executionmodel.rst:57
+msgid "import statement"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:85
+msgid "free"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:85
+msgid "variable"
+msgstr "variable"
+
+#: ../../reference/executionmodel.rst:109
+msgid "environment"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:115
+msgid "NameError (built-in exception)"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:115
+msgid "UnboundLocalError"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:154
+msgid "module"
+msgstr "module"
+
+#: ../../reference/executionmodel.rst:154
+msgid "__main__"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:179
+msgid "restricted"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:226
+msgid "exception"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:228
+msgid "raise an exception"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:228
+msgid "handle an exception"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:228
+msgid "exception handler"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:228
+msgid "errors"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:228
+msgid "error handling"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:249
+msgid "termination model"
+msgstr ""
+
+#: ../../reference/executionmodel.rst:256
+msgid "SystemExit (built-in exception)"
+msgstr ""

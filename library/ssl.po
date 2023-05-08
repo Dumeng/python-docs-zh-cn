@@ -8,22 +8,23 @@
 # eric R <trencyclopedia@gmail.com>, 2021
 # ww song <sww4718168@gmail.com>, 2021
 # nick <2330458484@qq.com>, 2021
-# ppcfish <ppcfish@gmail.com>, 2021
 # Hissy <aozora@live.cn>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
 # Bryan不可思议, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# ppcfish <ppcfish@gmail.com>, 2023
+# 汪心禾 <wangxinhe06@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-24 14:14+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: 汪心禾 <wangxinhe06@gmail.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2400,10 +2401,8 @@ msgstr "如果 :data:`HAS_ECDH` 为 ``False`` 则此方法将不可用。"
 #: ../../library/ssl.rst:1817
 msgid ""
 "`SSL/TLS & Perfect Forward Secrecy "
-"<https://vincent.bernat.im/en/blog/2011-ssl-perfect-forward-secrecy>`_"
+"<https://vincent.bernat.ch/en/blog/2011-ssl-perfect-forward-secrecy>`_"
 msgstr ""
-"`SSL/TLS 与完美的前向保密性 <https://vincent.bernat.im/en/blog/2011-ssl-perfect-"
-"forward-secrecy>`_"
 
 #: ../../library/ssl.rst:1818
 msgid "Vincent Bernat."
@@ -3693,3 +3692,35 @@ msgstr ""
 #: ../../library/ssl.rst:2777
 msgid "Mozilla"
 msgstr "Mozilla"
+
+#: ../../library/ssl.rst:12
+msgid "OpenSSL"
+msgstr "OpenSSL"
+
+#: ../../library/ssl.rst:12
+msgid "(use in module ssl)"
+msgstr ""
+
+#: ../../library/ssl.rst:14
+msgid "TLS"
+msgstr ""
+
+#: ../../library/ssl.rst:14
+msgid "SSL"
+msgstr ""
+
+#: ../../library/ssl.rst:14
+msgid "Transport Layer Security"
+msgstr ""
+
+#: ../../library/ssl.rst:14
+msgid "Secure Sockets Layer"
+msgstr ""
+
+#: ../../library/ssl.rst:2085
+msgid "certificates"
+msgstr "certificates"
+
+#: ../../library/ssl.rst:2087
+msgid "X509 certificate"
+msgstr ""

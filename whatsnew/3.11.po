@@ -1120,6 +1120,8 @@ msgid ""
 " Python's vendored copy. (Contributed by Christian Heimes in "
 ":issue:`47095`.)"
 msgstr ""
+":func:`hashlib.blake2b` 和 :func:`hashlib.blake2s` 现在将优先使用 `libb2`_ 而不是 "
+"Python 自带的副本。 （由 Christian Heimes 在 :issue:`47095` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:787
 msgid ""
@@ -1129,6 +1131,9 @@ msgid ""
 "implementations from OpenSSL. The change affects only installations without "
 "OpenSSL support. (Contributed by Christian Heimes in :issue:`47098`.)"
 msgstr ""
+"包含 SHA3 和 SHAKE 的内部 ``_sha3`` 模块现在会使用 *tiny_sha3* 而不是 *Keccak Code Package* "
+"来减小代码和二进制文件的大小。 :mod:`hashlib` 模块将首选来自 OpenSSL 的优化版 SHA3 和 SHAKE 实现。 "
+"这个改变将只影响不带 OpenSSL 支持的安装版。 （由 Christian Heimes 在 :issue:`47098` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:794
 msgid ""
@@ -1136,6 +1141,8 @@ msgid ""
 "files or file-like objects. (Contributed by Christian Heimes in "
 ":gh:`89313`.)"
 msgstr ""
+"增加了 :func:`hashlib.file_digest`，一个针对文件或文件类对象高效哈希运算的辅助函数。 （由 Christian Heimes"
+" 在 :gh:`89313` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:802
 msgid "IDLE and idlelib"
@@ -1165,6 +1172,8 @@ msgid ""
 "triggering dynamic lookup via the descriptor protocol. (Contributed by "
 "Weipeng Hong in :issue:`30533`.)"
 msgstr ""
+"增加了 :func:`~inspect.getmembers_static` 用于返回所有成员而不通过描述器协议触发动态查找。 （由 Weipeng "
+"Hong 在 :issue:`30533` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:820
 msgid ""
@@ -1172,6 +1181,8 @@ msgid ""
 "is a :class:`~types.MethodWrapperType`. (Contributed by Hakan Çelik in "
 ":issue:`29418`.)"
 msgstr ""
+"增加了 :func:`~inspect.ismethodwrapper` 用于检查某个对象的类型是否为 "
+":class:`~types.MethodWrapperType`。 （由 Hakan Çelik 在 :issue:`29418` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:824
 msgid ""

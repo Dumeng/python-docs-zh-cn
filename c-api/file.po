@@ -171,8 +171,8 @@ msgstr "文件"
 
 #: ../../c-api/file.rst:50
 msgid "EOFError (built-in exception)"
-msgstr ""
+msgstr "EOFError (内置异常)"
 
 #: ../../c-api/file.rst:93
 msgid "Py_PRINT_RAW"
-msgstr ""
+msgstr "Py_PRINT_RAW"

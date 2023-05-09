@@ -363,7 +363,7 @@ msgstr ":ref:`可用性 <availability>`: Windows。"
 
 #: ../../library/mimetypes.rst:11 ../../library/mimetypes.rst:31
 msgid "MIME"
-msgstr ""
+msgstr "MIME"
 
 #: ../../library/mimetypes.rst:11
 msgid "content type"

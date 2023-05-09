@@ -110,7 +110,7 @@ msgstr "encoding"
 
 #: ../../library/quopri.rst:9
 msgid "MIME"
-msgstr ""
+msgstr "MIME"
 
 #: ../../library/quopri.rst:9
 msgid "quoted-printable encoding"

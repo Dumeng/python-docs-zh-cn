@@ -345,8 +345,8 @@ msgstr "^ (脱字号)"
 
 #: ../../library/curses.ascii.rst:212 ../../library/curses.ascii.rst:212
 msgid "in curses module"
-msgstr ""
+msgstr "在 curses 模块中"
 
 #: ../../library/curses.ascii.rst:212
 msgid "! (exclamation)"
-msgstr ""
+msgstr "! (感叹号)"

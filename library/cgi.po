@@ -851,7 +851,7 @@ msgstr "HTTP"
 
 #: ../../library/cgi.rst:10
 msgid "MIME"
-msgstr ""
+msgstr "MIME"
 
 #: ../../library/cgi.rst:10
 msgid "headers"

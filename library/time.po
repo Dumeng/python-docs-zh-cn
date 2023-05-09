@@ -1584,4 +1584,4 @@ msgstr "% (百分号)"
 
 #: ../../library/time.rst:392 ../../library/time.rst:526
 msgid "datetime format"
-msgstr ""
+msgstr "日期时间格式"

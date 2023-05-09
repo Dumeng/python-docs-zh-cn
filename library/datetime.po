@@ -3426,6 +3426,8 @@ msgid ""
 "example, \"month/day/year\" versus \"day/month/year\"), and the output may "
 "contain non-ASCII characters."
 msgstr ""
+"因为该格式依赖于当前语言区域，所以在假定输出值时应当仔细考虑。 字段顺序可能会有变化（例如 \"month/day/year\" 和 "
+"\"day/month/year\"），并且输出还可能包含非 ASCII 字符。"
 
 #: ../../library/datetime.rst:2508
 msgid ""
@@ -3614,4 +3616,4 @@ msgstr "% (百分号)"
 
 #: ../../library/datetime.rst:2285
 msgid "datetime format"
-msgstr ""
+msgstr "日期时间格式"

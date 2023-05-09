@@ -114,4 +114,4 @@ msgstr "object -- 对象"
 
 #: ../../c-api/bytearray.rst:8
 msgid "bytearray"
-msgstr ""
+msgstr "bytearray"

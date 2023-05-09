@@ -170,7 +170,7 @@ msgstr "Phil Katz 编写的 ZIP 文件格式文档，此格式和使用的算法
 
 #: ../../library/zipfile.rst:132
 msgid "`Info-ZIP Home Page <https://infozip.sourceforge.net/>`_"
-msgstr ""
+msgstr "`Info-ZIP 主页 <https://infozip.sourceforge.net/>`_"
 
 #: ../../library/zipfile.rst:132
 msgid ""

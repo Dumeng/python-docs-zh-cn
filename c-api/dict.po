@@ -289,8 +289,8 @@ msgstr ""
 
 #: ../../c-api/dict.rst:157
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../c-api/dict.rst:157
 msgid "len"
-msgstr ""
+msgstr "len"

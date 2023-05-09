@@ -7181,7 +7181,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:5297 ../../library/stdtypes.rst:5311
 #: ../../library/stdtypes.rst:5311 ../../library/stdtypes.rst:5326
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../library/stdtypes.rst:245
 msgid "int"
@@ -7341,7 +7341,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:4369
 msgid "len"
-msgstr ""
+msgstr "len"
 
 #: ../../library/stdtypes.rst:907
 msgid "min"
@@ -7421,7 +7421,7 @@ msgstr "list"
 #: ../../library/stdtypes.rst:2592 ../../library/stdtypes.rst:2664
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 msgid "bytearray"
-msgstr ""
+msgstr "bytearray"
 
 #: ../../library/stdtypes.rst:1111 ../../library/stdtypes.rst:4369
 #: ../../library/stdtypes.rst:5093 ../../library/stdtypes.rst:5326
@@ -7580,7 +7580,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:2466
 msgid "memoryview"
-msgstr ""
+msgstr "memoryview"
 
 #: ../../library/stdtypes.rst:2466
 msgid "array"
@@ -7682,7 +7682,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5297
 msgid "compile"
-msgstr ""
+msgstr "编译"
 
 #: ../../library/stdtypes.rst:5297
 msgid "__code__ (function object attribute)"
@@ -7702,7 +7702,7 @@ msgstr "..."
 
 #: ../../library/stdtypes.rst:5350
 msgid "ellipsis literal"
-msgstr ""
+msgstr "省略符字面值"
 
 #: ../../library/stdtypes.rst:5390
 msgid "values"

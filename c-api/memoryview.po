@@ -109,4 +109,4 @@ msgstr "object -- 对象"
 
 #: ../../c-api/memoryview.rst:5
 msgid "memoryview"
-msgstr ""
+msgstr "memoryview"

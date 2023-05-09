@@ -2654,7 +2654,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:82
 msgid "mangling"
-msgstr ""
+msgstr "扭曲"
 
 #: ../../reference/expressions.rst:82
 msgid "private"
@@ -3032,7 +3032,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1102 ../../reference/expressions.rst:1102
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../reference/expressions.rst:1102 ../../reference/expressions.rst:1102
 msgid "method"

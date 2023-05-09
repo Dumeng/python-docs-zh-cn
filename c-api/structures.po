@@ -7,8 +7,8 @@
 # 8af080f2e6702c64bedd01873aed27e8_25aec74 <fd99d14239138a1f987c22e7736dde81_777475>, 2021
 # Fw[a]rd <howard.main@outlook.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
-"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -820,7 +820,7 @@ msgstr "对于属性要被删除的情况第二个形参应为 ``NULL``。 成�
 
 #: ../../c-api/structures.rst:369 ../../c-api/structures.rst:379
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../c-api/structures.rst:369
 msgid "classmethod"

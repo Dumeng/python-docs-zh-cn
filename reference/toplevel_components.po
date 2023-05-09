@@ -157,7 +157,7 @@ msgstr "sys"
 #: ../../reference/toplevel_components.rst:23
 #: ../../reference/toplevel_components.rst:39
 msgid "__main__"
-msgstr ""
+msgstr "__main__"
 
 #: ../../reference/toplevel_components.rst:23
 msgid "builtins"
@@ -189,7 +189,7 @@ msgstr ""
 
 #: ../../reference/toplevel_components.rst:101
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../reference/toplevel_components.rst:101
 msgid "eval"

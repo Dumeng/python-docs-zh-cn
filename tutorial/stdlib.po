@@ -7,8 +7,8 @@
 # ww song <sww4718168@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Siyuan Xu, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # 汪心禾 <wangxinhe06@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -17,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: 汪心禾 <wangxinhe06@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -329,7 +329,7 @@ msgstr "国际化由许多模块支持，包括 :mod:`gettext` ， :mod:`locale`
 
 #: ../../tutorial/stdlib.rst:27
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../tutorial/stdlib.rst:27
 msgid "help"

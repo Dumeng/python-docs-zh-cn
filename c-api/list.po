@@ -190,11 +190,11 @@ msgstr "list"
 
 #: ../../c-api/list.rst:48 ../../c-api/list.rst:141
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../c-api/list.rst:48
 msgid "len"
-msgstr ""
+msgstr "len"
 
 #: ../../c-api/list.rst:141
 msgid "tuple"

@@ -1547,7 +1547,7 @@ msgstr "布尔运算的字节码序列。"
 
 #: ../../library/dis.rst:1271
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../library/dis.rst:1271
 msgid "slice"

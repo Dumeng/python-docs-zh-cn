@@ -359,7 +359,7 @@ msgstr ""
 #: ../../c-api/number.rst:97 ../../c-api/number.rst:195
 #: ../../c-api/number.rst:241 ../../c-api/number.rst:249
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../c-api/number.rst:67
 msgid "divmod"

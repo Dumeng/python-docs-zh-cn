@@ -135,4 +135,4 @@ msgstr "method -- 方法"
 
 #: ../../c-api/method.rst:59
 msgid "MethodType (in module types)"
-msgstr ""
+msgstr "MethodType (types 模块)"

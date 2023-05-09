@@ -157,4 +157,4 @@ msgstr "function -- 函数"
 
 #: ../../c-api/function.rst:20
 msgid "MethodType (in module types)"
-msgstr ""
+msgstr "MethodType (types 模块)"

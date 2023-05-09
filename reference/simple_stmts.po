@@ -14,8 +14,8 @@
 # Y. Z. Chen <754097987@qq.com>, 2023
 # Dai Xu <daixu61@hotmail.com>, 2023
 # Shengjing Zhu <zsj950618@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1241,7 +1241,7 @@ msgstr "list"
 #: ../../reference/simple_stmts.rst:55 ../../reference/simple_stmts.rst:972
 #: ../../reference/simple_stmts.rst:972 ../../reference/simple_stmts.rst:972
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "repr"
@@ -1691,7 +1691,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:972
 msgid "compile"
-msgstr ""
+msgstr "编译"
 
 #: ../../reference/simple_stmts.rst:991
 msgid "nonlocal"

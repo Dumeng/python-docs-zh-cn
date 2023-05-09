@@ -1115,4 +1115,4 @@ msgstr "name"
 
 #: ../../tutorial/classes.rst:683
 msgid "mangling"
-msgstr ""
+msgstr "扭曲"

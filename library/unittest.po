@@ -19,8 +19,8 @@
 # Siyuan Xu, 2021
 # Justin Chu <justinchuby@foxmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -29,7 +29,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -186,6 +186,11 @@ msgid ""
 "<https://github.com/features/actions>`_, or `AppVeyor "
 "<https://www.appveyor.com/>`_."
 msgstr ""
+"Python 源代码分发包中的脚本 :file:`Tools/unittestgui/unittestgui.py` 是一个用于发现和执行测试的 GUI"
+" 工具。 这主要是为了方便单元测试的新手使用。 在生产环境中推荐通过持续集成系统如 `Buildbot "
+"<https://buildbot.net/>`_, `Jenkins <https://www.jenkins.io/>`_, `GitHub "
+"Actions <https://github.com/features/actions>`_ 或 `AppVeyor "
+"<https://www.appveyor.com/>`_ 来驱动测试过程。"
 
 #: ../../library/unittest.rst:83
 msgid "Basic example"

@@ -3210,7 +3210,7 @@ msgstr "type"
 
 #: ../../library/functions.rst:564
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../library/functions.rst:564
 msgid "exec"
@@ -3246,7 +3246,7 @@ msgstr ""
 
 #: ../../library/functions.rst:1181
 msgid "file"
-msgstr ""
+msgstr "文件"
 
 #: ../../library/functions.rst:1181
 msgid "modes"

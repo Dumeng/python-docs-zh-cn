@@ -4292,7 +4292,7 @@ msgstr "数据"
 #: ../../reference/datamodel.rst:2738 ../../reference/datamodel.rst:2738
 #: ../../reference/datamodel.rst:2738 ../../reference/datamodel.rst:2766
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../reference/datamodel.rst:23
 msgid "id"
@@ -4386,7 +4386,7 @@ msgstr "..."
 
 #: ../../reference/datamodel.rst:173
 msgid "ellipsis literal"
-msgstr ""
+msgstr "省略符字面值"
 
 #: ../../reference/datamodel.rst:182 ../../reference/datamodel.rst:894
 msgid "numeric"
@@ -4433,7 +4433,7 @@ msgstr ""
 #: ../../reference/datamodel.rst:269 ../../reference/datamodel.rst:386
 #: ../../reference/datamodel.rst:420 ../../reference/datamodel.rst:2474
 msgid "len"
-msgstr ""
+msgstr "len"
 
 #: ../../reference/datamodel.rst:269 ../../reference/datamodel.rst:894
 msgid "sequence"
@@ -4535,7 +4535,7 @@ msgstr "list"
 
 #: ../../reference/datamodel.rst:373
 msgid "bytearray"
-msgstr ""
+msgstr "bytearray"
 
 #: ../../reference/datamodel.rst:380
 msgid "array"

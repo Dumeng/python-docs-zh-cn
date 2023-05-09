@@ -435,7 +435,7 @@ msgstr ""
 
 #: ../../library/site.rst:77
 msgid "file"
-msgstr ""
+msgstr "文件"
 
 #: ../../library/site.rst:112
 msgid "sitecustomize"

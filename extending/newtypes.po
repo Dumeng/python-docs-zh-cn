@@ -806,7 +806,7 @@ msgstr ""
 
 #: ../../extending/newtypes.rst:150
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../extending/newtypes.rst:150
 msgid "repr"

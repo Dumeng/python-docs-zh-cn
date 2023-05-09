@@ -150,4 +150,4 @@ msgstr ""
 
 #: ../../library/posix.rst:34
 msgid "file"
-msgstr ""
+msgstr "文件"

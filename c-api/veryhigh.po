@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Dai Xu <daixu61@hotmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -504,3 +504,8 @@ msgid ""
 "This bit can be set in *flags* to cause division operator ``/`` to be "
 "interpreted as \"true division\" according to :pep:`238`."
 msgstr "这个标志位可在 *flags* 中设置以使得除法运算符 ``/`` 被解读为 :pep:`238` 所规定的“真除法”。"
+
+#: ../../c-api/veryhigh.rst:317 ../../c-api/veryhigh.rst:325
+#: ../../c-api/veryhigh.rst:334
+msgid "Py_CompileString()"
+msgstr "Py_CompileString()"

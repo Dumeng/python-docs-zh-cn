@@ -7,18 +7,18 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # Leo Li <foxleoly@hotmail.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2287,3 +2287,7 @@ msgid ""
 "tuple (or other sequence type) where the first item is the layout name, and "
 "the other is a `Layout`_."
 msgstr "指定要放置于元素内的元素列表。每个元素都是一个元组（或其他序列类型），其中第一项是布局名称，另一项是个 `Layout`_ 。"
+
+#: ../../library/tkinter.ttk.rst:11
+msgid "ttk"
+msgstr "ttk"

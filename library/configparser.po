@@ -15,10 +15,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:57+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1395,3 +1395,35 @@ msgid ""
 "`Customizing Parser Behaviour`_ section."
 msgstr ""
 "配置解析器允许重度定制。 如果你有兴趣改变脚注说明中所介绍的行为，请参阅 `Customizing Parser Behaviour`_ 一节。"
+
+#: ../../library/configparser.rst:16
+msgid ".ini"
+msgstr ""
+
+#: ../../library/configparser.rst:16 ../../library/configparser.rst:16
+msgid "file"
+msgstr "文件"
+
+#: ../../library/configparser.rst:16
+msgid "configuration"
+msgstr ""
+
+#: ../../library/configparser.rst:16
+msgid "ini file"
+msgstr ""
+
+#: ../../library/configparser.rst:16
+msgid "Windows ini file"
+msgstr ""
+
+#: ../../library/configparser.rst:335
+msgid "% (percent)"
+msgstr ""
+
+#: ../../library/configparser.rst:335 ../../library/configparser.rst:368
+msgid "interpolation in configuration files"
+msgstr ""
+
+#: ../../library/configparser.rst:368
+msgid "$ (dollar)"
+msgstr ""

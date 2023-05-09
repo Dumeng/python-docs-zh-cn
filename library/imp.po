@@ -555,7 +555,7 @@ msgstr ""
 
 #: ../../library/imp.rst:23
 msgid "file"
-msgstr ""
+msgstr "文件"
 
 #: ../../library/imp.rst:23
 msgid "byte-code"

@@ -1065,7 +1065,7 @@ msgstr "builtins"
 
 #: ../../c-api/intro.rst:706
 msgid "__main__"
-msgstr ""
+msgstr "__main__"
 
 #: ../../c-api/intro.rst:706
 msgid "sys"

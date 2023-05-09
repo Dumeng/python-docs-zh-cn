@@ -1026,7 +1026,7 @@ msgstr "除了标准的CPython发行版之外，还有一些包含附加功能�
 
 #: ../../using/windows.rst:532
 msgid "`ActivePython <https://www.activestate.com/products/python/>`_"
-msgstr ""
+msgstr "`ActivePython <https://www.activestate.com/products/python/>`_"
 
 #: ../../using/windows.rst:532
 msgid "Installer with multi-platform compatibility, documentation, PyWin32"

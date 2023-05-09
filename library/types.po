@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 14:13+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -621,3 +621,11 @@ msgid ""
 msgstr ""
 "如果 *gen_func* 不是一个生成器函数，则它会被包装。 如果它返回一个 :class:`collections.abc.Generator` "
 "的实例，该实例将被包装在一个 *awaitable* 代理对象中。 所有其他对象类型将被原样返回。"
+
+#: ../../library/types.rst:149
+msgid "built-in function"
+msgstr "内置函数"
+
+#: ../../library/types.rst:149
+msgid "compile"
+msgstr "编译"

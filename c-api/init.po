@@ -2203,7 +2203,7 @@ msgstr "builtins"
 
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:1387
 msgid "__main__"
-msgstr ""
+msgstr "__main__"
 
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:1387
 msgid "sys"

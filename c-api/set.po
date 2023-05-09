@@ -241,8 +241,8 @@ msgstr ""
 
 #: ../../c-api/set.rst:110
 msgid "built-in function"
-msgstr ""
+msgstr "内置函数"
 
 #: ../../c-api/set.rst:110
 msgid "len"
-msgstr ""
+msgstr "len"

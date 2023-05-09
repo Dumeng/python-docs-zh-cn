@@ -167,7 +167,7 @@ msgstr "object -- 对象"
 
 #: ../../c-api/file.rst:8
 msgid "file"
-msgstr ""
+msgstr "文件"
 
 #: ../../c-api/file.rst:50
 msgid "EOFError (built-in exception)"

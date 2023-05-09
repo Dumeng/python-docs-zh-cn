@@ -6966,7 +6966,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:390 ../../library/stdtypes.rst:390
 #: ../../library/stdtypes.rst:390
 msgid "operations"
-msgstr ""
+msgstr "操作"
 
 #: ../../library/stdtypes.rst:34
 msgid "false"
@@ -7231,7 +7231,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2269
 #: ../../library/stdtypes.rst:3485
 msgid "% (percent)"
-msgstr ""
+msgstr "% (百分号)"
 
 #: ../../library/stdtypes.rst:245
 msgid "**"
@@ -7291,7 +7291,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:390
 msgid "^ (caret)"
-msgstr ""
+msgstr "^ (脱字号)"
 
 #: ../../library/stdtypes.rst:390
 msgid "& (ampersand)"
@@ -7315,7 +7315,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:804 ../../library/stdtypes.rst:4753
 msgid "protocol"
-msgstr ""
+msgstr "协议"
 
 #: ../../library/stdtypes.rst:804
 msgid "iterator"
@@ -7406,7 +7406,7 @@ msgstr "元组"
 
 #: ../../library/stdtypes.rst:1074
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 #: ../../library/stdtypes.rst:1096
 msgid "mutable"
@@ -7568,7 +7568,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:2342 ../../library/stdtypes.rst:3560
 msgid "# (hash)"
-msgstr ""
+msgstr "# (hash)"
 
 #: ../../library/stdtypes.rst:2342 ../../library/stdtypes.rst:3560
 msgid "space"

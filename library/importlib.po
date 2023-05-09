@@ -2062,4 +2062,4 @@ msgstr "universal newlines -- 通用换行"
 
 #: ../../library/importlib.rst:551
 msgid "importlib.abc.InspectLoader.get_source method"
-msgstr ""
+msgstr "importlib.abc.InspectLoader.get_source 方法"

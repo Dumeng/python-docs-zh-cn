@@ -412,7 +412,7 @@ msgstr ""
 
 #: ../../c-api/import.rst:11
 msgid "__all__"
-msgstr ""
+msgstr "__all__"
 
 #: ../../c-api/import.rst:11
 msgid "__all__ (package variable)"

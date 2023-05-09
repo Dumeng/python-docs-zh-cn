@@ -395,11 +395,11 @@ msgstr "module"
 
 #: ../../library/site.rst:16
 msgid "search"
-msgstr ""
+msgstr "搜索"
 
 #: ../../library/site.rst:16 ../../library/site.rst:77
 msgid "path"
-msgstr ""
+msgstr "path"
 
 #: ../../library/site.rst:28
 msgid "site-packages"
@@ -411,11 +411,11 @@ msgstr ""
 
 #: ../../library/site.rst:52
 msgid "# (hash)"
-msgstr ""
+msgstr "# (hash)"
 
 #: ../../library/site.rst:52
 msgid "comment"
-msgstr ""
+msgstr "注释"
 
 #: ../../library/site.rst:52
 msgid "statement"
@@ -423,7 +423,7 @@ msgstr "statement -- 语句"
 
 #: ../../library/site.rst:52
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../library/site.rst:77
 msgid "package"

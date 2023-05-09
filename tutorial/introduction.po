@@ -8,19 +8,19 @@
 # Woko <banbooliu@gmail.com>, 2021
 # jaystone776 <1732865113@qq.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # 乐成 王, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -541,3 +541,11 @@ msgid ""
 msgstr ""
 "与其他语言不同，特殊字符如 ``\\n`` 在单引号（``'...'`` ）和双引号（``\"...\"`` "
 "）里的意义一样。这两种引号唯一的区别是，不需要在单引号里转义双引号 ``\"`` （但此时必须把单引号转义成 ``\\'`` ），反之亦然。"
+
+#: ../../tutorial/introduction.rst:21
+msgid "# (hash)"
+msgstr "# (hash)"
+
+#: ../../tutorial/introduction.rst:21
+msgid "comment"
+msgstr "注释"

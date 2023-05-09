@@ -551,7 +551,7 @@ msgstr "statement -- 语句"
 
 #: ../../library/imp.rst:13
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../library/imp.rst:23
 msgid "file"

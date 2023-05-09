@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:12+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1093,3 +1093,11 @@ msgid ""
 msgstr ""
 "Python 3.3 在 :mod:`time` 中添加了几个可被用来精确测量进程或时钟时间的新函数。 例如，参见 "
 ":func:`time.perf_counter`。"
+
+#: ../../library/profile.rst:16
+msgid "deterministic profiling"
+msgstr "确定性性能分析"
+
+#: ../../library/profile.rst:16
+msgid "profiling, deterministic"
+msgstr "性能分析，确定性的"

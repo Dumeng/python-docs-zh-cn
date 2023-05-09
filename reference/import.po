@@ -1767,7 +1767,7 @@ msgstr ""
 
 #: ../../reference/import.rst:249
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../reference/import.rst:249
 msgid "meta"
@@ -1775,7 +1775,7 @@ msgstr ""
 
 #: ../../reference/import.rst:249
 msgid "path"
-msgstr ""
+msgstr "path"
 
 #: ../../reference/import.rst:276
 msgid "sys.meta_path"

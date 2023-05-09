@@ -156,6 +156,9 @@ msgid ""
 "cache-method-calls` for more details on how this differs from "
 ":func:`cached_property`."
 msgstr ""
+"如果可变的映射不可用或者如果想要节省空间的键共享，可以通过在 :func:`lru_cache` 上堆叠 :func:`property` 来实现类似 "
+":func:`cached_property` 的效果。 请参阅 :ref:`faq-cache-method-calls` 了解这与 "
+":func:`cached_property` 之间区别的详情。"
 
 #: ../../library/functools.rst:115
 msgid ""

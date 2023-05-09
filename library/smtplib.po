@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 14:13+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -884,3 +884,15 @@ msgid ""
 msgstr ""
 "通常，你将需要使用 :mod:`email` 包的特性来构造电子邮件消息，然后你可以通过 "
 ":meth:`~smtplib.SMTP.send_message` 来发送它，参见 :ref:`email-examples`。"
+
+#: ../../library/smtplib.rst:11
+msgid "SMTP"
+msgstr "SMTP"
+
+#: ../../library/smtplib.rst:11
+msgid "protocol"
+msgstr "协议"
+
+#: ../../library/smtplib.rst:11
+msgid "Simple Mail Transfer Protocol"
+msgstr "简单邮件传输协议"

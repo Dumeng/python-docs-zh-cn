@@ -4483,7 +4483,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:310
 msgid "character"
-msgstr ""
+msgstr "字符"
 
 #: ../../reference/datamodel.rst:310
 msgid "Unicode"
@@ -4564,11 +4564,11 @@ msgstr "dictionary -- 字典"
 
 #: ../../reference/datamodel.rst:453
 msgid "dbm.ndbm"
-msgstr ""
+msgstr "dbm.ndbm"
 
 #: ../../reference/datamodel.rst:453
 msgid "dbm.gnu"
-msgstr ""
+msgstr "dbm.gnu"
 
 #: ../../reference/datamodel.rst:467
 msgid "callable"
@@ -4710,7 +4710,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:729
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../reference/datamodel.rst:748
 msgid "__name__ (module attribute)"
@@ -5119,7 +5119,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1499
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 #: ../../reference/datamodel.rst:1580
 msgid "__len__() (mapping object method)"

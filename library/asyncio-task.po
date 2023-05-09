@@ -1055,6 +1055,8 @@ msgid ""
 "provided, the Task copies the current context and later runs its coroutine "
 "in the copied context."
 msgstr ""
+"可选的仅限关键字参数 *context* 允许指定自定义的 :class:`contextvars.Context` 供 *coro* 运行。 "
+"如果未提供 *context*，Task 将拷贝当前上下文并随后在拷贝的上下文中运行其协程。"
 
 #: ../../library/asyncio-task.rst:1010
 msgid "Added support for the :mod:`contextvars` module."

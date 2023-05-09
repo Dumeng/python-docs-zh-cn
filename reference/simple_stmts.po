@@ -1630,7 +1630,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:831
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../reference/simple_stmts.rst:728
 msgid "module"

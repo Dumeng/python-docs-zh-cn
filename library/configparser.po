@@ -1418,7 +1418,7 @@ msgstr ""
 
 #: ../../library/configparser.rst:335
 msgid "% (percent)"
-msgstr ""
+msgstr "% (百分号)"
 
 #: ../../library/configparser.rst:335 ../../library/configparser.rst:368
 msgid "interpolation in configuration files"

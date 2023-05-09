@@ -3629,4 +3629,4 @@ msgstr "repr"
 
 #: ../../c-api/typeobj.rst:871
 msgid "hash"
-msgstr ""
+msgstr "hash"

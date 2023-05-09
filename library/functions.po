@@ -3270,11 +3270,11 @@ msgstr ""
 
 #: ../../library/functions.rst:1335
 msgid "I/O control"
-msgstr ""
+msgstr "I/O 控制"
 
 #: ../../library/functions.rst:1335
 msgid "buffering"
-msgstr ""
+msgstr "缓冲"
 
 #: ../../library/functions.rst:1335
 msgid "text mode"
@@ -3302,7 +3302,7 @@ msgstr "statement -- 语句"
 
 #: ../../library/functions.rst:1980
 msgid "import"
-msgstr ""
+msgstr "import"
 
 #: ../../library/functions.rst:1980
 msgid "builtins"

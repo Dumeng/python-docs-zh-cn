@@ -2720,11 +2720,11 @@ msgstr "socket"
 
 #: ../../library/socket.rst:1477
 msgid "I/O control"
-msgstr ""
+msgstr "I/O 控制"
 
 #: ../../library/socket.rst:1477
 msgid "buffering"
-msgstr ""
+msgstr "缓冲"
 
 #: ../../library/socket.rst:1832
 msgid "module"

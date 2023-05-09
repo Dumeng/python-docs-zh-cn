@@ -2211,11 +2211,11 @@ msgstr "sys"
 
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:480 ../../c-api/init.rst:506
 msgid "search"
-msgstr ""
+msgstr "搜索"
 
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:480 ../../c-api/init.rst:506
 msgid "path"
-msgstr ""
+msgstr "path"
 
 #: ../../c-api/init.rst:231
 msgid "PySys_SetArgv()"

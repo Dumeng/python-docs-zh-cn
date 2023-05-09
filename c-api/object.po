@@ -533,7 +533,7 @@ msgstr "string"
 
 #: ../../c-api/object.rst:213
 msgid "PyObject_Str (C function)"
-msgstr ""
+msgstr "PyObject_Str (C 函数)"
 
 #: ../../c-api/object.rst:230
 msgid "bytes"
@@ -541,7 +541,7 @@ msgstr "字节串"
 
 #: ../../c-api/object.rst:281
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 #: ../../c-api/object.rst:315
 msgid "type"

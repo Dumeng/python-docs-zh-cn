@@ -1073,11 +1073,11 @@ msgstr "sys"
 
 #: ../../c-api/intro.rst:706
 msgid "search"
-msgstr ""
+msgstr "搜索"
 
 #: ../../c-api/intro.rst:706
 msgid "path"
-msgstr ""
+msgstr "path"
 
 #: ../../c-api/intro.rst:706
 msgid "path (in module sys)"

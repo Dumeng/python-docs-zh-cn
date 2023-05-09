@@ -2956,7 +2956,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:877
 msgid "character"
-msgstr ""
+msgstr "字符"
 
 #: ../../reference/expressions.rst:891 ../../reference/expressions.rst:891
 #: ../../reference/expressions.rst:891
@@ -3178,7 +3178,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1295
 msgid "% (percent)"
-msgstr ""
+msgstr "% (百分号)"
 
 #: ../../reference/expressions.rst:1324
 msgid "addition"
@@ -3231,7 +3231,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1397
 msgid "^ (caret)"
-msgstr ""
+msgstr "^ (脱字号)"
 
 #: ../../reference/expressions.rst:1406
 msgid "inclusive"

@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Zombie110year <zombie110year@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-08-10 13:22+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -129,3 +129,7 @@ msgstr ""
 ":option:`-I` 命令行选项可被用来在隔离模式下运行 Python。 当它无法使用时，可以使用 :option:`-P` 选项或 "
 ":envvar:`PYTHONSAFEPATH` 环境变量以避免在 :data:`sys.path` "
 "中预置一个潜在的不安全路径，如当前目录、脚本的目录或一个空字符串。"
+
+#: ../../library/security_warnings.rst:3
+msgid "security considerations"
+msgstr "安全考量"

@@ -127,7 +127,7 @@ msgstr "object -- 对象"
 
 #: ../../c-api/method.rst:8
 msgid "instancemethod"
-msgstr ""
+msgstr "instancemethod"
 
 #: ../../c-api/method.rst:50
 msgid "method"

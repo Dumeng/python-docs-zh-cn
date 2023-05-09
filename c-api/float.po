@@ -255,4 +255,4 @@ msgstr "object -- 对象"
 
 #: ../../c-api/float.rst:8
 msgid "floating point"
-msgstr ""
+msgstr "浮点数"

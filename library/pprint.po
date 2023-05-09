@@ -346,4 +346,4 @@ msgstr "内置函数"
 
 #: ../../library/pprint.rst:162 ../../library/pprint.rst:217
 msgid "eval"
-msgstr ""
+msgstr "eval"

@@ -237,7 +237,7 @@ msgstr "set"
 
 #: ../../c-api/set.rst:11
 msgid "frozenset"
-msgstr ""
+msgstr "frozenset"
 
 #: ../../c-api/set.rst:110
 msgid "built-in function"

@@ -238,4 +238,4 @@ msgstr "object -- 对象"
 
 #: ../../c-api/capsule.rst:8
 msgid "Capsule"
-msgstr ""
+msgstr "Capsule"

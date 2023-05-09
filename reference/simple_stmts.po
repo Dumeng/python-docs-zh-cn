@@ -1687,7 +1687,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:972
 msgid "eval"
-msgstr ""
+msgstr "eval"
 
 #: ../../reference/simple_stmts.rst:972
 msgid "compile"

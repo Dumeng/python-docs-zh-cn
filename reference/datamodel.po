@@ -4390,7 +4390,7 @@ msgstr "省略符字面值"
 
 #: ../../reference/datamodel.rst:182 ../../reference/datamodel.rst:894
 msgid "numeric"
-msgstr ""
+msgstr "数字"
 
 #: ../../reference/datamodel.rst:212 ../../reference/datamodel.rst:238
 #: ../../reference/datamodel.rst:310
@@ -4415,7 +4415,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:244 ../../reference/datamodel.rst:244
 msgid "floating point"
-msgstr ""
+msgstr "浮点数"
 
 #: ../../reference/datamodel.rst:244 ../../reference/datamodel.rst:259
 msgid "number"
@@ -4551,7 +4551,7 @@ msgstr "set"
 
 #: ../../reference/datamodel.rst:412
 msgid "frozenset"
-msgstr ""
+msgstr "frozenset"
 
 #: ../../reference/datamodel.rst:420 ../../reference/datamodel.rst:894
 msgid "mapping"
@@ -4846,7 +4846,7 @@ msgstr "code -- 代码"
 
 #: ../../reference/datamodel.rst:944
 msgid "code object"
-msgstr ""
+msgstr "代码对象"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_argcount (code object attribute)"

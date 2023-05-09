@@ -7088,7 +7088,7 @@ msgstr "object -- 对象"
 #: ../../library/stdtypes.rst:228 ../../library/stdtypes.rst:315
 #: ../../library/stdtypes.rst:332
 msgid "numeric"
-msgstr ""
+msgstr "数字"
 
 #: ../../library/stdtypes.rst:162
 msgid "objects"
@@ -7137,7 +7137,7 @@ msgstr "integer"
 
 #: ../../library/stdtypes.rst:207 ../../library/stdtypes.rst:228
 msgid "floating point"
-msgstr ""
+msgstr "浮点数"
 
 #: ../../library/stdtypes.rst:207 ../../library/stdtypes.rst:228
 msgid "complex number"
@@ -7678,7 +7678,7 @@ msgstr "code -- 代码"
 
 #: ../../library/stdtypes.rst:5290
 msgid "code object"
-msgstr ""
+msgstr "代码对象"
 
 #: ../../library/stdtypes.rst:5297
 msgid "compile"
@@ -7694,7 +7694,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5311
 msgid "eval"
-msgstr ""
+msgstr "eval"
 
 #: ../../library/stdtypes.rst:5350
 msgid "..."

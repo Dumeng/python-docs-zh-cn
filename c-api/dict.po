@@ -285,7 +285,7 @@ msgstr "dictionary -- 字典"
 
 #: ../../c-api/dict.rst:73
 msgid "PyUnicode_FromString()"
-msgstr ""
+msgstr "PyUnicode_FromString()"
 
 #: ../../c-api/dict.rst:157
 msgid "built-in function"

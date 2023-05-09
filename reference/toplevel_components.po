@@ -193,4 +193,4 @@ msgstr "内置函数"
 
 #: ../../reference/toplevel_components.rst:101
 msgid "eval"
-msgstr ""
+msgstr "eval"

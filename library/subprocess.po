@@ -2126,4 +2126,4 @@ msgstr "universal newlines -- 通用换行"
 
 #: ../../library/subprocess.rst:291
 msgid "subprocess module"
-msgstr ""
+msgstr "subprocess 模块"

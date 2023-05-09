@@ -254,4 +254,4 @@ msgstr "文件"
 
 #: ../../library/py_compile.rst:12
 msgid "byte-code"
-msgstr ""
+msgstr "字节码"

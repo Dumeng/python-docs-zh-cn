@@ -559,4 +559,4 @@ msgstr "文件"
 
 #: ../../library/imp.rst:23
 msgid "byte-code"
-msgstr ""
+msgstr "字节码"

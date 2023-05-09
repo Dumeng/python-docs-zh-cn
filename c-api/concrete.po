@@ -96,7 +96,7 @@ msgstr "object -- 对象"
 
 #: ../../c-api/concrete.rst:43
 msgid "numeric"
-msgstr ""
+msgstr "数字"
 
 #: ../../c-api/concrete.rst:58
 msgid "sequence"

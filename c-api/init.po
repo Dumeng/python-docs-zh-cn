@@ -2228,7 +2228,7 @@ msgstr ""
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:1416
 #: ../../c-api/init.rst:1451
 msgid "Py_FinalizeEx()"
-msgstr ""
+msgstr "Py_FinalizeEx()"
 
 #: ../../c-api/init.rst:321 ../../c-api/init.rst:358 ../../c-api/init.rst:1416
 msgid "Py_Initialize()"

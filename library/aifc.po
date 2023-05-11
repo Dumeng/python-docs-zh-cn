@@ -292,15 +292,15 @@ msgstr "关闭 AIFF 文件。 文件的标头会被更新以反映音频数据�
 
 #: ../../library/aifc.rst:10
 msgid "Audio Interchange File Format"
-msgstr ""
+msgstr "Audio Interchange File Format"
 
 #: ../../library/aifc.rst:10
 msgid "AIFF"
-msgstr ""
+msgstr "AIFF"
 
 #: ../../library/aifc.rst:10
 msgid "AIFF-C"
-msgstr ""
+msgstr "AIFF-C"
 
 #: ../../library/aifc.rst:190
 msgid "u-LAW"
@@ -312,4 +312,4 @@ msgstr "A-LAW"
 
 #: ../../library/aifc.rst:190
 msgid "G.722"
-msgstr ""
+msgstr "G.722"

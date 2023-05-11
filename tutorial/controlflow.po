@@ -1121,7 +1121,7 @@ msgstr ""
 
 #: ../../tutorial/controlflow.rst:922
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: ../../tutorial/controlflow.rst:1026
 msgid "function"

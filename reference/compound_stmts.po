@@ -2399,7 +2399,7 @@ msgstr "* (星号)"
 
 #: ../../reference/compound_stmts.rst:1290
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: ../../reference/compound_stmts.rst:1311
 msgid "annotations"

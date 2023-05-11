@@ -7235,7 +7235,7 @@ msgstr "% (百分号)"
 
 #: ../../library/stdtypes.rst:245
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: ../../library/stdtypes.rst:315 ../../library/stdtypes.rst:390
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:1111
@@ -7564,7 +7564,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:2299 ../../library/stdtypes.rst:3517
 msgid ". (dot)"
-msgstr ""
+msgstr ". (点号)"
 
 #: ../../library/stdtypes.rst:2342 ../../library/stdtypes.rst:3560
 msgid "# (hash)"

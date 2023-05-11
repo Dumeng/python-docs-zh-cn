@@ -9,17 +9,17 @@
 # taotieren <admin@taotieren.com>, 2021
 # Harry Liu. <harry.python@gmail.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1577,3 +1577,19 @@ msgid ""
 "These guarantees don't hold when you use the \"old\" style calling "
 "convention --- this is still found in much existing code."
 msgstr "当你使用 \"旧式\" 风格调用约定时，这些保证不成立，尽管这依旧存在于很多旧代码中。"
+
+#: ../../extending/extending.rst:539
+msgid "PyObject_CallObject()"
+msgstr "PyObject_CallObject()"
+
+#: ../../extending/extending.rst:630
+msgid "PyArg_ParseTuple()"
+msgstr "PyArg_ParseTuple()"
+
+#: ../../extending/extending.rst:722
+msgid "PyArg_ParseTupleAndKeywords()"
+msgstr "PyArg_ParseTupleAndKeywords()"
+
+#: ../../extending/extending.rst:743
+msgid "Philbrick, Geoff"
+msgstr "Philbrick, Geoff"

@@ -2773,7 +2773,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:244 ../../reference/expressions.rst:820
 msgid "[] (square brackets)"
-msgstr ""
+msgstr "[] (方括号)"
 
 #: ../../reference/expressions.rst:244
 msgid "list expression"
@@ -2840,7 +2840,7 @@ msgstr ""
 #: ../../reference/expressions.rst:324 ../../reference/expressions.rst:1054
 #: ../../reference/expressions.rst:1161
 msgid "**"
-msgstr ""
+msgstr "**"
 
 #: ../../reference/expressions.rst:341
 msgid "hashable"
@@ -2918,7 +2918,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:792
 msgid ". (dot)"
-msgstr ""
+msgstr ". (点号)"
 
 #: ../../reference/expressions.rst:792
 msgid "attribute reference"

@@ -1290,11 +1290,11 @@ msgstr ""
 
 #: ../../library/string.rst:195
 msgid ". (dot)"
-msgstr ""
+msgstr ". (点号)"
 
 #: ../../library/string.rst:195
 msgid "[] (square brackets)"
-msgstr ""
+msgstr "[] (方括号)"
 
 #: ../../library/string.rst:195
 msgid "! (exclamation)"

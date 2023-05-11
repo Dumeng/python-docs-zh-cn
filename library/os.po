@@ -6558,7 +6558,7 @@ msgstr ""
 
 #: ../../library/os.rst:4921 ../../library/os.rst:4957
 msgid ". (dot)"
-msgstr ""
+msgstr ". (点号)"
 
 #: ../../library/os.rst:4921 ../../library/os.rst:4929
 #: ../../library/os.rst:4937 ../../library/os.rst:4948

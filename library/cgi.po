@@ -834,12 +834,12 @@ msgstr "WWW"
 
 #: ../../library/cgi.rst:10
 msgid "server"
-msgstr ""
+msgstr "服务器"
 
 #: ../../library/cgi.rst:10 ../../library/cgi.rst:389
 #: ../../library/cgi.rst:462
 msgid "CGI"
-msgstr ""
+msgstr "CGI"
 
 #: ../../library/cgi.rst:10 ../../library/cgi.rst:10
 msgid "protocol"
@@ -863,12 +863,12 @@ msgstr "网址"
 
 #: ../../library/cgi.rst:10
 msgid "Common Gateway Interface"
-msgstr ""
+msgstr "Common Gateway Interface"
 
 #: ../../library/cgi.rst:389
 msgid "security"
-msgstr ""
+msgstr "安全"
 
 #: ../../library/cgi.rst:462
 msgid "debugging"
-msgstr ""
+msgstr "调试"

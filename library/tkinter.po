@@ -15,18 +15,18 @@
 # Y. Z. Chen <754097987@qq.com>, 2021
 # Dai Xu <daixu61@hotmail.com>, 2022
 # Jiuh-star <jiuh.star@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1391,7 +1391,7 @@ msgstr ""
 msgid "Here are some examples of typical usage::"
 msgstr "以下是一些典型用法："
 
-#: ../../library/tkinter.rst:789
+#: ../../library/tkinter.rst:789 ../../library/tkinter.rst:791
 msgid "Tk Option Data Types"
 msgstr "Tk 参数的数据类型"
 
@@ -1935,3 +1935,19 @@ msgstr "注销文件处理函数。"
 #: ../../library/tkinter.rst:1041
 msgid "Constants used in the *mask* arguments."
 msgstr " *mask* 参数用到的常量。"
+
+#: ../../library/tkinter.rst:637
+msgid "packing (widgets)"
+msgstr "packing (部件)"
+
+#: ../../library/tkinter.rst:750
+msgid "window manager (widgets)"
+msgstr "window manager (部件)"
+
+#: ../../library/tkinter.rst:867
+msgid "bind (widgets)"
+msgstr "bind (部件)"
+
+#: ../../library/tkinter.rst:867
+msgid "events (widgets)"
+msgstr "events (部件)"

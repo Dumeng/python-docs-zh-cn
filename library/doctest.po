@@ -2396,7 +2396,7 @@ msgstr ">>>"
 
 #: ../../library/doctest.rst:318 ../../library/doctest.rst:318
 msgid "interpreter prompt"
-msgstr ""
+msgstr "解释器提示符"
 
 #: ../../library/doctest.rst:318 ../../library/doctest.rst:554
 msgid "..."
@@ -2412,12 +2412,12 @@ msgstr "标记"
 
 #: ../../library/doctest.rst:534
 msgid "<BLANKLINE>"
-msgstr ""
+msgstr "<BLANKLINE>"
 
 #: ../../library/doctest.rst:554 ../../library/doctest.rst:684
 #: ../../library/doctest.rst:684 ../../library/doctest.rst:684
 msgid "in doctests"
-msgstr ""
+msgstr "在 doctests 中"
 
 #: ../../library/doctest.rst:684
 msgid "# (hash)"
@@ -2429,4 +2429,4 @@ msgstr "+ (加号)"
 
 #: ../../library/doctest.rst:684
 msgid "- (minus)"
-msgstr ""
+msgstr "- (减号)"

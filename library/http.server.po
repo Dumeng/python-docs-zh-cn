@@ -758,7 +758,7 @@ msgstr "WWW"
 
 #: ../../library/http.server.rst:9
 msgid "server"
-msgstr ""
+msgstr "服务器"
 
 #: ../../library/http.server.rst:9
 msgid "HTTP"
@@ -774,7 +774,7 @@ msgstr "网址"
 
 #: ../../library/http.server.rst:9
 msgid "httpd"
-msgstr ""
+msgstr "httpd"
 
 #: ../../library/http.server.rst:510
 msgid "http.server"
@@ -782,4 +782,4 @@ msgstr "http.server"
 
 #: ../../library/http.server.rst:510
 msgid "security"
-msgstr ""
+msgstr "安全"

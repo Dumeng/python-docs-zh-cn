@@ -8,8 +8,8 @@
 # 黄瓜小王子 <linxzh1989@gmail.com>, 2021
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -742,7 +742,7 @@ msgstr "Kevent 对象"
 
 #: ../../library/select.rst:508
 msgid "https://man.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
-msgstr ""
+msgstr "https://man.freebsd.org/cgi/man.cgi?query=kqueue&sektion=2"
 
 #: ../../library/select.rst:512
 msgid ""
@@ -1083,12 +1083,12 @@ msgstr "用户自定义值。"
 
 #: ../../library/select.rst:141
 msgid "socket() (in module socket)"
-msgstr ""
+msgstr "socket() (在 socket 模块中)"
 
 #: ../../library/select.rst:141
 msgid "popen() (in module os)"
-msgstr ""
+msgstr "popen() (在 os 模块中)"
 
 #: ../../library/select.rst:154
 msgid "WinSock"
-msgstr ""
+msgstr "WinSock"

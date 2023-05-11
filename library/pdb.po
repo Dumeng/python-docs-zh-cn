@@ -787,11 +787,11 @@ msgstr "一个帧是否会被认为源自特定模块是由帧全局变量 ``__n
 
 #: ../../library/pdb.rst:11
 msgid "debugging"
-msgstr ""
+msgstr "调试"
 
 #: ../../library/pdb.rst:21
 msgid "Pdb (class in pdb)"
-msgstr ""
+msgstr "Pdb (pdb 中的类)"
 
 #: ../../library/pdb.rst:21 ../../library/pdb.rst:21
 msgid "module"
@@ -803,11 +803,11 @@ msgstr "bdb"
 
 #: ../../library/pdb.rst:21
 msgid "cmd"
-msgstr ""
+msgstr "cmd"
 
 #: ../../library/pdb.rst:266
 msgid ".pdbrc"
-msgstr ""
+msgstr ".pdbrc"
 
 #: ../../library/pdb.rst:266 ../../library/pdb.rst:266
 msgid "file"
@@ -819,4 +819,4 @@ msgstr "调试器"
 
 #: ../../library/pdb.rst:266
 msgid "configuration"
-msgstr ""
+msgstr "配置"

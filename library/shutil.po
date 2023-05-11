@@ -1170,7 +1170,7 @@ msgstr ""
 
 #: ../../library/shutil.rst:297
 msgid "directory"
-msgstr ""
+msgstr "directory"
 
 #: ../../library/shutil.rst:297
 msgid "deleting"

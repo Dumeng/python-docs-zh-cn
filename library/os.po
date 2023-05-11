@@ -6518,7 +6518,7 @@ msgstr "pty"
 #: ../../library/os.rst:3208 ../../library/os.rst:3307
 #: ../../library/os.rst:3307
 msgid "directory"
-msgstr ""
+msgstr "directory"
 
 #: ../../library/os.rst:1824
 msgid "changing"

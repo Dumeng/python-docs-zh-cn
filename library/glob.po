@@ -229,7 +229,7 @@ msgstr "! (感叹号)"
 
 #: ../../library/glob.rst:13
 msgid "- (minus)"
-msgstr ""
+msgstr "- (减号)"
 
 #: ../../library/glob.rst:13
 msgid ". (dot)"

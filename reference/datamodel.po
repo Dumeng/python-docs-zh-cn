@@ -4374,7 +4374,7 @@ msgstr "attribute -- 属性"
 
 #: ../../reference/datamodel.rst:135 ../../reference/datamodel.rst:135
 msgid "special"
-msgstr ""
+msgstr "特殊"
 
 #: ../../reference/datamodel.rst:135
 msgid "generic"
@@ -4794,7 +4794,7 @@ msgstr "io"
 
 #: ../../reference/datamodel.rst:910
 msgid "popen() (in module os)"
-msgstr ""
+msgstr "popen() (在 os 模块中)"
 
 #: ../../reference/datamodel.rst:910
 msgid "makefile() (socket method)"
@@ -5175,16 +5175,16 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:2632 ../../reference/datamodel.rst:2667
 msgid "divmod"
-msgstr ""
+msgstr "divmod"
 
 #: ../../reference/datamodel.rst:2632 ../../reference/datamodel.rst:2632
 #: ../../reference/datamodel.rst:2667 ../../reference/datamodel.rst:2681
 msgid "pow"
-msgstr ""
+msgstr "pow"
 
 #: ../../reference/datamodel.rst:2728
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 #: ../../reference/datamodel.rst:2738
 msgid "int"

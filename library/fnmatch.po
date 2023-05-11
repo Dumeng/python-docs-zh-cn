@@ -202,7 +202,7 @@ msgstr "! (感叹号)"
 
 #: ../../library/fnmatch.rst:19
 msgid "- (minus)"
-msgstr ""
+msgstr "- (减号)"
 
 #: ../../library/fnmatch.rst:41
 msgid "glob"

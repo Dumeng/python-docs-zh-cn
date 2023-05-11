@@ -3074,7 +3074,7 @@ msgstr ">>>"
 
 #: ../../library/sys.rst:1323 ../../library/sys.rst:1323
 msgid "interpreter prompt"
-msgstr ""
+msgstr "解释器提示符"
 
 #: ../../library/sys.rst:1323
 msgid "..."

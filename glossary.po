@@ -11,18 +11,18 @@
 # Y.D.X., 2022
 # WH-2099 <wh2099@outlook.com>, 2022
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # LeeWendao <LeeWendao@outlook.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: LeeWendao <LeeWendao@outlook.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -989,7 +989,7 @@ msgstr ""
 "释放不再被使用的内存空间的过程。Python 是通过引用计数和一个能够检测和打破循环引用的循环垃圾回收器来执行垃圾回收的。可以使用 :mod:`gc` "
 "模块来控制垃圾回收器。"
 
-#: ../../glossary.rst:490
+#: ../../glossary.rst:490 ../../glossary.rst:489
 msgid "generator"
 msgstr "generator -- 生成器"
 
@@ -1028,7 +1028,7 @@ msgstr ""
 "每个 :keyword:`yield` 会临时暂停处理，记住当前位置执行状态（包括局部变量和挂起的 try 语句）。当该 *生成器迭代器* "
 "恢复时，它会从离开位置继续执行（这与每次调用都从新开始的普通函数差别很大）。"
 
-#: ../../glossary.rst:511
+#: ../../glossary.rst:511 ../../glossary.rst:510
 msgid "generator expression"
 msgstr "generator expression -- 生成器表达式"
 
@@ -1593,7 +1593,7 @@ msgstr ""
 msgid "More information can be found in :ref:`metaclasses`."
 msgstr "更多详情参见 :ref:`metaclasses`。"
 
-#: ../../glossary.rst:788
+#: ../../glossary.rst:788 ../../glossary.rst:756 ../../glossary.rst:1120
 msgid "method"
 msgstr "method -- 方法"
 
@@ -2472,3 +2472,19 @@ msgid ""
 "understanding and using the language.  The listing can be found by typing "
 "\"``import this``\" at the interactive prompt."
 msgstr "列出 Python 设计的原则与哲学，有助于理解与使用这种语言。查看其具体内容可在交互模式提示符中输入 \"``import this``\"。"
+
+#: ../../glossary.rst:263
+msgid "C-contiguous"
+msgstr "C 连续"
+
+#: ../../glossary.rst:263
+msgid "Fortran contiguous"
+msgstr "Fortran 连续"
+
+#: ../../glossary.rst:756
+msgid "magic"
+msgstr "魔术"
+
+#: ../../glossary.rst:1120
+msgid "special"
+msgstr "特殊"

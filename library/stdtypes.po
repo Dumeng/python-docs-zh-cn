@@ -7213,7 +7213,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2342
 #: ../../library/stdtypes.rst:3560
 msgid "- (minus)"
-msgstr ""
+msgstr "- (减号)"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2299
 #: ../../library/stdtypes.rst:3517

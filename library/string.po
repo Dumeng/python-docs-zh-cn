@@ -1326,7 +1326,7 @@ msgstr "+ (加号)"
 
 #: ../../library/string.rst:365
 msgid "- (minus)"
-msgstr ""
+msgstr "- (减号)"
 
 #: ../../library/string.rst:384
 msgid "z"

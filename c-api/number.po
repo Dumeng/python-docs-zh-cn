@@ -363,15 +363,15 @@ msgstr "内置函数"
 
 #: ../../c-api/number.rst:67
 msgid "divmod"
-msgstr ""
+msgstr "divmod"
 
 #: ../../c-api/number.rst:75 ../../c-api/number.rst:195
 msgid "pow"
-msgstr ""
+msgstr "pow"
 
 #: ../../c-api/number.rst:97
 msgid "abs"
-msgstr ""
+msgstr "abs"
 
 #: ../../c-api/number.rst:241
 msgid "int"

@@ -871,8 +871,8 @@ msgstr "contiguous -- 连续"
 
 #: ../../c-api/buffer.rst:284
 msgid "C-contiguous"
-msgstr ""
+msgstr "C 连续"
 
 #: ../../c-api/buffer.rst:284
 msgid "Fortran contiguous"
-msgstr ""
+msgstr "Fortran 连续"

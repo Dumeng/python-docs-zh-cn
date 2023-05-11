@@ -3113,7 +3113,7 @@ msgstr ""
 #: ../../reference/expressions.rst:1205 ../../reference/expressions.rst:1205
 #: ../../reference/expressions.rst:1337 ../../reference/expressions.rst:1337
 msgid "- (minus)"
-msgstr ""
+msgstr "- (减号)"
 
 #: ../../reference/expressions.rst:1205 ../../reference/expressions.rst:1214
 msgid "unary operator"

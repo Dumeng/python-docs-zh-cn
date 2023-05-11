@@ -1406,7 +1406,7 @@ msgstr "文件"
 
 #: ../../library/configparser.rst:16
 msgid "configuration"
-msgstr ""
+msgstr "配置"
 
 #: ../../library/configparser.rst:16
 msgid "ini file"

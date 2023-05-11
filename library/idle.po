@@ -8,25 +8,25 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # 8af080f2e6702c64bedd01873aed27e8_25aec74 <fd99d14239138a1f987c22e7736dde81_777475>, 2021
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:07+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../../library/idle.rst:4
+#: ../../library/idle.rst:4 ../../library/idle.rst:10
 msgid "IDLE"
 msgstr "IDLE"
 
@@ -263,6 +263,7 @@ msgid "Select the entire contents of the current window."
 msgstr "选择当前窗口的全部内容。"
 
 #: ../../library/idle.rst:124 ../../library/idle.rst:370
+#: ../../library/idle.rst:355
 msgid "Cut"
 msgstr "剪切"
 
@@ -272,6 +273,7 @@ msgid ""
 msgstr "复制选区至系统剪贴板，然后删除选区。"
 
 #: ../../library/idle.rst:127 ../../library/idle.rst:373
+#: ../../library/idle.rst:355
 msgid "Copy"
 msgstr "复制"
 
@@ -280,6 +282,7 @@ msgid "Copy selection into the system-wide clipboard."
 msgstr "复制选区至系统剪贴板。"
 
 #: ../../library/idle.rst:130 ../../library/idle.rst:376
+#: ../../library/idle.rst:355
 msgid "Paste"
 msgstr "粘贴"
 
@@ -777,7 +780,7 @@ msgid ""
 msgstr ""
 "编辑器窗口也具有断点功能。 设置了断点的行会被特别标记。 断点仅在启用调试器运行时有效。 文件的断点会被保存在用户的 ``.idlerc`` 目录中。"
 
-#: ../../library/idle.rst:384
+#: ../../library/idle.rst:384 ../../library/idle.rst:355
 msgid "Set Breakpoint"
 msgstr "设置断点"
 
@@ -785,7 +788,7 @@ msgstr "设置断点"
 msgid "Set a breakpoint on the current line."
 msgstr "在当前行设置断点"
 
-#: ../../library/idle.rst:387
+#: ../../library/idle.rst:387 ../../library/idle.rst:355
 msgid "Clear Breakpoint"
 msgstr "清除断点"
 
@@ -1842,3 +1845,35 @@ msgstr ""
 "有关 idlelib 中文件的描述见 idlelib/README.txt。 可以在 idlelib 中或者在 IDLE 中点击 Help => "
 "About IDLE 来查看它。 此文件还将 IDLE 菜单条目映射到了实现这些条目的代码。 除了在 'Startup' "
 "中列出的文件以外，idlelib 代码都是 '私有' 的意即特性的修改可以被向下移植 (参见 :pep:`434`)。"
+
+#: ../../library/idle.rst:10
+msgid "Python Editor"
+msgstr ""
+
+#: ../../library/idle.rst:10
+msgid "Integrated Development Environment"
+msgstr ""
+
+#: ../../library/idle.rst:70
+msgid "Module browser"
+msgstr ""
+
+#: ../../library/idle.rst:70
+msgid "Path browser"
+msgstr ""
+
+#: ../../library/idle.rst:212
+msgid "Run script"
+msgstr ""
+
+#: ../../library/idle.rst:279
+msgid "debugger"
+msgstr "调试器"
+
+#: ../../library/idle.rst:279
+msgid "stack viewer"
+msgstr ""
+
+#: ../../library/idle.rst:355
+msgid "breakpoints"
+msgstr ""

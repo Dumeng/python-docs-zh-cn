@@ -754,7 +754,7 @@ msgstr "控制字符会在 stderr 日志中被擦除。"
 
 #: ../../library/http.server.rst:9
 msgid "WWW"
-msgstr ""
+msgstr "WWW"
 
 #: ../../library/http.server.rst:9
 msgid "server"

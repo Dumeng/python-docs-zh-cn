@@ -3034,7 +3034,7 @@ msgstr "traceback -- 回溯"
 
 #: ../../library/sys.rst:813 ../../library/sys.rst:1359
 msgid "profile function"
-msgstr ""
+msgstr "性能分析函数"
 
 #: ../../library/sys.rst:813 ../../library/sys.rst:1359
 msgid "profiler"
@@ -3042,11 +3042,11 @@ msgstr ""
 
 #: ../../library/sys.rst:822 ../../library/sys.rst:1436
 msgid "trace function"
-msgstr ""
+msgstr "追踪函数"
 
 #: ../../library/sys.rst:822 ../../library/sys.rst:1436
 msgid "debugger"
-msgstr ""
+msgstr "调试器"
 
 #: ../../library/sys.rst:1178
 msgid "module"

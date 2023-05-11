@@ -91,6 +91,8 @@ msgid ""
 "`PList manual page "
 "<https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/>`_"
 msgstr ""
+"`PList 指南页面 "
+"<https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/>`_"
 
 #: ../../library/plistlib.rst:50
 msgid "Apple's documentation of the file format."
@@ -248,7 +250,7 @@ msgstr "解析一个 plist::"
 
 #: ../../library/plistlib.rst:13
 msgid "plist"
-msgstr ""
+msgstr "plist"
 
 #: ../../library/plistlib.rst:13
 msgid "file"
@@ -256,4 +258,4 @@ msgstr "文件"
 
 #: ../../library/plistlib.rst:13
 msgid "property list"
-msgstr ""
+msgstr "property list"

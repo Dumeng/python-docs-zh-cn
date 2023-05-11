@@ -1663,7 +1663,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:831
 msgid "relative"
-msgstr ""
+msgstr "相关"
 
 #: ../../reference/simple_stmts.rst:858
 msgid "future"

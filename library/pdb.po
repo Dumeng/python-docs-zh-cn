@@ -815,7 +815,7 @@ msgstr "文件"
 
 #: ../../library/pdb.rst:266
 msgid "debugger"
-msgstr ""
+msgstr "调试器"
 
 #: ../../library/pdb.rst:266
 msgid "configuration"

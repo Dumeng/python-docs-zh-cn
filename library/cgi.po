@@ -830,7 +830,7 @@ msgstr ""
 
 #: ../../library/cgi.rst:10
 msgid "WWW"
-msgstr ""
+msgstr "WWW"
 
 #: ../../library/cgi.rst:10
 msgid "server"
@@ -855,7 +855,7 @@ msgstr "MIME"
 
 #: ../../library/cgi.rst:10
 msgid "headers"
-msgstr ""
+msgstr "标头"
 
 #: ../../library/cgi.rst:10
 msgid "URL"

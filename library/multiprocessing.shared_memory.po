@@ -6,17 +6,17 @@
 # Translators:
 # zeroswan <zeroswan@outlook.com>, 2021
 # Chi Xu <jackson1014qq@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -329,3 +329,15 @@ msgid ""
 msgstr ""
 "下面的例子显示 ``ShareableList`` (以及下层的 ``SharedMemory``) 对象可以在必要时被封存和解封。 "
 "请注意，它将仍然为同一个共享对象。 出现这种情况是因为被反序列化的对象具有相同的唯一名称并使用这个相同的名称附加到现有的对象上（如果对象仍然保持存活）:"
+
+#: ../../library/multiprocessing.shared_memory.rst:11
+msgid "Shared Memory"
+msgstr "共享内存"
+
+#: ../../library/multiprocessing.shared_memory.rst:11
+msgid "POSIX Shared Memory"
+msgstr "POSIX 共享内存"
+
+#: ../../library/multiprocessing.shared_memory.rst:11
+msgid "Named Shared Memory"
+msgstr "已命名共享内存"

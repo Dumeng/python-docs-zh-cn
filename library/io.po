@@ -1811,7 +1811,7 @@ msgstr "file object -- 文件对象"
 
 #: ../../library/io.rst:24
 msgid "io module"
-msgstr ""
+msgstr "io 模块"
 
 #: ../../library/io.rst:970 ../../library/io.rst:1094
 msgid "universal newlines"
@@ -1819,8 +1819,8 @@ msgstr "universal newlines -- 通用换行"
 
 #: ../../library/io.rst:970
 msgid "io.TextIOWrapper class"
-msgstr ""
+msgstr "io.TextIOWrapper 类"
 
 #: ../../library/io.rst:1094
 msgid "io.IncrementalNewlineDecoder class"
-msgstr ""
+msgstr "io.IncrementalNewlineDecoder 类"

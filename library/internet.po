@@ -40,15 +40,15 @@ msgstr ""
 
 #: ../../library/internet.rst:7
 msgid "WWW"
-msgstr ""
+msgstr "WWW"
 
 #: ../../library/internet.rst:7
 msgid "Internet"
-msgstr ""
+msgstr "互联网"
 
 #: ../../library/internet.rst:7
 msgid "World Wide Web"
-msgstr ""
+msgstr "World Wide Web"
 
 #: ../../library/internet.rst:12
 msgid "module"

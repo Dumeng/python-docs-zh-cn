@@ -152,6 +152,9 @@ msgid ""
 "<https://github.com/google/pytype>`_ can check type hints in Python source "
 "code."
 msgstr ""
+"静态类型检查器例如 `Mypy <https://mypy-lang.org/>`_, `Pyre <https://pyre-"
+"check.org/>`_ 和 `Pytype <https://github.com/google/pytype>`_ 可以检查 Python "
+"源代码中的类型提示。"
 
 #: ../../faq/programming.rst:73
 msgid "How can I create a stand-alone binary from a Python script?"
@@ -2682,7 +2685,7 @@ msgstr "argument -- 参数"
 
 #: ../../faq/programming.rst:408
 msgid "difference from parameter"
-msgstr ""
+msgstr "与形参的区别"
 
 #: ../../faq/programming.rst:408
 msgid "parameter"
@@ -2690,4 +2693,4 @@ msgstr "parameter -- 形参"
 
 #: ../../faq/programming.rst:408
 msgid "difference from argument"
-msgstr ""
+msgstr "与参数的区别"

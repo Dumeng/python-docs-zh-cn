@@ -804,7 +804,7 @@ msgstr "以下是一个最短示例（不带错误检查），该示例将打开
 
 #: ../../library/imaplib.rst:16
 msgid "IMAP4"
-msgstr ""
+msgstr "IMAP4"
 
 #: ../../library/imaplib.rst:16 ../../library/imaplib.rst:16
 #: ../../library/imaplib.rst:16
@@ -813,8 +813,8 @@ msgstr "协议"
 
 #: ../../library/imaplib.rst:16
 msgid "IMAP4_SSL"
-msgstr ""
+msgstr "IMAP4_SSL"
 
 #: ../../library/imaplib.rst:16
 msgid "IMAP4_stream"
-msgstr ""
+msgstr "IMAP4_stream"

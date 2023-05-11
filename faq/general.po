@@ -114,6 +114,7 @@ msgid ""
 "See `the license page <https://docs.python.org/3/license.html>`_ to find "
 "further explanations and the full text of the PSF License."
 msgstr ""
+"请参阅 `许可页 <https://docs.python.org/3/license.html>`_ 以查看进一步的说明以及 PSF 许可的完整文本。"
 
 #: ../../faq/general.rst:60
 msgid ""
@@ -418,6 +419,9 @@ msgid ""
 "five postings per day.  It's available as `the python-announce mailing list "
 "<https://mail.python.org/mailman3/lists/python-announce-list.python.org/>`_."
 msgstr ""
+"有关新软件发布和活动的公告可以在 comp.lang.python.announce 中找到，这是个严格管理的低流量列表，每天发帖五个左右。 可在 "
+"`python-announce 邮件列表 <https://mail.python.org/mailman3/lists/python-"
+"announce-list.python.org/>`_ 订阅。"
 
 #: ../../faq/general.rst:220
 msgid ""
@@ -661,6 +665,8 @@ msgid ""
 "New development is discussed on `the python-dev mailing list "
 "<https://mail.python.org/mailman3/lists/python-dev.python.org/>`_."
 msgstr ""
+"新版本的开发会在 `python-dev 邮件列表 <https://mail.python.org/mailman3/lists/python-"
+"dev.python.org/>`_ 中进行讨论。"
 
 #: ../../faq/general.rst:359
 msgid "Is it reasonable to propose incompatible changes to Python?"

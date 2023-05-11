@@ -102,7 +102,7 @@ msgstr "编码与解码 MIME base64 数据"
 
 #: ../../library/quopri.rst:9
 msgid "quoted-printable"
-msgstr ""
+msgstr "quoted-printable"
 
 #: ../../library/quopri.rst:9
 msgid "encoding"
@@ -114,4 +114,4 @@ msgstr "MIME"
 
 #: ../../library/quopri.rst:9
 msgid "quoted-printable encoding"
-msgstr ""
+msgstr "quoted-printable 编码格式"

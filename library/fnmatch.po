@@ -180,7 +180,7 @@ msgstr "re"
 
 #: ../../library/fnmatch.rst:19
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (星号)"
 
 #: ../../library/fnmatch.rst:19 ../../library/fnmatch.rst:19
 #: ../../library/fnmatch.rst:19 ../../library/fnmatch.rst:19
@@ -190,7 +190,7 @@ msgstr ""
 
 #: ../../library/fnmatch.rst:19
 msgid "? (question mark)"
-msgstr ""
+msgstr "? (问号)"
 
 #: ../../library/fnmatch.rst:19
 msgid "[] (square brackets)"

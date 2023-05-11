@@ -2425,7 +2425,7 @@ msgstr "# (hash)"
 
 #: ../../library/doctest.rst:684
 msgid "+ (plus)"
-msgstr ""
+msgstr "+ (加号)"
 
 #: ../../library/doctest.rst:684
 msgid "- (minus)"

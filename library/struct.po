@@ -1071,4 +1071,4 @@ msgstr "! (感叹号)"
 
 #: ../../library/struct.rst:261 ../../library/struct.rst:348
 msgid "? (question mark)"
-msgstr ""
+msgstr "? (问号)"

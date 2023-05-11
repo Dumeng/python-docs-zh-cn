@@ -1347,7 +1347,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:809
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (星号)"
 
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:115
 #: ../../reference/simple_stmts.rst:115
@@ -1461,7 +1461,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:321
 msgid ": (colon)"
-msgstr ""
+msgstr ": (冒号)"
 
 #: ../../reference/simple_stmts.rst:321
 msgid "annotated variable"

@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 14:13+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2436,3 +2436,15 @@ msgid ""
 ":mod:`!sqlite3` used to implicitly commit an open transaction before DDL "
 "statements.  This is no longer the case."
 msgstr "在以前 :mod:`!sqlite3` 会在 DDL 语句之前隐式地提交已开启的事务。 现存则不会再这样做。"
+
+#: ../../library/sqlite3.rst:1333
+msgid "? (question mark)"
+msgstr "? (问号)"
+
+#: ../../library/sqlite3.rst:1333 ../../library/sqlite3.rst:1334
+msgid "in SQL statements"
+msgstr "在 SQL 语句中"
+
+#: ../../library/sqlite3.rst:1334
+msgid ": (colon)"
+msgstr ": (冒号)"

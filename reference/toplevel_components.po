@@ -169,7 +169,7 @@ msgstr ""
 
 #: ../../reference/toplevel_components.rst:49
 msgid "UNIX"
-msgstr ""
+msgstr "UNIX"
 
 #: ../../reference/toplevel_components.rst:49
 msgid "Windows"

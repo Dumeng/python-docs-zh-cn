@@ -2822,7 +2822,7 @@ msgstr ""
 #: ../../reference/expressions.rst:298 ../../reference/expressions.rst:891
 #: ../../reference/expressions.rst:1808
 msgid ": (colon)"
-msgstr ""
+msgstr ": (冒号)"
 
 #: ../../reference/expressions.rst:298
 msgid "in dictionary expressions"
@@ -3020,7 +3020,7 @@ msgstr "parameter -- 形参"
 #: ../../reference/expressions.rst:1024 ../../reference/expressions.rst:1257
 #: ../../reference/expressions.rst:1853
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (星号)"
 
 #: ../../reference/expressions.rst:1089
 msgid "user-defined"
@@ -3126,7 +3126,7 @@ msgstr ""
 #: ../../reference/expressions.rst:1214 ../../reference/expressions.rst:1214
 #: ../../reference/expressions.rst:1324 ../../reference/expressions.rst:1324
 msgid "+ (plus)"
-msgstr ""
+msgstr "+ (加号)"
 
 #: ../../reference/expressions.rst:1222
 msgid "inversion"

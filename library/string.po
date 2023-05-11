@@ -1302,7 +1302,7 @@ msgstr "! (感叹号)"
 
 #: ../../library/string.rst:195
 msgid ": (colon)"
-msgstr ""
+msgstr ": (冒号)"
 
 #: ../../library/string.rst:333
 msgid "< (less)"
@@ -1322,7 +1322,7 @@ msgstr "^ (脱字号)"
 
 #: ../../library/string.rst:365
 msgid "+ (plus)"
-msgstr ""
+msgstr "+ (加号)"
 
 #: ../../library/string.rst:365
 msgid "- (minus)"

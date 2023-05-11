@@ -226,6 +226,10 @@ msgid ""
 "sys.base_prefix`` to determine if the current interpreter is running from a "
 "virtual environment."
 msgstr ""
+"当运行虚拟环境中的 Python 解释器时，:data:`sys.prefix` 和 :data:`sys.exec_prefix` "
+"将指向该虚拟环境的相应目录，而 :data:`sys.base_prefix` 和 :data:`sys.base_exec_prefix` "
+"将指向用于创建该虚拟环境的基础 Python 的相应目录。 只需检测 ``sys.prefix != sys.base_prefix`` "
+"就足以确定当前解释器是否运行于虚拟环境中。"
 
 #: ../../library/venv.rst:61
 msgid ""
@@ -746,8 +750,8 @@ msgstr "这个脚本同样可以 `在线下载 <https://gist.github.com/vsajip/4
 
 #: ../../library/venv.rst:14
 msgid "Environments"
-msgstr ""
+msgstr "环境"
 
 #: ../../library/venv.rst:14
 msgid "virtual"
-msgstr ""
+msgstr "虚拟"

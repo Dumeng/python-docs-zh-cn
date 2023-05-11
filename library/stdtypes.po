@@ -7199,7 +7199,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2342
 #: ../../library/stdtypes.rst:3560
 msgid "+ (plus)"
-msgstr ""
+msgstr "+ (加号)"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 msgid "unary operator"
@@ -7218,7 +7218,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2299
 #: ../../library/stdtypes.rst:3517
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (星号)"
 
 #: ../../library/stdtypes.rst:245
 msgid "/ (slash)"

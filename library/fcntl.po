@@ -356,11 +356,11 @@ msgstr ""
 
 #: ../../library/fcntl.rst:10 ../../library/fcntl.rst:10
 msgid "UNIX"
-msgstr ""
+msgstr "UNIX"
 
 #: ../../library/fcntl.rst:10
 msgid "file control"
-msgstr ""
+msgstr "文件控制"
 
 #: ../../library/fcntl.rst:10
 msgid "I/O control"

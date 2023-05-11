@@ -368,11 +368,11 @@ msgstr "这是一个示例会话，其中 turtle shell 显示帮助功能，使�
 
 #: ../../library/cmd.rst:64
 msgid "? (question mark)"
-msgstr ""
+msgstr "? (问号)"
 
 #: ../../library/cmd.rst:64 ../../library/cmd.rst:64
 msgid "in a command interpreter"
-msgstr ""
+msgstr "在命令解释器中"
 
 #: ../../library/cmd.rst:64
 msgid "! (exclamation)"

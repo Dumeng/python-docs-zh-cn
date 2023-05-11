@@ -2135,7 +2135,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1311
 #: ../../reference/compound_stmts.rst:1367
 msgid ": (colon)"
-msgstr ""
+msgstr ": (冒号)"
 
 #: ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:111
@@ -2395,7 +2395,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:1290
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (星号)"
 
 #: ../../reference/compound_stmts.rst:1290
 msgid "**"

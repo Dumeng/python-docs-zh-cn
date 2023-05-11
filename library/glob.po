@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../library/glob.rst:13
 msgid "* (asterisk)"
-msgstr ""
+msgstr "* (星号)"
 
 #: ../../library/glob.rst:13 ../../library/glob.rst:13
 #: ../../library/glob.rst:13 ../../library/glob.rst:13
@@ -217,7 +217,7 @@ msgstr ""
 
 #: ../../library/glob.rst:13
 msgid "? (question mark)"
-msgstr ""
+msgstr "? (问号)"
 
 #: ../../library/glob.rst:13
 msgid "[] (square brackets)"

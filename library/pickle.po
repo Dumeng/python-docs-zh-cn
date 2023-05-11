@@ -1703,7 +1703,7 @@ msgstr ""
 
 #: ../../library/pickle.rst:123
 msgid "External Data Representation"
-msgstr ""
+msgstr "External Data Representation"
 
 #: ../../library/pickle.rst:663
 msgid "copy"

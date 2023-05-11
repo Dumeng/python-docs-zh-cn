@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Arisaka97 <solitaire2312@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -289,3 +289,27 @@ msgid ""
 "actual size of the audio data. After calling this method, the object can no "
 "longer be used."
 msgstr "关闭 AIFF 文件。 文件的标头会被更新以反映音频数据的实际大小。 在调用此方法之后，对象将无法再被使用。"
+
+#: ../../library/aifc.rst:10
+msgid "Audio Interchange File Format"
+msgstr ""
+
+#: ../../library/aifc.rst:10
+msgid "AIFF"
+msgstr ""
+
+#: ../../library/aifc.rst:10
+msgid "AIFF-C"
+msgstr ""
+
+#: ../../library/aifc.rst:190
+msgid "u-LAW"
+msgstr "u-LAW"
+
+#: ../../library/aifc.rst:190
+msgid "A-LAW"
+msgstr "A-LAW"
+
+#: ../../library/aifc.rst:190
+msgid "G.722"
+msgstr ""

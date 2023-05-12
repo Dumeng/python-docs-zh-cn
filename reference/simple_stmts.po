@@ -1356,7 +1356,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:115
 msgid "[] (square brackets)"
-msgstr ""
+msgstr "[] (方括号)"
 
 #: ../../reference/simple_stmts.rst:115
 msgid "() (parentheses)"
@@ -1469,7 +1469,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:378
 msgid "assert"
-msgstr ""
+msgstr "assert"
 
 #: ../../reference/simple_stmts.rst:378
 msgid "debugging"
@@ -1574,7 +1574,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:555
 msgid "raise"
-msgstr ""
+msgstr "raise"
 
 #: ../../reference/simple_stmts.rst:555
 msgid "raising"

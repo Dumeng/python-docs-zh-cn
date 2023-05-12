@@ -9,17 +9,17 @@
 # meowmeowcat <meowmeowcat1211@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
 # Siyuan Xu, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-08 19:31+0000\n"
 "PO-Revision-Date: 2021-06-28 01:17+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -364,3 +364,23 @@ msgstr "示例"
 #: ../../library/uuid.rst:269
 msgid "Here are some examples of typical usage of the :mod:`uuid` module::"
 msgstr "下面是一些 :mod:`uuid` 模块的典型使用例子::"
+
+#: ../../library/uuid.rst:173
+msgid "getnode"
+msgstr "getnode"
+
+#: ../../library/uuid.rst:183
+msgid "uuid1"
+msgstr "uuid1"
+
+#: ../../library/uuid.rst:191
+msgid "uuid3"
+msgstr "uuid3"
+
+#: ../../library/uuid.rst:198
+msgid "uuid4"
+msgstr "uuid4"
+
+#: ../../library/uuid.rst:206
+msgid "uuid5"
+msgstr "uuid5"

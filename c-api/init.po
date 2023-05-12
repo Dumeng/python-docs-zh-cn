@@ -2184,7 +2184,7 @@ msgstr ""
 
 #: ../../c-api/init.rst:231
 msgid "modules (in module sys)"
-msgstr ""
+msgstr "modules (在 sys 模块中)"
 
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:480 ../../c-api/init.rst:506
 msgid "path (in module sys)"

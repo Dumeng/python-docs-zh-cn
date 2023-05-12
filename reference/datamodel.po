@@ -5022,7 +5022,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1149
 msgid "try"
-msgstr ""
+msgstr "try"
 
 #: ../../reference/datamodel.rst:1167
 msgid "tb_next (traceback attribute)"

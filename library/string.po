@@ -1346,7 +1346,7 @@ msgstr "_ (下划线)"
 
 #: ../../library/string.rst:744
 msgid "$ (dollar)"
-msgstr ""
+msgstr "$ (货币符号)"
 
 #: ../../library/string.rst:744
 msgid "in template strings"

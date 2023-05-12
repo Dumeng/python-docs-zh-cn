@@ -1398,7 +1398,7 @@ msgstr ""
 
 #: ../../library/configparser.rst:16
 msgid ".ini"
-msgstr ""
+msgstr ".ini"
 
 #: ../../library/configparser.rst:16 ../../library/configparser.rst:16
 msgid "file"
@@ -1410,11 +1410,11 @@ msgstr "配置"
 
 #: ../../library/configparser.rst:16
 msgid "ini file"
-msgstr ""
+msgstr "ini 文件"
 
 #: ../../library/configparser.rst:16
 msgid "Windows ini file"
-msgstr ""
+msgstr "Windows ini 文件"
 
 #: ../../library/configparser.rst:335
 msgid "% (percent)"
@@ -1422,8 +1422,8 @@ msgstr "% (百分号)"
 
 #: ../../library/configparser.rst:335 ../../library/configparser.rst:368
 msgid "interpolation in configuration files"
-msgstr ""
+msgstr "在配置文件中的插值"
 
 #: ../../library/configparser.rst:368
 msgid "$ (dollar)"
-msgstr ""
+msgstr "$ (货币符号)"

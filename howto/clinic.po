@@ -1684,6 +1684,9 @@ msgid ""
 " C types—why not have it convert your return value from a native C type into"
 " a Python type too?"
 msgstr ""
+"在默认情况下，Argument Clinic 生成的 impl 函数返回 :c:type:`PyObject * <PyObject>`。 但是你的 C"
+" 函数往往要计算某个 C 类型，然后最终将其转换为 :c:type:`!PyObject *`。 Argument Clinic 会负责将你的输入由 "
+"Python 类型转换为原生 C 类型 — 为什么不让它将你的返回值也由原生 C 类型转换为 Python 类型呢？"
 
 #: ../../howto/clinic.rst:1036
 msgid ""
@@ -1691,13 +1694,15 @@ msgid ""
 "return some C type, then adds code to the generated (non-impl) function to "
 "handle converting that value into the appropriate :c:type:`!PyObject *`."
 msgstr ""
+"这就是“返回值转换器”要做的事。 它将你的 impl 函数修改为返回某种 C 类型，然后在生成的type, then adds code to the "
+"generated (非 impl) 函数中添加代码来处理该值到相应 :c:type:`!PyObject *` 的转换。"
 
 #: ../../howto/clinic.rst:1040
 msgid ""
 "The syntax for return converters is similar to that of parameter converters."
 " You specify the return converter like it was a return annotation on the "
 "function itself, using ``->`` notation."
-msgstr ""
+msgstr "返回值转换器的语法类似于形参转换器。 你以为函数自身添加返回标注的形式来指定返回值转换器，即使用 ``->`` 标注。"
 
 #: ../../howto/clinic.rst:1044
 msgid "For example:"

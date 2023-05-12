@@ -3134,7 +3134,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1222
 msgid "~ (tilde)"
-msgstr ""
+msgstr "~ (波浪号)"
 
 #: ../../reference/expressions.rst:1233
 msgid "TypeError"

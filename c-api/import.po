@@ -408,7 +408,7 @@ msgstr ""
 
 #: ../../c-api/import.rst:11
 msgid "package variable"
-msgstr ""
+msgstr "包变量"
 
 #: ../../c-api/import.rst:11
 msgid "__all__"
@@ -416,11 +416,11 @@ msgstr "__all__"
 
 #: ../../c-api/import.rst:11
 msgid "__all__ (package variable)"
-msgstr ""
+msgstr "__all__ (包变量)"
 
 #: ../../c-api/import.rst:11
 msgid "modules (in module sys)"
-msgstr ""
+msgstr "modules (在 sys 模块中)"
 
 #: ../../c-api/import.rst:44 ../../c-api/import.rst:123
 msgid "built-in function"
@@ -428,7 +428,7 @@ msgstr "内置函数"
 
 #: ../../c-api/import.rst:44
 msgid "__import__"
-msgstr ""
+msgstr "__import__"
 
 #: ../../c-api/import.rst:123
 msgid "compile"
@@ -436,4 +436,4 @@ msgstr "编译"
 
 #: ../../c-api/import.rst:248
 msgid "freeze utility"
-msgstr ""
+msgstr "冻结工具"

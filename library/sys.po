@@ -1344,6 +1344,9 @@ msgid ""
 ":func:`getsizeof` recursively to find the size of containers and all their "
 "contents."
 msgstr ""
+"请参阅 `recursive sizeof recipe "
+"<https://code.activestate.com/recipes/577504/>`_ 查看一个递归使用 :func:`getsizeof` "
+"来找出各个容器及其全部内容大小的示例。"
 
 #: ../../library/sys.rst:790
 msgid ""
@@ -3022,7 +3025,7 @@ msgstr ""
 
 #: ../../library/sys.rst:97
 msgid "auditing"
-msgstr ""
+msgstr "审计"
 
 #: ../../library/sys.rst:443
 msgid "object"
@@ -3038,7 +3041,7 @@ msgstr "性能分析函数"
 
 #: ../../library/sys.rst:813 ../../library/sys.rst:1359
 msgid "profiler"
-msgstr ""
+msgstr "性能分析器"
 
 #: ../../library/sys.rst:822 ../../library/sys.rst:1436
 msgid "trace function"
@@ -3062,11 +3065,11 @@ msgstr "path"
 
 #: ../../library/sys.rst:1323
 msgid "interpreter prompts"
-msgstr ""
+msgstr "解释器提示符"
 
 #: ../../library/sys.rst:1323
 msgid "prompts, interpreter"
-msgstr ""
+msgstr "提示符，解释器"
 
 #: ../../library/sys.rst:1323
 msgid ">>>"

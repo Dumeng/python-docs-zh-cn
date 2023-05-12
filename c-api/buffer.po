@@ -847,23 +847,23 @@ msgstr ""
 
 #: ../../c-api/buffer.rst:3
 msgid "buffer protocol"
-msgstr ""
+msgstr "缓冲协议"
 
 #: ../../c-api/buffer.rst:3
 msgid "buffer interface"
-msgstr ""
+msgstr "缓冲接口"
 
 #: ../../c-api/buffer.rst:3 ../../c-api/buffer.rst:3
 msgid "(see buffer protocol)"
-msgstr ""
+msgstr "(参见缓冲协议)"
 
 #: ../../c-api/buffer.rst:3
 msgid "buffer object"
-msgstr ""
+msgstr "缓冲对象"
 
 #: ../../c-api/buffer.rst:32
 msgid "PyBufferProcs"
-msgstr ""
+msgstr "PyBufferProcs"
 
 #: ../../c-api/buffer.rst:284
 msgid "contiguous"

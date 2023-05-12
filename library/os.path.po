@@ -595,11 +595,11 @@ msgstr "操作"
 
 #: ../../library/os.path.rst:155
 msgid "~ (tilde)"
-msgstr ""
+msgstr "~ (波浪号)"
 
 #: ../../library/os.path.rst:155
 msgid "home directory expansion"
-msgstr ""
+msgstr "主目录扩展"
 
 #: ../../library/os.path.rst:162
 msgid "module"
@@ -607,15 +607,15 @@ msgstr "module"
 
 #: ../../library/os.path.rst:162
 msgid "pwd"
-msgstr ""
+msgstr "pwd"
 
 #: ../../library/os.path.rst:183
 msgid "$ (dollar)"
-msgstr ""
+msgstr "$ (货币符号)"
 
 #: ../../library/os.path.rst:183
 msgid "environment variables expansion"
-msgstr ""
+msgstr "环境变量扩展"
 
 #: ../../library/os.path.rst:183
 msgid "% (percent)"

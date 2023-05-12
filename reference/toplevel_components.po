@@ -137,11 +137,11 @@ msgstr ":func:`eval` 被用于表达式输入。 它会忽略开头的空白。 
 
 #: ../../reference/toplevel_components.rst:8
 msgid "interpreter"
-msgstr ""
+msgstr "解释器"
 
 #: ../../reference/toplevel_components.rst:21
 msgid "program"
-msgstr ""
+msgstr "程序"
 
 #: ../../reference/toplevel_components.rst:23
 #: ../../reference/toplevel_components.rst:23
@@ -165,7 +165,7 @@ msgstr "builtins"
 
 #: ../../reference/toplevel_components.rst:39
 msgid "interactive mode"
-msgstr ""
+msgstr "交互模式"
 
 #: ../../reference/toplevel_components.rst:49
 msgid "UNIX"
@@ -177,15 +177,15 @@ msgstr "Windows"
 
 #: ../../reference/toplevel_components.rst:49
 msgid "command line"
-msgstr ""
+msgstr "命令行"
 
 #: ../../reference/toplevel_components.rst:49
 msgid "standard input"
-msgstr ""
+msgstr "标准输入"
 
 #: ../../reference/toplevel_components.rst:100
 msgid "input"
-msgstr ""
+msgstr "输入"
 
 #: ../../reference/toplevel_components.rst:101
 msgid "built-in function"

@@ -325,27 +325,27 @@ msgstr ""
 
 #: ../../library/_thread.rst:7
 msgid "light-weight processes"
-msgstr ""
+msgstr "轻量级进程"
 
 #: ../../library/_thread.rst:7
 msgid "processes, light-weight"
-msgstr ""
+msgstr "进程，轻量级"
 
 #: ../../library/_thread.rst:7
 msgid "binary semaphores"
-msgstr ""
+msgstr "二元信号量"
 
 #: ../../library/_thread.rst:7
 msgid "semaphores, binary"
-msgstr ""
+msgstr "信号量，二元"
 
 #: ../../library/_thread.rst:22
 msgid "pthreads"
-msgstr ""
+msgstr "pthreads"
 
 #: ../../library/_thread.rst:22
 msgid "threads"
-msgstr ""
+msgstr "threads"
 
 #: ../../library/_thread.rst:22
 msgid "POSIX"

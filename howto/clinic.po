@@ -1713,7 +1713,7 @@ msgid ""
 "Return converters behave much the same as parameter converters; they take "
 "arguments, the arguments are all keyword-only, and if you're not changing "
 "any of the default arguments you can omit the parentheses."
-msgstr ""
+msgstr "返回值转换器的行为和形参转换器基本一致；它们都接受一些参数，这些参数全部是仅限关键字的，如果你不修改任何默认参数则可以省略括号。"
 
 #: ../../howto/clinic.rst:1061
 msgid ""
@@ -1746,7 +1746,7 @@ msgstr "目前 Argument Clinic 只支持少数几种返回值转换器。"
 msgid ""
 "None of these take parameters. For all of these, return ``-1`` to indicate "
 "error."
-msgstr ""
+msgstr "它们全都不接受形参。 它们全都返回 ``-1`` 来表示错误。to indicate error."
 
 #: ../../howto/clinic.rst:1090
 msgid ""

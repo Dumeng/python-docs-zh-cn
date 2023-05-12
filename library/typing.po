@@ -2239,6 +2239,8 @@ msgid ""
 "Prefer :class:`collections.abc.Buffer`, or a union like ``bytes | bytearray "
 "| memoryview``."
 msgstr ""
+"首选 :class:`collections.abc.Buffer`，或是 ``bytes | bytearray | memoryview`` "
+"这样的并集。"
 
 #: ../../library/typing.rst:2101
 msgid "A generic version of :class:`collections.abc.Collection`"
@@ -2643,13 +2645,13 @@ msgstr "让静态类型检查器确认 *val* 具有推断为 *typ* 的类型。"
 msgid ""
 "At runtime this does nothing: it returns the first argument unchanged with "
 "no checks or side effects, no matter the actual type of the argument."
-msgstr ""
+msgstr "在运行时这将不做任何事：它会原样返回第一个参数而没有任何检查或附带影响，无论参数的实际类型是什么。"
 
 #: ../../library/typing.rst:2438
 msgid ""
 "When a static type checker encounters a call to ``assert_type()``, it emits "
 "an error if the value is not of the specified type::"
-msgstr ""
+msgstr "当静态类型检查器遇到对 ``assert_type()`` 的调用时，如果该值不是指定的类型则会报错::"
 
 #: ../../library/typing.rst:2445
 msgid ""
@@ -3189,15 +3191,15 @@ msgstr ":pep:`585`"
 
 #: ../../library/typing.rst:2889
 msgid "``typing.ByteString``"
-msgstr ""
+msgstr "``typing.ByteString``"
 
 #: ../../library/typing.rst:2889
 msgid "3.14"
-msgstr ""
+msgstr "3.14"
 
 #: ../../library/typing.rst:2889
 msgid ":gh:`91896`"
-msgstr ""
+msgstr ":gh:`91896`"
 
 #: ../../library/typing.rst:2891
 msgid "``typing.Text``"

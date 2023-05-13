@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -758,32 +758,32 @@ msgstr "module"
 
 #: ../../c-api/module.rst:13
 msgid "ModuleType (in module types)"
-msgstr ""
+msgstr "ModuleType (在 types 模块中)"
 
 #: ../../c-api/module.rst:33 ../../c-api/module.rst:74
 msgid "__name__ (module attribute)"
-msgstr ""
+msgstr "__name__ (模块属性)"
 
 #: ../../c-api/module.rst:33
 msgid "__doc__ (module attribute)"
-msgstr ""
+msgstr "__doc__ (模块属性)"
 
 #: ../../c-api/module.rst:33 ../../c-api/module.rst:104
 msgid "__file__ (module attribute)"
-msgstr ""
+msgstr "__file__ (模块属性)"
 
 #: ../../c-api/module.rst:33
 msgid "__package__ (module attribute)"
-msgstr ""
+msgstr "__package__ (模块属性)"
 
 #: ../../c-api/module.rst:33
 msgid "__loader__ (module attribute)"
-msgstr ""
+msgstr "__loader__ (模块属性)"
 
 #: ../../c-api/module.rst:60
 msgid "__dict__ (module attribute)"
-msgstr ""
+msgstr "__dict__ (模块属性)"
 
 #: ../../c-api/module.rst:74 ../../c-api/module.rst:104
 msgid "SystemError (built-in exception)"
-msgstr ""
+msgstr "SystemError (内置异常)"

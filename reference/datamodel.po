@@ -4714,15 +4714,15 @@ msgstr "import"
 
 #: ../../reference/datamodel.rst:748
 msgid "__name__ (module attribute)"
-msgstr ""
+msgstr "__name__ (模块属性)"
 
 #: ../../reference/datamodel.rst:748
 msgid "__doc__ (module attribute)"
-msgstr ""
+msgstr "__doc__ (模块属性)"
 
 #: ../../reference/datamodel.rst:748
 msgid "__file__ (module attribute)"
-msgstr ""
+msgstr "__file__ (模块属性)"
 
 #: ../../reference/datamodel.rst:748
 msgid "__annotations__ (module attribute)"
@@ -4730,7 +4730,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:779
 msgid "__dict__ (module attribute)"
-msgstr ""
+msgstr "__dict__ (模块属性)"
 
 #: ../../reference/datamodel.rst:807 ../../reference/datamodel.rst:807
 #: ../../reference/datamodel.rst:824 ../../reference/datamodel.rst:867

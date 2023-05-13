@@ -74,7 +74,7 @@ msgstr ":mod:`urllib.request` 模块定义了以下函数："
 msgid ""
 "Open *url*, which can be either a string containing a valid, properly "
 "encoded URL, or a :class:`Request` object."
-msgstr ""
+msgstr "打开 *url*，它可以是一个包含有效的、被正确编码的 URL 的字符串，或是一个 :class:`Request` 对象。"
 
 #: ../../library/urllib.request.rst:34
 msgid ""
@@ -357,7 +357,7 @@ msgstr "URL 请求对象的抽象类。"
 
 #: ../../library/urllib.request.rst:195
 msgid "*url* should be a string containing a valid, properly encoded URL."
-msgstr ""
+msgstr "*url* 应为一个包含有效的、被正确编码的 URL 的字符串。"
 
 #: ../../library/urllib.request.rst:197
 msgid ""

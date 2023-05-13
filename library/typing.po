@@ -2239,6 +2239,7 @@ msgid ""
 "Prefer ``typing_extensions.Buffer``, or a union like ``bytes | bytearray | "
 "memoryview``."
 msgstr ""
+"首选 ``typing_extensions.Buffer``，或是 ``bytes | bytearray | memoryview`` 这样的并集。"
 
 #: ../../library/typing.rst:2101
 msgid "A generic version of :class:`collections.abc.Collection`"
@@ -3061,6 +3062,10 @@ msgid ""
 "return the underlying :class:`ParamSpec`. Return ``None`` for unsupported "
 "objects. Examples::"
 msgstr ""
+"获取某个类型不带下标的版本：对于 ``X[Y, Z, ...]`` 形式的类型对象将返回 ``X``。 如果 ``X`` 是一个内置类型或 "
+":mod:`collections` 类的通用别名，它将被正规化为原始的类。 如果 ``X`` 是 :class:`ParamSpecArgs` 或 "
+":class:`ParamSpecKwargs` 的实例，则返回下层的 :class:`ParamSpec`。 对于不受支持的对象将返回 "
+"``None``。 例如::"
 
 #: ../../library/typing.rst:2814
 msgid ""
@@ -3071,6 +3076,9 @@ msgid ""
 "...]`` due to type caching. Return ``()`` for unsupported objects. "
 "Examples::"
 msgstr ""
+"获取执行了所有替换操作的类型参数：对于 ``X[Y, Z, ...]`` 形式的类型对象将返回 ``(Y, Z, ...)``。 如果 ``X`` "
+"是一个并集或包含在另一个泛型类型中的 :class:`Literal`，则 ``(Y, Z, ...)`` 的顺序可能因类型缓存而与原始参数 ``[Y,"
+" Z, ...]`` 存在差异。 对于不受支持的对象将返回 ``()``。 例如::"
 
 #: ../../library/typing.rst:2830
 msgid "Check if a type is a :class:`TypedDict`."

@@ -1667,6 +1667,10 @@ msgid ""
 "methods, after the statement has run to completion. This means that any "
 "resulting rows must be fetched in order for :attr:`!rowcount` to be updated."
 msgstr ""
+"提供 ``INSERT``, ``UPDATE``, ``DELETE`` 和 ``REPLACE`` 语句所修改行数的只读属性；对于其他语句则为 "
+"``-1``，包括 :abbr:`CTE (Common Table Expression)` 查询。 只有 :meth:`execute` 和 "
+":meth:`executemany` 方法会在语句运行完成后更新此属性。 这意味着任何结果行都必须按顺序被提取以使 :attr:`!rowcount`"
+" 获得更新。"
 
 #: ../../library/sqlite3.rst:1526
 msgid ""

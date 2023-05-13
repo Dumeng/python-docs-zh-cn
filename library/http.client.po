@@ -346,6 +346,9 @@ msgid ""
 "connecting to an HTTP proxy server or using the ``OPTIONS`` or ``CONNECT`` "
 "methods)."
 msgstr ""
+"这将使用 HTTP 请求方法 *method* 和请求 URI *url* 将服务器发送一个请求。 所提供的 *url* 必须是符合 :rfc:`RFC"
+" 2616 §5.1.2 <2616#section-5.1.2>` 规范的绝对路径（除非是连接到一个 HTTP 代理服务器或者使用 "
+"``OPTIONS`` 或 ``CONNECT`` 方法）。"
 
 #: ../../library/http.client.rst:270
 msgid ""
@@ -376,6 +379,9 @@ msgid ""
 "connecting to an HTTP proxy server or using the ``OPTIONS`` or ``CONNECT`` "
 "methods)."
 msgstr ""
+"*headers* 参数应为由要与请求一同发送的额外 HTTP 标头组成的映射。 必须提供一个 :rfc:`主机标头 "
+"<2616#section-14.23>` 以符合 :rfc:`RFC 2616 §5.1.2 <2616#section-5.1.2>` "
+"规范（除非是连接到一个 HTTP 代理服务器或者使用 ``OPTIONS`` 或 ``CONNECT`` 方法）。"
 
 #: ../../library/http.client.rst:288
 msgid ""
@@ -410,7 +416,7 @@ msgstr ""
 msgid ""
 "For example, to perform a ``GET`` request to "
 "``https://docs.python.org/3/``::"
-msgstr ""
+msgstr "例如，要对 ``https://docs.python.org/3/`` 执行一个 ``GET`` 请求::"
 
 #: ../../library/http.client.rst:316
 msgid ""

@@ -5,16 +5,17 @@
 # 
 # Translators:
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Hanze Tan, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-05-05 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 17:23+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Hanze Tan, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3175,7 +3176,7 @@ msgstr "性能优化"
 
 #: ../../whatsnew/3.3.rst:2151
 msgid "Major performance enhancements have been added:"
-msgstr ""
+msgstr "所增加的主要性能加强："
 
 #: ../../whatsnew/3.3.rst:2153
 msgid ""

@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2173,7 +2173,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:144
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../reference/compound_stmts.rst:144
 msgid "in"
@@ -2387,7 +2387,7 @@ msgstr "argument -- 参数"
 
 #: ../../reference/compound_stmts.rst:1261
 msgid "= (equals)"
-msgstr ""
+msgstr "= (等于号)"
 
 #: ../../reference/compound_stmts.rst:1290
 msgid "/ (slash)"
@@ -2407,12 +2407,12 @@ msgstr "annotations"
 
 #: ../../reference/compound_stmts.rst:1311
 msgid "->"
-msgstr ""
+msgstr "->"
 
 #: ../../reference/compound_stmts.rst:1311
 #: ../../reference/compound_stmts.rst:1311
 msgid "function annotations"
-msgstr ""
+msgstr "函数标注"
 
 #: ../../reference/compound_stmts.rst:1329
 msgid "lambda"

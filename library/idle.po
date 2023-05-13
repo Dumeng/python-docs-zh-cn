@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:07+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1848,23 +1848,23 @@ msgstr ""
 
 #: ../../library/idle.rst:10
 msgid "Python Editor"
-msgstr ""
+msgstr "Python 编辑器"
 
 #: ../../library/idle.rst:10
 msgid "Integrated Development Environment"
-msgstr ""
+msgstr "集成开发环境"
 
 #: ../../library/idle.rst:70
 msgid "Module browser"
-msgstr ""
+msgstr "模块浏览器"
 
 #: ../../library/idle.rst:70
 msgid "Path browser"
-msgstr ""
+msgstr "路径浏览器"
 
 #: ../../library/idle.rst:212
 msgid "Run script"
-msgstr ""
+msgstr "运行脚本"
 
 #: ../../library/idle.rst:279
 msgid "debugger"
@@ -1872,8 +1872,8 @@ msgstr "调试器"
 
 #: ../../library/idle.rst:279
 msgid "stack viewer"
-msgstr ""
+msgstr "栈查看器"
 
 #: ../../library/idle.rst:355
 msgid "breakpoints"
-msgstr ""
+msgstr "中断点"

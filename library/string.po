@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1275,7 +1275,7 @@ msgstr ""
 
 #: ../../library/string.rst:195
 msgid "{} (curly brackets)"
-msgstr ""
+msgstr "{} (花括号)"
 
 #: ../../library/string.rst:195 ../../library/string.rst:195
 #: ../../library/string.rst:195 ../../library/string.rst:195
@@ -1286,7 +1286,7 @@ msgstr ""
 #: ../../library/string.rst:384 ../../library/string.rst:393
 #: ../../library/string.rst:407 ../../library/string.rst:416
 msgid "in string formatting"
-msgstr ""
+msgstr "在字符串格式化中"
 
 #: ../../library/string.rst:195
 msgid ". (dot)"
@@ -1306,15 +1306,15 @@ msgstr ": (冒号)"
 
 #: ../../library/string.rst:333
 msgid "< (less)"
-msgstr ""
+msgstr "< (小于)"
 
 #: ../../library/string.rst:333
 msgid "> (greater)"
-msgstr ""
+msgstr "> (大于)"
 
 #: ../../library/string.rst:333
 msgid "= (equals)"
-msgstr ""
+msgstr "= (等于号)"
 
 #: ../../library/string.rst:333
 msgid "^ (caret)"
@@ -1330,7 +1330,7 @@ msgstr "- (减号)"
 
 #: ../../library/string.rst:384
 msgid "z"
-msgstr ""
+msgstr "z"
 
 #: ../../library/string.rst:393
 msgid "# (hash)"

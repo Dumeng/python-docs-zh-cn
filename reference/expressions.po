@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2617,7 +2617,7 @@ msgstr "expression -- 表达式"
 
 #: ../../reference/expressions.rst:8
 msgid "BNF"
-msgstr ""
+msgstr "BNF"
 
 #: ../../reference/expressions.rst:28 ../../reference/expressions.rst:1196
 #: ../../reference/expressions.rst:1244
@@ -2740,7 +2740,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:177
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../reference/expressions.rst:177 ../../reference/expressions.rst:177
 #: ../../reference/expressions.rst:177 ../../reference/expressions.rst:212
@@ -2791,7 +2791,7 @@ msgstr "set"
 
 #: ../../reference/expressions.rst:270 ../../reference/expressions.rst:298
 msgid "{} (curly brackets)"
-msgstr ""
+msgstr "{} (花括号)"
 
 #: ../../reference/expressions.rst:270
 msgid "set expression"
@@ -3006,12 +3006,12 @@ msgstr ""
 
 #: ../../reference/expressions.rst:941
 msgid "= (equals)"
-msgstr ""
+msgstr "= (等于号)"
 
 #: ../../reference/expressions.rst:941 ../../reference/expressions.rst:1024
 #: ../../reference/expressions.rst:1024 ../../reference/expressions.rst:1054
 msgid "in function calls"
-msgstr ""
+msgstr "在函数调用中"
 
 #: ../../reference/expressions.rst:974
 msgid "parameter"
@@ -3255,11 +3255,11 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1421
 msgid "< (less)"
-msgstr ""
+msgstr "< (小与)"
 
 #: ../../reference/expressions.rst:1421
 msgid "> (greater)"
-msgstr ""
+msgstr "> (大与)"
 
 #: ../../reference/expressions.rst:1421
 msgid "<="

@@ -7,16 +7,16 @@
 # Woko <banbooliu@gmail.com>, 2021
 # nick <2330458484@qq.com>, 2021
 # iceyasha <IceYasha@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -96,6 +96,7 @@ msgid ""
 "Similar to :py:func:`~bisect.bisect_left`, but returns an insertion point "
 "which comes after (to the right of) any existing entries of *x* in *a*."
 msgstr ""
+"类似于 :py:func:`~bisect.bisect_left`，但是返回的插入点是在 *a* 中任何现有条目 *x* 之后（即其右侧）。"
 
 #: ../../library/bisect.rst:56
 msgid ""
@@ -116,6 +117,8 @@ msgid ""
 "insertion point. Next, it runs the :meth:`insert` method on *a* to insert "
 "*x* at the appropriate position to maintain sort order."
 msgstr ""
+"此函数首先会运行 :py:func:`~bisect.bisect_left` 来定位一个插入点。 然后，它会在 *a* 上运行 "
+":meth:`insert` 方法在适当的位置插入 *x* 以保持排序顺序。"
 
 #: ../../library/bisect.rst:79 ../../library/bisect.rst:99
 msgid ""
@@ -133,7 +136,7 @@ msgstr "请记住 ``O(log n)`` 搜索是由缓慢的 O(n) 抛入步骤主导的�
 msgid ""
 "Similar to :py:func:`~bisect.insort_left`, but inserting *x* in *a* after "
 "any existing entries of *x*."
-msgstr ""
+msgstr "类似于 :py:func:`~bisect.insort_left`，但是会把 *x* 插入到 *a* 中任何现有条目 *x* 之后。"
 
 #: ../../library/bisect.rst:95
 msgid ""

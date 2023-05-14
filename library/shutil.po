@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -969,6 +969,10 @@ msgid ""
 ":ref:`tarfile-extraction-filter` for details.) The ``'data'`` filter will "
 "become the default for tar files in Python 3.14."
 msgstr ""
+"仅限关键字参数 *filter*，在 Python 3.11.4 中添加，会被传给下层的解包函数。 对于 zip 文件，*filter* 将不被接受。 "
+"对于 tar 文件，推荐将其设为 ``'data'``，除非使用了 tar 专属的特性且为类 UNIX 文件系统。 （请参阅 "
+":ref:`tarfile-extraction-filter` 了解详情。） ``'data'``  Python 3.14 中成为 tar "
+"文件的默认过滤器。"
 
 #: ../../library/shutil.rst:652
 msgid ""
@@ -994,7 +998,7 @@ msgstr "接受一个 :term:`path-like object` 作为 *filename* 和 *extract_dir
 
 #: ../../library/shutil.rst:664
 msgid "Added the *filter* argument."
-msgstr ""
+msgstr "增加了 *filter* 参数。"
 
 #: ../../library/shutil.rst:669
 msgid ""
@@ -1008,28 +1012,28 @@ msgstr ""
 msgid ""
 "*function* is the callable that will be used to unpack archives. The "
 "callable will receive:"
-msgstr ""
+msgstr "*function* 是将被用于解包归档的可调用对象。 该可调用对象将接受:"
 
 #: ../../library/shutil.rst:676
 msgid "the path of the archive, as a positional argument;"
-msgstr ""
+msgstr "归档的路径，为位置参数;"
 
 #: ../../library/shutil.rst:677
 msgid ""
 "the directory the archive must be extracted to, as a positional argument;"
-msgstr ""
+msgstr "归档要提取到的目录，为位置参数;"
 
 #: ../../library/shutil.rst:678
 msgid ""
 "possibly a *filter* keyword argument, if it was given to "
 ":func:`unpack_archive`;"
-msgstr ""
+msgstr "可选的 *filter* 关键字参数，如果有提供给 :func:`unpack_archive` 的话;"
 
 #: ../../library/shutil.rst:680
 msgid ""
 "additional keyword arguments, specified by *extra_args* as a sequence of "
 "``(name, value)`` tuples."
-msgstr ""
+msgstr "额外的关键字参数，由 ``(name, value)`` 元组组成的序列 *extra_args* 指明。"
 
 #: ../../library/shutil.rst:683
 msgid ""
@@ -1162,11 +1166,11 @@ msgstr "文件"
 
 #: ../../library/shutil.rst:12
 msgid "copying"
-msgstr ""
+msgstr "拷贝"
 
 #: ../../library/shutil.rst:12
 msgid "copying files"
-msgstr ""
+msgstr "拷贝文件"
 
 #: ../../library/shutil.rst:297
 msgid "directory"
@@ -1174,4 +1178,4 @@ msgstr "directory"
 
 #: ../../library/shutil.rst:297
 msgid "deleting"
-msgstr ""
+msgstr "删除"

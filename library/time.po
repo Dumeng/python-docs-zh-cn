@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:15+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1539,44 +1539,44 @@ msgstr ""
 
 #: ../../library/time.rst:22
 msgid "epoch"
-msgstr ""
+msgstr "epoch"
 
 #: ../../library/time.rst:36
 msgid "Year 2038"
-msgstr ""
+msgstr "2038 年"
 
 #: ../../library/time.rst:42
 msgid "2-digit years"
-msgstr ""
+msgstr "2 位数表示年份"
 
 #: ../../library/time.rst:50
 msgid "UTC"
-msgstr ""
+msgstr "UTC"
 
 #: ../../library/time.rst:50
 msgid "Coordinated Universal Time"
-msgstr ""
+msgstr "Coordinated Universal Time"
 
 #: ../../library/time.rst:50
 msgid "Greenwich Mean Time"
-msgstr ""
+msgstr "Greenwich Mean Time"
 
 #: ../../library/time.rst:59
 msgid "Daylight Saving Time"
-msgstr ""
+msgstr "Daylight Saving Time"
 
 #: ../../library/time.rst:308 ../../library/time.rst:334
 #: ../../library/time.rst:642
 msgid "benchmarking"
-msgstr ""
+msgstr "benchmarking"
 
 #: ../../library/time.rst:334 ../../library/time.rst:642
 msgid "CPU time"
-msgstr ""
+msgstr "CPU time"
 
 #: ../../library/time.rst:334 ../../library/time.rst:642
 msgid "processor time"
-msgstr ""
+msgstr "processor time"
 
 #: ../../library/time.rst:392 ../../library/time.rst:526
 msgid "% (percent)"

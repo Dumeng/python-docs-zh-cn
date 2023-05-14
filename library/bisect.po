@@ -179,6 +179,9 @@ msgid ""
 "consider searching an array of precomputed keys to locate the insertion "
 "point (as shown in the examples section below)."
 msgstr ""
+"这些搜索函数都是无状态的并且会在它们被使用后丢弃键函数的结果。 因此，如果在一个循环中使用搜索函数，则键函数可能会在同一个数据元素上被反复调用。 "
+"如果键函数速度不够快，请考虑用 :py:func:`functools.cache` 来包装它以避免重复计算。 "
+"另外，也可以考虑搜索一个预先计算好的键数组来定位插入点（如下面的示例小节所演示的）。"
 
 #: ../../library/bisect.rst:131
 msgid ""
@@ -212,6 +215,8 @@ msgid ""
 "five functions show how to transform them into the standard lookups for "
 "sorted lists::"
 msgstr ""
+"上面的 `bisect functions`_ 对于找到插入点是有用的，但在一般的搜索任务中可能会有点尴尬。 "
+"下面的五个函数展示了如何将其转换为针对有序列表的标准查找函数::"
 
 #: ../../library/bisect.rst:187
 msgid "Examples"
@@ -224,6 +229,8 @@ msgid ""
 "grade for an exam score (say) based on a set of ordered numeric breakpoints:"
 " 90 and up is an 'A', 80 to 89 is a 'B', and so on::"
 msgstr ""
+":py:func:`~bisect.bisect` 函数对于数字表查询也是适用的。 这个例子使用 :py:func:`~bisect.bisect` "
+"根据一组有序的数字划分点来查找考试成绩对应的字母等级: (如) 90 及以上为 'A'，80 至 89 为 'B'，依此类推::"
 
 #: ../../library/bisect.rst:203
 msgid ""
@@ -231,6 +238,8 @@ msgid ""
 "work with lists of tuples.  The *key* argument can serve to extract the "
 "field used for ordering records in a table::"
 msgstr ""
+":py:func:`~bisect.bisect` 和 :py:func:`~bisect.insort` 对于列表和元组也是适用的。 *key* "
+"参数可以提取用于表中记录排序的字段::"
 
 #: ../../library/bisect.rst:237
 msgid ""

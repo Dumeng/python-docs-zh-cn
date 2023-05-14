@@ -7092,7 +7092,7 @@ msgstr "数字"
 
 #: ../../library/stdtypes.rst:162
 msgid "objects"
-msgstr ""
+msgstr "objects"
 
 #: ../../library/stdtypes.rst:162
 msgid "comparing"
@@ -7168,7 +7168,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:228
 msgid "binary"
-msgstr ""
+msgstr "二进制"
 
 #: ../../library/stdtypes.rst:245
 msgid "arithmetic"

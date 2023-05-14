@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1673,33 +1673,33 @@ msgstr ""
 
 #: ../../library/pickle.rst:12
 msgid "persistence"
-msgstr ""
+msgstr "persistence"
 
 #: ../../library/pickle.rst:12
 msgid "persistent"
-msgstr ""
+msgstr "persistent"
 
 #: ../../library/pickle.rst:12 ../../library/pickle.rst:12
 #: ../../library/pickle.rst:12 ../../library/pickle.rst:12
 #: ../../library/pickle.rst:12
 msgid "objects"
-msgstr ""
+msgstr "objects"
 
 #: ../../library/pickle.rst:12
 msgid "serializing"
-msgstr ""
+msgstr "serializing"
 
 #: ../../library/pickle.rst:12
 msgid "marshalling"
-msgstr ""
+msgstr "marshalling"
 
 #: ../../library/pickle.rst:12
 msgid "flattening"
-msgstr ""
+msgstr "flattening"
 
 #: ../../library/pickle.rst:12
 msgid "pickling"
-msgstr ""
+msgstr "pickling"
 
 #: ../../library/pickle.rst:123
 msgid "External Data Representation"
@@ -1715,20 +1715,20 @@ msgstr "协议"
 
 #: ../../library/pickle.rst:746
 msgid "persistent_id (pickle protocol)"
-msgstr ""
+msgstr "persistent_id (pickle 协议)"
 
 #: ../../library/pickle.rst:746
 msgid "persistent_load (pickle protocol)"
-msgstr ""
+msgstr "persistent_load (pickle 协议)"
 
 #: ../../library/pickle.rst:822
 msgid "__getstate__() (copy protocol)"
-msgstr ""
+msgstr "__getstate__() (copy 协议)"
 
 #: ../../library/pickle.rst:822
 msgid "__setstate__() (copy protocol)"
-msgstr ""
+msgstr "__setstate__() (copy 协议)"
 
 #: ../../library/pickle.rst:1067
 msgid "find_class() (pickle protocol)"
-msgstr ""
+msgstr "find_class() (pickle 协议)"

@@ -3222,11 +3222,11 @@ msgstr "NaN"
 
 #: ../../library/functions.rst:641
 msgid "Infinity"
-msgstr ""
+msgstr "Infinity"
 
 #: ../../library/functions.rst:706
 msgid "__format__"
-msgstr ""
+msgstr "__format__"
 
 #: ../../library/functions.rst:706 ../../library/functions.rst:1714
 msgid "string"
@@ -3234,7 +3234,7 @@ msgstr "string"
 
 #: ../../library/functions.rst:706
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (内置函数)"
 
 #: ../../library/functions.rst:1153
 msgid "file object"
@@ -3242,7 +3242,7 @@ msgstr "file object -- 文件对象"
 
 #: ../../library/functions.rst:1153 ../../library/functions.rst:1274
 msgid "open() built-in function"
-msgstr ""
+msgstr "open() 内置函数"
 
 #: ../../library/functions.rst:1181
 msgid "file"
@@ -3250,7 +3250,7 @@ msgstr "文件"
 
 #: ../../library/functions.rst:1181
 msgid "modes"
-msgstr ""
+msgstr "模式"
 
 #: ../../library/functions.rst:1274
 msgid "universal newlines"
@@ -3258,15 +3258,15 @@ msgstr "universal newlines -- 通用换行"
 
 #: ../../library/functions.rst:1335
 msgid "line-buffered I/O"
-msgstr ""
+msgstr "带行缓冲的 I/O"
 
 #: ../../library/functions.rst:1335
 msgid "unbuffered I/O"
-msgstr ""
+msgstr "不带缓冲的 I/O"
 
 #: ../../library/functions.rst:1335
 msgid "buffer size, I/O"
-msgstr ""
+msgstr "缓冲区大小, I/O"
 
 #: ../../library/functions.rst:1335
 msgid "I/O control"
@@ -3278,7 +3278,7 @@ msgstr "缓冲"
 
 #: ../../library/functions.rst:1335
 msgid "text mode"
-msgstr ""
+msgstr "文本模式"
 
 #: ../../library/functions.rst:1335 ../../library/functions.rst:1980
 msgid "module"
@@ -3290,7 +3290,7 @@ msgstr "sys"
 
 #: ../../library/functions.rst:1714
 msgid "str() (built-in function)"
-msgstr ""
+msgstr "str() (内置函数)"
 
 #: ../../library/functions.rst:1825
 msgid "object"

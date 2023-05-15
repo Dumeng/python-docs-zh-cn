@@ -1529,7 +1529,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:482
 msgid "return"
-msgstr ""
+msgstr "return"
 
 #: ../../reference/simple_stmts.rst:482 ../../reference/simple_stmts.rst:519
 #: ../../reference/simple_stmts.rst:519
@@ -1548,12 +1548,12 @@ msgstr "class"
 #: ../../reference/simple_stmts.rst:691 ../../reference/simple_stmts.rst:703
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:728
 msgid "keyword"
-msgstr ""
+msgstr "关键字"
 
 #: ../../reference/simple_stmts.rst:498 ../../reference/simple_stmts.rst:691
 #: ../../reference/simple_stmts.rst:703
 msgid "finally"
-msgstr ""
+msgstr "finally"
 
 #: ../../reference/simple_stmts.rst:519
 msgid "yield"
@@ -1602,7 +1602,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:669
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../reference/simple_stmts.rst:669 ../../reference/simple_stmts.rst:703
 msgid "for"
@@ -1610,11 +1610,11 @@ msgstr "for"
 
 #: ../../reference/simple_stmts.rst:669 ../../reference/simple_stmts.rst:703
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../reference/simple_stmts.rst:669 ../../reference/simple_stmts.rst:703
 msgid "loop"
-msgstr ""
+msgstr "循环"
 
 #: ../../reference/simple_stmts.rst:682
 msgid "else"
@@ -1626,7 +1626,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:703
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:831
 msgid "import"
@@ -1646,7 +1646,7 @@ msgstr "from"
 
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:770
 msgid "as"
-msgstr ""
+msgstr "as"
 
 #: ../../reference/simple_stmts.rst:728
 msgid "ImportError"

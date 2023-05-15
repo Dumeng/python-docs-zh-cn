@@ -5095,7 +5095,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1388
 msgid "format() (built-in function)"
-msgstr ""
+msgstr "format() (内置函数)"
 
 #: ../../reference/datamodel.rst:1388
 msgid "print() (built-in function)"
@@ -5200,7 +5200,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:2793
 msgid "with"
-msgstr ""
+msgstr "with"
 
 #: ../../reference/datamodel.rst:2793
 msgid "context manager"

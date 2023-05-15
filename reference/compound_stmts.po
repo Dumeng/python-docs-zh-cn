@@ -2121,11 +2121,11 @@ msgstr "if"
 #: ../../reference/compound_stmts.rst:1478
 #: ../../reference/compound_stmts.rst:1478
 msgid "keyword"
-msgstr ""
+msgstr "关键字"
 
 #: ../../reference/compound_stmts.rst:86
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:111
@@ -2148,30 +2148,30 @@ msgstr ": (冒号)"
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1367
 msgid "compound statement"
-msgstr ""
+msgstr "复合语句"
 
 #: ../../reference/compound_stmts.rst:111
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../reference/compound_stmts.rst:111
 #: ../../reference/compound_stmts.rst:144
 msgid "loop"
-msgstr ""
+msgstr "循环"
 
 #: ../../reference/compound_stmts.rst:129
 #: ../../reference/compound_stmts.rst:169
 #: ../../reference/compound_stmts.rst:391
 #: ../../reference/compound_stmts.rst:438
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../reference/compound_stmts.rst:129
 #: ../../reference/compound_stmts.rst:169
 #: ../../reference/compound_stmts.rst:391
 #: ../../reference/compound_stmts.rst:438
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../reference/compound_stmts.rst:144
 msgid "for"
@@ -2179,7 +2179,7 @@ msgstr "for"
 
 #: ../../reference/compound_stmts.rst:144
 msgid "in"
-msgstr ""
+msgstr "in"
 
 #: ../../reference/compound_stmts.rst:144
 msgid "target"
@@ -2207,7 +2207,7 @@ msgstr "内置函数"
 
 #: ../../reference/compound_stmts.rst:190
 msgid "range"
-msgstr ""
+msgstr "range"
 
 #: ../../reference/compound_stmts.rst:207
 msgid "try"
@@ -2220,7 +2220,7 @@ msgstr "except"
 #: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:409
 msgid "finally"
-msgstr ""
+msgstr "finally"
 
 #: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:266
@@ -2229,11 +2229,11 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:589
 #: ../../reference/compound_stmts.rst:589
 msgid "as"
-msgstr ""
+msgstr "as"
 
 #: ../../reference/compound_stmts.rst:266
 msgid "except clause"
-msgstr ""
+msgstr "except 子句"
 
 #: ../../reference/compound_stmts.rst:299
 msgid "module"
@@ -2249,21 +2249,21 @@ msgstr "traceback -- 回溯"
 
 #: ../../reference/compound_stmts.rst:328
 msgid "except_star"
-msgstr ""
+msgstr "except_star"
 
 #: ../../reference/compound_stmts.rst:391
 #: ../../reference/compound_stmts.rst:438
 msgid "return"
-msgstr ""
+msgstr "return"
 
 #: ../../reference/compound_stmts.rst:472
 msgid "with"
-msgstr ""
+msgstr "with"
 
 #: ../../reference/compound_stmts.rst:472
 #: ../../reference/compound_stmts.rst:472
 msgid "with statement"
-msgstr ""
+msgstr "with 语句"
 
 #: ../../reference/compound_stmts.rst:472
 #: ../../reference/compound_stmts.rst:1194
@@ -2274,24 +2274,24 @@ msgstr ", (逗号)"
 #: ../../reference/compound_stmts.rst:589
 #: ../../reference/compound_stmts.rst:589
 msgid "match"
-msgstr ""
+msgstr "match"
 
 #: ../../reference/compound_stmts.rst:589
 #: ../../reference/compound_stmts.rst:589
 msgid "case"
-msgstr ""
+msgstr "case"
 
 #: ../../reference/compound_stmts.rst:589
 msgid "pattern matching"
-msgstr ""
+msgstr "模式匹配"
 
 #: ../../reference/compound_stmts.rst:589
 msgid "match statement"
-msgstr ""
+msgstr "match 语句"
 
 #: ../../reference/compound_stmts.rst:693
 msgid "guard"
-msgstr ""
+msgstr "约束项"
 
 #: ../../reference/compound_stmts.rst:732
 msgid "irrefutable case block"

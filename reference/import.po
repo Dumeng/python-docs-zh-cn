@@ -1754,16 +1754,16 @@ msgstr "导入钩子"
 
 #: ../../reference/import.rst:249
 msgid "meta hooks"
-msgstr ""
+msgstr "元钩子"
 
 #: ../../reference/import.rst:249
 msgid "path hooks"
-msgstr ""
+msgstr "路径钩子"
 
 #: ../../reference/import.rst:249 ../../reference/import.rst:249
 #: ../../reference/import.rst:249
 msgid "hooks"
-msgstr ""
+msgstr "钩子"
 
 #: ../../reference/import.rst:249
 msgid "import"
@@ -1771,7 +1771,7 @@ msgstr "import"
 
 #: ../../reference/import.rst:249
 msgid "meta"
-msgstr ""
+msgstr "元数据"
 
 #: ../../reference/import.rst:249
 msgid "path"
@@ -1779,11 +1779,11 @@ msgstr "path"
 
 #: ../../reference/import.rst:276
 msgid "sys.meta_path"
-msgstr ""
+msgstr "sys.meta_path"
 
 #: ../../reference/import.rst:276
 msgid "find_spec"
-msgstr ""
+msgstr "find_spec"
 
 #: ../../reference/import.rst:727
 msgid "path based finder"
@@ -1791,16 +1791,16 @@ msgstr "path based finder -- 基于路径的查找器"
 
 #: ../../reference/import.rst:776
 msgid "sys.path"
-msgstr ""
+msgstr "sys.path"
 
 #: ../../reference/import.rst:776
 msgid "sys.path_hooks"
-msgstr ""
+msgstr "sys.path_hooks"
 
 #: ../../reference/import.rst:776
 msgid "sys.path_importer_cache"
-msgstr ""
+msgstr "sys.path_importer_cache"
 
 #: ../../reference/import.rst:776
 msgid "PYTHONPATH"
-msgstr ""
+msgstr "PYTHONPATH"

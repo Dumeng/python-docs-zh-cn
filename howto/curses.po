@@ -8,17 +8,17 @@
 # df2dc1c92e792f7ae8417c51df43db8f_594d92a <0f49be28017426edb1db1a2ab6e67088_717605>, 2021
 # ppcfish <ppcfish@gmail.com>, 2021
 # Siyuan Xu, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -143,6 +143,10 @@ msgid ""
 ":c:func:`!mvwaddstr` into a single :meth:`~curses.window.addstr` method.  "
 "You'll see this covered in more detail later."
 msgstr ""
+"此 Python 模块是对 curses 所提供的 C 函数的一个相当简单的包装器；如果你已经熟悉在 C 中进行 curses 编程，把这些知识转移到 "
+"Python 是非常容易的。 最大的差异在于 Python 接口通过将不同的 C 函数比如 :c:func:`!addstr`, "
+":c:func:`!mvaddstr` 和 :c:func:`!mvwaddstr` 合并为一个 "
+":meth:`~curses.window.addstr` 方法让事情变得更简单。 你将在稍后看到更详细的介绍。"
 
 #: ../../howto/curses.rst:74
 msgid ""
@@ -168,6 +172,9 @@ msgid ""
 "object representing the entire screen; this is usually called ``stdscr`` "
 "after the name of the corresponding C variable. ::"
 msgstr ""
+"在做任何事情之前，curses 必须被初始化。 这是通过调用 :func:`~curses.initscr` "
+"函数来完成的，它将确定终端的类型，向终端发送任何必须的设置代码，并创建多种内部数据结构。 如果执行成功，:func:`!initscr` "
+"将返回一个代表整个屏幕的窗口对象；它通常会按照对应的 C 变量被称为 ``stdscr``。 ::"
 
 #: ../../howto/curses.rst:94
 msgid ""

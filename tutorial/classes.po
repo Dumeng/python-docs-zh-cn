@@ -11,19 +11,19 @@
 # nick <2330458484@qq.com>, 2021
 # Hissy <aozora@live.cn>, 2021
 # jaystone776 <1732865113@qq.com>, 2022
-# 乐成 王, 2023
 # Bryan不可思议, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# 乐成 王, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: 乐成 王, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -210,8 +210,7 @@ msgid ""
 " describe what actually happens.)  Of course, recursive invocations each "
 "have their own local namespace."
 msgstr ""
-"函数的本地命名空间在调用该函数时创建，并在函数返回或抛出不在函数内部处理的错误时被删除。 （实际上，用“遗忘”来描述实际发生的情况会更好一些。） "
-"当然，每次递归调用都会有自己的本地命名空间。"
+"函数的局部命名空间在调用该函数时被创建，并在函数返回，或抛出未在函数内处理的异常时被删除。（实际上，用“遗忘”来描述实际发生的情况会更好一些。）当然，每次递归调用都会有自己的局部命名空间。"
 
 #: ../../tutorial/classes.rst:112
 msgid ""
@@ -219,8 +218,8 @@ msgid ""
 "directly accessible.  \"Directly accessible\" here means that an unqualified"
 " reference to a name attempts to find the name in the namespace."
 msgstr ""
-"一个命名空间的 **作用域** 是一段 Python "
-"程序的文本区域，从这个区域可直接访问该命名空间。“可直接访问”的意思是，该文本区域内的名称在被非限定引用时，查找名称的范围，是包括该命名空间在内的。"
+"一个命名空间的 *作用域* 是 Python "
+"代码中的一段文本区域，从这个区域可直接访问该命名空间。“可直接访问”的意思是，该文本区域内的名称在被非限定引用时，查找名称的范围，是包括该命名空间在内的。"
 
 #: ../../tutorial/classes.rst:116
 msgid ""
@@ -237,7 +236,7 @@ msgstr "最内层作用域，包含局部名称，并首先在其中进行搜索
 msgid ""
 "the scopes of any enclosing functions, which are searched starting with the "
 "nearest enclosing scope, contain non-local, but also non-global names"
-msgstr "任何闭包函数的作用域，都是从最靠内层的作用域开始逐层搜索的，包含“非局部、非全局”名称。"
+msgstr "外层闭包函数的作用域，包含“非局部、非全局”的名称，从最靠内层的作用域开始，逐层搜索。"
 
 #: ../../tutorial/classes.rst:123
 msgid "the next-to-last scope contains the current module's global names"

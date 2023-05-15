@@ -2626,7 +2626,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:28
 msgid "conversion"
-msgstr ""
+msgstr "conversion"
 
 #: ../../reference/expressions.rst:51
 msgid "atom"
@@ -2707,7 +2707,7 @@ msgstr ""
 #: ../../reference/expressions.rst:133 ../../reference/expressions.rst:362
 #: ../../reference/expressions.rst:941
 msgid "() (parentheses)"
-msgstr ""
+msgstr "() (圆括号)"
 
 #: ../../reference/expressions.rst:133
 msgid "tuple display"
@@ -2749,7 +2749,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:177 ../../reference/expressions.rst:1782
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../reference/expressions.rst:177
 msgid "async for"
@@ -2934,7 +2934,7 @@ msgstr "module"
 
 #: ../../reference/expressions.rst:820 ../../reference/expressions.rst:820
 msgid "subscription"
-msgstr ""
+msgstr "下标"
 
 #: ../../reference/expressions.rst:824 ../../reference/expressions.rst:824
 #: ../../reference/expressions.rst:897 ../../reference/expressions.rst:1660
@@ -2961,7 +2961,7 @@ msgstr "字符"
 #: ../../reference/expressions.rst:891 ../../reference/expressions.rst:891
 #: ../../reference/expressions.rst:891
 msgid "slicing"
-msgstr ""
+msgstr "切片"
 
 #: ../../reference/expressions.rst:891
 msgid "slice"
@@ -3355,7 +3355,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1782
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../reference/expressions.rst:1808 ../../reference/expressions.rst:1808
 msgid "lambda"

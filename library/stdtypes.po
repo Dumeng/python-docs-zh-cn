@@ -6943,7 +6943,7 @@ msgstr "statement -- 语句"
 
 #: ../../library/stdtypes.rst:34
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../library/stdtypes.rst:34
 msgid "while"
@@ -7430,7 +7430,7 @@ msgstr "type"
 
 #: ../../library/stdtypes.rst:1111 ../../library/stdtypes.rst:1111
 msgid "assignment"
-msgstr ""
+msgstr "赋值"
 
 #: ../../library/stdtypes.rst:1111 ../../library/stdtypes.rst:4369
 msgid "del"
@@ -7550,7 +7550,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:2299 ../../library/stdtypes.rst:3517
 msgid "() (parentheses)"
-msgstr ""
+msgstr "() (圆括号)"
 
 #: ../../library/stdtypes.rst:2299 ../../library/stdtypes.rst:2299
 #: ../../library/stdtypes.rst:2299 ../../library/stdtypes.rst:2342

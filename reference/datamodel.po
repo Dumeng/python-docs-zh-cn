@@ -4450,11 +4450,11 @@ msgstr ""
 #: ../../reference/datamodel.rst:269 ../../reference/datamodel.rst:352
 #: ../../reference/datamodel.rst:420
 msgid "subscription"
-msgstr ""
+msgstr "下标"
 
 #: ../../reference/datamodel.rst:281 ../../reference/datamodel.rst:352
 msgid "slicing"
-msgstr ""
+msgstr "切片"
 
 #: ../../reference/datamodel.rst:295
 msgid "immutable sequence"
@@ -4521,7 +4521,7 @@ msgstr "mutable -- 可变对象"
 #: ../../reference/datamodel.rst:352 ../../reference/datamodel.rst:824
 #: ../../reference/datamodel.rst:887
 msgid "assignment"
-msgstr ""
+msgstr "赋值"
 
 #: ../../reference/datamodel.rst:352 ../../reference/datamodel.rst:729
 #: ../../reference/datamodel.rst:1149 ../../reference/datamodel.rst:1309
@@ -5070,7 +5070,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1309
 msgid "destructor"
-msgstr ""
+msgstr "destructor"
 
 #: ../../reference/datamodel.rst:1309
 msgid "finalizer"
@@ -5107,7 +5107,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1418
 msgid "conversion"
-msgstr ""
+msgstr "conversion"
 
 #: ../../reference/datamodel.rst:1418
 msgid "print"

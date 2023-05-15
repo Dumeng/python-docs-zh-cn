@@ -372,6 +372,8 @@ msgid ""
 "only one exception is raised from an :keyword:`!except*` clause, this "
 "exception is no longer wrapped to form a new :exc:`ExceptionGroup`."
 msgstr ""
+"从 3.11.4 版开始，当整个 :exc:`ExceptionGroup` 已被处理而 :keyword:`!except*` "
+"子句只引发了一个异常时，将不会再将该异常包装为新的 :exc:`ExceptionGroup`。"
 
 #: ../../reference/compound_stmts.rst:372
 msgid ""
@@ -2066,11 +2068,11 @@ msgstr "statement -- 语句"
 
 #: ../../reference/compound_stmts.rst:21
 msgid "clause"
-msgstr ""
+msgstr "clause"
 
 #: ../../reference/compound_stmts.rst:21
 msgid "suite"
-msgstr ""
+msgstr "suite"
 
 #: ../../reference/compound_stmts.rst:21
 msgid "; (semicolon)"
@@ -2078,15 +2080,15 @@ msgstr "; (分号)"
 
 #: ../../reference/compound_stmts.rst:64
 msgid "NEWLINE token"
-msgstr ""
+msgstr "NEWLINE 形符"
 
 #: ../../reference/compound_stmts.rst:64
 msgid "DEDENT token"
-msgstr ""
+msgstr "DEDENT 形符"
 
 #: ../../reference/compound_stmts.rst:64
 msgid "dangling"
-msgstr ""
+msgstr "dangling"
 
 #: ../../reference/compound_stmts.rst:64 ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:111
@@ -2094,12 +2096,12 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:207
 #: ../../reference/compound_stmts.rst:391
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:589
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../reference/compound_stmts.rst:86 ../../reference/compound_stmts.rst:86
 #: ../../reference/compound_stmts.rst:111
@@ -2181,7 +2183,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:144
 msgid "target"
-msgstr ""
+msgstr "target"
 
 #: ../../reference/compound_stmts.rst:144
 msgid "list"
@@ -2362,7 +2364,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1367
 msgid "() (parentheses)"
-msgstr ""
+msgstr "() (圆括号)"
 
 #: ../../reference/compound_stmts.rst:1194
 msgid "parameter list"

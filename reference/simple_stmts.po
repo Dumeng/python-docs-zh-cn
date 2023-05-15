@@ -1210,7 +1210,7 @@ msgstr "有关 :keyword:`nonlocal` 语句的规范说明。"
 
 #: ../../reference/simple_stmts.rst:8
 msgid "simple"
-msgstr ""
+msgstr "simple"
 
 #: ../../reference/simple_stmts.rst:8 ../../reference/simple_stmts.rst:38
 #: ../../reference/simple_stmts.rst:74 ../../reference/simple_stmts.rst:262
@@ -1264,11 +1264,11 @@ msgstr "string"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "conversion"
-msgstr ""
+msgstr "conversion"
 
 #: ../../reference/simple_stmts.rst:55 ../../reference/simple_stmts.rst:55
 msgid "output"
-msgstr ""
+msgstr "output"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "standard"
@@ -1276,7 +1276,7 @@ msgstr "标准"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "writing"
-msgstr ""
+msgstr "writing"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "values"
@@ -1284,7 +1284,7 @@ msgstr "values"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "procedure"
-msgstr ""
+msgstr "procedure"
 
 #: ../../reference/simple_stmts.rst:55
 msgid "call"
@@ -1296,14 +1296,14 @@ msgstr "= (等于号)"
 
 #: ../../reference/simple_stmts.rst:74
 msgid "assignment statement"
-msgstr ""
+msgstr "赋值语句"
 
 #: ../../reference/simple_stmts.rst:74 ../../reference/simple_stmts.rst:74
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:158
 #: ../../reference/simple_stmts.rst:186 ../../reference/simple_stmts.rst:219
 #: ../../reference/simple_stmts.rst:262 ../../reference/simple_stmts.rst:321
 msgid "assignment"
-msgstr ""
+msgstr "赋值"
 
 #: ../../reference/simple_stmts.rst:74 ../../reference/simple_stmts.rst:728
 #: ../../reference/simple_stmts.rst:783 ../../reference/simple_stmts.rst:944
@@ -1318,7 +1318,7 @@ msgstr "name"
 
 #: ../../reference/simple_stmts.rst:74
 msgid "rebinding"
-msgstr ""
+msgstr "重新绑定"
 
 #: ../../reference/simple_stmts.rst:74 ../../reference/simple_stmts.rst:186
 msgid "mutable"
@@ -1333,7 +1333,7 @@ msgstr "attribute -- 属性"
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:443
 #: ../../reference/simple_stmts.rst:443 ../../reference/simple_stmts.rst:682
 msgid "target"
-msgstr ""
+msgstr "target"
 
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:378
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:944
@@ -1343,7 +1343,7 @@ msgstr ", (逗号)"
 
 #: ../../reference/simple_stmts.rst:115
 msgid "in target list"
-msgstr ""
+msgstr "在目标列表中"
 
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:809
 msgid "* (asterisk)"
@@ -1352,7 +1352,7 @@ msgstr "* (星号)"
 #: ../../reference/simple_stmts.rst:115 ../../reference/simple_stmts.rst:115
 #: ../../reference/simple_stmts.rst:115
 msgid "in assignment target list"
-msgstr ""
+msgstr "在赋值目标列表中"
 
 #: ../../reference/simple_stmts.rst:115
 msgid "[] (square brackets)"
@@ -1360,15 +1360,15 @@ msgstr "[] (方括号)"
 
 #: ../../reference/simple_stmts.rst:115
 msgid "() (parentheses)"
-msgstr ""
+msgstr "() (圆括号)"
 
 #: ../../reference/simple_stmts.rst:152
 msgid "destructor"
-msgstr ""
+msgstr "destructor"
 
 #: ../../reference/simple_stmts.rst:186
 msgid "subscription"
-msgstr ""
+msgstr "下标"
 
 #: ../../reference/simple_stmts.rst:195
 msgid "sequence"
@@ -1384,11 +1384,11 @@ msgstr "dictionary -- 字典"
 
 #: ../../reference/simple_stmts.rst:219
 msgid "slicing"
-msgstr ""
+msgstr "切片"
 
 #: ../../reference/simple_stmts.rst:262
 msgid "augmented"
-msgstr ""
+msgstr "增强"
 
 #: ../../reference/simple_stmts.rst:262
 msgid "assignment, augmented"
@@ -1618,7 +1618,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:682
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../reference/simple_stmts.rst:682
 msgid "loop control"

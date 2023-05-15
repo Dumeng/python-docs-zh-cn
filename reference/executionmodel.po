@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -415,7 +415,7 @@ msgstr "出现这样的限制是由于通过这些操作执行的代码在模块
 
 #: ../../reference/executionmodel.rst:8
 msgid "execution model"
-msgstr ""
+msgstr "执行模型"
 
 #: ../../reference/executionmodel.rst:8
 msgid "code"
@@ -423,12 +423,12 @@ msgstr "code -- 代码"
 
 #: ../../reference/executionmodel.rst:8 ../../reference/executionmodel.rst:17
 msgid "block"
-msgstr ""
+msgstr "block"
 
 #: ../../reference/executionmodel.rst:31
 #: ../../reference/executionmodel.rst:179
 msgid "execution"
-msgstr ""
+msgstr "执行"
 
 #: ../../reference/executionmodel.rst:31
 msgid "frame"
@@ -441,7 +441,7 @@ msgstr "namespace -- 命名空间"
 #: ../../reference/executionmodel.rst:42
 #: ../../reference/executionmodel.rst:101
 msgid "scope"
-msgstr ""
+msgstr "作用域"
 
 #: ../../reference/executionmodel.rst:51 ../../reference/executionmodel.rst:51
 msgid "name"
@@ -449,7 +449,7 @@ msgstr "name"
 
 #: ../../reference/executionmodel.rst:51
 msgid "binding"
-msgstr ""
+msgstr "绑定"
 
 #: ../../reference/executionmodel.rst:57
 msgid "from"
@@ -457,11 +457,11 @@ msgstr "from"
 
 #: ../../reference/executionmodel.rst:57
 msgid "import statement"
-msgstr ""
+msgstr "import 语句"
 
 #: ../../reference/executionmodel.rst:85
 msgid "free"
-msgstr ""
+msgstr "free"
 
 #: ../../reference/executionmodel.rst:85
 msgid "variable"
@@ -469,15 +469,15 @@ msgstr "variable"
 
 #: ../../reference/executionmodel.rst:109
 msgid "environment"
-msgstr ""
+msgstr "环境"
 
 #: ../../reference/executionmodel.rst:115
 msgid "NameError (built-in exception)"
-msgstr ""
+msgstr "NameError (内置异常)"
 
 #: ../../reference/executionmodel.rst:115
 msgid "UnboundLocalError"
-msgstr ""
+msgstr "UnboundLocalError"
 
 #: ../../reference/executionmodel.rst:154
 msgid "module"
@@ -489,36 +489,36 @@ msgstr "__main__"
 
 #: ../../reference/executionmodel.rst:179
 msgid "restricted"
-msgstr ""
+msgstr "restricted"
 
 #: ../../reference/executionmodel.rst:226
 msgid "exception"
-msgstr ""
+msgstr "异常"
 
 #: ../../reference/executionmodel.rst:228
 msgid "raise an exception"
-msgstr ""
+msgstr "引发异常"
 
 #: ../../reference/executionmodel.rst:228
 msgid "handle an exception"
-msgstr ""
+msgstr "处理异常"
 
 #: ../../reference/executionmodel.rst:228
 msgid "exception handler"
-msgstr ""
+msgstr "异常处理句柄"
 
 #: ../../reference/executionmodel.rst:228
 msgid "errors"
-msgstr ""
+msgstr "错误"
 
 #: ../../reference/executionmodel.rst:228
 msgid "error handling"
-msgstr ""
+msgstr "错误处理"
 
 #: ../../reference/executionmodel.rst:249
 msgid "termination model"
-msgstr ""
+msgstr "终结模型termination model"
 
 #: ../../reference/executionmodel.rst:256
 msgid "SystemExit (built-in exception)"
-msgstr ""
+msgstr "SystemExit (内置异常)"

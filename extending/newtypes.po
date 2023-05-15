@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -774,27 +774,27 @@ msgstr "object -- 对象"
 
 #: ../../extending/newtypes.rst:56
 msgid "deallocation"
-msgstr ""
+msgstr "撤销分配"
 
 #: ../../extending/newtypes.rst:56
 msgid "deallocation, object"
-msgstr ""
+msgstr "撤销分配，对象"
 
 #: ../../extending/newtypes.rst:56
 msgid "finalization"
-msgstr ""
+msgstr "最终化"
 
 #: ../../extending/newtypes.rst:56
 msgid "finalization, of objects"
-msgstr ""
+msgstr "最终化，对象"
 
 #: ../../extending/newtypes.rst:91
 msgid "PyErr_Fetch()"
-msgstr ""
+msgstr "PyErr_Fetch()"
 
 #: ../../extending/newtypes.rst:91
 msgid "PyErr_Restore()"
-msgstr ""
+msgstr "PyErr_Restore()"
 
 #: ../../extending/newtypes.rst:150
 msgid "string"
@@ -802,7 +802,7 @@ msgstr "string"
 
 #: ../../extending/newtypes.rst:150
 msgid "object representation"
-msgstr ""
+msgstr "对象的表示"
 
 #: ../../extending/newtypes.rst:150
 msgid "built-in function"
@@ -814,20 +814,20 @@ msgstr "repr"
 
 #: ../../extending/newtypes.rst:313
 msgid "READONLY"
-msgstr ""
+msgstr "READONLY"
 
 #: ../../extending/newtypes.rst:313
 msgid "READ_RESTRICTED"
-msgstr ""
+msgstr "READ_RESTRICTED"
 
 #: ../../extending/newtypes.rst:313
 msgid "WRITE_RESTRICTED"
-msgstr ""
+msgstr "WRITE_RESTRICTED"
 
 #: ../../extending/newtypes.rst:313
 msgid "RESTRICTED"
-msgstr ""
+msgstr "RESTRICTED"
 
 #: ../../extending/newtypes.rst:313
 msgid "PY_AUDIT_READ"
-msgstr ""
+msgstr "PY_AUDIT_READ"

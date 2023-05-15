@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -3202,7 +3202,7 @@ msgstr "解析器只接受 Unix 风格的行结束符。如果您从文件中读
 
 #: ../../library/functions.rst:152
 msgid "Boolean"
-msgstr ""
+msgstr "布尔值"
 
 #: ../../library/functions.rst:152 ../../library/functions.rst:1825
 msgid "type"
@@ -3214,11 +3214,11 @@ msgstr "内置函数"
 
 #: ../../library/functions.rst:564
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../library/functions.rst:641
 msgid "NaN"
-msgstr ""
+msgstr "NaN"
 
 #: ../../library/functions.rst:641
 msgid "Infinity"

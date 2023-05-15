@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1713,7 +1713,7 @@ msgstr ""
 
 #: ../../reference/import.rst:8
 msgid "import machinery"
-msgstr ""
+msgstr "导入机制"
 
 #: ../../reference/import.rst:64 ../../reference/import.rst:95
 #: ../../reference/import.rst:129 ../../reference/import.rst:129
@@ -1722,7 +1722,7 @@ msgstr "包"
 
 #: ../../reference/import.rst:95
 msgid "regular"
-msgstr ""
+msgstr "常规"
 
 #: ../../reference/import.rst:129
 msgid "namespace"
@@ -1734,7 +1734,7 @@ msgstr "portion -- 部分"
 
 #: ../../reference/import.rst:175
 msgid "sys.modules"
-msgstr ""
+msgstr "sys.modules"
 
 #: ../../reference/import.rst:210 ../../reference/import.rst:276
 msgid "finder"
@@ -1750,7 +1750,7 @@ msgstr "module spec -- 模块规格"
 
 #: ../../reference/import.rst:249
 msgid "import hooks"
-msgstr ""
+msgstr "导入钩子"
 
 #: ../../reference/import.rst:249
 msgid "meta hooks"

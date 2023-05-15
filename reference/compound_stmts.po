@@ -2074,7 +2074,7 @@ msgstr ""
 
 #: ../../reference/compound_stmts.rst:21
 msgid "; (semicolon)"
-msgstr ""
+msgstr "; (分号)"
 
 #: ../../reference/compound_stmts.rst:64
 msgid "NEWLINE token"
@@ -2267,7 +2267,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1367
 msgid ", (comma)"
-msgstr ""
+msgstr ", (逗号)"
 
 #: ../../reference/compound_stmts.rst:589
 #: ../../reference/compound_stmts.rst:589
@@ -2353,7 +2353,7 @@ msgstr "name"
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1367
 msgid "binding"
-msgstr ""
+msgstr "绑定"
 
 #: ../../reference/compound_stmts.rst:1194
 msgid "user-defined function"
@@ -2371,7 +2371,7 @@ msgstr ""
 #: ../../reference/compound_stmts.rst:1235
 #: ../../reference/compound_stmts.rst:1417
 msgid "@ (at)"
-msgstr ""
+msgstr "@ (at)"
 
 #: ../../reference/compound_stmts.rst:1261
 msgid "default"
@@ -2391,7 +2391,7 @@ msgstr "= (等于号)"
 
 #: ../../reference/compound_stmts.rst:1290
 msgid "/ (slash)"
-msgstr ""
+msgstr "/ (斜杠)"
 
 #: ../../reference/compound_stmts.rst:1290
 msgid "* (asterisk)"
@@ -2431,7 +2431,7 @@ msgstr "class"
 
 #: ../../reference/compound_stmts.rst:1367
 msgid "execution"
-msgstr ""
+msgstr "执行"
 
 #: ../../reference/compound_stmts.rst:1367
 msgid "frame"

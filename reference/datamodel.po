@@ -4399,7 +4399,7 @@ msgstr "integer"
 
 #: ../../reference/datamodel.rst:227
 msgid "Boolean"
-msgstr ""
+msgstr "布尔值"
 
 #: ../../reference/datamodel.rst:227
 msgid "False"
@@ -4978,7 +4978,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1117
 msgid "exception"
-msgstr ""
+msgstr "异常"
 
 #: ../../reference/datamodel.rst:1117
 msgid "handler"
@@ -4986,7 +4986,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:1117
 msgid "execution"
-msgstr ""
+msgstr "执行"
 
 #: ../../reference/datamodel.rst:1117
 msgid "exc_info (in module sys)"

@@ -6960,7 +6960,7 @@ msgstr "value"
 #: ../../library/stdtypes.rst:34 ../../library/stdtypes.rst:80
 #: ../../library/stdtypes.rst:207 ../../library/stdtypes.rst:5390
 msgid "Boolean"
-msgstr ""
+msgstr "布尔值"
 
 #: ../../library/stdtypes.rst:34 ../../library/stdtypes.rst:80
 #: ../../library/stdtypes.rst:390 ../../library/stdtypes.rst:390
@@ -7222,7 +7222,7 @@ msgstr "* (星号)"
 
 #: ../../library/stdtypes.rst:245
 msgid "/ (slash)"
-msgstr ""
+msgstr "/ (斜杠)"
 
 #: ../../library/stdtypes.rst:245
 msgid "//"
@@ -7690,7 +7690,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:5311
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../library/stdtypes.rst:5311
 msgid "eval"

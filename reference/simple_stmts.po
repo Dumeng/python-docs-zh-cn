@@ -1308,7 +1308,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:74 ../../reference/simple_stmts.rst:728
 #: ../../reference/simple_stmts.rst:783 ../../reference/simple_stmts.rst:944
 msgid "binding"
-msgstr ""
+msgstr "绑定"
 
 #: ../../reference/simple_stmts.rst:74 ../../reference/simple_stmts.rst:74
 #: ../../reference/simple_stmts.rst:456 ../../reference/simple_stmts.rst:728
@@ -1339,7 +1339,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:944
 #: ../../reference/simple_stmts.rst:991
 msgid ", (comma)"
-msgstr ""
+msgstr ", (逗号)"
 
 #: ../../reference/simple_stmts.rst:115
 msgid "in target list"
@@ -1491,7 +1491,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:555 ../../reference/simple_stmts.rst:555
 #: ../../reference/simple_stmts.rst:587 ../../reference/simple_stmts.rst:728
 msgid "exception"
-msgstr ""
+msgstr "异常"
 
 #: ../../reference/simple_stmts.rst:399
 msgid "AssertionError"
@@ -1655,7 +1655,7 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:770
 #: ../../reference/simple_stmts.rst:783 ../../reference/simple_stmts.rst:809
 msgid "import statement"
-msgstr ""
+msgstr "import 语句statement"
 
 #: ../../reference/simple_stmts.rst:815
 msgid "__all__ (optional module attribute)"
@@ -1683,7 +1683,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:972
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 #: ../../reference/simple_stmts.rst:972
 msgid "eval"

@@ -2646,7 +2646,7 @@ msgstr ""
 #: ../../reference/expressions.rst:1233 ../../reference/expressions.rst:1279
 #: ../../reference/expressions.rst:1369
 msgid "exception"
-msgstr ""
+msgstr "异常"
 
 #: ../../reference/expressions.rst:74
 msgid "NameError"
@@ -2731,7 +2731,7 @@ msgstr ""
 #: ../../reference/expressions.rst:891 ../../reference/expressions.rst:941
 #: ../../reference/expressions.rst:1836
 msgid ", (comma)"
-msgstr ""
+msgstr ", (逗号)"
 
 #: ../../reference/expressions.rst:167 ../../reference/expressions.rst:244
 #: ../../reference/expressions.rst:270 ../../reference/expressions.rst:298
@@ -3142,7 +3142,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1244 ../../reference/expressions.rst:1380
 msgid "binary"
-msgstr ""
+msgstr "二进制"
 
 #: ../../reference/expressions.rst:1257
 msgid "multiplication"
@@ -3154,7 +3154,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1270
 msgid "@ (at)"
-msgstr ""
+msgstr "@ (at)"
 
 #: ../../reference/expressions.rst:1279
 msgid "ZeroDivisionError"
@@ -3166,7 +3166,7 @@ msgstr "division"
 
 #: ../../reference/expressions.rst:1279
 msgid "/ (slash)"
-msgstr ""
+msgstr "/ (斜杠)"
 
 #: ../../reference/expressions.rst:1279
 msgid "//"
@@ -3319,7 +3319,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1695
 msgid "Boolean"
-msgstr ""
+msgstr "布尔值"
 
 #: ../../reference/expressions.rst:1711
 msgid "not"

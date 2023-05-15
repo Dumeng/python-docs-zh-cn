@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -988,19 +988,19 @@ msgstr "type"
 
 #: ../../c-api/intro.rst:301
 msgid "Py_INCREF()"
-msgstr ""
+msgstr "Py_INCREF()"
 
 #: ../../c-api/intro.rst:301
 msgid "Py_DECREF()"
-msgstr ""
+msgstr "Py_DECREF()"
 
 #: ../../c-api/intro.rst:372
 msgid "PyList_SetItem()"
-msgstr ""
+msgstr "PyList_SetItem()"
 
 #: ../../c-api/intro.rst:372
 msgid "PyTuple_SetItem()"
-msgstr ""
+msgstr "PyTuple_SetItem()"
 
 #: ../../c-api/intro.rst:443
 msgid "set_all()"

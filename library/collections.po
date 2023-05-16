@@ -11,18 +11,18 @@
 # Jian Aijun <jianaijun@gmail.com>, 2021
 # dannyvi <dannyvis@icloud.com>, 2021
 # Jiuh-star <jiuh.star@gmail.com>, 2022
-# 乐成 王, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# 乐成 王, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-12 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: 乐成 王, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,8 +43,8 @@ msgid ""
 "alternatives to Python's general purpose built-in containers, :class:`dict`,"
 " :class:`list`, :class:`set`, and :class:`tuple`."
 msgstr ""
-"这个模块实现了特定目标的容器，以提供Python标准内建容器  :class:`dict` , :class:`list` , :class:`set`"
-" , 和 :class:`tuple` 的替代选择。"
+"这个模块实现了一些专门化的容器，提供了对 Python 的通用内建容器 :class:`dict`、:class:`list`、:class:`set`"
+" 和 :class:`tuple` 的补充。"
 
 #: ../../library/collections.rst:25
 msgid ":func:`namedtuple`"
@@ -232,7 +232,7 @@ msgstr "注意，一个 :class:`ChainMap()` 的迭代顺序是通过从后往前
 msgid ""
 "This gives the same ordering as a series of :meth:`dict.update` calls "
 "starting with the last mapping::"
-msgstr "下面的 :meth:`dict.update` 给出了与上面从最后一个映射开始调用序列相同的顺序::"
+msgstr "使得顺序与从最后一个映射开始调用一系列 :meth:`dict.update` 得到的字典的迭代顺序相同："
 
 #: ../../library/collections.rst:118
 msgid "Added support for ``|`` and ``|=`` operators, specified in :pep:`584`."

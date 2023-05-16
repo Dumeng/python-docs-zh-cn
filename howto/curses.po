@@ -249,6 +249,10 @@ msgid ""
 "be left in a funny state on exception and you'll be able to read the "
 "exception's message and traceback."
 msgstr ""
+":func:`~curses.wrapper` 函数接受一个可调用对象并进行上述的初始化过程，如果终端支持彩色还会初始化颜色。 接下来 "
+":func:`!wrapper` 会运行你提供的可调用对象。 当该可调用对象返回时，:func:`!wrapper` 将恢复终端的初始状态。 "
+"该可调用对象会在 :keyword:`try`...\\ :keyword:`except` 再被调用以捕获异常，恢复终端状态，然后重新引发该异常。 "
+"这样你的终端将不会在发生异常时处于不正常状态，你将能够读取异常的消息和回溯。"
 
 #: ../../howto/curses.rst:166
 msgid "Windows and Pads"

@@ -320,6 +320,9 @@ msgid ""
 "window and then clears the window, there's no need to send the original text"
 " because they're never visible."
 msgstr ""
+"这是因为 curses 最初是针对 300 波特的龟速终端连接编写的；在这些终端上，减少重绘屏幕的时间非常重要。 相应地当你调用 "
+":meth:`!refresh` 时 curses 会累积对屏幕的修改并以最高效的方式显示它们。 "
+"打个比方，如果你的程序在某个窗口内显示一些文本然后清空了该窗口，那么就没有必要发送这些原始文本因为它们从来都不可见。"
 
 #: ../../howto/curses.rst:210
 msgid ""

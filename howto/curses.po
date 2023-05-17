@@ -385,6 +385,7 @@ msgid ""
 "Instead you can call :meth:`!noutrefresh` on a number of windows to update "
 "the data structure, and then call :func:`!doupdate` to update the screen."
 msgstr ""
+"你可以改为在多个窗口上调用 :meth:`!noutrefresh` 来更新该数据结构，然后调用 :func:`!doupdate` 来更新屏幕。"
 
 #: ../../howto/curses.rst:262
 msgid "Displaying Text"
@@ -401,6 +402,10 @@ msgid ""
 "default. :c:func:`!mvwaddstr` allows specifying both a window and a "
 "coordinate."
 msgstr ""
+"从一名 C 程序员的视角来看，curses 有时看起来就像是一堆函数组成的迷宫，每个都有细微的差异。 举个例子，:c:func:`!addstr` 是在"
+" ``stdscr`` 窗口的当前光标位置显示一个字符串，而 :c:func:`!mvaddstr` 则是在显示字符串之前先移动到给定的 y,x 坐标。"
+" :c:func:`!waddstr` 与 :c:func:`!addstr` 很像，但允许指定一个要使用的窗口而不是默认使用 ``stdscr``。 "
+":c:func:`!mvwaddstr` 允许同时指定一个窗口和一个坐标。"
 
 #: ../../howto/curses.rst:273
 msgid ""
@@ -471,6 +476,9 @@ msgid ""
 "window's :attr:`~window.encoding` attribute; this defaults to the default "
 "system encoding as returned by :func:`locale.getencoding`."
 msgstr ""
+":meth:`~curses.window.addstr` 方法接受一个 Python 字符串或字节串作为要显示的值。 字节串的内容会被原样发送到终端。"
+" 字符串会使用窗口的 :attr:`~window.encoding` 属性值指定的编码格式编码为字节串；该值默认为 "
+":func:`locale.getencoding` 所返回的系统编码格式。"
 
 #: ../../howto/curses.rst:306
 msgid ""
@@ -742,6 +750,11 @@ msgid ""
 "specified delay (measured in tenths of a second), curses raises an "
 "exception."
 msgstr ""
+"使用 :meth:`~curses.window.nodelay` 窗口方法可以不等待用户操作。 在 ``nodelay(True)`` "
+"之后，窗口的:meth:`!getch` 和 :meth:`!getkey` 将成为非阻塞的。 为表明输入未就绪，:meth:`!getch` 会返回 "
+"``curses.ERR`` (值为 -1) 并且 :meth:`!getkey` 会引发异常。 此外还有 "
+":func:`~curses.halfdelay` 函数，它可被用来 (实际地) 在每个 :meth:`!getch` "
+"上设置一个计时器；如果在指定的延迟内 (以十分之一秒为单位) 输入还不可用，curses 将引发异常。"
 
 #: ../../howto/curses.rst:457
 msgid ""
@@ -752,6 +765,10 @@ msgid ""
 ":const:`curses.KEY_HOME`, or :const:`curses.KEY_LEFT`.  The main loop of "
 "your program may look something like this::"
 msgstr ""
+":meth:`!getch` 方法返回一个整数；如果其值在 0 到 255 之间，它代表所按的键的 ASCII 码。 大于 255 的值为特殊键例如 "
+"Page Up, Home 或方向键等。 你可以将返回的值与 :const:`curses.KEY_PPAGE`, "
+":const:`curses.KEY_HOME` 或 :const:`curses.KEY_LEFT` 等常量做比较。 "
+"你的程序的主循环看起来可能会像这样::"
 
 #: ../../howto/curses.rst:473
 msgid ""

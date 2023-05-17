@@ -4600,7 +4600,7 @@ msgstr ""
 
 #: ../../reference/datamodel.rst:477
 msgid "user-defined function"
-msgstr ""
+msgstr "用户自定义函数"
 
 #: ../../reference/datamodel.rst:491
 msgid "__doc__ (function attribute)"
@@ -5147,7 +5147,7 @@ msgstr "= (等于号)"
 
 #: ../../reference/datamodel.rst:2050
 msgid "class definition"
-msgstr ""
+msgstr "类定义"
 
 #: ../../reference/datamodel.rst:2110
 msgid "metaclass hint"

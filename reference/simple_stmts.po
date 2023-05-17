@@ -1481,7 +1481,7 @@ msgstr ""
 
 #: ../../reference/simple_stmts.rst:378
 msgid "expression list"
-msgstr ""
+msgstr "表达式列表"
 
 #: ../../reference/simple_stmts.rst:399
 msgid "__debug__"
@@ -1538,7 +1538,7 @@ msgstr "function -- 函数"
 
 #: ../../reference/simple_stmts.rst:482 ../../reference/simple_stmts.rst:482
 msgid "definition"
-msgstr ""
+msgstr "定义"
 
 #: ../../reference/simple_stmts.rst:482
 msgid "class"

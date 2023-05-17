@@ -2295,19 +2295,19 @@ msgstr "约束项"
 
 #: ../../reference/compound_stmts.rst:732
 msgid "irrefutable case block"
-msgstr ""
+msgstr "必须匹配的 case 块"
 
 #: ../../reference/compound_stmts.rst:732
 msgid "case block"
-msgstr ""
+msgstr "case 块"
 
 #: ../../reference/compound_stmts.rst:756
 msgid "! patterns"
-msgstr ""
+msgstr "! 模式"
 
 #: ../../reference/compound_stmts.rst:756
 msgid "AS pattern, OR pattern, capture pattern, wildcard pattern"
-msgstr ""
+msgstr "AS 模式, OR 模式, 捕获模式, 通配符模式"
 
 #: ../../reference/compound_stmts.rst:1185
 #: ../../reference/compound_stmts.rst:1261
@@ -2323,11 +2323,11 @@ msgstr "parameter -- 形参"
 #: ../../reference/compound_stmts.rst:1290
 #: ../../reference/compound_stmts.rst:1290
 msgid "function definition"
-msgstr ""
+msgstr "函数定义"
 
 #: ../../reference/compound_stmts.rst:1194
 msgid "def"
-msgstr ""
+msgstr "def"
 
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1194
@@ -2340,7 +2340,7 @@ msgstr "function -- 函数"
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1367
 msgid "definition"
-msgstr ""
+msgstr "定义"
 
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1194
@@ -2359,7 +2359,7 @@ msgstr "绑定"
 
 #: ../../reference/compound_stmts.rst:1194
 msgid "user-defined function"
-msgstr ""
+msgstr "用户自定义函数"
 
 #: ../../reference/compound_stmts.rst:1194
 #: ../../reference/compound_stmts.rst:1367
@@ -2368,7 +2368,7 @@ msgstr "() (圆括号)"
 
 #: ../../reference/compound_stmts.rst:1194
 msgid "parameter list"
-msgstr ""
+msgstr "形参列表"
 
 #: ../../reference/compound_stmts.rst:1235
 #: ../../reference/compound_stmts.rst:1417
@@ -2441,7 +2441,7 @@ msgstr "frame -- 帧"
 
 #: ../../reference/compound_stmts.rst:1367
 msgid "inheritance"
-msgstr ""
+msgstr "继承"
 
 #: ../../reference/compound_stmts.rst:1367
 msgid "docstring"
@@ -2450,28 +2450,28 @@ msgstr "docstring -- 文档字符串"
 #: ../../reference/compound_stmts.rst:1367
 #: ../../reference/compound_stmts.rst:1417
 msgid "class definition"
-msgstr ""
+msgstr "类定义"
 
 #: ../../reference/compound_stmts.rst:1367
 msgid "expression list"
-msgstr ""
+msgstr "表达式列表"
 
 #: ../../reference/compound_stmts.rst:1468
 msgid "async def"
-msgstr ""
+msgstr "async def"
 
 #: ../../reference/compound_stmts.rst:1478
 msgid "async"
-msgstr ""
+msgstr "async"
 
 #: ../../reference/compound_stmts.rst:1478
 msgid "await"
-msgstr ""
+msgstr "await"
 
 #: ../../reference/compound_stmts.rst:1502
 msgid "async for"
-msgstr ""
+msgstr "async for"
 
 #: ../../reference/compound_stmts.rst:1547
 msgid "async with"
-msgstr ""
+msgstr "async with"

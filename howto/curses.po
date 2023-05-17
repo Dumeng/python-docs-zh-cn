@@ -334,6 +334,9 @@ msgid ""
 ":meth:`!stdscr.refresh` or the :meth:`!refresh` method of some other "
 "relevant window."
 msgstr ""
+"在实践中，显式地告诉 curses 重绘一个窗口并不会真的让 curses 复杂多少。 "
+"大部分程序会进行一系列活动，然后暂停并等待按键或者用户方的其他动作。 你要做的事情就是保证屏幕在暂停并等待用户输入之前已被重绘，具体方式是首先调用 "
+":meth:`!stdscr.refresh` 或其他相关窗口的 :meth:`!refresh` 方法。"
 
 #: ../../howto/curses.rst:218
 msgid ""
@@ -353,6 +356,8 @@ msgid ""
 "Beyond that difference, pads are exactly like ordinary windows and support "
 "the same methods."
 msgstr ""
+"此 :meth:`!refresh` 调用位在屏幕坐标 (5,5) 到坐标 (20,75) 的矩形范围内显示面板的一个部分；被显示部分在面板上的坐标是 "
+"(0,0)。 除了上述差异，面板非常像是普通窗口并支持相同的方法。"
 
 #: ../../howto/curses.rst:245
 msgid ""
@@ -360,6 +365,8 @@ msgid ""
 "way to update the screen and prevent annoying screen flicker as each part of"
 " the screen gets updated.  :meth:`!refresh` actually does two things:"
 msgstr ""
+"如果你在屏幕上有多个窗口和面板那么有个更高效的方式来更新屏幕并防止屏幕的每部分被更新时出现烦人的屏幕闪烁。 :meth:`!refresh` "
+"实际上做了两件事:"
 
 #: ../../howto/curses.rst:250
 msgid ""

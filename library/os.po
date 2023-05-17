@@ -5560,6 +5560,12 @@ msgid ""
 "processthreadsapi-getprocesstimes>`_ on Windows. On Windows, only "
 ":attr:`!user` and :attr:`!system` are known; the other attributes are zero."
 msgstr ""
+"在 Unix 上请参阅 Unix 手册页 :manpage:`times(2)` 和 `times(3) "
+"<https://man.freebsd.org/cgi/man.cgi?time(3)>`_ 而在 Windows 上请参阅 "
+"`GetProcessTimes MSDN "
+"<https://docs.microsoft.com/windows/win32/api/processthreadsapi/nf-"
+"processthreadsapi-getprocesstimes>`_。 在 Windows 上，只有 :attr:`!user` 和 "
+":attr:`!system` 是已知的；其他属性均为零。"
 
 #: ../../library/os.rst:4380
 msgid ""
@@ -6452,11 +6458,11 @@ msgstr "如果设置了此标志位，那么将从 ``/dev/random`` 池而不是 
 
 #: ../../library/os.rst:363 ../../library/os.rst:518 ../../library/os.rst:682
 msgid "user"
-msgstr ""
+msgstr "user"
 
 #: ../../library/os.rst:363
 msgid "effective id"
-msgstr ""
+msgstr "有效 id"
 
 #: ../../library/os.rst:372 ../../library/os.rst:438 ../../library/os.rst:447
 #: ../../library/os.rst:456 ../../library/os.rst:470 ../../library/os.rst:617
@@ -6467,7 +6473,7 @@ msgstr "process"
 
 #: ../../library/os.rst:372 ../../library/os.rst:438
 msgid "group"
-msgstr ""
+msgstr "group"
 
 #: ../../library/os.rst:447 ../../library/os.rst:518
 msgid "id"
@@ -6475,31 +6481,31 @@ msgstr "id"
 
 #: ../../library/os.rst:456
 msgid "id of parent"
-msgstr ""
+msgstr "父 id"
 
 #: ../../library/os.rst:470 ../../library/os.rst:617
 msgid "scheduling priority"
-msgstr ""
+msgstr "调度优先级"
 
 #: ../../library/os.rst:541 ../../library/os.rst:747
 msgid "environment variables"
-msgstr ""
+msgstr "环境变量"
 
 #: ../../library/os.rst:541
 msgid "setting"
-msgstr ""
+msgstr "设置"
 
 #: ../../library/os.rst:682
 msgid "id, setting"
-msgstr ""
+msgstr "id, 设置"
 
 #: ../../library/os.rst:715
 msgid "gethostname() (in module socket)"
-msgstr ""
+msgstr "gethostname() (在 socket 模块中)"
 
 #: ../../library/os.rst:715
 msgid "gethostbyaddr() (in module socket)"
-msgstr ""
+msgstr "gethostbyaddr() (在 socket 模块中)"
 
 #: ../../library/os.rst:747 ../../library/os.rst:2357
 msgid "deleting"
@@ -6522,19 +6528,19 @@ msgstr "directory"
 
 #: ../../library/os.rst:1824
 msgid "changing"
-msgstr ""
+msgstr "修改"
 
 #: ../../library/os.rst:2155
 msgid "creating"
-msgstr ""
+msgstr "创建"
 
 #: ../../library/os.rst:2155
 msgid "UNC paths"
-msgstr ""
+msgstr "UNC 路径"
 
 #: ../../library/os.rst:2155
 msgid "and os.makedirs()"
-msgstr ""
+msgstr "和 os.makedirs()"
 
 #: ../../library/os.rst:2710
 msgid "stat"
@@ -6542,19 +6548,19 @@ msgstr "stat"
 
 #: ../../library/os.rst:3208 ../../library/os.rst:3307
 msgid "walking"
-msgstr ""
+msgstr "walking"
 
 #: ../../library/os.rst:3208 ../../library/os.rst:3307
 msgid "traversal"
-msgstr ""
+msgstr "traversal"
 
 #: ../../library/os.rst:3916 ../../library/os.rst:3943
 msgid "killing"
-msgstr ""
+msgstr "killing"
 
 #: ../../library/os.rst:3916 ../../library/os.rst:3943
 msgid "signalling"
-msgstr ""
+msgstr "signalling"
 
 #: ../../library/os.rst:4921 ../../library/os.rst:4957
 msgid ". (dot)"
@@ -6564,7 +6570,7 @@ msgstr ". (点号)"
 #: ../../library/os.rst:4937 ../../library/os.rst:4948
 #: ../../library/os.rst:4957
 msgid "in pathnames"
-msgstr ""
+msgstr "在 pathnames 中"
 
 #: ../../library/os.rst:4929
 msgid ".."

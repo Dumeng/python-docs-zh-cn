@@ -57,6 +57,9 @@ msgid ""
 ":class:`TypeVar`, and :class:`Generic`. For a specification, please see "
 ":pep:`484`. For a simplified introduction to type hints, see :pep:`483`."
 msgstr ""
+"这个模块提供了对类型提示的运行时支持。 最基本的支持包括 :data:`Any`, :data:`Union`, :data:`Callable`, "
+":class:`TypeVar` 和 :class:`Generic` 等类型。 关于完整的规范，请参阅 :pep:`484`。 "
+"要获取对类型提示的简要介绍，请参阅 :pep:`483`。"
 
 #: ../../library/typing.rst:26
 msgid ""

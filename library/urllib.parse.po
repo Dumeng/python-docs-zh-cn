@@ -318,6 +318,7 @@ msgid ""
 ":func:`urlparse` does not perform validation.  See :ref:`URL parsing "
 "security <url-parsing-security>` for details."
 msgstr ""
+":func:`urlparse` 不会执行验证。 请参阅 :ref:`URL 解析安全 <url-parsing-security>` 了解详情。"
 
 #: ../../library/urllib.parse.rst:167
 msgid "Added IPv6 URL parsing capabilities."

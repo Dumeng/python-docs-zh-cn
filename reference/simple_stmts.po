@@ -1392,11 +1392,11 @@ msgstr "增强"
 
 #: ../../reference/simple_stmts.rst:262
 msgid "assignment, augmented"
-msgstr ""
+msgstr "赋值, 增强的"
 
 #: ../../reference/simple_stmts.rst:262
 msgid "+="
-msgstr ""
+msgstr "+="
 
 #: ../../reference/simple_stmts.rst:262 ../../reference/simple_stmts.rst:262
 #: ../../reference/simple_stmts.rst:262 ../../reference/simple_stmts.rst:262
@@ -1405,31 +1405,31 @@ msgstr ""
 #: ../../reference/simple_stmts.rst:262 ../../reference/simple_stmts.rst:262
 #: ../../reference/simple_stmts.rst:262 ../../reference/simple_stmts.rst:262
 msgid "augmented assignment"
-msgstr ""
+msgstr "增强赋值"
 
 #: ../../reference/simple_stmts.rst:262
 msgid "-="
-msgstr ""
+msgstr "-="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "*="
-msgstr ""
+msgstr "*="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "/="
-msgstr ""
+msgstr "/="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "%="
-msgstr ""
+msgstr "%="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "&="
-msgstr ""
+msgstr "&="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "^="
-msgstr ""
+msgstr "^="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "|="

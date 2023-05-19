@@ -19,17 +19,17 @@
 # 周盛道 <zhoushengdao@sina.cn>, 2022
 # Bryan不可思议, 2023
 # Jason Ren, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -309,6 +309,9 @@ msgid ""
 "``-<major>.<minor>``. This allows launching distributions other than "
 "``PythonCore``, the one hosted on `python.org <https://www.python.org>`_."
 msgstr ""
+"包括在 Python 3.11 中的 :ref:`launcher` 的副本已进行了重大更新。 现在它支持 :pep:`514` 所定义的 "
+"company/tag 语法即使用 ``-V:<company>/<tag>`` 参数代替受限的 ``-<major>.<minor>``。 这允许启动"
+" ``PythonCore`` 以外的，托管在 `python.org <https://www.python.org>`_ 上的发行版。"
 
 #: ../../whatsnew/3.11.rst:227
 msgid ""
@@ -1321,7 +1324,7 @@ msgstr "socket"
 msgid ""
 "Add CAN Socket support for NetBSD. (Contributed by Thomas Klausner in "
 ":issue:`30512`.)"
-msgstr ""
+msgstr "为 NetBSD 添加了 CAN Socket 支持。 （由 Thomas Klausner 在 :issue:`30512` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:939
 msgid ""
@@ -1329,6 +1332,8 @@ msgid ""
 " to connect, an :exc:`ExceptionGroup` containing all errors instead of only "
 "raising the last error. (Contributed by Irit Katriel in :issue:`29980`.)"
 msgstr ""
+":meth:`~socket.create_connection` 具有一个在连接失败的情况下引发包含所有错误而的 "
+":exc:`ExceptionGroup` 不是只引发最后的错误的选项。 （由 Irit Katriel 在 :issue:`29980` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:948
 msgid "sqlite3"
@@ -1340,6 +1345,8 @@ msgid ""
 ":meth:`~sqlite3.Connection.set_authorizer`. (Contributed by Erlend E. "
 "Aasland in :issue:`44491`.)"
 msgstr ""
+"你现在可以通过将 :const:`None` 传给 :meth:`~sqlite3.Connection.set_authorizer` "
+"来禁用身份验证。 （由 Erlend E. Aasland 在 :issue:`44491` 中贡献。）"
 
 #: ../../whatsnew/3.11.rst:954
 msgid ""

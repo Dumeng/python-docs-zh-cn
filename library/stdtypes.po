@@ -7033,11 +7033,11 @@ msgstr "比较"
 
 #: ../../library/stdtypes.rst:122
 msgid "comparison"
-msgstr ""
+msgstr "比较"
 
 #: ../../library/stdtypes.rst:122
 msgid "=="
-msgstr ""
+msgstr "=="
 
 #: ../../library/stdtypes.rst:122
 msgid "< (less)"
@@ -7045,7 +7045,7 @@ msgstr "< (小与)"
 
 #: ../../library/stdtypes.rst:122
 msgid "<="
-msgstr ""
+msgstr "<="
 
 #: ../../library/stdtypes.rst:122
 msgid "> (greater)"
@@ -7053,19 +7053,19 @@ msgstr "> (大与)"
 
 #: ../../library/stdtypes.rst:122
 msgid ">="
-msgstr ""
+msgstr ">="
 
 #: ../../library/stdtypes.rst:122
 msgid "!="
-msgstr ""
+msgstr "!="
 
 #: ../../library/stdtypes.rst:122
 msgid "is"
-msgstr ""
+msgstr "is"
 
 #: ../../library/stdtypes.rst:122
 msgid "is not"
-msgstr ""
+msgstr "is not"
 
 #: ../../library/stdtypes.rst:162 ../../library/stdtypes.rst:207
 #: ../../library/stdtypes.rst:207 ../../library/stdtypes.rst:207
@@ -7096,7 +7096,7 @@ msgstr "objects"
 
 #: ../../library/stdtypes.rst:162
 msgid "comparing"
-msgstr ""
+msgstr "比较"
 
 #: ../../library/stdtypes.rst:172
 msgid "__eq__() (instance method)"
@@ -7149,7 +7149,7 @@ msgstr "C"
 
 #: ../../library/stdtypes.rst:207
 msgid "language"
-msgstr ""
+msgstr "语言"
 
 #: ../../library/stdtypes.rst:228 ../../library/stdtypes.rst:228
 #: ../../library/stdtypes.rst:228 ../../library/stdtypes.rst:228
@@ -7333,7 +7333,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:804
 msgid "container"
-msgstr ""
+msgstr "容器"
 
 #: ../../library/stdtypes.rst:804
 msgid "iteration over"

@@ -2724,7 +2724,7 @@ msgstr "元组"
 
 #: ../../reference/expressions.rst:152 ../../reference/expressions.rst:1865
 msgid "comma"
-msgstr ""
+msgstr "逗号"
 
 #: ../../reference/expressions.rst:152 ../../reference/expressions.rst:244
 #: ../../reference/expressions.rst:270 ../../reference/expressions.rst:298
@@ -2736,7 +2736,7 @@ msgstr ", (逗号)"
 #: ../../reference/expressions.rst:167 ../../reference/expressions.rst:244
 #: ../../reference/expressions.rst:270 ../../reference/expressions.rst:298
 msgid "comprehensions"
-msgstr ""
+msgstr "推导式"
 
 #: ../../reference/expressions.rst:177
 msgid "for"
@@ -2745,7 +2745,7 @@ msgstr "for"
 #: ../../reference/expressions.rst:177 ../../reference/expressions.rst:177
 #: ../../reference/expressions.rst:177 ../../reference/expressions.rst:212
 msgid "in comprehensions"
-msgstr ""
+msgstr "在推导式中"
 
 #: ../../reference/expressions.rst:177 ../../reference/expressions.rst:1782
 msgid "if"
@@ -2769,7 +2769,7 @@ msgstr "list"
 #: ../../reference/expressions.rst:244 ../../reference/expressions.rst:270
 #: ../../reference/expressions.rst:298
 msgid "display"
-msgstr ""
+msgstr "显示"
 
 #: ../../reference/expressions.rst:244 ../../reference/expressions.rst:820
 msgid "[] (square brackets)"
@@ -2777,7 +2777,7 @@ msgstr "[] (方括号)"
 
 #: ../../reference/expressions.rst:244
 msgid "list expression"
-msgstr ""
+msgstr "列表推导式"
 
 #: ../../reference/expressions.rst:244 ../../reference/expressions.rst:270
 #: ../../reference/expressions.rst:1836
@@ -2795,7 +2795,7 @@ msgstr "{} (花括号)"
 
 #: ../../reference/expressions.rst:270
 msgid "set expression"
-msgstr ""
+msgstr "集合推导式"
 
 #: ../../reference/expressions.rst:298 ../../reference/expressions.rst:298
 #: ../../reference/expressions.rst:298 ../../reference/expressions.rst:324
@@ -2805,19 +2805,19 @@ msgstr "dictionary -- 字典"
 
 #: ../../reference/expressions.rst:298
 msgid "key"
-msgstr ""
+msgstr "键"
 
 #: ../../reference/expressions.rst:298
 msgid "datum"
-msgstr ""
+msgstr "数据"
 
 #: ../../reference/expressions.rst:298
 msgid "key/datum pair"
-msgstr ""
+msgstr "键/数据对"
 
 #: ../../reference/expressions.rst:298
 msgid "dictionary expression"
-msgstr ""
+msgstr "字典推导式"
 
 #: ../../reference/expressions.rst:298 ../../reference/expressions.rst:891
 #: ../../reference/expressions.rst:1808
@@ -2826,16 +2826,16 @@ msgstr ": (冒号)"
 
 #: ../../reference/expressions.rst:298
 msgid "in dictionary expressions"
-msgstr ""
+msgstr "在字典推导式中"
 
 #: ../../reference/expressions.rst:298 ../../reference/expressions.rst:324
 msgid "in dictionary displays"
-msgstr ""
+msgstr "在字典显示中"
 
 #: ../../reference/expressions.rst:324 ../../reference/expressions.rst:1024
 #: ../../reference/expressions.rst:1853
 msgid "unpacking"
-msgstr ""
+msgstr "解包"
 
 #: ../../reference/expressions.rst:324 ../../reference/expressions.rst:1054
 #: ../../reference/expressions.rst:1161
@@ -3243,7 +3243,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1421
 msgid "comparison"
-msgstr ""
+msgstr "比较"
 
 #: ../../reference/expressions.rst:1421
 msgid "C"
@@ -3251,7 +3251,7 @@ msgstr "C"
 
 #: ../../reference/expressions.rst:1421
 msgid "language"
-msgstr ""
+msgstr "语言"
 
 #: ../../reference/expressions.rst:1421
 msgid "< (less)"
@@ -3263,19 +3263,19 @@ msgstr "> (大与)"
 
 #: ../../reference/expressions.rst:1421
 msgid "<="
-msgstr ""
+msgstr "<="
 
 #: ../../reference/expressions.rst:1421
 msgid ">="
-msgstr ""
+msgstr ">="
 
 #: ../../reference/expressions.rst:1421
 msgid "=="
-msgstr ""
+msgstr "=="
 
 #: ../../reference/expressions.rst:1421
 msgid "!="
-msgstr ""
+msgstr "!="
 
 #: ../../reference/expressions.rst:1445
 msgid "chaining"
@@ -3303,11 +3303,11 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1669
 msgid "is"
-msgstr ""
+msgstr "is"
 
 #: ../../reference/expressions.rst:1669
 msgid "is not"
-msgstr ""
+msgstr "is not"
 
 #: ../../reference/expressions.rst:1669
 msgid "identity"

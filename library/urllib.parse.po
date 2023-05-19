@@ -613,6 +613,8 @@ msgid ""
 "make sense?  Is that a sensible ``path``?  Is there anything strange about "
 "that ``hostname``?  etc."
 msgstr ""
+"我们建议这些 API 的用户在任何使用的值具有安全意义的地方应用防御性代码。 在你的代码中进行某些验证之后再信任被返回的组件。 这个 "
+"``scheme`` 合理吗？那个 ``path`` 正确吗？ 那个 ``hostname`` 是否存在怪异之处？等等。"
 
 #: ../../library/urllib.parse.rst:451
 msgid ""

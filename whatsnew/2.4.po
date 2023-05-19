@@ -6,17 +6,17 @@
 # Translators:
 # Fei Yin <icebirds@163.com>, 2018
 # ppcfish <ppcfish@gmail.com>, 2019
-# Freesand Leo <yuqinju@163.com>, 2023
 # Nyuan Zhang, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 18:16+0000\n"
+"POT-Creation-Date: 2023-05-18 02:14+0000\n"
 "PO-Revision-Date: 2017-02-16 23:43+0000\n"
-"Last-Translator: Nyuan Zhang, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -474,7 +474,7 @@ msgstr "*env* 是一个指定环境变量的字典。"
 #: ../../whatsnew/2.4.rst:427
 msgid ""
 "*preexec_fn* is a function that gets called before the child is started."
-msgstr ""
+msgstr "*preexec_fn* 是将在子进程启动之前被调用的函数。"
 
 #: ../../whatsnew/2.4.rst:429
 msgid ""

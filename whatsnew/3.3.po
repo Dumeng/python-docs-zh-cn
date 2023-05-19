@@ -861,7 +861,7 @@ msgstr "PEP 由 Eric Snow 撰写并实现"
 
 #: ../../whatsnew/3.3.rst:685
 msgid "Using importlib as the Implementation of Import"
-msgstr ""
+msgstr "使用 importlib 作为导入的实现"
 
 #: ../../whatsnew/3.3.rst:686
 msgid ""

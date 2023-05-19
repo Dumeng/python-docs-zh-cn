@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:12+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -6926,7 +6926,7 @@ msgstr "若只是要格式化一个元组，则应提供一个单例元组，其
 
 #: ../../library/stdtypes.rst:13
 msgid "built-in"
-msgstr ""
+msgstr "内置"
 
 #: ../../library/stdtypes.rst:13 ../../library/stdtypes.rst:315
 #: ../../library/stdtypes.rst:390 ../../library/stdtypes.rst:907
@@ -6947,11 +6947,11 @@ msgstr "if"
 
 #: ../../library/stdtypes.rst:34
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../library/stdtypes.rst:34
 msgid "truth"
-msgstr ""
+msgstr "真值"
 
 #: ../../library/stdtypes.rst:34
 msgid "value"
@@ -6978,11 +6978,11 @@ msgstr "true"
 
 #: ../../library/stdtypes.rst:51
 msgid "None (Built-in object)"
-msgstr ""
+msgstr "None (内置对象)"
 
 #: ../../library/stdtypes.rst:51
 msgid "False (Built-in object)"
-msgstr ""
+msgstr "False (内置对象)"
 
 #: ../../library/stdtypes.rst:63 ../../library/stdtypes.rst:63
 #: ../../library/stdtypes.rst:97 ../../library/stdtypes.rst:97
@@ -7005,11 +7005,11 @@ msgstr "operator"
 
 #: ../../library/stdtypes.rst:63 ../../library/stdtypes.rst:97
 msgid "or"
-msgstr ""
+msgstr "or"
 
 #: ../../library/stdtypes.rst:63 ../../library/stdtypes.rst:97
 msgid "and"
-msgstr ""
+msgstr "and"
 
 #: ../../library/stdtypes.rst:63 ../../library/stdtypes.rst:5390
 msgid "False"
@@ -7021,15 +7021,15 @@ msgstr "True"
 
 #: ../../library/stdtypes.rst:97
 msgid "not"
-msgstr ""
+msgstr "not"
 
 #: ../../library/stdtypes.rst:122
 msgid "chaining"
-msgstr ""
+msgstr "chaining"
 
 #: ../../library/stdtypes.rst:122
 msgid "comparisons"
-msgstr ""
+msgstr "比较"
 
 #: ../../library/stdtypes.rst:122
 msgid "comparison"
@@ -7124,7 +7124,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:194 ../../library/stdtypes.rst:907
 msgid "in"
-msgstr ""
+msgstr "in"
 
 #: ../../library/stdtypes.rst:194 ../../library/stdtypes.rst:907
 msgid "not in"
@@ -7172,7 +7172,7 @@ msgstr "二进制"
 
 #: ../../library/stdtypes.rst:245
 msgid "arithmetic"
-msgstr ""
+msgstr "arithmetic"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:907
@@ -7382,7 +7382,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:963
 msgid "loop"
-msgstr ""
+msgstr "循环"
 
 #: ../../library/stdtypes.rst:963
 msgid "over mutable sequence"
@@ -7470,7 +7470,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:1339
 msgid "range"
-msgstr ""
+msgstr "range"
 
 #: ../../library/stdtypes.rst:1461 ../../library/stdtypes.rst:1461
 #: ../../library/stdtypes.rst:1510 ../../library/stdtypes.rst:1555

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:51+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -474,7 +474,7 @@ msgstr "*env* 是一个指定环境变量的字典。"
 #: ../../whatsnew/2.4.rst:427
 msgid ""
 "*preexec_fn* is a function that gets called before the child is started."
-msgstr ""
+msgstr "*preexec_fn* 是将在子进程启动之前被调用的函数。"
 
 #: ../../whatsnew/2.4.rst:429
 msgid ""

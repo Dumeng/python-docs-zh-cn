@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:51+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -466,7 +466,7 @@ msgstr ""
 
 #: ../../whatsnew/2.3.rst:419
 msgid "A common idiom to change every element of a list looks like this::"
-msgstr ""
+msgstr "改变一个列表中每个元素的常见写法看起来像是这样::"
 
 #: ../../whatsnew/2.3.rst:426
 msgid "This can be rewritten using :func:`enumerate` as::"

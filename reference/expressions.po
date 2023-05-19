@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:12+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2622,7 +2622,7 @@ msgstr "BNF"
 #: ../../reference/expressions.rst:28 ../../reference/expressions.rst:1196
 #: ../../reference/expressions.rst:1244
 msgid "arithmetic"
-msgstr ""
+msgstr "arithmetic"
 
 #: ../../reference/expressions.rst:28
 msgid "conversion"
@@ -2630,7 +2630,7 @@ msgstr "conversion"
 
 #: ../../reference/expressions.rst:51
 msgid "atom"
-msgstr ""
+msgstr "atom"
 
 #: ../../reference/expressions.rst:68 ../../reference/expressions.rst:82
 msgid "name"
@@ -2638,7 +2638,7 @@ msgstr "name"
 
 #: ../../reference/expressions.rst:68
 msgid "identifier"
-msgstr ""
+msgstr "标识符"
 
 #: ../../reference/expressions.rst:74 ../../reference/expressions.rst:537
 #: ../../reference/expressions.rst:587 ../../reference/expressions.rst:709
@@ -2650,7 +2650,7 @@ msgstr "异常"
 
 #: ../../reference/expressions.rst:74
 msgid "NameError"
-msgstr ""
+msgstr "NameError"
 
 #: ../../reference/expressions.rst:82
 msgid "mangling"
@@ -2658,7 +2658,7 @@ msgstr "扭曲"
 
 #: ../../reference/expressions.rst:82
 msgid "private"
-msgstr ""
+msgstr "private"
 
 #: ../../reference/expressions.rst:82
 msgid "names"
@@ -2666,7 +2666,7 @@ msgstr "names"
 
 #: ../../reference/expressions.rst:104
 msgid "literal"
-msgstr ""
+msgstr "字面值"
 
 #: ../../reference/expressions.rst:117 ../../reference/expressions.rst:117
 #: ../../reference/expressions.rst:341
@@ -2702,7 +2702,7 @@ msgstr "object -- 对象"
 
 #: ../../reference/expressions.rst:133
 msgid "parenthesized form"
-msgstr ""
+msgstr "带圆括号的形式"
 
 #: ../../reference/expressions.rst:133 ../../reference/expressions.rst:362
 #: ../../reference/expressions.rst:941
@@ -2711,11 +2711,11 @@ msgstr "() (圆括号)"
 
 #: ../../reference/expressions.rst:133
 msgid "tuple display"
-msgstr ""
+msgstr "元组显示"
 
 #: ../../reference/expressions.rst:146 ../../reference/expressions.rst:244
 msgid "empty"
-msgstr ""
+msgstr "空"
 
 #: ../../reference/expressions.rst:146 ../../reference/expressions.rst:824
 #: ../../reference/expressions.rst:897 ../../reference/expressions.rst:1846
@@ -3210,7 +3210,7 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1389 ../../reference/expressions.rst:1716
 msgid "and"
-msgstr ""
+msgstr "and"
 
 #: ../../reference/expressions.rst:1389
 msgid "& (ampersand)"
@@ -3227,7 +3227,7 @@ msgstr ""
 #: ../../reference/expressions.rst:1397 ../../reference/expressions.rst:1406
 #: ../../reference/expressions.rst:1406 ../../reference/expressions.rst:1721
 msgid "or"
-msgstr ""
+msgstr "or"
 
 #: ../../reference/expressions.rst:1397
 msgid "^ (caret)"
@@ -3279,11 +3279,11 @@ msgstr ""
 
 #: ../../reference/expressions.rst:1445
 msgid "chaining"
-msgstr ""
+msgstr "chaining"
 
 #: ../../reference/expressions.rst:1445
 msgid "comparisons"
-msgstr ""
+msgstr "比较"
 
 #: ../../reference/expressions.rst:1660
 msgid "in"
@@ -3323,7 +3323,7 @@ msgstr "布尔值"
 
 #: ../../reference/expressions.rst:1711
 msgid "not"
-msgstr ""
+msgstr "not"
 
 #: ../../reference/expressions.rst:1735
 msgid ":= (colon equals)"

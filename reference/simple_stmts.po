@@ -1433,31 +1433,31 @@ msgstr "^="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "|="
-msgstr ""
+msgstr "|="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "**="
-msgstr ""
+msgstr "**="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "//="
-msgstr ""
+msgstr "//="
 
 #: ../../reference/simple_stmts.rst:262
 msgid ">>="
-msgstr ""
+msgstr ">>="
 
 #: ../../reference/simple_stmts.rst:262
 msgid "<<="
-msgstr ""
+msgstr "<<="
 
 #: ../../reference/simple_stmts.rst:321
 msgid "annotated"
-msgstr ""
+msgstr "带标注的"
 
 #: ../../reference/simple_stmts.rst:321
 msgid "assignment, annotated"
-msgstr ""
+msgstr "赋值, 带标注的"
 
 #: ../../reference/simple_stmts.rst:321
 msgid ": (colon)"
@@ -1465,7 +1465,7 @@ msgstr ": (冒号)"
 
 #: ../../reference/simple_stmts.rst:321
 msgid "annotated variable"
-msgstr ""
+msgstr "带标注的变量"
 
 #: ../../reference/simple_stmts.rst:378
 msgid "assert"
@@ -1477,7 +1477,7 @@ msgstr "调试"
 
 #: ../../reference/simple_stmts.rst:378
 msgid "assertions"
-msgstr ""
+msgstr "断言"
 
 #: ../../reference/simple_stmts.rst:378
 msgid "expression list"
@@ -1485,7 +1485,7 @@ msgstr "表达式列表"
 
 #: ../../reference/simple_stmts.rst:399
 msgid "__debug__"
-msgstr ""
+msgstr "__debug__"
 
 #: ../../reference/simple_stmts.rst:399 ../../reference/simple_stmts.rst:519
 #: ../../reference/simple_stmts.rst:555 ../../reference/simple_stmts.rst:555
@@ -1495,11 +1495,11 @@ msgstr "异常"
 
 #: ../../reference/simple_stmts.rst:399
 msgid "AssertionError"
-msgstr ""
+msgstr "AssertionError"
 
 #: ../../reference/simple_stmts.rst:421
 msgid "pass"
-msgstr ""
+msgstr "pass"
 
 #: ../../reference/simple_stmts.rst:421 ../../reference/simple_stmts.rst:421
 msgid "null"
@@ -1507,25 +1507,25 @@ msgstr "null"
 
 #: ../../reference/simple_stmts.rst:421 ../../reference/simple_stmts.rst:421
 msgid "operation"
-msgstr ""
+msgstr "operation"
 
 #: ../../reference/simple_stmts.rst:443
 msgid "del"
-msgstr ""
+msgstr "del"
 
 #: ../../reference/simple_stmts.rst:443 ../../reference/simple_stmts.rst:443
 #: ../../reference/simple_stmts.rst:465
 msgid "deletion"
-msgstr ""
+msgstr "删除"
 
 #: ../../reference/simple_stmts.rst:456 ../../reference/simple_stmts.rst:944
 #: ../../reference/simple_stmts.rst:944
 msgid "global"
-msgstr ""
+msgstr "global"
 
 #: ../../reference/simple_stmts.rst:456
 msgid "unbinding"
-msgstr ""
+msgstr "解绑"
 
 #: ../../reference/simple_stmts.rst:482
 msgid "return"
@@ -1557,7 +1557,7 @@ msgstr "finally"
 
 #: ../../reference/simple_stmts.rst:519
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
 #: ../../reference/simple_stmts.rst:519 ../../reference/simple_stmts.rst:519
 #: ../../reference/simple_stmts.rst:519
@@ -1570,7 +1570,7 @@ msgstr "iterator -- 迭代器"
 
 #: ../../reference/simple_stmts.rst:519
 msgid "StopIteration"
-msgstr ""
+msgstr "StopIteration"
 
 #: ../../reference/simple_stmts.rst:555
 msgid "raise"
@@ -1578,11 +1578,11 @@ msgstr "raise"
 
 #: ../../reference/simple_stmts.rst:555
 msgid "raising"
-msgstr ""
+msgstr "引发"
 
 #: ../../reference/simple_stmts.rst:555
 msgid "__traceback__ (exception attribute)"
-msgstr ""
+msgstr "__traceback__ (异常属性)"
 
 #: ../../reference/simple_stmts.rst:577
 msgid "traceback"
@@ -1594,11 +1594,11 @@ msgstr "chaining"
 
 #: ../../reference/simple_stmts.rst:587
 msgid "__cause__ (exception attribute)"
-msgstr ""
+msgstr "__cause__ (异常属性)"
 
 #: ../../reference/simple_stmts.rst:587
 msgid "__context__ (exception attribute)"
-msgstr ""
+msgstr "__context__ (异常属性)"
 
 #: ../../reference/simple_stmts.rst:669
 msgid "break"
@@ -1622,7 +1622,7 @@ msgstr "else"
 
 #: ../../reference/simple_stmts.rst:682
 msgid "loop control"
-msgstr ""
+msgstr "循环控制"
 
 #: ../../reference/simple_stmts.rst:703
 msgid "continue"
@@ -1650,7 +1650,7 @@ msgstr "as"
 
 #: ../../reference/simple_stmts.rst:728
 msgid "ImportError"
-msgstr ""
+msgstr "ImportError"
 
 #: ../../reference/simple_stmts.rst:728 ../../reference/simple_stmts.rst:770
 #: ../../reference/simple_stmts.rst:783 ../../reference/simple_stmts.rst:809
@@ -1659,7 +1659,7 @@ msgstr "import 语句statement"
 
 #: ../../reference/simple_stmts.rst:815
 msgid "__all__ (optional module attribute)"
-msgstr ""
+msgstr "__all__ (可选的模块属性)"
 
 #: ../../reference/simple_stmts.rst:831
 msgid "relative"
@@ -1667,7 +1667,7 @@ msgstr "相关"
 
 #: ../../reference/simple_stmts.rst:858
 msgid "future"
-msgstr ""
+msgstr "future"
 
 #: ../../reference/simple_stmts.rst:858
 msgid "__future__"
@@ -1675,11 +1675,11 @@ msgstr "__future__"
 
 #: ../../reference/simple_stmts.rst:858
 msgid "future statement"
-msgstr ""
+msgstr "future 语句"
 
 #: ../../reference/simple_stmts.rst:944 ../../reference/simple_stmts.rst:991
 msgid "identifier list"
-msgstr ""
+msgstr "标识符列表"
 
 #: ../../reference/simple_stmts.rst:972
 msgid "exec"
@@ -1695,4 +1695,4 @@ msgstr "编译"
 
 #: ../../reference/simple_stmts.rst:991
 msgid "nonlocal"
-msgstr ""
+msgstr "nonlocal"

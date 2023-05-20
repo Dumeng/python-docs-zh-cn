@@ -7100,27 +7100,27 @@ msgstr "比较"
 
 #: ../../library/stdtypes.rst:172
 msgid "__eq__() (instance method)"
-msgstr ""
+msgstr "__eq__() (实例方法)"
 
 #: ../../library/stdtypes.rst:172
 msgid "__ne__() (instance method)"
-msgstr ""
+msgstr "__ne__() (实例方法)"
 
 #: ../../library/stdtypes.rst:172
 msgid "__lt__() (instance method)"
-msgstr ""
+msgstr "__lt__() (实例方法)"
 
 #: ../../library/stdtypes.rst:172
 msgid "__le__() (instance method)"
-msgstr ""
+msgstr "__le__() (实例方法)"
 
 #: ../../library/stdtypes.rst:172
 msgid "__gt__() (instance method)"
-msgstr ""
+msgstr "__gt__() (实例方法)"
 
 #: ../../library/stdtypes.rst:172
 msgid "__ge__() (instance method)"
-msgstr ""
+msgstr "__ge__() (实例方法)"
 
 #: ../../library/stdtypes.rst:194 ../../library/stdtypes.rst:907
 msgid "in"
@@ -7128,7 +7128,7 @@ msgstr "in"
 
 #: ../../library/stdtypes.rst:194 ../../library/stdtypes.rst:907
 msgid "not in"
-msgstr ""
+msgstr "not in"
 
 #: ../../library/stdtypes.rst:207 ../../library/stdtypes.rst:228
 #: ../../library/stdtypes.rst:390
@@ -7193,7 +7193,7 @@ msgstr "float"
 
 #: ../../library/stdtypes.rst:245
 msgid "complex"
-msgstr ""
+msgstr "复数"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2342
@@ -7358,7 +7358,7 @@ msgstr ""
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:907
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:907
 msgid "operation"
-msgstr ""
+msgstr "operation"
 
 #: ../../library/stdtypes.rst:907
 msgid "repetition"
@@ -7434,7 +7434,7 @@ msgstr "赋值"
 
 #: ../../library/stdtypes.rst:1111 ../../library/stdtypes.rst:4369
 msgid "del"
-msgstr ""
+msgstr "del"
 
 #: ../../library/stdtypes.rst:1111
 msgid "append() (sequence method)"

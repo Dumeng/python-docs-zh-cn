@@ -2863,7 +2863,7 @@ msgstr "关键字"
 #: ../../reference/expressions.rst:417 ../../reference/expressions.rst:417
 #: ../../reference/expressions.rst:600
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
 #: ../../reference/expressions.rst:417 ../../reference/expressions.rst:484
 msgid "from"
@@ -2882,31 +2882,31 @@ msgstr "coroutine -- 协程"
 
 #: ../../reference/expressions.rst:484
 msgid "yield from expression"
-msgstr ""
+msgstr "yield from 表达式"
 
 #: ../../reference/expressions.rst:537
 msgid "StopIteration"
-msgstr ""
+msgstr "StopIteration"
 
 #: ../../reference/expressions.rst:587 ../../reference/expressions.rst:755
 msgid "GeneratorExit"
-msgstr ""
+msgstr "GeneratorExit"
 
 #: ../../reference/expressions.rst:600
 msgid "examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../reference/expressions.rst:699
 msgid "asynchronous-generator"
-msgstr ""
+msgstr "异步生成器"
 
 #: ../../reference/expressions.rst:709
 msgid "StopAsyncIteration"
-msgstr ""
+msgstr "StopAsyncIteration"
 
 #: ../../reference/expressions.rst:778
 msgid "primary"
-msgstr ""
+msgstr "primary"
 
 #: ../../reference/expressions.rst:792
 msgid "attribute"
@@ -2914,7 +2914,7 @@ msgstr "attribute -- 属性"
 
 #: ../../reference/expressions.rst:792
 msgid "reference"
-msgstr ""
+msgstr "引用"
 
 #: ../../reference/expressions.rst:792
 msgid ". (dot)"
@@ -2922,11 +2922,11 @@ msgstr ". (点号)"
 
 #: ../../reference/expressions.rst:792
 msgid "attribute reference"
-msgstr ""
+msgstr "属性引用"
 
 #: ../../reference/expressions.rst:801
 msgid "AttributeError"
-msgstr ""
+msgstr "AttributeError"
 
 #: ../../reference/expressions.rst:801
 msgid "module"
@@ -2952,7 +2952,7 @@ msgstr "string"
 
 #: ../../reference/expressions.rst:824 ../../reference/expressions.rst:877
 msgid "item"
-msgstr ""
+msgstr "条目"
 
 #: ../../reference/expressions.rst:877
 msgid "character"
@@ -2969,15 +2969,15 @@ msgstr "slice -- 切片"
 
 #: ../../reference/expressions.rst:923
 msgid "start (slice object attribute)"
-msgstr ""
+msgstr "start (切片对象属性)"
 
 #: ../../reference/expressions.rst:923
 msgid "stop (slice object attribute)"
-msgstr ""
+msgstr "stop (切片对象属性)"
 
 #: ../../reference/expressions.rst:923
 msgid "step (slice object attribute)"
-msgstr ""
+msgstr "step (切片对象属性)"
 
 #: ../../reference/expressions.rst:941
 msgid "callable"
@@ -2998,11 +2998,11 @@ msgstr "argument -- 参数"
 
 #: ../../reference/expressions.rst:941 ../../reference/expressions.rst:974
 msgid "call semantics"
-msgstr ""
+msgstr "调用语法"
 
 #: ../../reference/expressions.rst:941
 msgid "argument list"
-msgstr ""
+msgstr "参数列表"
 
 #: ../../reference/expressions.rst:941
 msgid "= (equals)"
@@ -3024,7 +3024,7 @@ msgstr "* (星号)"
 
 #: ../../reference/expressions.rst:1089
 msgid "user-defined"
-msgstr ""
+msgstr "用户自定义"
 
 #: ../../reference/expressions.rst:1089
 msgid "user-defined function"
@@ -3071,7 +3071,7 @@ msgstr ""
 #: ../../reference/expressions.rst:1353 ../../reference/expressions.rst:1380
 #: ../../reference/expressions.rst:1695
 msgid "operation"
-msgstr ""
+msgstr "operation"
 
 #: ../../reference/expressions.rst:1161 ../../reference/expressions.rst:1205
 #: ../../reference/expressions.rst:1214 ../../reference/expressions.rst:1222
@@ -3291,7 +3291,7 @@ msgstr "in"
 
 #: ../../reference/expressions.rst:1660
 msgid "not in"
-msgstr ""
+msgstr "not in"
 
 #: ../../reference/expressions.rst:1660
 msgid "membership"

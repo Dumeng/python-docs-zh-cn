@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:14+0000\n"
+"POT-Creation-Date: 2023-05-19 14:26+0000\n"
 "PO-Revision-Date: 2017-02-16 23:44+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -861,7 +861,7 @@ msgstr "PEP 由 Eric Snow 撰写并实现"
 
 #: ../../whatsnew/3.3.rst:685
 msgid "Using importlib as the Implementation of Import"
-msgstr ""
+msgstr "使用 importlib 作为导入的实现"
 
 #: ../../whatsnew/3.3.rst:686
 msgid ""
@@ -870,6 +870,9 @@ msgid ""
 " machinery explicit :issue:`14646` - Require loaders set __loader__ and "
 "__package__"
 msgstr ""
+":issue:`2377` - 替代 __import__ w/ importlib.__import__ :issue:`13959` - 以纯 "
+"Python 重新实现部分 :mod:`imp` :issue:`14605` - 使导入机制成为显式的 :issue:`14646` - "
+"要求加载器设置 __loader__ 和 __package__"
 
 #: ../../whatsnew/3.3.rst:691
 msgid ""
@@ -1002,7 +1005,7 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:772
 msgid "(Implementation by Brett Cannon)"
-msgstr ""
+msgstr "（由 Brett Cannon 编写的实现）"
 
 #: ../../whatsnew/3.3.rst:776
 msgid "Other Language Changes"
@@ -1025,7 +1028,7 @@ msgstr "（由 Ezio Melotti 在 :issue:`12753` 中贡献。）"
 
 #: ../../whatsnew/3.3.rst:786
 msgid "Unicode database updated to UCD version 6.1.0"
-msgstr ""
+msgstr "Unicode 数据库更新至 UCD 版本 6.1.0"
 
 #: ../../whatsnew/3.3.rst:788
 msgid ""
@@ -1174,7 +1177,7 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:874
 msgid "Example of a segmentation fault on Linux:"
-msgstr ""
+msgstr "Linux 上的段错误示例:"
 
 #: ../../whatsnew/3.3.rst:890
 msgid "ipaddress"
@@ -1295,13 +1298,13 @@ msgstr "bz2"
 msgid ""
 "The :mod:`bz2` module has been rewritten from scratch. In the process, "
 "several new features have been added:"
-msgstr ""
+msgstr ":mod:`bz2` 模块已被重新编写。 在此过程中，添加了一些新的特征:"
 
 #: ../../whatsnew/3.3.rst:963
 msgid ""
 "New :func:`bz2.open` function: open a bzip2-compressed file in binary or "
 "text mode."
-msgstr ""
+msgstr "新的 :func:`bz2.open` 函数：以二进制或文本模式打开 bzip2 压缩文件。"
 
 #: ../../whatsnew/3.3.rst:966
 msgid ""
@@ -1441,7 +1444,7 @@ msgstr ""
 
 #: ../../whatsnew/3.3.rst:1057
 msgid "(:issue:`10924`)"
-msgstr ""
+msgstr "(:issue:`10924`)"
 
 #: ../../whatsnew/3.3.rst:1060
 msgid "curses"
@@ -1462,7 +1465,7 @@ msgstr ""
 #: ../../whatsnew/3.3.rst:1066
 msgid ""
 ":class:`curses.window` has a new :attr:`curses.window.encoding` attribute."
-msgstr ""
+msgstr ":class:`curses.window` 添加了新的 :attr:`curses.window.encoding` 属性。"
 
 #: ../../whatsnew/3.3.rst:1067
 msgid ""

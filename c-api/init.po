@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:14+0000\n"
+"POT-Creation-Date: 2023-05-19 14:26+0000\n"
 "PO-Revision-Date: 2017-02-16 17:36+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -871,7 +871,7 @@ msgstr ""
 
 #: ../../c-api/init.rst:678
 msgid "Releasing the GIL from extension code"
-msgstr ""
+msgstr "从扩展扩展代码中释放 GIL"
 
 #: ../../c-api/init.rst:680
 msgid ""
@@ -881,7 +881,7 @@ msgstr "大多数操作 :term:`GIL` 的扩展代码具有以下简单结构："
 
 #: ../../c-api/init.rst:689
 msgid "This is so common that a pair of macros exists to simplify it::"
-msgstr ""
+msgstr "这是如此常用因此增加了一对宏来简化它::"
 
 #: ../../c-api/init.rst:699
 msgid ""
@@ -889,6 +889,8 @@ msgid ""
 " hidden local variable; the :c:macro:`Py_END_ALLOW_THREADS` macro closes the"
 " block."
 msgstr ""
+":c:macro:`Py_BEGIN_ALLOW_THREADS` "
+"宏将打开一个新块并声明一个隐藏的局部变量；:c:macro:`Py_END_ALLOW_THREADS` 宏将关闭这个块。"
 
 #: ../../c-api/init.rst:703
 msgid "The block above expands to the following code::"
@@ -1204,6 +1206,8 @@ msgid ""
 "This macro expands to ``PyEval_RestoreThread(_save);``: it is equivalent to "
 ":c:macro:`Py_END_ALLOW_THREADS` without the closing brace."
 msgstr ""
+"这个宏扩展为 ``PyEval_RestoreThread(_save);``: 它等价于没有关闭花括号的 "
+":c:macro:`Py_END_ALLOW_THREADS`。"
 
 #: ../../c-api/init.rst:1005
 msgid ""
@@ -1211,10 +1215,12 @@ msgid ""
 ":c:macro:`Py_BEGIN_ALLOW_THREADS` without the opening brace and variable "
 "declaration."
 msgstr ""
+"这个宏扩展为 ``_save = PyEval_SaveThread();``: 它等价于没有开始花括号和变量声明的 "
+":c:macro:`Py_BEGIN_ALLOW_THREADS`。"
 
 #: ../../c-api/init.rst:1011
 msgid "Low-level API"
-msgstr ""
+msgstr "底层级 API"
 
 #: ../../c-api/init.rst:1013
 msgid ""

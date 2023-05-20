@@ -11,15 +11,16 @@
 # WH-2099 <wh2099@outlook.com>, 2022
 # Bryan不可思议, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# 乐成 王, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 14:13+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: 乐成 王, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -37,24 +38,24 @@ msgid ""
 "are similar to global variables, but they offer a more useful "
 ":func:`repr()`, grouping, type-safety, and a few other features."
 msgstr ""
-":class:`Enum` 是一组与唯一值分别绑定的符号名。枚举类似于全局变量，但提供了更好用的 "
-":func:`repr()`、分组、类型安全和其他一些特性。"
+":class:`Enum` 是一组与互不相同的值分别绑定的符号名。类似于全局变量，但提供了更好用的 "
+":func:`repr()`、分组、类型安全和一些其它特性。"
 
 #: ../../howto/enum.rst:13
 msgid ""
 "They are most useful when you have a variable that can take one of a limited"
 " selection of values.  For example, the days of the week::"
-msgstr "当变量值可从有限选项集中选取时，最好用的就是枚举。例如，从一周中选取一天::"
+msgstr "它们最适用于当某个变量可选的值有限时。例如，从一周中选取一天："
 
 #: ../../howto/enum.rst:26
 msgid "Or perhaps the RGB primary colors::"
-msgstr "或许是 RGB 三原色::"
+msgstr "或是 RGB 三原色："
 
 #: ../../howto/enum.rst:34
 msgid ""
 "As you can see, creating an :class:`Enum` is as simple as writing a class "
 "that inherits from :class:`Enum` itself."
-msgstr "显然，创建一个 :class:`Enum` 就像编写一个继承于 :class:`Enum` 的类一样简单。"
+msgstr "正如你所见，创建一个 :class:`Enum` 就是简单地写一个继承 :class:`Enum` 的类。"
 
 #: ../../howto/enum.rst:37
 msgid "Case of Enum Members"
@@ -71,7 +72,7 @@ msgid ""
 "Depending on the nature of the enum a member's value may or may not be "
 "important, but either way that value can be used to get the corresponding "
 "member::"
-msgstr "根据枚举的性质，某个成员的值可能不一定用得上，但无论如何都能用某个值得到对应的成员::"
+msgstr "根据枚举的性质，某个成员的值可能不一定用得上，但无论如何都能用那个值构造对应的成员："
 
 #: ../../howto/enum.rst:49
 msgid ""
@@ -684,10 +685,9 @@ msgid ""
 "specify the values directly it is recommended to use :class:`auto` as the "
 "value and let :class:`Flag` select an appropriate value."
 msgstr ""
-"最后一个变种是 :class:`Flag`。 与 :class:`IntFlag` 类似，:class:`Flag` 成员可使用按位运算符 (&, "
-"\\|, ^, ~) 进行组合，与 :class:`IntFlag` 不同的是它们不可与任何其它 :class:`Flag` 枚举或 "
-":class:`int` 进行组合或比较。 虽然可以直接指定值，但推荐使用 :class:`auto` 作为值以便让 :class:`Flag` "
-"选择适当的值。"
+"最后一个变体是 :class:`Flag`。与 :class:`IntFlag` 类似，:class:`Flag` 成员可用按位运算符 (&, \\|,"
+" ^, ~) 组合。与 :class:`IntFlag` 不同的是，它们不可与其它 :class:`Flag` 枚举或 :class:`int` "
+"进行组合或比较。 虽然可以直接指定值，但推荐使用 :class:`auto` 作为值来让 :class:`Flag` 选择适当的值。"
 
 #: ../../howto/enum.rst:754
 msgid ""

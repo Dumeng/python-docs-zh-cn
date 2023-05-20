@@ -7160,11 +7160,11 @@ msgstr "字面值"
 
 #: ../../library/stdtypes.rst:228
 msgid "hexadecimal"
-msgstr ""
+msgstr "十六进制"
 
 #: ../../library/stdtypes.rst:228
 msgid "octal"
-msgstr ""
+msgstr "八进制"
 
 #: ../../library/stdtypes.rst:228
 msgid "binary"
@@ -7242,11 +7242,11 @@ msgstr "**"
 #: ../../library/stdtypes.rst:1111 ../../library/stdtypes.rst:4369
 #: ../../library/stdtypes.rst:4369
 msgid "operations on"
-msgstr ""
+msgstr "运算目标"
 
 #: ../../library/stdtypes.rst:315
 msgid "conjugate() (complex number method)"
-msgstr ""
+msgstr "conjugate() (复数方法)"
 
 #: ../../library/stdtypes.rst:332 ../../library/stdtypes.rst:1563
 #: ../../library/stdtypes.rst:2466 ../../library/stdtypes.rst:5326
@@ -7259,19 +7259,19 @@ msgstr "math"
 
 #: ../../library/stdtypes.rst:332
 msgid "floor() (in module math)"
-msgstr ""
+msgstr "floor() (在 math 模块中)"
 
 #: ../../library/stdtypes.rst:332
 msgid "ceil() (in module math)"
-msgstr ""
+msgstr "ceil() (在 math 模块中)"
 
 #: ../../library/stdtypes.rst:332
 msgid "trunc() (in module math)"
-msgstr ""
+msgstr "trunc() (在 math 模块中)"
 
 #: ../../library/stdtypes.rst:332
 msgid "conversions"
-msgstr ""
+msgstr "转换"
 
 #: ../../library/stdtypes.rst:390
 msgid "bitwise"
@@ -7283,7 +7283,7 @@ msgstr "移位"
 
 #: ../../library/stdtypes.rst:390
 msgid "masking"
-msgstr ""
+msgstr "掩码"
 
 #: ../../library/stdtypes.rst:390
 msgid "| (vertical bar)"
@@ -7311,7 +7311,7 @@ msgstr "~ (波浪号)"
 
 #: ../../library/stdtypes.rst:804
 msgid "iterator protocol"
-msgstr ""
+msgstr "迭代器协议"
 
 #: ../../library/stdtypes.rst:804 ../../library/stdtypes.rst:4753
 msgid "protocol"
@@ -7329,7 +7329,7 @@ msgstr "sequence"
 
 #: ../../library/stdtypes.rst:804
 msgid "iteration"
-msgstr ""
+msgstr "迭代"
 
 #: ../../library/stdtypes.rst:804
 msgid "container"
@@ -7337,7 +7337,7 @@ msgstr "容器"
 
 #: ../../library/stdtypes.rst:804
 msgid "iteration over"
-msgstr ""
+msgstr "迭代目标"
 
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:4369
 msgid "len"
@@ -7345,15 +7345,15 @@ msgstr "len"
 
 #: ../../library/stdtypes.rst:907
 msgid "min"
-msgstr ""
+msgstr "min"
 
 #: ../../library/stdtypes.rst:907
 msgid "max"
-msgstr ""
+msgstr "max"
 
 #: ../../library/stdtypes.rst:907
 msgid "concatenation"
-msgstr ""
+msgstr "拼接"
 
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:907
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:907
@@ -7362,11 +7362,11 @@ msgstr "operation"
 
 #: ../../library/stdtypes.rst:907
 msgid "repetition"
-msgstr ""
+msgstr "重复"
 
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:1111
 msgid "subscript"
-msgstr ""
+msgstr "下标"
 
 #: ../../library/stdtypes.rst:907 ../../library/stdtypes.rst:1111
 msgid "slice"
@@ -7374,11 +7374,11 @@ msgstr "slice -- 切片"
 
 #: ../../library/stdtypes.rst:907
 msgid "count() (sequence method)"
-msgstr ""
+msgstr "count() (序列方法)"
 
 #: ../../library/stdtypes.rst:907
 msgid "index() (sequence method)"
-msgstr ""
+msgstr "index() (序列方法)"
 
 #: ../../library/stdtypes.rst:963
 msgid "loop"
@@ -7386,15 +7386,15 @@ msgstr "循环"
 
 #: ../../library/stdtypes.rst:963
 msgid "over mutable sequence"
-msgstr ""
+msgstr "针对可变序列"
 
 #: ../../library/stdtypes.rst:963
 msgid "mutable sequence"
-msgstr ""
+msgstr "可变序列"
 
 #: ../../library/stdtypes.rst:963
 msgid "loop over"
-msgstr ""
+msgstr "循环"
 
 #: ../../library/stdtypes.rst:1074
 msgid "immutable"
@@ -7438,35 +7438,35 @@ msgstr "del"
 
 #: ../../library/stdtypes.rst:1111
 msgid "append() (sequence method)"
-msgstr ""
+msgstr "append() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "clear() (sequence method)"
-msgstr ""
+msgstr "clear() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "copy() (sequence method)"
-msgstr ""
+msgstr "copy() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "extend() (sequence method)"
-msgstr ""
+msgstr "extend() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "insert() (sequence method)"
-msgstr ""
+msgstr "insert() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "pop() (sequence method)"
-msgstr ""
+msgstr "pop() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "remove() (sequence method)"
-msgstr ""
+msgstr "remove() (序列方法)"
 
 #: ../../library/stdtypes.rst:1111
 msgid "reverse() (sequence method)"
-msgstr ""
+msgstr "reverse() (序列方法)"
 
 #: ../../library/stdtypes.rst:1339
 msgid "range"
@@ -7480,20 +7480,20 @@ msgstr "string"
 
 #: ../../library/stdtypes.rst:1461
 msgid "text sequence type"
-msgstr ""
+msgstr "文本序列类型"
 
 #: ../../library/stdtypes.rst:1461 ../../library/stdtypes.rst:1510
 #: ../../library/stdtypes.rst:1528 ../../library/stdtypes.rst:1528
 msgid "str (built-in class)"
-msgstr ""
+msgstr "str (内置类)"
 
 #: ../../library/stdtypes.rst:1461
 msgid "(see also string)"
-msgstr ""
+msgstr "(另请参阅字符串)"
 
 #: ../../library/stdtypes.rst:1497
 msgid "io.StringIO"
-msgstr ""
+msgstr "io.StringIO"
 
 #: ../../library/stdtypes.rst:1528 ../../library/stdtypes.rst:2458
 msgid "buffer protocol"
@@ -7508,7 +7508,7 @@ msgstr "字节串"
 #: ../../library/stdtypes.rst:1555 ../../library/stdtypes.rst:2664
 #: ../../library/stdtypes.rst:2664
 msgid "methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../library/stdtypes.rst:1563
 msgid "re"
@@ -7521,23 +7521,23 @@ msgstr "universal newlines -- 通用换行"
 
 #: ../../library/stdtypes.rst:2078
 msgid "str.splitlines method"
-msgstr ""
+msgstr "str.splitlines 方法"
 
 #: ../../library/stdtypes.rst:2269
 msgid "formatting, string (%)"
-msgstr ""
+msgstr "格式化, 字符串 (%)"
 
 #: ../../library/stdtypes.rst:2269
 msgid "interpolation, string (%)"
-msgstr ""
+msgstr "插值, 字符串 (%)"
 
 #: ../../library/stdtypes.rst:2269
 msgid "formatting, printf"
-msgstr ""
+msgstr "格式化, printf"
 
 #: ../../library/stdtypes.rst:2269
 msgid "interpolation, printf"
-msgstr ""
+msgstr "插值, printf"
 
 #: ../../library/stdtypes.rst:2269 ../../library/stdtypes.rst:2269
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485

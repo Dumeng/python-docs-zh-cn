@@ -4514,7 +4514,7 @@ msgstr "字节"
 
 #: ../../reference/datamodel.rst:352
 msgid "mutable sequence"
-msgstr ""
+msgstr "可变序列"
 
 #: ../../reference/datamodel.rst:352
 msgid "mutable"

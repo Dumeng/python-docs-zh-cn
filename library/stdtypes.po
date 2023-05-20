@@ -7156,7 +7156,7 @@ msgstr "语言"
 #: ../../library/stdtypes.rst:228 ../../library/stdtypes.rst:228
 #: ../../library/stdtypes.rst:228
 msgid "literals"
-msgstr ""
+msgstr "字面值"
 
 #: ../../library/stdtypes.rst:228
 msgid "hexadecimal"
@@ -7207,7 +7207,7 @@ msgstr "单目运算符"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 msgid "binary operator"
-msgstr ""
+msgstr "双目运算符"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2342
@@ -7279,7 +7279,7 @@ msgstr "bitwise"
 
 #: ../../library/stdtypes.rst:390
 msgid "shifting"
-msgstr ""
+msgstr "移位"
 
 #: ../../library/stdtypes.rst:390
 msgid "masking"
@@ -7287,7 +7287,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:390
 msgid "| (vertical bar)"
-msgstr ""
+msgstr "| (竖线)"
 
 #: ../../library/stdtypes.rst:390
 msgid "^ (caret)"
@@ -7295,15 +7295,15 @@ msgstr "^ (脱字号)"
 
 #: ../../library/stdtypes.rst:390
 msgid "& (ampersand)"
-msgstr ""
+msgstr "& (和号)"
 
 #: ../../library/stdtypes.rst:390
 msgid "<<"
-msgstr ""
+msgstr "<<"
 
 #: ../../library/stdtypes.rst:390
 msgid ">>"
-msgstr ""
+msgstr ">>"
 
 #: ../../library/stdtypes.rst:390
 msgid "~ (tilde)"

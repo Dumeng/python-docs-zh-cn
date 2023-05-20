@@ -4498,7 +4498,7 @@ msgstr "元组"
 
 #: ../../reference/datamodel.rst:330
 msgid "singleton"
-msgstr ""
+msgstr "单例"
 
 #: ../../reference/datamodel.rst:330
 msgid "empty"
@@ -4510,7 +4510,7 @@ msgstr "字节串"
 
 #: ../../reference/datamodel.rst:343
 msgid "byte"
-msgstr ""
+msgstr "字节"
 
 #: ../../reference/datamodel.rst:352
 msgid "mutable sequence"

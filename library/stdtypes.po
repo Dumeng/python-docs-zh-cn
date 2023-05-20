@@ -7203,7 +7203,7 @@ msgstr "+ (加号)"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 msgid "unary operator"
-msgstr ""
+msgstr "单目运算符"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:245
 msgid "binary operator"
@@ -7226,7 +7226,7 @@ msgstr "/ (斜杠)"
 
 #: ../../library/stdtypes.rst:245
 msgid "//"
-msgstr ""
+msgstr "//"
 
 #: ../../library/stdtypes.rst:245 ../../library/stdtypes.rst:2269
 #: ../../library/stdtypes.rst:3485
@@ -7275,7 +7275,7 @@ msgstr ""
 
 #: ../../library/stdtypes.rst:390
 msgid "bitwise"
-msgstr ""
+msgstr "bitwise"
 
 #: ../../library/stdtypes.rst:390
 msgid "shifting"

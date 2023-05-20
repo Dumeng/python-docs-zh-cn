@@ -4704,7 +4704,7 @@ msgstr "asynchronous iterator -- 异步迭代器"
 
 #: ../../reference/datamodel.rst:705
 msgid "built-in method"
-msgstr ""
+msgstr "内置方法"
 
 #: ../../reference/datamodel.rst:705
 msgid "built-in"
@@ -4743,16 +4743,16 @@ msgstr "class"
 #: ../../reference/datamodel.rst:807 ../../reference/datamodel.rst:867
 #: ../../reference/datamodel.rst:867 ../../reference/datamodel.rst:887
 msgid "class instance"
-msgstr ""
+msgstr "类实例"
 
 #: ../../reference/datamodel.rst:807 ../../reference/datamodel.rst:867
 #: ../../reference/datamodel.rst:867 ../../reference/datamodel.rst:2427
 msgid "instance"
-msgstr ""
+msgstr "实例"
 
 #: ../../reference/datamodel.rst:807 ../../reference/datamodel.rst:829
 msgid "class object"
-msgstr ""
+msgstr "类对象"
 
 #: ../../reference/datamodel.rst:833
 msgid "__name__ (class attribute)"

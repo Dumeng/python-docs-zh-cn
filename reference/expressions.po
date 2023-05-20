@@ -3040,7 +3040,7 @@ msgstr "method -- 方法"
 
 #: ../../reference/expressions.rst:1102 ../../reference/expressions.rst:1102
 msgid "built-in method"
-msgstr ""
+msgstr "内置方法"
 
 #: ../../reference/expressions.rst:1116
 msgid "class"
@@ -3048,23 +3048,23 @@ msgstr "class"
 
 #: ../../reference/expressions.rst:1116
 msgid "class object"
-msgstr ""
+msgstr "类对象"
 
 #: ../../reference/expressions.rst:1123 ../../reference/expressions.rst:1123
 msgid "class instance"
-msgstr ""
+msgstr "类实例"
 
 #: ../../reference/expressions.rst:1123 ../../reference/expressions.rst:1133
 msgid "instance"
-msgstr ""
+msgstr "实例"
 
 #: ../../reference/expressions.rst:1133
 msgid "__call__() (object method)"
-msgstr ""
+msgstr "__call__() (对象方法)"
 
 #: ../../reference/expressions.rst:1161
 msgid "power"
-msgstr ""
+msgstr "power"
 
 #: ../../reference/expressions.rst:1161 ../../reference/expressions.rst:1196
 #: ../../reference/expressions.rst:1196 ../../reference/expressions.rst:1244
@@ -3094,21 +3094,21 @@ msgstr "operator"
 
 #: ../../reference/expressions.rst:1196 ../../reference/expressions.rst:1196
 msgid "unary"
-msgstr ""
+msgstr "单目"
 
 #: ../../reference/expressions.rst:1196 ../../reference/expressions.rst:1380
 #: ../../reference/expressions.rst:1389 ../../reference/expressions.rst:1397
 #: ../../reference/expressions.rst:1406
 msgid "bitwise"
-msgstr ""
+msgstr "按位"
 
 #: ../../reference/expressions.rst:1205
 msgid "negation"
-msgstr ""
+msgstr "非"
 
 #: ../../reference/expressions.rst:1205
 msgid "minus"
-msgstr ""
+msgstr "取负"
 
 #: ../../reference/expressions.rst:1205 ../../reference/expressions.rst:1205
 #: ../../reference/expressions.rst:1337 ../../reference/expressions.rst:1337
@@ -3117,11 +3117,11 @@ msgstr "- (减号)"
 
 #: ../../reference/expressions.rst:1205 ../../reference/expressions.rst:1214
 msgid "unary operator"
-msgstr ""
+msgstr "单目运算符"
 
 #: ../../reference/expressions.rst:1214
 msgid "plus"
-msgstr ""
+msgstr "加"
 
 #: ../../reference/expressions.rst:1214 ../../reference/expressions.rst:1214
 #: ../../reference/expressions.rst:1324 ../../reference/expressions.rst:1324
@@ -3130,7 +3130,7 @@ msgstr "+ (加号)"
 
 #: ../../reference/expressions.rst:1222
 msgid "inversion"
-msgstr ""
+msgstr "取反"
 
 #: ../../reference/expressions.rst:1222
 msgid "~ (tilde)"
@@ -3138,7 +3138,7 @@ msgstr "~ (波浪号)"
 
 #: ../../reference/expressions.rst:1233
 msgid "TypeError"
-msgstr ""
+msgstr "TypeError"
 
 #: ../../reference/expressions.rst:1244 ../../reference/expressions.rst:1380
 msgid "binary"
@@ -3146,11 +3146,11 @@ msgstr "二进制"
 
 #: ../../reference/expressions.rst:1257
 msgid "multiplication"
-msgstr ""
+msgstr "乘"
 
 #: ../../reference/expressions.rst:1270
 msgid "matrix multiplication"
-msgstr ""
+msgstr "矩阵乘法"
 
 #: ../../reference/expressions.rst:1270
 msgid "@ (at)"
@@ -3158,7 +3158,7 @@ msgstr "@ (at)"
 
 #: ../../reference/expressions.rst:1279
 msgid "ZeroDivisionError"
-msgstr ""
+msgstr "ZeroDivisionError"
 
 #: ../../reference/expressions.rst:1279
 msgid "division"
@@ -3170,11 +3170,11 @@ msgstr "/ (斜杠)"
 
 #: ../../reference/expressions.rst:1279
 msgid "//"
-msgstr ""
+msgstr "//"
 
 #: ../../reference/expressions.rst:1295
 msgid "modulo"
-msgstr ""
+msgstr "求模"
 
 #: ../../reference/expressions.rst:1295
 msgid "% (percent)"
@@ -3182,7 +3182,7 @@ msgstr "% (百分号)"
 
 #: ../../reference/expressions.rst:1324
 msgid "addition"
-msgstr ""
+msgstr "加"
 
 #: ../../reference/expressions.rst:1324 ../../reference/expressions.rst:1337
 msgid "binary operator"

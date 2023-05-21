@@ -7626,7 +7626,7 @@ msgstr "dictionary -- 字典"
 
 #: ../../library/stdtypes.rst:4452
 msgid "__missing__()"
-msgstr ""
+msgstr "__missing__()"
 
 #: ../../library/stdtypes.rst:4753
 msgid "context manager"
@@ -7634,11 +7634,11 @@ msgstr "context manager -- 上下文管理器"
 
 #: ../../library/stdtypes.rst:4753
 msgid "context management protocol"
-msgstr ""
+msgstr "上下文管理协议"
 
 #: ../../library/stdtypes.rst:4753
 msgid "context management"
-msgstr ""
+msgstr "上下文管理"
 
 #: ../../library/stdtypes.rst:4826
 msgid "annotation"
@@ -7646,27 +7646,27 @@ msgstr "annotation -- 标注"
 
 #: ../../library/stdtypes.rst:4826
 msgid "type annotation; type hint"
-msgstr ""
+msgstr "类型标注; 类型提示type hint"
 
 #: ../../library/stdtypes.rst:4838
 msgid "GenericAlias"
-msgstr ""
+msgstr "GenericAlias"
 
 #: ../../library/stdtypes.rst:4838
 msgid "Generic"
-msgstr ""
+msgstr "Generic"
 
 #: ../../library/stdtypes.rst:4838
 msgid "Alias"
-msgstr ""
+msgstr "Alias"
 
 #: ../../library/stdtypes.rst:5093
 msgid "Union"
-msgstr ""
+msgstr "Union"
 
 #: ../../library/stdtypes.rst:5093
 msgid "union"
-msgstr ""
+msgstr "union"
 
 #: ../../library/stdtypes.rst:5251
 msgid "method"
@@ -7686,7 +7686,7 @@ msgstr "编译"
 
 #: ../../library/stdtypes.rst:5297
 msgid "__code__ (function object attribute)"
-msgstr ""
+msgstr "__code__ (函数对象属性)"
 
 #: ../../library/stdtypes.rst:5311
 msgid "exec"

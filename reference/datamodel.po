@@ -4545,7 +4545,7 @@ msgstr "array"
 
 #: ../../reference/datamodel.rst:386
 msgid "set type"
-msgstr ""
+msgstr "集合类型"
 
 #: ../../reference/datamodel.rst:405
 msgid "set"
@@ -4590,7 +4590,7 @@ msgstr "call"
 
 #: ../../reference/datamodel.rst:467
 msgid "invocation"
-msgstr ""
+msgstr "发起调用"
 
 #: ../../reference/datamodel.rst:467
 msgid "argument"
@@ -4606,43 +4606,43 @@ msgstr "用户自定义函数"
 
 #: ../../reference/datamodel.rst:491
 msgid "__doc__ (function attribute)"
-msgstr ""
+msgstr "__doc__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__name__ (function attribute)"
-msgstr ""
+msgstr "__name__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__module__ (function attribute)"
-msgstr ""
+msgstr "__module__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__dict__ (function attribute)"
-msgstr ""
+msgstr "__dict__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__defaults__ (function attribute)"
-msgstr ""
+msgstr "__defaults__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__closure__ (function attribute)"
-msgstr ""
+msgstr "__closure__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__code__ (function attribute)"
-msgstr ""
+msgstr "__code__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__globals__ (function attribute)"
-msgstr ""
+msgstr "__globals__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__annotations__ (function attribute)"
-msgstr ""
+msgstr "__annotations__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "__kwdefaults__ (function attribute)"
-msgstr ""
+msgstr "__kwdefaults__ (函数属性)"
 
 #: ../../reference/datamodel.rst:491
 msgid "global"
@@ -4659,27 +4659,27 @@ msgstr "method -- 方法"
 
 #: ../../reference/datamodel.rst:582
 msgid "user-defined method"
-msgstr ""
+msgstr "用户自定义方法"
 
 #: ../../reference/datamodel.rst:590
 msgid "__func__ (method attribute)"
-msgstr ""
+msgstr "__func__ (方法属性)"
 
 #: ../../reference/datamodel.rst:590
 msgid "__self__ (method attribute)"
-msgstr ""
+msgstr "__self__ (方法属性)"
 
 #: ../../reference/datamodel.rst:590
 msgid "__doc__ (method attribute)"
-msgstr ""
+msgstr "__doc__ (方法属性)"
 
 #: ../../reference/datamodel.rst:590
 msgid "__name__ (method attribute)"
-msgstr ""
+msgstr "__name__ (方法属性)"
 
 #: ../../reference/datamodel.rst:590
 msgid "__module__ (method attribute)"
-msgstr ""
+msgstr "__module__ (方法属性)"
 
 #: ../../reference/datamodel.rst:645 ../../reference/datamodel.rst:645
 #: ../../reference/datamodel.rst:998
@@ -4728,7 +4728,7 @@ msgstr "__file__ (模块属性)"
 
 #: ../../reference/datamodel.rst:748
 msgid "__annotations__ (module attribute)"
-msgstr ""
+msgstr "__annotations__ (模块属性)"
 
 #: ../../reference/datamodel.rst:779
 msgid "__dict__ (module attribute)"
@@ -4756,35 +4756,35 @@ msgstr "类对象"
 
 #: ../../reference/datamodel.rst:833
 msgid "__name__ (class attribute)"
-msgstr ""
+msgstr "__name__ (类属性)"
 
 #: ../../reference/datamodel.rst:833
 msgid "__module__ (class attribute)"
-msgstr ""
+msgstr "__module__ (类属性)"
 
 #: ../../reference/datamodel.rst:833
 msgid "__dict__ (class attribute)"
-msgstr ""
+msgstr "__dict__ (类属性)"
 
 #: ../../reference/datamodel.rst:833
 msgid "__bases__ (class attribute)"
-msgstr ""
+msgstr "__bases__ (类属性)"
 
 #: ../../reference/datamodel.rst:833
 msgid "__doc__ (class attribute)"
-msgstr ""
+msgstr "__doc__ (类属性)"
 
 #: ../../reference/datamodel.rst:833
 msgid "__annotations__ (class attribute)"
-msgstr ""
+msgstr "__annotations__ (类属性)"
 
 #: ../../reference/datamodel.rst:902
 msgid "__dict__ (instance attribute)"
-msgstr ""
+msgstr "__dict__ (实例属性)"
 
 #: ../../reference/datamodel.rst:902
 msgid "__class__ (instance attribute)"
-msgstr ""
+msgstr "__class__ (实例属性)"
 
 #: ../../reference/datamodel.rst:910
 msgid "open"
@@ -4800,43 +4800,43 @@ msgstr "popen() (在 os 模块中)"
 
 #: ../../reference/datamodel.rst:910
 msgid "makefile() (socket method)"
-msgstr ""
+msgstr "makefile() (套接字属性)"
 
 #: ../../reference/datamodel.rst:910
 msgid "sys.stdin"
-msgstr ""
+msgstr "sys.stdin"
 
 #: ../../reference/datamodel.rst:910
 msgid "sys.stdout"
-msgstr ""
+msgstr "sys.stdout"
 
 #: ../../reference/datamodel.rst:910
 msgid "sys.stderr"
-msgstr ""
+msgstr "sys.stderr"
 
 #: ../../reference/datamodel.rst:910
 msgid "stdio"
-msgstr ""
+msgstr "stdio"
 
 #: ../../reference/datamodel.rst:910
 msgid "stdin (in module sys)"
-msgstr ""
+msgstr "stdin (在 sys 模块中)"
 
 #: ../../reference/datamodel.rst:910
 msgid "stdout (in module sys)"
-msgstr ""
+msgstr "stdout (在 sys 模块中)"
 
 #: ../../reference/datamodel.rst:910
 msgid "stderr (in module sys)"
-msgstr ""
+msgstr "stderr (在 sys 模块中)"
 
 #: ../../reference/datamodel.rst:936
 msgid "internal type"
-msgstr ""
+msgstr "内部类型"
 
 #: ../../reference/datamodel.rst:936
 msgid "types, internal"
-msgstr ""
+msgstr "类型, 内部"
 
 #: ../../reference/datamodel.rst:944
 msgid "bytecode"
@@ -4852,71 +4852,71 @@ msgstr "代码对象"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_argcount (code object attribute)"
-msgstr ""
+msgstr "co_argcount (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_posonlyargcount (code object attribute)"
-msgstr ""
+msgstr "co_posonlyargcount (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_kwonlyargcount (code object attribute)"
-msgstr ""
+msgstr "co_kwonlyargcount (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_code (code object attribute)"
-msgstr ""
+msgstr "co_code (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_consts (code object attribute)"
-msgstr ""
+msgstr "co_consts (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_filename (code object attribute)"
-msgstr ""
+msgstr "co_filename (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_firstlineno (code object attribute)"
-msgstr ""
+msgstr "co_firstlineno (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_flags (code object attribute)"
-msgstr ""
+msgstr "co_flags (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_lnotab (code object attribute)"
-msgstr ""
+msgstr "co_lnotab (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_name (code object attribute)"
-msgstr ""
+msgstr "co_name (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_names (code object attribute)"
-msgstr ""
+msgstr "co_names (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_nlocals (code object attribute)"
-msgstr ""
+msgstr "co_nlocals (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_stacksize (code object attribute)"
-msgstr ""
+msgstr "co_stacksize (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_varnames (code object attribute)"
-msgstr ""
+msgstr "co_varnames (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_cellvars (code object attribute)"
-msgstr ""
+msgstr "co_cellvars (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_freevars (code object attribute)"
-msgstr ""
+msgstr "co_freevars (代码对象属性)"
 
 #: ../../reference/datamodel.rst:956
 msgid "co_qualname (code object attribute)"
-msgstr ""
+msgstr "co_qualname (代码对象属性)"
 
 #: ../../reference/datamodel.rst:1014
 msgid "documentation string"
@@ -4928,43 +4928,43 @@ msgstr "frame -- 帧"
 
 #: ../../reference/datamodel.rst:1060
 msgid "f_back (frame attribute)"
-msgstr ""
+msgstr "f_back (帧属性)"
 
 #: ../../reference/datamodel.rst:1060
 msgid "f_code (frame attribute)"
-msgstr ""
+msgstr "f_code (帧属性)"
 
 #: ../../reference/datamodel.rst:1060
 msgid "f_globals (frame attribute)"
-msgstr ""
+msgstr "f_globals (帧属性)"
 
 #: ../../reference/datamodel.rst:1060
 msgid "f_locals (frame attribute)"
-msgstr ""
+msgstr "f_locals (帧属性)"
 
 #: ../../reference/datamodel.rst:1060
 msgid "f_lasti (frame attribute)"
-msgstr ""
+msgstr "f_lasti (帧属性)"
 
 #: ../../reference/datamodel.rst:1060
 msgid "f_builtins (frame attribute)"
-msgstr ""
+msgstr "f_builtins (帧属性)"
 
 #: ../../reference/datamodel.rst:1079
 msgid "f_trace (frame attribute)"
-msgstr ""
+msgstr "f_trace (帧属性)"
 
 #: ../../reference/datamodel.rst:1079
 msgid "f_trace_lines (frame attribute)"
-msgstr ""
+msgstr "f_trace_lines (帧属性)"
 
 #: ../../reference/datamodel.rst:1079
 msgid "f_trace_opcodes (frame attribute)"
-msgstr ""
+msgstr "f_trace_opcodes (帧属性)"
 
 #: ../../reference/datamodel.rst:1079
 msgid "f_lineno (frame attribute)"
-msgstr ""
+msgstr "f_lineno (帧属性)"
 
 #: ../../reference/datamodel.rst:1117
 msgid "traceback"
@@ -4972,11 +4972,11 @@ msgstr "traceback -- 回溯"
 
 #: ../../reference/datamodel.rst:1117 ../../reference/datamodel.rst:1117
 msgid "stack"
-msgstr ""
+msgstr "栈"
 
 #: ../../reference/datamodel.rst:1117
 msgid "trace"
-msgstr ""
+msgstr "跟踪"
 
 #: ../../reference/datamodel.rst:1117
 msgid "exception"
@@ -4984,7 +4984,7 @@ msgstr "异常"
 
 #: ../../reference/datamodel.rst:1117
 msgid "handler"
-msgstr ""
+msgstr "处理句柄"
 
 #: ../../reference/datamodel.rst:1117
 msgid "execution"
@@ -4992,35 +4992,35 @@ msgstr "执行"
 
 #: ../../reference/datamodel.rst:1117
 msgid "exc_info (in module sys)"
-msgstr ""
+msgstr "exc_info (在 sys 模块中)"
 
 #: ../../reference/datamodel.rst:1117
 msgid "last_traceback (in module sys)"
-msgstr ""
+msgstr "last_traceback (在 sys 模块中)"
 
 #: ../../reference/datamodel.rst:1117
 msgid "sys.exc_info"
-msgstr ""
+msgstr "sys.exc_info"
 
 #: ../../reference/datamodel.rst:1117
 msgid "sys.exception"
-msgstr ""
+msgstr "sys.exception"
 
 #: ../../reference/datamodel.rst:1117
 msgid "sys.last_traceback"
-msgstr ""
+msgstr "sys.last_traceback"
 
 #: ../../reference/datamodel.rst:1149
 msgid "tb_frame (traceback attribute)"
-msgstr ""
+msgstr "tb_frame (回溯属性)"
 
 #: ../../reference/datamodel.rst:1149
 msgid "tb_lineno (traceback attribute)"
-msgstr ""
+msgstr "tb_lineno (回溯属性)"
 
 #: ../../reference/datamodel.rst:1149
 msgid "tb_lasti (traceback attribute)"
-msgstr ""
+msgstr "tb_lasti (回溯属性)"
 
 #: ../../reference/datamodel.rst:1149
 msgid "try"
@@ -5028,7 +5028,7 @@ msgstr "try"
 
 #: ../../reference/datamodel.rst:1167
 msgid "tb_next (traceback attribute)"
-msgstr ""
+msgstr "tb_next (回溯属性)"
 
 #: ../../reference/datamodel.rst:1179 ../../reference/datamodel.rst:2504
 msgid "slice"
@@ -5052,15 +5052,15 @@ msgstr "operator"
 
 #: ../../reference/datamodel.rst:1227
 msgid "overloading"
-msgstr ""
+msgstr "重载"
 
 #: ../../reference/datamodel.rst:1227
 msgid "__getitem__() (mapping object method)"
-msgstr ""
+msgstr "__getitem__() (映射对象方法)"
 
 #: ../../reference/datamodel.rst:1263
 msgid "subclassing"
-msgstr ""
+msgstr "子类化"
 
 #: ../../reference/datamodel.rst:1263
 msgid "immutable types"

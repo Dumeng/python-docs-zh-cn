@@ -16,17 +16,17 @@
 # Dai Xu <daixu61@hotmail.com>, 2022
 # cdarlint <cdarling@126.com>, 2022
 # Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 19:31+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1726,7 +1726,7 @@ msgstr "这是其他标准警告类别的基类。"
 
 #: ../../c-api/exceptions.rst:150
 msgid "strerror()"
-msgstr ""
+msgstr "strerror()"
 
 #: ../../c-api/exceptions.rst:545 ../../c-api/exceptions.rst:576
 #: ../../c-api/exceptions.rst:591
@@ -1740,277 +1740,277 @@ msgstr "signal"
 
 #: ../../c-api/exceptions.rst:545 ../../c-api/exceptions.rst:576
 msgid "SIGINT"
-msgstr ""
+msgstr "SIGINT"
 
 #: ../../c-api/exceptions.rst:545 ../../c-api/exceptions.rst:576
 #: ../../c-api/exceptions.rst:591
 msgid "KeyboardInterrupt (built-in exception)"
-msgstr ""
+msgstr "KeyboardInterrupt (内置异常)"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_BaseException"
-msgstr ""
+msgstr "PyExc_BaseException"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_Exception"
-msgstr ""
+msgstr "PyExc_Exception"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ArithmeticError"
-msgstr ""
+msgstr "PyExc_ArithmeticError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_AssertionError"
-msgstr ""
+msgstr "PyExc_AssertionError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_AttributeError"
-msgstr ""
+msgstr "PyExc_AttributeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_BlockingIOError"
-msgstr ""
+msgstr "PyExc_BlockingIOError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_BrokenPipeError"
-msgstr ""
+msgstr "PyExc_BrokenPipeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_BufferError"
-msgstr ""
+msgstr "PyExc_BufferError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ChildProcessError"
-msgstr ""
+msgstr "PyExc_ChildProcessError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ConnectionAbortedError"
-msgstr ""
+msgstr "PyExc_ConnectionAbortedError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ConnectionError"
-msgstr ""
+msgstr "PyExc_ConnectionError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ConnectionRefusedError"
-msgstr ""
+msgstr "PyExc_ConnectionRefusedError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ConnectionResetError"
-msgstr ""
+msgstr "PyExc_ConnectionResetError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_EOFError"
-msgstr ""
+msgstr "PyExc_EOFError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_FileExistsError"
-msgstr ""
+msgstr "PyExc_FileExistsError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_FileNotFoundError"
-msgstr ""
+msgstr "PyExc_FileNotFoundError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_FloatingPointError"
-msgstr ""
+msgstr "PyExc_FloatingPointError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_GeneratorExit"
-msgstr ""
+msgstr "PyExc_GeneratorExit"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ImportError"
-msgstr ""
+msgstr "PyExc_ImportError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_IndentationError"
-msgstr ""
+msgstr "PyExc_IndentationError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_IndexError"
-msgstr ""
+msgstr "PyExc_IndexError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_InterruptedError"
-msgstr ""
+msgstr "PyExc_InterruptedError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_IsADirectoryError"
-msgstr ""
+msgstr "PyExc_IsADirectoryError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_KeyError"
-msgstr ""
+msgstr "PyExc_KeyError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_KeyboardInterrupt"
-msgstr ""
+msgstr "PyExc_KeyboardInterrupt"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_LookupError"
-msgstr ""
+msgstr "PyExc_LookupError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_MemoryError"
-msgstr ""
+msgstr "PyExc_MemoryError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ModuleNotFoundError"
-msgstr ""
+msgstr "PyExc_ModuleNotFoundError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_NameError"
-msgstr ""
+msgstr "PyExc_NameError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_NotADirectoryError"
-msgstr ""
+msgstr "PyExc_NotADirectoryError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_NotImplementedError"
-msgstr ""
+msgstr "PyExc_NotImplementedError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_OSError"
-msgstr ""
+msgstr "PyExc_OSError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_OverflowError"
-msgstr ""
+msgstr "PyExc_OverflowError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_PermissionError"
-msgstr ""
+msgstr "PyExc_PermissionError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ProcessLookupError"
-msgstr ""
+msgstr "PyExc_ProcessLookupError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_RecursionError"
-msgstr ""
+msgstr "PyExc_RecursionError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ReferenceError"
-msgstr ""
+msgstr "PyExc_ReferenceError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_RuntimeError"
-msgstr ""
+msgstr "PyExc_RuntimeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_StopAsyncIteration"
-msgstr ""
+msgstr "PyExc_StopAsyncIteration"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_StopIteration"
-msgstr ""
+msgstr "PyExc_StopIteration"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_SyntaxError"
-msgstr ""
+msgstr "PyExc_SyntaxError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_SystemError"
-msgstr ""
+msgstr "PyExc_SystemError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_SystemExit"
-msgstr ""
+msgstr "PyExc_SystemExit"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_TabError"
-msgstr ""
+msgstr "PyExc_TabError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_TimeoutError"
-msgstr ""
+msgstr "PyExc_TimeoutError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_TypeError"
-msgstr ""
+msgstr "PyExc_TypeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_UnboundLocalError"
-msgstr ""
+msgstr "PyExc_UnboundLocalError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_UnicodeDecodeError"
-msgstr ""
+msgstr "PyExc_UnicodeDecodeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_UnicodeEncodeError"
-msgstr ""
+msgstr "PyExc_UnicodeEncodeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_UnicodeError"
-msgstr ""
+msgstr "PyExc_UnicodeError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_UnicodeTranslateError"
-msgstr ""
+msgstr "PyExc_UnicodeTranslateError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ValueError"
-msgstr ""
+msgstr "PyExc_ValueError"
 
 #: ../../c-api/exceptions.rst:854
 msgid "PyExc_ZeroDivisionError"
-msgstr ""
+msgstr "PyExc_ZeroDivisionError"
 
 #: ../../c-api/exceptions.rst:1037
 msgid "PyExc_EnvironmentError"
-msgstr ""
+msgstr "PyExc_EnvironmentError"
 
 #: ../../c-api/exceptions.rst:1037
 msgid "PyExc_IOError"
-msgstr ""
+msgstr "PyExc_IOError"
 
 #: ../../c-api/exceptions.rst:1037
 msgid "PyExc_WindowsError"
-msgstr ""
+msgstr "PyExc_WindowsError"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_Warning"
-msgstr ""
+msgstr "PyExc_Warning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_BytesWarning"
-msgstr ""
+msgstr "PyExc_BytesWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_DeprecationWarning"
-msgstr ""
+msgstr "PyExc_DeprecationWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_FutureWarning"
-msgstr ""
+msgstr "PyExc_FutureWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_ImportWarning"
-msgstr ""
+msgstr "PyExc_ImportWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_PendingDeprecationWarning"
-msgstr ""
+msgstr "PyExc_PendingDeprecationWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_ResourceWarning"
-msgstr ""
+msgstr "PyExc_ResourceWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_RuntimeWarning"
-msgstr ""
+msgstr "PyExc_RuntimeWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_SyntaxWarning"
-msgstr ""
+msgstr "PyExc_SyntaxWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_UnicodeWarning"
-msgstr ""
+msgstr "PyExc_UnicodeWarning"
 
 #: ../../c-api/exceptions.rst:1074
 msgid "PyExc_UserWarning"
-msgstr ""
+msgstr "PyExc_UserWarning"

@@ -2341,15 +2341,15 @@ msgstr "_thread"
 
 #: ../../c-api/init.rst:1387
 msgid "stdout (in module sys)"
-msgstr ""
+msgstr "stdout (在 sys 模块中)"
 
 #: ../../c-api/init.rst:1387
 msgid "stderr (in module sys)"
-msgstr ""
+msgstr "stderr (在 sys 模块中)"
 
 #: ../../c-api/init.rst:1387
 msgid "stdin (in module sys)"
-msgstr ""
+msgstr "stdin (在 sys 模块中)"
 
 #: ../../c-api/init.rst:1446
 msgid "close() (in module os)"

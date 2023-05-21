@@ -7542,11 +7542,11 @@ msgstr "插值, printf"
 #: ../../library/stdtypes.rst:2269 ../../library/stdtypes.rst:2269
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 msgid "printf-style formatting"
-msgstr ""
+msgstr "printf 风格的格式化"
 
 #: ../../library/stdtypes.rst:2269 ../../library/stdtypes.rst:3485
 msgid "sprintf-style formatting"
-msgstr ""
+msgstr "sprintf 风格的格式化"
 
 #: ../../library/stdtypes.rst:2299 ../../library/stdtypes.rst:3517
 msgid "() (parentheses)"
@@ -7560,7 +7560,7 @@ msgstr "() (圆括号)"
 #: ../../library/stdtypes.rst:3560 ../../library/stdtypes.rst:3560
 #: ../../library/stdtypes.rst:3560 ../../library/stdtypes.rst:3560
 msgid "in printf-style formatting"
-msgstr ""
+msgstr "使用 printf 风格的格式化"
 
 #: ../../library/stdtypes.rst:2299 ../../library/stdtypes.rst:3517
 msgid ". (dot)"
@@ -7576,7 +7576,7 @@ msgstr "space"
 
 #: ../../library/stdtypes.rst:2458
 msgid "binary sequence types"
-msgstr ""
+msgstr "二进制序列类型"
 
 #: ../../library/stdtypes.rst:2466
 msgid "memoryview"
@@ -7588,29 +7588,29 @@ msgstr "array"
 
 #: ../../library/stdtypes.rst:3339
 msgid "bytes.splitlines method"
-msgstr ""
+msgstr "bytes.splitlines 方法"
 
 #: ../../library/stdtypes.rst:3339
 msgid "bytearray.splitlines method"
-msgstr ""
+msgstr "bytearray.splitlines 方法"
 
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 msgid "formatting"
-msgstr ""
+msgstr "格式化"
 
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 msgid "bytes (%)"
-msgstr ""
+msgstr "bytes (%)"
 
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 msgid "bytearray (%)"
-msgstr ""
+msgstr "bytearray (%)"
 
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 #: ../../library/stdtypes.rst:3485 ../../library/stdtypes.rst:3485
 msgid "interpolation"
-msgstr ""
+msgstr "插值"
 
 #: ../../library/stdtypes.rst:4168
 msgid "set"

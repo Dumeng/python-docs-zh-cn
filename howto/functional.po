@@ -5,16 +5,17 @@
 # 
 # Translators:
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-17 14:21+0000\n"
+"POT-Creation-Date: 2023-05-19 14:19+0000\n"
 "PO-Revision-Date: 2022-11-05 17:21+0000\n"
-"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -501,8 +502,8 @@ msgid ""
 "functional programming language Haskell (https://www.haskell.org/).  You can"
 " strip all the whitespace from a stream of strings with the following code::"
 msgstr ""
-"列表推导式和生成器表达时（简写：\"listcomps\" 和 \"genexps\"）让这些操作更加简明，这个形式借鉴自函数式程序语言 "
-"Haskell（https://www.haskell.org/）。你可以用以下代码去掉一个字符串流中的所有空白字符:"
+"列表推导式和生成器表达式 (简写: \"listcomp\" 和 \"genexp\") 让这些操作更加简明，这个形式借鉴自函数式编程语言 "
+"Haskell (https://www.haskell.org/)。 你可以用以下代码去掉一个字符串流中的所有空白符:"
 
 #: ../../howto/functional.rst:352
 msgid "You can select only certain elements by adding an ``\"if\"`` condition::"

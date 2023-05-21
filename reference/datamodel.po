@@ -5064,11 +5064,11 @@ msgstr "子类化"
 
 #: ../../reference/datamodel.rst:1263
 msgid "immutable types"
-msgstr ""
+msgstr "不可变类型"
 
 #: ../../reference/datamodel.rst:1292
 msgid "constructor"
-msgstr ""
+msgstr "构造器"
 
 #: ../../reference/datamodel.rst:1309
 msgid "destructor"
@@ -5076,7 +5076,7 @@ msgstr "destructor"
 
 #: ../../reference/datamodel.rst:1309
 msgid "finalizer"
-msgstr ""
+msgstr "终结器"
 
 #: ../../reference/datamodel.rst:1309
 msgid "del"
@@ -5084,16 +5084,16 @@ msgstr "del"
 
 #: ../../reference/datamodel.rst:1371
 msgid "repr() (built-in function)"
-msgstr ""
+msgstr "repr() (内置函数)"
 
 #: ../../reference/datamodel.rst:1371
 msgid "__repr__() (object method)"
-msgstr ""
+msgstr "__repr__() (对象方法)"
 
 #: ../../reference/datamodel.rst:1388 ../../reference/datamodel.rst:1388
 #: ../../reference/datamodel.rst:1388
 msgid "__str__() (object method)"
-msgstr ""
+msgstr "__str__() (对象方法)"
 
 #: ../../reference/datamodel.rst:1388
 msgid "format() (built-in function)"
@@ -5101,11 +5101,11 @@ msgstr "format() (内置函数)"
 
 #: ../../reference/datamodel.rst:1388
 msgid "print() (built-in function)"
-msgstr ""
+msgstr "print() (内置函数)"
 
 #: ../../reference/datamodel.rst:1418
 msgid "__format__() (object method)"
-msgstr ""
+msgstr "__format__() (对象方法)"
 
 #: ../../reference/datamodel.rst:1418
 msgid "conversion"
@@ -5113,7 +5113,7 @@ msgstr "conversion"
 
 #: ../../reference/datamodel.rst:1418
 msgid "print"
-msgstr ""
+msgstr "print"
 
 #: ../../reference/datamodel.rst:1457
 msgid "comparisons"
@@ -5125,19 +5125,19 @@ msgstr "hash"
 
 #: ../../reference/datamodel.rst:1580
 msgid "__len__() (mapping object method)"
-msgstr ""
+msgstr "__len__() (映射对象方法)"
 
 #: ../../reference/datamodel.rst:1683
 msgid "__getattr__ (module attribute)"
-msgstr ""
+msgstr "__getattr__ (模块属性)"
 
 #: ../../reference/datamodel.rst:1683
 msgid "__dir__ (module attribute)"
-msgstr ""
+msgstr "__dir__ (模块属性)"
 
 #: ../../reference/datamodel.rst:1683
 msgid "__class__ (module attribute)"
-msgstr ""
+msgstr "__class__ (模块属性)"
 
 #: ../../reference/datamodel.rst:2050
 msgid "metaclass"
@@ -5153,27 +5153,27 @@ msgstr "类定义"
 
 #: ../../reference/datamodel.rst:2110
 msgid "metaclass hint"
-msgstr ""
+msgstr "元类提示"
 
 #: ../../reference/datamodel.rst:2133
 msgid "__prepare__ (metaclass method)"
-msgstr ""
+msgstr "__prepare__ (元类方法)"
 
 #: ../../reference/datamodel.rst:2157
 msgid "body"
-msgstr ""
+msgstr "body"
 
 #: ../../reference/datamodel.rst:2177
 msgid "__class__ (method cell)"
-msgstr ""
+msgstr "__class__ (方法单元)"
 
 #: ../../reference/datamodel.rst:2177
 msgid "__classcell__ (class namespace entry)"
-msgstr ""
+msgstr "__classcell__ (类命名空间条目)"
 
 #: ../../reference/datamodel.rst:2474
 msgid "__bool__() (object method)"
-msgstr ""
+msgstr "__bool__() (对象方法)"
 
 #: ../../reference/datamodel.rst:2632 ../../reference/datamodel.rst:2667
 msgid "divmod"
@@ -5198,7 +5198,7 @@ msgstr "float"
 
 #: ../../reference/datamodel.rst:2766
 msgid "round"
-msgstr ""
+msgstr "round"
 
 #: ../../reference/datamodel.rst:2793
 msgid "with"

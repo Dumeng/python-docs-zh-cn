@@ -2189,7 +2189,7 @@ msgstr "Py_SetProgramName()"
 
 #: ../../c-api/init.rst:231
 msgid "PyEval_InitThreads()"
-msgstr ""
+msgstr "PyEval_InitThreads()"
 
 #: ../../c-api/init.rst:231
 msgid "modules (in module sys)"
@@ -2228,11 +2228,11 @@ msgstr "path"
 
 #: ../../c-api/init.rst:231
 msgid "PySys_SetArgv()"
-msgstr ""
+msgstr "PySys_SetArgv()"
 
 #: ../../c-api/init.rst:231
 msgid "PySys_SetArgvEx()"
-msgstr ""
+msgstr "PySys_SetArgvEx()"
 
 #: ../../c-api/init.rst:231 ../../c-api/init.rst:1416
 #: ../../c-api/init.rst:1451
@@ -2245,19 +2245,19 @@ msgstr "Py_Initialize()"
 
 #: ../../c-api/init.rst:321 ../../c-api/init.rst:358 ../../c-api/init.rst:614
 msgid "main()"
-msgstr ""
+msgstr "main()"
 
 #: ../../c-api/init.rst:321
 msgid "stdin"
-msgstr ""
+msgstr "stdin"
 
 #: ../../c-api/init.rst:321
 msgid "stdout"
-msgstr ""
+msgstr "stdout"
 
 #: ../../c-api/init.rst:321
 msgid "sdterr"
-msgstr ""
+msgstr "sdterr"
 
 #: ../../c-api/init.rst:358 ../../c-api/init.rst:506
 msgid "Py_GetPath()"

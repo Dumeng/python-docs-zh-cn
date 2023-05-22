@@ -455,7 +455,7 @@ msgstr "在拒绝提取具有绝对路径的符号链接时引发。"
 msgid ""
 "Raised to refuse extracting a symbolic link pointing outside the destination"
 " directory."
-msgstr ""
+msgstr "在拒绝提取指向目标目录以外的符号链接时引发。"
 
 #: ../../library/tarfile.rst:235
 msgid "The following constants are available at the module level:"
@@ -646,7 +646,7 @@ msgstr "*debug* 可设为从 ``0`` (无调试消息) 到 ``3`` (全部调试消�
 msgid ""
 "*errorlevel* controls how extraction errors are handled, see :attr:`the "
 "corresponding attribute <~TarFile.errorlevel>`."
-msgstr ""
+msgstr "*errorlevel* 控制如何处理提取错误，参见 :attr:`相应的属性 <~TarFile.errorlevel>`。"
 
 #: ../../library/tarfile.rst:348
 msgid ""

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-18 02:14+0000\n"
+"POT-Creation-Date: 2023-05-19 14:26+0000\n"
 "PO-Revision-Date: 2017-02-16 23:29+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -470,7 +470,7 @@ msgstr "在拒绝提取具有绝对路径的符号链接时引发。"
 msgid ""
 "Raised to refuse extracting a symbolic link pointing outside the destination"
 " directory."
-msgstr ""
+msgstr "在拒绝提取指向目标目录以外的符号链接时引发。"
 
 #: ../../library/tarfile.rst:241
 msgid "The following constants are available at the module level:"
@@ -661,7 +661,7 @@ msgstr "*debug* 可设为从 ``0`` (无调试消息) 到 ``3`` (全部调试消�
 msgid ""
 "*errorlevel* controls how extraction errors are handled, see :attr:`the "
 "corresponding attribute <~TarFile.errorlevel>`."
-msgstr ""
+msgstr "*errorlevel* 控制如何处理提取错误，参见 :attr:`相应的属性 <~TarFile.errorlevel>`。"
 
 #: ../../library/tarfile.rst:354
 msgid ""

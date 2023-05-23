@@ -771,6 +771,8 @@ msgid ""
 "extraction-filter` for details. It is recommended to set this explicitly "
 "depending on which *tar* features you need to support."
 msgstr ""
+"*filter* 参数是在 Python 3.11.4 中增加的，它指明在提取之前要如何修改或拒绝 ``members``。 请参阅 "
+":ref:`tarfile-extraction-filter` 了解详情。 建议应根据你需要支持的 *tar* 特征显式地设置该参数。"
 
 #: ../../library/tarfile.rst:441
 msgid ""
@@ -787,6 +789,8 @@ msgid ""
 "Set ``filter='data'`` to prevent the most dangerous security issues, and "
 "read the :ref:`tarfile-extraction-filter` section for details."
 msgstr ""
+"设置 ``filter='data'`` 来防止最危险的安全问题，并请参阅 :ref:`tarfile-extraction-filter` "
+"一节了解详情。section for details."
 
 #: ../../library/tarfile.rst:449 ../../library/tarfile.rst:485
 msgid "Added the *numeric_owner* parameter."
@@ -817,7 +821,7 @@ msgstr ""
 msgid ""
 "The *numeric_owner* and *filter* arguments are the same as for "
 ":meth:`extractall`."
-msgstr ""
+msgstr "*numeric_owner* 和 *filter* 参数与 :meth:`extractall` 中的相同。"
 
 #: ../../library/tarfile.rst:472
 msgid ""

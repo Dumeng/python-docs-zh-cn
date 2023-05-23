@@ -12,15 +12,16 @@
 # jaystone776 <1732865113@qq.com>, 2021
 # ww song <sww4718168@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Transifex Bot <>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-14 14:13+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Transifex Bot <>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1012,7 +1013,7 @@ msgstr ""
 #: ../../distutils/setupscript.rst:644
 msgid ""
 "Multiple lines of plain text in reStructuredText format (see "
-"http://docutils.sourceforge.net/)."
+"https://docutils.sourceforge.io/)."
 msgstr ""
 
 #: ../../distutils/setupscript.rst:648

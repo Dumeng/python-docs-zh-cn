@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 14:12+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1306,11 +1306,11 @@ msgstr ": (冒号)"
 
 #: ../../library/string.rst:333
 msgid "< (less)"
-msgstr "< (小于)"
+msgstr "< (小于号)"
 
 #: ../../library/string.rst:333
 msgid "> (greater)"
-msgstr "> (大于)"
+msgstr "> (大于号)"
 
 #: ../../library/string.rst:333
 msgid "= (equals)"
@@ -1338,7 +1338,7 @@ msgstr "# (hash)"
 
 #: ../../library/string.rst:407
 msgid ", (comma)"
-msgstr ""
+msgstr ", (逗号)"
 
 #: ../../library/string.rst:416
 msgid "_ (underscore)"
@@ -1350,4 +1350,4 @@ msgstr "$ (货币符号)"
 
 #: ../../library/string.rst:744
 msgid "in template strings"
-msgstr ""
+msgstr "在模板字符串中"

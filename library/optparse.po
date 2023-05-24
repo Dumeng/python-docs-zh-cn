@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-28 14:13+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2847,7 +2847,7 @@ msgstr "当在命令行中遇到无效的选项值时将被引发。"
 
 #: ../../library/optparse.rst:2074
 msgid "Raised if an invalid option is passed on the command line."
-msgstr "当在命令行中传入无效的选项时被引发。"
+msgstr "当在命令行中传入无效的选项时将被引发。"
 
 #: ../../library/optparse.rst:2078
 msgid "Raised if an ambiguous option is passed on the command line."

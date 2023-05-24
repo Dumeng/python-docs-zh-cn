@@ -10,16 +10,17 @@
 # Naisen Xu <723648649@qq.com>, 2021
 # Vincent <Intelligent.vincent@gmail.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2023
+# Transifex Bot <>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:51+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Transifex Bot <>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1148,7 +1149,7 @@ msgstr ""
 #: ../../whatsnew/2.0.rst:935
 msgid ""
 "For more information, consult the Python documentation, or the XML HOWTO at "
-"http://pyxml.sourceforge.net/topics/howto/xml-howto.html."
+"https://pyxml.sourceforge.net/topics/howto/xml-howto.html."
 msgstr ""
 
 #: ../../whatsnew/2.0.rst:940

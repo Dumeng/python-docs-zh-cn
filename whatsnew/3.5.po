@@ -13,16 +13,17 @@
 # Sean Chao <seanchao0804@gmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
 # Freesand Leo <yuqinju@163.com>, 2022
+# Transifex Bot <>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-29 13:04+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Transifex Bot <>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -497,8 +498,8 @@ msgid ""
 "While these annotations are available at runtime through the usual "
 ":attr:`__annotations__` attribute, *no automatic type checking happens at "
 "runtime*.  Instead, it is assumed that a separate off-line type checker "
-"(e.g. `mypy <http://mypy-lang.org>`_) will be used for on-demand source code"
-" analysis."
+"(e.g. `mypy <https://mypy-lang.org>`_) will be used for on-demand source "
+"code analysis."
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:431
@@ -2920,7 +2921,8 @@ msgstr ""
 #: ../../whatsnew/3.5.rst:2214
 msgid ""
 "Windows builds now require Microsoft Visual C++ 14.0, which is available as "
-"part of `Visual Studio 2015 <https://www.visualstudio.com/>`_."
+"part of `Visual Studio 2015 <https://visualstudio.microsoft.com/en/vs/older-"
+"downloads/#visual-studio-2015-and-other-products>`_."
 msgstr ""
 
 #: ../../whatsnew/3.5.rst:2217

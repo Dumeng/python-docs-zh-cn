@@ -11,16 +11,17 @@
 # ppcfish <ppcfish@gmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# Transifex Bot <>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-24 14:15+0000\n"
+"POT-Creation-Date: 2023-05-19 14:13+0000\n"
 "PO-Revision-Date: 2021-06-29 13:04+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Transifex Bot <>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -886,8 +887,8 @@ msgstr ""
 msgid ""
 "(Contributed by Raymond Hettinger and incorporating design ideas from Jim "
 "Baker, Miki Tebeka, and Nick Coghlan; see `recipe 498245 "
-"<https://code.activestate.com/recipes/498245>`_\\, `recipe 577479 "
-"<https://code.activestate.com/recipes/577479>`_\\, :issue:`10586`, and "
+"<https://code.activestate.com/recipes/498245/>`_\\, `recipe 577479 "
+"<https://code.activestate.com/recipes/577479/>`_\\, :issue:`10586`, and "
 ":issue:`10593`.)"
 msgstr ""
 
@@ -3077,8 +3078,8 @@ msgid ""
 " for details.  For users running a 32/64-bit build, there is a known problem"
 " with the default Tcl/Tk on Mac OS X 10.6. Accordingly, we recommend "
 "installing an updated alternative such as `ActiveState Tcl/Tk 8.5.9 "
-"<https://www.activestate.com/activetcl/downloads>`_\\. See "
-"https://www.python.org/download/mac/tcltk/ for additional details."
+"<https://web.archive.org/web/20101208191259/https://www.activestate.com/activetcl/downloads>`_\\."
+" See https://www.python.org/download/mac/tcltk/ for additional details."
 msgstr ""
 
 #: ../../whatsnew/3.2.rst:2608

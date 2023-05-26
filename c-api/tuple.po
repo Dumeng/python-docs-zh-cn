@@ -14,9 +14,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -95,10 +95,8 @@ msgstr "类似于 :c:func:`PyTuple_GetItem`，但不检查其参数。"
 msgid ""
 "Return the slice of the tuple pointed to by *p* between *low* and *high*, or"
 " ``NULL`` on failure.  This is the equivalent of the Python expression "
-"``p[low:high]``.  Indexing from the end of the list is not supported."
+"``p[low:high]``.  Indexing from the end of the tuple is not supported."
 msgstr ""
-"返回 *p* 所指向的元组的切片，在 *low* 和 *high* 之间，或者在失败时返回 ``NULL``。 这等同于 Python 表达式 "
-"``p[low:high]``。 不支持从列表末尾索引。"
 
 #: ../../c-api/tuple.rst:77
 msgid ""

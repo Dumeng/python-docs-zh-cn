@@ -13,9 +13,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:07+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -315,11 +315,17 @@ msgstr ""
 
 #: ../../library/gzip.rst:174
 msgid ""
+"Remove the ``filename`` attribute, use the :attr:`~GzipFile.name` attribute "
+"instead."
+msgstr ""
+
+#: ../../library/gzip.rst:178
+msgid ""
 "Opening :class:`GzipFile` for writing without specifying the *mode* argument"
 " is deprecated."
 msgstr "打开 :class:`GzipFile` 用于写入而不指定 *mode* 参数的做法已被弃用。"
 
-#: ../../library/gzip.rst:181
+#: ../../library/gzip.rst:185
 msgid ""
 "Compress the *data*, returning a :class:`bytes` object containing the "
 "compressed data.  *compresslevel* and *mtime* have the same meaning as in "
@@ -331,11 +337,11 @@ msgstr ""
 ":class:`GzipFile` 构造器的对应参数含义相同。 当 *mtime* 设为 ``0`` 时，此函数将等价于 "
 ":func:`zlib.compress` 的 *wbits* 设为 ``31``。 zlib 函数速度更快一些。"
 
-#: ../../library/gzip.rst:188
+#: ../../library/gzip.rst:192
 msgid "Added the *mtime* parameter for reproducible output."
 msgstr "添加了 *mtime* 形参用于可重复的输出。"
 
-#: ../../library/gzip.rst:190
+#: ../../library/gzip.rst:194
 msgid ""
 "Speed is improved by compressing all data at once instead of in a streamed "
 "fashion. Calls with *mtime* set to ``0`` are delegated to "
@@ -344,7 +350,7 @@ msgstr ""
 "通过一次性压缩全部数据而不是通过流方式提高了速度。 将 *mtime* 设为 ``0`` 的调用将被委托给 :func:`zlib.compress` "
 "以提高速度。"
 
-#: ../../library/gzip.rst:197
+#: ../../library/gzip.rst:201
 msgid ""
 "Decompress the *data*, returning a :class:`bytes` object containing the "
 "uncompressed data. This function is capable of decompressing multi-member "
@@ -355,82 +361,82 @@ msgstr ""
 "解压缩 *data*，返回一个包含已解压数据的 :class:`bytes` 对象。 此函数可以解压缩多成员的 gzip 数据（即多个 gzip "
 "块拼接在一起）。 当数据确定只包含一个成员时则 *wbits* 设为 31 的 :func:`zlib.decompress` 函数更快一些。"
 
-#: ../../library/gzip.rst:204
+#: ../../library/gzip.rst:208
 msgid ""
 "Speed is improved by decompressing members at once in memory instead of in a"
 " streamed fashion."
 msgstr "通过一次性解压缩全部数据而不是通过流方式提高了速度。"
 
-#: ../../library/gzip.rst:211
+#: ../../library/gzip.rst:215
 msgid "Examples of usage"
 msgstr "用法示例"
 
-#: ../../library/gzip.rst:213
+#: ../../library/gzip.rst:217
 msgid "Example of how to read a compressed file::"
 msgstr "读取压缩文件示例："
 
-#: ../../library/gzip.rst:219
+#: ../../library/gzip.rst:223
 msgid "Example of how to create a compressed GZIP file::"
 msgstr "创建GZIP 文件示例："
 
-#: ../../library/gzip.rst:226
+#: ../../library/gzip.rst:230
 msgid "Example of how to GZIP compress an existing file::"
 msgstr "使用 GZIP 压缩已有的文件示例："
 
-#: ../../library/gzip.rst:234
+#: ../../library/gzip.rst:238
 msgid "Example of how to GZIP compress a binary string::"
 msgstr "使用 GZIP 压缩二进制字符串示例："
 
-#: ../../library/gzip.rst:243
+#: ../../library/gzip.rst:247
 msgid "Module :mod:`zlib`"
 msgstr "模块 :mod:`zlib`"
 
-#: ../../library/gzip.rst:243
+#: ../../library/gzip.rst:247
 msgid ""
 "The basic data compression module needed to support the :program:`gzip` file"
 " format."
 msgstr "支持 :program:`gzip` 格式所需要的基本压缩模块。"
 
-#: ../../library/gzip.rst:250
+#: ../../library/gzip.rst:254
 msgid "Command Line Interface"
 msgstr "命令行界面"
 
-#: ../../library/gzip.rst:252
+#: ../../library/gzip.rst:256
 msgid ""
 "The :mod:`gzip` module provides a simple command line interface to compress "
 "or decompress files."
 msgstr ":mod:`gzip` 模块提供了简单的命令行界面用于压缩和解压缩文件。"
 
-#: ../../library/gzip.rst:255
+#: ../../library/gzip.rst:259
 msgid "Once executed the :mod:`gzip` module keeps the input file(s)."
 msgstr "在执行后 :mod:`gzip` 模块会保留输入文件。"
 
-#: ../../library/gzip.rst:259
+#: ../../library/gzip.rst:263
 msgid ""
 "Add a new command line interface with a usage. By default, when you will "
 "execute the CLI, the default compression level is 6."
 msgstr "添加一个带有用法说明的新命令行界面命令。 默认情况下，当你要执行 CLI 时，默认压缩等级为 6。"
 
-#: ../../library/gzip.rst:263
+#: ../../library/gzip.rst:267
 msgid "Command line options"
 msgstr "命令行选项"
 
-#: ../../library/gzip.rst:267
+#: ../../library/gzip.rst:271
 msgid "If *file* is not specified, read from :attr:`sys.stdin`."
 msgstr "如果 *file* 未指定，则从 :attr:`sys.stdin` 读取。"
 
-#: ../../library/gzip.rst:271
+#: ../../library/gzip.rst:275
 msgid "Indicates the fastest compression method (less compression)."
 msgstr "指明最快速的压缩方法（较低压缩率）。"
 
-#: ../../library/gzip.rst:275
+#: ../../library/gzip.rst:279
 msgid "Indicates the slowest compression method (best compression)."
 msgstr "指明最慢速的压缩方法（最高压缩率）。"
 
-#: ../../library/gzip.rst:279
+#: ../../library/gzip.rst:283
 msgid "Decompress the given file."
 msgstr "解压缩给定的文件。"
 
-#: ../../library/gzip.rst:283
+#: ../../library/gzip.rst:287
 msgid "Show the help message."
 msgstr "显示帮助消息。"

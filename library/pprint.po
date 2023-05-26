@@ -13,9 +13,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -211,44 +211,47 @@ msgstr ""
 "``False``。"
 
 #: ../../library/pprint.rst:174
-msgid "Determine if *object* requires a recursive representation."
-msgstr "确定 *object* 是否需要递归表示。"
+msgid ""
+"Determine if *object* requires a recursive representation.  This function is"
+" subject to the same limitations as noted in :func:`saferepr` below and may "
+"raise an :exc:`RecursionError` if it fails to detect a recursive object."
+msgstr ""
 
-#: ../../library/pprint.rst:177
+#: ../../library/pprint.rst:179
 msgid "One more support function is also defined:"
 msgstr "此外还定义了一个支持函数："
 
-#: ../../library/pprint.rst:181
+#: ../../library/pprint.rst:183
 msgid ""
-"Return a string representation of *object*, protected against recursive data"
-" structures.  If the representation of *object* exposes a recursive entry, "
-"the recursive reference will be represented as ``<Recursion on typename with"
-" id=number>``.  The representation is not otherwise formatted."
+"Return a string representation of *object*, protected against recursion in "
+"some common data structures, namely instances of :class:`dict`, "
+":class:`list` and :class:`tuple` or subclasses whose ``__repr__`` has not "
+"been overridden.  If the representation of object exposes a recursive entry,"
+" the recursive reference will be represented as ``<Recursion on typename "
+"with id=number>``.  The representation is not otherwise formatted."
 msgstr ""
-"返回 *object* 的字符串表示，并为递归数据结构提供保护。 如果 *object* 的表示形式公开了一个递归条目，该递归引用会被表示为 "
-"``<Recursion on typename with id=number>``。 该表示因而不会进行其它格式化。"
 
-#: ../../library/pprint.rst:193
+#: ../../library/pprint.rst:197
 msgid "PrettyPrinter Objects"
 msgstr "PrettyPrinter 对象"
 
-#: ../../library/pprint.rst:195
+#: ../../library/pprint.rst:199
 msgid ":class:`PrettyPrinter` instances have the following methods:"
 msgstr ":class:`PrettyPrinter` 的实例具有下列方法："
 
-#: ../../library/pprint.rst:200
+#: ../../library/pprint.rst:204
 msgid ""
 "Return the formatted representation of *object*.  This takes into account "
 "the options passed to the :class:`PrettyPrinter` constructor."
 msgstr "返回 *object* 格式化表示。 这会将传给 :class:`PrettyPrinter` 构造器的选项纳入考虑。"
 
-#: ../../library/pprint.rst:206
+#: ../../library/pprint.rst:210
 msgid ""
 "Print the formatted representation of *object* on the configured stream, "
 "followed by a newline."
 msgstr "在所配置的流上打印 *object* 的格式化表示，并附加一个换行符。"
 
-#: ../../library/pprint.rst:209
+#: ../../library/pprint.rst:213
 msgid ""
 "The following methods provide the implementations for the corresponding "
 "functions of the same names.  Using these methods on an instance is slightly"
@@ -257,7 +260,7 @@ msgid ""
 msgstr ""
 "下列方法提供了与同名函数相对应的实现。 在实例上使用这些方法效率会更高一些，因为不需要创建新的 :class:`PrettyPrinter` 对象。"
 
-#: ../../library/pprint.rst:219
+#: ../../library/pprint.rst:223
 msgid ""
 "Determine if the formatted representation of the object is \"readable,\" or "
 "can be used to reconstruct the value using :func:`eval`.  Note that this "
@@ -268,18 +271,18 @@ msgstr ""
 "确定对象的格式化表示是否“可读”，或者是否可使用 :func:`eval` 重建对象值。 请注意此方法对于递归对象将返回 ``False``。 "
 "如果设置了 :class:`PrettyPrinter` 的 *depth* 形参并且对象深度超出允许范围，此方法将返回 ``False``。"
 
-#: ../../library/pprint.rst:228
+#: ../../library/pprint.rst:232
 msgid "Determine if the object requires a recursive representation."
 msgstr "确定对象是否需要递归表示。"
 
-#: ../../library/pprint.rst:230
+#: ../../library/pprint.rst:234
 msgid ""
 "This method is provided as a hook to allow subclasses to modify the way "
 "objects are converted to strings.  The default implementation uses the "
 "internals of the :func:`saferepr` implementation."
 msgstr "此方法作为一个钩子提供，允许子类修改将对象转换为字符串的方式。 默认实现使用 :func:`saferepr` 实现的内部方式。"
 
-#: ../../library/pprint.rst:237
+#: ../../library/pprint.rst:241
 msgid ""
 "Returns three values: the formatted version of *object* as a string, a flag "
 "indicating whether the result is readable, and a flag indicating whether "
@@ -303,11 +306,11 @@ msgstr ""
 "给出了对递归的请求限制；如果没有请求限制则其值将为 ``0``。 此参数应当不加修改地传给递归调用。 第四个参数 *level* "
 "给出于当前层级；传给递归调用的参数值应当小于当前调用的值。"
 
-#: ../../library/pprint.rst:255
+#: ../../library/pprint.rst:259
 msgid "Example"
 msgstr "示例"
 
-#: ../../library/pprint.rst:257
+#: ../../library/pprint.rst:261
 msgid ""
 "To demonstrate several uses of the :func:`pprint` function and its "
 "parameters, let's fetch information about a project from `PyPI "
@@ -316,17 +319,17 @@ msgstr ""
 "为了演示 :func:`pprint` 函数及其形参的几种用法，让我们从 `PyPI <https://pypi.org>`_ "
 "获取关于某个项目的信息::"
 
-#: ../../library/pprint.rst:266
+#: ../../library/pprint.rst:270
 msgid "In its basic form, :func:`pprint` shows the whole object::"
 msgstr ":func:`pprint` 以其基本形式显示了整个对象::"
 
-#: ../../library/pprint.rst:322
+#: ../../library/pprint.rst:326
 msgid ""
 "The result can be limited to a certain *depth* (ellipsis is used for deeper "
 "contents)::"
 msgstr "结果可以被限制到特定的 *depth* (更深层的内容将使用省略号)::"
 
-#: ../../library/pprint.rst:368
+#: ../../library/pprint.rst:372
 msgid ""
 "Additionally, maximum character *width* can be suggested. If a long object "
 "cannot be split, the specified width will be exceeded::"
@@ -340,10 +343,10 @@ msgstr "..."
 msgid "placeholder"
 msgstr "placeholder"
 
-#: ../../library/pprint.rst:162 ../../library/pprint.rst:217
+#: ../../library/pprint.rst:162 ../../library/pprint.rst:221
 msgid "built-in function"
 msgstr "内置函数"
 
-#: ../../library/pprint.rst:162 ../../library/pprint.rst:217
+#: ../../library/pprint.rst:162 ../../library/pprint.rst:221
 msgid "eval"
 msgstr "eval"

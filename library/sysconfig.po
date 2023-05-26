@@ -11,9 +11,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -47,10 +47,8 @@ msgstr "配置变量"
 msgid ""
 "A Python distribution contains a :file:`Makefile` and a :file:`pyconfig.h` "
 "header file that are necessary to build both the Python binary itself and "
-"third-party C extensions compiled using :mod:`distutils`."
+"third-party C extensions compiled using ``setuptools``."
 msgstr ""
-"Python 的发行版中包含一个 :file:`Makefile` 和一个 :file:`pyconfig.h` 头文件，这是构建 Python "
-"二进制文件本身和用 :mod:`distutils` 编译的第三方 C 语言扩展所必需的。"
 
 #: ../../library/sysconfig.rst:30
 msgid ""

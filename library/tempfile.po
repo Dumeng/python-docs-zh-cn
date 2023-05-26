@@ -4,19 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Arisaka97 <solitaire2312@gmail.com>, 2021
 # nick <2330458484@qq.com>, 2021
 # ppcfish <ppcfish@gmail.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# Arisaka97 <solitaire2312@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: Arisaka97 <solitaire2312@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -123,8 +123,8 @@ msgid ""
 "for NamedTemporaryFile."
 msgstr "在 Posix 或 Cygwin 以外的平台上，TemporaryFile 是 NamedTemporaryFile 的别名。"
 
-#: ../../library/tempfile.rst:68 ../../library/tempfile.rst:96
-#: ../../library/tempfile.rst:205
+#: ../../library/tempfile.rst:68 ../../library/tempfile.rst:137
+#: ../../library/tempfile.rst:258
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``tempfile.mkstemp`` with "
 "argument ``fullpath``."
@@ -134,37 +134,117 @@ msgstr "引发一个 ``tempfile.mkstemp`` :ref:`审计事件 <auditing>`，附�
 msgid "The :py:data:`os.O_TMPFILE` flag is now used if available."
 msgstr "如果可用，现在用的是 :py:data:`os.O_TMPFILE` 标志。"
 
-#: ../../library/tempfile.rst:74 ../../library/tempfile.rst:98
-#: ../../library/tempfile.rst:123
+#: ../../library/tempfile.rst:74 ../../library/tempfile.rst:139
+#: ../../library/tempfile.rst:167
 msgid "Added *errors* parameter."
 msgstr "添加了 *errors* 参数。"
 
 #: ../../library/tempfile.rst:80
 msgid ""
-"This function operates exactly as :func:`TemporaryFile` does, except that "
-"the file is guaranteed to have a visible name in the file system (on Unix, "
-"the directory entry is not unlinked).  That name can be retrieved from the "
-":attr:`name` attribute of the returned file-like object.  Whether the name "
-"can be used to open the file a second time, while the named temporary file "
-"is still open, varies across platforms (it can be so used on Unix; it cannot"
-" on Windows).  If *delete* is true (the default), the file is deleted as "
-"soon as it is closed. The returned object is always a file-like object whose"
-" :attr:`!file` attribute is the underlying true file object. This file-like "
-"object can be used in a :keyword:`with` statement, just like a normal file."
+"This function operates exactly as :func:`TemporaryFile` does, except the "
+"following differences:"
 msgstr ""
-"此函数执行的操作与 :func:`TemporaryFile` 完全相同，但是会确保该文件在文件系统中具有可见的名称（在 Unix "
-"上表现为目录项不取消链接）。 该名称可从返回的文件类对象的 :attr:`name` 属性获取。 "
-"在指定的临时文件仍然被打开时该名称是否可被用来再次打开文件对于不同平台则有所不同（在 Unix 上可以这样做；在 Windows 上不可以） 如果 "
-"*delete* 为（默认的）真值，则文件会在关闭之后立即被删除。 此函数返回的对象始终会是文件类对象，它的 :attr:`!file` "
-"属性是底层的真实文件对象。 这个文件类对象可以在 :keyword:`with` 语句中使用，就像普通的文件一样。"
 
-#: ../../library/tempfile.rst:93
+#: ../../library/tempfile.rst:83
+msgid ""
+"This function returns a file that is guaranteed to have a visible name in "
+"the file system."
+msgstr ""
+
+#: ../../library/tempfile.rst:85
+msgid ""
+"To manage the named file, it extends the parameters of :func:`TemporaryFile`"
+" with *delete* and *delete_on_close* parameters that determine whether and "
+"how the named file should be automatically deleted."
+msgstr ""
+
+#: ../../library/tempfile.rst:89
+msgid ""
+"The returned object is always a :term:`file-like object` whose :attr:`!file`"
+" attribute is the underlying true file object. This :term:`file-like object`"
+" can be used in a :keyword:`with` statement, just like a normal file.  The "
+"name of the temporary file can be retrieved from the :attr:`name` attribute "
+"of the returned file-like object. On Unix, unlike with the "
+":func:`TemporaryFile`, the directory entry does not get unlinked immediately"
+" after the file creation."
+msgstr ""
+
+#: ../../library/tempfile.rst:97
+msgid ""
+"If *delete* is true (the default) and *delete_on_close* is true (the "
+"default), the file is deleted as soon as it is closed. If *delete* is true "
+"and *delete_on_close* is false, the file is deleted on context manager exit "
+"only, or else when the :term:`file-like object` is finalized. Deletion is "
+"not always guaranteed in this case (see :meth:`object.__del__`). If *delete*"
+" is false, the value of *delete_on_close* is ignored."
+msgstr ""
+
+#: ../../library/tempfile.rst:104
+msgid ""
+"Therefore to use the name of the temporary file to reopen the file after "
+"closing it, either make sure not to delete the file upon closure (set the "
+"*delete* parameter to be false) or, in case the temporary file is created in"
+" a :keyword:`with` statement, set the *delete_on_close* parameter to be "
+"false. The latter approach is recommended as it provides assistance in "
+"automatic cleaning of the temporary file upon the context manager exit."
+msgstr ""
+
+#: ../../library/tempfile.rst:111
+msgid ""
+"Opening the temporary file again by its name while it is still open works as"
+" follows:"
+msgstr ""
+
+#: ../../library/tempfile.rst:114
+msgid "On POSIX the file can always be opened again."
+msgstr ""
+
+#: ../../library/tempfile.rst:115
+msgid ""
+"On Windows, make sure that at least one of the following conditions are "
+"fulfilled:"
+msgstr ""
+
+#: ../../library/tempfile.rst:118
+msgid "*delete* is false"
+msgstr ""
+
+#: ../../library/tempfile.rst:119
+msgid ""
+"additional open shares delete access (e.g. by calling :func:`os.open` with "
+"the flag ``O_TEMPORARY``)"
+msgstr ""
+
+#: ../../library/tempfile.rst:121
+msgid ""
+"*delete* is true but *delete_on_close* is false. Note, that in this case the"
+" additional opens that do not share delete access (e.g. created via builtin "
+":func:`open`) must be closed before exiting the context manager, else the "
+":func:`os.unlink` call on context manager exit will fail with a "
+":exc:`PermissionError`."
+msgstr ""
+
+#: ../../library/tempfile.rst:127
+msgid ""
+"On Windows, if *delete_on_close* is false, and the file is created in a "
+"directory for which the user lacks delete access, then the :func:`os.unlink`"
+" call on exit of the context manager will fail with a "
+":exc:`PermissionError`. This cannot happen when *delete_on_close* is true "
+"because delete access is requested by the open, which fails immediately if "
+"the requested access is not granted."
+msgstr ""
+
+#: ../../library/tempfile.rst:134
 msgid ""
 "On POSIX (only), a process that is terminated abruptly with SIGKILL cannot "
 "automatically delete any NamedTemporaryFiles it created."
 msgstr "（只有）在 POSIX 上，一个用 SIGKILL 突然终止的进程无法自动删除它所创建的任何 NamedTemporaryFiles。"
 
-#: ../../library/tempfile.rst:104
+#: ../../library/tempfile.rst:142
+msgid "Added *delete_on_close* parameter."
+msgstr ""
+
+#: ../../library/tempfile.rst:148
 msgid ""
 "This class operates exactly as :func:`TemporaryFile` does, except that data "
 "is spooled in memory until the file size exceeds *max_size*, or until the "
@@ -174,13 +254,13 @@ msgstr ""
 "这个类执行的操作与 :func:`TemporaryFile` 完全相同，但会将数据缓存在内存中直到文件大小超过 *max_size*，或者直到文件的 "
 ":func:`fileno` 方法被调用，这时文件内容会被写入磁盘并如使用 :func:`TemporaryFile` 时一样继续操作。"
 
-#: ../../library/tempfile.rst:110
+#: ../../library/tempfile.rst:154
 msgid ""
 "The resulting file has one additional method, :func:`rollover`, which causes"
 " the file to roll over to an on-disk file regardless of its size."
 msgstr "此函数生成的文件对象有一个额外的方法——:func:`rollover`，可以忽略文件大小，让文件立即写入磁盘。"
 
-#: ../../library/tempfile.rst:113
+#: ../../library/tempfile.rst:157
 msgid ""
 "The returned object is a file-like object whose :attr:`_file` attribute is "
 "either an :class:`io.BytesIO` or :class:`io.TextIOWrapper` object (depending"
@@ -192,11 +272,11 @@ msgstr ""
 ":class:`io.TextIOWrapper` 对象（取决于指定的是二进制模式还是文本模式）或真实的文件对象（取决于是否已调用 "
 ":func:`rollover`）。文件类对象可以像普通文件一样在 :keyword:`with` 语句中使用。"
 
-#: ../../library/tempfile.rst:120
+#: ../../library/tempfile.rst:164
 msgid "the truncate method now accepts a ``size`` argument."
 msgstr "现在，文件的 truncate 方法可接受一个 ``size`` 参数。"
 
-#: ../../library/tempfile.rst:126
+#: ../../library/tempfile.rst:170
 msgid ""
 "Fully implements the :class:`io.BufferedIOBase` and :class:`io.TextIOBase` "
 "abstract base classes (depending on whether binary or text *mode* was "
@@ -205,7 +285,7 @@ msgstr ""
 "完整实现 :class:`io.BufferedIOBase` 和 :class:`io.TextIOBase` 抽象基类（取决于二进制或文本 "
 "*mode* 是否已指定）。"
 
-#: ../../library/tempfile.rst:134
+#: ../../library/tempfile.rst:178
 msgid ""
 "This class securely creates a temporary directory using the same rules as "
 ":func:`mkdtemp`. The resulting object can be used as a context manager (see "
@@ -216,7 +296,7 @@ msgstr ""
 "这个类会使用与 :func:`mkdtemp` 相同的规则安全地创建一个临时目录。 结果对象可以被用作上下文管理器 (参见 "
 ":ref:`tempfile-examples`)。 在完成上下文或销毁临时目录对象时，新创建的临时目录及其所有内容会从文件系统中被移除。"
 
-#: ../../library/tempfile.rst:140
+#: ../../library/tempfile.rst:184
 msgid ""
 "The directory name can be retrieved from the :attr:`name` attribute of the "
 "returned object.  When the returned object is used as a context manager, the"
@@ -226,7 +306,7 @@ msgstr ""
 "可以从返回对象的 :attr:`name` 属性中找到临时目录的名称。当返回的对象用作上下文管理器时，这个 :attr:`name` 会作为 "
 ":keyword:`with` 语句中 :keyword:`!as` 子句的目标（如果有 as 的话）。"
 
-#: ../../library/tempfile.rst:145
+#: ../../library/tempfile.rst:189
 msgid ""
 "The directory can be explicitly cleaned up by calling the :func:`cleanup` "
 "method. If *ignore_cleanup_errors* is true, any unhandled exceptions during "
@@ -242,17 +322,30 @@ msgstr ""
 "移除打开的文件）期间出现的未处理异常将被忽略，并且剩余的可移除条目会被“尽可能”地删除。 在其他情况下，错误将在任何上下文清理发生时被引发 "
 "(:func:`cleanup` 调用、退出上下文管理器、对象被作为垃圾回收或解释器关闭等)。"
 
-#: ../../library/tempfile.rst:154 ../../library/tempfile.rst:234
+#: ../../library/tempfile.rst:198
+msgid ""
+"The *delete* parameter can be used to disable cleanup of the directory tree "
+"upon exiting the context.  While it may seem unusual for a context manager "
+"to disable the action taken when exiting the context, it can be useful "
+"during debugging or when you need your cleanup behavior to be conditional "
+"based on other logic."
+msgstr ""
+
+#: ../../library/tempfile.rst:204 ../../library/tempfile.rst:284
 msgid ""
 "Raises an :ref:`auditing event <auditing>` ``tempfile.mkdtemp`` with "
 "argument ``fullpath``."
 msgstr "引发一个 ``tempfile.mkdtemp`` :ref:`审计事件 <auditing>`，附带参数 ``fullpath``。"
 
-#: ../../library/tempfile.rst:158
+#: ../../library/tempfile.rst:208
 msgid "Added *ignore_cleanup_errors* parameter."
 msgstr "添加了 *ignore_cleanup_errors* 形参。"
 
-#: ../../library/tempfile.rst:164
+#: ../../library/tempfile.rst:211
+msgid "Added the *delete* parameter."
+msgstr ""
+
+#: ../../library/tempfile.rst:217
 msgid ""
 "Creates a temporary file in the most secure manner possible.  There are no "
 "race conditions in the file's creation, assuming that the platform properly "
@@ -265,13 +358,13 @@ msgstr ""
 "以最安全的方式创建一个临时文件。假设所在平台正确实现了 :func:`os.open` 的 :const:`os.O_EXCL` "
 "标志，则创建文件时不会有竞争的情况。该文件只能由创建者读写，如果所在平台用权限位来标记文件是否可执行，那么没有人有执行权。文件描述符不会过继给子进程。"
 
-#: ../../library/tempfile.rst:172
+#: ../../library/tempfile.rst:225
 msgid ""
 "Unlike :func:`TemporaryFile`, the user of :func:`mkstemp` is responsible for"
 " deleting the temporary file when done with it."
 msgstr "与 :func:`TemporaryFile` 不同，:func:`mkstemp` 用户用完临时文件后需要自行将其删除。"
 
-#: ../../library/tempfile.rst:175
+#: ../../library/tempfile.rst:228
 msgid ""
 "If *suffix* is not ``None``, the file name will end with that suffix, "
 "otherwise there will be no suffix.  :func:`mkstemp` does not put a dot "
@@ -281,7 +374,7 @@ msgstr ""
 "如果 *suffix* 不是 ``None`` 则文件名将以该后缀结尾，是 ``None`` 则没有后缀。:func:`mkstemp` "
 "不会在文件名和后缀之间加点，如果需要加一个点号，请将其放在 *suffix* 的开头。"
 
-#: ../../library/tempfile.rst:180
+#: ../../library/tempfile.rst:233
 msgid ""
 "If *prefix* is not ``None``, the file name will begin with that prefix; "
 "otherwise, a default prefix is used.  The default is the return value of "
@@ -290,7 +383,7 @@ msgstr ""
 "如果 *prefix* 不是 ``None``，则文件名将以该前缀开头，是 ``None``      则使用默认前缀。默认前缀是 "
 ":func:`gettempprefix` 或 :func:`gettempprefixb` 函数的返回值（自动调用合适的函数）。"
 
-#: ../../library/tempfile.rst:184
+#: ../../library/tempfile.rst:237
 msgid ""
 "If *dir* is not ``None``, the file will be created in that directory; "
 "otherwise, a default directory is used.  The default directory is chosen "
@@ -304,7 +397,7 @@ msgstr ""
 "则使用默认目录。默认目录是从一个列表中选择出来的，这个列表不同平台不一样，但是用户可以设置 *TMPDIR*、*TEMP* 或 *TMP* "
 "环境变量来设置目录的位置。因此，不能保证生成的临时文件路径很规范，比如，通过 ``os.popen()`` 将路径传递给外部命令时仍需要加引号。"
 
-#: ../../library/tempfile.rst:192
+#: ../../library/tempfile.rst:245
 msgid ""
 "If any of *suffix*, *prefix*, and *dir* are not ``None``, they must be the "
 "same type. If they are bytes, the returned name will be bytes instead of "
@@ -315,13 +408,13 @@ msgstr ""
 "bytes，则返回的名称的类型就是 bytes 而不是 str。如果确实要用默认参数，但又想要返回值是 bytes 类型，请传入 "
 "``suffix=b''``。"
 
-#: ../../library/tempfile.rst:198
+#: ../../library/tempfile.rst:251
 msgid ""
 "If *text* is specified and true, the file is opened in text mode. Otherwise,"
 " (the default) the file is opened in binary mode."
 msgstr "如果指定了 *text* 且为真值，文件会以文本模式打开。 否则，文件（默认）会以二进制模式打开。"
 
-#: ../../library/tempfile.rst:201
+#: ../../library/tempfile.rst:254
 msgid ""
 ":func:`mkstemp` returns a tuple containing an OS-level handle to an open "
 "file (as would be returned by :func:`os.open`) and the absolute pathname of "
@@ -330,7 +423,7 @@ msgstr ""
 ":func:`mkstemp` 返回一个元组，元组中第一个元素是句柄，它是一个系统级句柄，指向一个打开的文件（等同于 :func:`os.open` "
 "的返回值），第二元素是该文件的绝对路径。"
 
-#: ../../library/tempfile.rst:207 ../../library/tempfile.rst:236
+#: ../../library/tempfile.rst:260 ../../library/tempfile.rst:286
 msgid ""
 "*suffix*, *prefix*, and *dir* may now be supplied in bytes in order to "
 "obtain a bytes return value.  Prior to this, only str was allowed. *suffix* "
@@ -340,68 +433,68 @@ msgstr ""
 "现在，*suffix*、*prefix* 和 *dir* 可以以 bytes 类型按顺序提供，以获得 bytes 类型的返回值。之前只允许使用 "
 "str。*suffix* 和 *prefix* 现在可以接受 ``None``，并且默认为 ``None`` 以使用合适的默认值。"
 
-#: ../../library/tempfile.rst:213 ../../library/tempfile.rst:242
+#: ../../library/tempfile.rst:266 ../../library/tempfile.rst:292
 msgid "The *dir* parameter now accepts a :term:`path-like object`."
 msgstr "*dir* 参数现在可接受一个路径类对象 (:term:`path-like object`)。"
 
-#: ../../library/tempfile.rst:219
+#: ../../library/tempfile.rst:272
 msgid ""
 "Creates a temporary directory in the most secure manner possible. There are "
 "no race conditions in the directory's creation.  The directory is readable, "
 "writable, and searchable only by the creating user ID."
 msgstr "以最安全的方式创建一个临时目录，创建该目录时不会有竞争的情况。该目录只能由创建者读取、写入和搜索。"
 
-#: ../../library/tempfile.rst:223
+#: ../../library/tempfile.rst:276
 msgid ""
 "The user of :func:`mkdtemp` is responsible for deleting the temporary "
 "directory and its contents when done with it."
 msgstr ":func:`mkdtemp` 用户用完临时目录后需要自行将其删除。"
 
-#: ../../library/tempfile.rst:226
+#: ../../library/tempfile.rst:279
 msgid ""
 "The *prefix*, *suffix*, and *dir* arguments are the same as for "
 ":func:`mkstemp`."
 msgstr "*prefix*、*suffix* 和 *dir* 的含义与它们在 :func:`mkstemp` 中的相同。"
 
-#: ../../library/tempfile.rst:229
-msgid ""
-":func:`mkdtemp` returns the absolute pathname of the new directory if *dir* "
-"is ``None`` or is an absolute path. If *dir* is a relative path, "
-":func:`mkdtemp` returns a relative path on Python 3.11 and lower. However, "
-"on 3.12 it will return an absolute path in all situations."
-msgstr ""
-"如果 *dir* 为 ``None`` 或为绝对路径则 :func:`mkdtemp` 将返回新目录的绝对路径名称。 如果 *dir* 为相对路径，则在"
-" Python 3.11 及更低的版本中 :func:`mkdtemp` 将返回相对路径。 但是，在 3.12 中无论是哪种情况它都将返回绝对路径。"
+#: ../../library/tempfile.rst:282
+msgid ":func:`mkdtemp` returns the absolute pathname of the new directory."
+msgstr ":func:`mkdtemp` 返回新目录的绝对路径。"
 
-#: ../../library/tempfile.rst:248
+#: ../../library/tempfile.rst:295
+msgid ""
+":func:`mkdtemp` now always returns an absolute path, even if *dir* is "
+"relative."
+msgstr ""
+
+#: ../../library/tempfile.rst:301
 msgid ""
 "Return the name of the directory used for temporary files. This defines the "
 "default value for the *dir* argument to all functions in this module."
 msgstr "返回放置临时文件的目录的名称。这个方法的返回值就是本模块所有函数的 *dir* 参数的默认值。"
 
-#: ../../library/tempfile.rst:252
+#: ../../library/tempfile.rst:305
 msgid ""
 "Python searches a standard list of directories to find one which the calling"
 " user can create files in.  The list is:"
 msgstr "Python 搜索标准目录列表，以找到调用者可以在其中创建文件的目录。这个列表是："
 
-#: ../../library/tempfile.rst:255
+#: ../../library/tempfile.rst:308
 msgid "The directory named by the :envvar:`TMPDIR` environment variable."
 msgstr ":envvar:`TMPDIR` 环境变量指向的目录。"
 
-#: ../../library/tempfile.rst:257
+#: ../../library/tempfile.rst:310
 msgid "The directory named by the :envvar:`TEMP` environment variable."
 msgstr ":envvar:`TEMP` 环境变量指向的目录。"
 
-#: ../../library/tempfile.rst:259
+#: ../../library/tempfile.rst:312
 msgid "The directory named by the :envvar:`TMP` environment variable."
 msgstr ":envvar:`TMP` 环境变量指向的目录。"
 
-#: ../../library/tempfile.rst:261
+#: ../../library/tempfile.rst:314
 msgid "A platform-specific location:"
 msgstr "与平台相关的位置："
 
-#: ../../library/tempfile.rst:263
+#: ../../library/tempfile.rst:316
 msgid ""
 "On Windows, the directories :file:`C:\\\\TEMP`, :file:`C:\\\\TMP`, "
 ":file:`\\\\TEMP`, and :file:`\\\\TMP`, in that order."
@@ -409,43 +502,43 @@ msgstr ""
 "在 Windows 上，依次为 :file:`C:\\\\TEMP`、:file:`C:\\\\TMP`、:file:`\\\\TEMP` 和 "
 ":file:`\\\\TMP`。"
 
-#: ../../library/tempfile.rst:266
+#: ../../library/tempfile.rst:319
 msgid ""
 "On all other platforms, the directories :file:`/tmp`, :file:`/var/tmp`, and "
 ":file:`/usr/tmp`, in that order."
 msgstr "在所有其他平台上，依次为 :file:`/tmp`、:file:`/var/tmp` 和 :file:`/usr/tmp`。"
 
-#: ../../library/tempfile.rst:269
+#: ../../library/tempfile.rst:322
 msgid "As a last resort, the current working directory."
 msgstr "不得已时，使用当前工作目录。"
 
-#: ../../library/tempfile.rst:271
+#: ../../library/tempfile.rst:324
 msgid ""
 "The result of this search is cached, see the description of :data:`tempdir` "
 "below."
 msgstr "搜索的结果会缓存起来，参见下面 :data:`tempdir` 的描述。"
 
-#: ../../library/tempfile.rst:276
+#: ../../library/tempfile.rst:329
 msgid ""
 "Always returns a str.  Previously it would return any :data:`tempdir` value "
 "regardless of type so long as it was not ``None``."
 msgstr "总是返回一个字符串。 在之前的版本中它会返回任意 :data:`tempdir` 值而不考虑它的类型，只要它不为 ``None``。"
 
-#: ../../library/tempfile.rst:281
+#: ../../library/tempfile.rst:334
 msgid "Same as :func:`gettempdir` but the return value is in bytes."
 msgstr "与 :func:`gettempdir` 相同，但返回值为字节类型。"
 
-#: ../../library/tempfile.rst:287
+#: ../../library/tempfile.rst:340
 msgid ""
 "Return the filename prefix used to create temporary files.  This does not "
 "contain the directory component."
 msgstr "返回用于创建临时文件的文件名前缀，它不包含目录部分。"
 
-#: ../../library/tempfile.rst:292
+#: ../../library/tempfile.rst:345
 msgid "Same as :func:`gettempprefix` but the return value is in bytes."
 msgstr "与 :func:`gettempprefix` 相同，但返回值为字节类型。"
 
-#: ../../library/tempfile.rst:296
+#: ../../library/tempfile.rst:349
 msgid ""
 "The module uses a global variable to store the name of the directory used "
 "for temporary files returned by :func:`gettempdir`.  It can be set directly "
@@ -457,7 +550,7 @@ msgstr ""
 "本模块使用一个全局变量来存储由 :func:`gettempdir` 返回的临时文件使用的目录路径。 它可被直接设置以覆盖选择过程，但不建议这样做。 "
 "本模块中的所有函数都接受一个 *dir* 参数，它可被用于指定目录。 这是不会通过改变全局 API 行为对其他无准备代码造成影响的推荐做法。"
 
-#: ../../library/tempfile.rst:305
+#: ../../library/tempfile.rst:358
 msgid ""
 "When set to a value other than ``None``, this variable defines the default "
 "value for the *dir* argument to the functions defined in this module, "
@@ -466,7 +559,7 @@ msgstr ""
 "当设为 ``None`` 以外的值时，此变量会为本模块中定义的函数的 *dir* 参数定义默认值，包括确定其类型为字节串还是字符串。 它不可以为 "
 ":term:`path-like object`。"
 
-#: ../../library/tempfile.rst:310
+#: ../../library/tempfile.rst:363
 msgid ""
 "If ``tempdir`` is ``None`` (the default) at any call to any of the above "
 "functions except :func:`gettempprefix` it is initialized following the "
@@ -475,7 +568,7 @@ msgstr ""
 "如果在调用除 :func:`gettempprefix` 外的上述任何函数时 ``tempdir`` 为 ``None`` (默认值) 则它会按照 "
 ":func:`gettempdir` 中所描述的算法来初始化。"
 
-#: ../../library/tempfile.rst:316
+#: ../../library/tempfile.rst:369
 msgid ""
 "Beware that if you set ``tempdir`` to a bytes value, there is a nasty side "
 "effect: The global default return type of :func:`mkstemp` and "
@@ -488,20 +581,20 @@ msgstr ""
 "的全局默认返回类型会在没有显式提供字符串类型的when no explicit ``prefix``, ``suffix`` 或 ``dir`` "
 "的时候被改为字节串。 请不要编写预期或依赖于此入围的代码。  这个笨拙行为是为了保持与历史实现的兼容性。"
 
-#: ../../library/tempfile.rst:327
+#: ../../library/tempfile.rst:380
 msgid "Examples"
 msgstr "例子"
 
-#: ../../library/tempfile.rst:329
+#: ../../library/tempfile.rst:382
 msgid ""
 "Here are some examples of typical usage of the :mod:`tempfile` module::"
 msgstr "以下是 :mod:`tempfile` 模块典型用法的一些示例::"
 
-#: ../../library/tempfile.rst:361
+#: ../../library/tempfile.rst:427
 msgid "Deprecated functions and variables"
 msgstr "已弃用的函数和变量"
 
-#: ../../library/tempfile.rst:363
+#: ../../library/tempfile.rst:429
 msgid ""
 "A historical way to create temporary files was to first generate a file name"
 " with the :func:`mktemp` function and then create a file using this name. "
@@ -516,11 +609,11 @@ msgstr ""
 "与随后尝试创建文件的进程之间的时间里，其他进程可能会使用该名称创建文件。解决方案是将两个步骤结合起来，立即创建文件。这个方案目前被 "
 ":func:`mkstemp` 和上述其他函数所采用。"
 
-#: ../../library/tempfile.rst:374
+#: ../../library/tempfile.rst:440
 msgid "Use :func:`mkstemp` instead."
 msgstr "使用 :func:`mkstemp` 来代替。"
 
-#: ../../library/tempfile.rst:377
+#: ../../library/tempfile.rst:443
 msgid ""
 "Return an absolute pathname of a file that did not exist at the time the "
 "call is made.  The *prefix*, *suffix*, and *dir* arguments are similar to "
@@ -530,7 +623,7 @@ msgstr ""
 "返回一个绝对路径，这个路径指向的文件在调用本方法时不存在。*prefix*、*suffix* 和 *dir* 参数与 :func:`mkstemp` "
 "中的同名参数类似，不同之处在于不支持字节类型的文件名，不支持 ``suffix=None`` 和 ``prefix=None``。"
 
-#: ../../library/tempfile.rst:384
+#: ../../library/tempfile.rst:450
 msgid ""
 "Use of this function may introduce a security hole in your program.  By the "
 "time you get around to doing anything with the file name it returns, someone"

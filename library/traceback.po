@@ -15,9 +15,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -465,7 +465,13 @@ msgstr ""
 "的开销更低（如果它不会被实际格式化这就会很有价值）。 如果 *capture_locals* 为 ``True`` 则每个 "
 ":class:`FrameSummary` 中的局部变量会被捕获为对象表示形式。"
 
-#: ../../library/traceback.rst:352
+#: ../../library/traceback.rst:350
+msgid ""
+"Exceptions raised from :func:`repr` on a local variable (when "
+"*capture_locals* is ``True``) are no longer propagated to the caller."
+msgstr ""
+
+#: ../../library/traceback.rst:356
 msgid ""
 "Construct a :class:`StackSummary` object from a supplied list of "
 ":class:`FrameSummary` objects or old-style list of tuples.  Each tuple "
@@ -474,7 +480,7 @@ msgstr ""
 "从所提供的 :class:`FrameSummary` 对象列表或旧式的元组列表构造一个 :class:`StackSummary` 对象。 "
 "每个元组都应当是以文件、行号、名称和行为元素的 4 元组。"
 
-#: ../../library/traceback.rst:358
+#: ../../library/traceback.rst:362
 msgid ""
 "Returns a list of strings ready for printing.  Each string in the resulting "
 "list corresponds to a single frame from the stack. Each string ends in a "
@@ -484,18 +490,18 @@ msgstr ""
 "返回一个可打印的字符串列表。 结果列表中的每个字符串各自对应来自于栈的单独帧。 "
 "每个字符串都以一个换行符结束；对于带有源文本行的条目来说，字符串还可能包含内部换行符。"
 
-#: ../../library/traceback.rst:363
+#: ../../library/traceback.rst:367
 msgid ""
 "For long sequences of the same frame and line, the first few repetitions are"
 " shown, followed by a summary line stating the exact number of further "
 "repetitions."
 msgstr "对于同一帧与行的长序列，将显示前几个重复项，后面跟一个指明之后的实际重复次数的摘要行。"
 
-#: ../../library/traceback.rst:367
+#: ../../library/traceback.rst:371
 msgid "Long sequences of repeated frames are now abbreviated."
 msgstr "重复帧的长序列现在将被缩减。"
 
-#: ../../library/traceback.rst:372
+#: ../../library/traceback.rst:376
 msgid ""
 "Returns a string for printing one of the frames involved in the stack. This "
 "method is called for each :class:`FrameSummary` object to be printed by "
@@ -505,16 +511,16 @@ msgstr ""
 "返回用于打印栈中涉及的某一帧的字符串。 此方法会为每个要用 :meth:`StackSummary.format` 来打印的 "
 ":class:`FrameSummary` 对象进行调用。 如果它返回 ``None``，该帧将从输出中被省略。"
 
-#: ../../library/traceback.rst:381
+#: ../../library/traceback.rst:385
 msgid ":class:`FrameSummary` Objects"
 msgstr ":class:`FrameSummary` 对象"
 
-#: ../../library/traceback.rst:385
+#: ../../library/traceback.rst:389
 msgid ""
 "A :class:`FrameSummary` object represents a single frame in a traceback."
 msgstr ":class:`FrameSummary` 对象代表回溯中的一个单独帧。"
 
-#: ../../library/traceback.rst:389
+#: ../../library/traceback.rst:393
 msgid ""
 "Represent a single frame in the traceback or stack that is being formatted "
 "or printed. It may optionally have a stringified version of the frames "
@@ -531,11 +537,11 @@ msgstr ""
 "属性（这还将发生在将其转换为元组时）。 :attr:`~FrameSummary.line` 可能会被直接提供，并将完全阻止行查找的发生。 "
 "*locals* 是一个可选的局部变量字典，如果有提供的话这些变量的表示形式将被存储在摘要中以便随后显示。"
 
-#: ../../library/traceback.rst:402
+#: ../../library/traceback.rst:406
 msgid "Traceback Examples"
 msgstr "回溯示例"
 
-#: ../../library/traceback.rst:404
+#: ../../library/traceback.rst:408
 msgid ""
 "This simple example implements a basic read-eval-print loop, similar to (but"
 " less useful than) the standard Python interactive interpreter loop.  For a "
@@ -545,23 +551,23 @@ msgstr ""
 "这个简单示例是一个基本的读取-求值-打印循环，类似于（但实用性小于）标准 Python 交互式解释器循环。 对于解释器循环的更完整实现，请参阅 "
 ":mod:`code` 模块。 ::"
 
-#: ../../library/traceback.rst:426
+#: ../../library/traceback.rst:430
 msgid ""
 "The following example demonstrates the different ways to print and format "
 "the exception and traceback:"
 msgstr "下面的例子演示了打印和格式化异常与回溯的不同方式:"
 
-#: ../../library/traceback.rst:461
+#: ../../library/traceback.rst:465
 msgid "The output for the example would look similar to this:"
 msgstr "该示例的输出看起来像是这样的:"
 
-#: ../../library/traceback.rst:503
+#: ../../library/traceback.rst:507
 msgid ""
 "The following example shows the different ways to print and format the "
 "stack::"
 msgstr "下面的例子演示了打印和格式化栈的不同方式::"
 
-#: ../../library/traceback.rst:529
+#: ../../library/traceback.rst:533
 msgid "This last example demonstrates the final few formatting functions:"
 msgstr "最后这个例子演示了最后几个格式化函数:"
 

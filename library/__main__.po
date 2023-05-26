@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:54+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -223,12 +223,10 @@ msgstr ""
 #: ../../library/__main__.rst:180
 msgid ""
 "By proactively following this convention ourselves, our module will have the"
-" same behavior when run directly (i.e. ``python3 echo.py``) as it will have "
+" same behavior when run directly (i.e. ``python echo.py``) as it will have "
 "if we later package it as a console script entry-point in a pip-installable "
 "package."
 msgstr ""
-"通过主动遵循这一惯例，我们的模块在直接运行时（即 ``python3 echo.py`` ）会有相同的行为，如果我们以后把它打包成可用 pip "
-"安装的包中的控制台脚本入口，它也会有相同的行为。"
 
 #: ../../library/__main__.rst:185
 msgid ""

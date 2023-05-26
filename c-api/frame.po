@@ -13,9 +13,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2022-11-05 19:48+0000\n"
 "Last-Translator: Bryan不可思议, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -101,7 +101,7 @@ msgstr "返回一个 :term:`strong reference`。 此结果不可为 ``NULL``。"
 msgid "Get the *frame* code."
 msgstr "获取 *frame* 的代码。"
 
-#: ../../c-api/frame.rst:64 ../../c-api/frame.rst:104
+#: ../../c-api/frame.rst:64 ../../c-api/frame.rst:125
 msgid "Return a :term:`strong reference`."
 msgstr "返回一个 :term:`strong reference`。"
 
@@ -134,9 +134,62 @@ msgid "Returns -1 if ``frame.f_lasti`` is ``None``."
 msgstr "如果 ``frame.f_lasti`` 为 ``None`` 则返回 -1。"
 
 #: ../../c-api/frame.rst:102
+msgid "Get the variable *name* of *frame*."
+msgstr ""
+
+#: ../../c-api/frame.rst:104
+msgid "Return a :term:`strong reference` to the variable value on success."
+msgstr ""
+
+#: ../../c-api/frame.rst:105
+msgid ""
+"Raise :exc:`NameError` and return ``NULL`` if the variable does not exist."
+msgstr ""
+
+#: ../../c-api/frame.rst:106
+msgid "Raise an exception and return ``NULL`` on error."
+msgstr ""
+
+#: ../../c-api/frame.rst:108
+msgid "*name* type must be a :class:`str`."
+msgstr ""
+
+#: ../../c-api/frame.rst:115
+msgid ""
+"Similar to :c:func:`PyFrame_GetVar`, but the variable name is a C string "
+"encoded in UTF-8."
+msgstr ""
+
+#: ../../c-api/frame.rst:123
 msgid "Get the *frame*'s ``f_locals`` attribute (:class:`dict`)."
 msgstr "获取 *frame* 的 ``f_locals`` 属性 (:class:`dict`)。"
 
-#: ../../c-api/frame.rst:111
+#: ../../c-api/frame.rst:132
 msgid "Return the line number that *frame* is currently executing."
 msgstr "返回 *frame* 当前正在执行的行号。"
+
+#: ../../c-api/frame.rst:137
+msgid "Internal Frames"
+msgstr ""
+
+#: ../../c-api/frame.rst:139
+msgid "Unless using :pep:`523`, you will not need this."
+msgstr ""
+
+#: ../../c-api/frame.rst:143
+msgid "The interpreter's internal frame representation."
+msgstr ""
+
+#: ../../c-api/frame.rst:149
+msgid "Return a :term:`strong reference` to the code object for the frame."
+msgstr ""
+
+#: ../../c-api/frame.rst:156
+msgid "Return the byte offset into the last executed instruction."
+msgstr ""
+
+#: ../../c-api/frame.rst:163
+msgid ""
+"Return the currently executing line number, or -1 if there is no line "
+"number."
+msgstr ""

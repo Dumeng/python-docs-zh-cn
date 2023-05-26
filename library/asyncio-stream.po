@@ -11,17 +11,17 @@
 # Alpha Du <alphanow@gmail.com>, 2022
 # Pan Felix <tinylambda@gmail.com>, 2022
 # walkinrain <walkinrain2008@outlook.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:55+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -114,6 +114,7 @@ msgstr "移除了 *loop* 形参。"
 
 #: ../../library/asyncio-stream.rst:86 ../../library/asyncio-stream.rst:128
 #: ../../library/asyncio-stream.rst:160 ../../library/asyncio-stream.rst:190
+#: ../../library/asyncio-stream.rst:368
 msgid "Added the *ssl_shutdown_timeout* parameter."
 msgstr "添加了 *ssl_shutdown_timeout* 形参。"
 
@@ -425,35 +426,44 @@ msgstr ""
 "*ssl_handshake_timeout* 是在放弃连接之前要等待 TLS 握手完成的秒数。 如为 ``None`` (默认值) 则使用 "
 "``60.0``。"
 
-#: ../../library/asyncio-stream.rst:366
+#: ../../library/asyncio-stream.rst:362
+msgid ""
+"*ssl_shutdown_timeout* is the time in seconds to wait for the SSL shutdown "
+"to complete before aborting the connection. ``30.0`` seconds if ``None`` "
+"(default)."
+msgstr ""
+"*ssl_shutdown_timeout* 是在放弃连接之前要等待 SSL 关闭完成的秒数。 如为 ``None`` (默认值) 则使用 "
+"``30.0``。"
+
+#: ../../library/asyncio-stream.rst:374
 msgid ""
 "Return ``True`` if the stream is closed or in the process of being closed."
 msgstr "如果流已被关闭或正在被关闭则返回 ``True``。"
 
-#: ../../library/asyncio-stream.rst:373
+#: ../../library/asyncio-stream.rst:381
 msgid "Wait until the stream is closed."
 msgstr "等待直到流被关闭。"
 
-#: ../../library/asyncio-stream.rst:375
+#: ../../library/asyncio-stream.rst:383
 msgid ""
 "Should be called after :meth:`close` to wait until the underlying connection"
 " is closed, ensuring that all data has been flushed before e.g. exiting the "
 "program."
 msgstr "应当在 :meth:`close` 之后调用以等待直到下层连接被关闭，确保所有数据在退出程序之前已刷新。"
 
-#: ../../library/asyncio-stream.rst:383
+#: ../../library/asyncio-stream.rst:391
 msgid "Examples"
 msgstr "例子"
 
-#: ../../library/asyncio-stream.rst:388
+#: ../../library/asyncio-stream.rst:396
 msgid "TCP echo client using streams"
 msgstr "使用流的 TCP 回显客户端"
 
-#: ../../library/asyncio-stream.rst:390
+#: ../../library/asyncio-stream.rst:398
 msgid "TCP echo client using the :func:`asyncio.open_connection` function::"
 msgstr "使用 :func:`asyncio.open_connection` 函数的 TCP 回显客户端::"
 
-#: ../../library/asyncio-stream.rst:414
+#: ../../library/asyncio-stream.rst:422
 msgid ""
 "The :ref:`TCP echo client protocol "
 "<asyncio_example_tcp_echo_client_protocol>` example uses the low-level "
@@ -462,15 +472,15 @@ msgstr ""
 "使用低层级 :meth:`loop.create_connection` 方法的 :ref:`TCP 回显客户端协议 "
 "<asyncio_example_tcp_echo_client_protocol>` 示例。"
 
-#: ../../library/asyncio-stream.rst:421
+#: ../../library/asyncio-stream.rst:429
 msgid "TCP echo server using streams"
 msgstr "使用流的 TCP 回显服务器"
 
-#: ../../library/asyncio-stream.rst:423
+#: ../../library/asyncio-stream.rst:431
 msgid "TCP echo server using the :func:`asyncio.start_server` function::"
 msgstr "TCP 回显服务器使用 :func:`asyncio.start_server` 函数::"
 
-#: ../../library/asyncio-stream.rst:457
+#: ../../library/asyncio-stream.rst:465
 msgid ""
 "The :ref:`TCP echo server protocol "
 "<asyncio_example_tcp_echo_server_protocol>` example uses the "
@@ -479,34 +489,34 @@ msgstr ""
 "使用 :meth:`loop.create_server` 方法的 :ref:`TCP 回显服务器协议 "
 "<asyncio_example_tcp_echo_server_protocol>` 示例。"
 
-#: ../../library/asyncio-stream.rst:462
+#: ../../library/asyncio-stream.rst:470
 msgid "Get HTTP headers"
 msgstr "获取 HTTP 标头"
 
-#: ../../library/asyncio-stream.rst:464
+#: ../../library/asyncio-stream.rst:472
 msgid ""
 "Simple example querying HTTP headers of the URL passed on the command line::"
 msgstr "查询命令行传入 URL 的 HTTP 标头的简单示例::"
 
-#: ../../library/asyncio-stream.rst:503
+#: ../../library/asyncio-stream.rst:511
 msgid "Usage::"
 msgstr "用法："
 
-#: ../../library/asyncio-stream.rst:507
+#: ../../library/asyncio-stream.rst:515
 msgid "or with HTTPS::"
 msgstr "或使用 HTTPS::"
 
-#: ../../library/asyncio-stream.rst:515
+#: ../../library/asyncio-stream.rst:523
 msgid "Register an open socket to wait for data using streams"
 msgstr "注册一个打开的套接字以等待使用流的数据"
 
-#: ../../library/asyncio-stream.rst:517
+#: ../../library/asyncio-stream.rst:525
 msgid ""
 "Coroutine waiting until a socket receives data using the "
 ":func:`open_connection` function::"
 msgstr "使用 :func:`open_connection` 函数实现等待直到套接字接收到数据的协程::"
 
-#: ../../library/asyncio-stream.rst:552
+#: ../../library/asyncio-stream.rst:560
 msgid ""
 "The :ref:`register an open socket to wait for data using a protocol "
 "<asyncio_example_create_connection>` example uses a low-level protocol and "
@@ -515,7 +525,7 @@ msgstr ""
 "使用低层级协议以及 :meth:`loop.create_connection` 方法的 :ref:`注册一个打开的套接字以等待使用协议的数据 "
 "<asyncio_example_create_connection>` 示例。"
 
-#: ../../library/asyncio-stream.rst:556
+#: ../../library/asyncio-stream.rst:564
 msgid ""
 "The :ref:`watch a file descriptor for read events "
 "<asyncio_example_watch_fd>` example uses the low-level "

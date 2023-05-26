@@ -10,9 +10,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -352,12 +352,9 @@ msgstr ""
 #: ../../library/zoneinfo.rst:243
 msgid ""
 "Invoking this function may change the semantics of datetimes using "
-"``ZoneInfo`` in surprising ways; this modifies process-wide global state and"
-" thus may have wide-ranging effects. Only use it if you know that you need "
-"to."
+"``ZoneInfo`` in surprising ways; this modifies module state and thus may "
+"have wide-ranging effects. Only use it if you know that you need to."
 msgstr ""
-"发起调用此函数可能会以令人惊讶的方式改变使用 ``ZoneInfo`` 的日期时间对象的语义；这会修改进程范围内的全局状态并因此可能产生大范围的影响。 "
-"只有在你确定你的需求时才使用它。"
 
 #: ../../library/zoneinfo.rst:248
 msgid "The class has one attribute:"

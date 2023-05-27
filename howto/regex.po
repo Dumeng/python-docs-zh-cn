@@ -772,7 +772,7 @@ msgstr ""
 msgid ""
 "You can learn about this by interactively experimenting with the :mod:`re` "
 "module."
-msgstr ""
+msgstr "你可以通过交互式地试验 :mod:`re` 模块来学习这一点。"
 
 #: ../../howto/regex.rst:383
 msgid ""

@@ -769,7 +769,7 @@ msgstr ""
 msgid ""
 "The second signature \\(type\\[, value\\[, traceback\\]\\]\\) is deprecated "
 "and may be removed in a future version of Python."
-msgstr ""
+msgstr "第二个签名 \\(type\\[, value\\[, traceback\\]\\]\\) 已被弃用并可能在未来的 Python 版本中移除。"
 
 #: ../../reference/expressions.rst:597
 msgid ""

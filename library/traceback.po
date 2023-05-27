@@ -470,6 +470,7 @@ msgid ""
 "Exceptions raised from :func:`repr` on a local variable (when "
 "*capture_locals* is ``True``) are no longer propagated to the caller."
 msgstr ""
+"在局部变量的 :func:`repr` 上被引发的异常（当 *capture_locals* 为 ``True`` 时）不会再被传播给调用方。"
 
 #: ../../library/traceback.rst:356
 msgid ""

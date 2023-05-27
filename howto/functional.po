@@ -1568,7 +1568,7 @@ msgstr "https://en.wikipedia.org/wiki/Coroutine: 协程条目。"
 msgid ""
 "https://en.wikipedia.org/wiki/Partial_application: Entry for the concept of "
 "partial function application."
-msgstr ""
+msgstr "https://en.wikipedia.org/wiki/Partial_application: 部分化函数应用相关概念的条目。"
 
 #: ../../howto/functional.rst:1228
 msgid ""

@@ -364,6 +364,8 @@ msgid ""
 "from within the :keyword:`!except*` clauses. If this list contains more than"
 " one exception to reraise, they are combined into an exception group."
 msgstr ""
+"任何未被 :keyword:`!except*` 子句处理的剩余异常最后都会在 :keyword:`!except*` 子句中被重新引发。 "
+"如果此列表包含一个以上的要被重新引发的异常，它们将被合并成一个异常组。"
 
 #: ../../reference/compound_stmts.rst:370
 msgid ""

@@ -227,6 +227,8 @@ msgid ""
 "if we later package it as a console script entry-point in a pip-installable "
 "package."
 msgstr ""
+"通过主动遵循这一惯例，我们的模块在直接运行时 (即 ``python echo.py``) 会有相同的行为，当我们以后把它打包成可用 pip "
+"安装的软件包的控制台脚本入口时也会如此。"
 
 #: ../../library/__main__.rst:185
 msgid ""

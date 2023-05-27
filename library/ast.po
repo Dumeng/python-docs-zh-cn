@@ -683,6 +683,10 @@ msgid ""
 "Those in ``orelse`` are executed if the loop finishes normally, rather than "
 "via a ``break`` statement."
 msgstr ""
+"一个 ``for`` 循环。 ``target`` 保存循环赋值的变量，是一个单独的 :class:`Name`, :class:`Tuple`, "
+":class:`List`, :class:`Attribute` 或 :class:`Subscript` 节点。 ``iter`` "
+"保存要被循环的条目，同样也是一个单独节点。 ``body`` 和 ``orelse`` 包含要执行的节点列表。 ``orelse`` "
+"中的语句会在循环正常结束时被执行，而不是通过 ``break`` 语句执行。"
 
 #: ../../library/ast.rst:1065
 msgid ""

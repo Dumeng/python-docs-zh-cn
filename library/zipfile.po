@@ -35,7 +35,7 @@ msgstr ":mod:`zipfile` --- 使用ZIP存档"
 
 #: ../../library/zipfile.rst:10
 msgid "**Source code:** :source:`Lib/zipfile/`"
-msgstr ""
+msgstr "**源代码:** :source:`Lib/zipfile/`"
 
 #: ../../library/zipfile.rst:14
 msgid ""

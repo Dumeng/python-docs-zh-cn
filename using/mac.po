@@ -280,6 +280,9 @@ msgid ""
 "installed from https://www.activestate.com; it can also be built from "
 "source."
 msgstr ""
+"标准的 Python GUI 工具包是 :mod:`tkinter`，基于跨平台的 Tk 工具包（https://www.tcl.tk）。 Apple "
+"的 macOS 捆绑了 Aqua 原生版本的 Tk，其最新版本可以从 https://www.activestate.com "
+"下载和安装；它也可以从源代码构建。"
 
 #: ../../using/mac.rst:151
 msgid ""

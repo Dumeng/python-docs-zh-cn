@@ -1593,6 +1593,9 @@ msgid ""
 "``hardlink_to`` method added in 3.10 which matches the semantics of the "
 "existing ``symlink_to`` method."
 msgstr ""
+"添加了 :meth:`pathlib.Path.link_to()`，它可以创建指向一个路径的硬链接。 （由 Joannah Nanjekye 在 "
+":issue:`26978` 中贡献。） 请注意 ``link_to`` 已在 3.10 中被弃用并在 3.12 中被移除并改用在 3.10 中添加的 "
+"``hardlink_to`` 方法，它与现有 ``symlink_to`` 的语法相匹配。"
 
 #: ../../whatsnew/3.8.rst:1098
 msgid "pickle"

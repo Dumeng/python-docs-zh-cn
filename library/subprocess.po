@@ -1123,6 +1123,8 @@ msgid ""
 ":func:`run` and :meth:`Popen.communicate` will raise :exc:`TimeoutExpired` "
 "if the timeout expires before the process exits."
 msgstr ""
+"所有接受 *timeout* 形参的函数与方法，例如 :func:`run` 和 :meth:`Popen.communicate` "
+"将会在进程退出前超时到期时引发 :exc:`TimeoutExpired`。"
 
 #: ../../library/subprocess.rst:743
 msgid ""

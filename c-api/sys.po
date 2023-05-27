@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../c-api/sys.rst:28
 msgid "This function must not be called before Python is initialized."
-msgstr ""
+msgstr "此函数不可在 Python 被初始化之前调用。"
 
 #: ../../c-api/sys.rst:33
 msgid ""
@@ -265,6 +265,8 @@ msgid ""
 "The function now uses the UTF-8 encoding on Windows if "
 ":c:member:`PyConfig.legacy_windows_fs_encoding` is zero;"
 msgstr ""
+"现在如果在 Windows 上 :c:member:`PyConfig.legacy_windows_fs_encoding` 为零则此函数将使用 "
+"UTF-8 编码格式；"
 
 #: ../../c-api/sys.rst:175
 msgid ""
@@ -311,6 +313,8 @@ msgid ""
 "The function now uses the UTF-8 encoding on Windows if "
 ":c:member:`PyConfig.legacy_windows_fs_encoding` is zero."
 msgstr ""
+"现在如果在 Windows 上 :c:member:`PyConfig.legacy_windows_fs_encoding` 为零则此函数将使用 "
+"UTF-8 编码格式。"
 
 #: ../../c-api/sys.rst:218
 msgid "System Functions"

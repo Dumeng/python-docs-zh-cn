@@ -2612,6 +2612,8 @@ msgid ""
 "Slice objects are now :term:`hashable` (provided :attr:`~slice.start`, "
 ":attr:`~slice.stop`, and :attr:`~slice.step` are hashable)."
 msgstr ""
+"Slice 对象现在将为 :term:`hashable` (如果 :attr:`~slice.start`, :attr:`~slice.stop` "
+"和 :attr:`~slice.step` 均为可哈希对象)。"
 
 #: ../../library/functions.rst:1652
 msgid "Return a new sorted list from the items in *iterable*."

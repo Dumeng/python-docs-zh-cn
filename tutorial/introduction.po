@@ -274,7 +274,7 @@ msgid ""
 "In addition to indexing, *slicing* is also supported.  While indexing is "
 "used to obtain individual characters, *slicing* allows you to obtain a "
 "substring::"
-msgstr ""
+msgstr "除了索引操作，还支持 *切片*。 索引用来获取单个字符，而 *切片* 允许你获取子字符串::"
 
 #: ../../tutorial/introduction.rst:284
 msgid ""

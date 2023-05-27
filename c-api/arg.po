@@ -14,8 +14,8 @@
 # Naisen Xu <723648649@qq.com>, 2021
 # Jing Li <tes286.lijing@gmail.com>, 2021
 # 高乐喆 <gaolezhe@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:47+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -496,7 +496,7 @@ msgstr "和 ``es#`` 相同，除了不用重编码传入的字符串对象。相
 msgid ""
 "``u``, ``u#``, ``Z``, and ``Z#`` are removed because they used a legacy "
 "``Py_UNICODE*`` representation."
-msgstr ""
+msgstr "``u``, ``u#``, ``Z`` 和 ``Z#`` 已被移除因为它们只用于旧式的 ``Py_UNICODE*`` 表示形式。"
 
 #: ../../c-api/arg.rst:230
 msgid "Numbers"

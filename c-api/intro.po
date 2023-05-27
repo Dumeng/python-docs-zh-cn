@@ -264,6 +264,8 @@ msgid ""
 "Like ``getenv(s)``, but returns ``NULL`` if :option:`-E` was passed on the "
 "command line (see :c:member:`PyConfig.use_environment`)."
 msgstr ""
+"与 ``getenv(s)`` 类似，但是如果从命令行传入了 :option:`-E` 则返回 ``NULL`` (参见 "
+":c:member:`PyConfig.use_environment`)。"
 
 #: ../../c-api/intro.rst:160
 msgid "Return the maximum value between ``x`` and ``y``."

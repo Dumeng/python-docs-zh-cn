@@ -317,7 +317,7 @@ msgstr ""
 msgid ""
 "Remove the ``filename`` attribute, use the :attr:`~GzipFile.name` attribute "
 "instead."
-msgstr ""
+msgstr "移除 ``filename`` 属性，改用 :attr:`~GzipFile.name` 属性。"
 
 #: ../../library/gzip.rst:178
 msgid ""

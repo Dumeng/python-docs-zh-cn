@@ -49,6 +49,10 @@ msgid ""
 "``NULL`` or if the name is equal to one of the strings ``'<stdin>'`` or "
 "``'???'``."
 msgstr ""
+"如果名称为 *filename* 的标准Return true (nonzero) if the standard I/O 文件 *fp* "
+"被确认为可交互的则返回真（非零）值。 所有 ``isatty(fileno(fp))`` 为真值的文件都属于这种情况。 如果 "
+":c:member:`PyConfig.interactive` 为非零值，此函数在 *filename* 指针为 ``NULL`` "
+"或者其名称等于字符串 ``'<stdin>'`` 或 ``'???'`` 之一时也将返回真值。"
 
 #: ../../c-api/sys.rst:28
 msgid "This function must not be called before Python is initialized."

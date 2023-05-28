@@ -16,10 +16,10 @@
 # Makdon <makdon@makdon.me>, 2022
 # Kaizhao Zhang <zhangkaizhao@gmail.com>, 2022
 # Sefank <sefank@foxmail.com>, 2022
-# 周盛道 <zhoushengdao@sina.cn>, 2022
 # Bryan不可思议, 2023
 # Jason Ren, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# WH-2099 <wh2099@outlook.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -28,7 +28,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +55,7 @@ msgstr "本文介绍了 Python 3.11 相比 3.10 的新增特性。"
 
 #: ../../whatsnew/3.11.rst:49
 msgid "For full details, see the :ref:`changelog <changelog>`."
-msgstr " 更详细的信息可参阅 :ref:`更新日志 <changelog>`。"
+msgstr "更详细的信息可参阅 :ref:`更新日志 <changelog>`。"
 
 #: ../../whatsnew/3.11.rst:55
 msgid "Summary -- Release highlights"

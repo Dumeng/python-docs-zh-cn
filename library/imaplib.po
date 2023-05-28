@@ -177,7 +177,7 @@ msgstr ""
 
 #: ../../library/imaplib.rst:121
 msgid "The deprecated *keyfile* and *certfile* parameters have been removed."
-msgstr ""
+msgstr "已弃用的 *keyfile* 和 *certfile* 形参已被移除。"
 
 #: ../../library/imaplib.rst:124
 msgid "The second subclass allows for connections created by a child process:"

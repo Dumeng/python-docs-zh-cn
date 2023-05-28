@@ -97,6 +97,8 @@ msgid ""
 " ``NULL`` on failure.  This is the equivalent of the Python expression "
 "``p[low:high]``.  Indexing from the end of the tuple is not supported."
 msgstr ""
+"返回 *p* 所指向的元组的从 *low* 到 *high* 的切片，或者在失败时返回 ``NULL``。 这等价于 Python 表达式 "
+"``p[low:high]``。 不支持从元组末尾进行索引。"
 
 #: ../../c-api/tuple.rst:77
 msgid ""

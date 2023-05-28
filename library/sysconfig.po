@@ -49,6 +49,8 @@ msgid ""
 "header file that are necessary to build both the Python binary itself and "
 "third-party C extensions compiled using ``setuptools``."
 msgstr ""
+"一个包含 :file:`Makefile` 和 :file:`pyconfig.h` 头文件的 Python 分发版，这是构建 Python "
+"二进制文件本身和用 ``setuptools`` 编译的第三方 C 扩展所必需的。"
 
 #: ../../library/sysconfig.rst:30
 msgid ""

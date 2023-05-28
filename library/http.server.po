@@ -600,6 +600,8 @@ msgid ""
 "behavior, such as using different index file names by overriding the class "
 "attribute :attr:`index_pages`."
 msgstr ""
+":class:`SimpleHTTPRequestHandler` 也可以被子类化以便增强其行为，例如通过重载类属性 "
+":attr:`index_pages` 以使用不同的 index 文件名。"
 
 #: ../../library/http.server.rst:423
 msgid ""

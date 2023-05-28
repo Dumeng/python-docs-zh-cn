@@ -116,6 +116,9 @@ msgid ""
 "another file by reflinking on some filesystems (e.g., btrfs, OCFS2, and "
 "XFS). This behavior is commonly referred to as \"copy-on-write\"."
 msgstr ""
+"在 Linux >= 4.5 上，:mod:`fcntl` 模块将公开 ``FICLONE`` 和 ``FICLONERANGE`` "
+"常量，这允许在某些系统上（例如 btrfs, OCFS2, 和 XFS）通过将一个文件引用链接到另一个文件来共享某些数据。 "
+"此行为通常被称为“写入时拷贝”。"
 
 #: ../../library/fcntl.rst:61
 msgid "The module defines the following functions:"

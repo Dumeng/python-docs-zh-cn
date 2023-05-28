@@ -159,7 +159,7 @@ msgstr ""
 
 #: ../../library/poplib.rst:93
 msgid "The deprecated *keyfile* and *certfile* parameters have been removed."
-msgstr ""
+msgstr "已弃用的 *keyfile* 和 *certfile* 形参已被移除。"
 
 #: ../../library/poplib.rst:96
 msgid "One exception is defined as an attribute of the :mod:`poplib` module:"

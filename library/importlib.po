@@ -422,7 +422,7 @@ msgstr "一个代表 :term:`meta path finder` 的抽象基类。"
 
 #: ../../library/importlib.rst:244 ../../library/importlib.rst:280
 msgid "No longer a subclass of :class:`!Finder`."
-msgstr ""
+msgstr "不再是 :class:`!Finder` 的子类。"
 
 #: ../../library/importlib.rst:249
 msgid ""
@@ -548,6 +548,10 @@ msgid ""
 "modules already in :data:`sys.modules` before the loader began execution "
 "should be left alone."
 msgstr ""
+"如果请求的模块已存在于 :data:`sys.modules` 中，则该模块应当被使用并重新加载。 "
+"在其他情况下加载器应当创建一个新模块并在任何加载操作开始之前将其插入到 :data:`sys.modules` 中，以防止来自导入的无限递归。 "
+"如果加载器插入了一个模块并且加载失败，则必须用加载器将其从 :data:`sys.modules` 中移除；在加载器开始执行之前已经存在于 "
+":data:`sys.modules` 中的模块应当保持原样。"
 
 #: ../../library/importlib.rst:354
 msgid ""

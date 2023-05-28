@@ -80,12 +80,14 @@ msgid ""
 "arguments are stored in the :mod:`sys` module's *argv* attribute as a list."
 "  For instance, let's take the following :file:`demo.py` file::"
 msgstr ""
+"一般的工具脚本常常需要处理命令行参数。 这些参数以列表形式存储在 :mod:`sys` 模块的 *argv* 属性中。 举例来说，让我们查看下面的 "
+":file:`demo.py` 文件::"
 
 #: ../../tutorial/stdlib.rst:74
 msgid ""
 "Here is the output from running ``python demo.py one two three`` at the "
 "command line::"
-msgstr ""
+msgstr "以下是在命令行中运行 ``python demo.py one two three`` 输出的结果::"
 
 #: ../../tutorial/stdlib.rst:79
 msgid ""

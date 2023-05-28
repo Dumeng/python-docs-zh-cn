@@ -10,7 +10,7 @@
 # jaystone776 <1732865113@qq.com>, 2021
 # Heyi Tang <tangheyi.09@gmail.com>, 2021
 # Nyuan Zhang, 2022
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-26 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:57+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -310,12 +310,14 @@ msgid ""
 " any exceptions in the group are not suppressed, a group containing them is "
 "re-raised."
 msgstr ""
+"如果 :keyword:`!with` 语句块内的代码引发了一个 :exc:`ExceptionGroup`，将从该分组中移除被屏蔽的异常。 "
+"如果该分组中有任何异常未被屏蔽，则会重新引发一个包含它们的分组。"
 
 #: ../../library/contextlib.rst:313
 msgid ""
 "``suppress`` now supports suppressing exceptions raised as part of an "
 ":exc:`ExceptionGroup`."
-msgstr ""
+msgstr "``suppress`` 现在支持屏蔽作为一个 :exc:`ExceptionGroup` 的组成部分被引发的异常。"
 
 #: ../../library/contextlib.rst:319
 msgid ""

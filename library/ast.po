@@ -434,7 +434,7 @@ msgstr "``keywords`` 保存了一个代表以关键字传入的参数的 :class:
 msgid ""
 "When creating a ``Call`` node, ``args`` and ``keywords`` are required, but "
 "they can be empty lists."
-msgstr ""
+msgstr "当创建 ``Call`` 节点时，需要有 ``args`` 和 ``keywords``，但它们可以为空列表。"
 
 #: ../../library/ast.rst:517
 msgid ""
@@ -623,6 +623,9 @@ msgid ""
 ":ref:`type parameters <ast-type-params>`, and ``value`` is the value of the "
 "type alias."
 msgstr ""
+"通过 :keyword:`type` 语句创建的 :ref:`类型别名 <type-aliases>`。 ``name`` "
+"是别名的名称，``type_params`` 是 :ref:`类型形参 <ast-type-params>` 的列表，而 ``value`` "
+"是类型别名的值。"
 
 #: ../../library/ast.rst:939
 msgid ""
@@ -911,13 +914,13 @@ msgstr ""
 
 #: ../../library/ast.rst:1669
 msgid "Type parameters"
-msgstr ""
+msgstr "类型形参"
 
 #: ../../library/ast.rst:1671
 msgid ""
 ":ref:`Type parameters <type-params>` can exist on classes, functions, and "
 "type aliases."
-msgstr ""
+msgstr ":ref:`类型形参 <type-params>` 可以存在于类、函数和类型别名中。"
 
 #: ../../library/ast.rst:1676
 msgid ""
@@ -926,18 +929,20 @@ msgid ""
 ":class:`Tuple`, it represents constraints; otherwise it represents the "
 "bound."
 msgstr ""
+"一个 :class:`typing.TypeVar`。 ``name`` 是类型变量的名称。 ``bound`` 是可能存在的边界或约束。 如果 "
+"``bound`` 是一个 :class:`Tuple`，它代表约束；否则它代表边界。"
 
 #: ../../library/ast.rst:1699
 msgid ""
 "A :class:`typing.ParamSpec`. ``name`` is the name of the parameter "
 "specification."
-msgstr ""
+msgstr "一个 :class:`typing.ParamSpec`。 ``name`` 是形参规格说明的名称。"
 
 #: ../../library/ast.rst:1722
 msgid ""
 "A :class:`typing.TypeVarTuple`. ``name`` is the name of the type variable "
 "tuple."
-msgstr ""
+msgstr "一个 :class:`typing.TypeVarTuple`。 ``name`` 是类型变量元组的名称。"
 
 #: ../../library/ast.rst:1745
 msgid "Function and class definitions"
@@ -953,7 +958,7 @@ msgstr "``name`` 是函数名称的原始字符串。"
 
 #: ../../library/ast.rst:1752 ../../library/ast.rst:1925
 msgid "``type_params`` is a list of :ref:`type parameters <ast-type-params>`."
-msgstr ""
+msgstr "``type_params`` 是一个 :ref:`类型形参 <ast-type-params>` 的列表。"
 
 #: ../../library/ast.rst:1753
 msgid "``args`` is an :class:`arguments` node."

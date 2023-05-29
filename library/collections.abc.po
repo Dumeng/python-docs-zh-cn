@@ -432,11 +432,11 @@ msgstr "``aclose``, ``__aiter__``, ``__anext__``"
 
 #: ../../library/collections.abc.rst:180
 msgid ":class:`Buffer` [1]_"
-msgstr ""
+msgstr ":class:`Buffer` [1]_"
 
 #: ../../library/collections.abc.rst:180
 msgid "``__buffer__``"
-msgstr ""
+msgstr "``__buffer__``"
 
 #: ../../library/collections.abc.rst:185
 msgid "Footnotes"
@@ -557,6 +557,9 @@ msgid ""
 " union, like ``bytes | bytearray``, or :class:`collections.abc.Buffer`. For "
 "use as an ABC, prefer :class:`Sequence` or :class:`collections.abc.Buffer`."
 msgstr ""
+":class:`ByteString` ABC 已被弃用。 当用于类型标注时，建议改为并集形式，如 ``bytes | bytearray``，或 "
+":class:`collections.abc.Buffer`。 当用作 ABC 时，建议改为 :class:`Sequence` 或 "
+":class:`collections.abc.Buffer`。"
 
 #: ../../library/collections.abc.rst:285
 msgid "ABCs for read-only and mutable sets."
@@ -649,6 +652,8 @@ msgid ""
 "ABC for classes that provide the :meth:`~object.__buffer__` method, "
 "implementing the :ref:`buffer protocol <bufferobjects>`. See :pep:`688`."
 msgstr ""
+"针对提供 :meth:`~object.__buffer__` 方法的类的 ABC，实现了 :ref:`缓冲区协议 <bufferobjects>`。 "
+"参见 :pep:`688`。"
 
 #: ../../library/collections.abc.rst:364
 msgid "Examples and Recipes"

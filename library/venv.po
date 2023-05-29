@@ -140,7 +140,7 @@ msgstr "本命令如果以 ``-h`` 参数运行，将显示可用的选项::"
 
 #: ../../using/venv-create.inc:72 ../../library/venv.rst:294
 msgid "``setuptools`` is no longer a core venv dependency."
-msgstr ""
+msgstr "``setuptools`` 不再是核心的 venv 依赖项。"
 
 #: ../../using/venv-create.inc:74
 msgid ""
@@ -638,6 +638,7 @@ msgid ""
 "environment. This is done by shelling out to the ``pip`` executable in the "
 "environment."
 msgstr ""
+"升级环境中核心的 venv 依赖包 (目前为 ``pip``)。 这是通过将 shell 转出给环境中的 ``pip`` 可执行文件来实现的。"
 
 #: ../../library/venv.rst:298
 msgid ""

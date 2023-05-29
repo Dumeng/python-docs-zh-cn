@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:07+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -383,13 +383,13 @@ msgstr ""
 
 #: ../../library/hashlib.rst:307
 msgid "Function only available when Python is compiled with OpenSSL."
-msgstr ""
+msgstr "此函数只有在 Python 附带 OpenSSL 编译时才可用。"
 
 #: ../../library/hashlib.rst:311
 msgid ""
 "Function now only available when Python is built with OpenSSL. The slow pure"
 " Python implementation has been removed."
-msgstr ""
+msgstr "现在此函数只有在 Python 附带 OpenSSL 构建时才可用。 慢速的纯 Python 实现已被移除。"
 
 #: ../../library/hashlib.rst:317
 msgid ""

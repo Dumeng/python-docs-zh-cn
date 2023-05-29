@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -127,7 +127,7 @@ msgstr "添加了对 :keyword:`with` 语句的支持。"
 
 #: ../../library/smtplib.rst:68
 msgid "*source_address* argument was added."
-msgstr ""
+msgstr "添加了 *source_address* 参数。"
 
 #: ../../library/smtplib.rst:71
 msgid "The SMTPUTF8 extension (:rfc:`6531`) is now supported."
@@ -165,7 +165,7 @@ msgstr "增加了 *context*。"
 
 #: ../../library/smtplib.rst:95
 msgid "The *source_address* argument was added."
-msgstr ""
+msgstr "添加了 *source_address* 参数。"
 
 #: ../../library/smtplib.rst:98
 msgid ""
@@ -206,6 +206,10 @@ msgid ""
 "the same meaning as they do in the :class:`SMTP` class. To specify a Unix "
 "socket, you must use an absolute path for *host*, starting with a '/'."
 msgstr ""
+"LMTP 协议与 ESMTP 非常相似，它很大程度上基于标准 SMTP 客户端。 将 Unix 套接字用于 LMTP 是很常见的，因此 "
+":meth:`connect` 方法必须支持它以及常规的 host:port 服务器。 可选参数 *local_hostname* 和 "
+"*source_address* 的含义与 :class:`SMTP` 类中的相同。 要指定 Unix 套接字，你必须使用绝对路径作为 "
+"*host*，即以 '/' 开头。"
 
 #: ../../library/smtplib.rst:127
 msgid ""
@@ -542,7 +546,7 @@ msgstr ""
 #: ../../library/smtplib.rst:361
 msgid ""
 "*authobject* must be a callable object taking an optional single argument::"
-msgstr ""
+msgstr "*authobject* 必须为接受一个可选的单独参数的可调用对象::"
 
 #: ../../library/smtplib.rst:365
 msgid ""

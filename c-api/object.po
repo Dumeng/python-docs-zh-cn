@@ -515,7 +515,7 @@ msgstr ""
 
 #: ../../c-api/object.rst:401
 msgid "Get a pointer to subclass-specific data reserved for *cls*."
-msgstr ""
+msgstr "获取一个指向为 *cls* 保留的子类专属数据的指针。"
 
 #: ../../c-api/object.rst:403
 msgid ""

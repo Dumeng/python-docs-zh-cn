@@ -14,17 +14,17 @@
 # WH-2099 <wh2099@outlook.com>, 2021
 # Fred <fred.wei@foxmail.com>, 2022
 # Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-29 13:04+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2529,6 +2529,9 @@ msgid ""
 "Removal of the use of ``module_repr()`` is scheduled for Python 3.12. "
 "(Contributed by Brett Cannon in :issue:`42137`.)"
 msgstr ""
+"现在导入系统会先使用模块上的 ``__spec__`` 属性再回退到 :meth:`!module_repr` 来使用模块的 "
+"``__repr__()`` 方法。 对 ``module_repr()`` 的使用预定在 Python 3.12 中移除。 （由 Brett "
+"Cannon 在 :issue:`42137` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1701
 msgid ""
@@ -2538,6 +2541,10 @@ msgid ""
 "slated for removal in Python 3.12. (Contributed by Brett Cannon in "
 ":issue:`42136`.)"
 msgstr ""
+":meth:`!importlib.abc.Loader.module_repr`, "
+":meth:`!importlib.machinery.FrozenLoader.module_repr` 和 "
+":meth:`!importlib.machinery.BuiltinLoader.module_repr` 已被弃用并预定在 Python 3.12 "
+"中移除。 （由 Brett Cannon 在 :issue:`42136` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1707
 msgid ""

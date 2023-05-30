@@ -7,7 +7,6 @@
 # WH-2099 <wh2099@outlook.com>, 2023
 # Lu <lu2github@gmail.com>, 2023
 # sgqy <sgqyzh@gmail.com>, 2023
-# 周盛道 <zhoushengdao@sina.cn>, 2023
 # jacky <jackylvm@foxmail.com>, 2023
 # Makdon <makdon@makdon.me>, 2023
 # Siyuan Xu, 2023
@@ -15,11 +14,11 @@
 # Kaizhao Zhang <zhangkaizhao@gmail.com>, 2023
 # Sefank <sefank@foxmail.com>, 2023
 # Leo Li <foxleoly@hotmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
-# 汇民 王 <whuim@qq.com>, 2023
 # Nyuan Zhang, 2023
 # Dai Xu <daixu61@hotmail.com>, 2023
+# 汇民 王 <whuim@qq.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -28,7 +27,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2023-05-24 13:08+0000\n"
-"Last-Translator: Dai Xu <daixu61@hotmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,7 +62,7 @@ msgstr "本文介绍了 Python 3.12 相比 3.11 的新增特性。"
 
 #: ../../whatsnew/3.12.rst:51
 msgid "For full details, see the :ref:`changelog <changelog>`."
-msgstr " 更详细的信息可参阅 :ref:`更新日志 <changelog>`。"
+msgstr "更详细的信息可参阅 :ref:`更新日志 <changelog>`。"
 
 #: ../../whatsnew/3.12.rst:55
 msgid ""
@@ -83,7 +82,7 @@ msgstr "新的语法特性："
 
 #: ../../whatsnew/3.12.rst:71
 msgid ":pep:`701`: Syntactic formalization of f-strings"
-msgstr ":pep:`701`：f-字符串的语法形式化"
+msgstr ":pep:`701`: f-字符串的语法形式化"
 
 #: ../../whatsnew/3.12.rst:73
 msgid "New typing features:"
@@ -91,11 +90,11 @@ msgstr "新的类型标注特性："
 
 #: ../../whatsnew/3.12.rst:75
 msgid ":pep:`688`: Making the buffer protocol accessible in Python"
-msgstr ":pep:`688`：使缓冲区协议在 Python 中可访问"
+msgstr ":pep:`688`: 使缓冲区协议在 Python 中可访问"
 
 #: ../../whatsnew/3.12.rst:77
 msgid ":ref:`whatsnew312-pep695`"
-msgstr ""
+msgstr ":ref:`whatsnew312-pep695`"
 
 #: ../../whatsnew/3.12.rst:79
 msgid ":ref:`whatsnew312-pep692`"
@@ -103,7 +102,7 @@ msgstr ":ref:`whatsnew312-pep692`"
 
 #: ../../whatsnew/3.12.rst:81
 msgid ":pep:`698`: Override Decorator for Static Typing"
-msgstr ":pep:`698`：覆盖静态类型的装饰器"
+msgstr ":pep:`698`: 覆盖静态类型的装饰器"
 
 #: ../../whatsnew/3.12.rst:83
 msgid "Important deprecations, removals or restrictions:"
@@ -111,11 +110,11 @@ msgstr "重要的弃用、移除或限制："
 
 #: ../../whatsnew/3.12.rst:85
 msgid ":pep:`623`: Remove wstr from Unicode"
-msgstr ":pep:`623`：从Unicode中删除wstr"
+msgstr ":pep:`623`: 从 Unicode 中移除 wstr"
 
 #: ../../whatsnew/3.12.rst:87
 msgid ":pep:`632`: Remove the ``distutils`` package"
-msgstr ":pep:`632`：移除 ``distutils`` 软件包"
+msgstr ":pep:`632`: 移除 ``distutils`` 软件包"
 
 #: ../../whatsnew/3.12.rst:90
 msgid "Improved Error Messages"
@@ -242,8 +241,8 @@ msgid ""
 " Maureira-Fredes and Marta Gómez in :gh:`102856`. PEP written by Pablo "
 "Galindo, Batuhan Taskaya, Lysandros Nikolaou and Marta Gómez)."
 msgstr ""
-"(由 Pablo Galindo、Batuhan Taskaya、 Lysandros Nikolaou、Cristián Maureira-"
-"Fredes 和 Marta Gómez 在 :gh:`102856` 中贡献。PEP 由 Pablo Galindo、 Batuhan "
+"（由 Pablo Galindo、Batuhan Taskaya、 Lysandros Nikolaou、Cristián Maureira-"
+"Fredes 和 Marta Gómez 在 :gh:`102856` 中贡献。 PEP 由 Pablo Galindo、 Batuhan "
 "Taskaya、 Lysandros Nikolaou 和 Marta Gómez 撰写）。"
 
 #: ../../whatsnew/3.12.rst:213
@@ -307,6 +306,9 @@ msgid ""
 ":class:`inspect.BufferFlags` enum represents the flags that can be used to "
 "customize buffer creation. (Contributed by Jelle Zijlstra in :gh:`102500`.)"
 msgstr ""
+"新的 :class:`collections.abc.Buffer` ABC（抽象基类）提供了一种表示缓冲区对象的标准方法，例如在类型注释中。 新的 "
+":class:`inspect.BufferFlags` 枚举表示可用于自定义缓冲区创建的标志。 （由 Jelle Zijlstra 在 "
+":gh:`102500` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:248
 msgid "New Features Related to Type Hints"
@@ -320,7 +322,7 @@ msgstr "本节介绍了涉及 :pep:`484` 类型提示和 :mod:`typing` 模块的
 
 #: ../../whatsnew/3.12.rst:256
 msgid "PEP 692: Using ``TypedDict`` for more precise ``**kwargs`` typing"
-msgstr ""
+msgstr "PEP 692: 使用``TypedDict``进行更精确的``**kwargs``类型标注"
 
 #: ../../whatsnew/3.12.rst:258
 msgid ""
@@ -328,24 +330,26 @@ msgid ""
 "allowed for valid annotations only in cases where all of the ``**kwargs`` "
 "were of the same type."
 msgstr ""
+"在函数签名中的 ``**kwargs`` 类型标注（由 :pep:`484` 引入）只允许在所有 ``**kwargs`` "
+"都属于同一类型的情况下进行有效标注。"
 
 #: ../../whatsnew/3.12.rst:262
 msgid ""
 "This PEP specifies a more precise way of typing ``**kwargs`` by relying on "
 "typed dictionaries::"
-msgstr ""
+msgstr "此PEP指定了一种更精确的``**kwargs``类型标注的方法，该方法依赖于类型化的词典 ::"
 
 #: ../../whatsnew/3.12.rst:273
 msgid "See :pep:`692` for more details."
-msgstr ""
+msgstr "更多细节请参见 :pep:`692`。"
 
 #: ../../whatsnew/3.12.rst:275
 msgid "(Contributed by Franek Magiera in :gh:`103629`.)"
-msgstr ""
+msgstr "（由 Franek Magiera 在 :gh:`103629` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:278
 msgid "PEP 698: Override Decorator for Static Typing"
-msgstr ""
+msgstr "PEP 698：覆盖静态类型的装饰器"
 
 #: ../../whatsnew/3.12.rst:280
 msgid ""
@@ -355,6 +359,8 @@ msgid ""
 "mistakes where a method that is intended to override something in a base "
 "class does not in fact do so."
 msgstr ""
+"一个新的装饰器 :func:`typing.override` 已添加到 :mod:`typing` 模块中。 "
+"它向类型检查器指示该方法旨在重写超类中的方法。 这允许类型检查器在打算重写基类中的某个方法实际上没有重写的情况下捕获错误。"
 
 #: ../../whatsnew/3.12.rst:286
 msgid "Example::"
@@ -362,18 +368,18 @@ msgstr "示例："
 
 #: ../../whatsnew/3.12.rst:304
 msgid "(Contributed by Steven Troxler in :gh:`101561`.)"
-msgstr ""
+msgstr "（由 Steven Troxler 在 :gh:`101561` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:309
 msgid "PEP 695: Type Parameter Syntax"
-msgstr ""
+msgstr "PEP 695：类型参数语法"
 
 #: ../../whatsnew/3.12.rst:311
 msgid ""
 "Generic classes and functions under :pep:`484` were declared using a verbose"
 " syntax that left the scope of type parameters unclear and required explicit"
 " declarations of variance."
-msgstr ""
+msgstr ":pep:`484` 下的泛型类和函数是使用详细语法声明的，这使得类型参数的范围不明确，并且需要显式声明方差。"
 
 #: ../../whatsnew/3.12.rst:315
 msgid ""
@@ -381,6 +387,8 @@ msgid ""
 ":ref:`generic classes <generic-classes>` and :ref:`functions <generic-"
 "functions>`::"
 msgstr ""
+":pep:`695` 引入了一种新的、更紧凑、更明确的方式来创建 :ref:`泛型类 <generic-classes>` 和 :ref:`函数 "
+"<generic-functions>`::"
 
 #: ../../whatsnew/3.12.rst:328
 msgid ""
@@ -388,10 +396,12 @@ msgid ""
 "<type-aliases>` using the :keyword:`type` statement, which creates an "
 "instance of :class:`~typing.TypeAliasType`::"
 msgstr ""
+"此外，该 PEP 引入了一种新的方法来使用 :keyword:`type` 语句声明 :ref:`类型别名 <type-aliases>`，该语句会创建"
+" :class:`~typing.TypeAliasType` 的实例::"
 
 #: ../../whatsnew/3.12.rst:334
 msgid "Type aliases can also be :ref:`generic <generic-type-aliases>`::"
-msgstr ""
+msgstr "类型别名也可以是  :ref:`generic <generic-type-aliases>`::"
 
 #: ../../whatsnew/3.12.rst:338
 msgid ""
@@ -399,6 +409,8 @@ msgid ""
 ":class:`~typing.ParamSpec` parameters, as well as :class:`~typing.TypeVar` "
 "parameters with bounds or constraints::"
 msgstr ""
+"新语法允许声明 :class:`~typing.TypeVarTuple` 和 :class:`~typing.ParamSpec` "
+"形参，以及带边界或约束的 :class:`~typing.TypeVar` 形参::"
 
 #: ../../whatsnew/3.12.rst:347
 msgid ""
@@ -407,6 +419,8 @@ msgid ""
 "evaluation`). This means type aliases are able to refer to other types "
 "defined later in the file."
 msgstr ""
+"类型别名的值以及通过此语法创建的类型变量的边界和约束仅根据需要进行计算 (参见 :ref:`lazy-evaluation`)。 "
+"这意味着类型别名可以引用稍后在文件中定义的其它类型。"
 
 #: ../../whatsnew/3.12.rst:352
 msgid ""
@@ -417,6 +431,8 @@ msgid ""
 "the module scope after the class is defined. See :ref:`type-params` for a "
 "detailed description of the runtime semantics of type parameters."
 msgstr ""
+"通过类型参数列表声明的类型参数在声明的作用域和任何嵌套的作用域内都可见，但在外部作用域内不可见。 例如，它们可以用于泛型类的方法的类型注解或类体中。 "
+"但是，在定义类之后，不能在模块范围中使用它们。 有关类型参数的运行时语义的详细描述，请参见 :ref:`type-params`。"
 
 #: ../../whatsnew/3.12.rst:359
 msgid ""
@@ -426,16 +442,20 @@ msgid ""
 "differently with enclosing class scopes. In Python 3.13, :term:`annotations "
 "<annotation>` will also be evaluated in annotation scopes."
 msgstr ""
+"为了支持这些作用域定义，引入了一种新的作用域，即 :ref:`标注作用域 <annotation-scopes>`。 "
+"标注作用域的行为在很大程度上类似于函数作用域，但与封闭类作用作用域的交互方式不同。 在 Python 3.13 中，:term:`标注 "
+"<annotation>` 也将在标注作用域中进行求值。"
 
 #: ../../whatsnew/3.12.rst:365
 msgid "See :pep:`695` for more details."
-msgstr ""
+msgstr "更多细节请参见 :pep:`695`。"
 
 #: ../../whatsnew/3.12.rst:367
 msgid ""
 "(PEP written by Eric Traut. Implementation by Jelle Zijlstra, Eric Traut, "
 "and others in :gh:`103764`.)"
 msgstr ""
+"（PEP由 Eric Traut 撰写。 由 Jelle Zijlstra、Eric Traut 和其他人在 :gh:`103764` 中实现。）"
 
 #: ../../whatsnew/3.12.rst:371
 msgid "Other Language Changes"
@@ -451,6 +471,11 @@ msgid ""
 "Contributed by Pablo Galindo and Christian Heimes with contributions from "
 "Gregory P. Smith [Google] and Mark Shannon in :gh:`96123`.)"
 msgstr ""
+"通过新的环境变量 :envvar:`PYTHONPERFSUPPORT`、新的命令行选项 :option:`-X perf <-X>` 以及新的 "
+":func:`sys.activate_stack_trampoline`、:func:`sys.deactivate_stack_trampoline`"
+" 和 :func:`sys.is_stack_trampoline_active` API 来添加 :ref:`perf_profiling`。 （由 "
+"Pablo Galindo 设计。 由 Pablo Gallindo 和 Christian Heimes 并包含来自 Gregory P. Smith"
+" [Google] 和 Mark Shannon 在 :gh:`96123` 中的贡献。）"
 
 #: ../../whatsnew/3.12.rst:383
 msgid ""
@@ -2998,54 +3023,59 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:1840
 msgid ":c:macro:`!PyUnicode_WCHAR_KIND`"
-msgstr ""
+msgstr ":c:macro:`!PyUnicode_WCHAR_KIND`"
 
 #: ../../whatsnew/3.12.rst:1841
 msgid ":c:func:`!PyUnicode_AS_UNICODE`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AS_UNICODE`"
 
 #: ../../whatsnew/3.12.rst:1842
 msgid ":c:func:`!PyUnicode_AsUnicode`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AsUnicode`"
 
 #: ../../whatsnew/3.12.rst:1843
 msgid ":c:func:`!PyUnicode_AsUnicodeAndSize`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AsUnicodeAndSize`"
 
 #: ../../whatsnew/3.12.rst:1844
 msgid ":c:func:`!PyUnicode_AS_DATA`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_AS_DATA`"
 
 #: ../../whatsnew/3.12.rst:1845
 msgid ":c:func:`!PyUnicode_FromUnicode`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_FromUnicode`"
 
 #: ../../whatsnew/3.12.rst:1846
 msgid ":c:func:`!PyUnicode_GET_SIZE`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_GET_SIZE`"
 
 #: ../../whatsnew/3.12.rst:1847
 msgid ":c:func:`!PyUnicode_GetSize`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_GetSize`"
 
 #: ../../whatsnew/3.12.rst:1848
 msgid ":c:func:`!PyUnicode_GET_DATA_SIZE`"
-msgstr ""
+msgstr ":c:func:`!PyUnicode_GET_DATA_SIZE`"
 
 #: ../../whatsnew/3.12.rst:1850
 msgid ""
 "Remove the ``PyUnicode_InternImmortal()`` function macro. (Contributed by "
 "Victor Stinner in :gh:`85858`.)"
 msgstr ""
+"移除了 ``PyUnicode_InternImmortal()`` 函数宏。 （由 Victor Stinner 在 :gh:`85858` "
+"中贡献。）.)"
 
 #: ../../whatsnew/3.12.rst:1853
 msgid ""
 "Remove ``Jython`` compatibility hacks from several stdlib modules and tests."
 " (Contributed by Nikita Sobolev in :gh:`99482`.)"
 msgstr ""
+"从多个标准库模块和测试中移除了 ``Jython`` 兼容性处理。 （由 Nikita Sobolev 在 :gh:`99482` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1856
 msgid ""
 "Remove ``_use_broken_old_ctypes_structure_semantics_`` flag from "
 ":mod:`ctypes` module. (Contributed by Nikita Sobolev in :gh:`99285`.)"
 msgstr ""
+"从 :mod:`ctypes` 模块移除了 ``_use_broken_old_ctypes_structure_semantics_`` 旗标。 （由"
+" Nikita Sobolev 在 :gh:`99285` 中贡献。）"

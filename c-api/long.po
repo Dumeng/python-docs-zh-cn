@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -426,11 +426,11 @@ msgstr ""
 msgid ""
 "If *op* is compact, as determined by :c:func:`PyUnstable_Long_IsCompact`, "
 "return its value."
-msgstr ""
+msgstr "如果 *op* 为紧凑形式，如 :c:func:`PyUnstable_Long_IsCompact` 所确定的，则返回它的值。"
 
 #: ../../c-api/long.rst:347
 msgid "Otherwise, the return value is undefined."
-msgstr ""
+msgstr "在其他情况下，返回值是未定义的。"
 
 #: ../../c-api/long.rst:8 ../../c-api/long.rst:8
 msgid "object"

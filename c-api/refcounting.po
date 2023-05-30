@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -30,7 +30,7 @@ msgstr "引用计数"
 msgid ""
 "The functions and macros in this section are used for managing reference "
 "counts of Python objects."
-msgstr ""
+msgstr "本节介绍的函数和宏被用于管理 Python 对象的引用计数。"
 
 #: ../../c-api/refcounting.rst:16
 msgid "Get the reference count of the Python object *o*."
@@ -194,7 +194,7 @@ msgstr "每当要减少在垃圾回收期间可能会被遍历的对象的引用
 msgid ""
 "The macro argument is now only evaluated once. If the argument has side "
 "effects, these are no longer duplicated."
-msgstr ""
+msgstr "该宏参数现在只会被求值一次。 如果该参数具有附带影响，它们将不会再被复制。"
 
 #: ../../c-api/refcounting.rst:139
 msgid ""
@@ -214,15 +214,15 @@ msgstr "增加对象 *o* 的引用计数。 :c:func:`Py_XDECREF` 的函数版本
 msgid ""
 "Macro safely decrementing the `dst` reference count and setting `dst` to "
 "`src`."
-msgstr ""
+msgstr "该宏将安全地递减 `dst` 引用计数并将 `dst` 设为 `src`。"
 
 #: ../../c-api/refcounting.rst:154
 msgid "As in case of :c:func:`Py_CLEAR`, \"the obvious\" code can be deadly::"
-msgstr ""
+msgstr "在 :c:func:`Py_CLEAR` 的情况中，这样“直观”的代码可能会是致命的::"
 
 #: ../../c-api/refcounting.rst:159
 msgid "The safe way is::"
-msgstr ""
+msgstr "安全的方式是这样::"
 
 #: ../../c-api/refcounting.rst:163
 msgid ""

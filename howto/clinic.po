@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -661,13 +661,15 @@ msgstr "注意，宏尾部带有一个逗号。所以若用宏替换已有的静
 #: ../../howto/clinic.rst:544
 msgid ""
 "Argument Clinic may generate new instances of ``_Py_ID``. For example::"
-msgstr ""
+msgstr "Argument Clinic 可能生成新的 ``_Py_ID`` 实例。 举例来说::"
 
 #: ../../howto/clinic.rst:548
 msgid ""
 "If it does, you'll have to run ``Tools/scripts/generate_global_objects.py`` "
 "to regenerate the list of precompiled identifiers at this point."
 msgstr ""
+"如果它确实这样做了，你必须运行 ``Tools/scripts/generate_global_objects.py`` "
+"来重新生成当前的预编译标识符列表。"
 
 #: ../../howto/clinic.rst:552
 msgid ""
@@ -1014,12 +1016,12 @@ msgstr "参数的注解值。目前尚不支持，因为 :pep:`8` 规定 Python 
 
 #: ../../howto/clinic.rst:779
 msgid "``unused``"
-msgstr ""
+msgstr "``unused``"
 
 #: ../../howto/clinic.rst:779
 msgid ""
 "Wrap the argument with :c:macro:`Py_UNUSED` in the impl function signature."
-msgstr ""
+msgstr "在 impl 函数签名中用 :c:macro:`Py_UNUSED` 来包装函数。"
 
 #: ../../howto/clinic.rst:781
 msgid ""
@@ -1375,7 +1377,7 @@ msgstr "``'u'``"
 
 #: ../../howto/clinic.rst:864
 msgid "``wchar_t``"
-msgstr ""
+msgstr "``wchar_t``"
 
 #: ../../howto/clinic.rst:865
 msgid "``'u#'``"
@@ -1383,7 +1385,7 @@ msgstr "``'u#'``"
 
 #: ../../howto/clinic.rst:865
 msgid "``wchar_t(zeroes=True)``"
-msgstr ""
+msgstr "``wchar_t(zeroes=True)``"
 
 #: ../../howto/clinic.rst:866
 msgid "``'w*'``"
@@ -1431,7 +1433,7 @@ msgstr "``'Z'``"
 
 #: ../../howto/clinic.rst:871
 msgid "``wchar_t(accept={str, NoneType})``"
-msgstr ""
+msgstr "``wchar_t(accept={str, NoneType})``"
 
 #: ../../howto/clinic.rst:872
 msgid "``'Z#'``"
@@ -1439,7 +1441,7 @@ msgstr "``'Z#'``"
 
 #: ../../howto/clinic.rst:872
 msgid "``wchar_t(accept={str, NoneType}, zeroes=True)``"
-msgstr ""
+msgstr "``wchar_t(accept={str, NoneType}, zeroes=True)``"
 
 #: ../../howto/clinic.rst:873
 msgid "``'z'``"

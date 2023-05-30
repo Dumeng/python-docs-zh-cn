@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1528,13 +1528,13 @@ msgstr ""
 
 #: ../../using/cmdline.rst:1059
 msgid "If set to ``0``, disable Linux ``perf`` profiler support."
-msgstr ""
+msgstr "如果设为 ``0``，则禁用 Linux ``perf`` 性能分析器支持。"
 
 #: ../../using/cmdline.rst:1061
 msgid ""
 "See also the :option:`-X perf <-X>` command-line option and "
 ":ref:`perf_profiling`."
-msgstr ""
+msgstr "另请参阅 :option:`-X perf <-X>` 命令行选项和 :ref:`perf_profiling`。"
 
 #: ../../using/cmdline.rst:1068
 msgid "Debug-mode variables"

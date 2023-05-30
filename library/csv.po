@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -242,7 +242,7 @@ msgstr "所有其他可选或关键字参数都传递给底层的 :class:`reader
 msgid ""
 "If the argument passed to *fieldnames* is an iterator, it will be coerced to"
 " a :class:`list`."
-msgstr ""
+msgstr "如果传给 *fieldnames* 的参数是一个迭代器，它将被强制转换为 :class:`list`。"
 
 #: ../../library/csv.rst:172
 msgid "Returned rows are now of type :class:`OrderedDict`."

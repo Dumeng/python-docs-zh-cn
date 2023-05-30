@@ -10,17 +10,17 @@
 # Alpha Du <alphanow@gmail.com>, 2021
 # WH-2099 <wh2099@outlook.com>, 2022
 # Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # 乐成 王, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 00:53+0000\n"
-"Last-Translator: 乐成 王, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -393,25 +393,29 @@ msgstr ""
 
 #: ../../howto/enum.rst:474
 msgid "Dataclass support"
-msgstr ""
+msgstr "数据类支持"
 
 #: ../../howto/enum.rst:476
 msgid ""
 "When inheriting from a :class:`~dataclasses.dataclass`, the "
 ":meth:`~Enum.__repr__` omits the inherited class' name.  For example::"
 msgstr ""
+"当从 :class:`~dataclasses.dataclass` 继承时，:meth:`~Enum.__repr__` 将忽略被继承类的名称。 "
+"例如::"
 
 #: ../../howto/enum.rst:492
 msgid ""
 "Use the :func:`!dataclass` argument ``repr=False`` to use the standard "
 ":func:`repr`."
-msgstr ""
+msgstr "使用 :func:`!dataclass` 参数 ``repr=False`` 来使用标准的 :func:`repr`。"
 
 #: ../../howto/enum.rst:495
 msgid ""
 "Only the dataclass fields are shown in the value area, not the dataclass' "
 "name."
 msgstr ""
+"只有数据类字段会被显示在值区域中，而不会显示数据类的名称。Only the dataclass fields are shown in the "
+"value area, not the dataclass' name."
 
 #: ../../howto/enum.rst:501
 msgid "Pickling"
@@ -815,6 +819,8 @@ msgid ""
 "A ``data type`` is a mixin that defines :meth:`__new__`, or a "
 ":class:`~dataclasses.dataclass`"
 msgstr ""
+"``data type`` 是定义了 :meth:`__new__` 的混入对象，或者是一个 "
+":class:`~dataclasses.dataclass`"
 
 #: ../../howto/enum.rst:876
 msgid ""

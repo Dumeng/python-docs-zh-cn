@@ -110,6 +110,8 @@ msgid ""
 "<types.ModuleType>` or a module name as a string. Defined as ``Union[str, "
 "ModuleType]``."
 msgstr ""
+"代表资源的锚点，可以是一个 :class:`模块对象 <types.ModuleType>` 或字符串形式的模块名称不。 定义为 "
+"``Union[str, ModuleType]``。"
 
 #: ../../library/importlib.resources.rst:61
 msgid ""

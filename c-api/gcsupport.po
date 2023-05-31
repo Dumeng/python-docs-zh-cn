@@ -137,6 +137,9 @@ msgid ""
 "The allocated memory is initialized to zeros, except for the :c:type:`Python"
 " object header <PyObject>`."
 msgstr ""
+"类似于 :c:func:`PyObject_GC_New` 但会在对象的末尾分配 *extra_size* 个字节 (偏移位置 "
+":c:member:`~PyTypeObject.tp_basicsize`)。 分配的内存将初始化为零，但 :c:type:`Python 对象标头 "
+"<PyObject>` 除外。"
 
 #: ../../c-api/gcsupport.rst:75
 msgid ""

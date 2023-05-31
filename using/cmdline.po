@@ -411,13 +411,13 @@ msgstr "基于时间戳的 ``.pyc`` 文件的语义不会受此选项影响。"
 msgid ""
 "Turn on parser debugging output (for expert only). See also the "
 ":envvar:`PYTHONDEBUG` environment variable."
-msgstr ""
+msgstr "启用解析器调试输出（仅供专家查看）。 另请参见 :envvar:`PYTHONDEBUG` 环境变量。"
 
 #: ../../using/cmdline.rst:277
 msgid ""
 "This option requires a :ref:`debug build of Python <debug-build>`, otherwise"
 " it's ignored."
-msgstr ""
+msgstr "此选项需要 :ref:`Python 的调试构建版 <debug-build>`，否则它将被忽略。"
 
 #: ../../using/cmdline.rst:283
 msgid ""

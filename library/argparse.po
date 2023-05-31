@@ -78,6 +78,8 @@ msgid ""
 "for argument specifications and has options that apply to the parser as "
 "whole::"
 msgstr ""
+":mod:`argparse` 模块对命令行接口的支持是围绕 :class:`argparse.ArgumentParser` 的实例建立的。 "
+"它是一个用于参数规格说明的容器并包含多个全面应用解析器的选项::"
 
 #: ../../library/argparse.rst:41
 msgid ""

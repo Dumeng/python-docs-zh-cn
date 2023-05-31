@@ -6,17 +6,17 @@
 # Translators:
 # Arisaka97 <solitaire2312@gmail.com>, 2021
 # sunsol s <sunsolzn@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # 乐成 王, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
-"Last-Translator: 乐成 王, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgid ""
 "The keyword arguments of the constructor can be used as a shortcut to set "
 "the attributes of the :class:`Repr` instance. Which means that the following"
 " initialization::"
-msgstr ""
+msgstr "该构造器的关键字参数可被用作设置 :class:`Repr` 实例属性的快捷方式。 这意味着以下的初始化::"
 
 #: ../../library/reprlib.rst:34
 msgid "Is equivalent to::"

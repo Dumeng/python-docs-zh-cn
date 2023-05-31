@@ -9,15 +9,16 @@
 # Josh Ouyang <me@joshoy.org>, 2021
 # jaystone776 <1732865113@qq.com>, 2021
 # Freesand Leo <yuqinju@163.com>, 2023
+# 安龙（asaka）, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: 安龙（asaka）, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -282,6 +283,8 @@ msgid ""
 "of error (e.g. no more watcher IDs available), return ``-1`` and set an "
 "exception."
 msgstr ""
+"在字典上注册 *callback* 来作为 watcher。返回值为非负数的整数 id，作为将来调用 :c:func:`PyDict_Watch` "
+"的时候使用。如果出现错误（比如没有足够的可用 watcher ID），返回 ``-1`` 并且设置异常。"
 
 #: ../../c-api/dict.rst:253
 msgid ""

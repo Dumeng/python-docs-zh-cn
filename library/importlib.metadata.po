@@ -6,17 +6,17 @@
 # Translators:
 # Alpha Du <alphanow@gmail.com>, 2021
 # Nyuan Zhang, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
 # Bryan不可思议, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
-"Last-Translator: Bryan不可思议, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: ../../library/importlib.metadata.rst:5
 msgid ":mod:`!importlib.metadata` -- Accessing package metadata"
-msgstr ""
+msgstr ":mod:`!importlib.metadata` -- 访问软件包元数据"
 
 #: ../../library/importlib.metadata.rst:11
 msgid "``importlib.metadata`` is no longer provisional."
@@ -49,6 +49,13 @@ msgid ""
 ":mod:`importlib.resources`, this package can eliminate the need to use the "
 "older and less efficient ``pkg_resources`` package."
 msgstr ""
+"``importlib.metadata`` 是一个提供对已安装的 `分发包 "
+"<https://packaging.python.org/en/latest/glossary/#term-Distribution-"
+"Package>`_ 的元数据的访问的库，如其入口点或其最高层级名称 (`导入包 "
+"<https://packaging.python.org/en/latest/glossary/#term-Import-Package>`_, "
+"模块等，如果存在的话）。 这个库部分构建于 Python 的导入系统之上，其目标是取代 ``pkg_resources`` 的中的 `entry "
+"point API`_ 和 `metadata API`_。 配合 :mod:`importlib.resources` "
+"，这个包可以消除使用较老旧且低效的 ``pkg_resources`` 包的必要性。"
 
 #: ../../library/importlib.metadata.rst:27
 msgid ""

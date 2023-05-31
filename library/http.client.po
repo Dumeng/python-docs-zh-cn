@@ -489,7 +489,7 @@ msgid ""
 "The *host* and *port* arguments specify the endpoint of the tunneled "
 "connection (i.e. the address included in the CONNECT request, *not* the "
 "address of the proxy server)."
-msgstr ""
+msgstr "*host* 和 *port* 参数指明隧道连接的端点（即 CONNECT 请求所包含的地址，而 *不是* 代理服务器的地址）。"
 
 #: ../../library/http.client.rst:369
 msgid ""

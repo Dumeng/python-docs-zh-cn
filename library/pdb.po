@@ -770,7 +770,7 @@ msgid ""
 "Execute the (one-line) *statement* in the context of the current stack "
 "frame. The exclamation point can be omitted unless the first word of the "
 "statement resembles a debugger command, e.g.:"
-msgstr ""
+msgstr "在当前栈帧的上下文中执行 (单行的) *statement*。 感叹号可以被省略，除非第一个语句的第一个单词与某个调试器命名重名，例如:"
 
 #: ../../library/pdb.rst:612
 msgid ""

@@ -290,6 +290,8 @@ msgid ""
 "UUID) and a name (which is a :class:`bytes` object or a string that will be "
 "encoded using UTF-8)."
 msgstr ""
+"根据命名空间标识符（一个 UUID）和名称（一个 :class:`bytes` 对象或将使用 UTF-8 进行编码的字符串）的 MD5 哈希值来生成一个"
+" UUID。"
 
 #: ../../library/uuid.rst:197
 msgid "Generate a random UUID."

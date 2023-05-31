@@ -373,6 +373,8 @@ msgid ""
 "temporary build directories, package caches, and other IO-intensive "
 "operations."
 msgstr ""
+"如果路径名 *path* 位于一个 Windows Dev 驱动器则返回 ``True``。 Dev Drive "
+"针对开发者场景进行了优化，并为读写文件提供更快的性能。 推荐用于源代码、临时构建目录、包缓存以及其他的 IO 密集型操作。"
 
 #: ../../library/os.path.rst:315
 msgid ""

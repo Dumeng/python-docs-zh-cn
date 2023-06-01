@@ -454,7 +454,7 @@ msgid ""
 " using an included copy of the libffi sources unless the build is configured"
 " ``--with-system-libffi``::"
 msgstr ""
-"作为 :mod:`ctypes` 模块下层的 :mod:`!_ctypes` C 扩展是使用包括了 libffi 源的副本构建的，附带构建时配置了 "
+"作为 :mod:`ctypes` 模块下层的 :mod:`!_ctypes` C 扩展是使用包括了 libffi 源的副本构建的，除非构建时配置了 "
 "``--with-system-libffi``::"
 
 #: ../../license.rst:852
@@ -488,6 +488,8 @@ msgid ""
 "built using an included copy of the libmpdec library unless the build is "
 "configured ``--with-system-libmpdec``::"
 msgstr ""
+"作为 :mod:`decimal` 模块下层的 :mod:`!_decimal` C 扩展是使用包括了 libmpdec "
+"库的副本构建的，除非构建时配置了 ``--with-system-libmpdec``::"
 
 #: ../../license.rst:957
 msgid "W3C C14N test suite"

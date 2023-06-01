@@ -68,6 +68,7 @@ msgid ""
 "strongly recommend using UPPER_CASE names for members, and will be using "
 "that style in our examples."
 msgstr ""
+"由于枚举被用来代表常量，并有助于避免混入类方法/属性和枚举名之间发生名称冲突，我们强烈建议用大写形式的名称表示成员，我们将在我们的示例中使用此风格。"
 
 #: ../../howto/enum.rst:44
 msgid ""
@@ -992,6 +993,8 @@ msgid ""
 "names and attributes/methods from mixed-in classes, upper-case names are "
 "strongly recommended."
 msgstr ""
+"枚举成员是其枚举类的实例，并且通常以 ``EnumClass.member`` 的形式来访问。 "
+"在特定场景下，如编写自定义枚举行为，可直接从一个成员访问另一个成员的能力是很有用的，并且是受支持的；但是，为了避免成员名与混入类属性/方法之间发生名称冲突，强烈建议使用大写形式的名称。"
 
 #: ../../howto/enum.rst:1009
 msgid "Creating members that are mixed with other data types"

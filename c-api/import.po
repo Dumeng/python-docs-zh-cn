@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -221,6 +221,8 @@ msgid ""
 "The setting of :attr:`__cached__` and :attr:`__loader__` is deprecated. See "
 ":class:`~importlib.machinery.ModuleSpec` for alternatives."
 msgstr ""
+":attr:`__cached__` 和 :attr:`__loader__` 的设置已被弃用。 替代设置参见 "
+":class:`~importlib.machinery.ModuleSpec`。"
 
 #: ../../c-api/import.rst:161
 msgid ""
@@ -248,6 +250,7 @@ msgid ""
 "Setting :attr:`__cached__` is deprecated. See "
 ":class:`~importlib.machinery.ModuleSpec` for alternatives."
 msgstr ""
+":attr:`__cached__` 的设置已被弃用。 替代设置参见 :class:`~importlib.machinery.ModuleSpec`。"
 
 #: ../../c-api/import.rst:182
 msgid ""
@@ -264,11 +267,11 @@ msgstr ""
 msgid ""
 "Uses :func:`!imp.source_from_cache()` in calculating the source path if only"
 " the bytecode path is provided."
-msgstr ""
+msgstr "如果只提供了字节码路径则会使用 :func:`!imp.source_from_cache()` 来计算源路径。"
 
 #: ../../c-api/import.rst:191
 msgid "No longer uses the removed :mod:`!imp` module."
-msgstr ""
+msgstr "不再使用已移除的 :mod:`!imp` 模块。"
 
 #: ../../c-api/import.rst:197
 msgid ""

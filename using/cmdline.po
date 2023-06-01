@@ -1524,7 +1524,7 @@ msgstr ""
 msgid ""
 "If this variable is set to a nonzero value, it enables support for the Linux"
 " ``perf`` profiler so Python calls can be detected by it."
-msgstr ""
+msgstr "如果此变量被设为非零值，它将启用对 Linux ``perf`` 分析器的支持以便 Python 调用能被它检测到。"
 
 #: ../../using/cmdline.rst:1059
 msgid "If set to ``0``, disable Linux ``perf`` profiler support."

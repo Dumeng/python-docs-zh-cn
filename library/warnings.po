@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:17+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -692,7 +692,7 @@ msgstr "加入  *source*  参数。"
 
 #: ../../library/warnings.rst:450
 msgid "Added *skip_file_prefixes*."
-msgstr ""
+msgstr "增加了 *skip_file_prefixes*。"
 
 #: ../../library/warnings.rst:456
 msgid ""

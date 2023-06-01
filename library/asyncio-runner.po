@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2022-11-05 19:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -101,7 +101,7 @@ msgstr "默认情况下 *debug* 为 ``None`` 即沿用全局调试模式设置�
 
 #: ../../library/asyncio-runner.rst:69
 msgid "Added *loop_factory* parameter."
-msgstr ""
+msgstr "增加了 *loop_factory* 形参。"
 
 #: ../../library/asyncio-runner.rst:73
 msgid "Runner context manager"

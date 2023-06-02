@@ -6,17 +6,17 @@
 # Translators:
 # ww song <sww4718168@gmail.com>, 2021
 # sgqy <sgqyzh@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-05-29 16:50+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: ppcfish <ppcfish@gmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -213,7 +213,7 @@ msgstr ":func:`goto` | :func:`setpos` | :func:`setposition` 前往/定位"
 
 #: ../../library/turtle.rst:0
 msgid ":func:`teleport`"
-msgstr ""
+msgstr ":func:`teleport`"
 
 #: ../../library/turtle.rst:0
 msgid ":func:`setx`"
@@ -749,6 +749,9 @@ msgid ""
 "which makes the imaginary line traveled during teleporting act as a fill "
 "barrier like in goto(x, y)."
 msgstr ""
+"将海龟移到某个绝对位置。 不同于 goto(x, y)，这将不会画一条线段。 海龟的方向不变。 "
+"如果当前正在填充，离开后原位置上的多边形将被填充，在移位后将再次开始填充。 这可以通过 fill_gap=True "
+"来禁用，此设置将使在移位期间海龟的移动轨迹线像在 goto(x, y) 中一样被当作填充边缘。"
 
 #: ../../library/turtle.rst:418
 msgid ""

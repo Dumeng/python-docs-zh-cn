@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-02 19:38+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -843,6 +843,9 @@ msgid ""
 "if is not supported on the current system. The default value is \"off\". See"
 " also :envvar:`PYTHONPERFSUPPORT` and :ref:`perf_profiling`."
 msgstr ""
+"``-X perf`` 会启用对 Linux ``perf`` 性能分析器的支持。 当提供了此选项时，``perf`` 性能分析器将能够报告 "
+"Python 调用。 此选项仅在某些平台上可用而在当前系统不支持的情况下将不做任何事。 默认值为 \"off\"。 另请参阅 "
+":envvar:`PYTHONPERFSUPPORT` 和 :ref:`perf_profiling`。"
 
 #: ../../using/cmdline.rst:550
 msgid ""
@@ -910,7 +913,7 @@ msgstr "``-X int_max_str_digits`` 选项。"
 
 #: ../../using/cmdline.rst:593
 msgid "The ``-X perf`` option."
-msgstr ""
+msgstr "``-X perf`` 选项。option."
 
 #: ../../using/cmdline.rst:598
 msgid "Options you shouldn't use"
@@ -1069,7 +1072,7 @@ msgstr ""
 msgid ""
 "This environment variable requires a :ref:`debug build of Python <debug-"
 "build>`, otherwise it's ignored."
-msgstr ""
+msgstr "此环境变量需要 :ref:`Python 的调试构建版 <debug-build>`，否则它将被忽略。"
 
 #: ../../using/cmdline.rst:713
 msgid ""

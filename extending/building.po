@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Harry Liu. <harry.python@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-02 19:38+0000\n"
 "PO-Revision-Date: 2021-06-28 00:51+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,6 +41,8 @@ msgid ""
 "appropriate extension. When using setuptools, the correct filename is "
 "generated automatically."
 msgstr ""
+"为了可导入，共享库必须在 :envvar:`PYTHONPATH` 中列出，且必须按照模块名称命名，并带有正确的扩展名。 当使用 setuptools "
+"时，会自动生成正确的文件名。"
 
 #: ../../extending/building.rst:16
 msgid "The initialization function has the signature:"
@@ -81,7 +83,7 @@ msgstr ""
 
 #: ../../extending/building.rst:51
 msgid "Building C and C++ Extensions with setuptools"
-msgstr ""
+msgstr "使用 setuptools 构建 C 和 C++ 扩展"
 
 #: ../../extending/building.rst:53
 msgid ""

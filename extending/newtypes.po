@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-04 12:28+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -650,7 +650,7 @@ msgstr ""
 #: ../../extending/newtypes.rst:553
 msgid ""
 "Concretely, here is how the statically declared type object would look::"
-msgstr ""
+msgstr "具体地说，以下就是静态声明的类型对象的样子::"
 
 #: ../../extending/newtypes.rst:562
 msgid ""

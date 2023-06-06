@@ -230,12 +230,14 @@ msgid ""
 " *dst* old value, so that any code triggered as a side-effect of `dst` "
 "getting torn down no longer believes `dst` points to a valid object."
 msgstr ""
+"这将安排在减少 *dst* 旧值的引用计数 _之前_ 将 `dst` 设为 `src`，以使得任何作为去除 `dst` 的附带影响被触发的代码不再相信 "
+"`dst` 指向有效的对象。"
 
 #: ../../c-api/refcounting.rst:169 ../../c-api/refcounting.rst:181
 msgid ""
 "The macro arguments are now only evaluated once. If an argument has side "
 "effects, these are no longer duplicated."
-msgstr ""
+msgstr "该宏参数现在只会被求值一次。 如果某个参数具有附带影响，它们将不会再被复制。"
 
 #: ../../c-api/refcounting.rst:176
 msgid ""

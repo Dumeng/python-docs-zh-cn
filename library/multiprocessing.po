@@ -6,15 +6,16 @@
 # Translators:
 # Rafael Fontenelle <rffontenelle@gmail.com>, 2022
 # Nyuan Zhang, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-07 14:20+0000\n"
+"POT-Creation-Date: 2023-06-04 11:19+0000\n"
 "PO-Revision-Date: 2022-11-05 17:22+0000\n"
-"Last-Translator: Nyuan Zhang, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3671,7 +3672,7 @@ msgstr ""
 msgid ""
 "However, global variables which are just module level constants cause no "
 "problems."
-msgstr "当全局变量知识模块级别的常量时，是不会有问题的。"
+msgstr "当全局变量只是模块级别的常量时，是不会有问题的。"
 
 #: ../../library/multiprocessing.rst:2925
 msgid "Safe importing of main module"

@@ -151,6 +151,8 @@ msgid ""
 "(following the mechanisms laid out in :pep:`560`). This is useful for "
 "introspecting :ref:`Generics <user-defined-generics>`."
 msgstr ""
+"在 :meth:`~object.__mro_entries__` 方法在任何基类上被调用之前返回最初是作为 *cls* 的基类给出的对象元组（根据 "
+":pep:`560` 所描述的机制）。 这在对 :ref:`泛型 <user-defined-generics>` 进行内省时很有用处。"
 
 #: ../../library/types.rst:92
 msgid ""
@@ -158,6 +160,8 @@ msgid ""
 " the value of ``cls.__orig_bases__``. For classes without the "
 "``__orig_bases__`` attribute, ``cls.__bases__`` is returned."
 msgstr ""
+"对于具有 ``__orig_bases__`` 属性的类，此函数将返回 ``cls.__orig_bases__`` 的值。 对于没有 "
+"``__orig_bases__`` 属性的类，则将返回 ``cls.__bases__``。"
 
 #: ../../library/types.rst:97
 msgid "Examples::"

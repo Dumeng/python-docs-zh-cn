@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2001-2022, Python Software Foundation
+# Copyright (C) 2001-2023, Python Software Foundation
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -8,17 +8,17 @@
 # walkinrain <walkinrain2008@outlook.com>, 2019
 # MuSheng Chen <sheng.2179@gmail.com>, 2019
 # techmoe <i+transifex@lolicookie.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2022
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.9\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-04 14:34+0000\n"
+"POT-Creation-Date: 2023-06-04 11:45+0000\n"
 "PO-Revision-Date: 2017-02-16 17:49+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2022\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/python-doc/teams/5390/zh_CN/)\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -697,7 +697,7 @@ msgstr "查看 :ref:`并发和多线程<asyncio-multithreading>` 章节的文档
 msgid ""
 "Unlike other asyncio functions this function requires the *loop* argument to"
 " be passed explicitly."
-msgstr "不同与其他 asyncio 函数，此函数要求显式地传入 *loop* 参数。"
+msgstr "不同于其他 asyncio 函数，此函数要求显式地传入 *loop* 参数。"
 
 #: ../../library/asyncio-task.rst:715
 msgid "Introspection"

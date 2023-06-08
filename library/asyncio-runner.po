@@ -89,7 +89,7 @@ msgid ""
 "The executor is given a timeout duration of 5 minutes to shutdown. If the "
 "executor hasn't finished within that duration, a warning is emitted and the "
 "executor is closed."
-msgstr ""
+msgstr "执行器的关闭有 5 分钟的超时限制。 如果执行器未在时限之内结束，将发出警告消息并关闭执行器。"
 
 #: ../../library/asyncio-runner.rst:50
 msgid "Example::"

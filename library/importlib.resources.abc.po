@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-04 12:28+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -87,7 +87,7 @@ msgstr ""
 #: ../../library/importlib.resources.abc.rst:50
 #: ../../library/importlib.resources.abc.rst:160
 msgid "Use :class:`importlib.resources.abc.TraversableResources` instead."
-msgstr ""
+msgstr "使用 :class:`importlib.resources.abc.TraversableResources` 代替。"
 
 #: ../../library/importlib.resources.abc.rst:53
 msgid ""
@@ -155,7 +155,7 @@ msgstr "对于该对象在文件系统中的表示形式，请使用 :meth:`impo
 
 #: ../../library/importlib.resources.abc.rst:102
 msgid "Use :class:`importlib.resources.abc.Traversable` instead."
-msgstr ""
+msgstr "使用 :class:`importlib.resources.abc.Traversable` 代替。"
 
 #: ../../library/importlib.resources.abc.rst:105
 msgid "Abstract. The base name of this object without any parent references."

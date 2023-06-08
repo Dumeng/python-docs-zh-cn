@@ -348,6 +348,10 @@ msgid ""
 "can be accessed: you can set it to :c:macro:`Py_READONLY` to prevent Python "
 "code from setting it."
 msgstr ""
+"对于表中的每个条目，将构建一个 :term:`descriptor` 并添加到类型中使其能够从实例结构体中提取值。 :attr:`type` "
+"字段应当包含类型代码如 :c:macro:`Py_T_INT` 或 :c:macro:`Py_T_DOUBLE`；该值将被用来确定如何将 Python "
+"值转换为 C 值或者反之。 :attr:`flags` 字段将被用来保存控制属性可以如何被访问的旗标：你可以将其设为 "
+":c:macro:`Py_READONLY` 以防止 Python 代码设置它。"
 
 #: ../../extending/newtypes.rst:295
 msgid ""
@@ -646,6 +650,9 @@ msgid ""
 " field. The legacy :c:member:`~PyTypeObject.tp_weaklistoffset` field should "
 "be left as zero."
 msgstr ""
+"对于可以被弱引用的对象，扩展类型必须设置 :c:member:`~PyTypeObject.tp_flags` 字段的 "
+"``Py_TPFLAGS_MANAGED_WEAKREF`` 位。 旧式的 "
+":c:member:`~PyTypeObject.tp_weaklistoffset` 字段应当保持为零。"
 
 #: ../../extending/newtypes.rst:553
 msgid ""

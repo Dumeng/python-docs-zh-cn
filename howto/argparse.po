@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 19:38+0000\n"
+"POT-Creation-Date: 2023-06-04 12:28+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -484,7 +484,7 @@ msgstr "请注意到目前为止我们一直在使用详细级别来 *更改* �
 
 #: ../../howto/argparse.rst:672
 msgid "Specifying ambiguous arguments"
-msgstr ""
+msgstr "指定有歧义的参数"
 
 #: ../../howto/argparse.rst:674
 msgid ""
@@ -492,6 +492,8 @@ msgid ""
 " an argument, ``--`` can be used to tell :meth:`~ArgumentParser.parse_args` "
 "that everything after that is a positional argument::"
 msgstr ""
+"当在确定一个参数是位置参数还是从属于另一个参数存在歧义时，可以使用 ``--`` 来告诉 "
+":meth:`~ArgumentParser.parse_args` 在它之后的参数是位置参数::"
 
 #: ../../howto/argparse.rst:699
 msgid "Conflicting options"

@@ -284,6 +284,10 @@ msgid ""
 "client can potentially be connected for a long time (if threads or "
 "subprocesses cannot be used)."
 msgstr ""
+"另一种可以在既不支持线程也不支持 :func:`~os.fork` "
+"的环境（或者对于本服务来说这两者开销过大或不适用）中处理多个同时请求的方式是维护一个显式的部分完成的请求表并使用 :mod:`selectors` "
+"来决定接下来要处理哪个请求（或者是否要处理一个新传入的请求）。 "
+"这对于流式服务来说特别重要，因为每个客户端可能会连接很长的时间（如果不能使用线程或子进程）。"
 
 #: ../../library/socketserver.rst:193
 msgid "Server Objects"

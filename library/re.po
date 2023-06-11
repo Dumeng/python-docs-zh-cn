@@ -2267,7 +2267,7 @@ msgstr ". (点号)"
 #: ../../library/re.rst:616 ../../library/re.rst:621 ../../library/re.rst:785
 #: ../../library/re.rst:992
 msgid "in regular expressions"
-msgstr ""
+msgstr "在正则表达式中"
 
 #: ../../library/re.rst:106 ../../library/re.rst:263
 msgid "^ (caret)"
@@ -2291,27 +2291,27 @@ msgstr "? (问号)"
 
 #: ../../library/re.rst:143
 msgid "*?"
-msgstr ""
+msgstr "*?"
 
 #: ../../library/re.rst:143
 msgid "+?"
-msgstr ""
+msgstr "+?"
 
 #: ../../library/re.rst:143
 msgid "??"
-msgstr ""
+msgstr "??"
 
 #: ../../library/re.rst:157
 msgid "*+"
-msgstr ""
+msgstr "*+"
 
 #: ../../library/re.rst:157
 msgid "++"
-msgstr ""
+msgstr "++"
 
 #: ../../library/re.rst:157
 msgid "?+"
-msgstr ""
+msgstr "?+"
 
 #: ../../library/re.rst:181
 msgid "{} (curly brackets)"
@@ -2339,103 +2339,103 @@ msgstr "() (圆括号)"
 
 #: ../../library/re.rst:319
 msgid "(?"
-msgstr ""
+msgstr "(?"
 
 #: ../../library/re.rst:345
 msgid "(?:"
-msgstr ""
+msgstr "(?:"
 
 #: ../../library/re.rst:394
 msgid "(?P<"
-msgstr ""
+msgstr "(?P<"
 
 #: ../../library/re.rst:426
 msgid "(?P="
-msgstr ""
+msgstr "(?P="
 
 #: ../../library/re.rst:432
 msgid "(?#"
-msgstr ""
+msgstr "(?#"
 
 #: ../../library/re.rst:437
 msgid "(?="
-msgstr ""
+msgstr "(?="
 
 #: ../../library/re.rst:444
 msgid "(?!"
-msgstr ""
+msgstr "(?!"
 
 #: ../../library/re.rst:451
 msgid "(?<="
-msgstr ""
+msgstr "(?<="
 
 #: ../../library/re.rst:478
 msgid "(?<!"
-msgstr ""
+msgstr "(?<!"
 
 #: ../../library/re.rst:488
 msgid "(?("
-msgstr ""
+msgstr "(?("
 
 #: ../../library/re.rst:521
 msgid "\\A"
-msgstr ""
+msgstr "\\A"
 
 #: ../../library/re.rst:526 ../../library/re.rst:621
 msgid "\\b"
-msgstr ""
+msgstr "\\b"
 
 #: ../../library/re.rst:542
 msgid "\\B"
-msgstr ""
+msgstr "\\B"
 
 #: ../../library/re.rst:553
 msgid "\\d"
-msgstr ""
+msgstr "\\d"
 
 #: ../../library/re.rst:565
 msgid "\\D"
-msgstr ""
+msgstr "\\D"
 
 #: ../../library/re.rst:572
 msgid "\\s"
-msgstr ""
+msgstr "\\s"
 
 #: ../../library/re.rst:586
 msgid "\\S"
-msgstr ""
+msgstr "\\S"
 
 #: ../../library/re.rst:593
 msgid "\\w"
-msgstr ""
+msgstr "\\w"
 
 #: ../../library/re.rst:607
 msgid "\\W"
-msgstr ""
+msgstr "\\W"
 
 #: ../../library/re.rst:616
 msgid "\\Z"
-msgstr ""
+msgstr "\\Z"
 
 #: ../../library/re.rst:621
 msgid "\\a"
-msgstr ""
+msgstr "\\a"
 
 #: ../../library/re.rst:621
 msgid "\\f"
-msgstr ""
+msgstr "\\f"
 
 #: ../../library/re.rst:621
 msgid "\\n"
-msgstr ""
+msgstr "\\n"
 
 #: ../../library/re.rst:621
 msgid "\\r"
-msgstr ""
+msgstr "\\r"
 
 #: ../../library/re.rst:621
 msgid "\\t"
-msgstr ""
+msgstr "\\t"
 
 #: ../../library/re.rst:621
 msgid "\\u"
@@ -2447,7 +2447,7 @@ msgstr "\\U"
 
 #: ../../library/re.rst:621
 msgid "\\v"
-msgstr ""
+msgstr "\\v"
 
 #: ../../library/re.rst:621
 msgid "\\x"
@@ -2455,7 +2455,7 @@ msgstr "\\x"
 
 #: ../../library/re.rst:621
 msgid "\\\\"
-msgstr ""
+msgstr "\\\\"
 
 #: ../../library/re.rst:785
 msgid "# (hash)"
@@ -2463,8 +2463,8 @@ msgstr "# (hash)"
 
 #: ../../library/re.rst:992
 msgid "\\g"
-msgstr ""
+msgstr "\\g"
 
 #: ../../library/re.rst:1521
 msgid "scanf()"
-msgstr ""
+msgstr "scanf()"

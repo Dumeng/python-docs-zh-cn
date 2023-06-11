@@ -282,13 +282,13 @@ msgstr ""
 
 #: ../../library/typing.rst:115
 msgid ":pep:`695`: Type Parameter Syntax"
-msgstr ""
+msgstr ":pep:`695`: 类型形参语法"
 
 #: ../../library/typing.rst:116
 msgid ""
 "*Introducing* builtin syntax for creating generic functions, classes, and "
 "type aliases."
-msgstr ""
+msgstr "*引入* 创建泛型函数、类和类型别名的语法。"
 
 #: ../../library/typing.rst:118
 msgid ":pep:`698`: Adding an override decorator to typing"

@@ -2556,6 +2556,13 @@ msgid ""
 " in previous versions of Python). (Contributed by Brett Cannon in "
 ":issue:`43720`.)"
 msgstr ""
+":mod:`!imp`, :func:`!importlib.find_loader`, "
+":func:`!importlib.util.set_package_wrapper`, "
+":func:`!importlib.util.set_loader_wrapper`, "
+":func:`!importlib.util.module_for_loader`, :class:`!pkgutil.ImpImporter` 和 "
+":class:`!pkgutil.ImpLoader` 的弃用状态已被更新以将 Python 3.12 列为预定要移除它们的版本 (它们在之前的 "
+"Python 版本中已开始引发 :exc:`DeprecationWarning`)。 （由 Brett Cannon 在 :issue:`43720`"
+" 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1695
 msgid ""

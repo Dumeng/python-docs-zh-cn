@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:11+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -368,22 +368,25 @@ msgid ""
 "program resumes execution so it's less likely to interfere with your program"
 " compared to using normal variables like ``foo = 1``."
 msgstr ""
+"要设置临时全局变量，请使用 *快捷变量*。 *快捷变量* 是名称以 ``$`` 打头的变量。 例如，``$foo = 1`` 将设置一个全局变量 "
+"``$foo`` 供你在调试器会话中使用。 *快捷变量* 会在程序恢复执行时被清空因此它不大可能像使用普通变量如 ``foo = 1`` "
+"那样影响到你的程序。"
 
 #: ../../library/pdb.rst:273
 msgid "There are three preset *convenience variables*:"
-msgstr ""
+msgstr "存在三个预设的 *快捷变量*:"
 
 #: ../../library/pdb.rst:275
 msgid "``$_frame``: the current frame you are debugging"
-msgstr ""
+msgstr "``$_frame``: 你正在调试的当前帧"
 
 #: ../../library/pdb.rst:276
 msgid "``$_retval``: the return value if the frame is returning"
-msgstr ""
+msgstr "``$_retval``: 当帧返回时的返回值"
 
 #: ../../library/pdb.rst:277
 msgid "``$_exception``: the exception if the frame is raising an exception"
-msgstr ""
+msgstr "``$_exception``: 当帧引发异常时的异常值"
 
 #: ../../library/pdb.rst:285
 msgid ""

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:10+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -384,6 +384,8 @@ msgid ""
 "<https://learn.microsoft.com/windows/dev-drive/>`_ for information on "
 "enabling and creating Dev Drives."
 msgstr ""
+"对于无效的路径可能引发错误，例如，没有可识别的驱动器的路径，但在不支持 Dev 驱动器的平台上将返回 ``False``。 请参阅 `Windows "
+"文档 <https://learn.microsoft.com/windows/dev-drive/>`_ 了解有关启用并创建 Dev 驱动器的信息。"
 
 #: ../../library/os.path.rst:320
 msgid ":ref:`Availability <availability>`: Windows."
@@ -586,7 +588,7 @@ msgstr "如果路径 path 包含盘符，则 drive 将包含冒号之前的所�
 msgid ""
 "If the path contains a UNC path, drive will contain the host name and "
 "share::"
-msgstr ""
+msgstr "如果路径包含 UNC 路径，则 drive 将包含主机名和 share::"
 
 #: ../../library/os.path.rst:511
 msgid ""
@@ -596,6 +598,9 @@ msgid ""
 " may be the empty string. In all cases, ``drive + root + tail`` will be the "
 "same as *path*."
 msgstr ""
+"将路径名 *path* 拆分为一个 3 元组 ``(drive, root, tail)`` 其中 *drive* 是设置名或挂载点，*root* "
+"是表示 drive 之后的分隔符的字符串，而 *tail* 则为 root 之后的所有内容。 这此条目均可以为空字符串。 在所有情况下，``drive "
+"+ root + tail`` 都与 *path* 相同。"
 
 #: ../../library/os.path.rst:517
 msgid ""
@@ -606,6 +611,10 @@ msgid ""
 "<https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_.)"
 " For example::"
 msgstr ""
+"在 POSIX 系统上，*drive* 将总是为空。 *root* 可能为空（如果 *path* 是相对路径）、单个正斜杠（如果 *path* "
+"是绝对路径）、或两个正斜杠（由基于 `IEEE Std 1003.1-2017; 4.13 Pathname Resolution "
+"<https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html#tag_04_13>`_"
+" 的具体实现来定义。） 例如::"
 
 #: ../../library/os.path.rst:530
 msgid ""
@@ -613,6 +622,8 @@ msgid ""
 "device name. The *root* may be empty, a forward slash, or a backward slash. "
 "For example::"
 msgstr ""
+"在 Windows 上，*drive* 可能为空、以字母表示的驱动器名称、UNC share 或是设备名称。 *root* "
+"可能为空、单个正斜杠，或单个反斜杠。 例如::"
 
 #: ../../library/os.path.rst:544
 msgid ""

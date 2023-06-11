@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -827,6 +827,9 @@ msgid ""
 "inputs. Pearson's correlation coefficient *r* takes values between -1 and "
 "+1. It measures the strength and direction of a linear relationship."
 msgstr ""
+"返回两个输入的 `皮尔逊相关系数 "
+"<https://en.wikipedia.org/wiki/Pearson_correlation_coefficient>`_。 皮尔逊相关系数 "
+"*r* 的取值在 -1 到 +1 之间。 它衡量线性相关的强度和方向。"
 
 #: ../../library/statistics.rst:659
 msgid ""
@@ -836,13 +839,16 @@ msgid ""
 "equal values receive the same rank.  The resulting coefficient measures the "
 "strength of a monotonic relationship."
 msgstr ""
+"如果 *method* 为 \"ranked\"，则计算两个输入的 `斯皮尔曼等级相关系数 "
+"<https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient>`_。"
+" 数据将被替换为等级。 同级的值将被平均因此相同的值将得到相同的等级。 结果系数衡量的是单调关系的强度。"
 
 #: ../../library/statistics.rst:665
 msgid ""
 "Spearman's correlation coefficient is appropriate for ordinal data or for "
 "continuous data that doesn't meet the linear proportion requirement for "
 "Pearson's correlation coefficient."
-msgstr ""
+msgstr "斯皮尔曼相关系数适用于有序数据或不满足皮尔逊相关系数的线性比例要求的连续数据。"
 
 #: ../../library/statistics.rst:669
 msgid ""
@@ -855,10 +861,12 @@ msgid ""
 "Example with `Kepler's laws of planetary motion "
 "<https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion>`_:"
 msgstr ""
+"使用 `开普勒行星运动定律 "
+"<https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion>`_ 的示例:"
 
 #: ../../library/statistics.rst:699
 msgid "Added support for Spearman's rank correlation coefficient."
-msgstr ""
+msgstr "增加了对斯皮尔曼等级相关系数的支持。"
 
 #: ../../library/statistics.rst:704
 msgid ""

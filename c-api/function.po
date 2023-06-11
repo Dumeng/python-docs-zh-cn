@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -125,13 +125,13 @@ msgstr "失败时引发 :exc:`SystemError` 异常并返回 ``-1`` 。"
 
 #: ../../c-api/function.rst:88
 msgid "Set the vectorcall field of a given function object *func*."
-msgstr ""
+msgstr "设置给定函数对象 *func* 的 vectorcall 字段。"
 
 #: ../../c-api/function.rst:90
 msgid ""
 "Warning: extensions using this API must preserve the behavior of the "
 "unaltered (default) vectorcall function!"
-msgstr ""
+msgstr "警告：使用此 API 的扩展必须保留未修改的（默认） vectorcall 函数的行为！"
 
 #: ../../c-api/function.rst:97
 msgid ""

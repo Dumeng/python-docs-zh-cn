@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-04 10:28+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2949,36 +2949,36 @@ msgstr "decode"
 
 #: ../../library/codecs.rst:13
 msgid "streams"
-msgstr ""
+msgstr "streams"
 
 #: ../../library/codecs.rst:13
 msgid "stackable"
-msgstr ""
+msgstr "stackable"
 
 #: ../../library/codecs.rst:312
 msgid "strict"
-msgstr ""
+msgstr "strict"
 
 #: ../../library/codecs.rst:312 ../../library/codecs.rst:363
 #: ../../library/codecs.rst:385
 msgid "error handler's name"
-msgstr ""
+msgstr "错误处理句柄名称"
 
 #: ../../library/codecs.rst:312
 msgid "ignore"
-msgstr ""
+msgstr "ignore"
 
 #: ../../library/codecs.rst:312
 msgid "replace"
-msgstr ""
+msgstr "replace"
 
 #: ../../library/codecs.rst:312
 msgid "backslashreplace"
-msgstr ""
+msgstr "backslashreplace"
 
 #: ../../library/codecs.rst:312
 msgid "surrogateescape"
-msgstr ""
+msgstr "surrogateescape"
 
 #: ../../library/codecs.rst:312
 msgid "? (question mark)"
@@ -2986,7 +2986,7 @@ msgstr "? (问号)"
 
 #: ../../library/codecs.rst:312
 msgid "replacement character"
-msgstr ""
+msgstr "替代字符"
 
 #: ../../library/codecs.rst:312
 msgid "\\ (backslash)"
@@ -2994,27 +2994,27 @@ msgstr "\\ (反斜杠)"
 
 #: ../../library/codecs.rst:312 ../../library/codecs.rst:363
 msgid "escape sequence"
-msgstr ""
+msgstr "转义序列"
 
 #: ../../library/codecs.rst:312
 msgid "\\x"
-msgstr ""
+msgstr "\\x"
 
 #: ../../library/codecs.rst:312
 msgid "\\u"
-msgstr ""
+msgstr "\\u"
 
 #: ../../library/codecs.rst:312
 msgid "\\U"
-msgstr ""
+msgstr "\\U"
 
 #: ../../library/codecs.rst:363
 msgid "xmlcharrefreplace"
-msgstr ""
+msgstr "xmlcharrefreplace"
 
 #: ../../library/codecs.rst:363
 msgid "namereplace"
-msgstr ""
+msgstr "namereplace"
 
 #: ../../library/codecs.rst:385
 msgid "surrogatepass"

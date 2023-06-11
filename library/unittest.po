@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -391,7 +391,7 @@ msgstr "在回溯中显示局部变量。"
 
 #: ../../library/unittest.rst:249
 msgid "Show the N slowest test cases (N=0 for all)."
-msgstr ""
+msgstr "显示 N 个最慢的测试用例 (N=0 表示全部)。"
 
 #: ../../library/unittest.rst:251
 msgid "The command-line options ``-b``, ``-c`` and ``-f`` were added."
@@ -407,7 +407,7 @@ msgstr "命令行选项 ``-k`` 。"
 
 #: ../../library/unittest.rst:260
 msgid "The command-line option ``--durations``."
-msgstr ""
+msgstr "命令行选项 ``--durations``。"
 
 #: ../../library/unittest.rst:263
 msgid ""
@@ -2354,7 +2354,7 @@ msgstr "添加了对 ``load_tests`` 的支持。"
 
 #: ../../library/unittest.rst:1814
 msgid "Support for a keyword-only argument *pattern* has been added."
-msgstr ""
+msgstr "增加了对仅限关键字参数 *pattern* 的支持。"
 
 #: ../../library/unittest.rst:1817
 msgid ""

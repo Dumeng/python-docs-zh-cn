@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -350,7 +350,7 @@ msgstr "引发一个 :ref:`审计事件 <auditing>` ``sys._current_exceptions``�
 msgid ""
 "Each value in the dictionary is now a single exception instance, rather than"
 " a 3-tuple as returned from ``sys.exc_info()``."
-msgstr ""
+msgstr "现在字典中的每个值都是单独的异常实例，而不是如 ``sys.exc_info()`` 所返回的 3 元组。"
 
 #: ../../library/sys.rst:229
 msgid ""
@@ -2611,11 +2611,11 @@ msgstr ":ref:`可用性 <availability>`: Linux。"
 
 #: ../../library/sys.rst:1610
 msgid ":ref:`perf_profiling`"
-msgstr ""
+msgstr ":ref:`perf_profiling`"
 
 #: ../../library/sys.rst:1611
 msgid "https://perf.wiki.kernel.org"
-msgstr ""
+msgstr "https://perf.wiki.kernel.org"
 
 #: ../../library/sys.rst:1615
 msgid "Deactivate the current stack profiler trampoline backend."

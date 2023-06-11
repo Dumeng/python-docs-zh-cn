@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:04+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1275,7 +1275,7 @@ msgstr ""
 
 #: ../../library/datetime.rst:901
 msgid "Use :meth:`datetime.now` with :attr:`UTC` instead."
-msgstr ""
+msgstr "请用带 :attr:`UTC` 的 :meth:`datetime.now` 代替。"
 
 #: ../../library/datetime.rst:906
 msgid ""

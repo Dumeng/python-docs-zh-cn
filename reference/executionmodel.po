@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -124,11 +124,11 @@ msgstr ":keyword:`import` 语句。"
 
 #: ../../reference/executionmodel.rst:74
 msgid ":keyword:`type` statements."
-msgstr ""
+msgstr ":keyword:`type` 语句。"
 
 #: ../../reference/executionmodel.rst:75
 msgid ":ref:`type parameter lists <type-params>`."
-msgstr ""
+msgstr ":ref:`类型形参列表 <type-params>`。"
 
 #: ../../reference/executionmodel.rst:77
 msgid ""
@@ -278,11 +278,11 @@ msgstr ""
 
 #: ../../reference/executionmodel.rst:179
 msgid "However, the following will succeed::"
-msgstr ""
+msgstr "但是，下面的代码将会成功::"
 
 #: ../../reference/executionmodel.rst:190
 msgid "Annotation scopes"
-msgstr ""
+msgstr "标注作用域"
 
 #: ../../reference/executionmodel.rst:192
 msgid ""

@@ -3018,4 +3018,4 @@ msgstr "namereplace"
 
 #: ../../library/codecs.rst:385
 msgid "surrogatepass"
-msgstr ""
+msgstr "surrogatepass"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -168,6 +168,7 @@ msgid ""
 "It will raise :exc:`FileNotFoundError` if the file doesn't exist and "
 ":exc:`RuntimeError` if the file is invalid or empty."
 msgstr ""
+"如果文件不存在将引发 :exc:`FileNotFoundError` 而如果文件无效或为空则将引发 :exc:`RuntimeError`。"
 
 #: ../../library/logging.config.rst:0
 msgid "Parameters"
@@ -240,7 +241,7 @@ msgstr "增加了 *encoding* 形参。"
 msgid ""
 "An exception will be thrown if the provided file doesn't exist or is invalid"
 " or empty."
-msgstr ""
+msgstr "如果所提供的文件不存在或无效或为空则将抛出一个异常。"
 
 #: ../../library/logging.config.rst:139
 msgid ""
@@ -438,7 +439,7 @@ msgstr "``validate`` (从版本 >=3.8 起)"
 
 #: ../../library/logging.config.rst:264
 msgid "``defaults`` (since version >=3.12)"
-msgstr ""
+msgstr "``defaults`` (版本 >=3.12)"
 
 #: ../../library/logging.config.rst:266
 msgid ""
@@ -1008,7 +1009,7 @@ msgstr "如果你是在一个配置器的 *实例* 上设置导入可调用对�
 
 #: ../../library/logging.config.rst:728
 msgid "Configuring QueueHandler and QueueListener"
-msgstr ""
+msgstr "配置 QueueHandler 和 QueueListener"
 
 #: ../../library/logging.config.rst:730
 msgid ""

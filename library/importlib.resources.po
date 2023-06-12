@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 19:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -49,10 +49,13 @@ msgid ""
 "primarily those non-Python artifacts exposed specifically by the package "
 "author."
 msgstr ""
+"“资源”是指 Python 中与模块或包相关联的文件类资源。 资源可以直接包含在某个包中，包含在某个包的子目录中，或是与某个包外部的模块相邻。 "
+"资源可以是文本或二进制数据。 因此，从技术上说 Python 包的模块源代码文件 (.py) 和编译结果文件 (pycache) "
+"就是包实际所包含的资源。 但是，在实践中，资源主要是指包作者专门公开的非 Python 文件。"
 
 #: ../../library/importlib.resources.rst:25
 msgid "Resources can be opened or read in either binary or text mode."
-msgstr ""
+msgstr "资源可以使用二进制或文本模式打开。"
 
 #: ../../library/importlib.resources.rst:27
 msgid ""
@@ -119,6 +122,8 @@ msgid ""
 "the resource container (think directory) and its resources (think files). A "
 "Traversable may contain other containers (think subdirectories)."
 msgstr ""
+"返回一个代表资源容器（相当于目录）及其资源（相当于文件）的 :class:`~importlib.resources.abc.Traversable` "
+"对象。 Traversable 可以包含其他容器（相当于子目录）。"
 
 #: ../../library/importlib.resources.rst:66
 msgid ""
@@ -127,6 +132,8 @@ msgid ""
 "resolved adjacent to that module (in the same package or the package root). "
 "If the anchor is omitted, the caller's module is used."
 msgstr ""
+"*anchor* 是一个可选的 :data:`Anchor`。 如果 anchor 是一个包，则会从这个包获取资源。 "
+"如果是一个模块，则会从这个模块的相邻位置获取资源（在同一个包或包的根目录中）。 如果省略了 anchor，则会使用调用方的模块。"
 
 #: ../../library/importlib.resources.rst:74
 msgid ""
@@ -136,6 +143,9 @@ msgid ""
 "DeprecationWarning. Consider passing the anchor positionally or using "
 "``importlib_resources >= 5.10`` for a compatible interface on older Pythons."
 msgstr ""
+"\"package\" 形参被重命名为 \"anchor\"。 \"anchor\" 现在可以是一个不为包的模块，如果被省略则默认为调用方的模块。 "
+"为保持兼容性 \"package\" 仍然被接受但会引发 DeprecationWarning。 请考虑以位置参数方式传入 anchor 或使用 "
+"``importlib_resources >= 5.10`` 作为针对旧版 Python 的兼容接口。"
 
 #: ../../library/importlib.resources.rst:84
 msgid ""

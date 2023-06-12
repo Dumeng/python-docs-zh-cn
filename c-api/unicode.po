@@ -110,6 +110,7 @@ msgid ""
 "This instance of :c:type:`PyTypeObject` represents the Python Unicode type."
 "  It is exposed to Python code as ``str``."
 msgstr ""
+"这个 :c:type:`PyTypeObject` 实例代表 Python Unicode 类型。 它作为 ``str`` 公开给 Python 代码。"
 
 #: ../../c-api/unicode.rst:73
 msgid ""
@@ -150,6 +151,8 @@ msgid ""
 "canonical representation has the correct character size; use "
 ":c:func:`PyUnicode_KIND` to select the right function."
 msgstr ""
+"返回一个用于直接字符访问的指向转换为 UCS1、UCS2 或 UCS4 整数类型的规范表示的指针。 如果规范表示具有正确的字符大小，则不执行检查；使用 "
+":c:func:`PyUnicode_KIND` 选择正确的函数。"
 
 #: ../../c-api/unicode.rst:122
 msgid "Return values of the :c:func:`PyUnicode_KIND` macro."
@@ -157,7 +160,7 @@ msgstr "返回 :c:func:`PyUnicode_KIND` 宏的值。"
 
 #: ../../c-api/unicode.rst:126
 msgid "``PyUnicode_WCHAR_KIND`` has been removed."
-msgstr ""
+msgstr "``PyUnicode_WCHAR_KIND`` 已被移除。"
 
 #: ../../c-api/unicode.rst:132
 msgid ""

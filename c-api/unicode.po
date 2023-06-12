@@ -60,6 +60,8 @@ msgid ""
 "The :c:type:`Py_UNICODE` representation has been removed since Python 3.12 "
 "with deprecated APIs. See :pep:`623` for more information."
 msgstr ""
+":c:type:`Py_UNICODE` 表示形式在 Python 3.12 中同被弃用的 API 一起被移除了，查阅 :pep:`623` "
+"以获得更多信息。"
 
 #: ../../c-api/unicode.rst:29
 msgid "Unicode Type"
@@ -77,12 +79,14 @@ msgid ""
 "characters of 32 bits, 16 bits and 8 bits, respectively.  When dealing with "
 "single Unicode characters, use :c:type:`Py_UCS4`."
 msgstr ""
+"这些类型是无符号整数类型的类型定义，其宽度足以分别包含 32 位、16 位和 8 位字符。 当需要处理单个 Unicode 字符时，请使用 "
+":c:type:`Py_UCS4`。"
 
 #: ../../c-api/unicode.rst:47
 msgid ""
 "This is a typedef of :c:expr:`wchar_t`, which is a 16-bit type or 32-bit "
 "type depending on the platform."
-msgstr ""
+msgstr "这是 :c:expr:`wchar_t` 的定义，根据平台的不同，其具有 16 位类型以及 32 位类型。"
 
 #: ../../c-api/unicode.rst:50
 msgid ""
@@ -97,6 +101,9 @@ msgid ""
 "almost all cases, they shouldn't be used directly, since all API functions "
 "that deal with Unicode objects take and return :c:type:`PyObject` pointers."
 msgstr ""
+"这些关于 :c:type:`PyObject` 的子类型表示了一个 Python Unicode 对象。 "
+"在几乎所有情形下，它们不应该被直接使用，因为所有处理 Unicode 对象的 API 函数都接受并返回 :c:type:`PyObject` "
+"类型的指针。"
 
 #: ../../c-api/unicode.rst:69
 msgid ""
@@ -252,7 +259,7 @@ msgstr "根据 *ch* 是否为十进制数字符返回 ``1`` 或 ``0``。"
 
 #: ../../c-api/unicode.rst:237
 msgid "Return ``1`` or ``0`` depending on whether *ch* is a digit character."
-msgstr "根据 *ch* 是否为数码类字符返回 ``1`` 或 ``0``。"
+msgstr "根据 *ch* 是否为数码类字符返回 ``1`` 或 ``0``。"
 
 #: ../../c-api/unicode.rst:242
 msgid ""
@@ -584,7 +591,7 @@ msgstr ""
 
 #: ../../c-api/unicode.rst:471
 msgid "``d``, ``i``"
-msgstr ""
+msgstr "``d``, ``i``"
 
 #: ../../c-api/unicode.rst:472 ../../c-api/unicode.rst:476
 #: ../../c-api/unicode.rst:480 ../../c-api/unicode.rst:484

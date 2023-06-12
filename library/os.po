@@ -26,6 +26,7 @@
 # Dai Xu <daixu61@hotmail.com>, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
+# Stark Lin, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
@@ -904,7 +905,7 @@ msgstr ""
 
 #: ../../library/os.rst:645
 msgid "The :func:`~os.unshare` function."
-msgstr ""
+msgstr ":func:`~os.unshare` 函数。"
 
 #: ../../library/os.rst:649
 msgid ""
@@ -1089,7 +1090,7 @@ msgstr ""
 
 #: ../../library/os.rst:832
 msgid "The :func:`~os.setns` function."
-msgstr ""
+msgstr ":func:`~os.setns` 函数。"
 
 #: ../../library/os.rst:836
 msgid ""
@@ -1097,6 +1098,8 @@ msgid ""
 "See :manpage:`unshare(2)` in the Linux manual for their exact effect and "
 "availability."
 msgstr ""
+":func:`unshare` 函数的旗标，如果实现支持。 访问 Linux 手册中的 :manpage:`unshare(2)` "
+"以获取关于实际影响和可用性的信息。"
 
 #: ../../library/os.rst:859
 msgid "File Object Creation"
@@ -1442,7 +1445,7 @@ msgstr ""
 
 #: ../../library/os.rst:1119 ../../library/os.rst:1597
 msgid "Added support for pipes on Windows."
-msgstr ""
+msgstr "增加了在Windows上对于管道的支持。"
 
 #: ../../library/os.rst:1124
 msgid ""
@@ -2722,7 +2725,7 @@ msgstr "新增支持将 *path* 参数指定为打开的文件描述符。"
 
 #: ../../library/os.rst:2204
 msgid "Return a list containing the names of drives on a Windows system."
-msgstr ""
+msgstr "返回一个包括Windows系统上驱动名称的列表。"
 
 #: ../../library/os.rst:2206
 msgid ""

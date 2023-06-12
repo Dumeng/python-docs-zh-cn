@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2023-05-24 13:07+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -116,19 +116,19 @@ msgstr ""
 
 #: ../../howto/perf_profiling.rst:163
 msgid "Example, using the environment variable::"
-msgstr ""
+msgstr "示例，使用环境变量::"
 
 #: ../../howto/perf_profiling.rst:169
 msgid "Example, using the :option:`!-X` option::"
-msgstr ""
+msgstr "示例，使用 :option:`!-X` 选项::"
 
 #: ../../howto/perf_profiling.rst:174
 msgid "Example, using the :mod:`sys` APIs in file :file:`example.py`:"
-msgstr ""
+msgstr "示例，在文件 :file:`example.py` 中使用 :mod:`sys` API:"
 
 #: ../../howto/perf_profiling.rst:186
 msgid "...then::"
-msgstr ""
+msgstr "...然后::"
 
 #: ../../howto/perf_profiling.rst:193
 msgid "How to obtain the best results"

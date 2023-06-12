@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -869,15 +869,15 @@ msgstr ""
 
 #: ../../library/logging.rst:600
 msgid "The *style* parameter."
-msgstr ""
+msgstr "*style* 形参。"
 
 #: ../../library/logging.rst:603
 msgid "The *validate* parameter."
-msgstr ""
+msgstr "*validate* 形参。"
 
 #: ../../library/logging.rst:606
 msgid "The *defaults* parameter."
-msgstr ""
+msgstr "*defaults* 形参。"
 
 #: ../../library/logging.rst:612
 msgid ""

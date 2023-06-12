@@ -215,6 +215,9 @@ msgid ""
 " making them harder to read. In Python 3.12 you can now define expressions "
 "spanning multiple lines and include comments on them:"
 msgstr ""
+"多行表达式和注释：在Python 3.11中，f-字符串表达式必须在一行中定义，即使外部f-"
+"字符串表达式可能跨越多行（就像在多行上定义的字面值列表一样），也会使它们更难阅读。在Python "
+"3.12中，你现在可以定义跨越多行的表达式，并在其中包含注释："
 
 #: ../../whatsnew/3.12.rst:191
 msgid ""
@@ -240,6 +243,8 @@ msgid ""
 "For example, in Python 3.11, the following f-string raises a "
 ":exc:`SyntaxError`:"
 msgstr ""
+"作为实现此功能的正面影响 (通过使用 PEG 解析器解析 f 字符串，参见 :pep:`617`)，现在 f "
+"字符串的错误消息更加精确，包括错误的确切位置。 例如，在 Python 3.11 中，以下 f 字符串引发一个 :exc:`SyntaxError`:"
 
 #: ../../whatsnew/3.12.rst:219
 msgid ""
@@ -248,6 +253,8 @@ msgid ""
 "parentheses. In Python 3.12, as f-strings are parsed with the PEG parser, "
 "error messages can be more precise and show the entire line:"
 msgstr ""
+"但是错误消息不包括错误在行中的确切位置，而且表达式被人为地用括号括起来。在Python 3.12中，由于f-"
+"字符串是用PEG解析器解析的，因此错误消息可以更精确，并显示整行："
 
 #: ../../whatsnew/3.12.rst:231
 msgid ""
@@ -500,24 +507,34 @@ msgid ""
 " the default will switch to ``'data'``. (Contributed by Petr Viktorin in "
 ":pep:`706`.)"
 msgstr ""
+":mod:`tarfile` 和 :func:`shutil.unpack_archive` 中的提取方法有一个新的 *filter* "
+"参数，该参数允许限制可能令人惊讶或危险的 tar 功能，例如在目标目录之外创建文件。 有关详细信息，请参阅 :ref:`tarfile-"
+"extraction-filter` 提取筛选器。 在 Python 3.14 中，默认值将切换为 ``'data'``。 （由 Petr "
+"Viktorin 在 :pep:`706` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:416
 msgid ""
 ":class:`types.MappingProxyType` instances are now hashable if the underlying"
 " mapping is hashable. (Contributed by Serhiy Storchaka in :gh:`87995`.)"
 msgstr ""
+"如果底层映射是可哈希的，那么 :class:`types.MappingProxyType` 实例现在是可哈希的。 （由 Serhiy "
+"Storchaka 在 :gh:`87995` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:420
 msgid ""
 ":class:`memoryview` now supports the half-float type (the \"e\" format "
 "code). (Contributed by Dong-hee Na and Antoine Pitrou in :gh:`90751`.)"
 msgstr ""
+":class:`memoryview` 现在支持半浮点类型（“e”格式代码）。 （由 Dong-hee Na 和 Antoine Pitrou 在 "
+":gh:`90751` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:423
 msgid ""
 "The parser now raises :exc:`SyntaxError` when parsing source code containing"
 " null bytes. (Contributed by Pablo Galindo in :gh:`96670`.)"
 msgstr ""
+"解析器现在在解析包含空字节的源代码时引发 :exc:`SyntaxError`。 （由 Pablo Galindo 在 :gh:`96670` 中贡献 "
+"。）"
 
 #: ../../whatsnew/3.12.rst:426
 msgid ""
@@ -525,6 +542,8 @@ msgid ""
 " when parsing source code containing null bytes. (Contributed by Pablo "
 "Galindo in :gh:`96670`.)"
 msgstr ""
+":func:`ast.parse` 现在会在解析包含空字节的源代码时引发 :exc:`SyntaxError` 而不是 "
+":exc:`ValueError`。 （由 Pablo Galindo 在 :gh:`96670` 中贡献 。）"
 
 #: ../../whatsnew/3.12.rst:430
 msgid ""
@@ -535,6 +554,9 @@ msgid ""
 "chance to execute the GC periodically. (Contributed by Pablo Galindo in "
 ":gh:`97922`.)"
 msgstr ""
+"垃圾回收器现在只在 Python 字节码评估循环的 eval-breaker 机制上运行，而不是在对象分配上运行。 垃圾回收也可以在调用 "
+":c:func:`PyErr_CheckSignals` 时运行，因此需要长时间运行而不执行任何 Python 代码的 C "
+"扩展也有机会定期执行垃圾回收。 （由 Pablo Galindo 在 :gh:`97922` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:437
 msgid ""
@@ -546,6 +568,11 @@ msgid ""
 ":exc:`SyntaxError` will eventually be raised, instead of "
 ":exc:`SyntaxWarning`. (Contributed by Victor Stinner in :gh:`98401`.)"
 msgstr ""
+"不是有效转义序列的反斜杠+字符的组合现在会生成 :exc:`SyntaxWarning`，而不是  :exc:`DeprecationWarning`。"
+" 例如，``re.compile(\"\\d+\\.\\d+\")`` 现在会发出 :exc:`SyntaxWarning` (``\"\\d\"`` "
+"是一个无效的转义序列)，对正则表达式使用原始字符串: ``re.compile(r\"\\d+\\.\\d+\")``。 在未来的 Python "
+"版本中，最终将引发 :exc:`SyntaxError`，而不是 :exc:`SyntaxWarning`。 （由 Victor Stinner 在 "
+":gh:`98401` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:446
 msgid ""
@@ -555,6 +582,9 @@ msgid ""
 "eventually a :exc:`SyntaxError`. (Contributed by Victor Stinner in "
 ":gh:`98401`.)"
 msgstr ""
+"值大于``0o377`` (例如: ``\"\\477\"``) 的八进制转义，在 Python 3.11 中已弃用，现在会产生 "
+":exc:`SyntaxWarning`，而不是 :exc:`DeprecationWarning`。 在未来的 Python 版本中，它们最终将是 "
+":exc:`SyntaxError`。 （由 Victor Stinner 在 :gh:`98401` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:452
 msgid ""
@@ -562,6 +592,8 @@ msgid ""
 "arguments of any type instead of just :class:`bool` and :class:`int`. "
 "(Contributed by Serhiy Storchaka in :gh:`60203`.)"
 msgstr ""
+"所有期望布尔参数的内置和扩展可调用函数现在都接受任何类型的参数，而不仅仅是 :class:`bool` 和 :class:`int`。 （由 "
+"Serhiy Storchaka 在 :gh:`60203` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:456
 msgid ""
@@ -572,6 +604,9 @@ msgid ""
 "comprehensions (like ``a``) is still disallowed, as per :pep:`572`. "
 "(Contributed by Nikita Sobolev in :gh:`100581`.)"
 msgstr ""
+"未存储在推导式目标部分中的变量现在可以在赋值表达式 (``:=``) 中使用。 例如，在 ``[(b := 1) for a, b.prop in "
+"some_iter]`` 中，现在允许对 ``b`` 进行赋值。 请注意，根据 :pep:`572`，仍然不允许向存储在推导式目标部分中的变量 (如 "
+"``a``) 赋值。 （由 Nikita Sobolev 在 :gh:`100581` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:463
 msgid ""
@@ -579,6 +614,8 @@ msgid ""
 "keys and set items. (Contributed by Will Bradshaw, Furkan Onder, and Raymond"
 " Hettinger in :gh:`101264`.)"
 msgstr ""
+":class:`slice` 对象现在是可哈希的，允许它们用作字典的键和集合项。 （由 Will Bradshaw、Furkan Onder 和 "
+"Raymond Hettinger 在 :gh:`101264` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:466
 msgid ""
@@ -586,6 +623,8 @@ msgid ""
 "floats or mixed ints and floats. (Contributed by Raymond Hettinger in "
 ":gh:`100425`.)"
 msgstr ""
+":func:`sum` 现在使用 Neumaier 求和来提高浮点求和或整数浮点混合求和的准确性。 （由 Raymond Hettinger 在 "
+":gh:`100425` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:470
 msgid ""
@@ -594,6 +633,8 @@ msgid ""
 "exception as a :pep:`678` note. (Contributed by Irit Katriel in "
 ":gh:`77757`.)"
 msgstr ""
+"类型对象的 ``__set_name__`` 方法引发的异常不再由 :exc:`RuntimeError` 封装。 上下文信息将作为 "
+":pep:`678` 注释添加到异常中。 （由 Irit Katriel 在 :gh:`77757` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:474
 msgid ""
@@ -602,6 +643,9 @@ msgid ""
 ":exc:`ExceptionGroup`. Also changed in version 3.11.4. (Contributed by Irit "
 "Katriel in :gh:`103590`.)"
 msgstr ""
+"当 ``try-except*`` 构造处理整个 :exc:`ExceptionGroup` 并引发另一个异常时，该异常不再封装在 "
+":exc:`ExceptionGroup` 中。 在 3.11.4 版中也进行了更改。 （由 Irit Katriel 在 :gh:`103590` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:481
 msgid "New Modules"
@@ -624,6 +668,8 @@ msgid ""
 "The :class:`array.array` class now supports subscripting, making it a "
 ":term:`generic type`. (Contributed by Jelle Zijlstra in :gh:`98658`.)"
 msgstr ""
+":class:`array.array` 类现在支持下标，使其成为 :term:`generic type`。 （由 Jelle Zijlstra 在 "
+":gh:`98658` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:496
 msgid "asyncio"
@@ -636,6 +682,9 @@ msgid ""
 "writing to sockets and uses :meth:`~socket.socket.sendmsg` if the platform "
 "supports it. (Contributed by Kumar Aditya in :gh:`91166`.)"
 msgstr ""
+"在 :mod:`asyncio` 中写入套接字的性能得到了显著提高。 ``asyncio`` "
+"现在可以避免在写入套接字时进行不必要的复制，并在平台支持的情况下使用 :meth:`~socket.socket.sendmsg`。 （由 Kumar "
+"Aditya 在 :gh:`91166` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:503
 msgid ""
@@ -645,6 +694,10 @@ msgid ""
 "(Contributed by Jacob Bower & Itamar O in :gh:`102853`, :gh:`104140`, and "
 ":gh:`104138`)"
 msgstr ""
+"添加了 :func:`asyncio.eager_task_factory` 和 "
+":func:`asyncio.create_eager_task_factory` 函数，允许在紧急任务执行中选择事件循环，使某些用例的速度提高了 2 "
+"到 5 倍。 （由 Jacob Bower 和 Itamar O 在 :gh:`102853`、:gh:`104140` 和 :gh:`104138` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:508
 msgid ""
@@ -653,6 +706,9 @@ msgid ""
 ":class:`~asyncio.ThreadedChildWatcher`. (Contributed by Kumar Aditya in "
 ":gh:`98024`.)"
 msgstr ""
+"在 Linux 上，如果 :func:`os.pidfd_open` 可用且能工作，:mod:`asyncio` 默认使用 "
+":class:`~asyncio.PidfdChildWatcher` 而不是 "
+":class:`~asyncio.ThreadedChildWatcher`。 （由 Kumar Aditya 在 :gh:`98024` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:513
 msgid ""
@@ -665,6 +721,12 @@ msgid ""
 ":class:`~asyncio.ThreadedChildWatcher` otherwise). (Contributed by Kumar "
 "Aditya in :gh:`94597`.)"
 msgstr ""
+"子观察程序类 "
+":class:`~asyncio.MultiLoopChildWatcher`、:class:`~asyncio.FastChildWatcher`、:class:`~asyncio.AbstractChildWatcher`"
+" 和 :class:`~asyncio.SafeChildWatcher` 已弃用，它们将在 Python 3.14 中移除。 "
+"建议不要手动配置子观察程序，因为事件循环现在为每个平台使用最佳可用的子观察程序 (如果支持就用 "
+":class:`~asyncio.PidfdChildWatcher`，不支持则用 "
+":class:`~asyncio.ThreadedChildWatcher`)。 （由 Kumar Aditya 在 :gh:`94597` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:522
 msgid ""
@@ -674,12 +736,17 @@ msgid ""
 " will be removed in Python 3.14. (Contributed by Kumar Aditya in "
 ":gh:`94597`.)"
 msgstr ""
+":func:`asyncio.set_child_watcher`、:func:`asyncio.get_child_watcher`、:meth:`asyncio.AbstractEventLoopPolicy.set_child_watcher`"
+" 和 :meth:`asyncio.AbstractEventLoopPolicy.get_child_watcher` 已弃用，并将在 Python "
+"3.14 中移除。（由 Kumar Aditya 在 :gh:`94597` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:528
 msgid ""
 "Add *loop_factory* parameter to :func:`asyncio.run` to allow specifying a "
 "custom event loop factory. (Contributed by Kumar Aditya in :gh:`99388`.)"
 msgstr ""
+"为 :func:`asyncio.run` 添加了形参 *loop_factory*，以允许指定自定义事件循环工厂。 （由 Kumar Aditya 在"
+" :gh:`99388` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:532
 msgid ""
@@ -687,6 +754,8 @@ msgid ""
 "(Contributed by Itamar Ostricher and Pranav Thulasiram Bhat in "
 ":gh:`100344`.)"
 msgstr ""
+"添加了 :func:`asyncio.current_task` 的 C 实现，以实现 4 - 6 倍的加速。 （由 Itamar Ostricher "
+"和 Pranav Thulasiram Bhat 在 :gh:`100344` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:535
 msgid ""
@@ -694,12 +763,16 @@ msgid ""
 ":mod:`asyncio` does not support legacy generator-based coroutines. "
 "(Contributed by Kumar Aditya in :gh:`102748`.)"
 msgstr ""
+":func:`asyncio.iscoroutine` 现在为生成器返回 ``False``，因为 :mod:`asyncio` "
+"不支持传统的基于生成器的协程。 （由 Kumar Aditya 在 :gh:`102748` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:539
 msgid ""
 ":func:`asyncio.wait` and :func:`asyncio.as_completed` now accepts generators"
 " yielding tasks. (Contributed by Kumar Aditya in :gh:`78530`.)"
 msgstr ""
+":func:`asyncio.wait` 和 :func:`asyncio.as_completed` 现在接受生成器 yield 任务。 （由 "
+"Kumar Aditya 在 :gh:`78530` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:544
 msgid "calendar"
@@ -710,6 +783,8 @@ msgid ""
 "Add enums :data:`~calendar.Month` and :data:`~calendar.Day`. (Contributed by"
 " Prince Roshan in :gh:`103636`.)"
 msgstr ""
+"添加 :data:`~calendar.Month` 和 :data:`~calendar.Day` 枚举。 （由 Prince Roshan 在 "
+":gh:`103636` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:550
 msgid "csv"
@@ -721,6 +796,8 @@ msgid ""
 "provide finer grained control of ``None`` and empty strings by "
 ":class:`~csv.writer` objects."
 msgstr ""
+"添加 :data:`~csv.QUOTE_NOTNULL` 和 :data:`~csv.QUOTE_STRINGS` 标志，以通过 "
+":class:`~csv.writer` 对象提供对 ``None`` 和空字符串的细粒度控制。"
 
 #: ../../whatsnew/3.12.rst:557
 msgid "dis"
@@ -734,6 +811,9 @@ msgid ""
 "useful for pseudo instructions. Use the new :data:`~dis.hasarg` collection "
 "instead. (Contributed by Irit Katriel in :gh:`94216`.)"
 msgstr ""
+"伪指令操作码（编译器使用，但不出现在可执行字节码中）现在暴露在 :mod:`dis` 模块中。 :opcode:`HAVE_ARGUMENT` "
+"仍然与实际操作码相关，但对伪指令没有用处。请改用新的 :data:`~dis.hasarg` 多项集。 （由 Irit Katriel 在 "
+":gh:`94216` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:568
 msgid "fractions"
@@ -744,6 +824,8 @@ msgid ""
 "Objects of type :class:`fractions.Fraction` now support float-style "
 "formatting. (Contributed by Mark Dickinson in :gh:`100161`.)"
 msgstr ""
+"类型为 :class:`fractions.Fraction` 的对象现在支持浮点格式。 （由 Mark Dickinson 在 "
+":gh:`100161` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:574
 msgid "inspect"
@@ -755,6 +837,9 @@ msgid ""
 " a :term:`coroutine` for use with :func:`inspect.iscoroutinefunction`. "
 "(Contributed Carlton Gibson in :gh:`99247`.)"
 msgstr ""
+"添加 :func:`inspect.markcoroutinefunction` 来标记返回 :term:`coroutine`  的同步函数，以便与 "
+":func:`inspect.iscoroutinefunction` 一起使用。 （由 Carlton Gibson 在 :gh:`99247` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:580
 msgid ""
@@ -762,6 +847,8 @@ msgid ""
 "for determining the current state of asynchronous generators. (Contributed "
 "by Thomas Krennwallner in :issue:`35759`.)"
 msgstr ""
+"添加 :func:`inspect.getasyncgenstate` 和 :func:`inspect.getasyncgenlocals` "
+"来确定异步生成器的当前状态。 （由 Thomas Krennwallner 在 :issue:`35759` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:584
 msgid ""
@@ -770,6 +857,8 @@ msgid ""
 "were in Python 3.11, and some may be 6x faster or more. (Contributed by Alex"
 " Waygood in :gh:`103193`.)"
 msgstr ""
+":func:`inspect.getattr_static` 的性能得到了相当大的改进。 对函数的大多数调用应该比 Python 3.11 中至少快 2"
+" 倍，有些可能快 6 倍甚至更多。 （由 Alex Waygood 在 :gh:`103193` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:590
 msgid "itertools"
@@ -2845,116 +2934,136 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:1792
 msgid "Deprecate global configuration variable:"
-msgstr ""
+msgstr "已弃用的全局配置变量:"
 
 #: ../../whatsnew/3.12.rst:1794
 msgid ":c:var:`Py_DebugFlag`: use :c:member:`PyConfig.parser_debug`"
-msgstr ""
+msgstr ":c:var:`Py_DebugFlag`: 使用 :c:member:`PyConfig.parser_debug`"
 
 #: ../../whatsnew/3.12.rst:1795
 msgid ":c:var:`Py_VerboseFlag`: use :c:member:`PyConfig.verbose`"
-msgstr ""
+msgstr ":c:var:`Py_VerboseFlag`: 使用 :c:member:`PyConfig.verbose`"
 
 #: ../../whatsnew/3.12.rst:1796
 msgid ":c:var:`Py_QuietFlag`: use :c:member:`PyConfig.quiet`"
-msgstr ""
+msgstr ":c:var:`Py_QuietFlag`: 使用 :c:member:`PyConfig.quiet`"
 
 #: ../../whatsnew/3.12.rst:1797
 msgid ":c:var:`Py_InteractiveFlag`: use :c:member:`PyConfig.interactive`"
-msgstr ""
+msgstr ":c:var:`Py_InteractiveFlag`: 使用 :c:member:`PyConfig.interactive`"
 
 #: ../../whatsnew/3.12.rst:1798
 msgid ":c:var:`Py_InspectFlag`: use :c:member:`PyConfig.inspect`"
-msgstr ""
+msgstr ":c:var:`Py_InspectFlag`: 使用 :c:member:`PyConfig.inspect`"
 
 #: ../../whatsnew/3.12.rst:1799
 msgid ":c:var:`Py_OptimizeFlag`: use :c:member:`PyConfig.optimization_level`"
-msgstr ""
+msgstr ":c:var:`Py_OptimizeFlag`: 使用 :c:member:`PyConfig.optimization_level`"
 
 #: ../../whatsnew/3.12.rst:1800
 msgid ":c:var:`Py_NoSiteFlag`: use :c:member:`PyConfig.site_import`"
-msgstr ""
+msgstr ":c:var:`Py_NoSiteFlag`: 使用 :c:member:`PyConfig.site_import`"
 
 #: ../../whatsnew/3.12.rst:1801
 msgid ":c:var:`Py_BytesWarningFlag`: use :c:member:`PyConfig.bytes_warning`"
-msgstr ""
+msgstr ":c:var:`Py_BytesWarningFlag`: 使用 :c:member:`PyConfig.bytes_warning`"
 
 #: ../../whatsnew/3.12.rst:1802
 msgid ":c:var:`Py_FrozenFlag`: use :c:member:`PyConfig.pathconfig_warnings`"
-msgstr ""
+msgstr ":c:var:`Py_FrozenFlag`: 使用 :c:member:`PyConfig.pathconfig_warnings`"
 
 #: ../../whatsnew/3.12.rst:1803
 msgid ""
 ":c:var:`Py_IgnoreEnvironmentFlag`: use :c:member:`PyConfig.use_environment`"
 msgstr ""
+":c:var:`Py_IgnoreEnvironmentFlag`: 使用 :c:member:`PyConfig.use_environment`"
 
 #: ../../whatsnew/3.12.rst:1804
 msgid ""
 ":c:var:`Py_DontWriteBytecodeFlag`: use :c:member:`PyConfig.write_bytecode`"
 msgstr ""
+":c:var:`Py_DontWriteBytecodeFlag`: 使用 :c:member:`PyConfig.write_bytecode`"
 
 #: ../../whatsnew/3.12.rst:1805
 msgid ""
 ":c:var:`Py_NoUserSiteDirectory`: use "
 ":c:member:`PyConfig.user_site_directory`"
 msgstr ""
+":c:var:`Py_NoUserSiteDirectory`: 使用 :c:member:`PyConfig.user_site_directory`"
 
 #: ../../whatsnew/3.12.rst:1806
 msgid ""
 ":c:var:`Py_UnbufferedStdioFlag`: use :c:member:`PyConfig.buffered_stdio`"
 msgstr ""
+":c:var:`Py_UnbufferedStdioFlag`: 使用 :c:member:`PyConfig.buffered_stdio`"
 
 #: ../../whatsnew/3.12.rst:1807
 msgid ""
 ":c:var:`Py_HashRandomizationFlag`: use :c:member:`PyConfig.use_hash_seed` "
 "and :c:member:`PyConfig.hash_seed`"
 msgstr ""
+":c:var:`Py_HashRandomizationFlag`: 使用 :c:member:`PyConfig.use_hash_seed` 和 "
+":c:member:`PyConfig.hash_seed`"
 
 #: ../../whatsnew/3.12.rst:1809
 msgid ":c:var:`Py_IsolatedFlag`: use :c:member:`PyConfig.isolated`"
-msgstr ""
+msgstr ":c:var:`Py_IsolatedFlag`: 使用 :c:member:`PyConfig.isolated`"
 
 #: ../../whatsnew/3.12.rst:1810
 msgid ""
 ":c:var:`Py_LegacyWindowsFSEncodingFlag`: use "
 ":c:member:`PyPreConfig.legacy_windows_fs_encoding`"
 msgstr ""
+":c:var:`Py_LegacyWindowsFSEncodingFlag`: 使用 "
+":c:member:`PyPreConfig.legacy_windows_fs_encoding`"
 
 #: ../../whatsnew/3.12.rst:1811
 msgid ""
 ":c:var:`Py_LegacyWindowsStdioFlag`: use "
 ":c:member:`PyConfig.legacy_windows_stdio`"
 msgstr ""
+":c:var:`Py_LegacyWindowsStdioFlag`: 使用 "
+":c:member:`PyConfig.legacy_windows_stdio`"
 
 #: ../../whatsnew/3.12.rst:1812
 msgid ""
 ":c:var:`!Py_FileSystemDefaultEncoding`: use "
 ":c:member:`PyConfig.filesystem_encoding`"
 msgstr ""
+":c:var:`!Py_FileSystemDefaultEncoding`: 使用 "
+":c:member:`PyConfig.filesystem_encoding`"
 
 #: ../../whatsnew/3.12.rst:1813
 msgid ""
 ":c:var:`!Py_FileSystemDefaultEncodeErrors`: use "
 ":c:member:`PyConfig.filesystem_errors`"
 msgstr ""
+":c:var:`!Py_FileSystemDefaultEncodeErrors`: 使用 "
+":c:member:`PyConfig.filesystem_errors`"
 
 #: ../../whatsnew/3.12.rst:1814
 msgid ""
 ":c:var:`!Py_UTF8Mode`: use :c:member:`PyPreConfig.utf8_mode` (see "
 ":c:func:`Py_PreInitialize`)"
 msgstr ""
+":c:var:`!Py_UTF8Mode`: 使用 :c:member:`PyPreConfig.utf8_mode` (参见 "
+":c:func:`Py_PreInitialize`)"
 
 #: ../../whatsnew/3.12.rst:1816
 msgid ""
 "The :c:func:`Py_InitializeFromConfig` API should be used with "
 ":c:type:`PyConfig` instead. (Contributed by Victor Stinner in :gh:`77782`.)"
 msgstr ""
+":c:func:`Py_InitializeFromConfig` API 应当改为使用 :c:type:`PyConfig`。 （由 Victor "
+"Stinner 在 :gh:`77782` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1820
 msgid ""
 "Creating immutable types (:const:`Py_TPFLAGS_IMMUTABLETYPE`) with mutable "
 "bases is deprecated and will be disabled in Python 3.14."
 msgstr ""
+"使用可变的基类创建不可变类型 (:const:`Py_TPFLAGS_IMMUTABLETYPE`) 的做法已被弃用并将在 Python 3.14 "
+"中被禁用。"
 
 #: ../../whatsnew/3.12.rst:1823
 msgid ""

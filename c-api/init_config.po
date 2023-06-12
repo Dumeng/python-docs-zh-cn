@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -360,15 +360,15 @@ msgstr ""
 
 #: ../../c-api/init_config.rst:292
 msgid "Isolated mode: see :c:member:`PyConfig.isolated`."
-msgstr ""
+msgstr "隔离模式: 参见 :c:member:`PyConfig.isolated`。"
 
 #: ../../c-api/init_config.rst:294 ../../c-api/init_config.rst:866
 msgid "Default: ``0`` in Python mode, ``1`` in isolated mode."
-msgstr ""
+msgstr "默认值: 在 Python 模式中为 ``0``，在隔离模式中为 ``1``。"
 
 #: ../../c-api/init_config.rst:298
 msgid "If non-zero:"
-msgstr ""
+msgstr "如为非零值:"
 
 #: ../../c-api/init_config.rst:300
 msgid "Set :c:member:`PyPreConfig.utf8_mode` to ``0``,"

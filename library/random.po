@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -217,7 +217,7 @@ msgstr "整数用函数"
 
 #: ../../library/random.rst:126
 msgid "Return a randomly selected element from ``range(start, stop, step)``."
-msgstr ""
+msgstr "返回从 ``range(start, stop, step)`` 随机选择的一个元素。"
 
 #: ../../library/random.rst:128
 msgid ""
@@ -429,11 +429,11 @@ msgstr "*population* 必须为一个序列。 不再支持将集合自动转换�
 
 #: ../../library/random.rst:262
 msgid "Discrete distributions"
-msgstr ""
+msgstr "离散分布"
 
 #: ../../library/random.rst:264
 msgid "The following function generates a discrete distribution."
-msgstr ""
+msgstr "以下函数会生成离散分布。"
 
 #: ../../library/random.rst:268
 msgid ""
@@ -442,6 +442,8 @@ msgid ""
 "number of successes for *n* independent trials with the probability of "
 "success in each trial being *p*:"
 msgstr ""
+"`二项式分布 <https://mathworld.wolfram.com/BinomialDistribution.html>`_。 返回 *n* "
+"次独立试验在每次试验的成功率为 *p* 时的成功次数:"
 
 #: ../../library/random.rst:273
 msgid "Mathematically equivalent to::"

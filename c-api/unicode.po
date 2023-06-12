@@ -11,18 +11,18 @@
 # 高乐喆 <gaolezhe@outlook.com>, 2023
 # 钢 彭 <szhairui@gmail.com>, 2023
 # ppcfish <ppcfish@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # ww song <sww4718168@gmail.com>, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:50+0000\n"
-"Last-Translator: WH-2099 <wh2099@outlook.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -53,7 +53,7 @@ msgstr ""
 #: ../../c-api/unicode.rst:20
 msgid ""
 "UTF-8 representation is created on demand and cached in the Unicode object."
-msgstr ""
+msgstr "UTF-8 表示将按需创建并缓存在 Unicode 对象中。"
 
 #: ../../c-api/unicode.rst:23
 msgid ""
@@ -124,11 +124,11 @@ msgstr "如果对象*o*是Unicode对象，但不是子类型的实例，则返�
 
 #: ../../c-api/unicode.rst:90
 msgid "Returns ``0``. This API is kept only for backward compatibility."
-msgstr ""
+msgstr "返回 ``0``。 此 API 仅为向下兼容而保留。"
 
 #: ../../c-api/unicode.rst:94
 msgid "This API does nothing since Python 3.12."
-msgstr ""
+msgstr "此 API 从 Python 3.12 起将不做任何事。"
 
 #: ../../c-api/unicode.rst:100
 msgid ""
@@ -1220,7 +1220,7 @@ msgid "The return type is now ``const char *`` rather of ``char *``."
 msgstr ""
 
 #: ../../c-api/unicode.rst:994
-msgid "This function is a part of the :ref:`limited API <stable>`."
+msgid "This function is a part of the :ref:`limited API <limited-c-api>`."
 msgstr ""
 
 #: ../../c-api/unicode.rst:1000

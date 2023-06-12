@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-04 10:28+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -72,6 +72,11 @@ msgid ""
 "future this will become a :exc:`SyntaxError`. This behaviour will happen "
 "even if it is a valid escape sequence for a regular expression."
 msgstr ""
+"正则表达式使用反斜杠字符 (``'\\'``) 表示特殊形式或是允许在使用特殊字符时不引发它们的特殊含义。 这会与 Python "
+"在字符串字面值中对于相同字符出于相同目的规定的用法发生冲突；例如，要匹配一个反斜杠字面值，用户将必须写成 ``'\\\\\\\\'`` "
+"因为正则表达式必须为 ``\\\\``，而每个反斜杠在普通 Python 字符串字面值中又必须表示为 ``\\\\``。 而且，还要注意在 Python"
+" 的字符串字面值中使用的反斜杠现在如果有任何无效的转义序列将会产生 :exc:`SyntaxWarning` 并将在未来改为 "
+":exc:`SyntaxError`。 此行为即使对于正则表达式来说有效的转义字符同样会发生。"
 
 #: ../../library/re.rst:36
 msgid ""
@@ -659,6 +664,9 @@ msgid ""
 "a regular expression.  A symbolic group is also a numbered group, just as if"
 " the group were not named."
 msgstr ""
+"与常规的圆括号类似，但分组所匹配到了子字符串可通过符号分组名称 *name* 来访问。 分组名称必须是有效的 Python 标识符，并且在 "
+":class:`bytes` 模式中它们只能包含 ASCII 范围内的字节值。 每个分组名称在一个正则表达式中只能定义一次。 "
+"一个符号分组同时也是一个编号分组，就像这个分组没有被命名过一样。"
 
 #: ../../library/re.rst:404
 msgid ""
@@ -718,6 +726,8 @@ msgid ""
 "In :class:`bytes` patterns, group *name* can only contain bytes in the ASCII"
 " range (``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
+"在 :class:`bytes` 模式中，分组 *name* 只能包含 ASCII 范围内的字节值 "
+"(``b'\\x00'``-``b'\\x7f'``)。"
 
 #: ../../library/re.rst:430
 msgid "``(?P=name)``"
@@ -834,6 +844,8 @@ msgid ""
 "*name* can only contain bytes in the ASCII range "
 "(``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
+"分组 *id* 只能包含 ASCII 数码。 在 :class:`bytes` 模式中，分组 *name* 只能包含 ASCII 范围内的字节值 "
+"(``b'\\x00'``-``b'\\x7f'``)。"
 
 #: ../../library/re.rst:504
 msgid ""
@@ -1505,6 +1517,8 @@ msgid ""
 "strings, group *name* can only contain bytes in the ASCII range "
 "(``b'\\x00'``-``b'\\x7f'``)."
 msgstr ""
+"分组 *id* 只能包含 ASCII 数码。 在 :class:`bytes` 替换字符串中，分组 *name* 只能包含 ASCII 范围内的字节值 "
+"(``b'\\x00'``-``b'\\x7f'``)。"
 
 #: ../../library/re.rst:1030
 msgid ""
@@ -2267,7 +2281,7 @@ msgstr ". (点号)"
 #: ../../library/re.rst:616 ../../library/re.rst:621 ../../library/re.rst:785
 #: ../../library/re.rst:992
 msgid "in regular expressions"
-msgstr ""
+msgstr "在正则表达式中"
 
 #: ../../library/re.rst:106 ../../library/re.rst:263
 msgid "^ (caret)"
@@ -2291,27 +2305,27 @@ msgstr "? (问号)"
 
 #: ../../library/re.rst:143
 msgid "*?"
-msgstr ""
+msgstr "*?"
 
 #: ../../library/re.rst:143
 msgid "+?"
-msgstr ""
+msgstr "+?"
 
 #: ../../library/re.rst:143
 msgid "??"
-msgstr ""
+msgstr "??"
 
 #: ../../library/re.rst:157
 msgid "*+"
-msgstr ""
+msgstr "*+"
 
 #: ../../library/re.rst:157
 msgid "++"
-msgstr ""
+msgstr "++"
 
 #: ../../library/re.rst:157
 msgid "?+"
-msgstr ""
+msgstr "?+"
 
 #: ../../library/re.rst:181
 msgid "{} (curly brackets)"
@@ -2339,123 +2353,123 @@ msgstr "() (圆括号)"
 
 #: ../../library/re.rst:319
 msgid "(?"
-msgstr ""
+msgstr "(?"
 
 #: ../../library/re.rst:345
 msgid "(?:"
-msgstr ""
+msgstr "(?:"
 
 #: ../../library/re.rst:394
 msgid "(?P<"
-msgstr ""
+msgstr "(?P<"
 
 #: ../../library/re.rst:426
 msgid "(?P="
-msgstr ""
+msgstr "(?P="
 
 #: ../../library/re.rst:432
 msgid "(?#"
-msgstr ""
+msgstr "(?#"
 
 #: ../../library/re.rst:437
 msgid "(?="
-msgstr ""
+msgstr "(?="
 
 #: ../../library/re.rst:444
 msgid "(?!"
-msgstr ""
+msgstr "(?!"
 
 #: ../../library/re.rst:451
 msgid "(?<="
-msgstr ""
+msgstr "(?<="
 
 #: ../../library/re.rst:478
 msgid "(?<!"
-msgstr ""
+msgstr "(?<!"
 
 #: ../../library/re.rst:488
 msgid "(?("
-msgstr ""
+msgstr "(?("
 
 #: ../../library/re.rst:521
 msgid "\\A"
-msgstr ""
+msgstr "\\A"
 
 #: ../../library/re.rst:526 ../../library/re.rst:621
 msgid "\\b"
-msgstr ""
+msgstr "\\b"
 
 #: ../../library/re.rst:542
 msgid "\\B"
-msgstr ""
+msgstr "\\B"
 
 #: ../../library/re.rst:553
 msgid "\\d"
-msgstr ""
+msgstr "\\d"
 
 #: ../../library/re.rst:565
 msgid "\\D"
-msgstr ""
+msgstr "\\D"
 
 #: ../../library/re.rst:572
 msgid "\\s"
-msgstr ""
+msgstr "\\s"
 
 #: ../../library/re.rst:586
 msgid "\\S"
-msgstr ""
+msgstr "\\S"
 
 #: ../../library/re.rst:593
 msgid "\\w"
-msgstr ""
+msgstr "\\w"
 
 #: ../../library/re.rst:607
 msgid "\\W"
-msgstr ""
+msgstr "\\W"
 
 #: ../../library/re.rst:616
 msgid "\\Z"
-msgstr ""
+msgstr "\\Z"
 
 #: ../../library/re.rst:621
 msgid "\\a"
-msgstr ""
+msgstr "\\a"
 
 #: ../../library/re.rst:621
 msgid "\\f"
-msgstr ""
+msgstr "\\f"
 
 #: ../../library/re.rst:621
 msgid "\\n"
-msgstr ""
+msgstr "\\n"
 
 #: ../../library/re.rst:621
 msgid "\\r"
-msgstr ""
+msgstr "\\r"
 
 #: ../../library/re.rst:621
 msgid "\\t"
-msgstr ""
+msgstr "\\t"
 
 #: ../../library/re.rst:621
 msgid "\\u"
-msgstr ""
+msgstr "\\u"
 
 #: ../../library/re.rst:621
 msgid "\\U"
-msgstr ""
+msgstr "\\U"
 
 #: ../../library/re.rst:621
 msgid "\\v"
-msgstr ""
+msgstr "\\v"
 
 #: ../../library/re.rst:621
 msgid "\\x"
-msgstr ""
+msgstr "\\x"
 
 #: ../../library/re.rst:621
 msgid "\\\\"
-msgstr ""
+msgstr "\\\\"
 
 #: ../../library/re.rst:785
 msgid "# (hash)"
@@ -2463,8 +2477,8 @@ msgstr "# (hash)"
 
 #: ../../library/re.rst:992
 msgid "\\g"
-msgstr ""
+msgstr "\\g"
 
 #: ../../library/re.rst:1521
 msgid "scanf()"
-msgstr ""
+msgstr "scanf()"

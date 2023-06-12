@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:13+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -452,6 +452,9 @@ msgid ""
 "errors are handled by calling a handler specified by *onexc* or *onerror* "
 "or, if both are omitted, exceptions are propagated to the caller."
 msgstr ""
+"删除一个完整的目录树；*path* 必须指向一个目录（但不能是一个目录的符号链接）。 如果 *ignore_errors* "
+"为真值，则删除失败导致的错误将被忽略；如果为假值或被省略，则此类错误将通过调用由 *onexc* 或 *onerror* "
+"所指定的处理句柄来处理，或者如果此参数被省略，异常将被传播给调用方。"
 
 #: ../../library/shutil.rst:305
 msgid ""
@@ -478,7 +481,7 @@ msgstr ""
 msgid ""
 "If *onexc* is provided, it must be a callable that accepts three parameters:"
 " *function*, *path*, and *excinfo*."
-msgstr ""
+msgstr "如果提供了 *onexc*，它必须为接受三个形参的可调用对象: *function*, *path* 和 *excinfo*。"
 
 #: ../../library/shutil.rst:321
 msgid ""
@@ -488,12 +491,15 @@ msgid ""
 "*excinfo*, is the exception that was raised. Exceptions raised by *onexc* "
 "will not be caught."
 msgstr ""
+"第一个形参 *function* 是引发异常的函数；它依赖于具体的平台和实现。 第二个形参 *path* 将为传递给 *function* 的路径名称。"
+" 第三个形参 *excinfo* 是被引发的异常。 由 *onexc* 所引发的异常将不会被捕获。"
 
 #: ../../library/shutil.rst:327
 msgid ""
 "The deprecated *onerror* is similar to *onexc*, except that the third "
 "parameter it receives is the tuple returned from :func:`sys.exc_info`."
 msgstr ""
+"已弃用的 *onerror* 与 *onexc* 类似，区别在于它接受的第三个形参是从 :func:`sys.exc_info` 返回的元组。"
 
 #: ../../library/shutil.rst:330
 msgid ""

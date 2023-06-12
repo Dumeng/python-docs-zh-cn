@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:12+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -68,11 +68,11 @@ msgstr "等价于："
 msgid ""
 "See section `Repr Objects`_ for more information about :class:`Repr` "
 "attributes."
-msgstr ""
+msgstr "请参阅 `Repr Objects`_ 小节了解有关 :class:`Repr` 属性的信息。"
 
 #: ../../library/reprlib.rst:42
 msgid "Allow attributes to be set via keyword arguments."
-msgstr ""
+msgstr "允许通过关键字参数来设置属性。"
 
 #: ../../library/reprlib.rst:48
 msgid ""
@@ -170,19 +170,19 @@ msgid ""
 "If this attribute is set to ``None`` (the default), the output is formatted "
 "with no line breaks or indentation, like the standard :func:`repr`. For "
 "example:"
-msgstr ""
+msgstr "如果该属性被设为 ``None`` (默认值)，输出将被格式化为不带换行或缩进，像标准的 :func:`repr` 一样。 例如:"
 
 #: ../../library/reprlib.rst:160
 msgid ""
 "If :attr:`~Repr.indent` is set to a string, each recursion level is placed "
 "on its own line, indented by that string:"
-msgstr ""
+msgstr "如果 :attr:`~Repr.indent` 被设为一个字符串，每个递归层级将放在单独行中，并用该字符串来缩进:"
 
 #: ../../library/reprlib.rst:181
 msgid ""
 "Setting :attr:`~Repr.indent` to a positive integer value behaves as if it "
 "was set to a string with that number of spaces:"
-msgstr ""
+msgstr "将 :attr:`~Repr.indent` 设为一个正整数时其行为与设为相应数量的空格是相同的:"
 
 #: ../../library/reprlib.rst:207
 msgid ""

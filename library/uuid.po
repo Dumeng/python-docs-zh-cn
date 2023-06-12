@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:17+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -303,6 +303,8 @@ msgid ""
 "a UUID) and a name (which is a :class:`bytes` object or a string that will "
 "be encoded using UTF-8)."
 msgstr ""
+"根据命名空间标识符（一个 UUID）和名称（一个 :class:`bytes` 对象或将使用 UTF-8 进行编码的字符串）的 SHA-1 "
+"哈希值来生成一个 UUID。"
 
 #: ../../library/uuid.rst:210
 msgid ""
@@ -369,7 +371,7 @@ msgstr "命令行用法"
 #: ../../library/uuid.rst:273
 msgid ""
 "The :mod:`uuid` module can be executed as a script from the command line."
-msgstr ""
+msgstr ":mod:`uuid` 模块可以在命令行下作为脚本来执行。"
 
 #: ../../library/uuid.rst:279
 msgid "The following options are accepted:"
@@ -383,7 +385,7 @@ msgstr "显示帮助信息并退出。"
 msgid ""
 "Specify the function name to use to generate the uuid. By default "
 ":func:`uuid4` is used."
-msgstr ""
+msgstr "指定要用于生成 uuid 的函数名称。 默认会使用 :func:`uuid4`。"
 
 #: ../../library/uuid.rst:296
 msgid ""
@@ -392,12 +394,15 @@ msgid ""
 "``@oid``, and ``@x500``. Only required for :func:`uuid3` / :func:`uuid5` "
 "functions."
 msgstr ""
+"该命名空间是一个 ``UUID`` 或者 ``@ns`` 其中 ``ns`` 是一个以命名空间名称来定位的知名预定义 UUID。 例如 "
+"``@dns``, ``@url``, ``@oid`` 和 ``@x500``。 仅对于 :func:`uuid3` / :func:`uuid5` "
+"等函数是必需的。"
 
 #: ../../library/uuid.rst:303
 msgid ""
 "The name used as part of generating the uuid. Only required for "
 ":func:`uuid3` / :func:`uuid5` functions."
-msgstr ""
+msgstr "用作生成 uuid 的一部分的名称。 仅对于 :func:`uuid3` / :func:`uuid5` 等函数是必需的。"
 
 #: ../../library/uuid.rst:310
 msgid "Example"

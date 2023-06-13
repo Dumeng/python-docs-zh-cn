@@ -870,6 +870,8 @@ msgid ""
 "where the last batch may be shorter than the rest. (Contributed by Raymond "
 "Hettinger in :gh:`98363`.)"
 msgstr ""
+"增加了 :class:`itertools.batched()` 用来收集到相同大小的元组其中最后一个批次的长度可能会比其他批次的短。 （由 "
+"Raymond Hettinger 在 :gh:`98363` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:597
 msgid "json"
@@ -882,6 +884,9 @@ msgid ""
 ":class:`dict` that also supports attribute style dotted access. (Contributed"
 " by Raymond Hettinger in :gh:`96145`.)"
 msgstr ""
+"添加了 :class:`json.AttrDict`，用于 :func:`json.load` 或 :func:`json.loads` 中的 "
+"``object_hook``。 这是 :class:`dict` 的子类，也支持属性样式的点式访问。 （由 Raymond Hettinger 在 "
+":gh:`96145` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:605
 msgid "math"
@@ -892,6 +897,7 @@ msgid ""
 "Added :func:`math.sumprod` for computing a sum of products. (Contributed by "
 "Raymond Hettinger in :gh:`100485`.)"
 msgstr ""
+"添加了 :func:`math.sumprod` 用于计算乘积的和。 （由 Raymond Hettinger 在 :gh:`100485` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:610
 msgid ""
@@ -899,6 +905,8 @@ msgid ""
 "or down multiple steps at a time. (By Matthias Goergens, Mark Dickinson, and"
 " Raymond Hettinger in :gh:`94906`.)"
 msgstr ""
+"扩展了 :func:`math.nextafter` 以包含一个 *steps* 参数，用于一次上移或下移多个步骤。 （由 Matthias "
+"Goergens、Mark Dickinson 和 Raymond Hettinger在 :gh:`94906` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:615
 msgid "os"
@@ -910,6 +918,8 @@ msgid ""
 ":func:`os.pidfd_open` in non-blocking mode. (Contributed by Kumar Aditya in "
 ":gh:`93312`.)"
 msgstr ""
+"添加 :data:`os.PIDFD_NONBLOCK`，以在非阻塞模式下打开具有 :func:`os.pidfd_open` 的进程的文件描述符。 "
+"（由 Kumar Aditya 在 :gh:`93312` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:621
 msgid ""
@@ -917,6 +927,8 @@ msgid ""
 "to check if the entry is a junction. (Contributed by Charles Machalow in "
 ":gh:`99547`.)"
 msgstr ""
+":class:`os.DirEntry` 现在包括一个 :meth:`os.DirEntry.is_junction` 方法来检查该条目是否为目录联接。"
+" （由 Charles Machalow 在 :gh:`99547` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:625
 msgid ""
@@ -924,6 +936,8 @@ msgid ""
 "functions on Windows for enumerating drives, volumes and mount points. "
 "(Contributed by Steve Dower in :gh:`102519`.)"
 msgstr ""
+"在 Windows 版中添加 :func:`os.listdrives`、:func:`os.listvolumes` 和 "
+":func:`os.listmounts` 函数，用于枚举驱动器、卷和挂载点。 （由 Steve Dower 在 :gh:`102519` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:629
 msgid ""
@@ -937,6 +951,11 @@ msgid ""
 "faster on newer releases of Windows. (Contributed by Steve Dower in "
 ":gh:`99726`.)"
 msgstr ""
+":func:`os.stat` 和 :func:`os.lstat` 现在在 Windows 系统上更准确了。 ``st_birthtime`` "
+"字段现在将使用文件的创建时间，``st_ctime`` 已弃用，但仍包含创建时间（但为了与其他平台保持一致，将来将返回最后一次元数据更改时间）。 "
+"``st_dev`` 可以高达 64 位，``st_ino`` 可以高达 128 位，具体取决于你的文件系统，并且 ``st_rdev`` "
+"始终设置为零，而非不正确的值。 这两个函数在较新版本的 Windows 上将会明显更快。  （由 Steve Dower 在 :gh:`99726` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:640
 msgid "os.path"
@@ -947,12 +966,16 @@ msgid ""
 "Add :func:`os.path.isjunction` to check if a given path is a junction. "
 "(Contributed by Charles Machalow in :gh:`99547`.)"
 msgstr ""
+"添加 :func:`os.path.isjunction` 以检查给定路径是否为目录联接。 （由 Charles Machalow 在 "
+":gh:`99547` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:645
 msgid ""
 "Add :func:`os.path.splitroot` to split a path into a triad ``(drive, root, "
 "tail)``. (Contributed by Barney Gale in :gh:`101000`.)"
 msgstr ""
+"添加 :func:`os.path.splitroot` 以将路径拆分为三元组 ``(drive, root, tail)``。（由 Barney "
+"Gale 在 :gh:`101000` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:649
 msgid "pathlib"
@@ -965,6 +988,8 @@ msgid ""
 "Subclasses may override the :meth:`~pathlib.PurePath.with_segments` method "
 "to pass information between path instances."
 msgstr ""
+"增加对 :class:`pathlib.PurePath` 和 :class:`~pathlib.Path` 的子类化支持，以及它们的 Posix 和 "
+"Windows 特定变体。 子类可以重写 :meth:`~pathlib.PurePath.with_segments` 方法来在路径实例之间传递信息。"
 
 #: ../../whatsnew/3.12.rst:656
 msgid ""
@@ -972,6 +997,8 @@ msgid ""
 "generating all file or directory names within them, similar to "
 ":func:`os.walk`. (Contributed by Stanislav Zmiev in :gh:`90385`.)"
 msgstr ""
+"添加 :meth:`~pathlib.Path.walk`，用于遍历目录树并生成其中的所有文件或目录名，类似于 :func:`os.walk`。 （由 "
+"Stanislav Zmiev 在 :gh:`90385` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:660
 msgid ""
@@ -980,6 +1007,8 @@ msgid ""
 "consistent with :func:`os.path.relpath`. (Contributed by Domenico Ragusa in "
 ":issue:`40358`.)"
 msgstr ""
+"添加可选形参 *walk_up* 到 :meth:`pathlib.PurePath.relative_to`，以允许在结果中插入 ``..`` "
+"条目；此行为更符合 :func:`os.path.relpath`。 （由 Domenico Ragusa 在 :issue:`40358` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:665
 msgid ""
@@ -987,6 +1016,8 @@ msgid ""
 ":func:`os.path.isjunction`. (Contributed by Charles Machalow in "
 ":gh:`99547`.)"
 msgstr ""
+"添加 :meth:`pathlib.Path.is_junction` 作为 :func:`os.path.isjunction` 的代理。 （由 "
+"Charles Machalow 在 :gh:`99547` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:668
 msgid ""
@@ -995,6 +1026,9 @@ msgid ""
 "the path's case sensitivity, allowing for more precise control over the "
 "matching process."
 msgstr ""
+"为 :meth:`pathlib.Path.glob`、:meth:`pathlib.Path.rglob` 和 "
+":meth:`pathlib.PurePath.match` 添加可选形参 "
+"*case_sensitive*，以匹配路径的大小写敏感性，从而对匹配过程进行更精确的控制。"
 
 #: ../../whatsnew/3.12.rst:673
 msgid "pdb"
@@ -1005,7 +1039,7 @@ msgid ""
 "Add convenience variables to hold values temporarily for debug session and "
 "provide quick access to values like the current frame or the return value. "
 "(Contributed by Tian Gao in :gh:`103693`.)"
-msgstr ""
+msgstr "添加便利变量以临时保存调试会话的值，并提供对当前帧或返回值等值的快速访问。 （由高天在 :gh:`103693` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:681
 msgid "random"
@@ -1016,12 +1050,15 @@ msgid ""
 "Added :func:`random.binomialvariate`. (Contributed by Raymond Hettinger in "
 ":gh:`81620`.)"
 msgstr ""
+"添加了 :func:`random.binomialvariate`。 （由 Raymond Hettinger 在 :gh:`81620` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:686
 msgid ""
 "Added a default of ``lamb=1.0`` to :func:`random.expovariate`. (Contributed "
 "by Raymond Hettinger in :gh:`100234`.)"
 msgstr ""
+"在 :func:`random.expovariate` 中添加了一个默认值 ``lamb=1.0``。 （由 Raymond Hettinger 在 "
+":gh:`100234` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:690
 msgid "shutil"
@@ -1034,6 +1071,9 @@ msgid ""
 "the current working directory of the process to *root_dir* to perform "
 "archiving. (Contributed by Serhiy Storchaka in :gh:`74696`.)"
 msgstr ""
+":func:`shutil.make_archive` 现在将 *rootdir* 参数传递给支持它的自定义存档程序。 "
+"在这种情况下，它不再临时将进程的当前工作目录更改为 *rootdir* 来执行存档。 （由 Serhiy Storchaka 在 :gh:`74696`"
+" 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:698
 msgid ""
@@ -1042,6 +1082,9 @@ msgid ""
 " *(typ, val, tb)* triplet. *onerror* is deprecated and will be removed in "
 "Python 3.14. (Contributed by Irit Katriel in :gh:`102828`.)"
 msgstr ""
+":func:`shutil.rmtree` 现在接受一个新的参数 *onexc* ，它是一个类似 *onerror* "
+"的错误处理器，但它需要一个异常实例，而不是一个 *(typ, val, tb)*  三元组。 *onerror* 已弃用，并将在 Python 3.14"
+" 中移除。 （由 Irit Katriel 在 :gh:`102828` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:704
 msgid ""
@@ -1049,6 +1092,8 @@ msgid ""
 " matches within *PATH* on Windows even when the given *cmd* includes a "
 "directory component. (Contributed by Charles Machalow in :gh:`103179`.)"
 msgstr ""
+":func:`shutil.which` 现在即使给定的 *cmd* 包含目录组件，在 Windows 系统上也会参考 *PATHEXT* 环境变量在 "
+"*PATH* 中查找匹配项。 （由 Charles Machalow 在 :gh:`103179` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:709
 msgid ""
@@ -1057,6 +1102,9 @@ msgid ""
 "directory should be prepended to the search path. (Contributed by Charles "
 "Machalow in :gh:`103179`.)"
 msgstr ""
+":func:`shutil.which` 将在 Windows 上查询可执行文件时调用 "
+"``NeedCurrentDirectoryForExePathW``，以确定是否应将当前工作目录预先设置为搜索路径。 （由 Charles "
+"Machalow 在 :gh:`103179` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:714
 msgid ""
@@ -2492,35 +2540,39 @@ msgstr ""
 
 #: ../../whatsnew/3.12.rst:1553
 msgid "Code object constructors:"
-msgstr ""
+msgstr "代码对象构造器:"
 
 #: ../../whatsnew/3.12.rst:1555
 msgid "``PyUnstable_Code_New()`` (renamed from ``PyCode_New``)"
-msgstr ""
+msgstr "``PyUnstable_Code_New()`` (由 ``PyCode_New`` 改名而来)"
 
 #: ../../whatsnew/3.12.rst:1556
 msgid ""
 "``PyUnstable_Code_NewWithPosOnlyArgs()`` (renamed from "
 "``PyCode_NewWithPosOnlyArgs``)"
 msgstr ""
+"``PyUnstable_Code_NewWithPosOnlyArgs()`` (由 ``PyCode_NewWithPosOnlyArgs`` "
+"改名而来)"
 
 #: ../../whatsnew/3.12.rst:1558
 msgid "Extra storage for code objects (:pep:`523`):"
-msgstr ""
+msgstr "代码对象的额外存储 (:pep:`523`):"
 
 #: ../../whatsnew/3.12.rst:1560
 msgid ""
 "``PyUnstable_Eval_RequestCodeExtraIndex()`` (renamed from "
 "``_PyEval_RequestCodeExtraIndex``)"
 msgstr ""
+"``PyUnstable_Eval_RequestCodeExtraIndex()`` (由 "
+"``_PyEval_RequestCodeExtraIndex`` 改名而来)"
 
 #: ../../whatsnew/3.12.rst:1561
 msgid "``PyUnstable_Code_GetExtra()`` (renamed from ``_PyCode_GetExtra``)"
-msgstr ""
+msgstr "``PyUnstable_Code_GetExtra()`` (由 ``_PyCode_GetExtra`` 改名而来)"
 
 #: ../../whatsnew/3.12.rst:1562
 msgid "``PyUnstable_Code_SetExtra()`` (renamed from ``_PyCode_SetExtra``)"
-msgstr ""
+msgstr "``PyUnstable_Code_SetExtra()`` (由 ``_PyCode_SetExtra`` 改名而来)"
 
 #: ../../whatsnew/3.12.rst:1564
 msgid ""

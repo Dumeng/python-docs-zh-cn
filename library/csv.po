@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:03+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -419,7 +419,7 @@ msgstr ""
 msgid ""
 "Instructs :class:`reader` objects to perform no special processing of quote "
 "characters."
-msgstr ""
+msgstr "指示 :class:`reader` 对象不对引号字符执行特殊处理。"
 
 #: ../../library/csv.rst:344
 msgid ""
@@ -427,12 +427,15 @@ msgid ""
 "``None``.  This is similar to :data:`QUOTE_ALL`, except that if a field "
 "value is ``None`` an empty (unquoted) string is written."
 msgstr ""
+"指示 :class:`writer` 对象为所有不为 ``None`` 的字段加引号。 这类似于 "
+":data:`QUOTE_ALL`，区别是如果一个字段值为 ``None`` 则会写入一个（不带引号的）空字符串。"
 
 #: ../../library/csv.rst:348
 msgid ""
 "Instructs :class:`reader` objects to interpret an empty (unquoted) field as "
 "None and to otherwise behave as :data:`QUOTE_ALL`."
 msgstr ""
+"指示 :class:`reader` 对象将（不带引号的）空字段解读为 None 并在其他情况下采取与 :data:`QUOTE_ALL` 相同的行为。"
 
 #: ../../library/csv.rst:353
 msgid ""
@@ -440,12 +443,16 @@ msgid ""
 " are strings.  This is similar to :data:`QUOTE_NONNUMERIC`, except that if a"
 " field value is ``None`` an empty (unquoted) string is written."
 msgstr ""
+"指示 :class:`writer` 对象总是为字符串字段加引号。 这类似于 :data:`QUOTE_NONNUMERIC`，区别是如果一个字段值为 "
+"``None`` 则会写入一个（不带引号的）空字符串。"
 
 #: ../../library/csv.rst:357
 msgid ""
 "Instructs :class:`reader` objects to interpret an empty (unquoted) string as"
 " ``None`` and to otherwise behave as :data:`QUOTE_NONNUMERIC`."
 msgstr ""
+"指示 :class:`reader` 对象将（不带引号的）空字符串解读为 ``None`` 并在其他情况下采取与 "
+":data:`QUOTE_NONNUMERIC` 相同的行为。"
 
 #: ../../library/csv.rst:360
 msgid "The :mod:`csv` module defines the following exception:"

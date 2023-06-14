@@ -1112,6 +1112,8 @@ msgid ""
 "from ``PATHEXT`` prior to a direct match elsewhere in the search path on "
 "Windows. (Contributed by Charles Machalow in :gh:`103179`.)"
 msgstr ""
+"在 Windows 上 :func:`shutil.which` 将在搜索路径的其他地方直接匹配之前返回 *cmd* 与来自 ``PATHEXT`` "
+"的组件相匹配的路径。 （由 Charles Machalow 在 :gh:`103179` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:720
 msgid "sqlite3"

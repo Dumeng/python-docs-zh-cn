@@ -183,7 +183,7 @@ msgstr "解释器的内部帧表示。"
 
 #: ../../c-api/frame.rst:149
 msgid "Return a :term:`strong reference` to the code object for the frame."
-msgstr "对帧的代码对象返回一个强引用。"
+msgstr "返回一个指向帧的代码对象的 :term:`strong reference`。"
 
 #: ../../c-api/frame.rst:156
 msgid "Return the byte offset into the last executed instruction."

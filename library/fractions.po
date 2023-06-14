@@ -6,17 +6,17 @@
 # Translators:
 # Dingyuan Wang <abcdoyle888@gmail.com>, 2021
 # Zhe He <hezhe88@gmail.com>, 2021
-# Freesand Leo <yuqinju@163.com>, 2023
 # zeroswan <zeroswan@outlook.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:06+0000\n"
-"Last-Translator: zeroswan <zeroswan@outlook.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -128,7 +128,7 @@ msgstr ":class:`Fraction` 现在实现了 ``__int__`` 以满足 ``typing.Support
 #: ../../library/fractions.rst:101
 msgid ""
 "Space is allowed around the slash for string inputs: ``Fraction('2 / 3')``."
-msgstr ""
+msgstr "允许字符串输入在斜杠两边添加空格: ``Fraction('2 / 3')``。"
 
 #: ../../library/fractions.rst:104
 msgid ""
@@ -136,6 +136,8 @@ msgid ""
 "presentation types ``\"e\"``, ``\"E\"``, ``\"f\"``, ``\"F\"``, ``\"g\"``, "
 "``\"G\"`` and ``\"%\"\"``."
 msgstr ""
+":class:`Fraction` 实例现在支持浮点风格的格式化，使用 ``\"e\"``, ``\"E\"``, ``\"f\"``, "
+"``\"F\"``, ``\"g\"``, ``\"G\"`` 和 ``\"%\"\"`` 等表示类型。."
 
 #: ../../library/fractions.rst:111
 msgid "Numerator of the Fraction in lowest term."
@@ -149,11 +151,11 @@ msgstr "最简分数形式的分母。"
 msgid ""
 "Return a tuple of two integers, whose ratio is equal to the original "
 "Fraction.  The ratio is in lowest terms and has a positive denominator."
-msgstr ""
+msgstr "返回由两个整数组成的元组，两数之比等于原 Fraction 的值且其分母为正数。"
 
 #: ../../library/fractions.rst:128
 msgid "Return ``True`` if the Fraction is an integer."
-msgstr ""
+msgstr "如果 Fraction 为整数则返回 ``True``。"
 
 #: ../../library/fractions.rst:134
 msgid ""
@@ -230,6 +232,11 @@ msgid ""
 ":class:`Fraction` object ``x`` follows the rules outlined for the "
 ":class:`float` type in the :ref:`formatspec` section."
 msgstr ""
+"通过 :meth:`str.format` 方法、:func:`format` 内置函数或 :ref:`格式化字符串字面值 <f-strings>` "
+"为浮点风格的 :class:`Fraction` 实例格式化提供支持。 支持 ``\"e\"``, ``\"E\"``, ``\"f\"``, "
+"``\"F\"``, ``\"g\"``, ``\"G\"`` 和 ``\"%\"`` 等表示类型。 "
+"对于这些表示类型，:class:`Fraction` 对象 ``x`` 的格式化遵循 :ref:`formatspec` 小节中针对 "
+":class:`float` 类型的规则说明。"
 
 #: ../../library/fractions.rst:212
 msgid "Here are some examples::"

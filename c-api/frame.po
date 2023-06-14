@@ -8,8 +8,8 @@
 # LeeWendao <LeeWendao@outlook.com>, 2022
 # Xie Yanbo <xieyanbo@gmail.com>, 2023
 # Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # starklin, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -18,7 +18,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2022-11-05 19:48+0000\n"
-"Last-Translator: starklin, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,7 +145,7 @@ msgstr "成功时返回一个指向变量值的 :term:`strong reference`。"
 #: ../../c-api/frame.rst:105
 msgid ""
 "Raise :exc:`NameError` and return ``NULL`` if the variable does not exist."
-msgstr "引发:exc:`NameError`并返回``NULL``如果该变量不存在。"
+msgstr "引发 :exc:`NameError` 并返回 ``NULL`` 如果该变量不存在。"
 
 #: ../../c-api/frame.rst:106
 msgid "Raise an exception and return ``NULL`` on error."
@@ -153,13 +153,13 @@ msgstr "引发异常并返回``NULL``错误。"
 
 #: ../../c-api/frame.rst:108
 msgid "*name* type must be a :class:`str`."
-msgstr "*name*必须是:class:`str`类型的。"
+msgstr "*name* 必须是 :class:`str` 类型的。"
 
 #: ../../c-api/frame.rst:115
 msgid ""
 "Similar to :c:func:`PyFrame_GetVar`, but the variable name is a C string "
 "encoded in UTF-8."
-msgstr "和:c:func:`PyFrame_GetVar`相似，但该变量名是一个使用UTF-8编码的C字符串。"
+msgstr "和 :c:func:`PyFrame_GetVar` 相似，但该变量名是一个使用 UTF-8 编码的 C 字符串。"
 
 #: ../../c-api/frame.rst:123
 msgid "Get the *frame*'s ``f_locals`` attribute (:class:`dict`)."

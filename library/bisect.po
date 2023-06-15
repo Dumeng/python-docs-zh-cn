@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-09 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 00:56+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -39,6 +39,7 @@ msgid ""
 "expensive comparison operations, this can be an improvement over linear "
 "searches or frequent resorting."
 msgstr ""
+"本模块提供对维护一个已排序列表而无须在每次插入后对该列表重排序的支持。 对于具有大量条目需要大量比较运算的长列表，这改进了原来的线性搜索或频繁重排序。"
 
 #: ../../library/bisect.rst:19
 msgid ""
@@ -50,6 +51,9 @@ msgid ""
 "only call the :meth:`__lt__` method and will return an insertion point "
 "between values in an array."
 msgstr ""
+"本模块被命名为 :mod:`bisect` 是因为它使用了基本的二分算法。 不同于其他搜索特定值的二分算法工具，本模块中的函数被设计为定位插入点。 "
+"相应的，这些函数绝不会调用 :meth:`__eq__` 方法来确定是否找到特定值。 相反，这些函数只会调用 :meth:`__lt__` "
+"方法并将返回一个数组的值之间的插入点。"
 
 #: ../../library/bisect.rst:29
 msgid "The following functions are provided:"
@@ -75,6 +79,8 @@ msgid ""
 "slice and ``all(elem >= x for elem in a[ip : hi])`` is true for the right "
 "slice."
 msgstr ""
+"返回的插入点 *ip* 将数组 *a* 分为两个切片使得对于左侧切片 ``all(elem < x for elem in a[lo : ip])`` "
+"为真值而对于右侧切片 ``all(elem >= x for elem in a[ip : hi])`` 为真值。"
 
 #: ../../library/bisect.rst:46
 msgid ""
@@ -89,7 +95,7 @@ msgstr ""
 msgid ""
 "If *key* is ``None``, the elements are compared directly and no key function"
 " is called."
-msgstr ""
+msgstr "如果 *key* 为 ``None``，则将直接比较元素而不调用任何键函数。"
 
 #: ../../library/bisect.rst:53 ../../library/bisect.rst:67
 #: ../../library/bisect.rst:85 ../../library/bisect.rst:105
@@ -110,6 +116,8 @@ msgid ""
 "slice and ``all(elem > x for elem in a[ip : hi])`` is true for the right "
 "slice."
 msgstr ""
+"返回的插入点 *ip* 将数组 *a* 分为两个切片使得对于左侧切片 ``all(elem <= x for elem in a[lo : ip])``"
+" 为真值而对于右则切片 ``all(elem > x for elem in a[ip : hi])`` 为真值。"
 
 #: ../../library/bisect.rst:73
 msgid "Insert *x* in *a* in sorted order."

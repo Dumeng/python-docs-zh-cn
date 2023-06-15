@@ -4,24 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Shengjing Zhu <zsj950618@gmail.com>, 2021
-# dannyvi <dannyvis@icloud.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2021
-# 叶浚安 <ye.pandaaaa906@gmail.com>, 2021
-# nick <2330458484@qq.com>, 2021
-# jaystone776 <1732865113@qq.com>, 2021
-# walkinrain <walkinrain2008@outlook.com>, 2022
-# ppcfish <ppcfish@gmail.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 19:38+0000\n"
-"PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-06-09 14:40+0000\n"
+"PO-Revision-Date: 2023-05-24 02:20+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -885,10 +877,8 @@ msgid ""
 "and data sizes.  Internal pad bytes are normally inserted automatically.  It"
 " is possible that a zero-repeat format code will be needed at the end of a "
 "format string to round up to the correct byte boundary for proper alignment "
-"of consecutive chunks of data."
+"of consective chunks of data."
 msgstr ""
-"当构造模仿原生布局的格式字符串时，编译器和机器架构会决定字节顺序和填充。 在这种情况下，应当使用 ``@`` 格式字符来指明原生字节顺序和数据大小。 "
-"内部填充字节通常是自动插入的。 为了正确对齐连续的数据块可能会在格式字符串末尾需要一个零重复的格式代码以舍入到正确的字节边界。"
 
 #: ../../library/struct.rst:467
 msgid ""
@@ -964,11 +954,11 @@ msgstr ""
 
 #: ../../library/struct.rst:550
 msgid ""
-"The compiled versions of the most recent format strings passed to the "
-"module-level functions are cached, so programs that use only a few format "
-"strings needn't worry about reusing a single :class:`Struct` instance."
+"The compiled versions of the most recent format strings passed to "
+":class:`Struct` and the module-level functions are cached, so programs that "
+"use only a few format strings needn't worry about reusing a single "
+":class:`Struct` instance."
 msgstr ""
-"传递线路模块层级函数的已编译版最新格式字符串会被缓存，因此只使用少量格式字符串的程序无需担心重用单独的 :class:`Struct` 实例。"
 
 #: ../../library/struct.rst:555
 msgid "Compiled Struct objects support the following methods and attributes:"

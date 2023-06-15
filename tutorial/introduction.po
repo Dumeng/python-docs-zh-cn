@@ -4,22 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# eric R <trencyclopedia@gmail.com>, 2021
-# Woko <banbooliu@gmail.com>, 2021
-# jaystone776 <1732865113@qq.com>, 2021
-# ww song <sww4718168@gmail.com>, 2022
-# 乐成 王, 2023
-# Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
-"PO-Revision-Date: 2021-06-28 01:50+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-06-09 14:40+0000\n"
+"PO-Revision-Date: 2023-05-24 02:23+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -272,9 +266,9 @@ msgstr "注意，-0 和 0 一样，因此，负数索引从 -1 开始。"
 #: ../../tutorial/introduction.rst:276
 msgid ""
 "In addition to indexing, *slicing* is also supported.  While indexing is "
-"used to obtain individual characters, *slicing* allows you to obtain a "
+"used to obtain individual characters, *slicing* allows you to obtain "
 "substring::"
-msgstr "除了索引操作，还支持 *切片*。 索引用来获取单个字符，而 *切片* 允许你获取子字符串::"
+msgstr ""
 
 #: ../../tutorial/introduction.rst:284
 msgid ""

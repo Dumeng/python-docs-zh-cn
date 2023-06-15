@@ -4,19 +4,16 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# cdarlint <cdarling@126.com>, 2021
-# ww song <sww4718168@gmail.com>, 2021
-# Alpha Du <alphanow@gmail.com>, 2022
-# Freesand Leo <yuqinju@163.com>, 2023
+# Rafael Fontenelle <rffontenelle@gmail.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.12\n"
+"Project-Id-Version: Python 3.11\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
-"PO-Revision-Date: 2021-06-28 01:51+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"POT-Creation-Date: 2023-06-09 14:40+0000\n"
+"PO-Revision-Date: 2023-05-24 02:23+0000\n"
+"Last-Translator: Rafael Fontenelle <rffontenelle@gmail.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -276,13 +273,10 @@ msgstr ""
 msgid ""
 "The standard Python GUI toolkit is :mod:`tkinter`, based on the cross-"
 "platform Tk toolkit (https://www.tcl.tk). An Aqua-native version of Tk is "
-"bundled with macOS by Apple, and the latest version can be downloaded and "
+"bundled with OS X by Apple, and the latest version can be downloaded and "
 "installed from https://www.activestate.com; it can also be built from "
 "source."
 msgstr ""
-"标准的 Python GUI 工具包是 :mod:`tkinter`，基于跨平台的 Tk 工具包（https://www.tcl.tk）。 Apple "
-"的 macOS 捆绑了 Aqua 原生版本的 Tk，其最新版本可以从 https://www.activestate.com "
-"下载和安装；它也可以从源代码构建。"
 
 #: ../../using/mac.rst:151
 msgid ""

@@ -11,9 +11,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-06-16 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:52+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -261,7 +261,7 @@ msgstr "请参阅 :pep:`6` 了解有关问题修正发布的更多信息。"
 
 #: ../../faq/general.rst:138
 msgid ""
-"Not all releases are bugfix releases.  In the run-up to a new major release,"
+"Not all releases are bugfix releases.  In the run-up to a new minor release,"
 " a series of development releases are made, denoted as alpha, beta, or "
 "release candidate.  Alphas are early releases in which interfaces aren't yet"
 " finalized; it's not unexpected to see an interface change between two alpha"
@@ -269,10 +269,6 @@ msgid ""
 "possibly adding new modules, and release candidates are frozen, making no "
 "changes except as needed to fix critical bugs."
 msgstr ""
-"发布版本并非都是问题修正版本。 在新的主要发布版本开发过程中，还会发布一系列的开发版，它们以 alpha (a), beta (b) 或 release"
-" candidate (rc) 来标示。 其中 alpha 版是早期发布的测试版，它的接口并未最终确定；在两个 alpha "
-"发布版本间出现接口的改变并不意外。 而 beta 版更为稳定，它会保留现有的接口，但也可能增加新的模块，release candidate "
-"版则会保持冻结状态不会再进行改变，除非有重大问题需要修正。"
 
 #: ../../faq/general.rst:146
 msgid "Alpha, beta and release candidate versions have an additional suffix:"
@@ -562,10 +558,8 @@ msgstr "Python 有多稳定？"
 msgid ""
 "Very stable.  New, stable releases have been coming out roughly every 6 to "
 "18 months since 1991, and this seems likely to continue.  As of version 3.9,"
-" Python will have a major new release every 12 months (:pep:`602`)."
+" Python will have a minor new release every 12 months (:pep:`602`)."
 msgstr ""
-"非常稳定。 自 1991 年起大约每隔 6 到 18 个月就会推出新的稳定发布版，这种状态看来还还持续。 从 3.9 版开始，Python 将会每隔 "
-"12 个月推出一个新的主要发布版 (:pep:`602`)。"
 
 #: ../../faq/general.rst:302
 msgid ""

@@ -14,17 +14,17 @@
 # Y. Z. Chen <754097987@qq.com>, 2023
 # Shengjing Zhu <zsj950618@gmail.com>, 2023
 # WH-2099 <wh2099@outlook.com>, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Dai Xu <daixu61@hotmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-16 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:49+0000\n"
-"Last-Translator: Dai Xu <daixu61@hotmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1210,27 +1210,28 @@ msgstr "有关 :keyword:`nonlocal` 语句的规范说明。"
 
 #: ../../reference/simple_stmts.rst:1020
 msgid "The :keyword:`!type` statement"
-msgstr ""
+msgstr ":keyword:`!type` 语句"
 
 #: ../../reference/simple_stmts.rst:1027
 msgid ""
 "The :keyword:`!type` statement declares a type alias, which is an instance "
 "of :class:`typing.TypeAliasType`."
-msgstr ""
+msgstr ":keyword:`!type` 语句声明一个类型别名，即 :class:`typing.TypeAliasType` 的实例。"
 
 #: ../../reference/simple_stmts.rst:1030
 msgid "For example, the following statement creates a type alias::"
-msgstr ""
+msgstr "例如，以下语句创建了一个类型别名::"
 
 #: ../../reference/simple_stmts.rst:1034
 msgid "This code is roughly equivalent to::"
-msgstr ""
+msgstr "此代码大致等价于::"
 
 #: ../../reference/simple_stmts.rst:1040
 msgid ""
 "``annotation-def`` indicates an :ref:`annotation scope <annotation-scopes>`,"
 " which behaves mostly like a function, but with several small differences."
 msgstr ""
+"``annotation-def`` 指定一个 :ref:`标注作用域 <annotation-scopes>`，其行为很像是一个函数，但有几个小差别。"
 
 #: ../../reference/simple_stmts.rst:1043
 msgid ""
@@ -1240,26 +1241,30 @@ msgid ""
 ":ref:`lazy-evaluation`). This allows the type alias to refer to names that "
 "are not yet defined."
 msgstr ""
+"类型别名的值是在标注作用域中被求值的。 当创建类型别名时它不会被求值，只有当通过该类型别名的 :attr:`!__value__` "
+"属性访问时它才会被求值 (参见 :ref:`lazy-evaluation`)。 这允许类型别名引用尚未被定义的名称。"
 
 #: ../../reference/simple_stmts.rst:1049
 msgid ""
 "Type aliases may be made generic by adding a :ref:`type parameter list "
 "<type-params>` after the name. See :ref:`generic-type-aliases` for more."
 msgstr ""
+"类型别名可以通过在名称之后添加 :ref:`类型形参列表 <type-params>` 来泛型化。 请参阅 :ref:`generic-type-"
+"aliases` 了解详情。"
 
 #: ../../reference/simple_stmts.rst:1052
 msgid ":keyword:`!type` is a :ref:`soft keyword <soft-keywords>`."
-msgstr ""
+msgstr ":keyword:`!type` 是一个 :ref:`软关键字 <soft-keywords>`。"
 
 #: ../../reference/simple_stmts.rst:1059
 msgid ":pep:`695` - Type Parameter Syntax"
-msgstr ""
+msgstr ":pep:`695` - 类型形参语法"
 
 #: ../../reference/simple_stmts.rst:1059
 msgid ""
 "Introduced the :keyword:`!type` statement and syntax for generic classes and"
 " functions."
-msgstr ""
+msgstr "引入了 :keyword:`!type` 语句和用于泛型类和函数的语法。"
 
 #: ../../reference/simple_stmts.rst:8
 msgid "simple"

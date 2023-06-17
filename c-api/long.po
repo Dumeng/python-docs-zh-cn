@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-29 16:50+0000\n"
+"POT-Creation-Date: 2023-06-16 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 00:49+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -142,6 +142,12 @@ msgid ""
 "digits or *str* is not NULL-terminated following the digits and trailing "
 "whitespace, :exc:`ValueError` will be raised."
 msgstr ""
+"根据 *str* 字符串值返回一个新的 :c:type:`PyLongObject`，它将根据 *base* 指定的基数来解读，或是在失败时返回 "
+"``NULL``。 如果 *pend* 不为 ``NULL``，则在成功时 *\\*pend* 将指向 *str* "
+"中末尾而在出错时将指向第一个无法处理的字符。 如果 *base* 为 ``0``，则 *str* 将使用 :ref:`integers` "
+"定义来解读；在此情况下，非零十进制数以零开头将会引发 :exc:`ValueError`。 如果 *base* 不为 ``0``，则必须在 ``2`` "
+"和 ``36``，包括这两个值。 开头和末尾的空格以及基数标示符之后和数码之间的单下划线将被忽略。 如果没有数码或 *str* 中数码和末尾空格之后不以"
+" NULL 结束，则将引发 :exc:`ValueError`。"
 
 #: ../../c-api/long.rst:97
 msgid ""
@@ -401,7 +407,7 @@ msgstr "出错时返回  ``NULL``，请利用 :c:func:`PyErr_Occurred` 辨别具
 
 #: ../../c-api/long.rst:329
 msgid "Return 1 if *op* is compact, 0 otherwise."
-msgstr ""
+msgstr "如果 *op* 为紧凑形式则返回 1，否则返回 0。"
 
 #: ../../c-api/long.rst:331
 msgid ""

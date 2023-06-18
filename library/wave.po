@@ -212,11 +212,11 @@ msgstr "Wave_write 对象"
 
 #: ../../library/wave.rst:160
 msgid "Write a WAV file."
-msgstr ""
+msgstr "写入一个 WAV 文件。"
 
 #: ../../library/wave.rst:162
 msgid "Wave_write objects, as returned by :func:`.open`."
-msgstr ""
+msgstr "Wave_write 对象，由 :func:`.open` 返回。"
 
 #: ../../library/wave.rst:164
 msgid ""
@@ -231,10 +231,15 @@ msgid ""
 " case :meth:`writeframes` will calculate the number of frames in the data "
 "and set *nframes* accordingly before writing the frame data."
 msgstr ""
+"对于可查找的输出流，``wave`` 头将自动更新以反映实际写入的帧数。 对于不可查找的流，当写入第一帧时 *nframes* 值必须是准确的。 "
+"要获取准确的 *nframes* 值可以通过调用 :meth:`setnframes` 或 :meth:`setparams` 并附带 "
+":meth:`close` 被调用之前将要写入的帧数然后使用 :meth:`writeframesraw` 来写入帧数据，或者通过调用 "
+":meth:`writeframes` 并附带所有要写入的帧。 在后一种情况下 :meth:`writeframes` "
+"将计算数据中的帧数并在写入帧数据之前相应地设置 *nframes*。"
 
 #: ../../library/wave.rst:179
 msgid "Wave_write objects have the following methods:"
-msgstr ""
+msgstr "Wave_write 对象具有以下方法:"
 
 #: ../../library/wave.rst:183
 msgid ""
@@ -281,6 +286,8 @@ msgid ""
 " compname)``, with values valid for the ``set*()`` methods.  Sets all "
 "parameters."
 msgstr ""
+"*tuple* 应该是 ``(nchannels, sampwidth, framerate, nframes, comptype, "
+"compname)``，每项的值可用于 ``set*()`` 方法。 设置所有形参。"
 
 #: ../../library/wave.rst:230
 msgid ""

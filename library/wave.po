@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-02 14:12+0000\n"
+"POT-Creation-Date: 2023-06-16 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:17+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -38,6 +38,8 @@ msgid ""
 " \"WAVE\" (or \"WAV\") file format. Only uncompressed PCM encoded wave files"
 " are supported."
 msgstr ""
+":mod:`wave` 模块提供了一个处理 Waveform Audio \"WAVE\" (或称 \"WAV\") 文件格式的便利接口。 "
+"仅支持未压缩的 PCM 编码波形文件。"
 
 #: ../../library/wave.rst:20
 msgid ""
@@ -92,7 +94,7 @@ msgid ""
 "If you pass in a file-like object, the wave object will not close it when "
 "its ``close()`` method is called; it is the caller's responsibility to close"
 " the file object."
-msgstr ""
+msgstr "如果你传入一个文件类对象，当调用 wave 对象的 ``close()`` 方法时并不会真正关闭它；调用者需要负责关闭文件对象。"
 
 #: ../../library/wave.rst:48
 msgid ""
@@ -100,6 +102,8 @@ msgid ""
 " the :keyword:`!with` block completes, the :meth:`Wave_read.close()` or "
 ":meth:`Wave_write.close()` method is called."
 msgstr ""
+":func:`.open` 函数可以在 :keyword:`with` 语句中使用。 当 :keyword:`!with` "
+"阻塞结束时，:meth:`Wave_read.close()` 或 :meth:`Wave_write.close()` 方法会被调用。"
 
 #: ../../library/wave.rst:52 ../../library/wave.rst:176
 msgid "Added support for unseekable files."
@@ -117,7 +121,7 @@ msgstr "Wave_read对象"
 
 #: ../../library/wave.rst:68
 msgid "Read a WAV file."
-msgstr ""
+msgstr "读取一个 WAV 文件。"
 
 #: ../../library/wave.rst:70
 msgid ""
@@ -162,6 +166,8 @@ msgid ""
 "framerate, nframes, comptype, compname)``, equivalent to output of the "
 "``get*()`` methods."
 msgstr ""
+"返回一个 :func:`~collections.namedtuple` ``(nchannels, sampwidth, framerate, "
+"nframes, comptype, compname)``，等价于 ``get*()`` 方法的输出。"
 
 #: ../../library/wave.rst:119
 msgid ""

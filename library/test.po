@@ -10,17 +10,17 @@
 # meowmeowcat <meowmeowcat1211@gmail.com>, 2021
 # Alpha Du <alphanow@gmail.com>, 2021
 # Bryan不可思议, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Dai Xu <daixu61@hotmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 14:12+0000\n"
+"POT-Creation-Date: 2023-06-16 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:14+0000\n"
-"Last-Translator: Dai Xu <daixu61@hotmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -451,6 +451,8 @@ msgid ""
 "Python is :ref:`built in debug mode <debug-build>` (:option:`./configure "
 "--with-pydebug <--with-pydebug>`)."
 msgstr ""
+"如果 Python 编译时定义了 :c:macro:`Py_DEBUG` 宏则为 True: Python 是否 :ref:`以调试模式编译 "
+"<debug-build>` (:option:`./configure --with-pydebug <--with-pydebug>`)。"
 
 #: ../../library/test.rst:333
 msgid ""
@@ -545,13 +547,15 @@ msgstr ":mod:`test.support` 模块定义了以下函数:"
 
 #: ../../library/test.rst:418
 msgid "Run the loop body until ``break`` stops the loop."
-msgstr ""
+msgstr "运行循环体直到以 ``break`` 停止循环。"
 
 #: ../../library/test.rst:420
 msgid ""
 "After *timeout* seconds, raise an :exc:`AssertionError` if *error* is true, "
 "or just stop the loop if *error* is false."
 msgstr ""
+"在 *timeout* 秒后，如果 *error* 为真值则引发 :exc:`AssertionError`，或者如果 *error* "
+"为假值则只停止循环。"
 
 #: ../../library/test.rst:423
 msgid "Example::"
@@ -559,11 +563,11 @@ msgstr "示例："
 
 #: ../../library/test.rst:429 ../../library/test.rst:453
 msgid "Example of error=False usage::"
-msgstr ""
+msgstr "error=False 的用法示例::"
 
 #: ../../library/test.rst:439
 msgid "Wait strategy that applies exponential backoff."
-msgstr ""
+msgstr "应用指数回退的等待策略。"
 
 #: ../../library/test.rst:441
 msgid ""
@@ -571,14 +575,16 @@ msgid ""
 "iteration, but not at the first iteration. The sleep delay is doubled at "
 "each iteration (up to *max_delay* seconds)."
 msgstr ""
+"运行循环体直到以 ``break`` 停止循环。 在每次循环迭代时休眠，但第一次迭代时除外。 每次迭代的休眠延时都将加倍（至多 *max_delay* "
+"秒）。"
 
 #: ../../library/test.rst:445
 msgid "See :func:`busy_retry` documentation for the parameters usage."
-msgstr ""
+msgstr "请参阅 :func:`busy_retry` 文档了解相关形参的用法。"
 
 #: ../../library/test.rst:447
 msgid "Example raising an exception after SHORT_TIMEOUT seconds::"
-msgstr ""
+msgstr "在 SHORT_TIMEOUT 秒后引发异常的示例::"
 
 #: ../../library/test.rst:463
 msgid ""
@@ -681,7 +687,7 @@ msgstr ""
 
 #: ../../library/test.rst:541
 msgid "Get size of a page in bytes."
-msgstr ""
+msgstr "获取以字节表示的分页大小。"
 
 #: ../../library/test.rst:548
 msgid ""
@@ -942,9 +948,9 @@ msgstr "用于仅当 :data:`HAVE_DOCSTRINGS` 时才运行测试的装饰器。"
 
 #: ../../library/test.rst:806
 msgid ""
-"Decorator for only running the test if :ref:`Limited C API <stable>` is "
-"available."
-msgstr ""
+"Decorator for only running the test if :ref:`Limited C API <limited-c-api>` "
+"is available."
+msgstr "设置仅在 :ref:`受限 C API <limited-c-api>` 可用时运行测试的装饰器。"
 
 #: ../../library/test.rst:812
 msgid "Decorator for tests only applicable to CPython."

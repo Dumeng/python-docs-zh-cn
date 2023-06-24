@@ -321,10 +321,13 @@ msgid ""
 "``PyDict_EVENT_CLONED``, ``PyDict_EVENT_CLEARED``, or "
 "``PyDict_EVENT_DEALLOCATED``."
 msgstr ""
+"由以下可能的字典监视器事件组成的枚举: ``PyDict_EVENT_ADDED``, ``PyDict_EVENT_MODIFIED``, "
+"``PyDict_EVENT_DELETED``, ``PyDict_EVENT_CLONED``, ``PyDict_EVENT_CLEARED`` "
+"或 ``PyDict_EVENT_DEALLOCATED``。"
 
 #: ../../c-api/dict.rst:286
 msgid "Type of a dict watcher callback function."
-msgstr ""
+msgstr "字典监视器回调函数的类型。"
 
 #: ../../c-api/dict.rst:288
 msgid ""
@@ -334,6 +337,10 @@ msgid ""
 " new value for *key*. If *event* is ``PyDict_EVENT_DELETED``, *key* is being"
 " deleted from the dictionary and *new_value* will be ``NULL``."
 msgstr ""
+"如果 *event* 是 ``PyDict_EVENT_CLEARED`` 或 ``PyDict_EVENT_DEALLOCATED``，则 *key*"
+" 和 *new_value* 都将为 ``NULL``。 如果 *event* 是 ``PyDict_EVENT_ADDED`` 或 "
+"``PyDict_EVENT_MODIFIED``，则 *new_value* 将为 *key* 的新值。 如果 *event* 是 "
+"``PyDict_EVENT_DELETED``，则将从字典中删除 *key* 而 *new_value* 将为 ``NULL``。"
 
 #: ../../c-api/dict.rst:294
 msgid ""

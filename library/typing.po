@@ -102,6 +102,8 @@ msgid ""
 "\"Type System Reference\" section of `the mypy docs "
 "<https://mypy.readthedocs.io/en/stable/index.html>`_"
 msgstr ""
+"`mypy 文档 <https://mypy.readthedocs.io/en/stable/index.html>`_ 的 \"Type "
+"System Reference\" 章节"
 
 #: ../../library/typing.rst:53
 msgid ""
@@ -109,11 +111,13 @@ msgid ""
 "broadly apply to most Python type checkers. (Some parts may still be "
 "specific to mypy.)"
 msgstr ""
+"Python 类型系统是通过 PEP 来标准化的，因此该参考应当广泛适用于大多数 Python 类型检查器。 （但某些部分仍然是 mypy 专属的。）"
 
 #: ../../library/typing.rst:59
 msgid ""
 "`\"Static Typing with Python\" <https://typing.readthedocs.io/en/latest/>`_"
 msgstr ""
+"`\"Static Typing with Python\" <https://typing.readthedocs.io/en/latest/>`_"
 
 #: ../../library/typing.rst:58
 msgid ""

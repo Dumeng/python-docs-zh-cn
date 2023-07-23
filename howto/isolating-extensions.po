@@ -447,6 +447,7 @@ msgid ""
 "Unlike static types, heap type objects are mutable by default. Use the "
 ":c:macro:`Py_TPFLAGS_IMMUTABLETYPE` flag to prevent mutability."
 msgstr ""
+"不同于静态类型，堆类型对象默认是可变的。 请使用 :c:macro:`Py_TPFLAGS_IMMUTABLETYPE` 旗标来防止可变性。"
 
 #: ../../howto/isolating-extensions.rst:302
 msgid ""
@@ -454,6 +455,8 @@ msgid ""
 "become possible to instantiate them from Python code. You can prevent this "
 "with the :c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag."
 msgstr ""
+"堆类型默认继承 :c:member:`~PyTypeObject.tp_new`，因此有可能通过 Python 代码来初始化它们。 你可以使用 "
+":c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` 旗标来防止此特性。"
 
 #: ../../howto/isolating-extensions.rst:308
 msgid "Defining Heap Types"
@@ -503,7 +506,7 @@ msgstr "要避免内存泄漏，堆类型的实例必须实现垃圾回收协议
 
 #: ../../howto/isolating-extensions.rst:336
 msgid "Have the :c:macro:`Py_TPFLAGS_HAVE_GC` flag."
-msgstr ""
+msgstr "具有 :c:macro:`Py_TPFLAGS_HAVE_GC` 旗标。"
 
 #: ../../howto/isolating-extensions.rst:337
 msgid ""

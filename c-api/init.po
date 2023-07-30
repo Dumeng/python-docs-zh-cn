@@ -325,6 +325,8 @@ msgid ""
 ":c:member:`PyConfig.use_environment` should be used instead, see "
 ":ref:`Python Initialization Configuration <init-config>`."
 msgstr ""
+"此 API 仅为向下兼容而保留：应当改为设置 :c:member:`PyConfig.use_environment`，参见 :ref:`Python "
+"初始化配置 <init-config>`。"
 
 #: ../../c-api/init.rst:160
 msgid ""

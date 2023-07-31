@@ -1298,7 +1298,7 @@ msgstr ""
 
 #: ../../library/importlib.rst:950
 msgid "Multi-phase init is now required for use in subinterpreters."
-msgstr ""
+msgstr "在子解释器中使用时需要多阶段初始化。"
 
 #: ../../library/importlib.rst:955
 msgid "Name of the module the loader supports."
@@ -1692,6 +1692,8 @@ msgid ""
 "for a multi-phase init module that doesn't explicitly support a per-"
 "interpreter GIL, when imported in an interpreter with its own GIL."
 msgstr ""
+"一个可以暂时跳过扩展模块兼容性检查的上下文管理器。 在默认情况下该检查将被启用并且当在子解释器中导入单阶段初始化模块时该检查会失败。 "
+"如果多阶段初始化模块没有显式地支持针对子解释器的 GIL，那么当它在一个有自己的 GIL 的解释器中被导入时，该检查也会失败。"
 
 #: ../../library/importlib.rst:1267
 msgid ""

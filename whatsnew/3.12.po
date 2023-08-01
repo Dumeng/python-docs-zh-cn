@@ -2124,6 +2124,8 @@ msgid ""
 ":class:`configparser.ConfigParser` no longer has a ``readfp`` method. Use "
 ":meth:`~configparser.ConfigParser.read_file` instead."
 msgstr ""
+":class:`configparser.ConfigParser` 不再具有 ``readfp`` 方法。 请改用 "
+":meth:`~configparser.ConfigParser.read_file`。"
 
 #: ../../whatsnew/3.12.rst:1213
 msgid ""
@@ -2133,12 +2135,18 @@ msgid ""
 "project can be installed: it still provides ``distutils``. (Contributed by "
 "Victor Stinner in :gh:`92584`.)"
 msgstr ""
+"``distutils``: 移除了 ``distutils`` 包。 它已在 Python 3.10 中根据 :pep:`632` "
+"\"Deprecate distutils module\" 被弃用。 对于仍然使用 ``distutils`` "
+"且无法升级为使用其他工具的项目，可以安装 ``setuptools`` 项目：它仍然提供了 ``distutils``。 （由 Victor "
+"Stinner 在 :gh:`92584` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1219
 msgid ""
 ":mod:`ensurepip`: Remove the bundled setuptools wheel from :mod:`ensurepip`,"
 " and stop installing setuptools in environments created by :mod:`venv`."
 msgstr ""
+":mod:`ensurepip`: 从 :mod:`ensurepip` 中移除了捆绑的 setuptools wheel，并停止在由 "
+":mod:`venv` 创建的环境中安装 setuptools。"
 
 #: ../../whatsnew/3.12.rst:1222
 msgid ""
@@ -2147,6 +2155,9 @@ msgid ""
 "still be used with ``pip install``, since pip will provide ``setuptools`` in"
 " the build environment it uses for building a package."
 msgstr ""
+"``pip (>= 22.1)`` 不再要求在环境中安装 setuptools。 基于 ``setuptools`` (和基于 "
+"``distutils``) 的包仍然可通过 ``pip install`` 来使用，因为 pip 将在它用于构建包的构建环境中提供 "
+"``setuptools``。"
 
 #: ../../whatsnew/3.12.rst:1228
 msgid ""
@@ -2157,6 +2168,9 @@ msgid ""
 "project should be declared as a dependency and installed separately "
 "(typically, using pip)."
 msgstr ""
+"在默认情况下由 ``venv`` 创建或通过 ``ensurepip`` 初始化的环境将不再提供 ``easy_install``, "
+"``pkg_resources``, ``setuptools`` 和 ``distutils`` 包，因为它们是 ``setuptools`` "
+"包的组成部分。 对于在运行时依赖这些包的项目，应当将 ``setuptools`` 项目声明为依赖项之一并单独安装（通常是使用 pip）。"
 
 #: ../../whatsnew/3.12.rst:1235
 msgid "(Contributed by Pradyun Gedam in :gh:`95299`.)"

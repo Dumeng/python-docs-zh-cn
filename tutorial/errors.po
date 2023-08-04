@@ -15,9 +15,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Python 3.11\n"
+"Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-19 14:13+0000\n"
+"POT-Creation-Date: 2023-08-04 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:50+0000\n"
 "Last-Translator: Alpha Du <alphanow@gmail.com>, 2022\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -209,17 +209,15 @@ msgid ""
 "The *except clause* may specify a variable after the exception name.  The "
 "variable is bound to the exception instance which typically has an ``args`` "
 "attribute that stores the arguments. For convenience, builtin exception "
-"types define :meth:`__str__` to print all the arguments without explicitly "
-"accessing ``.args``.  ::"
+"types define :meth:`~object.__str__` to print all the arguments without "
+"explicitly accessing ``.args``.  ::"
 msgstr ""
-"在 *except 子句* 中，可以在异常名称后面指定一个变量。 这个变量被绑定到异常实例上，该实例通常有一个存储参数的 ``args`` "
-"属性。为了方便起见，内置的异常类型定义了 :meth:`__str__` 来打印所有的参数，而不需要明确地访问 ``.args`` 。 ::"
 
 #: ../../tutorial/errors.rst:177
 msgid ""
-"The exception's :meth:`__str__` output is printed as the last part "
+"The exception's :meth:`~object.__str__` output is printed as the last part "
 "('detail') of the message for unhandled exceptions."
-msgstr "未处理异常的 :meth:`__str__` 输出被打印为该异常消息的最后部分（ 'detail' ）。"
+msgstr ""
 
 #: ../../tutorial/errors.rst:180
 msgid ""
@@ -541,7 +539,7 @@ msgstr ""
 "，我们可以有选择地只处理组中符合某种类型的异常。在下面的例子中，显示了一个嵌套的异常组，每个 ``except*`` "
 "子句都从组中提取了某种类型的异常，而让所有其他的异常传播到其他子句，并最终被重新引发。"
 
-#: ../../tutorial/errors.rst:564
+#: ../../tutorial/errors.rst:573
 msgid ""
 "Note that the exceptions nested in an exception group must be instances, not"
 " types. This is because in practice the exceptions would typically be ones "
@@ -549,11 +547,11 @@ msgid ""
 " pattern::"
 msgstr "注意，嵌套在一个异常组中的异常必须是实例，而不是类型。这是因为在实践中，这些异常通常是那些已经被程序提出并捕获的异常，其模式如下::"
 
-#: ../../tutorial/errors.rst:582
+#: ../../tutorial/errors.rst:593
 msgid "Enriching Exceptions with Notes"
 msgstr "用注释细化异常情况"
 
-#: ../../tutorial/errors.rst:584
+#: ../../tutorial/errors.rst:595
 msgid ""
 "When an exception is created in order to be raised, it is usually "
 "initialized with information that describes the error that has occurred. "
@@ -566,7 +564,7 @@ msgstr ""
 "当一个异常被创建以引发时，它通常被初始化为描述所发生错误的信息。在有些情况下，在异常被捕获后添加信息是很有用的。为了这个目的，异常有一个 "
 "``add_note(note)`` 方法接受一个字符串，并将其添加到异常的注释列表。标准的回溯在异常之后按照它们被添加的顺序呈现包括所有的注释。 ::"
 
-#: ../../tutorial/errors.rst:605
+#: ../../tutorial/errors.rst:616
 msgid ""
 "For example, when collecting exceptions into an exception group, we may want"
 " to add context information for the individual errors. In the following each"

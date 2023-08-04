@@ -3220,6 +3220,8 @@ msgid ""
 "is modified. This is intended for use by optimizing interpreters, JIT "
 "compilers, or debuggers. (Contributed by Carl Meyer in :gh:`91052`.)"
 msgstr ""
+"C API 现在允许通过 :c:func:`PyDict_AddWatcher`、:c:func:`PyDict_Watch` 和相关 API "
+"注册回调，以便在字典被修改时调用。 这主要用于优化解释器、JIT 编译器或调试器。 （由 Carl Meyer 在 :gh:`91052` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1689
 msgid ""
@@ -3227,6 +3229,8 @@ msgid ""
 " callbacks to receive notification on changes to a type. (Contributed by "
 "Carl Meyer in :gh:`91051`.)"
 msgstr ""
+"添加了 :c:func:`PyType_AddWatcher` 和 :c:func:`PyType_Watch` API "
+"用于注册回调以接收类型变更通知。 （由 Carl Meyer 在 :gh:`91051` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1693
 msgid ""
@@ -3234,6 +3238,8 @@ msgid ""
 "register callbacks to receive notification on creation and destruction of "
 "code objects. (Contributed by Itamar Ostricher in :gh:`91054`.)"
 msgstr ""
+"添加了 :c:func:`PyCode_AddWatcher` 和 :c:func:`PyCode_ClearWatcher` API "
+"用于注册回调以接收代码对象创建和销毁时的通知。 （由 Itamar Ostricher 在 :gh:`91054` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1698
 msgid ""
@@ -3241,6 +3247,8 @@ msgid ""
 " get a frame variable by its name. (Contributed by Victor Stinner in "
 ":gh:`91248`.)"
 msgstr ""
+"添加了 :c:func:`PyFrame_GetVar` 和 :c:func:`PyFrame_GetVarString` "
+"函数用于通过名称来获取帧变量。 （由 Victor Stinner 在 :gh:`91248` 中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1702
 msgid ""

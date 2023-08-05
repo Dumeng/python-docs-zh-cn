@@ -2281,6 +2281,9 @@ msgid ""
 ":meth:`!__len__` nor :meth:`!__bool__`, all its instances are considered "
 "true."
 msgstr ""
+"调用此方法以实现真值检测以及内置的 ``bool()`` 操作；应该返回 ``False`` 或 ``True``。 当未定义此方法时，则在定义了 "
+":meth:`~object.__len__` 的情况下将调用它，如果其结果不为零则该对象将被视为具有真值。 如果一个类的 "
+":meth:`!__len__` 或 :meth:`!__bool__` 均未定义，则其所有实例都将被视为具有真值。"
 
 #: ../../reference/datamodel.rst:1606
 msgid "Customizing attribute access"

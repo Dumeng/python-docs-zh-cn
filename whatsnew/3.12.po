@@ -3639,7 +3639,7 @@ msgstr "如果你控制着元类，请避免在其中使用 ``tp_new``:"
 msgid ""
 "If initialization can be skipped, it can be done in "
 ":c:member:`~PyTypeObject.tp_init` instead."
-msgstr ""
+msgstr "如初始化可被跳过，则可以改在 :c:member:`~PyTypeObject.tp_init` 中完成。"
 
 #: ../../whatsnew/3.12.rst:1898
 msgid ""
@@ -3648,6 +3648,8 @@ msgid ""
 ":c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` flag. This makes it acceptable "
 "for ``PyType_From*`` functions."
 msgstr ""
+"如果元类不需要从 Python 执行实例化，则使用 :c:macro:`Py_TPFLAGS_DISALLOW_INSTANTIATION` 旗标将其 "
+"``tp_new`` 设为 ``NULL``。 这将使其可被 ``PyType_From*`` 函数接受。"
 
 #: ../../whatsnew/3.12.rst:1903
 msgid ""
@@ -3655,12 +3657,16 @@ msgid ""
 "(slots or setting the instance size), create types by :ref:`calling <call>` "
 "the metaclass."
 msgstr ""
+"避免使用 ``PyType_From*`` 函数：如果不需要 C 专属的特性（槽位或设置实例大小），请通过 :ref:`调用 <call>` "
+"元类来创建类型。"
 
 #: ../../whatsnew/3.12.rst:1907
 msgid ""
 "If you *know* the ``tp_new`` can be skipped safely, filter the deprecation "
 "warning out using :func:`warnings.catch_warnings` from Python."
 msgstr ""
+"如果你 *知道* 可以安全地跳过 ``tp_new``，就使用 Python 中的 :func:`warnings.catch_warnings` "
+"过滤掉弃用警告。"
 
 #: ../../whatsnew/3.12.rst:1910
 msgid ""

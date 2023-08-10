@@ -838,7 +838,7 @@ msgstr ""
 msgid ""
 "Generate the file names in a directory tree by walking the tree either top-"
 "down or bottom-up."
-msgstr ""
+msgstr "通过对目录树自上而下或自下而上的遍历来生成其中的文件名。"
 
 #: ../../library/pathlib.rst:1054
 msgid ""
@@ -846,6 +846,8 @@ msgid ""
 "but excluding '.' and '..'), the method yields a 3-tuple of ``(dirpath, "
 "dirnames, filenames)``."
 msgstr ""
+"对于根位置为 *self* 的目录树中的每个目录（包括 *self* 但不包括 '.' 和 '..'），该方法会产生一个 3 元组 "
+"``(dirpath, dirnames, filenames)``。"
 
 #: ../../library/pathlib.rst:1058
 msgid ""
@@ -856,6 +858,10 @@ msgid ""
 " begins with *self*) to a file or directory in *dirpath*, do ``dirpath / "
 "name``. Whether or not the lists are sorted is file system-dependent."
 msgstr ""
+"*dirpath* 是指向当前正被遍历到的目录的 :class:`Path`，*dirnames* 是由表示 *dirpath* "
+"中子目录名称的字符串组成的列表 (不包括 ``'.'`` 和 ``'..'``)，*filenames* 是由表示 *dirpath* "
+"中非目录文件名称的字符串组成的列表。 要获取 *dirpath* 中文件或目录的完整路径 (以 *self* 开头)，可使用 ``dirpath / "
+"name``。 这些列表是否排序取决于具体的文件系统。"
 
 #: ../../library/pathlib.rst:1066
 msgid ""

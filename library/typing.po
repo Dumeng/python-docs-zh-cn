@@ -448,6 +448,9 @@ msgid ""
 "``Callable[[int], str]`` signifies a function that takes a single parameter "
 "of type :class:`int` and returns a :class:`str`."
 msgstr ""
+"函数 -- 或其他 :term:`callable` 对象 -- 可以使用 :class:`collections.abc.Callable` 或 "
+":data:`typing.Callable` 来标注。 ``Callable[[int], str]`` 表示一个接受 :class:`int` "
+"类型的单个参数并返回 :class:`str` 的函数。"
 
 #: ../../library/typing.rst:271 ../../library/typing.rst:2873
 #: ../../library/typing.rst:3015
@@ -461,12 +464,14 @@ msgid ""
 "types, a :class:`ParamSpec`, :data:`Concatenate`, or an ellipsis. The return"
 " type must be a single type."
 msgstr ""
+"下标语法总是要刚好使用两个值：参数列表和返回类型。 "
+"参数列表必须是一个由类型组成的列表、:class:`ParamSpec`、:data:`Concatenate` 或省略号。 返回类型必须是单一类型。"
 
 #: ../../library/typing.rst:294
 msgid ""
 "If a literal ellipsis ``...`` is given as the argument list, it indicates "
 "that a callable with any arbitrary parameter list would be acceptable:"
-msgstr ""
+msgstr "如果将一个省略号字面值 ``...`` 作为参数列表，则表示可以接受包含任意形参列表的可调用对象:"
 
 #: ../../library/typing.rst:306
 msgid ""
@@ -476,6 +481,8 @@ msgid ""
 "be expressed by defining a :class:`Protocol` class with a "
 ":meth:`~object.__call__` method:"
 msgstr ""
+"``Callable`` 无法表达复杂的签名如接受可变数量参数的函数、:func:`重载的函数 <overload>` 或具有仅限关键字形参的函数。 "
+"但是，这些签名可通过定义具有 :meth:`~object.__call__` 方法的 :class:`Protocol` 类来表达:"
 
 #: ../../library/typing.rst:333
 msgid ""

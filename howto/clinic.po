@@ -169,10 +169,12 @@ msgid ""
 "The line ``/*[clinic input]``. This line marks the beginning of Argument "
 "Clinic input. Note that the *start line* opens a C block comment."
 msgstr ""
+"``/*[clinic input]`` 行。 这一行标志着 Argument Clinic 输入的开始。 请注意 *开始行* 将开启一个 C "
+"的块注释。"
 
 #: ../../howto/clinic.rst:113
 msgid "end line"
-msgstr ""
+msgstr "结束行"
 
 #: ../../howto/clinic.rst:115
 msgid ""
@@ -182,6 +184,9 @@ msgid ""
 "generated code\"* Note that the *end line* closes the C block comment opened"
 " by the *start line*."
 msgstr ""
+"``[clinic start generated code]*/`` 行。 *结束行* 标志着 Argument Clinic "
+":term:`input` 的 _结束_，但同时也标志着 Argument Clinic :term:`output` 的 _开始_，因此文本 "
+"*\"clinic start start generated code\"* 表示 *结束行* 关闭了由 *开始行* 所开启的 C 的块注释。"
 
 #: ../../howto/clinic.rst:121
 msgid "checksum"
@@ -191,11 +196,11 @@ msgstr "checksum"
 msgid ""
 "A hash to distinguish unique :term:`inputs <input>` and :term:`outputs "
 "<output>`."
-msgstr ""
+msgstr "一个哈希值，用于区分唯一的 :term:`输入 <input>` 和 :term:`输出 <output>`。"
 
 #: ../../howto/clinic.rst:125
 msgid "checksum line"
-msgstr ""
+msgstr "校验行"
 
 #: ../../howto/clinic.rst:127
 msgid ""

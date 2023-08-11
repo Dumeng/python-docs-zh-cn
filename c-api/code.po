@@ -256,6 +256,8 @@ msgid ""
 "whether a callback is invoked or not), it does not change the semantics of "
 "the Python code being executed."
 msgstr ""
+"本 API 的用户不应依赖内部运行时的实现细节。 这类细节可能包括但不限于创建和销毁代码对象的确切顺序和时间。 "
+"虽然这些细节的变化可能会导致监视器可观察到的差异（包括回调是否被发起调用），但不会改变正在执行的 Python 代码的语义。"
 
 #: ../../c-api/code.rst:187
 msgid ""
@@ -286,19 +288,19 @@ msgid ""
 "To support low-level extensions to frame evaluation, such as external just-"
 "in-time compilers, it is possible to attach arbitrary extra data to code "
 "objects."
-msgstr ""
+msgstr "为了支持对帧求值的低层级扩展，如外部即时编译器等，可以在代码对象上附加任意的额外数据。"
 
 #: ../../c-api/code.rst:207
 msgid ""
 "These functions are part of the unstable C API tier: this functionality is a"
 " CPython implementation detail, and the API may change without deprecation "
 "warnings."
-msgstr ""
+msgstr "这些函数是不稳定 C API 层的一部分：该功能是 CPython 的实现细节，此 API 可能随时改变而不发出弃用警告。"
 
 #: ../../c-api/code.rst:213
 msgid ""
 "Return a new an opaque index value used to adding data to code objects."
-msgstr ""
+msgstr "返回一个新的不透明索引值用于向代码对象添加数据。"
 
 #: ../../c-api/code.rst:215
 msgid ""
@@ -306,6 +308,8 @@ msgid ""
 "with ``PyCode_GetExtra`` and ``PyCode_SetExtra`` to manipulate data on "
 "individual code objects."
 msgstr ""
+"通常情况下（对于每个解释器）你只需调用该函数一次然后将调用结果与 ``PyCode_GetExtra`` 和 ``PyCode_SetExtra`` "
+"一起使用以操作单个代码对象上的数据。"
 
 #: ../../c-api/code.rst:219
 msgid ""

@@ -443,6 +443,8 @@ msgid ""
 "that can affect things.  This is especially true for the mass updates to "
 "dictionaries and lists.  When in doubt, use a mutex!"
 msgstr ""
+"替换其他对象的操作可能会在其他对象的引用计数变为零时发起调用这些对象的 :meth:`~object.__del__` 方法，这可能会产生一些影响。 "
+"对字典和列表进行大量更新尤其如此。 如有疑问，请使用互斥锁！"
 
 #: ../../faq/library.rst:406
 msgid "Can't we get rid of the Global Interpreter Lock?"

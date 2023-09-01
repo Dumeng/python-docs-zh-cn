@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:08+0000\n"
+"POT-Creation-Date: 2023-09-01 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:08+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -1700,20 +1700,20 @@ msgid ""
 "Note that this function is meant to accommodate an unusual case; one which "
 "is likely to eventually go away.  There's is a pretty good chance this is "
 "not what you were looking for."
-msgstr ""
+msgstr "请注意该函数是为了适应一种不寻常的情况；这种情况可能最终会消失。 这很有可能不是你需要考虑的事情。"
 
 #: ../../library/importlib.rst:1271
 msgid ""
 "You can get the same effect as this function by implementing the basic "
 "interface of multi-phase init (:pep:`489`) and lying about support for "
-"mulitple interpreters (or per-interpreter GIL)."
+"multiple interpreters (or per-interpreter GIL)."
 msgstr ""
 
 #: ../../library/importlib.rst:1276
 msgid ""
 "Using this function to disable the check can lead to unexpected behavior and"
 " even crashes.  It should only be used during extension module development."
-msgstr ""
+msgstr "使用该函数来禁用检查可能会导致预期之外的行为甚至崩溃。 它应当仅在扩展模块开发过程中使用。"
 
 #: ../../library/importlib.rst:1284
 msgid ""

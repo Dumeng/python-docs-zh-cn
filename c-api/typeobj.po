@@ -1419,6 +1419,9 @@ msgid ""
 "accessible as the :attr:`__module__` attribute, and everything after the "
 "last dot is made accessible as the :attr:`~definition.__name__` attribute."
 msgstr ""
+"对于 :ref:`静态分配的类型对象 <static-types>`，*tp_name* 字段应当包含一个点号。 最后一个点号之前的所有内容都可作为 "
+":attr:`__module__` 属性访问，而最后一个点号之后的所有内容都可作为 :attr:`~definition.__name__` "
+"属性访问。"
 
 #: ../../c-api/typeobj.rst:596
 msgid ""
@@ -1429,6 +1432,10 @@ msgid ""
 " pickle.  Additionally, it will not be listed in module documentations "
 "created with pydoc."
 msgstr ""
+"如果不存在点号，则整个 :c:member:`~PyTypeObject.tp_name` 字段将作为 "
+":attr:`~definition.__name__` 属性访问，而 :attr:`__module__` "
+"属性则将是未定义的（除非在字典中显式地设置，如上文所述）。 这意味着你的类型将无法执行 pickle。 此外，用 pydoc "
+"创建的模块文档中也不会列出该类型。"
 
 #: ../../c-api/typeobj.rst:602
 msgid ""
@@ -1436,6 +1443,8 @@ msgid ""
 ":c:func:`PyTypeObject` (other than potentially "
 ":c:member:`~PyTypeObject.tp_itemsize`)."
 msgstr ""
+"该字段不可为 ``NULL``。 它是 :c:func:`PyTypeObject` 中唯一的必填字段（除可能必填的 "
+":c:member:`~PyTypeObject.tp_itemsize` 以外）。"
 
 #: ../../c-api/typeobj.rst:614
 msgid ""

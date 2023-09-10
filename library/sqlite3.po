@@ -2288,18 +2288,20 @@ msgid ""
 "interpreter's :option:`-m` switch, in order to provide a simple SQLite "
 "shell. The argument signature is as follows::"
 msgstr ""
+":mod:`!sqlite3` 模块可以作为脚本发起调用，使用解释器的 :option:`-m` 开关选项，以提供一个简单的 SQLite shell。"
+" 参数签名如下::"
 
 #: ../../library/sqlite3.rst:2029
 msgid "Type ``.quit`` or CTRL-D to exit the shell."
-msgstr ""
+msgstr "输入 ``.quit`` 或 CTRL-D 退出 shell。"
 
 #: ../../library/sqlite3.rst:2035
 msgid "Print CLI help."
-msgstr ""
+msgstr "打印 CLI 帮助。"
 
 #: ../../library/sqlite3.rst:2039
 msgid "Print underlying SQLite library version."
-msgstr ""
+msgstr "打印下层 SQLite 库版本。"
 
 #: ../../library/sqlite3.rst:2047
 msgid "How-to guides"

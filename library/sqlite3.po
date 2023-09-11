@@ -2682,6 +2682,9 @@ msgid ""
 "pending one, for the latter two). :mod:`!sqlite3` uses ``BEGIN DEFERRED`` "
 "statements when opening transactions."
 msgstr ""
+":mod:`!sqlite3` 会确保事务始终处于开启状态，因此 :func:`connect` 、:meth:`Connection.commit` "
+"和 :meth:`Connection.rollback` 将隐式地开启一个新事务（对于后两者，在关闭待处理事务后会立即执行）。 开启事务时 "
+":mod:`!sqlite3` 会使用 ``BEGIN DEFERRED`` 语句。"
 
 #: ../../library/sqlite3.rst:2619
 msgid "Transactions should be committed explicitly using :meth:`!commit`."

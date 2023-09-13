@@ -628,6 +628,8 @@ msgid ""
 " using negative :c:member:`~PyType_Spec.basicsize`. It is mandatory in that "
 "case."
 msgstr ""
+"只能在使用负的 :c:member:`~PyType_Spec.basicsize` 创建类时用作 :c:member:`Py_tp_members "
+"<PyTypeObject.tp_members>` :c:type:`槽位 <PyTypeSlot>` 的组成部分。 它在此种情况下是强制要求。"
 
 #: ../../c-api/structures.rst:520
 msgid ""
@@ -636,6 +638,9 @@ msgid ""
 " and sets :c:member:`PyMemberDef.offset` to the offset from the ``PyObject``"
 " struct."
 msgstr ""
+"这个旗标只能在 :c:type:`PyTypeSlot` 中使用。 在类创建期间中设置 "
+":c:member:`~PyTypeObject.tp_members` 时，Python 会清除它并将 "
+":c:member:`PyMemberDef.offset` 设为相对于 ``PyObject`` 结构的偏移量。"
 
 #: ../../c-api/structures.rst:532
 msgid ""
@@ -645,6 +650,11 @@ msgid ""
 ":c:macro:`!RESTRICTED` are equivalent to :c:macro:`Py_AUDIT_READ`; "
 ":c:macro:`!WRITE_RESTRICTED` does nothing."
 msgstr ""
+"通过 ``#include \"structmember.h\"`` 提供的 "
+":c:macro:`!RESTRICTED`、:c:macro:`!READ_RESTRICTED` 和 "
+":c:macro:`!WRITE_RESTRICTED` 宏已被弃用。 :c:macro:`!READ_RESTRICTED` 和 "
+":c:macro:`!RESTRICTED` 等同于 "
+":c:macro:`Py_AUDIT_READ`；:c:macro:`!WRITE_RESTRICTED` 则没有任何作用。"
 
 #: ../../c-api/structures.rst:543
 msgid ""

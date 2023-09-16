@@ -2271,6 +2271,10 @@ msgid ""
 "project can be installed: it still provides ``distutils``. (Contributed by "
 "Victor Stinner in :gh:`92584`.)"
 msgstr ""
+"移除了 :py:mod:`!distutils` 包。 它已在 Python 3.10 中根据 :pep:`632` \"Deprecate "
+"distutils module\" 被弃用。 对于仍然使用 ``distutils`` 且无法升级为使用其他工具的项目，可以安装 "
+"``setuptools`` 项目：它仍然提供了 ``distutils``。 （由 Victor Stinner 在 :gh:`92584` "
+"中贡献。）"
 
 #: ../../whatsnew/3.12.rst:1312
 msgid "ensurepip"

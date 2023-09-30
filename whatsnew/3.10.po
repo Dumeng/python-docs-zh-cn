@@ -2355,6 +2355,10 @@ msgid ""
 " and Jeroen Demeyer in :issue:`43575`, :issue:`43287`, :issue:`41922`, "
 ":issue:`41873` and :issue:`41870`.)"
 msgstr ""
+"下列内置函数现在支持更快速的 :pep:`590` vectorcall 调用约定: :func:`map`, :func:`filter`, "
+":func:`reversed`, :func:`bool` 和 :func:`float`。 （由 Donghee Na 和 Jeroen "
+"Demeyer 在 :issue:`43575`, :issue:`43287`, :issue:`41922`, :issue:`41873` 和 "
+":issue:`41870` 中贡献。）"
 
 #: ../../whatsnew/3.10.rst:1587
 msgid ""

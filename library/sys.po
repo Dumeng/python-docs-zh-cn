@@ -1108,6 +1108,8 @@ msgid ""
 "calls.  Symbolic names for the flag values can be found in the :mod:`os` "
 "module (:samp:`RTLD_{xxx}` constants, e.g. :const:`os.RTLD_LAZY`)."
 msgstr ""
+"返回用于 :c:func:`dlopen` 调用的旗标的当前值。 旗标值的符号名称可在 :mod:`os` 模块中找到 "
+"(:samp:`RTLD_{xxx}` 常量，例如 :const:`os.RTLD_LAZY`)。"
 
 #: ../../library/sys.rst:759 ../../library/sys.rst:1447
 msgid ":ref:`Availability <availability>`: Unix."

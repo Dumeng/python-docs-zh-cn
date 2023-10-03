@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-29 02:08+0000\n"
+"POT-Creation-Date: 2023-09-29 14:12+0000\n"
 "PO-Revision-Date: 2021-06-28 01:19+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -2010,7 +2010,7 @@ msgid ""
 ":data:`typing.TypeVar`, introduced by a plain name (e.g., ``T``). "
 "Semantically, this represents a single type to a type checker."
 msgstr ""
-":data:`typing.TypeVar`，由一个普通名称 (例如``T``) 引入。 从语义上讲，这对类型检查器来说代表了一个单独类型。"
+":data:`typing.TypeVar`，由一个普通名称 (例如 ``T``) 引入。 从语义上讲，这对类型检查器来说代表了一个单独类型。"
 
 #: ../../reference/compound_stmts.rst:1667
 msgid ""
@@ -2054,31 +2054,34 @@ msgid ""
 "bounds or constraints are evaluated in a separate :ref:`annotation scope "
 "<annotation-scopes>`."
 msgstr ""
+"对于使用类型形参列表语法声明的 :data:`!typing.TypeVar`，范围和约束在创建泛型对象时并不会被求值，只有在通过属性 "
+"``__bound__`` 和 ``__constraints__`` 显式地访问它时才会被求值。 要做到这一点，需要在单独的 :ref:`标注作用域 "
+"<annotation-scopes>` 中对范围和约束进行求值。"
 
 #: ../../reference/compound_stmts.rst:1688
 msgid ""
 ":data:`typing.TypeVarTuple`\\ s and :data:`typing.ParamSpec`\\ s cannot have"
 " bounds or constraints."
-msgstr ""
+msgstr ":data:`typing.TypeVarTuple` 和 :data:`typing.ParamSpec` 不能拥有范围或约束。"
 
 #: ../../reference/compound_stmts.rst:1691
 msgid ""
 "The following example indicates the full set of allowed type parameter "
 "declarations::"
-msgstr ""
+msgstr "下面的例子显示了所有被允许的类型形参声明::"
 
 #: ../../reference/compound_stmts.rst:1709
 msgid "Generic functions"
-msgstr ""
+msgstr "泛型函数"
 
 #: ../../reference/compound_stmts.rst:1711
 msgid "Generic functions are declared as follows::"
-msgstr ""
+msgstr "泛型函数的声明方式如下::"
 
 #: ../../reference/compound_stmts.rst:1715
 #: ../../reference/compound_stmts.rst:1775
 msgid "This syntax is equivalent to::"
-msgstr ""
+msgstr "该语法等价于::"
 
 #: ../../reference/compound_stmts.rst:1724
 msgid ""
@@ -2088,19 +2091,22 @@ msgid ""
 "attribute access on the :mod:`typing` module, but creates an instance of "
 ":data:`typing.TypeVar` directly.)"
 msgstr ""
+"这里 ``annotation-def`` 指定了一个 :ref:`标注作用域 <annotation-"
+"scopes>`，它在运行时并不会实际绑定到任何名称。 （另一项自由是在翻译中达成的：该语法没有通过 :mod:`typing` "
+"模块的属性访问，而是直接创建了一个 :data:`typing.TypeVar` 的实例）。"
 
 #: ../../reference/compound_stmts.rst:1730
 msgid ""
 "The annotations of generic functions are evaluated within the annotation "
 "scope used for declaring the type parameters, but the function's defaults "
 "and decorators are not."
-msgstr ""
+msgstr "泛型函数的标注会在用于声明类型形参的标注作用域内进行求值，但函数的默认值和装饰器则不会。"
 
 #: ../../reference/compound_stmts.rst:1734
 msgid ""
 "The following example illustrates the scoping rules for these cases, as well"
 " as for additional flavors of type parameters::"
-msgstr ""
+msgstr "下面的例子演示了针对这些场景，以及类型形参的变化形式的作用域规则::"
 
 #: ../../reference/compound_stmts.rst:1741
 msgid ""

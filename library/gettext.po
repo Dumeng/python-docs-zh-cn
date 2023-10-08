@@ -109,6 +109,8 @@ msgid ""
 "domain, language, and locale directory.  This function is usually aliased as"
 " :func:`!_` in the local namespace (see examples below)."
 msgstr ""
+"返回 *message* 的本地化翻译，依据当前的全局域、语言和语言区域目录。 本函数在局部命名空间中通常包含别名 :func:`!_` "
+"(参见下面的示例)。"
 
 #: ../../library/gettext.rst:66
 msgid ""
@@ -159,6 +161,7 @@ msgid ""
 "Note that GNU :program:`gettext` also defines a :func:`!dcgettext` method, "
 "but this was deemed not useful and so it is currently unimplemented."
 msgstr ""
+"请注意 GNU :program:`gettext` 还定义了一个 :func:`!dcgettext` 方法，但它被认为并不实用因此目前尚未实现它。"
 
 #: ../../library/gettext.rst:104
 msgid "Here's an example of typical usage for this API::"
@@ -178,6 +181,10 @@ msgid ""
 "strings. Instances of this class can also install themselves in the built-in"
 " namespace as the function :func:`!_`."
 msgstr ""
+"与 GNU :program:`gettext` API 相比，:mod:`gettext` 模块的基于类的API 提供了更多的灵活性和便利性。 "
+"这是本地化 Python 应用程序和模块的推荐方式。 :mod:`!gettext` 定义了一个 :class:`GNUTranslations` "
+"类，它实现了对 GNU :file:`.mo` 格式文件的解析，并且具有用于返回字符串的方法。 本类的实例也可以将自身作为函数 :func:`!_` "
+"安装到内置命名空间中。"
 
 #: ../../library/gettext.rst:127
 msgid ""

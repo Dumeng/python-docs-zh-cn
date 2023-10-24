@@ -2496,6 +2496,9 @@ msgid ""
 ":meth:`__len__` method and the :meth:`~object.__getitem__` method with "
 "integer arguments starting at ``0``)."
 msgstr ""
+"返回一个反向的 :term:`iterator`。 *seq* 必须是一个具有 :meth:`__reversed__` "
+"方法的对象或是支持序列协议（具有 :meth:`__len__` 方法和从 ``0`` 开始的整数参数的 "
+":meth:`~object.__getitem__` 方法）。"
 
 #: ../../library/functions.rst:1572
 msgid ""

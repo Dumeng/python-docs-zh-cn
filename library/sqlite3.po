@@ -1308,7 +1308,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:1128 ../../library/sqlite3.rst:1198
 msgid ":ref:`sqlite3-howto-encoding`"
-msgstr ""
+msgstr ":ref:`sqlite3-howto-encoding`"
 
 #: ../../library/sqlite3.rst:1133
 msgid "Create a backup of an SQLite database."
@@ -1608,10 +1608,12 @@ msgid ""
 "text representation of it. The callable is invoked for SQLite values with "
 "the ``TEXT`` data type. By default, this attribute is set to :class:`str`."
 msgstr ""
+"一个接受 :class:`bytes` 形参并返回其文本表示形式的 :term:`callable`。 该可调用对象将针对数据类型为 ``TEXT`` "
+"的 SQLite 值发起调用。 在默认情况下，该属性将被设为 :class:`str`。"
 
 #: ../../library/sqlite3.rst:1422
 msgid "See :ref:`sqlite3-howto-encoding` for more details."
-msgstr ""
+msgstr "请参阅 :ref:`sqlite3-howto-encoding` 了解详情。"
 
 #: ../../library/sqlite3.rst:1426
 msgid ""
@@ -2678,7 +2680,7 @@ msgstr ""
 
 #: ../../library/sqlite3.rst:2597
 msgid ":ref:`unicode-howto`"
-msgstr ""
+msgstr ":ref:`unicode-howto`"
 
 #: ../../library/sqlite3.rst:2603
 msgid "Explanation"

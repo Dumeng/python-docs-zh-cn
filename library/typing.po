@@ -15,8 +15,8 @@
 # ppcfish <ppcfish@gmail.com>, 2023
 # Nyuan Zhang, 2023
 # 乐成 王, 2023
-# Freesand Leo <yuqinju@163.com>, 2023
 # Sefank <sefank@foxmail.com>, 2023
+# Freesand Leo <yuqinju@163.com>, 2023
 # 
 #, fuzzy
 msgid ""
@@ -25,7 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-27 14:49+0000\n"
 "PO-Revision-Date: 2021-06-28 01:16+0000\n"
-"Last-Translator: Sefank <sefank@foxmail.com>, 2023\n"
+"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -481,6 +481,8 @@ msgid ""
 "be expressed by defining a :class:`Protocol` class with a "
 ":meth:`~object.__call__` method:"
 msgstr ""
+"``Callable`` 无法表达复杂的签名如接受可变数量参数的函数，:ref:`重载的函数 <overload>`，或具有仅限关键字形参的函数。 "
+"但是，这些签名可通过自定义具有 :meth:`~object.__call__` 方法的 :class:`Protocol` 类来表达："
 
 #: ../../library/typing.rst:333
 msgid ""

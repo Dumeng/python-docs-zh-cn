@@ -38,6 +38,9 @@ msgid ""
 "user's selection. Common message box styles and layouts include but are not "
 "limited to:"
 msgstr ""
+"The :mod:`tkinter.messagebox` 模块提供了一个模板基类以及多个常用配置的便捷方法。 消息框为模式窗口并将基于用户的选择返回 "
+"(``True``, ``False``, ``None``, :data:`OK`, :data:`CANCEL`, :data:`YES`, "
+":data:`NO`) 的一个子集。 常用消息框风格和布局包括但不限于："
 
 #: ../../library/tkinter.messagebox.rst:23
 msgid ""

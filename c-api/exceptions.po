@@ -18,15 +18,16 @@
 # WH-2099 <wh2099@outlook.com>, 2023
 # jaystone776 <1732865113@qq.com>, 2023
 # Freesand Leo <yuqinju@163.com>, 2023
+# 云line, 2023
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-03 14:14+0000\n"
+"POT-Creation-Date: 2023-11-05 17:24+0000\n"
 "PO-Revision-Date: 2021-06-28 00:48+0000\n"
-"Last-Translator: Freesand Leo <yuqinju@163.com>, 2023\n"
+"Last-Translator: 云line, 2023\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -161,6 +162,8 @@ msgid ""
 " *obj* will be printed in the warning message. If *obj* is ``NULL``, only "
 "the traceback is printed."
 msgstr ""
+"该函数调用时将传入单个参数 *obj*，它标识发生不可引发的异常所在的上下文。 如果可能，*obj* 的表示形式将打印在警告消息中。 如果 *obj* "
+"为 ``NULL``，将只打印回溯。"
 
 #: ../../c-api/exceptions.rst:93
 msgid "An exception must be set when calling this function."
@@ -168,7 +171,7 @@ msgstr "调用此函数时必须设置一个异常。"
 
 #: ../../c-api/exceptions.rst:95
 msgid "Print a traceback. Print only traceback if *obj* is ``NULL``."
-msgstr "打印回溯信息。 如果 *obj* 为 ``NULL`` 才打印回溯。"
+msgstr "打印回溯信息。 如果 *obj* 为 ``NULL`` 将只打印回溯。"
 
 #: ../../c-api/exceptions.rst:98
 msgid "Use :func:`sys.unraisablehook`."
@@ -530,7 +533,7 @@ msgstr ""
 
 #: ../../c-api/exceptions.rst:402
 msgid "The caller must hold the GIL."
-msgstr "呼叫者必须持有GIL。"
+msgstr "调用时必须持有GIL。"
 
 #: ../../c-api/exceptions.rst:406
 msgid ""

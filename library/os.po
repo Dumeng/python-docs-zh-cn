@@ -5057,6 +5057,12 @@ msgid ""
 "include at least one slash, even on Windows, as plain names will not be "
 "resolved."
 msgstr ""
+"在结尾位置包括 \"p\" 的变体形式 (:func:`execlp`, :func:`execlpe`, :func:`execvp` 和 "
+":func:`execvpe`) 将使用 :envvar:`PATH` 环境变量来定位程序 *file*。 当环境被替换时 (使用某个 "
+":func:`exec\\*e <execl>` 变体形式，将在下一段中讨论)，将使用新环境作为 :envvar:`PATH` 变量的来源。 "
+"其他的变体形式 :func:`execl`, :func:`execle`, :func:`execv` 和 :func:`execve` 将不使用 "
+":envvar:`PATH` 变量来定位可执行程序；*path* 必须包含正确的绝对或相对路径。 相对路径必须包括至少一个斜杠，即使是在 Windows"
+" 上，因为简单名称将不会被解析。"
 
 #: ../../library/os.rst:3979
 msgid ""

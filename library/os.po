@@ -5265,6 +5265,9 @@ msgid ""
 "child process when threads existed in the parent (such as ``malloc`` and "
 "``free``)."
 msgstr ""
+"在可以检测时，我们选择将此显示为警告，以便更好地告知开发人员 POSIX 平台明确指出不支持的设计问题。 在 POSIX 平台上即使在 *看起来* "
+"可行的代码中，将线程与 :func:`os.fork` 混用也是不安全的。 当父进程中存在线程时 CPython 运行时本身总是会在子进程中执行不安全的"
+" API 调用 (如 ``malloc`` 和 ``free``)。"
 
 #: ../../library/os.rst:4182
 msgid ""
@@ -5272,6 +5275,7 @@ msgid ""
 "typically found in glibc to date are among those already more likely to "
 "experience deadlocks running such code."
 msgstr ""
+"使用 macOS 的用户或使用 glibc 中可找到的典型实现以外的 libc 或 malloc 实现的用户在运行此类代码时更容易发生死锁现象。"
 
 #: ../../library/os.rst:4186
 msgid ""
@@ -5279,6 +5283,8 @@ msgid ""
 "<https://discuss.python.org/t/33555>`_ for technical details of why we're "
 "surfacing this longstanding platform compatibility problem to developers."
 msgstr ""
+"请参阅 `有关 fork 与线程不兼容的讨论 <https://discuss.python.org/t/33555>`_ "
+"了解我们为何向开发者公开这个长期存在的平台不兼容性问题的技术细节。"
 
 #: ../../library/os.rst:4191 ../../library/os.rst:4433
 msgid ":ref:`Availability <availability>`: POSIX, not Emscripten, not WASI."
@@ -5308,6 +5314,8 @@ msgid ""
 " raises a :exc:`DeprecationWarning`. See the longer explanation on "
 ":func:`os.fork`."
 msgstr ""
+"现在如果 Python 能够检测到你的进程有多个线程，此函数将引发 :exc:`DeprecationWarning`。 请参阅有关 "
+":func:`os.fork` 的更详细解释。"
 
 #: ../../library/os.rst:4209
 msgid ""

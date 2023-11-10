@@ -5578,6 +5578,9 @@ msgid ""
 ":c:macro:`!POSIX_SPAWN_SETSID_NP` flag. Otherwise, "
 ":exc:`NotImplementedError` is raised."
 msgstr ""
+"如果 *setsid* 参数为 ``True``，它将为 ``posix_spawn`` 新建一个会话 ID。 *setsid* 需要 "
+":c:macro:`!POSIX_SPAWN_SETSID` 或 :c:macro:`!POSIX_SPAWN_SETSID_NP` 旗标。 "
+"否则，将会引发 :exc:`NotImplementedError`。"
 
 #: ../../library/os.rst:4397
 msgid ""
@@ -5586,6 +5589,8 @@ msgid ""
 "parent's signal mask. This argument corresponds to the C library "
 ":c:macro:`!POSIX_SPAWN_SETSIGMASK` flag."
 msgstr ""
+"*setsigmask* 参数会将信号掩码设置为指定的信号集合。 如果未使用该参数，则子进程将继承父进程的信号掩码。 本参数对应于 C 库的 "
+":c:macro:`!POSIX_SPAWN_SETSIGMASK` 旗标。"
 
 #: ../../library/os.rst:4402
 msgid ""
@@ -5593,6 +5598,8 @@ msgid ""
 "specified. This argument corresponds to the C library "
 ":c:macro:`!POSIX_SPAWN_SETSIGDEF` flag."
 msgstr ""
+"*sigdef* 参数会将集合中所有信号的操作全部重置为默认。 本参数对应于 C 库的 "
+":c:macro:`!POSIX_SPAWN_SETSIGDEF` 旗标。"
 
 #: ../../library/os.rst:4406
 msgid ""

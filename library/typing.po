@@ -1738,11 +1738,11 @@ msgstr "类型变量是否已被显式地标记为 contravariant。"
 #: ../../library/typing.rst:1690
 msgid ""
 "Whether the type variable's variance should be inferred by type checkers."
-msgstr ""
+msgstr "类型变量的种类是否应由类型检查器来推断。"
 
 #: ../../library/typing.rst:1696
 msgid "The bound of the type variable, if any."
-msgstr ""
+msgstr "类型变量的绑定，如果有的话。"
 
 #: ../../library/typing.rst:1700
 msgid ""
@@ -1750,10 +1750,14 @@ msgid ""
 "params>`, the bound is evaluated only when the attribute is accessed, not "
 "when the type variable is created (see :ref:`lazy-evaluation`)."
 msgstr ""
+"对于通过 :ref:`类型形参语法 <type-params>` 创建的类型变量，只有在属性被访问的时候才会对绑定求值，而不是在类型变量被创建的时候 "
+"(参见 :ref:`lazy-evaluation`)。"
 
 #: ../../library/typing.rst:1706
 msgid "A tuple containing the constraints of the type variable, if any."
 msgstr ""
+"一个包含对类型变量的约束的元组，如果有的话。A tuple containing the constraints of the type "
+"variable, if any."
 
 #: ../../library/typing.rst:1710
 msgid ""
@@ -1761,6 +1765,8 @@ msgid ""
 "params>`, the constraints are evaluated only when the attribute is accessed,"
 " not when the type variable is created (see :ref:`lazy-evaluation`)."
 msgstr ""
+"对于通过 :ref:`类型形参语法 <type-params>` 创建的类型变量，只有在属性被访问的时候才会对约束求值，而不是在类型变量被创建的时候 "
+"(参见 :ref:`lazy-evaluation`)。"
 
 #: ../../library/typing.rst:1716
 msgid ""
@@ -1768,6 +1774,8 @@ msgid ""
 "params>` syntax introduced by :pep:`695`. The ``infer_variance`` parameter "
 "was added."
 msgstr ""
+"类型变量现在可以通过使用 :pep:`695` 引入的 :ref:`类型形参 <type-params>` 语法来声明。 增加了 "
+"``infer_variance`` 形参。"
 
 #: ../../library/typing.rst:1724
 msgid ""

@@ -2846,6 +2846,9 @@ msgid ""
 "calling an ``@overload``-decorated function directly will raise "
 ":exc:`NotImplementedError`."
 msgstr ""
+"以 ``@overload`` 装饰的定义仅对类型检查器有用，因为它们将被非 ``@overload`` 装饰的定义覆盖。 与此同时，非 "
+"``@overload`` 装饰的定义将在运行时使用但应被类型检查器忽略。 在运行时，直接调用以 ``@overload`` 装饰的函数将引发 "
+":exc:`NotImplementedError`。"
 
 #: ../../library/typing.rst:2772
 msgid ""
@@ -2879,6 +2882,9 @@ msgid ""
 "overloads. If called on a function with no overloads, ``get_overloads()`` "
 "returns an empty sequence."
 msgstr ""
+"*func* 是用于实现过载函数的函数对象。 例如，根据文档中为 :func:`@overload <overload>` 给出的 "
+"``process`` 定义，``get_overloads(process)`` 将为所定义的三个过载函数返回由三个函数对象组成的序列。 "
+"如果在不带过载的函数上调用，``get_overloads()`` 将返回一个空序列。"
 
 #: ../../library/typing.rst:2808
 msgid ""

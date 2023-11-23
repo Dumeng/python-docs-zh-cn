@@ -868,7 +868,7 @@ msgstr "如有错误该 API 将返回 ``NULL``。 调用方要负责递减指向
 
 #: ../../c-api/unicode.rst:599
 msgid "Return the length of the Unicode object, in code points."
-msgstr ""
+msgstr "返回 Unicode 对象码位的长度。"
 
 #: ../../c-api/unicode.rst:610
 msgid ""
@@ -877,12 +877,14 @@ msgid ""
 ":c:func:`!memcpy` if possible.  Returns ``-1`` and sets an exception on "
 "error, otherwise returns the number of copied characters."
 msgstr ""
+"将一个 Unicode 对象中的字符拷贝到另一个对象中。 此函数会在必要时执行字符转换并会在可能的情况下回退到 :c:func:`!memcpy`。 "
+"在出错时将返回 ``-1`` 并设置一个异常，在其他情况下将返回拷贝的字符数量。"
 
 #: ../../c-api/unicode.rst:621
 msgid ""
 "Fill a string with a character: write *fill_char* into "
 "``unicode[start:start+length]``."
-msgstr ""
+msgstr "使用一个字符填充字符串：将 *fill_char* 写入 ``unicode[start:start+length]``。"
 
 #: ../../c-api/unicode.rst:624
 msgid ""

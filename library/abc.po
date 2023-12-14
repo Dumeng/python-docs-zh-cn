@@ -250,6 +250,9 @@ msgid ""
 " if any of the methods used to compose the descriptor are abstract. For "
 "example, Python's built-in :class:`property` does the equivalent of::"
 msgstr ""
+"为了正确地与抽象基类机制互操作，描述器必须使用 :attr:`!__isabstractmethod__` 将自身标识为抽象的。 "
+"通常，如果组成描述器的任一方法是抽象的，那么此属性就应为 ``True``。 例如，Python 的内置 :class:`property` "
+"所做的就等价于::"
 
 #: ../../library/abc.rst:232
 msgid ""
@@ -264,7 +267,7 @@ msgstr ""
 
 #: ../../library/abc.rst:239
 msgid "The :mod:`!abc` module also supports the following legacy decorators:"
-msgstr ""
+msgstr ":mod:`!abc` 模块还支持下列旧式装饰器："
 
 #: ../../library/abc.rst:244
 msgid ""
@@ -340,7 +343,7 @@ msgstr "如果只有某些组件是抽象的，则只需更新那些组件即可
 
 #: ../../library/abc.rst:326
 msgid "The :mod:`!abc` module also provides the following functions:"
-msgstr ""
+msgstr ":mod:`!abc` 模块还提供了下列函数："
 
 #: ../../library/abc.rst:330
 msgid "Returns the current abstract base class cache token."

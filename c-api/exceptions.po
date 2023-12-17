@@ -956,6 +956,8 @@ msgid ""
 "from Python through the :attr:`~BaseException.__context__` attribute. If "
 "there is no context associated, this returns ``NULL``."
 msgstr ""
+"将与异常相关联的上下文（在处理 *ex* 过程中引发的另一个异常实例）作为一个新引用返回，可以通过 "
+":attr:`~BaseException.__context__` 属性在 Python 中访问。 如果没有已关联的上下文，则返回 ``NULL``。"
 
 #: ../../c-api/exceptions.rst:765
 msgid ""
@@ -973,6 +975,8 @@ msgid ""
 "accessible from Python through the :attr:`~BaseException.__cause__` "
 "attribute."
 msgstr ""
+"将与异常相关联的原因（一个异常实例，或为 ``None``，由 ``raise ... from ...`` 设置）作为一个新引用返回，可通过 "
+":attr:`~BaseException.__cause__` 属性在 Python 中访问。"
 
 #: ../../c-api/exceptions.rst:780
 msgid ""
@@ -987,7 +991,7 @@ msgstr ""
 msgid ""
 "The :attr:`~BaseException.__suppress_context__` attribute is implicitly set "
 "to ``True`` by this function."
-msgstr ""
+msgstr ":attr:`~BaseException.__suppress_context__` 属性会被此函数隐式地设为 ``True``。"
 
 #: ../../c-api/exceptions.rst:790
 msgid "Return :attr:`~BaseException.args` of exception *ex*."

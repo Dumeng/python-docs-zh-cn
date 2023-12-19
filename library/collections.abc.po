@@ -653,6 +653,8 @@ msgid ""
 "ABC for :term:`asynchronous generator` classes that implement the protocol "
 "defined in :pep:`525` and :pep:`492`."
 msgstr ""
+"针对实现了在 :pep:`525` 和 :pep:`492` 中定义的协议的 :term:`asynchronous generator` 类的 "
+"ABC。"
 
 #: ../../library/collections.abc.rst:359
 msgid ""

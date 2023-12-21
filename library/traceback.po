@@ -292,6 +292,8 @@ msgid ""
 "<traceback-objects>` *tb* by calling the :meth:`~frame.clear` method of each"
 " :ref:`frame object <frame-objects>`."
 msgstr ""
+"通过调用每个 :ref:`帧对象 <frame-objects>` 的 :meth:`~frame.clear` 方法来清除 :ref:`回溯 "
+"<traceback-objects>` *tb* 中所有栈帧的局部变量。"
 
 #: ../../library/traceback.rst:210
 msgid ""

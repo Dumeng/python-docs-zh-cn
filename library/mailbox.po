@@ -1015,6 +1015,8 @@ msgid ""
 ":meth:`~Mailbox.close` on the :class:`!MMDF` instance may yield "
 "unpredictable results or raise an exception."
 msgstr ""
+"在 :class:`!MMDF` 实例上调用 :meth:`~Mailbox.flush` 或 :meth:`~Mailbox.close` "
+"之后再使用文件可能产生无法预料的结果或者引发异常。"
 
 #: ../../library/mailbox.rst:762
 msgid ""
@@ -1040,7 +1042,7 @@ msgstr "一篇描述 Multichannel Memorandum Distribution Facility 的维基百�
 
 #: ../../library/mailbox.rst:772
 msgid ":class:`!Message` objects"
-msgstr ""
+msgstr ":class:`!Message` 对象"
 
 #: ../../library/mailbox.rst:777
 msgid ""
@@ -1048,6 +1050,8 @@ msgid ""
 ":class:`~email.message.Message`. Subclasses of :class:`!mailbox.Message` add"
 " mailbox-format-specific state and behavior."
 msgstr ""
+":mod:`email.message` 模块的 :class:`~email.message.Message` 的子类。 "
+":class:`!mailbox.Message` 的子类添加了特定邮箱格式专属的状态和行为。"
 
 #: ../../library/mailbox.rst:781
 msgid ""
@@ -1060,6 +1064,10 @@ msgid ""
 " open in binary mode, but text mode files are accepted for backward "
 "compatibility."
 msgstr ""
+"如果省略了 *message*，则新实例会以默认的空状态被创建。 如果 *message* 是一个 "
+":class:`email.message.Message` 实例，其内容会被拷贝；此外，如果 *message* 是一个 "
+":class:`!Message` 实例，则任何格式专属信息会尽可能地被拷贝。 如果 *message* 是一个字符串、字节串或文件，则它应当包含兼容 "
+":rfc:`2822` 的消息，该消息会被读取和解析。 文件应当以二进制模式打开，但文本模式的文件也会被接受以向下兼容。"
 
 #: ../../library/mailbox.rst:790
 msgid ""
@@ -1086,6 +1094,9 @@ msgid ""
 " and a custom message factory may be specified when a :class:`!Mailbox` "
 "instance is initialized."
 msgstr ""
+"不要求使用 :class:`!Message` 实例来表示使用 :class:`Mailbox` 实例所提取到的消息。 在某些情况下，生成 "
+":class:`!Message` 表示形式所需的时间和内存空间可能是不可接受的。 对于此类情况，:class:`!Mailbox` "
+"实例还提供了字符串和文件类表示形式，并可在初始化 :class:`!Mailbox` 实例时设置自定义的消息工厂函数。"
 
 #: ../../library/mailbox.rst:810
 msgid ":class:`!MaildirMessage` objects"

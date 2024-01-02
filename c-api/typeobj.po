@@ -1896,6 +1896,10 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_richcompare` and "
 ":c:member:`~PyTypeObject.tp_hash` are both ``NULL``."
 msgstr ""
+"该字段会被子类型同 :c:member:`~PyTypeObject.tp_richcompare` 一起继承：当子类型的 "
+":c:member:`~PyTypeObject.tp_richcompare` 和 :c:member:`~PyTypeObject.tp_hash`"
+" 均为 ``NULL`` 时子类型将同时继承 :c:member:`~PyTypeObject.tp_richcompare` 和 "
+":c:member:`~PyTypeObject.tp_hash`。"
 
 #: ../../c-api/typeobj.rst:911
 msgid ""
@@ -1903,6 +1907,8 @@ msgid ""
 "should be ``NULL`` if the object is not callable.  The signature is the same"
 " as for :c:func:`PyObject_Call`::"
 msgstr ""
+"一个可选的实现对象调用的指向函数的指针。 如果对象不是可调用对象则该值应为 ``NULL``。 其签名与 :c:func:`PyObject_Call`"
+" 的相同::"
 
 #: ../../c-api/typeobj.rst:924
 msgid ""
@@ -1912,10 +1918,13 @@ msgid ""
 ":c:func:`PyObject_Str` to do the actual work, and :c:func:`PyObject_Str` "
 "will call this handler.)"
 msgstr ""
+"一个可选的实现内置 :func:`str` 操作的函数的指针。 （请注意 :class:`str` 现在是一个类型，:func:`str` "
+"是调用该类型的构造器。 该构造器将调用 :c:func:`PyObject_Str` 执行实际操作，而 :c:func:`PyObject_Str` "
+"将调用该处理句柄。）"
 
 #: ../../c-api/typeobj.rst:929
 msgid "The signature is the same as for :c:func:`PyObject_Str`::"
-msgstr ""
+msgstr "其签名与 :c:func:`PyObject_Str` 的相同::"
 
 #: ../../c-api/typeobj.rst:933
 msgid ""
@@ -1924,20 +1933,22 @@ msgid ""
 "representation that will be used, among other things, by the :func:`print` "
 "function."
 msgstr ""
+"该函数必须返回一个字符串或 Unicode 对象。 它应当是一个“友好”的对象字符串表示形式，因为这就是要在 :func:`print` "
+"函数中与其他内容一起使用的表示形式。"
 
 #: ../../c-api/typeobj.rst:943
 msgid ""
 "When this field is not set, :c:func:`PyObject_Repr` is called to return a "
 "string representation."
-msgstr ""
+msgstr "当未设置该字段时，将调用 :c:func:`PyObject_Repr` 来返回一个字符串表示形式。"
 
 #: ../../c-api/typeobj.rst:949
 msgid "An optional pointer to the get-attribute function."
-msgstr ""
+msgstr "一个指向获取属性字符串函数的可选指针。"
 
 #: ../../c-api/typeobj.rst:951
 msgid "The signature is the same as for :c:func:`PyObject_GetAttr`::"
-msgstr ""
+msgstr "其签名与 :c:func:`PyObject_GetAttr` 的相同::"
 
 #: ../../c-api/typeobj.rst:955
 msgid ""

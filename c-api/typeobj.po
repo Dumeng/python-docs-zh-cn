@@ -1955,7 +1955,7 @@ msgid ""
 "It is usually convenient to set this field to "
 ":c:func:`PyObject_GenericGetAttr`, which implements the normal way of "
 "looking for object attributes."
-msgstr ""
+msgstr "可以方便地将该字段设为 :c:func:`PyObject_GenericGetAttr`，它实现了查找对象属性的通常方式。"
 
 #: ../../c-api/typeobj.rst:962
 msgid ""
@@ -1966,14 +1966,18 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_getattr` and "
 ":c:member:`~PyTypeObject.tp_getattro` are both ``NULL``."
 msgstr ""
+"该字段会被子类同 :c:member:`~PyTypeObject.tp_getattr` 一起继承：当子类型的 "
+":c:member:`~PyTypeObject.tp_getattr` 和 :c:member:`~PyTypeObject.tp_getattro`"
+" 均为 ``NULL`` 时子类型将同时继承 :c:member:`~PyTypeObject.tp_getattr` 和 "
+":c:member:`~PyTypeObject.tp_getattro`。"
 
 #: ../../c-api/typeobj.rst:968
 msgid ":c:data:`PyBaseObject_Type` uses :c:func:`PyObject_GenericGetAttr`."
-msgstr ""
+msgstr ":c:data:`PyBaseObject_Type` 使用 :c:func:`PyObject_GenericGetAttr`。"
 
 #: ../../c-api/typeobj.rst:975
 msgid "The signature is the same as for :c:func:`PyObject_SetAttr`::"
-msgstr ""
+msgstr "其签名与 :c:func:`PyObject_SetAttr` 的相同::"
 
 #: ../../c-api/typeobj.rst:979
 msgid ""
@@ -1982,6 +1986,8 @@ msgid ""
 ":c:func:`PyObject_GenericSetAttr`, which implements the normal way of "
 "setting object attributes."
 msgstr ""
+"此外，还必须支持将 *value* 设为 ``NULL`` 来删除属性。 通常可以方便地将该字段设为 "
+":c:func:`PyObject_GenericSetAttr`，它实现了设备对象属性的通常方式。"
 
 #: ../../c-api/typeobj.rst:988
 msgid ""
@@ -1992,10 +1998,14 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_setattr` and "
 ":c:member:`~PyTypeObject.tp_setattro` are both ``NULL``."
 msgstr ""
+"该字段会被子类型同 :c:member:`~PyTypeObject.tp_setattr` 一起继承：当子类型的 "
+":c:member:`~PyTypeObject.tp_setattr` 和 :c:member:`~PyTypeObject.tp_setattro`"
+" 均为 ``NULL`` 时子类型将同时继承 :c:member:`~PyTypeObject.tp_setattr` 和 "
+":c:member:`~PyTypeObject.tp_setattro`。"
 
 #: ../../c-api/typeobj.rst:994
 msgid ":c:data:`PyBaseObject_Type` uses :c:func:`PyObject_GenericSetAttr`."
-msgstr ""
+msgstr ":c:data:`PyBaseObject_Type` 使用 :c:func:`PyObject_GenericSetAttr`。"
 
 #: ../../c-api/typeobj.rst:999
 msgid ""

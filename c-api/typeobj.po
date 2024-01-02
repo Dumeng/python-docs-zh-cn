@@ -2056,6 +2056,13 @@ msgid ""
 " fields in the subtype exist and have ``NULL`` values. .. XXX are most flag "
 "bits *really* inherited individually?"
 msgstr ""
+"这个字段的继承很复杂。 大多数旗标位都是单独继承的，也就是说，如果基类型设置了一个旗标位，则子类型将继承该旗标位。 "
+"从属于扩展结构体的旗标位仅在扩展结构体被继承时才会被继承，也就是说，基类型的旗标位值会与指向扩展结构体的指针一起被拷贝到子类型中。 "
+":c:macro:`Py_TPFLAGS_HAVE_GC` 旗标位会与 :c:member:`~PyTypeObject.tp_traverse` 和 "
+":c:member:`~PyTypeObject.tp_clear` 字段一起被继承，也就是说，如果 "
+":c:macro:`Py_TPFLAGS_HAVE_GC` 旗标位在子类型中被清空并且子类型中的 "
+":c:member:`~PyTypeObject.tp_traverse` 和 :c:member:`~PyTypeObject.tp_clear` "
+"字段存在并具有 ``NULL`` 值。 .. XXX 那么大多数旗标位 *真的* 都是单独继承的吗？"
 
 #: ../../c-api/typeobj.rst:1035
 msgid ""

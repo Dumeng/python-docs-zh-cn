@@ -3428,11 +3428,11 @@ msgstr "（这个字段从 3.8 起即存在，但是从 3.9 开始投入使用�
 
 #: ../../c-api/typeobj.rst:2146
 msgid "Internal. Do not use."
-msgstr ""
+msgstr "内部对象。 请勿使用。"
 
 #: ../../c-api/typeobj.rst:2154
 msgid "Static Types"
-msgstr ""
+msgstr "静态类型"
 
 #: ../../c-api/typeobj.rst:2156
 msgid ""
@@ -3440,6 +3440,8 @@ msgid ""
 ":c:type:`PyTypeObject` structure is defined directly in code and initialized"
 " using :c:func:`PyType_Ready`."
 msgstr ""
+"在传统上，在 C 代码中定义的类型都是 *静态的*，也就是说，:c:type:`PyTypeObject` 结构体在代码中直接定义并使用 "
+":c:func:`PyType_Ready` 来初始化。"
 
 #: ../../c-api/typeobj.rst:2160
 msgid ""

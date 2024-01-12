@@ -3160,6 +3160,12 @@ msgid ""
 ":c:member:`~PyTypeObject.tp_new` returns an instance of a subtype of the "
 "original type, the subtype's :c:member:`~PyTypeObject.tp_init` is called."
 msgstr ""
+":c:member:`~PyTypeObject.tp_init` 函数如果不为 ``NULL``，将在通过调用类型正常创建其实例时被调用，即在类型的 "
+":c:member:`~PyTypeObject.tp_new` 函数返回一个该类型的实例时。 如果 "
+":c:member:`~PyTypeObject.tp_new` 函数返回了一个不是原始类型的子类型的其他类型的实例，则 "
+":c:member:`~PyTypeObject.tp_init` 函数不会被调用；如果 "
+":c:member:`~PyTypeObject.tp_new` 返回了一个原始类型的子类型的实例，则该子类型的 "
+":c:member:`~PyTypeObject.tp_init` 将被调用。"
 
 #: ../../c-api/typeobj.rst:1855
 msgid "Returns ``0`` on success, ``-1`` and sets an exception on error."

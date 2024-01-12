@@ -3258,24 +3258,26 @@ msgid ""
 " instances; presumably there is some other way to create instances, like a "
 "factory function."
 msgstr ""
+"对于 :ref:`静态类型 <static-types>` 该字段没有默认值。 这意味着如果槽位被定义为 "
+"``NULL``，则无法调用此类型来创建新的实例；应当存在 其他办法来创建实例，例如工厂函数等。"
 
 #: ../../c-api/typeobj.rst:1931
 msgid ""
 "An optional pointer to an instance deallocation function.  Its signature "
 "is::"
-msgstr ""
+msgstr "一个可选的指向实例释放函数的指针。 函数的签名为::"
 
 #: ../../c-api/typeobj.rst:1935
 msgid ""
 "An initializer that is compatible with this signature is "
 ":c:func:`PyObject_Free`."
-msgstr ""
+msgstr "一个兼容该签名的初始化器是 :c:func:`PyObject_Free`。"
 
 #: ../../c-api/typeobj.rst:1939
 msgid ""
 "This field is inherited by static subtypes, but not by dynamic subtypes "
 "(subtypes created by a class statement)"
-msgstr ""
+msgstr "该字段会被静态子类型继承，但不会被动态子类型（通过 class 语句创建的子类型）继承"
 
 #: ../../c-api/typeobj.rst:1944
 msgid ""

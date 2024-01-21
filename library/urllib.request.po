@@ -1663,6 +1663,9 @@ msgid ""
 "URL scheme involved.  For example, the :envvar:`!http_proxy` environment "
 "variable is read to obtain the HTTP proxy's URL."
 msgstr ""
+":func:`build_opener` 默认提供了许多处理句柄，包括 :class:`ProxyHandler`。 "
+"在默认情况下，:class:`ProxyHandler` 会使用名为 ``<scheme>_proxy`` 的环境变量，其中 ``<scheme>`` "
+"是对应的 URL 方案。 例如，可以读取 :envvar:`!http_proxy` 环境变量可获得 HTTP 代理的 URL."
 
 #: ../../library/urllib.request.rst:1290
 msgid ""

@@ -897,6 +897,9 @@ msgid ""
 "into static storage; the caller should not modify its value.  The value is "
 "available to Python code as ``sys.executable``."
 msgstr ""
+"返回 Python 可执行文件的完整程序名称；这是作为根据程序名称（由上述 :c:func:`Py_SetProgramName` "
+"设置）派生默认模块搜索路径的附带影响计算得出的。 返回的字符串将指向静态存储；调用方不应修改其值。 该值将以 ``sys.executable`` "
+"的名称供 Python 代码使用。"
 
 #: ../../c-api/init.rst:594
 msgid ""
@@ -910,6 +913,10 @@ msgid ""
 "startup; it can be (and usually is) modified later to change the search path"
 " for loading modules."
 msgstr ""
+"返回默认模块搜索路径；这是根据程序名称（由上述 :c:func:`Py_SetProgramName` 设置）和某些环境变量计算得出的。 "
+"返回的字符串由一系列由依赖于平台的分隔符分开的目录名称组成。 分隔符在 Unix 和 macOS 上为 ``':'`` 而在 Windows 上为 "
+"``';'``。 返回的字符串将指向静态存储；调用方不应修改其值。 列表 :data:`sys.path` "
+"将在解释器启动时使用该值来初始化；它可以在随后被修改（并且通常都会被修改）以变更加载模块的搜索路径。"
 
 #: ../../c-api/init.rst:620
 msgid ""
@@ -970,7 +977,7 @@ msgstr "现在 :data:`sys.executable` 将使用程序的完整路径，而不是
 msgid ""
 "Return the version of this Python interpreter.  This is a string that looks "
 "something like ::"
-msgstr ""
+msgstr "返回 Python 解释器的版本。 这将为如下形式的字符串 ::"
 
 #: ../../c-api/init.rst:660
 msgid ""
@@ -980,10 +987,12 @@ msgid ""
 "not modify its value.  The value is available to Python code as "
 ":data:`sys.version`."
 msgstr ""
+"第一个单词（到第一个空格符为止）是当前的 Python 版本；前面的字符是以点号分隔的主要和次要版本号。 "
+"返回的字符串将指向静态存储；调用方不应修改其值。 该值将以 :data:`sys.version` 的名称供 Python 代码使用。"
 
 #: ../../c-api/init.rst:665
 msgid "See also the :c:var:`Py_Version` constant."
-msgstr ""
+msgstr "另请参阅 :c:var:`Py_Version` 常量。"
 
 #: ../../c-api/init.rst:672
 msgid ""

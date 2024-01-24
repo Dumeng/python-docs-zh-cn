@@ -1269,6 +1269,9 @@ msgid ""
 "standard :mod:`zlib` and :mod:`hashlib` modules release the GIL when "
 "compressing or hashing data."
 msgstr ""
+"调用系统 I/O 函数是释放 GIL 的最常见用例，但它在调用不需要访问 Python "
+"对象的长期运行计算，比如针对内存缓冲区进行操作的压缩或加密函数之前也很有用。 举例来说，在对数据执行压缩或哈希操作时标准 :mod:`zlib` 和 "
+":mod:`hashlib` 模块就会释放 GIL。"
 
 #: ../../c-api/init.rst:928
 msgid "Non-Python created threads"
@@ -1283,6 +1286,8 @@ msgid ""
 "management), they don't hold the GIL, nor is there a thread state structure "
 "for them."
 msgstr ""
+"当使用专门的 Python API（如 :mod:`threading` 模块）创建线程时，会自动关联一个线程状态因而上面显示的代码是正确的。 "
+"但是，如果线程是用 C 创建的（例如由具有自己的线程管理的第三方库创建），它们就不持有 GIL 也没有对应的线程状态结构体。"
 
 #: ../../c-api/init.rst:937
 msgid ""

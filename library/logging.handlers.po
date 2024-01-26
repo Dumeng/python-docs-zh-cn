@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 14:14+0000\n"
+"POT-Creation-Date: 2024-01-26 14:13+0000\n"
 "PO-Revision-Date: 2021-06-28 01:09+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -110,7 +110,6 @@ msgid ""
 "old stream is flushed before the new stream is set."
 msgstr "将实例的流设为指定值，如果两者不一致的话。 旧的流会在设置新的流之前被刷新。"
 
-#: ../../library/logging.handlers.rst:0 ../../library/logging.handlers.rst:0
 #: ../../library/logging.handlers.rst:0
 msgid "Parameters"
 msgstr "参数"
@@ -1380,7 +1379,7 @@ msgid ""
 "will either need to override this method or place a suitable dictionary in "
 "the handler's *typemap* attribute."
 msgstr ""
-"返回记录的事件类型。 如果你希望指定你自己的类型就要重载此方法。 此版本将使用处理程序的 typemap 属性来执行映射，该属性在 "
+"返回记录的事件类型。 如果你希望指定你自己的类型就要重写此方法。 此版本将使用处理程序的 typemap 属性来执行映射，该属性在 "
 ":meth:`__init__` 被设置为一个字典，其中包含 :const:`DEBUG`, :const:`INFO`, "
 ":const:`WARNING`, :const:`ERROR` 和 :const:`CRITICAL` 的映射。 "
 "如果你使用你自己的级别，你将需要重写此方法或者在处理程序的 *typemap* 属性中放置一个合适的字典。"
@@ -1443,8 +1442,8 @@ msgid ""
 msgstr "可以使用 *timeout* 参数为与 SMTP 服务器的通信指定超时限制。"
 
 #: ../../library/logging.handlers.rst:874
-msgid "The *timeout* argument was added."
-msgstr "增加了 *timeout* 参数。"
+msgid "Added the *timeout* parameter."
+msgstr "增加了 *timeout* 形参。"
 
 #: ../../library/logging.handlers.rst:879
 msgid "Formats the record and sends it to the specified addressees."

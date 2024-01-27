@@ -1844,6 +1844,8 @@ msgid ""
 "state is available. If this function returns ``NULL``, no exception has been"
 " raised and the caller should assume no current thread state is available."
 msgstr ""
+"返回一个扩展可以在其中存储线程专属状态信息的字典。 每个扩展都应当使用一个独有的键用来在该字典中存储状态。 在没有可用的当前线程状态时也可以调用此函数。"
+" 如果此函数返回 ``NULL``，则还没有任何异常被引发并且调用方应当假定没有可用的当前线程状态。"
 
 #: ../../c-api/init.rst:1397
 msgid ""
@@ -1856,6 +1858,9 @@ msgid ""
 "``NULL``, the pending exception (if any) for the thread is cleared. This "
 "raises no exceptions."
 msgstr ""
+"在一个线程中异步地引发异常。 *id* 参数是目标线程的线程 id；*exc* 是要引发的异常对象。 该函数不会窃取任何对 *exc* 的引用。 "
+"为防止随意滥用，你必须编写你自己的 C 扩展来调用它。 调用时必须持有 GIL。 返回已修改的线程状态数量；该值通常为一，但如果未找到线程 id "
+"则会返回 0。 如果 *exc* 为``NULL``，则会清除线程的待处理异常（如果存在）。 这将不会引发异常。"
 
 #: ../../c-api/init.rst:1405
 msgid ""

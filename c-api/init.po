@@ -1866,7 +1866,7 @@ msgstr ""
 msgid ""
 "The type of the *id* parameter changed from :c:expr:`long` to "
 ":c:expr:`unsigned long`."
-msgstr ""
+msgstr "*id* 形参的类型已从 :c:expr:`long` 变为 :c:expr:`unsigned long`。"
 
 #: ../../c-api/init.rst:1411
 msgid ""
@@ -1874,6 +1874,7 @@ msgid ""
 "*tstate*, which must not be ``NULL``.  The lock must have been created "
 "earlier. If this thread already has the lock, deadlock ensues."
 msgstr ""
+"获取全局解释器锁并将当前线程状态设为 *tstate*，它必须不为 ``NULL``。 锁必须在此之前已被创建。 如果该线程已获取锁，则会发生死锁。"
 
 #: ../../c-api/init.rst:1422 ../../c-api/init.rst:1460
 msgid ""
@@ -1881,6 +1882,8 @@ msgid ""
 ":c:func:`Py_END_ALLOW_THREADS`, and :c:func:`PyGILState_Ensure`, and "
 "terminate the current thread if called while the interpreter is finalizing."
 msgstr ""
+"已被更新为与 :c:func:`PyEval_RestoreThread`, :c:func:`Py_END_ALLOW_THREADS` 和 "
+":c:func:`PyGILState_Ensure` 保持一致，如果在解释器正在最终化时被调用则会终结当前线程。"
 
 #: ../../c-api/init.rst:1427
 msgid ""

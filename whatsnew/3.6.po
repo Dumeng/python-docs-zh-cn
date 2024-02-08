@@ -2107,6 +2107,8 @@ msgid ""
 "keywords. (Contributed by Serhiy Storchaka in :issue:`25011` and "
 ":issue:`25209`.)"
 msgstr ""
+"私有和特殊属性名称现在会被省略除非带有以下划线开头的前缀。 在某些已完成的关键字后会加上空格或冒号。 （由 Serhiy Storchaka 在 "
+":issue:`25011` 和 :issue:`25209` 中贡献。）"
 
 #: ../../whatsnew/3.6.rst:1379
 msgid "shlex"
@@ -2119,6 +2121,9 @@ msgid ""
 " to control which characters are treated as punctuation. (Contributed by "
 "Vinay Sajip in :issue:`1521950`.)"
 msgstr ""
+":class:`~shlex.shlex` 通过新的 *punctuation_chars* 参数来控制哪些字符会被当作标点符号大幅度地 "
+":ref:`改进了 shell 兼容性 <improved-shell-compatibility>`。 （由 Vinay Sajip 在 "
+":issue:`1521950` 中贡献。）"
 
 #: ../../whatsnew/3.6.rst:1389
 msgid "site"

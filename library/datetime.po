@@ -234,7 +234,7 @@ msgstr ""
 msgid ""
 "A duration expressing the difference between two :class:`.datetime` or "
 ":class:`date` instances to microsecond resolution."
-msgstr ""
+msgstr "将两个 :class:`.datetime` 或 :class:`date` 实例之间的差值表示为微秒级精度的持续时间。"
 
 #: ../../library/datetime.rst:140
 msgid ""

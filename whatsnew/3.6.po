@@ -3411,6 +3411,9 @@ msgid ""
 "to ``stderr`` instead of ``stdout``. (Contributed by Serhiy Storchaka in "
 ":issue:`23034`.)"
 msgstr ""
+"带有 ``COUNT_ALLOCS``, ``SHOW_ALLOC_COUNT`` 或 ``SHOW_TRACK_COUNT`` 宏定义的特殊 "
+"Python 编译版的输出现在默认被关闭。 可以使用 ``-X showalloccount`` 选项重新启用它。 现在它将输出到 ``stderr``"
+" 而不是 ``stdout``。 （由 Serhiy Storchaka 在 :issue:`23034` 中贡献。）"
 
 #: ../../whatsnew/3.6.rst:2145
 msgid "Changes in the Python API"
@@ -3422,18 +3425,20 @@ msgid ""
 "with ``'+'``. (Contributed by Jeff Balogh and John O'Connor in "
 ":issue:`2091`.)"
 msgstr ""
+":func:`open() <open>` 将不再允许组合使用 ``'U'`` 模式旗标与 ``'+'``。 （由 Jeff Balogh 和 John"
+" O'Connor 在 :issue:`2091` 中贡献。）"
 
 #: ../../whatsnew/3.6.rst:2151
 msgid ""
 ":mod:`sqlite3` no longer implicitly commits an open transaction before DDL "
 "statements."
-msgstr ""
+msgstr ":mod:`sqlite3` 将不再隐式地在 DDL 语句之前提交未完成的事务。"
 
 #: ../../whatsnew/3.6.rst:2154
 msgid ""
 "On Linux, :func:`os.urandom` now blocks until the system urandom entropy "
 "pool is initialized to increase the security."
-msgstr ""
+msgstr "在 Linux 上，现在 :func:`os.urandom` 会阻塞直到系统的 urandom 熵池被初始化以提升安全性。"
 
 #: ../../whatsnew/3.6.rst:2157
 msgid ""

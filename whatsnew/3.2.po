@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.12\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-09 14:13+0000\n"
+"POT-Creation-Date: 2024-02-16 14:13+0000\n"
 "PO-Revision-Date: 2021-06-29 13:04+0000\n"
 "Last-Translator: Freesand Leo <yuqinju@163.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/python-doc/teams/5390/zh_CN/)\n"
@@ -68,6 +68,8 @@ msgid ""
 "to use. This requirement was the result of the free access to Python "
 "interpreter internals that extension modules could use."
 msgstr ""
+"过去，为一个 Python 版本所构建的扩展模块通常无法用于其他 Python 版本。 特别是在 Windows 上，每一个 Python "
+"新特性发布版都必须重新构建想要使用的所有扩展模块。 之所以有这样的要求是因为扩展模块可以任意访问 Python 解释器的内部对象。"
 
 #: ../../whatsnew/3.2.rst:72
 msgid ""
@@ -841,13 +843,13 @@ msgid "Two methods have been deprecated:"
 msgstr "两个方法被弃用："
 
 #: ../../whatsnew/3.2.rst:746
-msgid ":meth:`xml.etree.ElementTree.getchildren` use ``list(elem)`` instead."
-msgstr ":meth:`xml.etree.ElementTree.getchildren` 被 ``list(elem)`` 替代。"
+msgid ":meth:`!xml.etree.ElementTree.getchildren` use ``list(elem)`` instead."
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:747
 msgid ""
-":meth:`xml.etree.ElementTree.getiterator` use ``Element.iter`` instead."
-msgstr ":meth:`xml.etree.ElementTree.getiterator` 被 ``Element.iter`` 替代。"
+":meth:`!xml.etree.ElementTree.getiterator` use ``Element.iter`` instead."
+msgstr ""
 
 #: ../../whatsnew/3.2.rst:749
 msgid ""
@@ -3221,7 +3223,7 @@ msgstr "（由Georg Brandl在 :issue:`5675` 中贡献）"
 
 #: ../../whatsnew/3.2.rst:2685
 msgid ""
-"The previously deprecated :func:`contextlib.nested` function has been "
+"The previously deprecated :func:`!contextlib.nested` function has been "
 "removed in favor of a plain :keyword:`with` statement which can accept "
 "multiple context managers.  The latter technique is faster (because it is "
 "built-in), and it does a better job finalizing multiple context managers "

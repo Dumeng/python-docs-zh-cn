@@ -446,7 +446,7 @@ msgstr "返回 *cls* 中成员的数量::"
 
 #: ../../library/enum.rst:240
 msgid "Returns a mapping of every enum name to its member, including aliases"
-msgstr ""
+msgstr "返回一个从每个枚举名称到其成员的映射，包括别名"
 
 #: ../../library/enum.rst:244
 msgid "Returns each member in *cls* in reverse definition order::"
@@ -485,11 +485,11 @@ msgstr ""
 
 #: ../../library/enum.rst:281
 msgid "Name of the member."
-msgstr ""
+msgstr "成员的名称。"
 
 #: ../../library/enum.rst:285
 msgid "Value of the member, can be set in :meth:`~object.__new__`."
-msgstr ""
+msgstr "成员的值，可在 :meth:`~object.__new__` 中设置。"
 
 #: ../../library/enum.rst:289
 msgid ""

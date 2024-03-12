@@ -3355,18 +3355,23 @@ msgid ""
 "Objects from the :mod:`random` module now use 50% less memory on 64-bit "
 "builds.  (Contributed by Serhiy Storchaka in :issue:`23488`.)"
 msgstr ""
+"现在来自 :mod:`random` 模块的对象在 64 位编译版上使用的内存将减少 50%。 （由 Serhiy Storchaka 在 "
+":issue:`23488` 中贡献。）"
 
 #: ../../whatsnew/3.5.rst:2161
 msgid ""
 "The :func:`property` getter calls are up to 25% faster. (Contributed by Joe "
 "Jevnik in :issue:`23910`.)"
 msgstr ""
+":func:`property` getter 调用可提速 25%。 （由 Joe Jevnik 在 :issue:`23910` 中贡献。）"
 
 #: ../../whatsnew/3.5.rst:2164
 msgid ""
 "Instantiation of :class:`fractions.Fraction` is now up to 30% faster. "
 "(Contributed by Stefan Behnel in :issue:`22464`.)"
 msgstr ""
+"现在 :class:`fractions.Fraction` 的实例化可提速至多 30%。 （由 Stefan Behnel 在 "
+":issue:`22464` 中贡献。）"
 
 #: ../../whatsnew/3.5.rst:2167
 msgid ""
@@ -3451,6 +3456,9 @@ msgid ""
 "phase extension module initialization. (Contributed by Petr Viktorin in "
 ":issue:`24268`.)"
 msgstr ""
+"新增 :c:func:`PyModule_FromDefAndSpec`, :c:func:`PyModule_FromDefAndSpec2` 和 "
+":c:func:`PyModule_ExecDef` 函数，来自 :pep:`489` -- 多阶段扩展模块初始化。 （由 Petr Viktorin "
+"在 :issue:`24268` 中贡献。）"
 
 #: ../../whatsnew/3.5.rst:2207
 msgid ""
@@ -3459,11 +3467,14 @@ msgid ""
 "multiplication. (Contributed by Benjamin Peterson in :issue:`21176`.  See "
 "also :pep:`465` for details.)"
 msgstr ""
+"新增 :c:func:`PyNumber_MatrixMultiply` 和 "
+":c:func:`PyNumber_InPlaceMatrixMultiply` 函数用于执行矩阵乘法。 （由 Benjamin Peterson 在 "
+":issue:`21176` 中贡献。 另请参阅 :pep:`465` 了解详情。）"
 
 #: ../../whatsnew/3.5.rst:2213
 msgid ""
 "The :c:member:`PyTypeObject.tp_finalize` slot is now part of the stable ABI."
-msgstr ""
+msgstr "现在 :c:member:`PyTypeObject.tp_finalize` 槽位已成为稳定 ABI 的一部分。"
 
 #: ../../whatsnew/3.5.rst:2215
 msgid ""
@@ -3471,6 +3482,9 @@ msgid ""
 "part of `Visual Studio 2015 <https://visualstudio.microsoft.com/en/vs/older-"
 "downloads/#visual-studio-2015-and-other-products>`_."
 msgstr ""
+"Windows 构建现在需要 Microsoft Visual C++ 14.0，它是 `Visual Studio 2015 "
+"<https://visualstudio.microsoft.com/en/vs/older-downloads/#visual-"
+"studio-2015-and-other-products>`_ 的一部分。"
 
 #: ../../whatsnew/3.5.rst:2218
 msgid ""

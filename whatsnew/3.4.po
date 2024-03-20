@@ -3092,6 +3092,8 @@ msgid ""
 " as deprecated in its docstring for quite some time.  It now emits a "
 ":exc:`DeprecationWarning` and will be removed completely in Python 3.5."
 msgstr ""
+"很长一段时间以来 :mod:`ftplib` 模块中的内部 ``Netrc`` 类在其文档字符串中被声明为已弃用。 现在它将发出 "
+":exc:`DeprecationWarning` 并将在 Python 3.5 中完全移除。"
 
 #: ../../whatsnew/3.4.rst:2118
 msgid ""
@@ -3099,6 +3101,8 @@ msgid ""
 "not have been exposed and is hopefully not in use; it is deprecated and will"
 " mostly likely be removed in Python 3.5."
 msgstr ""
+"传给 :meth:`subprocess.Popen.wait` 的未写入文档的 *endtime* 参数不应被公开也不应被使用；它已被弃用并很可能在 "
+"Python 3.5 中移除。"
 
 #: ../../whatsnew/3.4.rst:2122
 msgid ""

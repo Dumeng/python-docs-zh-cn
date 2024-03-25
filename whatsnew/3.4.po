@@ -1361,6 +1361,8 @@ msgid ""
 "expansion but are instead matched literally.  (Contributed by Serhiy "
 "Storchaka in :issue:`8402`.)"
 msgstr ""
+"新增函数 :func:`~glob.escape` 提供了为文件名中的特殊字符进行转义的方式以使它们不会成为 glob "
+"扩展的组成部分而是按字面值来匹配。 （由 Serhiy Storchaka 在 :issue:`8402` 中贡献。）"
 
 #: ../../whatsnew/3.4.rst:901
 msgid "hashlib"

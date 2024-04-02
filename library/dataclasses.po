@@ -599,6 +599,8 @@ msgid ""
 "``@dataclass`` function to convert that class to a dataclass.  This function"
 " is provided as a convenience.  For example::"
 msgstr ""
+"此函数不是必需的，因为任何用于新建带有 ``__annotations__`` 的类的 Python 机制都可以继续应用 ``@dataclass`` "
+"函数来将类转换为数据类。 提供此函数只是为了更便捷地使用。 例如::"
 
 #: ../../library/dataclasses.rst:418
 msgid "Is equivalent to::"
@@ -629,6 +631,8 @@ msgid ""
 "on the call to :func:`!replace` so that they can be passed to "
 ":meth:`!__init__` and :meth:`__post_init__`."
 msgstr ""
+"如果存在任何没有默认值的仅初始化变量，那么必须在调用 :func:`!replace` 时指定它们的值，以便它们可以被传递给 "
+":meth:`!__init__` 和 :meth:`__post_init__`。"
 
 #: ../../library/dataclasses.rst:444
 msgid ""
